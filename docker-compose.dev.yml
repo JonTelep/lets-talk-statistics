@@ -1,0 +1,30 @@
+# Development overrides for hot reload
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+    volumes:
+      - ./backend:/app
+      - backend_storage:/app/storage
+    environment:
+      DATABASE_URL: postgresql://crime_stats_user:crime_stats_password@postgres:5432/crime_statistics
+      REDIS_URL: redis://redis:6379/0
+      PYTHONUNBUFFERED: 1
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile.dev
+    command: npm run dev
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+      - /app/.next
+    environment:
+      NEXT_PUBLIC_API_URL: http://localhost:8000/api/v1
+      NEXT_PUBLIC_SITE_NAME: Let's Talk Statistics
+
+volumes:
+  backend_storage:

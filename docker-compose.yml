@@ -1,0 +1,100 @@
+services:
+  redis:
+    image: redis:7-alpine
+    container_name: crime_stats_redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 3s
+      retries: 5
+    networks:
+      - crime_stats_network
+    restart: unless-stopped
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: crime_stats_backend
+    env_file:
+      - ./backend/.env
+    environment:
+      PYTHONUNBUFFERED: 1
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend:/app
+      - backend_storage:/app/storage
+    depends_on:
+      redis:
+        condition: service_healthy
+    networks:
+      - crime_stats_network
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: crime_stats_frontend
+    environment:
+      NEXT_PUBLIC_API_URL: http://localhost:8000/api/v1
+      NEXT_PUBLIC_SITE_NAME: Let's Talk Statistics
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+    networks:
+      - crime_stats_network
+    restart: unless-stopped
+
+  celery_worker:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: crime_stats_celery_worker
+    command: celery -A app.tasks.celery_app worker --loglevel=info --concurrency=4
+    env_file:
+      - ./backend/.env
+    environment:
+      PYTHONUNBUFFERED: 1
+    volumes:
+      - ./backend:/app
+      - backend_storage:/app/storage
+    depends_on:
+      redis:
+        condition: service_healthy
+    networks:
+      - crime_stats_network
+    restart: unless-stopped
+
+  celery_beat:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: crime_stats_celery_beat
+    command: celery -A app.tasks.celery_app beat --loglevel=info
+    env_file:
+      - ./backend/.env
+    environment:
+      PYTHONUNBUFFERED: 1
+    volumes:
+      - ./backend:/app
+    depends_on:
+      redis:
+        condition: service_healthy
+    networks:
+      - crime_stats_network
+    restart: unless-stopped
+
+volumes:
+  redis_data:
+  backend_storage:
+
+networks:
+  crime_stats_network:
+    driver: bridge
