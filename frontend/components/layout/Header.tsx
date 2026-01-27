@@ -1,19 +1,89 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import Link from 'next/link';
-import { Menu, X, BarChart3 } from 'lucide-react';
+import { Menu, X, BarChart3, ChevronDown, TrendingUp, Users, DollarSign, Briefcase, Building2, Scale } from 'lucide-react';
+
+const categories = [
+  {
+    name: 'Crime Statistics',
+    href: '/crime',
+    icon: Scale,
+    description: 'FBI crime data by state and demographics',
+    subItems: [
+      { name: 'Explore', href: '/explore' },
+      { name: 'Compare', href: '/compare' },
+      { name: 'Trends', href: '/trends' },
+    ],
+  },
+  {
+    name: 'Congressional Trading',
+    href: '/congress',
+    icon: TrendingUp,
+    description: 'Stock trades by members of Congress',
+    subItems: [
+      { name: 'Overview', href: '/congress' },
+      { name: 'By Politician', href: '/congress/politicians' },
+      { name: 'Recent Trades', href: '/congress/trades' },
+    ],
+  },
+  {
+    name: 'Immigration',
+    href: '/immigration',
+    icon: Users,
+    description: 'Immigration and deportation statistics',
+    subItems: [
+      { name: 'Overview', href: '/immigration' },
+      { name: 'Trends', href: '/immigration/trends' },
+    ],
+  },
+  {
+    name: 'Federal Budget',
+    href: '/budget',
+    icon: DollarSign,
+    description: 'Government spending and revenue',
+    subItems: [
+      { name: 'Overview', href: '/budget' },
+      { name: 'By Agency', href: '/budget/agencies' },
+    ],
+  },
+  {
+    name: 'Employment',
+    href: '/employment',
+    icon: Briefcase,
+    description: 'Unemployment and jobs data',
+    subItems: [
+      { name: 'Overview', href: '/employment' },
+      { name: 'By State', href: '/employment/states' },
+    ],
+  },
+  {
+    name: 'National Debt',
+    href: '/debt',
+    icon: Building2,
+    description: 'Federal debt and deficit tracking',
+    subItems: [
+      { name: 'Overview', href: '/debt' },
+      { name: 'Historical', href: '/debt/historical' },
+    ],
+  },
+];
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [categoriesOpen, setCategoriesOpen] = useState(false);
+  const dropdownRef = useRef<HTMLDivElement>(null);
 
-  const navigation = [
-    { name: 'Home', href: '/' },
-    { name: 'Explore', href: '/explore' },
-    { name: 'Compare', href: '/compare' },
-    { name: 'Trends', href: '/trends' },
-    { name: 'About', href: '/about' },
-  ];
+  // Close dropdown when clicking outside
+  useEffect(() => {
+    function handleClickOutside(event: MouseEvent) {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+        setCategoriesOpen(false);
+      }
+    }
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
 
   return (
     <header className="bg-white shadow-sm sticky top-0 z-50">
@@ -30,15 +100,54 @@ export default function Header() {
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex lg:items-center lg:space-x-8">
-            {navigation.map((item) => (
-              <Link
-                key={item.name}
-                href={item.href}
-                className="text-base font-medium text-gray-700 hover:text-primary-600 transition-colors"
+            <Link
+              href="/"
+              className="text-base font-medium text-gray-700 hover:text-primary-600 transition-colors"
+            >
+              Home
+            </Link>
+
+            {/* Categories Dropdown */}
+            <div className="relative" ref={dropdownRef}>
+              <button
+                onClick={() => setCategoriesOpen(!categoriesOpen)}
+                className="flex items-center text-base font-medium text-gray-700 hover:text-primary-600 transition-colors"
               >
-                {item.name}
-              </Link>
-            ))}
+                Categories
+                <ChevronDown className={`ml-1 h-4 w-4 transition-transform ${categoriesOpen ? 'rotate-180' : ''}`} />
+              </button>
+
+              {categoriesOpen && (
+                <div className="absolute left-0 mt-2 w-80 bg-white rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 p-4">
+                  <div className="grid gap-3">
+                    {categories.map((category) => {
+                      const Icon = category.icon;
+                      return (
+                        <Link
+                          key={category.name}
+                          href={category.href}
+                          className="flex items-start p-3 rounded-lg hover:bg-gray-50 transition-colors"
+                          onClick={() => setCategoriesOpen(false)}
+                        >
+                          <Icon className="h-6 w-6 text-primary-600 flex-shrink-0" />
+                          <div className="ml-3">
+                            <p className="text-sm font-medium text-gray-900">{category.name}</p>
+                            <p className="text-xs text-gray-500">{category.description}</p>
+                          </div>
+                        </Link>
+                      );
+                    })}
+                  </div>
+                </div>
+              )}
+            </div>
+
+            <Link
+              href="/about"
+              className="text-base font-medium text-gray-700 hover:text-primary-600 transition-colors"
+            >
+              About
+            </Link>
           </div>
 
           {/* Mobile menu button */}
@@ -61,16 +170,40 @@ export default function Header() {
         {/* Mobile menu */}
         {mobileMenuOpen && (
           <div className="lg:hidden py-4 space-y-1">
-            {navigation.map((item) => (
-              <Link
-                key={item.name}
-                href={item.href}
-                className="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-100 hover:text-primary-600"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                {item.name}
-              </Link>
-            ))}
+            <Link
+              href="/"
+              className="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-100 hover:text-primary-600"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Home
+            </Link>
+
+            <div className="px-3 py-2">
+              <p className="text-xs font-semibold text-gray-400 uppercase tracking-wider">Categories</p>
+            </div>
+
+            {categories.map((category) => {
+              const Icon = category.icon;
+              return (
+                <Link
+                  key={category.name}
+                  href={category.href}
+                  className="flex items-center rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-100 hover:text-primary-600"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  <Icon className="h-5 w-5 mr-2 text-primary-600" />
+                  {category.name}
+                </Link>
+              );
+            })}
+
+            <Link
+              href="/about"
+              className="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-100 hover:text-primary-600"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              About
+            </Link>
           </div>
         )}
       </nav>
