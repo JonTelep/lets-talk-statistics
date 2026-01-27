@@ -21,7 +21,7 @@ export default function QuickStats() {
   useEffect(() => {
     async function fetchStats() {
       try {
-        const response = await fetch('/api/v1/analytics/summary');
+        const response = await fetch('/api/v1/analytics/quick-stats');
         const data = await response.json();
         setStats(data);
       } catch (error) {
@@ -53,7 +53,7 @@ export default function QuickStats() {
     );
   }
 
-  if (!stats) {
+  if (!stats || !stats.year_range) {
     return null;
   }
 

@@ -2,6 +2,7 @@
 
 from typing import Optional
 from fastapi import APIRouter, Depends, HTTPException, Query
+from pydantic import BaseModel
 from sqlalchemy import select, func, and_
 from sqlalchemy.ext.asyncio import AsyncSession
 
@@ -12,6 +13,77 @@ from app.utils.logger import get_logger
 
 logger = get_logger(__name__)
 router = APIRouter()
+
+
+class QuickStatsResponse(BaseModel):
+    """Simple summary stats for the homepage."""
+    total_crimes: int
+    total_population: int
+    average_crime_rate: float
+    year_range: dict
+    state_count: int
+
+
+@router.get("/quick-stats", response_model=QuickStatsResponse)
+async def get_quick_stats(
+    db: AsyncSession = Depends(get_db)
+):
+    """
+    Get simple summary stats for the homepage.
+    No parameters required - returns aggregate data across all years.
+    """
+    try:
+        # Get year range
+        year_query = select(
+            func.min(CalculatedStatistic.year),
+            func.max(CalculatedStatistic.year)
+        ).where(CalculatedStatistic.demographic_type == "total")
+        
+        year_result = await db.execute(year_query)
+        min_year, max_year = year_result.one()
+        
+        # Get total crimes across all years
+        total_query = select(func.sum(CalculatedStatistic.incident_count)).where(
+            CalculatedStatistic.demographic_type == "total"
+        )
+        total_result = await db.execute(total_query)
+        total_crimes = total_result.scalar() or 0
+        
+        # Get average population (most recent year)
+        pop_query = select(CalculatedStatistic.population).where(
+            and_(
+                CalculatedStatistic.year == max_year,
+                CalculatedStatistic.demographic_type == "total"
+            )
+        )
+        pop_result = await db.execute(pop_query)
+        total_population = pop_result.scalar() or 0
+        
+        # Get average crime rate
+        rate_query = select(func.avg(CalculatedStatistic.per_capita_rate)).where(
+            CalculatedStatistic.demographic_type == "total"
+        )
+        rate_result = await db.execute(rate_query)
+        avg_rate = float(rate_result.scalar() or 0)
+        
+        # Count unique states
+        state_query = select(func.count(func.distinct(CalculatedStatistic.state))).where(
+            CalculatedStatistic.demographic_type == "by_state"
+        )
+        state_result = await db.execute(state_query)
+        state_count = state_result.scalar() or 0
+        
+        return QuickStatsResponse(
+            total_crimes=total_crimes,
+            total_population=total_population,
+            average_crime_rate=round(avg_rate, 2),
+            year_range={"min": min_year or 0, "max": max_year or 0},
+            state_count=state_count
+        )
+        
+    except Exception as e:
+        logger.error(f"Error getting quick stats: {str(e)}")
+        raise HTTPException(status_code=500, detail="Internal server error")
 
 
 @router.get("/summary", response_model=AnalyticsSummaryResponse)
