@@ -10,7 +10,11 @@ from app.api.v1.endpoints import (
     tasks,
     comparisons,
     rankings,
-    analytics
+    analytics,
+    # NEW: Government data endpoints
+    budget,
+    debt,
+    employment,
 )
 
 api_router = APIRouter()
@@ -61,4 +65,23 @@ api_router.include_router(
     analytics.router,
     prefix="/analytics",
     tags=["analytics"]
+)
+
+# Government Data APIs
+api_router.include_router(
+    budget.router,
+    prefix="/budget",
+    tags=["budget"]
+)
+
+api_router.include_router(
+    debt.router,
+    prefix="/debt",
+    tags=["debt"]
+)
+
+api_router.include_router(
+    employment.router,
+    prefix="/employment",
+    tags=["employment"]
 )
