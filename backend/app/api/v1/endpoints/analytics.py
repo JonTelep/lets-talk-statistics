@@ -14,7 +14,88 @@ logger = get_logger(__name__)
 router = APIRouter()
 
 
-@router.get("/summary", response_model=AnalyticsSummaryResponse)
+@router.get("/summary")
+async def get_quick_summary(
+    crime_type: str = Query(default="murder"),
+    start_year: Optional[int] = Query(default=None, description="Start year (optional)"),
+    end_year: Optional[int] = Query(default=None, description="End year (optional)"),
+    db: AsyncSession = Depends(get_db)
+):
+    """
+    Get quick summary statistics for the homepage.
+
+    If start_year and end_year are not provided, auto-detects from available data.
+    """
+    try:
+        # Auto-detect year range if not provided
+        if start_year is None or end_year is None:
+            year_query = select(
+                func.min(CrimeStatistic.year),
+                func.max(CrimeStatistic.year)
+            ).where(CrimeStatistic.crime_type == crime_type)
+
+            year_result = await db.execute(year_query)
+            year_row = year_result.one_or_none()
+
+            if year_row and year_row[0] and year_row[1]:
+                start_year = start_year or year_row[0]
+                end_year = end_year or year_row[1]
+            else:
+                return {
+                    "total_crimes": 0,
+                    "total_population": 0,
+                    "average_crime_rate": 0,
+                    "year_range": {"min": 0, "max": 0},
+                    "state_count": 0
+                }
+
+        # Get total crimes and population
+        totals_query = select(
+            func.sum(CrimeStatistic.incident_count),
+            func.sum(CrimeStatistic.population)
+        ).where(
+            and_(
+                CrimeStatistic.crime_type == crime_type,
+                CrimeStatistic.year >= start_year,
+                CrimeStatistic.year <= end_year
+            )
+        )
+
+        totals_result = await db.execute(totals_query)
+        totals_row = totals_result.one()
+        total_crimes = totals_row[0] or 0
+        total_population = totals_row[1] or 0
+
+        # Calculate average crime rate
+        average_crime_rate = 0
+        if total_population > 0:
+            average_crime_rate = round((total_crimes / total_population) * 100000, 2)
+
+        # Get state count
+        state_query = select(func.count(func.distinct(CrimeStatistic.state))).where(
+            and_(
+                CrimeStatistic.crime_type == crime_type,
+                CrimeStatistic.state.isnot(None)
+            )
+        )
+
+        state_result = await db.execute(state_query)
+        state_count = state_result.scalar() or 0
+
+        return {
+            "total_crimes": total_crimes,
+            "total_population": total_population,
+            "average_crime_rate": average_crime_rate,
+            "year_range": {"min": start_year, "max": end_year},
+            "state_count": state_count
+        }
+
+    except Exception as e:
+        logger.error(f"Error generating quick summary: {str(e)}")
+        raise HTTPException(status_code=500, detail="Internal server error")
+
+
+@router.get("/summary/detailed", response_model=AnalyticsSummaryResponse)
 async def get_analytics_summary(
     crime_type: str = Query(default="murder"),
     start_year: int = Query(..., description="Start year"),

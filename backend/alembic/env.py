@@ -4,6 +4,11 @@ import asyncio
 import os
 from logging.config import fileConfig
 
+from dotenv import load_dotenv
+
+# Load .env file before accessing environment variables
+load_dotenv()
+
 from sqlalchemy import pool
 from sqlalchemy.engine import Connection
 from sqlalchemy.ext.asyncio import async_engine_from_config
@@ -19,7 +24,8 @@ from app.models import crime_data  # noqa: F401
 config = context.config
 
 # Override sqlalchemy.url from environment variable
-# This allows using DATABASE_URL_DIRECT for migrations to bypass Supabase pooler
+# Use DATABASE_URL_DIRECT (session mode, port 5432) for migrations
+# Session mode supports prepared statements, unlike transaction mode (port 6543)
 database_url = os.getenv("DATABASE_URL_DIRECT") or os.getenv("DATABASE_URL")
 if database_url:
     config.set_main_option("sqlalchemy.url", database_url)

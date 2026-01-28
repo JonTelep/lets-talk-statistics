@@ -9,7 +9,7 @@ from sqlalchemy.ext.asyncio import create_async_engine, AsyncSession, async_sess
 
 from app.config import get_settings
 from app.services.data_fetcher import FBIDataFetcher, DataFetcherError
-from app.services.csv_processor import CSVProcessor, CSVProcessorError
+from app.services.csv_processor import CSVProcessor, CSVProcessingError
 from app.services.population_service import PopulationService, PopulationServiceError
 from app.tasks.celery_app import celery_app
 from app.utils.logger import get_logger
@@ -121,7 +121,7 @@ def process_csv_data(data_source_id: int, crime_type: str = "murder") -> Dict[st
                     "message": result.get("message")
                 }
 
-            except CSVProcessorError as e:
+            except CSVProcessingError as e:
                 logger.error(f"Failed to process CSV: {str(e)}")
                 return {
                     "status": "error",

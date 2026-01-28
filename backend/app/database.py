@@ -8,8 +8,8 @@ from app.config import get_settings
 
 settings = get_settings()
 
-# Detect Supabase pooled connection (PgBouncer)
-# Pooled connections have prepared_statement_cache_size=0 parameter
+# Detect Supabase Supavisor transaction mode connection
+# Transaction mode (port 6543) requires prepared_statement_cache_size=0
 is_pooled_connection = "prepared_statement_cache_size=0" in settings.database_url
 
 # Configure engine based on connection type
@@ -19,11 +19,11 @@ engine_kwargs = {
 }
 
 if is_pooled_connection:
-    # Supabase pooled connection (port 6543)
-    # Use NullPool since PgBouncer handles connection pooling
+    # Supabase Supavisor transaction mode (port 6543)
+    # Use NullPool since Supavisor handles connection pooling server-side
     engine_kwargs["poolclass"] = NullPool
 else:
-    # Direct connection (port 5432) or local database
+    # Session mode (port 5432), direct connection, or local database
     # Use built-in SQLAlchemy connection pooling
     engine_kwargs.update({
         "pool_size": settings.database_pool_size,

@@ -40,7 +40,7 @@ class Settings(BaseSettings):
 
     # Connection pooling (increased for production with Supabase)
     database_pool_size: int = Field(default=10, alias="DATABASE_POOL_SIZE")
-    database_max_overflow: int = Field(default=20, alias="DATABASE_MAX_OVERFLOW")
+    database_max_overflow: int = Field(default=20, alias="DATABASE_POOL_MAX_OVERFLOW")
     database_pool_pre_ping: bool = Field(default=True, alias="DATABASE_POOL_PRE_PING")
     database_pool_recycle: int = Field(default=3600, alias="DATABASE_POOL_RECYCLE")
 

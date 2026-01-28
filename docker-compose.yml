@@ -1,6 +1,6 @@
 services:
   redis:
-    image: redis:7-alpine
+    image: docker.io/library/redis:7-alpine
     container_name: crime_stats_redis
     ports:
       - "6379:6379"
@@ -40,10 +40,10 @@ services:
     build:
       context: ./frontend
       dockerfile: Dockerfile
+      args:
+        NEXT_PUBLIC_API_URL: http://localhost:8000/api/v1
+        NEXT_PUBLIC_SITE_NAME: Let's Talk Statistics
     container_name: crime_stats_frontend
-    environment:
-      NEXT_PUBLIC_API_URL: http://localhost:8000/api/v1
-      NEXT_PUBLIC_SITE_NAME: Let's Talk Statistics
     ports:
       - "3000:3000"
     depends_on:

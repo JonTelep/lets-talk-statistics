@@ -3,6 +3,9 @@
 # Default target
 .DEFAULT_GOAL := help
 
+# Podman compose command (daemonless)
+PODMAN_COMPOSE := podman-compose
+
 # Colors for output
 BLUE := \033[0;34m
 GREEN := \033[0;32m
@@ -99,23 +102,23 @@ clean-all: ## Clean everything including dependencies
 
 docker-up: ## Start Podman services (PostgreSQL and Redis)
 	@printf "$(BLUE)Starting Podman services...$(NC)\n"
-	podman compose up -d
+	$(PODMAN_COMPOSE) up -d
 	@printf "$(GREEN)✓ Podman services started$(NC)\n"
 	@printf "$(YELLOW)PostgreSQL: localhost:5432$(NC)\n"
 	@printf "$(YELLOW)Redis: localhost:6379$(NC)\n"
 
 docker-down: ## Stop Podman services
 	@printf "$(BLUE)Stopping Podman services...$(NC)\n"
-	podman compose down
+	$(PODMAN_COMPOSE) down
 	@printf "$(GREEN)✓ Podman services stopped$(NC)\n"
 
 docker-logs: ## Show Podman services logs
 	@printf "$(BLUE)Showing Podman logs...$(NC)\n"
-	podman compose logs -f
+	$(PODMAN_COMPOSE) logs -f
 
 docker-ps: ## Show Podman services status
 	@printf "$(BLUE)Podman Services Status:$(NC)\n"
-	@podman compose ps
+	@$(PODMAN_COMPOSE) ps
 
 docker-clean: ## Remove Podman volumes and clean data
 	@printf "$(BLUE)Cleaning Podman volumes...$(NC)\n"
@@ -123,7 +126,7 @@ docker-clean: ## Remove Podman volumes and clean data
 	@read -p "Are you sure? [y/N] " -n 1 -r; \
 	echo; \
 	if [[ $$REPLY =~ ^[Yy]$$ ]]; then \
-		podman compose down -v; \
+		$(PODMAN_COMPOSE) down -v; \
 		echo "$(GREEN)✓ Podman volumes cleaned$(NC)"; \
 	else \
 		echo "$(YELLOW)Cancelled$(NC)"; \
@@ -131,13 +134,13 @@ docker-clean: ## Remove Podman volumes and clean data
 
 docker-build: ## Build all Podman images (backend, frontend, celery)
 	@printf "$(BLUE)Building all Podman images...$(NC)\n"
-	podman compose build
+	$(PODMAN_COMPOSE) build
 	@printf "$(GREEN)✓ All images built$(NC)\n"
 
 docker-up-all: ## Start ALL services in containers (recommended)
 	@printf "$(BLUE)Starting all services in containers...$(NC)\n"
 	@printf "$(YELLOW)This includes: PostgreSQL, Redis, Backend, Frontend, Celery Worker, Celery Beat$(NC)\n"
-	podman compose up -d
+	$(PODMAN_COMPOSE) up -d
 	@printf "$(GREEN)✓ All services started$(NC)\n"
 	@printf "\n"
 	@printf "$(YELLOW)Service URLs:$(NC)\n"
@@ -148,13 +151,13 @@ docker-up-all: ## Start ALL services in containers (recommended)
 	@printf "$(YELLOW)Check status: make docker-ps$(NC)\n"
 	@printf "$(YELLOW)View logs:    make docker-logs$(NC)\n"
 
-docker-dev: ## Start all services with live reload (uses podman compose)
+docker-dev: ## Start all services with live reload (uses $(PODMAN_COMPOSE))
 	@printf "$(BLUE)Starting all services in development mode...$(NC)\n"
-	podman compose up
+	$(PODMAN_COMPOSE) up
 
 docker-rebuild: ## Rebuild and restart all containers
 	@printf "$(BLUE)Rebuilding all containers...$(NC)\n"
-	podman compose up -d --build
+	$(PODMAN_COMPOSE) up -d --build
 	@printf "$(GREEN)✓ Containers rebuilt and restarted$(NC)\n"
 
 docker-stop: ## Stop all containers (alias for docker-down)
@@ -162,7 +165,7 @@ docker-stop: ## Stop all containers (alias for docker-down)
 
 docker-restart: ## Restart all containers
 	@printf "$(BLUE)Restarting all containers...$(NC)\n"
-	podman compose restart
+	$(PODMAN_COMPOSE) restart
 	@printf "$(GREEN)✓ All containers restarted$(NC)\n"
 
 logs: ## Show logs from all services (requires them to be running)
@@ -192,7 +195,7 @@ status: ## Show status of all components
 	@printf "$(BLUE)=== Let's Talk Statistics Status ===$(NC)\n"
 	@printf "\n"
 	@printf "$(YELLOW)Podman Services:$(NC)\n"
-	@podman compose ps 2>/dev/null || echo "  Podman Compose not running"
+	@$(PODMAN_COMPOSE) ps 2>/dev/null || echo "  Podman Compose not running"
 	@printf "\n"
 	@printf "$(YELLOW)Backend:$(NC)\n"
 	@$(MAKE) -C backend status 2>/dev/null | sed 's/^/  /'
