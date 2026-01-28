@@ -3,15 +3,23 @@
 import asyncio
 import os
 from logging.config import fileConfig
+from uuid import uuid4
 
+from asyncpg import Connection
 from dotenv import load_dotenv
+
+
+class SupabaseConnection(Connection):
+    """Custom asyncpg connection class with UUID-based prepared statement names."""
+    def _get_unique_id(self, prefix: str) -> str:
+        return f"__asyncpg_{prefix}_{uuid4()}__"
 
 # Load .env file before accessing environment variables
 load_dotenv()
 
 from sqlalchemy import pool
 from sqlalchemy.engine import Connection
-from sqlalchemy.ext.asyncio import async_engine_from_config
+from sqlalchemy.ext.asyncio import create_async_engine
 
 from alembic import context
 
@@ -79,10 +87,20 @@ def do_run_migrations(connection: Connection) -> None:
 
 async def run_async_migrations() -> None:
     """Run migrations in 'online' mode using async engine."""
-    connectable = async_engine_from_config(
-        config.get_section(config.config_ini_section, {}),
-        prefix="sqlalchemy.",
+    url = config.get_main_option("sqlalchemy.url")
+    if not url:
+        raise ValueError("sqlalchemy.url not configured")
+
+    # Always disable statement cache for Supabase pooler compatibility
+    # Use custom connection class with UUID-based statement names
+    connectable = create_async_engine(
+        url,
         poolclass=pool.NullPool,
+        connect_args={
+            "statement_cache_size": 0,
+            "prepared_statement_cache_size": 0,
+            "connection_class": SupabaseConnection,
+        }
     )
 
     async with connectable.connect() as connection:

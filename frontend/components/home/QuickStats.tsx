@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import { TrendingUp, TrendingDown, Calendar, MapPin } from 'lucide-react';
+import apiClient from '@/lib/api/client';
 
 interface SummaryStats {
   total_crimes: number;
@@ -21,9 +22,8 @@ export default function QuickStats() {
   useEffect(() => {
     async function fetchStats() {
       try {
-        const response = await fetch('/api/v1/analytics/summary');
-        const data = await response.json();
-        setStats(data);
+        const response = await apiClient.get('/analytics/summary');
+        setStats(response.data);
       } catch (error) {
         console.error('Error fetching summary stats:', error);
       } finally {

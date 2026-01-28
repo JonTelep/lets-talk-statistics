@@ -28,7 +28,7 @@ export default function ExplorePage() {
       if (selectedState) params.state = selectedState;
       if (selectedYear) params.year = selectedYear;
 
-      const endpoint = viewMode === 'per-capita' ? '/statistics/per-capita' : '/statistics/';
+      const endpoint = viewMode === 'per-capita' ? '/statistics/per-capita' : '/statistics/crimes';
       const response = await apiClient.get(endpoint, { params });
       setData(response.data);
     } catch (error) {
@@ -44,7 +44,7 @@ export default function ExplorePage() {
       if (selectedState) params.state = selectedState;
       if (selectedYear) params.year = selectedYear;
 
-      const response = await apiClient.get('/csv/export', {
+      const response = await apiClient.get('/csv', {
         params,
         responseType: 'blob',
       });

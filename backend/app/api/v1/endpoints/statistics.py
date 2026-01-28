@@ -25,6 +25,52 @@ logger = get_logger(__name__)
 router = APIRouter()
 
 
+@router.get("/states")
+async def get_available_states(db: AsyncSession = Depends(get_db)):
+    """
+    Get list of all available states in the database.
+
+    Returns:
+        List of state names
+    """
+    try:
+        query = select(CrimeStatistic.state).distinct().where(
+            CrimeStatistic.state.isnot(None)
+        ).order_by(CrimeStatistic.state)
+
+        result = await db.execute(query)
+        states = [row[0] for row in result.all()]
+
+        return states
+
+    except Exception as e:
+        logger.error(f"Error fetching states: {str(e)}")
+        raise HTTPException(status_code=500, detail="Internal server error")
+
+
+@router.get("/years")
+async def get_available_years(db: AsyncSession = Depends(get_db)):
+    """
+    Get list of all available years in the database.
+
+    Returns:
+        List of years (sorted descending)
+    """
+    try:
+        query = select(CrimeStatistic.year).distinct().where(
+            CrimeStatistic.year.isnot(None)
+        ).order_by(CrimeStatistic.year.desc())
+
+        result = await db.execute(query)
+        years = [row[0] for row in result.all()]
+
+        return years
+
+    except Exception as e:
+        logger.error(f"Error fetching years: {str(e)}")
+        raise HTTPException(status_code=500, detail="Internal server error")
+
+
 @router.get("/crimes", response_model=CrimeStatisticsResponse)
 async def get_crime_statistics(
     crime_type: str = Query(default="murder", description="Type of crime"),

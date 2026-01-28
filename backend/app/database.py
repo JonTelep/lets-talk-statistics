@@ -1,10 +1,23 @@
 """Database connection and session management."""
 
+from uuid import uuid4
+
+from asyncpg import Connection
 from sqlalchemy.ext.asyncio import AsyncSession, create_async_engine, async_sessionmaker
 from sqlalchemy.orm import declarative_base
 from sqlalchemy.pool import NullPool
 
 from app.config import get_settings
+
+
+class SupabaseConnection(Connection):
+    """Custom asyncpg connection class with UUID-based prepared statement names.
+
+    This prevents "prepared statement already exists" errors when using
+    Supabase's pgbouncer-based pooler in transaction mode.
+    """
+    def _get_unique_id(self, prefix: str) -> str:
+        return f"__asyncpg_{prefix}_{uuid4()}__"
 
 settings = get_settings()
 
@@ -13,24 +26,18 @@ settings = get_settings()
 is_pooled_connection = "prepared_statement_cache_size=0" in settings.database_url
 
 # Configure engine based on connection type
+# Always use NullPool and disable statement cache for Supabase pooler compatibility
+# Use custom connection class with UUID-based statement names to prevent conflicts
 engine_kwargs = {
     "echo": settings.debug,
     "future": True,
+    "poolclass": NullPool,
+    "connect_args": {
+        "statement_cache_size": 0,
+        "prepared_statement_cache_size": 0,
+        "connection_class": SupabaseConnection,
+    },
 }
-
-if is_pooled_connection:
-    # Supabase Supavisor transaction mode (port 6543)
-    # Use NullPool since Supavisor handles connection pooling server-side
-    engine_kwargs["poolclass"] = NullPool
-else:
-    # Session mode (port 5432), direct connection, or local database
-    # Use built-in SQLAlchemy connection pooling
-    engine_kwargs.update({
-        "pool_size": settings.database_pool_size,
-        "max_overflow": settings.database_max_overflow,
-        "pool_pre_ping": settings.database_pool_pre_ping,
-        "pool_recycle": settings.database_pool_recycle,
-    })
 
 # Create async engine
 engine = create_async_engine(

@@ -8,7 +8,7 @@ import StateFilter from '@/components/filters/StateFilter';
 import YearFilter from '@/components/filters/YearFilter';
 import ComparisonBarChart from '@/components/charts/ComparisonBarChart';
 import apiClient from '@/lib/api/client';
-import { StateComparison, YearComparison } from '@/lib/types/api';
+import { ComparisonResponse, ComparisonItem } from '@/lib/types/api';
 
 export default function ComparePage() {
   const [comparisonType, setComparisonType] = useState<'states' | 'years'>('states');
@@ -23,7 +23,7 @@ export default function ComparePage() {
   const [year1, setYear1] = useState<number | string>('');
   const [year2, setYear2] = useState<number | string>('');
 
-  const [comparisonData, setComparisonData] = useState<any>(null);
+  const [comparisonData, setComparisonData] = useState<ComparisonResponse | null>(null);
   const [loading, setLoading] = useState(false);
 
   async function handleCompare() {
@@ -40,13 +40,21 @@ export default function ComparePage() {
     setLoading(true);
     try {
       if (comparisonType === 'states') {
-        const response = await apiClient.get('/comparisons/states', {
-          params: { state_1: state1, state_2: state2, year: yearForStates },
+        const response = await apiClient.get<ComparisonResponse>('/comparisons/states', {
+          params: {
+            states: `${state1},${state2}`,
+            year: yearForStates,
+            crime_type: 'violent_crime'
+          },
         });
         setComparisonData(response.data);
       } else {
-        const response = await apiClient.get('/comparisons/years', {
-          params: { state: stateForYears, year_1: year1, year_2: year2 },
+        const response = await apiClient.get<ComparisonResponse>('/comparisons/years', {
+          params: {
+            state: stateForYears,
+            years: `${year1},${year2}`,
+            crime_type: 'violent_crime'
+          },
         });
         setComparisonData(response.data);
       }
@@ -58,66 +66,30 @@ export default function ComparePage() {
     }
   }
 
-  function formatStateComparisonChart(data: StateComparison) {
+  function formatStateComparisonChart(data: ComparisonResponse) {
+    if (data.items.length < 2) return [];
+    const item1 = data.items[0];
+    const item2 = data.items[1];
     return [
       {
-        category: 'Violent Crime',
-        [data.state_1]: data.violent_crime_rate_1,
-        [data.state_2]: data.violent_crime_rate_2,
-      },
-      {
-        category: 'Murder',
-        [data.state_1]: data.murder_rate_1,
-        [data.state_2]: data.murder_rate_2,
-      },
-      {
-        category: 'Rape',
-        [data.state_1]: data.rape_rate_1,
-        [data.state_2]: data.rape_rate_2,
-      },
-      {
-        category: 'Robbery',
-        [data.state_1]: data.robbery_rate_1,
-        [data.state_2]: data.robbery_rate_2,
-      },
-      {
-        category: 'Agg. Assault',
-        [data.state_1]: data.aggravated_assault_rate_1,
-        [data.state_2]: data.aggravated_assault_rate_2,
-      },
-      {
-        category: 'Property Crime',
-        [data.state_1]: data.property_crime_rate_1,
-        [data.state_2]: data.property_crime_rate_2,
+        category: data.crime_type.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase()),
+        [item1.label]: item1.per_capita_rate || 0,
+        [item2.label]: item2.per_capita_rate || 0,
       },
     ];
   }
 
-  function formatYearComparisonChart(data: YearComparison) {
+  function formatYearComparisonChart(data: ComparisonResponse) {
+    if (data.items.length < 2) return [];
+    const item1 = data.items[0];
+    const item2 = data.items[1];
+    const rate1 = item1.per_capita_rate || 0;
+    const rate2 = item2.per_capita_rate || 0;
+    const pctChange = rate1 !== 0 ? ((rate2 - rate1) / rate1) * 100 : 0;
     return [
       {
-        category: 'Violent Crime',
-        change: data.violent_crime_pct_change,
-      },
-      {
-        category: 'Murder',
-        change: data.murder_pct_change,
-      },
-      {
-        category: 'Rape',
-        change: data.rape_pct_change,
-      },
-      {
-        category: 'Robbery',
-        change: data.robbery_pct_change,
-      },
-      {
-        category: 'Agg. Assault',
-        change: data.aggravated_assault_pct_change,
-      },
-      {
-        category: 'Property Crime',
-        change: data.property_crime_pct_change,
+        category: data.crime_type.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase()),
+        change: pctChange,
       },
     ];
   }
@@ -225,26 +197,26 @@ export default function ComparePage() {
         </Card>
 
         {/* Comparison Results */}
-        {comparisonData && (
+        {comparisonData && comparisonData.items.length >= 2 && (
           <div className="space-y-6">
             {comparisonType === 'states' ? (
               <>
                 <Card>
                   <h2 className="text-2xl font-bold text-gray-900 mb-4">
-                    {comparisonData.state_1} vs {comparisonData.state_2} ({comparisonData.year})
+                    {comparisonData.items[0].label} vs {comparisonData.items[1].label} ({comparisonData.items[0].year})
                   </h2>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                     <div className="bg-primary-50 p-4 rounded-lg">
-                      <h3 className="font-semibold text-gray-900 mb-2">{comparisonData.state_1}</h3>
-                      <p className="text-sm text-gray-600">Population: {comparisonData.population_1.toLocaleString()}</p>
-                      <p className="text-sm text-gray-600">Violent Crimes: {comparisonData.violent_crime_1.toLocaleString()}</p>
-                      <p className="text-sm text-gray-600">Rate: {comparisonData.violent_crime_rate_1.toFixed(2)} per 100k</p>
+                      <h3 className="font-semibold text-gray-900 mb-2">{comparisonData.items[0].label}</h3>
+                      <p className="text-sm text-gray-600">Population: {comparisonData.items[0].population?.toLocaleString() || 'N/A'}</p>
+                      <p className="text-sm text-gray-600">Incidents: {comparisonData.items[0].incident_count?.toLocaleString() || 'N/A'}</p>
+                      <p className="text-sm text-gray-600">Rate: {comparisonData.items[0].per_capita_rate?.toFixed(2) || 'N/A'} per 100k</p>
                     </div>
                     <div className="bg-blue-50 p-4 rounded-lg">
-                      <h3 className="font-semibold text-gray-900 mb-2">{comparisonData.state_2}</h3>
-                      <p className="text-sm text-gray-600">Population: {comparisonData.population_2.toLocaleString()}</p>
-                      <p className="text-sm text-gray-600">Violent Crimes: {comparisonData.violent_crime_2.toLocaleString()}</p>
-                      <p className="text-sm text-gray-600">Rate: {comparisonData.violent_crime_rate_2.toFixed(2)} per 100k</p>
+                      <h3 className="font-semibold text-gray-900 mb-2">{comparisonData.items[1].label}</h3>
+                      <p className="text-sm text-gray-600">Population: {comparisonData.items[1].population?.toLocaleString() || 'N/A'}</p>
+                      <p className="text-sm text-gray-600">Incidents: {comparisonData.items[1].incident_count?.toLocaleString() || 'N/A'}</p>
+                      <p className="text-sm text-gray-600">Rate: {comparisonData.items[1].per_capita_rate?.toFixed(2) || 'N/A'} per 100k</p>
                     </div>
                   </div>
 
@@ -252,10 +224,10 @@ export default function ComparePage() {
                     data={formatStateComparisonChart(comparisonData)}
                     xKey="category"
                     bars={[
-                      { key: comparisonData.state_1, name: comparisonData.state_1, color: '#0ea5e9' },
-                      { key: comparisonData.state_2, name: comparisonData.state_2, color: '#3b82f6' },
+                      { key: comparisonData.items[0].label, name: comparisonData.items[0].label, color: '#0ea5e9' },
+                      { key: comparisonData.items[1].label, name: comparisonData.items[1].label, color: '#3b82f6' },
                     ]}
-                    title="Crime Rates per 100,000 People"
+                    title={`${comparisonData.crime_type.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase())} Rate per 100,000 People`}
                     height={400}
                   />
                 </Card>
@@ -264,7 +236,7 @@ export default function ComparePage() {
               <>
                 <Card>
                   <h2 className="text-2xl font-bold text-gray-900 mb-4">
-                    {comparisonData.state}: {comparisonData.year_1} vs {comparisonData.year_2}
+                    {comparisonData.items[0].state || 'All States'}: {comparisonData.items[0].label} vs {comparisonData.items[1].label}
                   </h2>
 
                   <ComparisonBarChart
@@ -277,28 +249,35 @@ export default function ComparePage() {
                         color: '#0ea5e9'
                       },
                     ]}
-                    title="Percentage Change in Crime Rates"
+                    title="Percentage Change in Crime Rate"
                     height={400}
                   />
 
                   <div className="mt-6 grid grid-cols-2 md:grid-cols-3 gap-4">
                     <div className="bg-gray-50 p-4 rounded-lg">
-                      <p className="text-xs text-gray-500 mb-1">Violent Crime</p>
-                      <p className={`text-lg font-bold ${comparisonData.violent_crime_pct_change > 0 ? 'text-red-600' : 'text-green-600'}`}>
-                        {comparisonData.violent_crime_pct_change > 0 ? '+' : ''}{comparisonData.violent_crime_pct_change.toFixed(2)}%
+                      <p className="text-xs text-gray-500 mb-1">{comparisonData.items[0].label}</p>
+                      <p className="text-lg font-bold text-gray-900">
+                        {comparisonData.items[0].per_capita_rate?.toFixed(2) || 'N/A'} per 100k
                       </p>
                     </div>
                     <div className="bg-gray-50 p-4 rounded-lg">
-                      <p className="text-xs text-gray-500 mb-1">Murder</p>
-                      <p className={`text-lg font-bold ${comparisonData.murder_pct_change > 0 ? 'text-red-600' : 'text-green-600'}`}>
-                        {comparisonData.murder_pct_change > 0 ? '+' : ''}{comparisonData.murder_pct_change.toFixed(2)}%
+                      <p className="text-xs text-gray-500 mb-1">{comparisonData.items[1].label}</p>
+                      <p className="text-lg font-bold text-gray-900">
+                        {comparisonData.items[1].per_capita_rate?.toFixed(2) || 'N/A'} per 100k
                       </p>
                     </div>
                     <div className="bg-gray-50 p-4 rounded-lg">
-                      <p className="text-xs text-gray-500 mb-1">Property Crime</p>
-                      <p className={`text-lg font-bold ${comparisonData.property_crime_pct_change > 0 ? 'text-red-600' : 'text-green-600'}`}>
-                        {comparisonData.property_crime_pct_change > 0 ? '+' : ''}{comparisonData.property_crime_pct_change.toFixed(2)}%
-                      </p>
+                      <p className="text-xs text-gray-500 mb-1">Change</p>
+                      {(() => {
+                        const rate1 = comparisonData.items[0].per_capita_rate || 0;
+                        const rate2 = comparisonData.items[1].per_capita_rate || 0;
+                        const pctChange = rate1 !== 0 ? ((rate2 - rate1) / rate1) * 100 : 0;
+                        return (
+                          <p className={`text-lg font-bold ${pctChange > 0 ? 'text-red-600' : 'text-green-600'}`}>
+                            {pctChange > 0 ? '+' : ''}{pctChange.toFixed(2)}%
+                          </p>
+                        );
+                      })()}
                     </div>
                   </div>
                 </Card>
