@@ -73,6 +73,31 @@ const systemicBarriers = [
   },
 ];
 
+// Founding Fathers quotes with verified sources
+const foundingFathersQuotes = [
+  {
+    name: 'George Washington',
+    title: 'Farewell Address, 1796',
+    quote: 'The alternate domination of one faction over another, sharpened by the spirit of revenge, natural to party dissension, which in different ages and countries has perpetrated the most horrid enormities, is itself a frightful despotism.',
+    source: 'Yale Avalon Project - Washington\'s Farewell Address',
+    sourceUrl: 'https://avalon.law.yale.edu/18th_century/washing.asp',
+  },
+  {
+    name: 'John Adams',
+    title: 'Letter to Jonathan Jackson, 1780',
+    quote: 'There is nothing which I dread so much as a division of the republic into two great parties, each arranged under its leader, and concerting measures in opposition to each other. This, in my humble apprehension, is to be dreaded as the greatest political evil under our Constitution.',
+    source: 'The Works of John Adams, Vol. 9',
+    sourceUrl: 'https://founders.archives.gov/',
+  },
+  {
+    name: 'Thomas Jefferson',
+    title: 'First Inaugural Address, 1801',
+    quote: 'Let us, then, fellow-citizens, unite with one heart and one mind. Let us restore to social intercourse that harmony and affection without which liberty and even life itself are but dreary things... We are all Republicans, we are all Federalists.',
+    source: 'Yale Avalon Project - Jefferson\'s First Inaugural',
+    sourceUrl: 'https://avalon.law.yale.edu/19th_century/jefinau1.asp',
+  },
+];
+
 export default function ElectionsPage() {
   const totalSignatures = ballotAccessExamples.reduce((sum, s) => sum + s.signatures, 0);
   
@@ -94,6 +119,48 @@ export default function ElectionsPage() {
               <span className="text-yellow-300">⚠️ Editorial Note:</span> This page departs from our usual "just the data" approach. 
               The structural barriers against third parties are so severe that presenting them without context 
               would be misleading. The data speaks for itself — the system is rigged.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* Founding Fathers Warning */}
+      <div className="bg-amber-50 border-y border-amber-200">
+        <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+          <div className="text-center mb-8">
+            <h2 className="text-2xl font-bold text-gray-900">The Founders Warned Us</h2>
+            <p className="text-gray-600 mt-2">
+              The men who built this nation foresaw the dangers of faction and party division.
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-3 gap-6">
+            {foundingFathersQuotes.map((founder, idx) => (
+              <div key={idx} className="bg-white rounded-xl shadow-sm p-6 border-l-4 border-amber-500">
+                <div className="mb-4">
+                  <h3 className="text-lg font-bold text-gray-900">{founder.name}</h3>
+                  <p className="text-sm text-amber-700">{founder.title}</p>
+                </div>
+                <blockquote className="text-gray-700 italic text-sm leading-relaxed mb-4">
+                  "{founder.quote}"
+                </blockquote>
+                <a 
+                  href={founder.sourceUrl} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-xs text-amber-600 hover:text-amber-800 underline"
+                >
+                  Source: {founder.source}
+                </a>
+              </div>
+            ))}
+          </div>
+          
+          <div className="mt-8 text-center">
+            <p className="text-gray-700 max-w-3xl mx-auto">
+              <strong>They predicted exactly where we are today.</strong> Washington warned of "frightful despotism" 
+              arising from party rivalry. Adams called two-party division "the greatest political evil." 
+              Jefferson pleaded for unity over faction. We didn't listen.
             </p>
           </div>
         </div>
