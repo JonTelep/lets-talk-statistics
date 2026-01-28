@@ -14,6 +14,7 @@ from app.services.population_service import PopulationService
 from app.services.budget_service import USASpendingService, BudgetServiceError
 from app.services.debt_service import TreasuryDebtService, DebtServiceError
 from app.services.employment_service import BLSEmploymentService, EmploymentServiceError
+from app.services.elections_service import FECElectionsService, ElectionsServiceError
 
 __all__ = [
     # Crime data services (existing)
@@ -34,4 +35,8 @@ __all__ = [
     # Employment data (BLS)
     "BLSEmploymentService",
     "EmploymentServiceError",
+    
+    # Election funding (FEC)
+    "FECElectionsService",
+    "ElectionsServiceError",
 ]

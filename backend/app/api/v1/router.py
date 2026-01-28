@@ -15,6 +15,7 @@ from app.api.v1.endpoints import (
     budget,
     debt,
     employment,
+    elections,
 )
 
 api_router = APIRouter()
@@ -84,4 +85,10 @@ api_router.include_router(
     employment.router,
     prefix="/employment",
     tags=["employment"]
+)
+
+api_router.include_router(
+    elections.router,
+    prefix="/elections",
+    tags=["elections"]
 )

@@ -13,6 +13,7 @@ from app.api.v1.endpoints import (
     budget,
     debt,
     employment,
+    elections,
 )
 
 __all__ = [
@@ -27,4 +28,5 @@ __all__ = [
     "budget",
     "debt",
     "employment",
+    "elections",
 ]

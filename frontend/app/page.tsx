@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { BarChart3, TrendingUp, Users, DollarSign, Briefcase, Building2, Scale, ArrowRight } from 'lucide-react';
+import { BarChart3, TrendingUp, Users, DollarSign, Briefcase, Building2, Scale, ArrowRight, Vote } from 'lucide-react';
 
 const categories = [
   {
@@ -49,6 +49,14 @@ const categories = [
     icon: Building2,
     color: 'from-red-500 to-rose-600',
     stats: 'Treasury Data • Real-time • Debt Holders',
+  },
+  {
+    name: 'Election Funding',
+    description: 'How the two-party system is rigged against third parties. The data speaks for itself.',
+    href: '/elections',
+    icon: Vote,
+    color: 'from-purple-600 to-indigo-700',
+    stats: 'FEC Data • Public Funding • Ballot Access',
   },
 ];
 
