@@ -4,96 +4,108 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-Let's Talk Statistics is a platform for exploring US crime statistics from government sources (FBI Crime Data Explorer, Census Bureau, Bureau of Justice Statistics). It consists of a FastAPI backend and Next.js frontend that present objective, per-capita crime data with filtering, comparison, and trend visualization.
+Let's Talk Statistics is a platform for exploring US government statistics (debt, employment, elections, population) from official sources. It presents data without spin - no opinions, no narratives, just data.
+
+**Simplified architecture**: 2 containers (FastAPI backend + Next.js frontend), file-based JSON caching, no database/Redis/Celery.
 
 ## Development Commands
 
-### Backend (FastAPI + Celery)
+### Containers (Recommended)
 
 ```bash
-cd backend
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Run development server
-python -m uvicorn app.main:app --reload
-
-# Run tests
-pytest                                    # All tests
-pytest -m unit                            # Unit tests only
-pytest -m integration                     # Integration tests only
-pytest tests/unit/test_statistics_calculator.py::TestStatisticsCalculator::test_calculate_per_capita_rate_success  # Single test
-pytest -k "per_capita"                    # Pattern matching
-pytest --cov=app --cov-report=html        # With coverage
-
-# Database migrations
-alembic revision --autogenerate -m "Description"
-alembic upgrade head
-alembic downgrade -1
+make build          # Build container images
+make up             # Start containers (detached)
+make dev            # Start containers with logs
+make down           # Stop containers
+make clean          # Stop containers and remove images
 ```
 
-### Frontend (Next.js)
+### Local Development
 
 ```bash
+# Backend
+cd backend
+pip install -r requirements.txt
+uvicorn app.main:app --reload    # http://localhost:8000
+
+# Frontend
 cd frontend
-
-# Install dependencies
 npm install
-
-# Run development server
-npm run dev
-
-# Build and run production
-npm run build
-npm start
-
-# Lint
+npm run dev                       # http://localhost:3000
 npm run lint
 ```
 
-### Docker (Full Stack)
+### Refresh Data Cache
 
 ```bash
-# Start all services (backend, frontend, redis, celery worker/beat)
-docker-compose up -d
-
-# View logs
-docker-compose logs -f backend
+podman exec lts_backend python scripts/refresh_data.py --all
+podman exec lts_backend python scripts/refresh_data.py --debt
 ```
 
 ## Architecture
 
-### Backend Structure
+```
+Frontend (Next.js:3000) → Backend (FastAPI:8000) → Government APIs
+                                    ↓
+                          File Cache (data/cache/*.json)
+```
 
-- **app/api/v1/endpoints/** - REST API endpoints organized by domain (statistics, trends, comparisons, rankings, analytics, exports, admin, tasks)
-- **app/services/** - Core business logic:
-  - `statistics_calculator.py` - Calculates per-capita rates (per 100k population), YoY changes, demographic breakdowns
-  - `population_service.py` - Manages population data for per-capita calculations
-  - `data_fetcher.py` - Retrieves data from external government sources
-  - `csv_processor.py` - Parses and processes FBI CSV data
-- **app/tasks/** - Celery tasks for scheduled data fetching and statistics calculation
-- **app/models/** - SQLAlchemy models (`crime_data.py`) and Pydantic schemas (`schemas.py`)
+### Backend (`backend/app/`)
 
-### Frontend Structure
+- **main.py** - FastAPI application setup
+- **config.py** - Settings via environment variables
+- **services/gov_data.py** - Unified `GovDataService` class that fetches and caches all government data:
+  - Treasury API (national debt)
+  - BLS API (unemployment)
+  - Census API (population)
+  - FEC API (elections/campaign finance)
+- **api/v1/endpoints/** - REST endpoints: `debt.py`, `employment.py`, `budget.py`, `elections.py`
 
-- **app/** - Next.js App Router pages (explore, compare, trends, about)
-- **components/** - React components organized by feature (charts, filters, data, ui, layout)
-- **lib/api/client.ts** - Axios API client configured for backend
-- **lib/hooks/** - Custom React hooks for data fetching (useStatistics, useTrends, useRankings)
-- **lib/types/api.ts** - TypeScript interfaces matching backend schemas
+### Frontend (`frontend/`)
+
+- **app/** - Next.js App Router pages
+- **components/** - React components (charts, filters, ui, layout)
+- **lib/api/client.ts** - API client for backend
+- **lib/hooks/** - Data fetching hooks
 
 ### Data Flow
 
-1. Raw crime data is fetched from government sources via `data_fetcher.py`
-2. CSV files are processed by `csv_processor.py` and stored in `CrimeStatistic` table
-3. `statistics_calculator.py` computes per-capita rates using population data and stores in `CalculatedStatistic` table
-4. Frontend queries the API endpoints which read from calculated statistics
+1. API request comes in (e.g., `/api/v1/debt/`)
+2. `GovDataService` checks file cache (`data/cache/<hash>.json`)
+3. If cache is fresh (default 24h TTL), return cached data
+4. If stale, fetch from government API, cache result, return
 
-## Key Technical Details
+## API Endpoints
 
-- Per-capita rates are calculated per 100,000 population (configurable via `per_capita_base` setting)
-- All async database operations use SQLAlchemy 2.0 async patterns
-- Tests use in-memory SQLite via `aiosqlite` for speed and isolation
-- Test markers: `@pytest.mark.unit`, `@pytest.mark.integration`, `@pytest.mark.e2e`, `@pytest.mark.slow`
-- API docs available at `/docs` (Swagger) and `/redoc` when backend is running
+```
+GET /api/v1/debt/                    # National debt history
+GET /api/v1/debt/latest              # Current debt
+GET /api/v1/employment/unemployment  # Unemployment history
+GET /api/v1/elections/candidates     # Campaign finance
+GET /api/v1/elections/population     # State populations
+GET /api/v1/budget/                  # Federal budget
+GET /api/v1/health                   # Health check
+```
+
+API docs: http://localhost:8000/docs
+
+## Configuration
+
+Environment variables in `backend/.env`:
+
+```bash
+# Optional API keys (higher rate limits)
+CENSUS_API_KEY=
+BLS_API_KEY=
+FEC_API_KEY=
+
+# Cache TTL
+CACHE_TTL_HOURS=24
+
+# CORS
+CORS_ORIGINS=["http://localhost:3000"]
+```
+
+## Legacy Code
+
+Some old files remain from the previous complex architecture (Celery tasks, SQLAlchemy models, database migrations) but are not used. The active codebase is ~300 lines of Python in `services/gov_data.py` plus simple endpoint wrappers.
