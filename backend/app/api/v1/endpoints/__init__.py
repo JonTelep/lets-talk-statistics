@@ -1,32 +1,5 @@
-"""API v1 Endpoints."""
+"""API v1 endpoints."""
 
-from app.api.v1.endpoints import (
-    statistics,
-    trends,
-    exports,
-    admin,
-    tasks,
-    comparisons,
-    rankings,
-    analytics,
-    # NEW: Government data endpoints
-    budget,
-    debt,
-    employment,
-    elections,
-)
+from app.api.v1.endpoints import debt, employment, budget, elections
 
-__all__ = [
-    "statistics",
-    "trends",
-    "exports",
-    "admin",
-    "tasks",
-    "comparisons",
-    "rankings",
-    "analytics",
-    "budget",
-    "debt",
-    "employment",
-    "elections",
-]
+__all__ = ["debt", "employment", "budget", "elections"]

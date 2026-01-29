@@ -1,59 +1,42 @@
-"""Main FastAPI application."""
+"""
+Let's Talk Statistics - API Server
+
+Simplified architecture:
+- FastAPI for REST endpoints
+- File-based JSON caching (no Redis/Postgres needed)
+- Direct government API calls with smart caching
+"""
 
 from contextlib import asynccontextmanager
-from datetime import datetime
 
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from app.api.v1.router import api_router
+from app.api.v1.router import router as api_router
 from app.config import get_settings
-from app.database import init_db, close_db
-from app.models.schemas import HealthCheckResponse
-from app.utils.logger import get_logger
+from app.services.gov_data import get_gov_data_service
 
 settings = get_settings()
-logger = get_logger(__name__)
 
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    """
-    Application lifespan context manager.
-    Handles startup and shutdown events.
-    """
-    # Startup
-    logger.info("Starting application...")
-    try:
-        await init_db()
-        logger.info("Database initialized successfully")
-    except Exception as e:
-        logger.error(f"Failed to initialize database: {str(e)}")
-        raise
-
+    """Application lifespan handler."""
+    # Startup: nothing special needed
     yield
-
-    # Shutdown
-    logger.info("Shutting down application...")
-    try:
-        await close_db()
-        logger.info("Database connections closed")
-    except Exception as e:
-        logger.error(f"Error closing database: {str(e)}")
+    # Shutdown: close HTTP client
+    service = get_gov_data_service()
+    await service.close()
 
 
-# Create FastAPI application
 app = FastAPI(
     title=settings.app_name,
-    version=settings.app_version,
-    description="Backend API for crime statistics data from US government sources",
+    description="Government statistics made accessible. Simple, transparent, non-partisan.",
+    version="2.0.0",
     lifespan=lifespan,
-    docs_url="/docs",
-    redoc_url="/redoc",
-    openapi_url="/openapi.json"
 )
 
-# Configure CORS
+# CORS middleware
 app.add_middleware(
     CORSMiddleware,
     allow_origins=settings.cors_origins,
@@ -62,43 +45,16 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# Include API router
-app.include_router(api_router, prefix=settings.api_v1_prefix)
+# Mount API router
+app.include_router(api_router, prefix="/api/v1")
 
 
-@app.get("/", tags=["root"])
+@app.get("/")
 async def root():
     """Root endpoint."""
     return {
-        "message": "Crime Statistics API",
-        "version": settings.app_version,
+        "name": settings.app_name,
+        "version": "2.0.0",
         "docs": "/docs",
-        "redoc": "/redoc"
+        "api": "/api/v1"
     }
-
-
-@app.get("/health", response_model=HealthCheckResponse, tags=["health"])
-async def health_check():
-    """
-    Health check endpoint.
-
-    Returns:
-        HealthCheckResponse: Health status information
-    """
-    return HealthCheckResponse(
-        status="healthy",
-        timestamp=datetime.utcnow(),
-        version=settings.app_version
-    )
-
-
-if __name__ == "__main__":
-    import uvicorn
-
-    uvicorn.run(
-        "app.main:app",
-        host=settings.host,
-        port=settings.port,
-        reload=settings.debug,
-        log_level=settings.log_level.lower()
-    )
