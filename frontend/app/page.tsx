@@ -1,15 +1,7 @@
 import Link from 'next/link';
-import { BarChart3, TrendingUp, Users, DollarSign, Briefcase, Building2, Scale, ArrowRight, Vote } from 'lucide-react';
+import { BarChart3, TrendingUp, Users, DollarSign, Briefcase, Building2, ArrowRight, Vote } from 'lucide-react';
 
 const categories = [
-  {
-    name: 'Crime Statistics',
-    description: 'FBI crime data by state, year, and demographics. Compare rates and analyze trends.',
-    href: '/crime',
-    icon: Scale,
-    color: 'from-slate-600 to-slate-800',
-    stats: '50 States • 10+ Years • Per Capita Rates',
-  },
   {
     name: 'Congressional Trading',
     description: 'Stock trades by members of Congress under STOCK Act disclosures.',
@@ -77,8 +69,8 @@ export default function Home() {
               Government data, clearly presented. No spin, no agenda — just the numbers.
             </p>
             <p className="text-primary-200 max-w-2xl mx-auto">
-              Explore crime rates, congressional trading, immigration, federal spending, 
-              employment, and national debt — all from official government sources.
+              Explore congressional trading, immigration, federal spending,
+              employment, national debt, and elections — all from official government sources.
             </p>
           </div>
         </div>
@@ -230,10 +222,10 @@ export default function Home() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
-              href="/crime"
+              href="/debt"
               className="inline-flex items-center justify-center rounded-md bg-white px-8 py-3 text-base font-medium text-primary-600 shadow-sm hover:bg-primary-50"
             >
-              Explore Crime Data
+              Explore National Debt
             </Link>
             <Link
               href="/about"

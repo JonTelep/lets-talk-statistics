@@ -2,20 +2,9 @@
 
 import { useState, useRef, useEffect } from 'react';
 import Link from 'next/link';
-import { Menu, X, BarChart3, ChevronDown, TrendingUp, Users, DollarSign, Briefcase, Building2, Scale } from 'lucide-react';
+import { Menu, X, BarChart3, ChevronDown, TrendingUp, Users, DollarSign, Briefcase, Building2 } from 'lucide-react';
 
 const categories = [
-  {
-    name: 'Crime Statistics',
-    href: '/crime',
-    icon: Scale,
-    description: 'FBI crime data by state and demographics',
-    subItems: [
-      { name: 'Explore', href: '/explore' },
-      { name: 'Compare', href: '/compare' },
-      { name: 'Trends', href: '/trends' },
-    ],
-  },
   {
     name: 'Congressional Trading',
     href: '/congress',
