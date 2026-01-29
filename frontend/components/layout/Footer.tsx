@@ -14,7 +14,7 @@ export default function Footer() {
               Let's Talk Statistics
             </h3>
             <p className="text-sm text-gray-400">
-              An objective platform for exploring US crime statistics from government sources.
+              An objective platform for exploring US government statistics.
               No opinions, just data.
             </p>
           </div>
@@ -69,8 +69,8 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/explore" className="hover:text-primary-400 transition-colors">
-                  Explore Data
+                <Link href="/debt" className="hover:text-primary-400 transition-colors">
+                  National Debt
                 </Link>
               </li>
               <li>

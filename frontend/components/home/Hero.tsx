@@ -11,15 +11,15 @@ export default function Hero() {
             <span className="block mt-2">STATISTICS</span>
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-xl text-primary-100">
-            Understanding Crime Data Through Government Sources
+            Understanding Government Data Through Official Sources
           </p>
           <p className="mx-auto mt-4 max-w-3xl text-lg text-primary-200">
-            No opinions. No narratives. Just objective data from the FBI, Bureau of Justice Statistics,
-            and US Census Bureau. Explore the numbers and draw your own conclusions.
+            No opinions. No narratives. Just objective data from the Treasury, BLS, Census Bureau,
+            and FEC. Explore the numbers and draw your own conclusions.
           </p>
           <div className="mt-10 flex justify-center gap-4">
             <Link
-              href="/explore"
+              href="/debt"
               className="inline-flex items-center rounded-md bg-white px-6 py-3 text-base font-medium text-primary-600 shadow-sm hover:bg-primary-50 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-primary-500 transition-colors"
             >
               Start Exploring
