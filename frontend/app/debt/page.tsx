@@ -1,30 +1,10 @@
-import { Building2, TrendingUp, DollarSign, Users, Clock, AlertTriangle, Calendar } from 'lucide-react';
+'use client';
+
+import { Building2, TrendingUp, DollarSign, Users, Clock, AlertTriangle, Calendar, RefreshCw } from 'lucide-react';
 import Link from 'next/link';
+import { useDebtHistory, calculateDebtStats, DebtDataPoint } from '@/services/hooks/useDebtData';
 
-// Note: In production, this would come from the API
-const mockStats = {
-  totalDebt: 36.22,        // trillions
-  debtPerCitizen: 108156,
-  debtPerTaxpayer: 176874,
-  gdpRatio: 123.4,
-  dailyIncrease: 6.85,     // billions
-  interestDaily: 3.1,      // billions
-  lastUpdated: 'January 26, 2026',
-};
-
-const historicalDebt = [
-  { year: '2026', debt: 36.22, gdpRatio: 123.4 },
-  { year: '2025', debt: 34.50, gdpRatio: 121.8 },
-  { year: '2024', debt: 33.10, gdpRatio: 120.5 },
-  { year: '2023', debt: 31.42, gdpRatio: 118.7 },
-  { year: '2022', debt: 30.93, gdpRatio: 120.2 },
-  { year: '2021', debt: 28.43, gdpRatio: 126.4 },
-  { year: '2020', debt: 26.95, gdpRatio: 128.1 },
-  { year: '2019', debt: 22.72, gdpRatio: 106.1 },
-  { year: '2010', debt: 13.56, gdpRatio: 91.2 },
-  { year: '2000', debt: 5.67, gdpRatio: 55.5 },
-];
-
+// Static data that doesn't come from the API (would need additional endpoints)
 const debtHolders = [
   { holder: 'Federal Reserve', amount: 5.02, percent: 13.9 },
   { holder: 'Foreign Governments', amount: 7.94, percent: 21.9 },
@@ -52,7 +32,47 @@ const milestones = [
   { amount: '$35 Trillion', year: '2024', daysTo: '730 days' },
 ];
 
+// Convert API data to yearly format for the table
+function aggregateByYear(data: DebtDataPoint[]): Array<{ year: string; debt: number; gdpRatio: number }> {
+  const yearlyData: Map<string, { total: number; count: number }> = new Map();
+  
+  // Group by year and average
+  data.forEach((point) => {
+    const year = point.date.substring(0, 4);
+    const existing = yearlyData.get(year) || { total: 0, count: 0 };
+    existing.total += point.total_debt;
+    existing.count += 1;
+    yearlyData.set(year, existing);
+  });
+  
+  // Convert to array and calculate averages
+  const result = Array.from(yearlyData.entries())
+    .map(([year, { total, count }]) => {
+      const avgDebt = total / count;
+      // Rough GDP estimate based on year (simplified)
+      const gdpEstimate = 28_000_000_000_000 * (1 + (parseInt(year) - 2024) * 0.025);
+      return {
+        year,
+        debt: avgDebt / 1_000_000_000_000, // Convert to trillions
+        gdpRatio: (avgDebt / gdpEstimate) * 100,
+      };
+    })
+    .sort((a, b) => parseInt(b.year) - parseInt(a.year))
+    .slice(0, 10);
+  
+  return result;
+}
+
 export default function DebtPage() {
+  // Fetch 3 years of data (1095 days)
+  const { data: debtData, loading, error, refetch } = useDebtHistory(1095);
+  
+  const stats = debtData ? calculateDebtStats(debtData.data) : null;
+  const historicalDebt = debtData ? aggregateByYear(debtData.data) : [];
+  
+  // Estimated daily interest (rough calculation based on average interest rate)
+  const interestDaily = stats ? (parseFloat(stats.totalDebtTrillions) * 0.03 / 365).toFixed(1) : '3.0';
+
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
@@ -72,21 +92,43 @@ export default function DebtPage() {
       {/* Live Counter Section */}
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 -mt-8">
         <div className="bg-white rounded-xl shadow-lg p-8 text-center">
-          <p className="text-sm text-gray-500 mb-2">U.S. National Debt</p>
-          <p className="text-5xl md:text-6xl font-bold text-red-600 font-mono">
-            ${mockStats.totalDebt.toFixed(2)} Trillion
-          </p>
-          <p className="text-sm text-gray-500 mt-2">As of {mockStats.lastUpdated}</p>
-          <div className="mt-4 flex justify-center gap-8 text-sm">
-            <div>
-              <span className="text-red-500 font-medium">+${mockStats.dailyIncrease}B</span>
-              <span className="text-gray-500"> per day</span>
+          {loading ? (
+            <div className="flex items-center justify-center py-8">
+              <RefreshCw className="h-8 w-8 animate-spin text-red-600" />
+              <span className="ml-3 text-gray-600">Loading live data from Treasury...</span>
             </div>
-            <div>
-              <span className="text-red-500 font-medium">${mockStats.interestDaily}B</span>
-              <span className="text-gray-500"> daily interest</span>
+          ) : error ? (
+            <div className="py-4">
+              <p className="text-red-600 mb-2">Failed to load live data</p>
+              <button 
+                onClick={refetch}
+                className="text-sm text-primary-600 hover:underline"
+              >
+                Try again
+              </button>
             </div>
-          </div>
+          ) : stats ? (
+            <>
+              <p className="text-sm text-gray-500 mb-2">U.S. National Debt</p>
+              <p className="text-5xl md:text-6xl font-bold text-red-600 font-mono">
+                ${stats.totalDebtTrillions} Trillion
+              </p>
+              <p className="text-sm text-gray-500 mt-2">As of {stats.lastUpdated}</p>
+              <div className="mt-4 flex justify-center gap-8 text-sm">
+                <div>
+                  <span className="text-red-500 font-medium">+${stats.dailyIncreaseBillions}B</span>
+                  <span className="text-gray-500"> per day (avg)</span>
+                </div>
+                <div>
+                  <span className="text-red-500 font-medium">${interestDaily}B</span>
+                  <span className="text-gray-500"> daily interest (est)</span>
+                </div>
+              </div>
+              <p className="text-xs text-green-600 mt-3">
+                ✓ Live data from U.S. Treasury Fiscal Data API
+              </p>
+            </>
+          ) : null}
         </div>
       </div>
 
@@ -97,6 +139,11 @@ export default function DebtPage() {
           <div className="text-sm text-amber-800">
             <strong>Data Source:</strong> U.S. Treasury Department - Bureau of the Fiscal Service. 
             "Total Public Debt Outstanding" includes both debt held by the public and intragovernmental holdings.
+            {debtData && (
+              <span className="ml-1 text-green-700">
+                Last fetched: {new Date(debtData.fetched_at).toLocaleString()}
+              </span>
+            )}
           </div>
         </div>
       </div>
@@ -109,7 +156,9 @@ export default function DebtPage() {
               <Users className="h-4 w-4" />
               Debt Per Citizen
             </div>
-            <p className="text-2xl font-bold text-red-600">${mockStats.debtPerCitizen.toLocaleString()}</p>
+            <p className="text-2xl font-bold text-red-600">
+              ${stats?.debtPerCitizen.toLocaleString() || '---'}
+            </p>
             <p className="text-xs text-gray-500">Every man, woman, child</p>
           </div>
           
@@ -118,7 +167,9 @@ export default function DebtPage() {
               <DollarSign className="h-4 w-4" />
               Debt Per Taxpayer
             </div>
-            <p className="text-2xl font-bold text-red-600">${mockStats.debtPerTaxpayer.toLocaleString()}</p>
+            <p className="text-2xl font-bold text-red-600">
+              ${stats?.debtPerTaxpayer.toLocaleString() || '---'}
+            </p>
             <p className="text-xs text-gray-500">Per tax-filing household</p>
           </div>
           
@@ -127,7 +178,9 @@ export default function DebtPage() {
               <TrendingUp className="h-4 w-4" />
               Debt-to-GDP Ratio
             </div>
-            <p className="text-2xl font-bold text-gray-900">{mockStats.gdpRatio}%</p>
+            <p className="text-2xl font-bold text-gray-900">
+              {stats?.gdpRatio || '---'}%
+            </p>
             <p className="text-xs text-gray-500">Debt exceeds annual GDP</p>
           </div>
           
@@ -165,22 +218,43 @@ export default function DebtPage() {
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-gray-200">
-                    {historicalDebt.map((row, idx) => {
-                      const prevDebt = historicalDebt[idx + 1]?.debt || row.debt;
-                      const growth = ((row.debt - prevDebt) / prevDebt * 100).toFixed(1);
-                      return (
-                        <tr key={idx} className="hover:bg-gray-50">
-                          <td className="px-6 py-4 text-sm font-medium text-gray-900">{row.year}</td>
-                          <td className="px-6 py-4 text-sm text-right font-medium text-red-600">${row.debt}T</td>
-                          <td className="px-6 py-4 text-sm text-right text-gray-500">{row.gdpRatio}%</td>
-                          <td className="px-6 py-4 text-sm text-right">
-                            {idx < historicalDebt.length - 1 && (
-                              <span className="text-red-600">+{growth}%</span>
-                            )}
-                          </td>
-                        </tr>
-                      );
-                    })}
+                    {loading ? (
+                      <tr>
+                        <td colSpan={4} className="px-6 py-8 text-center text-gray-500">
+                          <RefreshCw className="h-5 w-5 animate-spin inline mr-2" />
+                          Loading historical data...
+                        </td>
+                      </tr>
+                    ) : historicalDebt.length > 0 ? (
+                      historicalDebt.map((row, idx) => {
+                        const prevDebt = historicalDebt[idx + 1]?.debt || row.debt;
+                        const growth = ((row.debt - prevDebt) / prevDebt * 100).toFixed(1);
+                        return (
+                          <tr key={idx} className="hover:bg-gray-50">
+                            <td className="px-6 py-4 text-sm font-medium text-gray-900">{row.year}</td>
+                            <td className="px-6 py-4 text-sm text-right font-medium text-red-600">
+                              ${row.debt.toFixed(2)}T
+                            </td>
+                            <td className="px-6 py-4 text-sm text-right text-gray-500">
+                              {row.gdpRatio.toFixed(1)}%
+                            </td>
+                            <td className="px-6 py-4 text-sm text-right">
+                              {idx < historicalDebt.length - 1 && parseFloat(growth) !== 0 && (
+                                <span className={parseFloat(growth) > 0 ? 'text-red-600' : 'text-green-600'}>
+                                  {parseFloat(growth) > 0 ? '+' : ''}{growth}%
+                                </span>
+                              )}
+                            </td>
+                          </tr>
+                        );
+                      })
+                    ) : (
+                      <tr>
+                        <td colSpan={4} className="px-6 py-8 text-center text-gray-500">
+                          No data available
+                        </td>
+                      </tr>
+                    )}
                   </tbody>
                 </table>
               </div>
@@ -258,10 +332,10 @@ export default function DebtPage() {
             <div className="mt-6 bg-white rounded-xl shadow-sm p-6">
               <h3 className="text-lg font-semibold text-gray-900 mb-3">Data Sources</h3>
               <ul className="text-sm text-gray-600 space-y-2">
+                <li>• <a href="https://fiscaldata.treasury.gov/" target="_blank" rel="noopener noreferrer" className="text-primary-600 hover:underline">Treasury Fiscal Data API</a> (Live)</li>
                 <li>• TreasuryDirect.gov</li>
                 <li>• Bureau of the Fiscal Service</li>
                 <li>• Treasury International Capital (TIC)</li>
-                <li>• Federal Reserve Economic Data</li>
               </ul>
             </div>
           </div>
