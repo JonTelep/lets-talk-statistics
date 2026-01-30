@@ -9,8 +9,10 @@ from datetime import datetime
 from typing import Optional
 from collections import defaultdict
 
-from app.core.config import settings
-from app.core.logging import get_logger
+from app.config import get_settings
+from app.utils.logger import get_logger
+
+settings = get_settings()
 
 logger = get_logger(__name__)
 
