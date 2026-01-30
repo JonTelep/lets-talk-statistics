@@ -3,6 +3,9 @@
 import { Vote, AlertTriangle, DollarSign, Users, Tv, FileText, TrendingUp, Scale, XCircle, CheckCircle, RefreshCw } from 'lucide-react';
 import Link from 'next/link';
 import { useCandidates, formatCurrency, getPartyColor } from '@/services/hooks/useElectionsData';
+import { DownloadRawData } from '@/components/ui/DownloadRawData';
+
+const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
 
 // Data based on FEC, CPD, and state election board records
 const fundingComparison = {
@@ -415,19 +418,31 @@ export default function ElectionsPage() {
 
       {/* Data Sources */}
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
-        <div className="bg-white rounded-xl shadow-sm p-6">
-          <h3 className="text-lg font-semibold text-gray-900 mb-4">Data Sources</h3>
-          <ul className="text-sm text-gray-600 space-y-2">
-            <li>• <a href="https://www.fec.gov/" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:underline">Federal Election Commission (FEC)</a> - Campaign finance data (Live API)</li>
-            <li>• <strong>Commission on Presidential Debates</strong> - Debate qualification criteria</li>
-            <li>• <strong>State Election Boards</strong> - Ballot access requirements</li>
-            <li>• <strong>Ballot Access News</strong> - Signature requirements and deadlines</li>
-          </ul>
-          {candidatesData && (
-            <p className="mt-4 text-xs text-green-600">
-              ✓ Campaign finance data fetched: {new Date(candidatesData.fetched_at).toLocaleString()}
-            </p>
-          )}
+        <div className="grid lg:grid-cols-2 gap-6">
+          <div className="bg-white rounded-xl shadow-sm p-6">
+            <h3 className="text-lg font-semibold text-gray-900 mb-4">Data Sources</h3>
+            <ul className="text-sm text-gray-600 space-y-2">
+              <li>• <a href="https://www.fec.gov/" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:underline">Federal Election Commission (FEC)</a> - Campaign finance data (Live API)</li>
+              <li>• <strong>Commission on Presidential Debates</strong> - Debate qualification criteria</li>
+              <li>• <strong>State Election Boards</strong> - Ballot access requirements</li>
+              <li>• <strong>Ballot Access News</strong> - Signature requirements and deadlines</li>
+            </ul>
+            {candidatesData && (
+              <p className="mt-4 text-xs text-green-600">
+                ✓ Campaign finance data fetched: {new Date(candidatesData.fetched_at).toLocaleString()}
+              </p>
+            )}
+          </div>
+          
+          <DownloadRawData
+            endpoints={[
+              {
+                label: 'Campaign Finance Data',
+                url: `${API_URL}/api/v1/elections/candidates`,
+                filename: 'election_candidates.json'
+              }
+            ]}
+          />
         </div>
       </div>
     </div>

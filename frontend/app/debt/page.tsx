@@ -3,6 +3,9 @@
 import { Building2, TrendingUp, DollarSign, Users, Clock, AlertTriangle, Calendar, RefreshCw } from 'lucide-react';
 import Link from 'next/link';
 import { useDebtHistory, calculateDebtStats, DebtDataPoint } from '@/services/hooks/useDebtData';
+import { DownloadRawData } from '@/components/ui/DownloadRawData';
+
+const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
 
 // Static data that doesn't come from the API (would need additional endpoints)
 const debtHolders = [
@@ -337,6 +340,24 @@ export default function DebtPage() {
                 <li>• Bureau of the Fiscal Service</li>
                 <li>• Treasury International Capital (TIC)</li>
               </ul>
+            </div>
+
+            {/* Download Raw Data */}
+            <div className="mt-6">
+              <DownloadRawData
+                endpoints={[
+                  {
+                    label: 'Debt History (3 years)',
+                    url: `${API_URL}/api/v1/debt/?days=1095`,
+                    filename: 'debt_history.json'
+                  },
+                  {
+                    label: 'Latest Debt Figure',
+                    url: `${API_URL}/api/v1/debt/latest`,
+                    filename: 'debt_latest.json'
+                  }
+                ]}
+              />
             </div>
           </div>
         </div>

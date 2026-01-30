@@ -1,5 +1,10 @@
+'use client';
+
 import { TrendingUp, TrendingDown, Users, Calendar, DollarSign, AlertTriangle } from 'lucide-react';
 import Link from 'next/link';
+import { DownloadRawData } from '@/components/ui/DownloadRawData';
+
+const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
 
 // Note: In production, this would come from the API
 const mockStats = {
@@ -193,6 +198,34 @@ export default function CongressPage() {
                 <li>• House Financial Disclosures (disclosures-clerk.house.gov)</li>
                 <li>• STOCK Act of 2012 Required Disclosures</li>
               </ul>
+            </div>
+
+            {/* Download Raw Data */}
+            <div className="mt-6">
+              <DownloadRawData
+                endpoints={[
+                  {
+                    label: 'Trading Statistics',
+                    url: `${API_URL}/api/v1/congress/stats`,
+                    filename: 'congress_stats.json'
+                  },
+                  {
+                    label: 'Recent Trades',
+                    url: `${API_URL}/api/v1/congress/trades/recent?limit=50`,
+                    filename: 'congress_recent_trades.json'
+                  },
+                  {
+                    label: 'All Trades',
+                    url: `${API_URL}/api/v1/congress/trades?limit=200`,
+                    filename: 'congress_all_trades.json'
+                  },
+                  {
+                    label: 'Top Traders',
+                    url: `${API_URL}/api/v1/congress/traders`,
+                    filename: 'congress_traders.json'
+                  }
+                ]}
+              />
             </div>
           </div>
         </div>

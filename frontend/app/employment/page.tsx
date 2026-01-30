@@ -8,6 +8,9 @@ import {
   formatMonthlyData,
   formatPeriod 
 } from '@/services/hooks/useEmploymentData';
+import { DownloadRawData } from '@/components/ui/DownloadRawData';
+
+const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
 
 // Static data that doesn't come from the unemployment API
 // (would need additional BLS series for these)
@@ -313,6 +316,24 @@ export default function EmploymentPage() {
                 <li>• BLS Local Area Unemployment Statistics</li>
                 <li>• Series: LNS14000000</li>
               </ul>
+            </div>
+
+            {/* Download Raw Data */}
+            <div className="mt-6">
+              <DownloadRawData
+                endpoints={[
+                  {
+                    label: 'Unemployment History (2 years)',
+                    url: `${API_URL}/api/v1/employment/unemployment?years=2`,
+                    filename: 'unemployment_history.json'
+                  },
+                  {
+                    label: 'Latest Unemployment Rate',
+                    url: `${API_URL}/api/v1/employment/unemployment/latest`,
+                    filename: 'unemployment_latest.json'
+                  }
+                ]}
+              />
             </div>
           </div>
         </div>

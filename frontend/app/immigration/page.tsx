@@ -8,6 +8,9 @@ import {
   useImmigrationCategories,
   useImmigrationCountries,
 } from '@/services/hooks/useImmigrationData';
+import { DownloadRawData } from '@/components/ui/DownloadRawData';
+
+const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
 
 export default function ImmigrationPage() {
   // Fetch all immigration data
@@ -375,6 +378,34 @@ export default function ImmigrationPage() {
                 <li>• USCIS Immigration Data</li>
               </ul>
               <p className="mt-3 text-xs text-green-600">✓ Data fetched from live API</p>
+            </div>
+
+            {/* Download Raw Data */}
+            <div className="mt-6">
+              <DownloadRawData
+                endpoints={[
+                  {
+                    label: 'Immigration Summary',
+                    url: `${API_URL}/api/v1/immigration/summary`,
+                    filename: 'immigration_summary.json'
+                  },
+                  {
+                    label: 'Historical Data',
+                    url: `${API_URL}/api/v1/immigration/historical`,
+                    filename: 'immigration_historical.json'
+                  },
+                  {
+                    label: 'By Category',
+                    url: `${API_URL}/api/v1/immigration/categories`,
+                    filename: 'immigration_categories.json'
+                  },
+                  {
+                    label: 'Top Countries',
+                    url: `${API_URL}/api/v1/immigration/countries`,
+                    filename: 'immigration_countries.json'
+                  }
+                ]}
+              />
             </div>
           </div>
         </div>

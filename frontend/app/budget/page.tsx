@@ -3,6 +3,9 @@
 import { DollarSign, TrendingUp, TrendingDown, PieChart, AlertTriangle, Calendar, Building2, RefreshCw } from 'lucide-react';
 import Link from 'next/link';
 import { useBudgetSummary, formatBudgetNumber } from '@/services/hooks/useBudgetData';
+import { DownloadRawData } from '@/components/ui/DownloadRawData';
+
+const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
 
 // Static data for categories (Treasury MTS data structure is complex, these are representative)
 const spendingCategories = [
@@ -315,6 +318,19 @@ export default function BudgetPage() {
               {budgetData && (
                 <p className="mt-3 text-xs text-green-600">✓ Live data from Treasury API</p>
               )}
+            </div>
+
+            {/* Download Raw Data */}
+            <div className="mt-6">
+              <DownloadRawData
+                endpoints={[
+                  {
+                    label: 'Budget Summary (Current FY)',
+                    url: `${API_URL}/api/v1/budget/`,
+                    filename: 'budget_summary.json'
+                  }
+                ]}
+              />
             </div>
           </div>
         </div>
