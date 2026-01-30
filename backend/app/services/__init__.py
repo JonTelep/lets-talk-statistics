@@ -6,6 +6,7 @@ from app.services.immigration_service import (
     get_immigration_service, 
     ImmigrationServiceError
 )
+from app.services import congress_service
 
 __all__ = [
     "GovDataService", 
@@ -14,4 +15,5 @@ __all__ = [
     "ImmigrationService",
     "get_immigration_service",
     "ImmigrationServiceError",
+    "congress_service",
 ]
