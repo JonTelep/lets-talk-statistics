@@ -1,8 +1,13 @@
 'use client';
 
+
 import { useState, useEffect } from 'react';
 import { TrendingUp, TrendingDown, Users, Calendar, DollarSign, AlertTriangle, ExternalLink, Loader2 } from 'lucide-react';
+
 import Link from 'next/link';
+import { DownloadRawData } from '@/components/ui/DownloadRawData';
+
+const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
 
 const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
 
@@ -327,6 +332,34 @@ export default function CongressPage() {
               <p className="text-xs text-gray-500 mt-4">
                 Data updated from STOCK Act of 2012 required disclosures.
               </p>
+            </div>
+
+            {/* Download Raw Data */}
+            <div className="mt-6">
+              <DownloadRawData
+                endpoints={[
+                  {
+                    label: 'Trading Statistics',
+                    url: `${API_URL}/api/v1/congress/stats`,
+                    filename: 'congress_stats.json'
+                  },
+                  {
+                    label: 'Recent Trades',
+                    url: `${API_URL}/api/v1/congress/trades/recent?limit=50`,
+                    filename: 'congress_recent_trades.json'
+                  },
+                  {
+                    label: 'All Trades',
+                    url: `${API_URL}/api/v1/congress/trades?limit=200`,
+                    filename: 'congress_all_trades.json'
+                  },
+                  {
+                    label: 'Top Traders',
+                    url: `${API_URL}/api/v1/congress/traders`,
+                    filename: 'congress_traders.json'
+                  }
+                ]}
+              />
             </div>
           </div>
         </div>
