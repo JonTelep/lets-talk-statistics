@@ -9,8 +9,6 @@ import { DownloadRawData } from '@/components/ui/DownloadRawData';
 
 const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
-
 interface CongressStats {
   total_trades: number;
   total_volume: string;
