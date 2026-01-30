@@ -14,6 +14,10 @@ class Settings(BaseSettings):
     app_name: str = "Let's Talk Statistics"
     debug: bool = False
     
+    # Logging
+    log_level: str = "INFO"
+    log_format: str = "standard"  # "standard" or "json"
+    
     # API Keys (optional - many gov APIs are open)
     census_api_key: Optional[str] = None
     bls_api_key: Optional[str] = None
