@@ -2,7 +2,7 @@
 
 from fastapi import APIRouter
 
-from app.api.v1.endpoints import debt, employment, budget, elections, immigration
+from app.api.v1.endpoints import debt, employment, budget, elections, immigration, congress
 
 router = APIRouter()
 
@@ -13,6 +13,7 @@ router.include_router(employment.router)
 router.include_router(budget.router)
 router.include_router(elections.router)
 router.include_router(immigration.router)
+router.include_router(congress.router)
 
 
 @router.get("/health")
