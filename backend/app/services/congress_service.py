@@ -16,7 +16,7 @@ settings = get_settings()
 
 logger = get_logger(__name__)
 
-# Path to capitol-trades data file
+# Path to capitol-trades data file (unified format)
 CAPITOL_TRADES_DATA = Path("/root/Projects/capitol-trades/data/all_transactions.json")
 
 
@@ -36,6 +36,8 @@ def _load_transactions() -> dict:
 
 def _normalize_transaction_type(tx_type: str) -> str:
     """Normalize transaction type to Buy/Sell"""
+    if not tx_type:
+        return "Unknown"
     tx_lower = tx_type.lower()
     if "purchase" in tx_lower or "buy" in tx_lower:
         return "Buy"
@@ -43,11 +45,13 @@ def _normalize_transaction_type(tx_type: str) -> str:
         return "Sell"
     elif "exchange" in tx_lower:
         return "Exchange"
-    return tx_type
+    return tx_type.title()
 
 
 def _parse_amount_range(amount_text: str) -> tuple[int, int]:
     """Parse amount range like '$1,001 - $15,000' into min/max values"""
+    if not amount_text:
+        return 0, 0
     try:
         # Remove $ and commas, split by -
         cleaned = amount_text.replace("$", "").replace(",", "")
@@ -68,9 +72,12 @@ def get_congress_stats() -> dict:
     # Calculate volume estimate (midpoint of ranges)
     total_volume = 0
     for tx in transactions:
-        amount_text = tx.get("transaction", {}).get("amount_text", "")
-        min_amt, max_amt = _parse_amount_range(amount_text)
-        total_volume += (min_amt + max_amt) // 2
+        # Handle both direct amount_min/max and amount_text
+        if tx.get("amount_min") and tx.get("amount_max"):
+            total_volume += (tx["amount_min"] + tx["amount_max"]) // 2
+        else:
+            min_amt, max_amt = _parse_amount_range(tx.get("amount_text", ""))
+            total_volume += (min_amt + max_amt) // 2
     
     # Format volume
     if total_volume >= 1_000_000_000:
@@ -80,6 +87,11 @@ def get_congress_stats() -> dict:
     else:
         volume_str = f"${total_volume:,}"
     
+    # Get by_politician from metadata or calculate
+    by_politician = metadata.get("top_traders", {})
+    if not by_politician:
+        by_politician = metadata.get("by_politician", {})
+    
     return {
         "total_trades": metadata.get("total_transactions", len(transactions)),
         "total_volume": volume_str,
@@ -87,7 +99,8 @@ def get_congress_stats() -> dict:
         "date_range": metadata.get("date_range", {}),
         "last_updated": metadata.get("generated_at", ""),
         "by_type": metadata.get("by_type", {}),
-        "by_politician": metadata.get("by_politician", {})
+        "by_chamber": metadata.get("by_chamber", {}),
+        "by_politician": by_politician
     }
 
 
@@ -98,25 +111,19 @@ def get_recent_trades(limit: int = 10) -> list[dict]:
     
     recent = []
     for tx in transactions[:limit]:
-        politician = tx.get("politician", {})
-        transaction = tx.get("transaction", {})
-        
-        # Format name
-        first_name = politician.get("first_name", "")
-        last_name = politician.get("last_name", "")
-        full_name = f"{first_name} {last_name}".strip()
-        
+        # Handle unified flat format
         recent.append({
-            "politician": full_name,
-            "party": "",  # Not in current data, would need to add
-            "chamber": politician.get("chamber", "Senate"),
-            "ticker": transaction.get("ticker", "N/A"),
-            "asset_name": transaction.get("asset_name", ""),
-            "type": _normalize_transaction_type(transaction.get("type", "")),
-            "amount": transaction.get("amount_text", ""),
-            "date": transaction.get("date", ""),
-            "disclosure_date": transaction.get("disclosure_date", ""),
-            "filing_url": tx.get("filing", {}).get("url", "")
+            "politician": tx.get("politician_name", "Unknown"),
+            "party": tx.get("party", ""),
+            "chamber": tx.get("chamber", "").title() if tx.get("chamber") else "Unknown",
+            "state": tx.get("state", ""),
+            "ticker": tx.get("ticker", "N/A") or "N/A",
+            "asset_name": tx.get("asset_name", ""),
+            "type": _normalize_transaction_type(tx.get("transaction_type", "")),
+            "amount": tx.get("amount_text", ""),
+            "date": tx.get("transaction_date", ""),
+            "disclosure_date": tx.get("disclosure_date", ""),
+            "filing_url": tx.get("filing_url", "")
         })
     
     return recent
@@ -126,13 +133,36 @@ def get_top_traders(limit: int = 10) -> list[dict]:
     """Get politicians with most trades"""
     data = _load_transactions()
     metadata = data.get("metadata", {})
-    by_politician = metadata.get("by_politician", {})
+    transactions = data.get("transactions", [])
     
-    # Sort by trade count
-    sorted_traders = sorted(by_politician.items(), key=lambda x: x[1], reverse=True)
+    # Get from top_traders or calculate
+    top_traders = metadata.get("top_traders", {})
     
+    if not top_traders:
+        # Calculate from transactions
+        trader_counts = defaultdict(lambda: {"count": 0, "chamber": ""})
+        for tx in transactions:
+            name = tx.get("politician_name", "Unknown")
+            trader_counts[name]["count"] += 1
+            if not trader_counts[name]["chamber"]:
+                trader_counts[name]["chamber"] = tx.get("chamber", "").title()
+        
+        sorted_traders = sorted(trader_counts.items(), key=lambda x: x[1]["count"], reverse=True)
+        return [
+            {"name": name, "trades": data["count"], "chamber": data["chamber"]}
+            for name, data in sorted_traders[:limit]
+        ]
+    
+    # Build chamber lookup from transactions
+    chamber_lookup = {}
+    for tx in transactions:
+        name = tx.get("politician_name", "")
+        if name and name not in chamber_lookup:
+            chamber_lookup[name] = tx.get("chamber", "").title()
+    
+    sorted_traders = sorted(top_traders.items(), key=lambda x: x[1], reverse=True)
     return [
-        {"name": name, "trades": count, "chamber": "Senate"}
+        {"name": name, "trades": count, "chamber": chamber_lookup.get(name, "")}
         for name, count in sorted_traders[:limit]
     ]
 
@@ -144,20 +174,15 @@ def get_trades_by_ticker(ticker: str) -> list[dict]:
     
     results = []
     for tx in transactions:
-        if tx.get("transaction", {}).get("ticker", "").upper() == ticker.upper():
-            politician = tx.get("politician", {})
-            transaction = tx.get("transaction", {})
-            
-            first_name = politician.get("first_name", "")
-            last_name = politician.get("last_name", "")
-            
+        if tx.get("ticker", "").upper() == ticker.upper():
             results.append({
-                "politician": f"{first_name} {last_name}".strip(),
-                "chamber": politician.get("chamber", ""),
-                "type": _normalize_transaction_type(transaction.get("type", "")),
-                "amount": transaction.get("amount_text", ""),
-                "date": transaction.get("date", ""),
-                "disclosure_date": transaction.get("disclosure_date", "")
+                "politician": tx.get("politician_name", "Unknown"),
+                "chamber": tx.get("chamber", "").title() if tx.get("chamber") else "",
+                "state": tx.get("state", ""),
+                "type": _normalize_transaction_type(tx.get("transaction_type", "")),
+                "amount": tx.get("amount_text", ""),
+                "date": tx.get("transaction_date", ""),
+                "disclosure_date": tx.get("disclosure_date", "")
             })
     
     return results
@@ -168,7 +193,8 @@ def get_all_transactions(
     offset: int = 0,
     politician: Optional[str] = None,
     ticker: Optional[str] = None,
-    tx_type: Optional[str] = None
+    tx_type: Optional[str] = None,
+    chamber: Optional[str] = None
 ) -> dict:
     """Get paginated transactions with optional filters"""
     data = _load_transactions()
@@ -181,21 +207,28 @@ def get_all_transactions(
         politician_lower = politician.lower()
         filtered = [
             tx for tx in filtered
-            if politician_lower in f"{tx.get('politician', {}).get('first_name', '')} {tx.get('politician', {}).get('last_name', '')}".lower()
+            if politician_lower in tx.get("politician_name", "").lower()
         ]
     
     if ticker:
         ticker_upper = ticker.upper()
         filtered = [
             tx for tx in filtered
-            if tx.get("transaction", {}).get("ticker", "").upper() == ticker_upper
+            if tx.get("ticker", "").upper() == ticker_upper
         ]
     
     if tx_type:
         tx_type_normalized = _normalize_transaction_type(tx_type)
         filtered = [
             tx for tx in filtered
-            if _normalize_transaction_type(tx.get("transaction", {}).get("type", "")) == tx_type_normalized
+            if _normalize_transaction_type(tx.get("transaction_type", "")) == tx_type_normalized
+        ]
+    
+    if chamber:
+        chamber_lower = chamber.lower()
+        filtered = [
+            tx for tx in filtered
+            if tx.get("chamber", "").lower() == chamber_lower
         ]
     
     # Get page
@@ -205,22 +238,18 @@ def get_all_transactions(
     # Transform for response
     results = []
     for tx in page:
-        politician_data = tx.get("politician", {})
-        transaction = tx.get("transaction", {})
-        
-        first_name = politician_data.get("first_name", "")
-        last_name = politician_data.get("last_name", "")
-        
         results.append({
-            "politician": f"{first_name} {last_name}".strip(),
-            "chamber": politician_data.get("chamber", ""),
-            "ticker": transaction.get("ticker", "N/A"),
-            "asset_name": transaction.get("asset_name", ""),
-            "type": _normalize_transaction_type(transaction.get("type", "")),
-            "amount": transaction.get("amount_text", ""),
-            "date": transaction.get("date", ""),
-            "disclosure_date": transaction.get("disclosure_date", ""),
-            "filing_url": tx.get("filing", {}).get("url", "")
+            "politician": tx.get("politician_name", "Unknown"),
+            "chamber": tx.get("chamber", "").title() if tx.get("chamber") else "",
+            "state": tx.get("state", ""),
+            "party": tx.get("party", ""),
+            "ticker": tx.get("ticker", "N/A") or "N/A",
+            "asset_name": tx.get("asset_name", ""),
+            "type": _normalize_transaction_type(tx.get("transaction_type", "")),
+            "amount": tx.get("amount_text", ""),
+            "date": tx.get("transaction_date", ""),
+            "disclosure_date": tx.get("disclosure_date", ""),
+            "filing_url": tx.get("filing_url", "")
         })
     
     return {
@@ -239,12 +268,11 @@ def get_popular_tickers(limit: int = 10) -> list[dict]:
     ticker_counts = defaultdict(lambda: {"count": 0, "name": ""})
     
     for tx in transactions:
-        transaction = tx.get("transaction", {})
-        ticker = transaction.get("ticker", "")
+        ticker = tx.get("ticker", "")
         if ticker and ticker != "N/A":
             ticker_counts[ticker]["count"] += 1
             if not ticker_counts[ticker]["name"]:
-                ticker_counts[ticker]["name"] = transaction.get("asset_name", "")
+                ticker_counts[ticker]["name"] = tx.get("asset_name", "")
     
     sorted_tickers = sorted(ticker_counts.items(), key=lambda x: x[1]["count"], reverse=True)
     
