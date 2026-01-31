@@ -4,6 +4,7 @@ import { Vote, AlertTriangle, DollarSign, Users, Tv, FileText, TrendingUp, Scale
 import Link from 'next/link';
 import { useCandidates, formatCurrency, getPartyColor } from '@/services/hooks/useElectionsData';
 import { DownloadRawData } from '@/components/ui/DownloadRawData';
+import { Skeleton } from '@/components/ui/Skeleton';
 
 const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
 
@@ -151,19 +152,20 @@ export default function ElectionsPage() {
           {candidatesError ? (
             <div className="bg-red-50 border border-red-200 rounded-lg p-4">
               <p className="text-red-700">Failed to load FEC data</p>
-              <button onClick={refetch} className="text-sm text-red-600 hover:underline mt-1">
+              <button onClick={refetch} className="text-sm text-red-600 hover:underline mt-1 flex items-center gap-2">
+                <RefreshCw className="h-4 w-4" />
                 Try again
               </button>
             </div>
           ) : candidatesLoading ? (
             <div className="space-y-3">
               {[1, 2, 3, 4, 5].map((i) => (
-                <div key={i} className="animate-pulse flex items-center justify-between py-3 border-b">
+                <div key={i} className="flex items-center justify-between py-3 border-b">
                   <div className="flex items-center gap-3">
-                    <div className="h-6 w-12 bg-gray-200 rounded"></div>
-                    <div className="h-4 w-40 bg-gray-200 rounded"></div>
+                    <Skeleton className="h-6 w-12" />
+                    <Skeleton className="h-4 w-40" />
                   </div>
-                  <div className="h-4 w-20 bg-gray-200 rounded"></div>
+                  <Skeleton className="h-4 w-20" />
                 </div>
               ))}
             </div>

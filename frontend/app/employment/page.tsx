@@ -1,14 +1,14 @@
 'use client';
 
-import { Briefcase, TrendingUp, TrendingDown, Users, Building2, AlertTriangle, MapPin, RefreshCw, Minus } from 'lucide-react';
+import { Briefcase, TrendingUp, TrendingDown, Users, Building2, AlertTriangle, RefreshCw, Minus } from 'lucide-react';
 import Link from 'next/link';
 import { 
   useUnemploymentHistory, 
   calculateEmploymentStats, 
   formatMonthlyData,
-  formatPeriod 
 } from '@/services/hooks/useEmploymentData';
 import { DownloadRawData } from '@/components/ui/DownloadRawData';
+import { Skeleton, StatCardSkeleton } from '@/components/ui/Skeleton';
 
 const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
 
@@ -49,6 +49,17 @@ function TrendIcon({ direction }: { direction: string }) {
   if (direction === 'up') return <TrendingUp className="h-4 w-4 text-red-500" />;
   if (direction === 'down') return <TrendingDown className="h-4 w-4 text-green-500" />;
   return <Minus className="h-4 w-4 text-gray-400" />;
+}
+
+// Table row skeleton
+function TableRowSkeleton() {
+  return (
+    <tr>
+      <td className="px-6 py-4"><Skeleton className="h-4 w-20" /></td>
+      <td className="px-6 py-4 text-right"><Skeleton className="h-4 w-12 ml-auto" /></td>
+      <td className="px-6 py-4 text-right"><Skeleton className="h-4 w-12 ml-auto" /></td>
+    </tr>
+  );
 }
 
 export default function EmploymentPage() {
@@ -94,68 +105,73 @@ export default function EmploymentPage() {
       {/* Key Stats */}
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
-          {/* Unemployment Rate - LIVE */}
-          <div className="bg-white rounded-xl shadow-sm p-6">
-            <div className="flex items-center gap-2 text-gray-500 text-sm mb-1">
-              <Users className="h-4 w-4" />
-              Unemployment Rate
+          {loading ? (
+            <>
+              <StatCardSkeleton />
+              <StatCardSkeleton />
+              <StatCardSkeleton />
+              <StatCardSkeleton />
+            </>
+          ) : error ? (
+            <div className="col-span-4 bg-white rounded-xl shadow-sm p-6 text-center">
+              <p className="text-red-500 mb-2">Failed to load employment data</p>
+              <button onClick={refetch} className="text-sm text-blue-600 hover:underline flex items-center justify-center gap-2 mx-auto">
+                <RefreshCw className="h-4 w-4" />
+                Retry
+              </button>
             </div>
-            {loading ? (
-              <div className="flex items-center">
-                <RefreshCw className="h-5 w-5 animate-spin text-blue-600 mr-2" />
-                <span className="text-gray-500">Loading...</span>
-              </div>
-            ) : error ? (
-              <div>
-                <p className="text-red-500 text-sm">Failed to load</p>
-                <button onClick={refetch} className="text-xs text-blue-600 hover:underline">Retry</button>
-              </div>
-            ) : stats ? (
-              <>
+          ) : (
+            <>
+              {/* Unemployment Rate - LIVE */}
+              <div className="bg-white rounded-xl shadow-sm p-6">
+                <div className="flex items-center gap-2 text-gray-500 text-sm mb-1">
+                  <Users className="h-4 w-4" />
+                  Unemployment Rate
+                </div>
                 <div className="flex items-center gap-2">
-                  <p className="text-3xl font-bold text-gray-900">{stats.unemploymentRate}%</p>
-                  <TrendIcon direction={stats.trendDirection} />
+                  <p className="text-3xl font-bold text-gray-900">{stats?.unemploymentRate}%</p>
+                  {stats && <TrendIcon direction={stats.trendDirection} />}
                 </div>
                 <p className="text-xs text-green-600 mt-1">✓ Live from BLS</p>
-              </>
-            ) : null}
-          </div>
-          
-          {/* Labor Force - Calculated */}
-          <div className="bg-white rounded-xl shadow-sm p-6">
-            <div className="flex items-center gap-2 text-gray-500 text-sm mb-1">
-              <Building2 className="h-4 w-4" />
-              Labor Force
-            </div>
-            <p className="text-3xl font-bold text-gray-900">
-              {stats?.laborForceMillions || '---'}M
-            </p>
-            <p className="text-xs text-gray-500">Civilian labor force</p>
-          </div>
-          
-          {/* Employed - Calculated */}
-          <div className="bg-white rounded-xl shadow-sm p-6">
-            <div className="flex items-center gap-2 text-gray-500 text-sm mb-1">
-              <Briefcase className="h-4 w-4" />
-              Employed
-            </div>
-            <p className="text-3xl font-bold text-green-600">
-              {stats?.employedMillions || '---'}M
-            </p>
-            <p className="text-xs text-gray-500">Currently working</p>
-          </div>
-          
-          {/* Unemployed - Calculated */}
-          <div className="bg-white rounded-xl shadow-sm p-6">
-            <div className="flex items-center gap-2 text-gray-500 text-sm mb-1">
-              <Users className="h-4 w-4" />
-              Unemployed
-            </div>
-            <p className="text-3xl font-bold text-red-600">
-              {stats?.unemployedMillions || '---'}M
-            </p>
-            <p className="text-xs text-gray-500">Seeking work</p>
-          </div>
+              </div>
+              
+              {/* Labor Force - Calculated */}
+              <div className="bg-white rounded-xl shadow-sm p-6">
+                <div className="flex items-center gap-2 text-gray-500 text-sm mb-1">
+                  <Building2 className="h-4 w-4" />
+                  Labor Force
+                </div>
+                <p className="text-3xl font-bold text-gray-900">
+                  {stats?.laborForceMillions || '---'}M
+                </p>
+                <p className="text-xs text-gray-500">Civilian labor force</p>
+              </div>
+              
+              {/* Employed - Calculated */}
+              <div className="bg-white rounded-xl shadow-sm p-6">
+                <div className="flex items-center gap-2 text-gray-500 text-sm mb-1">
+                  <Briefcase className="h-4 w-4" />
+                  Employed
+                </div>
+                <p className="text-3xl font-bold text-green-600">
+                  {stats?.employedMillions || '---'}M
+                </p>
+                <p className="text-xs text-gray-500">Currently working</p>
+              </div>
+              
+              {/* Unemployed - Calculated */}
+              <div className="bg-white rounded-xl shadow-sm p-6">
+                <div className="flex items-center gap-2 text-gray-500 text-sm mb-1">
+                  <Users className="h-4 w-4" />
+                  Unemployed
+                </div>
+                <p className="text-3xl font-bold text-red-600">
+                  {stats?.unemployedMillions || '---'}M
+                </p>
+                <p className="text-xs text-gray-500">Seeking work</p>
+              </div>
+            </>
+          )}
         </div>
       </div>
 
@@ -182,12 +198,20 @@ export default function EmploymentPage() {
                   </thead>
                   <tbody className="divide-y divide-gray-200">
                     {loading ? (
-                      <tr>
-                        <td colSpan={3} className="px-6 py-8 text-center text-gray-500">
-                          <RefreshCw className="h-5 w-5 animate-spin inline mr-2" />
-                          Loading data from BLS...
-                        </td>
-                      </tr>
+                      <>
+                        <TableRowSkeleton />
+                        <TableRowSkeleton />
+                        <TableRowSkeleton />
+                        <TableRowSkeleton />
+                        <TableRowSkeleton />
+                        <TableRowSkeleton />
+                        <TableRowSkeleton />
+                        <TableRowSkeleton />
+                        <TableRowSkeleton />
+                        <TableRowSkeleton />
+                        <TableRowSkeleton />
+                        <TableRowSkeleton />
+                      </>
                     ) : monthlyData.length > 0 ? (
                       monthlyData.map((row, idx) => {
                         const prevRate = monthlyData[idx + 1]?.rate;
