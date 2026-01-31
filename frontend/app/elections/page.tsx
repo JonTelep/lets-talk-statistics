@@ -4,6 +4,8 @@ import { Vote, AlertTriangle, DollarSign, Users, Tv, FileText, TrendingUp, Scale
 import Link from 'next/link';
 import { useCandidates, formatCurrency, getPartyColor } from '@/services/hooks/useElectionsData';
 import { DownloadRawData } from '@/components/ui/DownloadRawData';
+import { ErrorBoundary } from '@/components/ui/ErrorBoundary';
+import { ErrorStateCompact } from '@/components/ui/ErrorState';
 
 const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
 
@@ -98,7 +100,7 @@ const foundingFathersQuotes = [
   },
 ];
 
-export default function ElectionsPage() {
+function ElectionsPageContent() {
   const totalSignatures = ballotAccessExamples.reduce((sum, s) => sum + s.signatures, 0);
   
   // Fetch live FEC candidate data
@@ -149,12 +151,7 @@ export default function ElectionsPage() {
           </div>
 
           {candidatesError ? (
-            <div className="bg-red-50 border border-red-200 rounded-lg p-4">
-              <p className="text-red-700">Failed to load FEC data</p>
-              <button onClick={refetch} className="text-sm text-red-600 hover:underline mt-1">
-                Try again
-              </button>
-            </div>
+            <ErrorStateCompact message="Failed to load FEC data" onRetry={refetch} />
           ) : candidatesLoading ? (
             <div className="space-y-3">
               {[1, 2, 3, 4, 5].map((i) => (
@@ -446,5 +443,13 @@ export default function ElectionsPage() {
         </div>
       </div>
     </div>
+  );
+}
+
+export default function ElectionsPage() {
+  return (
+    <ErrorBoundary>
+      <ElectionsPageContent />
+    </ErrorBoundary>
   );
 }

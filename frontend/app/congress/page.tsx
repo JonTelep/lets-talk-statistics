@@ -1,11 +1,11 @@
 'use client';
 
-
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { TrendingUp, TrendingDown, Users, Calendar, DollarSign, AlertTriangle, ExternalLink, Loader2 } from 'lucide-react';
-
 import Link from 'next/link';
 import { DownloadRawData } from '@/components/ui/DownloadRawData';
+import { ErrorBoundary } from '@/components/ui/ErrorBoundary';
+import { ErrorState } from '@/components/ui/ErrorState';
 
 const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
 
@@ -46,7 +46,7 @@ interface Ticker {
   trades: number;
 }
 
-export default function CongressPage() {
+function CongressPageContent() {
   const [stats, setStats] = useState<CongressStats | null>(null);
   const [recentTrades, setRecentTrades] = useState<Trade[]>([]);
   const [topTraders, setTopTraders] = useState<Trader[]>([]);
@@ -117,17 +117,11 @@ export default function CongressPage() {
   if (error) {
     return (
       <div className="min-h-screen bg-gray-50 flex items-center justify-center">
-        <div className="text-center max-w-md">
-          <AlertTriangle className="h-12 w-12 text-amber-500 mx-auto mb-4" />
-          <h2 className="text-xl font-semibold text-gray-900 mb-2">Data Unavailable</h2>
-          <p className="text-gray-600 mb-4">{error}</p>
-          <button 
-            onClick={() => window.location.reload()}
-            className="px-4 py-2 bg-primary-600 text-white rounded-lg hover:bg-primary-700"
-          >
-            Retry
-          </button>
-        </div>
+        <ErrorState 
+          title="Data Unavailable"
+          message={error}
+          onRetry={() => window.location.reload()}
+        />
       </div>
     );
   }
@@ -363,5 +357,13 @@ export default function CongressPage() {
         </div>
       </div>
     </div>
+  );
+}
+
+export default function CongressPage() {
+  return (
+    <ErrorBoundary>
+      <CongressPageContent />
+    </ErrorBoundary>
   );
 }

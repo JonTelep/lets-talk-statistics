@@ -4,6 +4,8 @@ import { Building2, TrendingUp, DollarSign, Users, Clock, AlertTriangle, Calenda
 import Link from 'next/link';
 import { useDebtHistory, calculateDebtStats, DebtDataPoint } from '@/services/hooks/useDebtData';
 import { DownloadRawData } from '@/components/ui/DownloadRawData';
+import { ErrorBoundary } from '@/components/ui/ErrorBoundary';
+import { ErrorStateCompact, ErrorStateTableRow } from '@/components/ui/ErrorState';
 
 const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
 
@@ -66,7 +68,7 @@ function aggregateByYear(data: DebtDataPoint[]): Array<{ year: string; debt: num
   return result;
 }
 
-export default function DebtPage() {
+function DebtPageContent() {
   // Fetch 3 years of data (1095 days)
   const { data: debtData, loading, error, refetch } = useDebtHistory(1095);
   
@@ -101,15 +103,10 @@ export default function DebtPage() {
               <span className="ml-3 text-gray-600">Loading live data from Treasury...</span>
             </div>
           ) : error ? (
-            <div className="py-4">
-              <p className="text-red-600 mb-2">Failed to load live data</p>
-              <button 
-                onClick={refetch}
-                className="text-sm text-primary-600 hover:underline"
-              >
-                Try again
-              </button>
-            </div>
+            <ErrorStateCompact 
+              message="Failed to load live data" 
+              onRetry={refetch} 
+            />
           ) : stats ? (
             <>
               <p className="text-sm text-gray-500 mb-2">U.S. National Debt</p>
@@ -228,6 +225,12 @@ export default function DebtPage() {
                           Loading historical data...
                         </td>
                       </tr>
+                    ) : error ? (
+                      <ErrorStateTableRow 
+                        colSpan={4} 
+                        message="Failed to load historical data" 
+                        onRetry={refetch} 
+                      />
                     ) : historicalDebt.length > 0 ? (
                       historicalDebt.map((row, idx) => {
                         const prevDebt = historicalDebt[idx + 1]?.debt || row.debt;
@@ -363,5 +366,13 @@ export default function DebtPage() {
         </div>
       </div>
     </div>
+  );
+}
+
+export default function DebtPage() {
+  return (
+    <ErrorBoundary>
+      <DebtPageContent />
+    </ErrorBoundary>
   );
 }

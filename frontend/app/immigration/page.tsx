@@ -9,10 +9,12 @@ import {
   useImmigrationCountries,
 } from '@/services/hooks/useImmigrationData';
 import { DownloadRawData } from '@/components/ui/DownloadRawData';
+import { ErrorBoundary } from '@/components/ui/ErrorBoundary';
+import { ErrorStateCompact, ErrorStateTableRow } from '@/components/ui/ErrorState';
 
 const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
 
-export default function ImmigrationPage() {
+function ImmigrationPageContent() {
   // Fetch all immigration data
   const { data: summaryData, loading: summaryLoading, error: summaryError, refetch: refetchSummary } = useImmigrationSummary();
   const { data: historicalData, loading: historicalLoading } = useImmigrationHistorical();
@@ -70,12 +72,11 @@ export default function ImmigrationPage() {
         </h2>
         
         {summaryError ? (
-          <div className="bg-red-50 border border-red-200 rounded-lg p-4 mb-8">
-            <p className="text-red-700">Failed to load summary data</p>
-            <button onClick={refetchSummary} className="text-sm text-red-600 hover:underline mt-1">
-              Try again
-            </button>
-          </div>
+          <ErrorStateCompact 
+            message="Failed to load summary data" 
+            onRetry={refetchSummary}
+            className="mb-8" 
+          />
         ) : (
           <>
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
@@ -411,5 +412,13 @@ export default function ImmigrationPage() {
         </div>
       </div>
     </div>
+  );
+}
+
+export default function ImmigrationPage() {
+  return (
+    <ErrorBoundary>
+      <ImmigrationPageContent />
+    </ErrorBoundary>
   );
 }
