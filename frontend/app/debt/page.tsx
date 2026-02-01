@@ -4,6 +4,8 @@ import { Building2, TrendingUp, DollarSign, Users, Clock, AlertTriangle, Refresh
 import Link from 'next/link';
 import { useDebtHistory, calculateDebtStats, DebtDataPoint } from '@/services/hooks/useDebtData';
 import { DownloadRawData } from '@/components/ui/DownloadRawData';
+import { ErrorBoundary } from '@/components/ui/ErrorBoundary';
+import { ErrorStateCompact, ErrorStateTableRow } from '@/components/ui/ErrorState';
 import { Skeleton, StatCardSkeleton, HeroCounterSkeleton } from '@/components/ui/Skeleton';
 
 const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
@@ -79,7 +81,7 @@ function aggregateByYear(data: DebtDataPoint[]): Array<{ year: string; debt: num
   return result;
 }
 
-export default function DebtPage() {
+function DebtPageContent() {
   // Fetch 3 years of data (1095 days)
   const { data: debtData, loading, error, refetch } = useDebtHistory(1095);
   
@@ -111,14 +113,10 @@ export default function DebtPage() {
           <HeroCounterSkeleton />
         ) : error ? (
           <div className="bg-white rounded-xl shadow-lg p-8 text-center">
-            <p className="text-red-600 mb-2">Failed to load live data</p>
-            <button 
-              onClick={refetch}
-              className="text-sm text-primary-600 hover:underline flex items-center justify-center gap-2 mx-auto"
-            >
-              <RefreshCw className="h-4 w-4" />
-              Try again
-            </button>
+            <ErrorStateCompact 
+              message="Failed to load live data" 
+              onRetry={refetch} 
+            />
           </div>
         ) : stats ? (
           <div className="bg-white rounded-xl shadow-lg p-8 text-center">
@@ -252,6 +250,12 @@ export default function DebtPage() {
                         <TableRowSkeleton />
                         <TableRowSkeleton />
                       </>
+                    ) : error ? (
+                      <ErrorStateTableRow 
+                        colSpan={4} 
+                        message="Failed to load historical data" 
+                        onRetry={refetch} 
+                      />
                     ) : historicalDebt.length > 0 ? (
                       historicalDebt.map((row, idx) => {
                         const prevDebt = historicalDebt[idx + 1]?.debt || row.debt;
@@ -387,5 +391,13 @@ export default function DebtPage() {
         </div>
       </div>
     </div>
+  );
+}
+
+export default function DebtPage() {
+  return (
+    <ErrorBoundary>
+      <DebtPageContent />
+    </ErrorBoundary>
   );
 }

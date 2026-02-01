@@ -4,6 +4,8 @@ import { DollarSign, TrendingUp, TrendingDown, PieChart, AlertTriangle, Calendar
 import Link from 'next/link';
 import { useBudgetSummary, formatBudgetNumber } from '@/services/hooks/useBudgetData';
 import { DownloadRawData } from '@/components/ui/DownloadRawData';
+import { ErrorBoundary } from '@/components/ui/ErrorBoundary';
+import { ErrorState } from '@/components/ui/ErrorState';
 import { Skeleton, StatCardSkeleton, TableSkeleton } from '@/components/ui/Skeleton';
 
 const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
@@ -31,7 +33,7 @@ const historicalDeficit = [
   { year: 'FY 2019', deficit: 0.98 },
 ];
 
-export default function BudgetPage() {
+function BudgetPageContent() {
   // Fetch live budget data
   const { data: budgetData, loading, error, refetch } = useBudgetSummary();
   
@@ -82,13 +84,11 @@ export default function BudgetPage() {
         </div>
 
         {error ? (
-          <div className="bg-red-50 border border-red-200 rounded-lg p-4 mb-8">
-            <p className="text-red-700">Failed to load budget data from Treasury API</p>
-            <button onClick={refetch} className="text-sm text-red-600 hover:underline mt-1 flex items-center gap-2">
-              <RefreshCw className="h-4 w-4" />
-              Try again
-            </button>
-          </div>
+          <ErrorState 
+            message="Failed to load budget data from Treasury API" 
+            onRetry={refetch}
+            className="mb-8"
+          />
         ) : (
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
             {loading ? (
@@ -348,5 +348,13 @@ export default function BudgetPage() {
         </div>
       </div>
     </div>
+  );
+}
+
+export default function BudgetPage() {
+  return (
+    <ErrorBoundary>
+      <BudgetPageContent />
+    </ErrorBoundary>
   );
 }

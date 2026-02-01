@@ -8,6 +8,8 @@ import {
   formatMonthlyData,
 } from '@/services/hooks/useEmploymentData';
 import { DownloadRawData } from '@/components/ui/DownloadRawData';
+import { ErrorBoundary } from '@/components/ui/ErrorBoundary';
+import { ErrorStateCompact, ErrorStateTableRow } from '@/components/ui/ErrorState';
 import { Skeleton, StatCardSkeleton } from '@/components/ui/Skeleton';
 
 const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
@@ -62,7 +64,7 @@ function TableRowSkeleton() {
   );
 }
 
-export default function EmploymentPage() {
+function EmploymentPageContent() {
   // Fetch 2 years of unemployment data
   const { data: unemploymentData, loading, error, refetch } = useUnemploymentHistory(2);
   
@@ -114,11 +116,7 @@ export default function EmploymentPage() {
             </>
           ) : error ? (
             <div className="col-span-4 bg-white rounded-xl shadow-sm p-6 text-center">
-              <p className="text-red-500 mb-2">Failed to load employment data</p>
-              <button onClick={refetch} className="text-sm text-blue-600 hover:underline flex items-center justify-center gap-2 mx-auto">
-                <RefreshCw className="h-4 w-4" />
-                Retry
-              </button>
+              <ErrorStateCompact message="Failed to load employment data" onRetry={refetch} />
             </div>
           ) : (
             <>
@@ -212,6 +210,12 @@ export default function EmploymentPage() {
                         <TableRowSkeleton />
                         <TableRowSkeleton />
                       </>
+                    ) : error ? (
+                      <ErrorStateTableRow 
+                        colSpan={3} 
+                        message="Failed to load unemployment data" 
+                        onRetry={refetch} 
+                      />
                     ) : monthlyData.length > 0 ? (
                       monthlyData.map((row, idx) => {
                         const prevRate = monthlyData[idx + 1]?.rate;
@@ -363,5 +367,13 @@ export default function EmploymentPage() {
         </div>
       </div>
     </div>
+  );
+}
+
+export default function EmploymentPage() {
+  return (
+    <ErrorBoundary>
+      <EmploymentPageContent />
+    </ErrorBoundary>
   );
 }

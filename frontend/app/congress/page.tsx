@@ -1,11 +1,11 @@
 'use client';
 
-
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { TrendingUp, TrendingDown, Users, Calendar, DollarSign, AlertTriangle, ExternalLink, Loader2, RefreshCw } from 'lucide-react';
-
 import Link from 'next/link';
 import { DownloadRawData } from '@/components/ui/DownloadRawData';
+import { ErrorBoundary } from '@/components/ui/ErrorBoundary';
+import { ErrorState } from '@/components/ui/ErrorState';
 import { Skeleton, StatCardSkeleton, TradesTableSkeleton, ListSkeleton } from '@/components/ui/Skeleton';
 
 const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
@@ -47,7 +47,7 @@ interface Ticker {
   trades: number;
 }
 
-export default function CongressPage() {
+function CongressPageContent() {
   const [stats, setStats] = useState<CongressStats | null>(null);
   const [recentTrades, setRecentTrades] = useState<Trade[]>([]);
   const [topTraders, setTopTraders] = useState<Trader[]>([]);
@@ -55,44 +55,44 @@ export default function CongressPage() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
-  useEffect(() => {
-    async function fetchData() {
-      try {
-        setLoading(true);
-        setError(null);
+  const fetchData = useCallback(async () => {
+    try {
+      setLoading(true);
+      setError(null);
 
-        const [statsRes, tradesRes, tradersRes, tickersRes] = await Promise.all([
-          fetch(`${API_URL}/api/v1/congress/stats`),
-          fetch(`${API_URL}/api/v1/congress/trades/recent?limit=10`),
-          fetch(`${API_URL}/api/v1/congress/traders?limit=10`),
-          fetch(`${API_URL}/api/v1/congress/tickers?limit=10`)
-        ]);
+      const [statsRes, tradesRes, tradersRes, tickersRes] = await Promise.all([
+        fetch(`${API_URL}/api/v1/congress/stats`),
+        fetch(`${API_URL}/api/v1/congress/trades/recent?limit=10`),
+        fetch(`${API_URL}/api/v1/congress/traders?limit=10`),
+        fetch(`${API_URL}/api/v1/congress/tickers?limit=10`)
+      ]);
 
-        if (!statsRes.ok || !tradesRes.ok || !tradersRes.ok || !tickersRes.ok) {
-          throw new Error('Failed to fetch data');
-        }
-
-        const [statsData, tradesData, tradersData, tickersData] = await Promise.all([
-          statsRes.json(),
-          tradesRes.json(),
-          tradersRes.json(),
-          tickersRes.json()
-        ]);
-
-        setStats(statsData);
-        setRecentTrades(tradesData);
-        setTopTraders(tradersData);
-        setPopularTickers(tickersData);
-      } catch (err) {
-        console.error('Error fetching congress data:', err);
-        setError('Failed to load congressional trading data. Please try again later.');
-      } finally {
-        setLoading(false);
+      if (!statsRes.ok || !tradesRes.ok || !tradersRes.ok || !tickersRes.ok) {
+        throw new Error('Failed to fetch data');
       }
-    }
 
-    fetchData();
+      const [statsData, tradesData, tradersData, tickersData] = await Promise.all([
+        statsRes.json(),
+        tradesRes.json(),
+        tradersRes.json(),
+        tickersRes.json()
+      ]);
+
+      setStats(statsData);
+      setRecentTrades(tradesData);
+      setTopTraders(tradersData);
+      setPopularTickers(tickersData);
+    } catch (err) {
+      console.error('Error fetching congress data:', err);
+      setError('Failed to load congressional trading data. Please try again later.');
+    } finally {
+      setLoading(false);
+    }
   }, []);
+
+  useEffect(() => {
+    fetchData();
+  }, [fetchData]);
 
   const formatDate = (dateStr: string) => {
     if (!dateStr) return 'N/A';
@@ -108,18 +108,11 @@ export default function CongressPage() {
   if (error && !loading) {
     return (
       <div className="min-h-screen bg-gray-50 flex items-center justify-center">
-        <div className="text-center max-w-md">
-          <AlertTriangle className="h-12 w-12 text-amber-500 mx-auto mb-4" />
-          <h2 className="text-xl font-semibold text-gray-900 mb-2">Data Unavailable</h2>
-          <p className="text-gray-600 mb-4">{error}</p>
-          <button 
-            onClick={() => window.location.reload()}
-            className="px-4 py-2 bg-primary-600 text-white rounded-lg hover:bg-primary-700 flex items-center gap-2 mx-auto"
-          >
-            <RefreshCw className="h-4 w-4" />
-            Retry
-          </button>
-        </div>
+        <ErrorState 
+          title="Data Unavailable"
+          message={error}
+          onRetry={fetchData}
+        />
       </div>
     );
   }
@@ -383,5 +376,13 @@ export default function CongressPage() {
         </div>
       </div>
     </div>
+  );
+}
+
+export default function CongressPage() {
+  return (
+    <ErrorBoundary>
+      <CongressPageContent />
+    </ErrorBoundary>
   );
 }
