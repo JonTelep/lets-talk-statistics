@@ -3,6 +3,18 @@
 import { useState, useEffect, useCallback } from 'react';
 import { TrendingUp, TrendingDown, Users, Calendar, DollarSign, AlertTriangle, ExternalLink, Loader2, RefreshCw, Filter, ArrowUpDown, Building2 } from 'lucide-react';
 import Link from 'next/link';
+import {
+  BarChart,
+  Bar,
+  XAxis,
+  YAxis,
+  CartesianGrid,
+  Tooltip,
+  ResponsiveContainer,
+  PieChart,
+  Pie,
+  Cell,
+} from 'recharts';
 import { DownloadRawData } from '@/components/ui/DownloadRawData';
 import { ErrorBoundary } from '@/components/ui/ErrorBoundary';
 import { ErrorState } from '@/components/ui/ErrorState';
@@ -12,6 +24,20 @@ import {
   TradesTableSkeleton,
   ListSkeleton
 } from '@/components/ui/Skeleton';
+
+// Colors for charts
+const CHART_COLORS = ['#3b82f6', '#22c55e', '#ef4444', '#f59e0b', '#8b5cf6', '#ec4899'];
+
+// Chart skeleton component
+function ChartSkeleton({ height = 250 }: { height?: number }) {
+  return (
+    <div className="animate-pulse" style={{ height }}>
+      <div className="h-full bg-gray-200 rounded-lg flex items-center justify-center">
+        <div className="text-gray-400 text-sm">Loading chart...</div>
+      </div>
+    </div>
+  );
+}
 
 const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
 
@@ -370,6 +396,123 @@ function CongressPageContent() {
             )}
           </div>
         )}
+      </div>
+
+      {/* Charts Section */}
+      <div className="mx-auto max-w-7xl px-4 pb-8 sm:px-6 lg:px-8">
+        <div className="grid lg:grid-cols-2 gap-6">
+          {/* Top Traders Bar Chart */}
+          <div className="bg-white rounded-xl shadow-sm p-6">
+            <h3 className="text-lg font-semibold text-gray-900 mb-4">Most Active Traders</h3>
+            {loading ? (
+              <ChartSkeleton height={280} />
+            ) : topTraders.length > 0 ? (
+              <ResponsiveContainer width="100%" height={280}>
+                <BarChart
+                  data={topTraders.slice(0, 8).map(t => ({
+                    name: t.name.split(' ').pop() || t.name, // Last name only
+                    fullName: t.name,
+                    trades: t.trades,
+                    chamber: t.chamber,
+                  }))}
+                  layout="vertical"
+                  margin={{ top: 5, right: 30, left: 20, bottom: 5 }}
+                >
+                  <CartesianGrid strokeDasharray="3 3" stroke="#e5e7eb" />
+                  <XAxis 
+                    type="number" 
+                    stroke="#6b7280" 
+                    fontSize={12}
+                  />
+                  <YAxis 
+                    dataKey="name" 
+                    type="category" 
+                    stroke="#6b7280" 
+                    fontSize={11}
+                    width={70}
+                  />
+                  <Tooltip
+                    contentStyle={{
+                      backgroundColor: '#fff',
+                      border: '1px solid #e5e7eb',
+                      borderRadius: '8px',
+                    }}
+                    formatter={(value: number, name: string, props: any) => [
+                      `${value} trades`,
+                      `${props.payload.fullName} (${props.payload.chamber})`
+                    ]}
+                  />
+                  <Bar 
+                    dataKey="trades" 
+                    fill="#6366f1" 
+                    radius={[0, 4, 4, 0]}
+                  />
+                </BarChart>
+              </ResponsiveContainer>
+            ) : (
+              <div className="h-[280px] flex items-center justify-center text-gray-500">
+                No trader data available
+              </div>
+            )}
+          </div>
+
+          {/* Trade Types Pie Chart */}
+          <div className="bg-white rounded-xl shadow-sm p-6">
+            <h3 className="text-lg font-semibold text-gray-900 mb-4">Trade Types Breakdown</h3>
+            {loading ? (
+              <ChartSkeleton height={280} />
+            ) : stats?.by_type && Object.keys(stats.by_type).length > 0 ? (
+              <>
+                <ResponsiveContainer width="100%" height={220}>
+                  <PieChart>
+                    <Pie
+                      data={Object.entries(stats.by_type).map(([name, value]) => ({
+                        name,
+                        value,
+                      }))}
+                      cx="50%"
+                      cy="50%"
+                      innerRadius={50}
+                      outerRadius={80}
+                      paddingAngle={2}
+                      dataKey="value"
+                    >
+                      {Object.keys(stats.by_type).map((_, idx) => (
+                        <Cell 
+                          key={`cell-${idx}`} 
+                          fill={idx === 0 ? '#22c55e' : idx === 1 ? '#ef4444' : CHART_COLORS[idx % CHART_COLORS.length]} 
+                        />
+                      ))}
+                    </Pie>
+                    <Tooltip
+                      contentStyle={{
+                        backgroundColor: '#fff',
+                        border: '1px solid #e5e7eb',
+                        borderRadius: '8px',
+                      }}
+                      formatter={(value: number) => [value.toLocaleString(), 'Trades']}
+                    />
+                  </PieChart>
+                </ResponsiveContainer>
+                <div className="flex flex-wrap justify-center gap-4 mt-2">
+                  {Object.entries(stats.by_type).map(([name, value], idx) => (
+                    <div key={name} className="flex items-center gap-2 text-sm">
+                      <div 
+                        className="w-3 h-3 rounded-full" 
+                        style={{ backgroundColor: idx === 0 ? '#22c55e' : idx === 1 ? '#ef4444' : CHART_COLORS[idx % CHART_COLORS.length] }} 
+                      />
+                      <span className="text-gray-700">{name}: {value.toLocaleString()}</span>
+                    </div>
+                  ))}
+                </div>
+              </>
+            ) : (
+              <div className="h-[280px] flex items-center justify-center text-gray-500">
+                No trade type data available
+              </div>
+            )}
+          </div>
+        </div>
       </div>
 
       {/* Main Content Grid */}

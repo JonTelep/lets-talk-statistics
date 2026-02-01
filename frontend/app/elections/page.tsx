@@ -2,11 +2,33 @@
 
 import { Vote, AlertTriangle, DollarSign, Users, Tv, FileText, TrendingUp, Scale, XCircle, CheckCircle, RefreshCw } from 'lucide-react';
 import Link from 'next/link';
+import {
+  BarChart,
+  Bar,
+  XAxis,
+  YAxis,
+  CartesianGrid,
+  Tooltip,
+  ResponsiveContainer,
+  LineChart,
+  Line,
+} from 'recharts';
 import { useCandidates, formatCurrency, getPartyColor } from '@/services/hooks/useElectionsData';
 import { DownloadRawData } from '@/components/ui/DownloadRawData';
 import { ErrorBoundary } from '@/components/ui/ErrorBoundary';
 import { ErrorStateCompact } from '@/components/ui/ErrorState';
 import { Skeleton } from '@/components/ui/Skeleton';
+
+// Chart skeleton component
+function ChartSkeleton({ height = 300 }: { height?: number }) {
+  return (
+    <div className="animate-pulse" style={{ height }}>
+      <div className="h-full bg-gray-200 rounded-lg flex items-center justify-center">
+        <div className="text-gray-400 text-sm">Loading chart...</div>
+      </div>
+    </div>
+  );
+}
 
 const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
 
@@ -382,6 +404,55 @@ function ElectionsPageContent() {
             <Users className="h-6 w-6 text-gray-600" />
             Third Party History
           </h2>
+
+          {/* Third Party Vote Share Chart */}
+          <div className="bg-white rounded-xl shadow-sm p-6 mb-8">
+            <h3 className="text-lg font-semibold text-gray-900 mb-4">Third Party Vote Share Over Time</h3>
+            <ResponsiveContainer width="100%" height={300}>
+              <BarChart
+                data={thirdPartyHistory.map(h => ({
+                  year: h.year.toString(),
+                  percent: h.percent,
+                  candidate: h.candidate,
+                  party: h.party,
+                }))}
+                margin={{ top: 5, right: 30, left: 20, bottom: 5 }}
+              >
+                <CartesianGrid strokeDasharray="3 3" stroke="#e5e7eb" />
+                <XAxis 
+                  dataKey="year" 
+                  stroke="#6b7280"
+                  fontSize={12}
+                />
+                <YAxis 
+                  stroke="#6b7280"
+                  fontSize={12}
+                  tickFormatter={(value) => `${value}%`}
+                  domain={[0, 20]}
+                />
+                <Tooltip
+                  contentStyle={{
+                    backgroundColor: '#fff',
+                    border: '1px solid #e5e7eb',
+                    borderRadius: '8px',
+                    boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)',
+                  }}
+                  formatter={(value: number, name: string, props: any) => [
+                    `${value}%`,
+                    `${props.payload.candidate} (${props.payload.party})`
+                  ]}
+                />
+                <Bar 
+                  dataKey="percent" 
+                  fill="#8b5cf6" 
+                  radius={[4, 4, 0, 0]}
+                />
+              </BarChart>
+            </ResponsiveContainer>
+            <p className="text-xs text-gray-500 mt-2 text-center">
+              Ross Perot (1992) remains the most successful third-party candidate in modern history
+            </p>
+          </div>
           
           <div className="bg-white rounded-xl shadow-sm overflow-hidden">
             <table className="w-full">
