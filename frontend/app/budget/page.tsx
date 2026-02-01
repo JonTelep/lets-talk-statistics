@@ -4,6 +4,7 @@ import { DollarSign, TrendingUp, TrendingDown, PieChart, AlertTriangle, Calendar
 import Link from 'next/link';
 import { useBudgetSummary, formatBudgetNumber } from '@/services/hooks/useBudgetData';
 import { DownloadRawData } from '@/components/ui/DownloadRawData';
+import { Skeleton, StatCardSkeleton, TableSkeleton } from '@/components/ui/Skeleton';
 
 const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
 
@@ -83,78 +84,89 @@ export default function BudgetPage() {
         {error ? (
           <div className="bg-red-50 border border-red-200 rounded-lg p-4 mb-8">
             <p className="text-red-700">Failed to load budget data from Treasury API</p>
-            <button onClick={refetch} className="text-sm text-red-600 hover:underline mt-1">
+            <button onClick={refetch} className="text-sm text-red-600 hover:underline mt-1 flex items-center gap-2">
+              <RefreshCw className="h-4 w-4" />
               Try again
             </button>
           </div>
         ) : (
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
-            <div className="bg-white rounded-xl shadow-sm p-6">
-              <div className="flex items-center gap-2 text-gray-500 text-sm mb-1">
-                <TrendingDown className="h-4 w-4 text-red-500" />
-                Total Spending
-              </div>
-              {loading ? (
-                <div className="h-9 bg-gray-200 animate-pulse rounded w-24"></div>
-              ) : totalSpending !== null ? (
-                <p className="text-3xl font-bold text-red-600">${totalSpending.toFixed(2)}T</p>
-              ) : (
-                <p className="text-3xl font-bold text-gray-400">—</p>
-              )}
-              <p className="text-xs text-gray-500">Federal outlays</p>
-            </div>
-            
-            <div className="bg-white rounded-xl shadow-sm p-6">
-              <div className="flex items-center gap-2 text-gray-500 text-sm mb-1">
-                <TrendingUp className="h-4 w-4 text-green-500" />
-                Total Revenue
-              </div>
-              {loading ? (
-                <div className="h-9 bg-gray-200 animate-pulse rounded w-24"></div>
-              ) : totalRevenue !== null ? (
-                <p className="text-3xl font-bold text-green-600">${totalRevenue.toFixed(2)}T</p>
-              ) : (
-                <p className="text-3xl font-bold text-gray-400">—</p>
-              )}
-              <p className="text-xs text-gray-500">Federal receipts</p>
-            </div>
-            
-            <div className="bg-white rounded-xl shadow-sm p-6">
-              <div className="flex items-center gap-2 text-gray-500 text-sm mb-1">
-                <AlertTriangle className="h-4 w-4 text-amber-500" />
-                Budget Deficit
-              </div>
-              {loading ? (
-                <div className="h-9 bg-gray-200 animate-pulse rounded w-24"></div>
-              ) : deficit !== null ? (
-                <p className="text-3xl font-bold text-amber-600">${Math.abs(deficit).toFixed(2)}T</p>
-              ) : (
-                <p className="text-3xl font-bold text-gray-400">—</p>
-              )}
-              <p className="text-xs text-gray-500">Spending - Revenue</p>
-            </div>
-            
-            <div className="bg-white rounded-xl shadow-sm p-6">
-              <div className="flex items-center gap-2 text-gray-500 text-sm mb-1">
-                <Calendar className="h-4 w-4 text-blue-500" />
-                Data Status
-              </div>
-              {loading ? (
-                <div className="h-9 bg-gray-200 animate-pulse rounded w-20"></div>
-              ) : budgetData ? (
-                <>
-                  <p className="text-2xl font-bold text-gray-900">FY {fiscalYear}</p>
-                  <p className="text-xs text-green-600">✓ Live from Treasury API</p>
-                </>
-              ) : (
-                <p className="text-2xl font-bold text-gray-400">—</p>
-              )}
-            </div>
+            {loading ? (
+              <>
+                <StatCardSkeleton />
+                <StatCardSkeleton />
+                <StatCardSkeleton />
+                <StatCardSkeleton />
+              </>
+            ) : (
+              <>
+                <div className="bg-white rounded-xl shadow-sm p-6">
+                  <div className="flex items-center gap-2 text-gray-500 text-sm mb-1">
+                    <TrendingDown className="h-4 w-4 text-red-500" />
+                    Total Spending
+                  </div>
+                  {totalSpending !== null ? (
+                    <p className="text-3xl font-bold text-red-600">${totalSpending.toFixed(2)}T</p>
+                  ) : (
+                    <p className="text-3xl font-bold text-gray-400">—</p>
+                  )}
+                  <p className="text-xs text-gray-500">Federal outlays</p>
+                </div>
+                
+                <div className="bg-white rounded-xl shadow-sm p-6">
+                  <div className="flex items-center gap-2 text-gray-500 text-sm mb-1">
+                    <TrendingUp className="h-4 w-4 text-green-500" />
+                    Total Revenue
+                  </div>
+                  {totalRevenue !== null ? (
+                    <p className="text-3xl font-bold text-green-600">${totalRevenue.toFixed(2)}T</p>
+                  ) : (
+                    <p className="text-3xl font-bold text-gray-400">—</p>
+                  )}
+                  <p className="text-xs text-gray-500">Federal receipts</p>
+                </div>
+                
+                <div className="bg-white rounded-xl shadow-sm p-6">
+                  <div className="flex items-center gap-2 text-gray-500 text-sm mb-1">
+                    <AlertTriangle className="h-4 w-4 text-amber-500" />
+                    Budget Deficit
+                  </div>
+                  {deficit !== null ? (
+                    <p className="text-3xl font-bold text-amber-600">${Math.abs(deficit).toFixed(2)}T</p>
+                  ) : (
+                    <p className="text-3xl font-bold text-gray-400">—</p>
+                  )}
+                  <p className="text-xs text-gray-500">Spending - Revenue</p>
+                </div>
+                
+                <div className="bg-white rounded-xl shadow-sm p-6">
+                  <div className="flex items-center gap-2 text-gray-500 text-sm mb-1">
+                    <Calendar className="h-4 w-4 text-blue-500" />
+                    Data Status
+                  </div>
+                  {budgetData ? (
+                    <>
+                      <p className="text-2xl font-bold text-gray-900">FY {fiscalYear}</p>
+                      <p className="text-xs text-green-600">✓ Live from Treasury API</p>
+                    </>
+                  ) : (
+                    <p className="text-2xl font-bold text-gray-400">—</p>
+                  )}
+                </div>
+              </>
+            )}
           </div>
         )}
 
         {/* Budget Breakdown by Classification (from API) */}
-        {budgetData?.byClassification && budgetData.byClassification.length > 0 && (
+        {loading ? (
+          <div className="bg-white rounded-xl shadow-sm mb-8">
+            <div className="px-6 py-4 border-b border-gray-200">
+              <Skeleton className="h-5 w-56" />
+            </div>
+            <TableSkeleton rows={5} columns={3} />
+          </div>
+        ) : budgetData?.byClassification && budgetData.byClassification.length > 0 && (
           <div className="bg-white rounded-xl shadow-sm p-6 mb-8">
             <h3 className="text-lg font-semibold text-gray-900 mb-4 flex items-center gap-2">
               <Building2 className="h-5 w-5 text-green-600" />
