@@ -41,32 +41,39 @@ async def get_all_trades(
     offset: int = Query(default=0, ge=0, description="Offset for pagination"),
     politician: Optional[str] = Query(default=None, description="Filter by politician name"),
     ticker: Optional[str] = Query(default=None, description="Filter by stock ticker"),
-    type: Optional[str] = Query(default=None, description="Filter by transaction type (Buy/Sell)")
+    type: Optional[str] = Query(default=None, description="Filter by transaction type (Buy/Sell)"),
+    chamber: Optional[str] = Query(default=None, description="Filter by chamber (house/senate)"),
+    party: Optional[str] = Query(default=None, description="Filter by party (R/D/I)")
 ):
     """
     Get all congressional trades with optional filters and pagination.
     
-    Supports filtering by politician name, stock ticker, and transaction type.
+    Supports filtering by politician name, stock ticker, transaction type, chamber, and party.
     """
     return congress_service.get_all_transactions(
         limit=limit,
         offset=offset,
         politician=politician,
         ticker=ticker,
-        tx_type=type
+        tx_type=type,
+        chamber=chamber,
+        party=party
     )
 
 
 @router.get("/traders")
 async def get_top_traders(
-    limit: int = Query(default=10, ge=1, le=50, description="Number of traders to return")
+    limit: int = Query(default=10, ge=1, le=50, description="Number of traders to return"),
+    party: Optional[str] = Query(default=None, description="Filter by party (R/D/I)"),
+    chamber: Optional[str] = Query(default=None, description="Filter by chamber (house/senate)")
 ):
     """
     Get politicians ranked by number of trades.
     
     Returns the most active congressional stock traders.
+    Optionally filter by party (R/D/I) or chamber (house/senate).
     """
-    return congress_service.get_top_traders(limit=limit)
+    return congress_service.get_top_traders(limit=limit, party=party, chamber=chamber)
 
 
 @router.get("/tickers")
