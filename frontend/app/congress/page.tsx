@@ -154,8 +154,13 @@ export default function CongressPage() {
           <AlertTriangle className="h-5 w-5 text-amber-600 flex-shrink-0 mt-0.5" />
           <div className="text-sm text-amber-800">
             <strong>Data Source:</strong> All data comes from official Congressional financial disclosures 
-            required by the STOCK Act. Currently showing <strong>Senate</strong> data only. Trades are self-reported 
+            required by the STOCK Act. Trades are self-reported 
             and may have a reporting delay of up to 45 days. This is informational only — not financial advice.
+            {stats?.last_updated && (
+              <span className="ml-1 text-green-700">
+                Last updated: {new Date(stats.last_updated).toLocaleString()}
+              </span>
+            )}
           </div>
         </div>
       </div>
