@@ -2,6 +2,19 @@
 
 import { Building2, TrendingUp, DollarSign, Users, Clock, AlertTriangle, RefreshCw } from 'lucide-react';
 import Link from 'next/link';
+import {
+  LineChart,
+  Line,
+  XAxis,
+  YAxis,
+  CartesianGrid,
+  Tooltip,
+  ResponsiveContainer,
+  PieChart,
+  Pie,
+  Cell,
+  Legend,
+} from 'recharts';
 import { useDebtHistory, calculateDebtStats, DebtDataPoint } from '@/services/hooks/useDebtData';
 import { DownloadRawData } from '@/components/ui/DownloadRawData';
 import { ErrorBoundary } from '@/components/ui/ErrorBoundary';
@@ -37,6 +50,20 @@ const milestones = [
   { amount: '$30 Trillion', year: '2022', daysTo: '1,825 days' },
   { amount: '$35 Trillion', year: '2024', daysTo: '730 days' },
 ];
+
+// Colors for pie chart
+const PIE_COLORS = ['#ef4444', '#f97316', '#eab308', '#22c55e', '#0ea5e9', '#8b5cf6'];
+
+// Chart skeleton component
+function ChartSkeleton({ height = 300 }: { height?: number }) {
+  return (
+    <div className="animate-pulse" style={{ height }}>
+      <div className="h-full bg-gray-200 rounded-lg flex items-center justify-center">
+        <div className="text-gray-400 text-sm">Loading chart...</div>
+      </div>
+    </div>
+  );
+}
 
 // Table row skeleton for historical debt table
 function TableRowSkeleton() {
@@ -216,6 +243,58 @@ function DebtPageContent() {
         </div>
       </div>
 
+      {/* Debt Growth Chart */}
+      <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
+        <div className="bg-white rounded-xl shadow-sm p-6">
+          <h2 className="text-lg font-semibold text-gray-900 mb-4">Debt Growth Over Time</h2>
+          {loading ? (
+            <ChartSkeleton height={350} />
+          ) : error ? (
+            <ErrorStateCompact message="Failed to load chart data" onRetry={refetch} />
+          ) : historicalDebt.length > 0 ? (
+            <ResponsiveContainer width="100%" height={350}>
+              <LineChart
+                data={[...historicalDebt].reverse()}
+                margin={{ top: 5, right: 30, left: 20, bottom: 5 }}
+              >
+                <CartesianGrid strokeDasharray="3 3" stroke="#e5e7eb" />
+                <XAxis 
+                  dataKey="year" 
+                  stroke="#6b7280"
+                  fontSize={12}
+                />
+                <YAxis 
+                  stroke="#6b7280"
+                  fontSize={12}
+                  tickFormatter={(value) => `$${value}T`}
+                />
+                <Tooltip
+                  contentStyle={{
+                    backgroundColor: '#fff',
+                    border: '1px solid #e5e7eb',
+                    borderRadius: '8px',
+                    boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)',
+                  }}
+                  formatter={(value: number) => [`$${value.toFixed(2)}T`, 'Total Debt']}
+                />
+                <Line
+                  type="monotone"
+                  dataKey="debt"
+                  stroke="#ef4444"
+                  strokeWidth={3}
+                  dot={{ fill: '#ef4444', strokeWidth: 2, r: 4 }}
+                  activeDot={{ r: 6, fill: '#dc2626' }}
+                />
+              </LineChart>
+            </ResponsiveContainer>
+          ) : (
+            <div className="h-[350px] flex items-center justify-center text-gray-500">
+              No data available for chart
+            </div>
+          )}
+        </div>
+      </div>
+
       {/* Main Content */}
       <div className="mx-auto max-w-7xl px-4 pb-16 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-3 gap-8">
@@ -323,21 +402,48 @@ function DebtPageContent() {
               <div className="px-6 py-4 border-b border-gray-200">
                 <h2 className="text-lg font-semibold text-gray-900">Who Holds Our Debt?</h2>
               </div>
-              <div className="p-6 space-y-4">
-                {debtHolders.map((holder, idx) => (
-                  <div key={idx}>
-                    <div className="flex justify-between text-sm mb-1">
-                      <span className="text-gray-700">{holder.holder}</span>
-                      <span className="text-gray-900 font-medium">${holder.amount}T</span>
+              <div className="p-6">
+                {/* Pie Chart */}
+                <ResponsiveContainer width="100%" height={250}>
+                  <PieChart>
+                    <Pie
+                      data={debtHolders.map(h => ({ name: h.holder, value: h.amount }))}
+                      cx="50%"
+                      cy="50%"
+                      innerRadius={50}
+                      outerRadius={80}
+                      paddingAngle={2}
+                      dataKey="value"
+                    >
+                      {debtHolders.map((_, idx) => (
+                        <Cell key={`cell-${idx}`} fill={PIE_COLORS[idx % PIE_COLORS.length]} />
+                      ))}
+                    </Pie>
+                    <Tooltip
+                      contentStyle={{
+                        backgroundColor: '#fff',
+                        border: '1px solid #e5e7eb',
+                        borderRadius: '8px',
+                      }}
+                      formatter={(value: number) => [`$${value}T`, 'Amount']}
+                    />
+                  </PieChart>
+                </ResponsiveContainer>
+                {/* Legend as list */}
+                <div className="mt-4 space-y-2">
+                  {debtHolders.map((holder, idx) => (
+                    <div key={idx} className="flex items-center justify-between text-sm">
+                      <div className="flex items-center gap-2">
+                        <div 
+                          className="w-3 h-3 rounded-full" 
+                          style={{ backgroundColor: PIE_COLORS[idx % PIE_COLORS.length] }} 
+                        />
+                        <span className="text-gray-700">{holder.holder}</span>
+                      </div>
+                      <span className="text-gray-900 font-medium">${holder.amount}T ({holder.percent}%)</span>
                     </div>
-                    <div className="w-full bg-gray-200 rounded-full h-2">
-                      <div
-                        className="bg-red-500 h-2 rounded-full"
-                        style={{ width: `${holder.percent}%` }}
-                      />
-                    </div>
-                  </div>
-                ))}
+                  ))}
+                </div>
               </div>
             </div>
 
