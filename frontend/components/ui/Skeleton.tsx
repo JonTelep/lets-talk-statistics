@@ -4,6 +4,7 @@
  * Provides shimmer-effect placeholders for various content types.
  * Used to improve perceived performance during data loading.
  */
+'use client';
 
 interface SkeletonProps {
   className?: string;
@@ -185,15 +186,16 @@ export function TradesTableSkeleton({ rows = 10 }: { rows?: number }) {
   );
 }
 
-// Politician list skeleton
-export function PoliticianListSkeleton({ items = 10 }: { items?: number }) {
+// Politician list skeleton (alias for count parameter)
+export function PoliticianListSkeleton({ items = 10, count }: { items?: number; count?: number }) {
+  const itemCount = count ?? items;
   return (
     <div className="bg-white rounded-xl shadow-sm overflow-hidden">
       <div className="px-6 py-4 border-b border-gray-200">
         <Skeleton className="h-5 w-36" />
       </div>
       <div className="divide-y divide-gray-200">
-        {Array.from({ length: items }).map((_, i) => (
+        {Array.from({ length: itemCount }).map((_, i) => (
           <div key={i} className="px-6 py-4 flex items-center justify-between">
             <div className="flex items-center gap-3">
               <Skeleton className="h-6 w-6 rounded" />

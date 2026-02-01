@@ -1,14 +1,27 @@
 'use client';
 
 import { useState, useEffect, useCallback } from 'react';
-import { TrendingUp, TrendingDown, Users, Calendar, DollarSign, AlertTriangle, ExternalLink, Loader2, RefreshCw } from 'lucide-react';
+import { TrendingUp, TrendingDown, Users, Calendar, DollarSign, AlertTriangle, ExternalLink, Loader2, RefreshCw, Filter, ArrowUpDown, Building2 } from 'lucide-react';
 import Link from 'next/link';
 import { DownloadRawData } from '@/components/ui/DownloadRawData';
 import { ErrorBoundary } from '@/components/ui/ErrorBoundary';
 import { ErrorState } from '@/components/ui/ErrorState';
-import { Skeleton, StatCardSkeleton, TradesTableSkeleton, ListSkeleton } from '@/components/ui/Skeleton';
+import {
+  Skeleton,
+  StatCardSkeleton,
+  TradesTableSkeleton,
+  ListSkeleton
+} from '@/components/ui/Skeleton';
 
 const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
+
+interface PartyStats {
+  trades: number;
+  volume: number;
+  volume_formatted: string;
+  buys: number;
+  sells: number;
+}
 
 interface CongressStats {
   total_trades: number;
@@ -20,12 +33,15 @@ interface CongressStats {
   };
   last_updated: string;
   by_type: Record<string, number>;
+  by_chamber: Record<string, number>;
+  by_party: Record<string, PartyStats>;
 }
 
 interface Trade {
   politician: string;
   party?: string;
   chamber: string;
+  state?: string;
   ticker: string;
   asset_name: string;
   type: string;
@@ -39,6 +55,11 @@ interface Trader {
   name: string;
   trades: number;
   chamber: string;
+  party: string;
+  state: string;
+  buys: number;
+  sells: number;
+  volume: number;
 }
 
 interface Ticker {
@@ -47,6 +68,8 @@ interface Ticker {
   trades: number;
 }
 
+type SortField = 'trades' | 'buys' | 'sells' | 'volume';
+
 function CongressPageContent() {
   const [stats, setStats] = useState<CongressStats | null>(null);
   const [recentTrades, setRecentTrades] = useState<Trade[]>([]);
@@ -54,16 +77,27 @@ function CongressPageContent() {
   const [popularTickers, setPopularTickers] = useState<Ticker[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
-
+  
+  // Filter state
+  const [partyFilter, setPartyFilter] = useState<string>('all');
+  const [chamberFilter, setChamberFilter] = useState<string>('all');
+  const [sortField, setSortField] = useState<SortField>('trades');
+  
   const fetchData = useCallback(async () => {
     try {
       setLoading(true);
       setError(null);
 
+      // Build query params for filtered requests
+      const traderParams = new URLSearchParams();
+      traderParams.set('limit', '10');
+      if (partyFilter !== 'all') traderParams.set('party', partyFilter);
+      if (chamberFilter !== 'all') traderParams.set('chamber', chamberFilter);
+
       const [statsRes, tradesRes, tradersRes, tickersRes] = await Promise.all([
         fetch(`${API_URL}/api/v1/congress/stats`),
         fetch(`${API_URL}/api/v1/congress/trades/recent?limit=10`),
-        fetch(`${API_URL}/api/v1/congress/traders?limit=10`),
+        fetch(`${API_URL}/api/v1/congress/traders?${traderParams}`),
         fetch(`${API_URL}/api/v1/congress/tickers?limit=10`)
       ]);
 
@@ -88,7 +122,7 @@ function CongressPageContent() {
     } finally {
       setLoading(false);
     }
-  }, []);
+  }, [partyFilter, chamberFilter]);
 
   useEffect(() => {
     fetchData();
@@ -103,6 +137,40 @@ function CongressPageContent() {
     }
     return dateStr;
   };
+
+  const getPartyColor = (party: string) => {
+    switch (party?.toUpperCase()) {
+      case 'R': return { bg: 'bg-red-100', text: 'text-red-700', border: 'border-red-200' };
+      case 'D': return { bg: 'bg-blue-100', text: 'text-blue-700', border: 'border-blue-200' };
+      case 'I': return { bg: 'bg-purple-100', text: 'text-purple-700', border: 'border-purple-200' };
+      default: return { bg: 'bg-gray-100', text: 'text-gray-700', border: 'border-gray-200' };
+    }
+  };
+
+  const getChamberBadge = (chamber: string) => {
+    if (chamber?.toLowerCase() === 'senate') {
+      return { bg: 'bg-purple-100', text: 'text-purple-700', label: 'S' };
+    }
+    return { bg: 'bg-emerald-100', text: 'text-emerald-700', label: 'H' };
+  };
+
+  const getTypeStyle = (type: string) => {
+    switch (type?.toLowerCase()) {
+      case 'buy':
+        return 'bg-green-100 text-green-800 border border-green-200';
+      case 'sell':
+        return 'bg-red-100 text-red-800 border border-red-200';
+      case 'exchange':
+        return 'bg-amber-100 text-amber-800 border border-amber-200';
+      default:
+        return 'bg-gray-100 text-gray-800 border border-gray-200';
+    }
+  };
+
+  // Sort traders by selected field
+  const sortedTraders = [...topTraders].sort((a, b) => {
+    return (b[sortField] || 0) - (a[sortField] || 0);
+  });
 
   // Show error state
   if (error && !loading) {
@@ -139,7 +207,7 @@ function CongressPageContent() {
           <AlertTriangle className="h-5 w-5 text-amber-600 flex-shrink-0 mt-0.5" />
           <div className="text-sm text-amber-800">
             <strong>Data Source:</strong> All data comes from official Congressional financial disclosures 
-            required by the STOCK Act. Trades are self-reported 
+            required by the STOCK Act. Showing <strong>House & Senate</strong> data. Trades are self-reported 
             and may have a reporting delay of up to 45 days. This is informational only — not financial advice.
             {stats?.last_updated && (
               <span className="ml-1 text-green-700">
@@ -195,6 +263,113 @@ function CongressPageContent() {
             </>
           )}
         </div>
+
+        {/* Party Breakdown */}
+        {!loading && stats?.by_party && (
+          <div className="mt-8 bg-white rounded-xl shadow-sm p-6">
+            <h2 className="text-lg font-semibold text-gray-900 mb-4 flex items-center gap-2">
+              <Building2 className="h-5 w-5" />
+              Trading by Party
+            </h2>
+            <div className="grid md:grid-cols-3 gap-4">
+              {/* Republicans */}
+              <div className="bg-red-50 rounded-lg p-4 border border-red-100">
+                <div className="flex items-center justify-between mb-2">
+                  <span className="text-red-700 font-semibold flex items-center gap-2">
+                    <span className="w-3 h-3 bg-red-500 rounded-full"></span>
+                    Republicans
+                  </span>
+                  <span className="text-xs text-red-600 bg-red-100 px-2 py-1 rounded">
+                    {stats.by_party.R?.trades?.toLocaleString() || 0} trades
+                  </span>
+                </div>
+                <p className="text-2xl font-bold text-red-800">{stats.by_party.R?.volume_formatted || '$0'}</p>
+                <div className="mt-2 flex gap-4 text-xs text-red-600">
+                  <span className="flex items-center gap-1">
+                    <TrendingUp className="h-3 w-3" />
+                    {stats.by_party.R?.buys?.toLocaleString() || 0} buys
+                  </span>
+                  <span className="flex items-center gap-1">
+                    <TrendingDown className="h-3 w-3" />
+                    {stats.by_party.R?.sells?.toLocaleString() || 0} sells
+                  </span>
+                </div>
+              </div>
+
+              {/* Democrats */}
+              <div className="bg-blue-50 rounded-lg p-4 border border-blue-100">
+                <div className="flex items-center justify-between mb-2">
+                  <span className="text-blue-700 font-semibold flex items-center gap-2">
+                    <span className="w-3 h-3 bg-blue-500 rounded-full"></span>
+                    Democrats
+                  </span>
+                  <span className="text-xs text-blue-600 bg-blue-100 px-2 py-1 rounded">
+                    {stats.by_party.D?.trades?.toLocaleString() || 0} trades
+                  </span>
+                </div>
+                <p className="text-2xl font-bold text-blue-800">{stats.by_party.D?.volume_formatted || '$0'}</p>
+                <div className="mt-2 flex gap-4 text-xs text-blue-600">
+                  <span className="flex items-center gap-1">
+                    <TrendingUp className="h-3 w-3" />
+                    {stats.by_party.D?.buys?.toLocaleString() || 0} buys
+                  </span>
+                  <span className="flex items-center gap-1">
+                    <TrendingDown className="h-3 w-3" />
+                    {stats.by_party.D?.sells?.toLocaleString() || 0} sells
+                  </span>
+                </div>
+              </div>
+
+              {/* Independents */}
+              <div className="bg-purple-50 rounded-lg p-4 border border-purple-100">
+                <div className="flex items-center justify-between mb-2">
+                  <span className="text-purple-700 font-semibold flex items-center gap-2">
+                    <span className="w-3 h-3 bg-purple-500 rounded-full"></span>
+                    Independents
+                  </span>
+                  <span className="text-xs text-purple-600 bg-purple-100 px-2 py-1 rounded">
+                    {stats.by_party.I?.trades?.toLocaleString() || 0} trades
+                  </span>
+                </div>
+                <p className="text-2xl font-bold text-purple-800">{stats.by_party.I?.volume_formatted || '$0'}</p>
+                <div className="mt-2 flex gap-4 text-xs text-purple-600">
+                  <span className="flex items-center gap-1">
+                    <TrendingUp className="h-3 w-3" />
+                    {stats.by_party.I?.buys?.toLocaleString() || 0} buys
+                  </span>
+                  <span className="flex items-center gap-1">
+                    <TrendingDown className="h-3 w-3" />
+                    {stats.by_party.I?.sells?.toLocaleString() || 0} sells
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            {/* Party comparison bar */}
+            {stats.by_party.R && stats.by_party.D && (
+              <div className="mt-4">
+                <div className="text-xs text-gray-500 mb-1">Trade Volume Distribution</div>
+                <div className="h-4 bg-gray-100 rounded-full overflow-hidden flex">
+                  <div 
+                    className="bg-red-500 transition-all duration-500"
+                    style={{ width: `${(stats.by_party.R.trades / stats.total_trades) * 100}%` }}
+                    title={`Republicans: ${stats.by_party.R.trades} trades`}
+                  />
+                  <div 
+                    className="bg-blue-500 transition-all duration-500"
+                    style={{ width: `${(stats.by_party.D.trades / stats.total_trades) * 100}%` }}
+                    title={`Democrats: ${stats.by_party.D.trades} trades`}
+                  />
+                  <div 
+                    className="bg-purple-500 transition-all duration-500"
+                    style={{ width: `${((stats.by_party.I?.trades || 0) / stats.total_trades) * 100}%` }}
+                    title={`Independents: ${stats.by_party.I?.trades || 0} trades`}
+                  />
+                </div>
+              </div>
+            )}
+          </div>
+        )}
       </div>
 
       {/* Main Content Grid */}
@@ -224,50 +399,57 @@ function CongressPageContent() {
                       </tr>
                     </thead>
                     <tbody className="divide-y divide-gray-200">
-                      {recentTrades.map((trade, idx) => (
-                        <tr key={idx} className="hover:bg-gray-50">
-                          <td className="px-6 py-4 whitespace-nowrap">
-                            <div className="flex items-center">
-                              <span className="inline-flex items-center justify-center w-6 h-6 rounded-full text-xs font-bold mr-2 bg-purple-100 text-purple-700">
-                                S
-                              </span>
-                              <div>
-                                <div className="text-sm font-medium text-gray-900">{trade.politician}</div>
-                                <div className="text-xs text-gray-500">{trade.chamber}</div>
+                      {recentTrades.map((trade, idx) => {
+                        const partyColor = getPartyColor(trade.party || '');
+                        const chamberBadge = getChamberBadge(trade.chamber);
+                        return (
+                          <tr key={idx} className="hover:bg-gray-50">
+                            <td className="px-6 py-4 whitespace-nowrap">
+                              <div className="flex items-center">
+                                <div className="flex gap-1 mr-2">
+                                  <span className={`inline-flex items-center justify-center w-6 h-6 rounded-full text-xs font-bold ${partyColor.bg} ${partyColor.text}`}>
+                                    {trade.party || '?'}
+                                  </span>
+                                  <span className={`inline-flex items-center justify-center w-6 h-6 rounded-full text-xs font-bold ${chamberBadge.bg} ${chamberBadge.text}`}>
+                                    {chamberBadge.label}
+                                  </span>
+                                </div>
+                                <div>
+                                  <div className="text-sm font-medium text-gray-900">{trade.politician}</div>
+                                  <div className="text-xs text-gray-500">{trade.state ? `${trade.chamber} • ${trade.state}` : trade.chamber}</div>
+                                </div>
                               </div>
-                            </div>
-                          </td>
-                          <td className="px-6 py-4 whitespace-nowrap">
-                            <div className="text-sm font-medium text-gray-900">{trade.ticker || 'N/A'}</div>
-                            <div className="text-xs text-gray-500 truncate max-w-32" title={trade.asset_name}>
-                              {trade.asset_name}
-                            </div>
-                          </td>
-                          <td className="px-6 py-4 whitespace-nowrap">
-                            <span className={`inline-flex px-2 py-1 text-xs font-semibold rounded-full ${
-                              trade.type === 'Buy' ? 'bg-green-100 text-green-800' : 
-                              trade.type === 'Sell' ? 'bg-red-100 text-red-800' :
-                              'bg-gray-100 text-gray-800'
-                            }`}>
-                              {trade.type}
-                            </span>
-                          </td>
-                          <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{trade.amount}</td>
-                          <td className="px-6 py-4 whitespace-nowrap">
-                            <div className="text-sm text-gray-900">{formatDate(trade.date)}</div>
-                            {trade.filing_url && (
-                              <a 
-                                href={trade.filing_url} 
-                                target="_blank" 
-                                rel="noopener noreferrer"
-                                className="text-xs text-primary-600 hover:text-primary-700 flex items-center gap-1"
-                              >
-                                Filing <ExternalLink className="h-3 w-3" />
-                              </a>
-                            )}
-                          </td>
-                        </tr>
-                      ))}
+                            </td>
+                            <td className="px-6 py-4 whitespace-nowrap">
+                              <div className="text-sm font-medium text-gray-900">{trade.ticker || 'N/A'}</div>
+                              <div className="text-xs text-gray-500 truncate max-w-32" title={trade.asset_name}>
+                                {trade.asset_name}
+                              </div>
+                            </td>
+                            <td className="px-6 py-4 whitespace-nowrap">
+                              <span className={`inline-flex px-2.5 py-1 text-xs font-semibold rounded-full ${getTypeStyle(trade.type)}`}>
+                                {trade.type === 'Buy' && <TrendingUp className="h-3 w-3 mr-1" />}
+                                {trade.type === 'Sell' && <TrendingDown className="h-3 w-3 mr-1" />}
+                                {trade.type}
+                              </span>
+                            </td>
+                            <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{trade.amount}</td>
+                            <td className="px-6 py-4 whitespace-nowrap">
+                              <div className="text-sm text-gray-900">{formatDate(trade.date)}</div>
+                              {trade.filing_url && (
+                                <a 
+                                  href={trade.filing_url} 
+                                  target="_blank" 
+                                  rel="noopener noreferrer"
+                                  className="text-xs text-primary-600 hover:text-primary-700 flex items-center gap-1"
+                                >
+                                  Filing <ExternalLink className="h-3 w-3" />
+                                </a>
+                              )}
+                            </td>
+                          </tr>
+                        );
+                      })}
                     </tbody>
                   </table>
                 </div>
@@ -277,6 +459,54 @@ function CongressPageContent() {
 
           {/* Sidebar */}
           <div className="space-y-6">
+            {/* Filters */}
+            <div className="bg-white rounded-xl shadow-sm p-6">
+              <h3 className="text-lg font-semibold text-gray-900 mb-4 flex items-center gap-2">
+                <Filter className="h-5 w-5" />
+                Filter Traders
+              </h3>
+              <div className="space-y-4">
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Party</label>
+                  <select 
+                    value={partyFilter}
+                    onChange={(e) => setPartyFilter(e.target.value)}
+                    className="w-full rounded-lg border-gray-300 shadow-sm focus:border-primary-500 focus:ring-primary-500 text-sm"
+                  >
+                    <option value="all">All Parties</option>
+                    <option value="R">Republican</option>
+                    <option value="D">Democrat</option>
+                    <option value="I">Independent</option>
+                  </select>
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Chamber</label>
+                  <select 
+                    value={chamberFilter}
+                    onChange={(e) => setChamberFilter(e.target.value)}
+                    className="w-full rounded-lg border-gray-300 shadow-sm focus:border-primary-500 focus:ring-primary-500 text-sm"
+                  >
+                    <option value="all">Both Chambers</option>
+                    <option value="house">House</option>
+                    <option value="senate">Senate</option>
+                  </select>
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Sort By</label>
+                  <select 
+                    value={sortField}
+                    onChange={(e) => setSortField(e.target.value as SortField)}
+                    className="w-full rounded-lg border-gray-300 shadow-sm focus:border-primary-500 focus:ring-primary-500 text-sm"
+                  >
+                    <option value="trades">Total Trades</option>
+                    <option value="buys">Most Buys</option>
+                    <option value="sells">Most Sells</option>
+                    <option value="volume">Est. Volume</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
             {/* Top Traders */}
             {loading ? (
               <ListSkeleton items={10} />
@@ -289,18 +519,38 @@ function CongressPageContent() {
                   </Link>
                 </div>
                 <div className="divide-y divide-gray-200">
-                  {topTraders.map((person, idx) => (
-                    <div key={idx} className="px-6 py-4 flex items-center justify-between">
-                      <div className="flex items-center">
-                        <span className="text-lg font-bold text-gray-300 mr-3">#{idx + 1}</span>
-                        <div>
-                          <p className="text-sm font-medium text-gray-900">{person.name}</p>
-                          <p className="text-xs text-gray-500">{person.chamber}</p>
+                  {sortedTraders.map((person, idx) => {
+                    const partyColor = getPartyColor(person.party);
+                    const chamberBadge = getChamberBadge(person.chamber);
+                    return (
+                      <div key={idx} className="px-6 py-4">
+                        <div className="flex items-center justify-between">
+                          <div className="flex items-center">
+                            <span className="text-lg font-bold text-gray-300 mr-3">#{idx + 1}</span>
+                            <div className="flex gap-1 mr-2">
+                              <span className={`inline-flex items-center justify-center w-5 h-5 rounded-full text-xs font-bold ${partyColor.bg} ${partyColor.text}`}>
+                                {person.party || '?'}
+                              </span>
+                              <span className={`inline-flex items-center justify-center w-5 h-5 rounded-full text-xs font-bold ${chamberBadge.bg} ${chamberBadge.text}`}>
+                                {chamberBadge.label}
+                              </span>
+                            </div>
+                            <div>
+                              <p className="text-sm font-medium text-gray-900">{person.name}</p>
+                              <p className="text-xs text-gray-500">{person.state || person.chamber}</p>
+                            </div>
+                          </div>
+                          <div className="text-right">
+                            <span className="text-sm font-bold text-gray-600">{person.trades}</span>
+                            <div className="text-xs text-gray-400 flex gap-2 justify-end">
+                              <span className="text-green-600">{person.buys} ↑</span>
+                              <span className="text-red-600">{person.sells} ↓</span>
+                            </div>
+                          </div>
                         </div>
                       </div>
-                      <span className="text-sm font-bold text-gray-600">{person.trades} trades</span>
-                    </div>
-                  ))}
+                    );
+                  })}
                 </div>
               </div>
             )}
@@ -336,8 +586,8 @@ function CongressPageContent() {
                   Senate Financial Disclosures (efdsearch.senate.gov)
                 </li>
                 <li className="flex items-center gap-2">
-                  <span className="w-2 h-2 bg-gray-300 rounded-full"></span>
-                  House Financial Disclosures (coming soon)
+                  <span className="w-2 h-2 bg-green-500 rounded-full"></span>
+                  House Financial Disclosures (disclosures-clerk.house.gov)
                 </li>
               </ul>
               <p className="text-xs text-gray-500 mt-4">
