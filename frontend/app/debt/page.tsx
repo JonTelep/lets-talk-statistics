@@ -1,11 +1,12 @@
 'use client';
 
-import { Building2, TrendingUp, DollarSign, Users, Clock, AlertTriangle, Calendar, RefreshCw } from 'lucide-react';
+import { Building2, TrendingUp, DollarSign, Users, Clock, AlertTriangle, RefreshCw } from 'lucide-react';
 import Link from 'next/link';
 import { useDebtHistory, calculateDebtStats, DebtDataPoint } from '@/services/hooks/useDebtData';
 import { DownloadRawData } from '@/components/ui/DownloadRawData';
 import { ErrorBoundary } from '@/components/ui/ErrorBoundary';
 import { ErrorStateCompact, ErrorStateTableRow } from '@/components/ui/ErrorState';
+import { Skeleton, StatCardSkeleton, HeroCounterSkeleton } from '@/components/ui/Skeleton';
 
 const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
 
@@ -36,6 +37,18 @@ const milestones = [
   { amount: '$30 Trillion', year: '2022', daysTo: '1,825 days' },
   { amount: '$35 Trillion', year: '2024', daysTo: '730 days' },
 ];
+
+// Table row skeleton for historical debt table
+function TableRowSkeleton() {
+  return (
+    <tr>
+      <td className="px-6 py-4"><Skeleton className="h-4 w-12" /></td>
+      <td className="px-6 py-4 text-right"><Skeleton className="h-4 w-16 ml-auto" /></td>
+      <td className="px-6 py-4 text-right"><Skeleton className="h-4 w-14 ml-auto" /></td>
+      <td className="px-6 py-4 text-right"><Skeleton className="h-4 w-12 ml-auto" /></td>
+    </tr>
+  );
+}
 
 // Convert API data to yearly format for the table
 function aggregateByYear(data: DebtDataPoint[]): Array<{ year: string; debt: number; gdpRatio: number }> {
@@ -96,40 +109,37 @@ function DebtPageContent() {
 
       {/* Live Counter Section */}
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 -mt-8">
-        <div className="bg-white rounded-xl shadow-lg p-8 text-center">
-          {loading ? (
-            <div className="flex items-center justify-center py-8">
-              <RefreshCw className="h-8 w-8 animate-spin text-red-600" />
-              <span className="ml-3 text-gray-600">Loading live data from Treasury...</span>
-            </div>
-          ) : error ? (
+        {loading ? (
+          <HeroCounterSkeleton />
+        ) : error ? (
+          <div className="bg-white rounded-xl shadow-lg p-8 text-center">
             <ErrorStateCompact 
               message="Failed to load live data" 
               onRetry={refetch} 
             />
-          ) : stats ? (
-            <>
-              <p className="text-sm text-gray-500 mb-2">U.S. National Debt</p>
-              <p className="text-5xl md:text-6xl font-bold text-red-600 font-mono">
-                ${stats.totalDebtTrillions} Trillion
-              </p>
-              <p className="text-sm text-gray-500 mt-2">As of {stats.lastUpdated}</p>
-              <div className="mt-4 flex justify-center gap-8 text-sm">
-                <div>
-                  <span className="text-red-500 font-medium">+${stats.dailyIncreaseBillions}B</span>
-                  <span className="text-gray-500"> per day (avg)</span>
-                </div>
-                <div>
-                  <span className="text-red-500 font-medium">${interestDaily}B</span>
-                  <span className="text-gray-500"> daily interest (est)</span>
-                </div>
+          </div>
+        ) : stats ? (
+          <div className="bg-white rounded-xl shadow-lg p-8 text-center">
+            <p className="text-sm text-gray-500 mb-2">U.S. National Debt</p>
+            <p className="text-5xl md:text-6xl font-bold text-red-600 font-mono">
+              ${stats.totalDebtTrillions} Trillion
+            </p>
+            <p className="text-sm text-gray-500 mt-2">As of {stats.lastUpdated}</p>
+            <div className="mt-4 flex justify-center gap-8 text-sm">
+              <div>
+                <span className="text-red-500 font-medium">+${stats.dailyIncreaseBillions}B</span>
+                <span className="text-gray-500"> per day (avg)</span>
               </div>
-              <p className="text-xs text-green-600 mt-3">
-                ✓ Live data from U.S. Treasury Fiscal Data API
-              </p>
-            </>
-          ) : null}
-        </div>
+              <div>
+                <span className="text-red-500 font-medium">${interestDaily}B</span>
+                <span className="text-gray-500"> daily interest (est)</span>
+              </div>
+            </div>
+            <p className="text-xs text-green-600 mt-3">
+              ✓ Live data from U.S. Treasury Fiscal Data API
+            </p>
+          </div>
+        ) : null}
       </div>
 
       {/* Disclaimer */}
@@ -151,47 +161,58 @@ function DebtPageContent() {
       {/* Per Person Stats */}
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
-          <div className="bg-white rounded-xl shadow-sm p-6">
-            <div className="flex items-center gap-2 text-gray-500 text-sm mb-1">
-              <Users className="h-4 w-4" />
-              Debt Per Citizen
-            </div>
-            <p className="text-2xl font-bold text-red-600">
-              ${stats?.debtPerCitizen.toLocaleString() || '---'}
-            </p>
-            <p className="text-xs text-gray-500">Every man, woman, child</p>
-          </div>
-          
-          <div className="bg-white rounded-xl shadow-sm p-6">
-            <div className="flex items-center gap-2 text-gray-500 text-sm mb-1">
-              <DollarSign className="h-4 w-4" />
-              Debt Per Taxpayer
-            </div>
-            <p className="text-2xl font-bold text-red-600">
-              ${stats?.debtPerTaxpayer.toLocaleString() || '---'}
-            </p>
-            <p className="text-xs text-gray-500">Per tax-filing household</p>
-          </div>
-          
-          <div className="bg-white rounded-xl shadow-sm p-6">
-            <div className="flex items-center gap-2 text-gray-500 text-sm mb-1">
-              <TrendingUp className="h-4 w-4" />
-              Debt-to-GDP Ratio
-            </div>
-            <p className="text-2xl font-bold text-gray-900">
-              {stats?.gdpRatio || '---'}%
-            </p>
-            <p className="text-xs text-gray-500">Debt exceeds annual GDP</p>
-          </div>
-          
-          <div className="bg-white rounded-xl shadow-sm p-6">
-            <div className="flex items-center gap-2 text-gray-500 text-sm mb-1">
-              <Clock className="h-4 w-4" />
-              Interest Paid (FY24)
-            </div>
-            <p className="text-2xl font-bold text-red-600">$1.13T</p>
-            <p className="text-xs text-gray-500">Just to service the debt</p>
-          </div>
+          {loading ? (
+            <>
+              <StatCardSkeleton />
+              <StatCardSkeleton />
+              <StatCardSkeleton />
+              <StatCardSkeleton />
+            </>
+          ) : (
+            <>
+              <div className="bg-white rounded-xl shadow-sm p-6">
+                <div className="flex items-center gap-2 text-gray-500 text-sm mb-1">
+                  <Users className="h-4 w-4" />
+                  Debt Per Citizen
+                </div>
+                <p className="text-2xl font-bold text-red-600">
+                  ${stats?.debtPerCitizen.toLocaleString() || '---'}
+                </p>
+                <p className="text-xs text-gray-500">Every man, woman, child</p>
+              </div>
+              
+              <div className="bg-white rounded-xl shadow-sm p-6">
+                <div className="flex items-center gap-2 text-gray-500 text-sm mb-1">
+                  <DollarSign className="h-4 w-4" />
+                  Debt Per Taxpayer
+                </div>
+                <p className="text-2xl font-bold text-red-600">
+                  ${stats?.debtPerTaxpayer.toLocaleString() || '---'}
+                </p>
+                <p className="text-xs text-gray-500">Per tax-filing household</p>
+              </div>
+              
+              <div className="bg-white rounded-xl shadow-sm p-6">
+                <div className="flex items-center gap-2 text-gray-500 text-sm mb-1">
+                  <TrendingUp className="h-4 w-4" />
+                  Debt-to-GDP Ratio
+                </div>
+                <p className="text-2xl font-bold text-gray-900">
+                  {stats?.gdpRatio || '---'}%
+                </p>
+                <p className="text-xs text-gray-500">Debt exceeds annual GDP</p>
+              </div>
+              
+              <div className="bg-white rounded-xl shadow-sm p-6">
+                <div className="flex items-center gap-2 text-gray-500 text-sm mb-1">
+                  <Clock className="h-4 w-4" />
+                  Interest Paid (FY24)
+                </div>
+                <p className="text-2xl font-bold text-red-600">$1.13T</p>
+                <p className="text-xs text-gray-500">Just to service the debt</p>
+              </div>
+            </>
+          )}
         </div>
       </div>
 
@@ -219,12 +240,16 @@ function DebtPageContent() {
                   </thead>
                   <tbody className="divide-y divide-gray-200">
                     {loading ? (
-                      <tr>
-                        <td colSpan={4} className="px-6 py-8 text-center text-gray-500">
-                          <RefreshCw className="h-5 w-5 animate-spin inline mr-2" />
-                          Loading historical data...
-                        </td>
-                      </tr>
+                      <>
+                        <TableRowSkeleton />
+                        <TableRowSkeleton />
+                        <TableRowSkeleton />
+                        <TableRowSkeleton />
+                        <TableRowSkeleton />
+                        <TableRowSkeleton />
+                        <TableRowSkeleton />
+                        <TableRowSkeleton />
+                      </>
                     ) : error ? (
                       <ErrorStateTableRow 
                         colSpan={4} 

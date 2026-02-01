@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect, useCallback } from 'react';
-import { TrendingUp, TrendingDown, Users, Calendar, DollarSign, AlertTriangle, ExternalLink, Loader2, Filter, ArrowUpDown, Building2 } from 'lucide-react';
+import { TrendingUp, TrendingDown, Users, Calendar, DollarSign, AlertTriangle, ExternalLink, Loader2, RefreshCw, Filter, ArrowUpDown, Building2 } from 'lucide-react';
 import Link from 'next/link';
 import { DownloadRawData } from '@/components/ui/DownloadRawData';
 import { ErrorBoundary } from '@/components/ui/ErrorBoundary';
@@ -9,9 +9,8 @@ import { ErrorState } from '@/components/ui/ErrorState';
 import {
   Skeleton,
   StatCardSkeleton,
-  StatCardsRowSkeleton,
   TradesTableSkeleton,
-  PoliticianListSkeleton
+  ListSkeleton
 } from '@/components/ui/Skeleton';
 
 const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
@@ -173,7 +172,8 @@ function CongressPageContent() {
     return (b[sortField] || 0) - (a[sortField] || 0);
   });
 
-  if (error) {
+  // Show error state
+  if (error && !loading) {
     return (
       <div className="min-h-screen bg-gray-50 flex items-center justify-center">
         <ErrorState 
@@ -209,48 +209,60 @@ function CongressPageContent() {
             <strong>Data Source:</strong> All data comes from official Congressional financial disclosures 
             required by the STOCK Act. Showing <strong>House & Senate</strong> data. Trades are self-reported 
             and may have a reporting delay of up to 45 days. This is informational only — not financial advice.
+            {stats?.last_updated && (
+              <span className="ml-1 text-green-700">
+                Last updated: {new Date(stats.last_updated).toLocaleString()}
+              </span>
+            )}
           </div>
         </div>
       </div>
 
       {/* Stats Grid */}
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
-        {loading ? (
-          <StatCardsRowSkeleton count={4} />
-        ) : (
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
-            <div className="bg-white rounded-xl shadow-sm p-6">
-              <div className="flex items-center gap-2 text-gray-500 text-sm mb-1">
-                <TrendingUp className="h-4 w-4" />
-                Total Trades
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+          {loading ? (
+            <>
+              <StatCardSkeleton />
+              <StatCardSkeleton />
+              <StatCardSkeleton />
+              <StatCardSkeleton />
+            </>
+          ) : (
+            <>
+              <div className="bg-white rounded-xl shadow-sm p-6">
+                <div className="flex items-center gap-2 text-gray-500 text-sm mb-1">
+                  <TrendingUp className="h-4 w-4" />
+                  Total Trades
+                </div>
+                <p className="text-2xl font-bold text-gray-900">{stats?.total_trades?.toLocaleString() || 0}</p>
               </div>
-              <p className="text-2xl font-bold text-gray-900">{stats?.total_trades?.toLocaleString() || 0}</p>
-            </div>
-            <div className="bg-white rounded-xl shadow-sm p-6">
-              <div className="flex items-center gap-2 text-gray-500 text-sm mb-1">
-                <DollarSign className="h-4 w-4" />
-                Est. Volume
+              <div className="bg-white rounded-xl shadow-sm p-6">
+                <div className="flex items-center gap-2 text-gray-500 text-sm mb-1">
+                  <DollarSign className="h-4 w-4" />
+                  Est. Volume
+                </div>
+                <p className="text-2xl font-bold text-gray-900">{stats?.total_volume || '$0'}</p>
               </div>
-              <p className="text-2xl font-bold text-gray-900">{stats?.total_volume || '$0'}</p>
-            </div>
-            <div className="bg-white rounded-xl shadow-sm p-6">
-              <div className="flex items-center gap-2 text-gray-500 text-sm mb-1">
-                <Users className="h-4 w-4" />
-                Active Traders
+              <div className="bg-white rounded-xl shadow-sm p-6">
+                <div className="flex items-center gap-2 text-gray-500 text-sm mb-1">
+                  <Users className="h-4 w-4" />
+                  Active Traders
+                </div>
+                <p className="text-2xl font-bold text-gray-900">{stats?.traders_count || 0}</p>
               </div>
-              <p className="text-2xl font-bold text-gray-900">{stats?.traders_count || 0}</p>
-            </div>
-            <div className="bg-white rounded-xl shadow-sm p-6">
-              <div className="flex items-center gap-2 text-gray-500 text-sm mb-1">
-                <Calendar className="h-4 w-4" />
-                Data Range
+              <div className="bg-white rounded-xl shadow-sm p-6">
+                <div className="flex items-center gap-2 text-gray-500 text-sm mb-1">
+                  <Calendar className="h-4 w-4" />
+                  Data Range
+                </div>
+                <p className="text-lg font-bold text-gray-900">
+                  {stats?.date_range?.earliest?.slice(0, 4) || '?'} - {stats?.date_range?.latest?.slice(0, 4) || '?'}
+                </p>
               </div>
-              <p className="text-lg font-bold text-gray-900">
-                {stats?.date_range?.earliest?.slice(0, 4) || '?'} - {stats?.date_range?.latest?.slice(0, 4) || '?'}
-              </p>
-            </div>
-          </div>
-        )}
+            </>
+          )}
+        </div>
 
         {/* Party Breakdown */}
         {!loading && stats?.by_party && (
@@ -365,16 +377,16 @@ function CongressPageContent() {
         <div className="grid lg:grid-cols-3 gap-8">
           {/* Recent Trades */}
           <div className="lg:col-span-2">
-            <div className="bg-white rounded-xl shadow-sm">
-              <div className="px-6 py-4 border-b border-gray-200 flex justify-between items-center">
-                <h2 className="text-lg font-semibold text-gray-900">Recent Trades</h2>
-                <Link href="/congress/trades" className="text-sm text-primary-600 hover:text-primary-700">
-                  View all →
-                </Link>
-              </div>
-              {loading ? (
-                <TradesTableSkeleton rows={10} />
-              ) : (
+            {loading ? (
+              <TradesTableSkeleton rows={10} />
+            ) : (
+              <div className="bg-white rounded-xl shadow-sm">
+                <div className="px-6 py-4 border-b border-gray-200 flex justify-between items-center">
+                  <h2 className="text-lg font-semibold text-gray-900">Recent Trades</h2>
+                  <Link href="/congress/trades" className="text-sm text-primary-600 hover:text-primary-700">
+                    View all →
+                  </Link>
+                </div>
                 <div className="overflow-x-auto">
                   <table className="w-full">
                     <thead className="bg-gray-50">
@@ -441,8 +453,8 @@ function CongressPageContent() {
                     </tbody>
                   </table>
                 </div>
-              )}
-            </div>
+              </div>
+            )}
           </div>
 
           {/* Sidebar */}
@@ -496,16 +508,16 @@ function CongressPageContent() {
             </div>
 
             {/* Top Traders */}
-            <div className="bg-white rounded-xl shadow-sm">
-              <div className="px-6 py-4 border-b border-gray-200 flex justify-between items-center">
-                <h2 className="text-lg font-semibold text-gray-900">Most Active Traders</h2>
-                <Link href="/congress/politicians" className="text-sm text-primary-600 hover:text-primary-700">
-                  View all →
-                </Link>
-              </div>
-              {loading ? (
-                <PoliticianListSkeleton count={10} />
-              ) : (
+            {loading ? (
+              <ListSkeleton items={10} />
+            ) : (
+              <div className="bg-white rounded-xl shadow-sm">
+                <div className="px-6 py-4 border-b border-gray-200 flex justify-between items-center">
+                  <h2 className="text-lg font-semibold text-gray-900">Most Active Traders</h2>
+                  <Link href="/congress/politicians" className="text-sm text-primary-600 hover:text-primary-700">
+                    View all →
+                  </Link>
+                </div>
                 <div className="divide-y divide-gray-200">
                   {sortedTraders.map((person, idx) => {
                     const partyColor = getPartyColor(person.party);
@@ -540,24 +552,17 @@ function CongressPageContent() {
                     );
                   })}
                 </div>
-              )}
-            </div>
+              </div>
+            )}
 
             {/* Popular Tickers */}
-            <div className="bg-white rounded-xl shadow-sm">
-              <div className="px-6 py-4 border-b border-gray-200">
-                <h2 className="text-lg font-semibold text-gray-900">Most Traded Stocks</h2>
-              </div>
-              {loading ? (
-                <div className="p-4 space-y-3">
-                  {[...Array(10)].map((_, i) => (
-                    <div key={i} className="flex justify-between">
-                      <Skeleton className="w-16 h-4" />
-                      <Skeleton className="w-12 h-4" />
-                    </div>
-                  ))}
+            {loading ? (
+              <ListSkeleton items={10} />
+            ) : (
+              <div className="bg-white rounded-xl shadow-sm">
+                <div className="px-6 py-4 border-b border-gray-200">
+                  <h2 className="text-lg font-semibold text-gray-900">Most Traded Stocks</h2>
                 </div>
-              ) : (
                 <div className="divide-y divide-gray-200">
                   {popularTickers.map((ticker, idx) => (
                     <div key={idx} className="px-6 py-3 flex items-center justify-between">
@@ -569,8 +574,8 @@ function CongressPageContent() {
                     </div>
                   ))}
                 </div>
-              )}
-            </div>
+              </div>
+            )}
 
             {/* Data Sources Card */}
             <div className="bg-white rounded-xl shadow-sm p-6">
