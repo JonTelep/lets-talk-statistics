@@ -2,6 +2,17 @@
 
 import { Briefcase, TrendingUp, TrendingDown, Users, Building2, AlertTriangle, RefreshCw, Minus } from 'lucide-react';
 import Link from 'next/link';
+import {
+  LineChart,
+  Line,
+  XAxis,
+  YAxis,
+  CartesianGrid,
+  Tooltip,
+  ResponsiveContainer,
+  BarChart,
+  Bar,
+} from 'recharts';
 import { 
   useUnemploymentHistory, 
   calculateEmploymentStats, 
@@ -51,6 +62,17 @@ function TrendIcon({ direction }: { direction: string }) {
   if (direction === 'up') return <TrendingUp className="h-4 w-4 text-red-500" />;
   if (direction === 'down') return <TrendingDown className="h-4 w-4 text-green-500" />;
   return <Minus className="h-4 w-4 text-gray-400" />;
+}
+
+// Chart skeleton component
+function ChartSkeleton({ height = 300 }: { height?: number }) {
+  return (
+    <div className="animate-pulse" style={{ height }}>
+      <div className="h-full bg-gray-200 rounded-lg flex items-center justify-center">
+        <div className="text-gray-400 text-sm">Loading chart...</div>
+      </div>
+    </div>
+  );
 }
 
 // Table row skeleton
@@ -173,6 +195,65 @@ function EmploymentPageContent() {
         </div>
       </div>
 
+      {/* Unemployment Rate Chart */}
+      <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
+        <div className="bg-white rounded-xl shadow-sm p-6">
+          <h2 className="text-lg font-semibold text-gray-900 mb-4">Unemployment Rate Trend</h2>
+          {loading ? (
+            <ChartSkeleton height={300} />
+          ) : error ? (
+            <ErrorStateCompact message="Failed to load chart data" onRetry={refetch} />
+          ) : monthlyData.length > 0 ? (
+            <ResponsiveContainer width="100%" height={300}>
+              <LineChart
+                data={[...monthlyData].reverse()}
+                margin={{ top: 5, right: 30, left: 20, bottom: 5 }}
+              >
+                <CartesianGrid strokeDasharray="3 3" stroke="#e5e7eb" />
+                <XAxis 
+                  dataKey="month" 
+                  stroke="#6b7280"
+                  fontSize={12}
+                  interval="preserveStartEnd"
+                  tickFormatter={(value) => {
+                    // Shorten month names for readability
+                    const parts = value.split(' ');
+                    return parts[0].substring(0, 3) + ' ' + parts[1]?.substring(2);
+                  }}
+                />
+                <YAxis 
+                  stroke="#6b7280"
+                  fontSize={12}
+                  domain={['dataMin - 0.5', 'dataMax + 0.5']}
+                  tickFormatter={(value) => `${value}%`}
+                />
+                <Tooltip
+                  contentStyle={{
+                    backgroundColor: '#fff',
+                    border: '1px solid #e5e7eb',
+                    borderRadius: '8px',
+                    boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)',
+                  }}
+                  formatter={(value: number) => [`${value}%`, 'Unemployment Rate']}
+                />
+                <Line
+                  type="monotone"
+                  dataKey="rate"
+                  stroke="#3b82f6"
+                  strokeWidth={3}
+                  dot={{ fill: '#3b82f6', strokeWidth: 2, r: 3 }}
+                  activeDot={{ r: 6, fill: '#2563eb' }}
+                />
+              </LineChart>
+            </ResponsiveContainer>
+          ) : (
+            <div className="h-[300px] flex items-center justify-center text-gray-500">
+              No data available for chart
+            </div>
+          )}
+        </div>
+      </div>
+
       {/* Main Content */}
       <div className="mx-auto max-w-7xl px-4 pb-16 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-3 gap-8">
@@ -258,17 +339,48 @@ function EmploymentPageContent() {
                 <p className="text-sm text-gray-500">Monthly job growth by industry</p>
               </div>
               <div className="p-6">
-                <div className="space-y-4">
-                  {sectorJobs.map((sector, idx) => (
-                    <div key={idx} className="flex items-center justify-between">
-                      <span className="text-sm text-gray-700">{sector.sector}</span>
-                      <div className="flex items-center gap-4">
-                        <span className="text-sm font-medium text-gray-900">+{sector.jobs.toLocaleString()}</span>
-                        <span className="text-xs text-green-600 w-12 text-right">{sector.change}</span>
-                      </div>
-                    </div>
-                  ))}
-                </div>
+                <ResponsiveContainer width="100%" height={250}>
+                  <BarChart
+                    data={sectorJobs.map(s => ({ 
+                      name: s.sector.split(' ')[0], // Short name
+                      fullName: s.sector,
+                      jobs: s.jobs 
+                    }))}
+                    layout="vertical"
+                    margin={{ top: 5, right: 30, left: 20, bottom: 5 }}
+                  >
+                    <CartesianGrid strokeDasharray="3 3" stroke="#e5e7eb" />
+                    <XAxis 
+                      type="number" 
+                      stroke="#6b7280" 
+                      fontSize={12}
+                      tickFormatter={(value) => `+${(value / 1000).toFixed(0)}k`}
+                    />
+                    <YAxis 
+                      dataKey="name" 
+                      type="category" 
+                      stroke="#6b7280" 
+                      fontSize={11}
+                      width={80}
+                    />
+                    <Tooltip
+                      contentStyle={{
+                        backgroundColor: '#fff',
+                        border: '1px solid #e5e7eb',
+                        borderRadius: '8px',
+                      }}
+                      formatter={(value: number, name: string, props: any) => [
+                        `+${value.toLocaleString()} jobs`,
+                        props.payload.fullName
+                      ]}
+                    />
+                    <Bar 
+                      dataKey="jobs" 
+                      fill="#22c55e" 
+                      radius={[0, 4, 4, 0]}
+                    />
+                  </BarChart>
+                </ResponsiveContainer>
                 <p className="text-xs text-gray-400 mt-4">* Sector data is illustrative (would need additional BLS series)</p>
               </div>
             </div>
