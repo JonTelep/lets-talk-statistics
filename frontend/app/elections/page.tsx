@@ -6,6 +6,7 @@ import { useCandidates, formatCurrency, getPartyColor } from '@/services/hooks/u
 import { DownloadRawData } from '@/components/ui/DownloadRawData';
 import { ErrorBoundary } from '@/components/ui/ErrorBoundary';
 import { ErrorStateCompact } from '@/components/ui/ErrorState';
+import { Skeleton } from '@/components/ui/Skeleton';
 
 const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
 
@@ -155,12 +156,12 @@ function ElectionsPageContent() {
           ) : candidatesLoading ? (
             <div className="space-y-3">
               {[1, 2, 3, 4, 5].map((i) => (
-                <div key={i} className="animate-pulse flex items-center justify-between py-3 border-b">
+                <div key={i} className="flex items-center justify-between py-3 border-b">
                   <div className="flex items-center gap-3">
-                    <div className="h-6 w-12 bg-gray-200 rounded"></div>
-                    <div className="h-4 w-40 bg-gray-200 rounded"></div>
+                    <Skeleton className="h-6 w-12" />
+                    <Skeleton className="h-4 w-40" />
                   </div>
-                  <div className="h-4 w-20 bg-gray-200 rounded"></div>
+                  <Skeleton className="h-4 w-20" />
                 </div>
               ))}
             </div>

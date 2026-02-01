@@ -11,6 +11,7 @@ import {
 import { DownloadRawData } from '@/components/ui/DownloadRawData';
 import { ErrorBoundary } from '@/components/ui/ErrorBoundary';
 import { ErrorStateCompact, ErrorStateTableRow } from '@/components/ui/ErrorState';
+import { Skeleton, StatCardSkeleton } from '@/components/ui/Skeleton';
 
 const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
 
@@ -80,63 +81,58 @@ function ImmigrationPageContent() {
         ) : (
           <>
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
-              <div className="bg-white rounded-xl shadow-sm p-6">
-                <div className="flex items-center gap-2 text-gray-500 text-sm mb-1">
-                  <ArrowRight className="h-4 w-4 text-green-500" />
-                  Legal Admissions
-                </div>
-                {summaryLoading ? (
-                  <div className="h-8 bg-gray-200 animate-pulse rounded w-24"></div>
-                ) : (
-                  <p className="text-2xl font-bold text-gray-900">
-                    {summary?.legal_admissions?.toLocaleString() || '—'}
-                  </p>
-                )}
-                <p className="text-xs text-gray-500">Lawful Permanent Residents</p>
-              </div>
-              
-              <div className="bg-white rounded-xl shadow-sm p-6">
-                <div className="flex items-center gap-2 text-gray-500 text-sm mb-1">
-                  <ArrowLeft className="h-4 w-4 text-red-500" />
-                  Deportations
-                </div>
-                {summaryLoading ? (
-                  <div className="h-8 bg-gray-200 animate-pulse rounded w-24"></div>
-                ) : (
-                  <p className="text-2xl font-bold text-gray-900">
-                    {summary?.removals?.toLocaleString() || '—'}
-                  </p>
-                )}
-                <p className="text-xs text-gray-500">Removals by ICE ERO</p>
-              </div>
-              
-              <div className="bg-white rounded-xl shadow-sm p-6">
-                <div className="flex items-center gap-2 text-gray-500 text-sm mb-1">
-                  <AlertTriangle className="h-4 w-4 text-amber-500" />
-                  Border Encounters
-                </div>
-                {summaryLoading ? (
-                  <div className="h-8 bg-gray-200 animate-pulse rounded w-24"></div>
-                ) : (
-                  <p className="text-2xl font-bold text-gray-900">
-                    {summary?.border_encounters?.toLocaleString() || '—'}
-                  </p>
-                )}
-                <p className="text-xs text-gray-500">CBP Southwest Border</p>
-              </div>
-              
-              <div className="bg-white rounded-xl shadow-sm p-6">
-                <div className="flex items-center gap-2 text-gray-500 text-sm mb-1">
-                  <Calendar className="h-4 w-4 text-blue-500" />
-                  Data Year
-                </div>
-                {summaryLoading ? (
-                  <div className="h-8 bg-gray-200 animate-pulse rounded w-16"></div>
-                ) : (
-                  <p className="text-2xl font-bold text-gray-900">FY {fiscalYear || '—'}</p>
-                )}
-                <p className="text-xs text-green-600">✓ Live from API</p>
-              </div>
+              {summaryLoading ? (
+                <>
+                  <StatCardSkeleton />
+                  <StatCardSkeleton />
+                  <StatCardSkeleton />
+                  <StatCardSkeleton />
+                </>
+              ) : (
+                <>
+                  <div className="bg-white rounded-xl shadow-sm p-6">
+                    <div className="flex items-center gap-2 text-gray-500 text-sm mb-1">
+                      <ArrowRight className="h-4 w-4 text-green-500" />
+                      Legal Admissions
+                    </div>
+                    <p className="text-2xl font-bold text-gray-900">
+                      {summary?.legal_admissions?.toLocaleString() || '—'}
+                    </p>
+                    <p className="text-xs text-gray-500">Lawful Permanent Residents</p>
+                  </div>
+                  
+                  <div className="bg-white rounded-xl shadow-sm p-6">
+                    <div className="flex items-center gap-2 text-gray-500 text-sm mb-1">
+                      <ArrowLeft className="h-4 w-4 text-red-500" />
+                      Deportations
+                    </div>
+                    <p className="text-2xl font-bold text-gray-900">
+                      {summary?.removals?.toLocaleString() || '—'}
+                    </p>
+                    <p className="text-xs text-gray-500">Removals by ICE ERO</p>
+                  </div>
+                  
+                  <div className="bg-white rounded-xl shadow-sm p-6">
+                    <div className="flex items-center gap-2 text-gray-500 text-sm mb-1">
+                      <AlertTriangle className="h-4 w-4 text-amber-500" />
+                      Border Encounters
+                    </div>
+                    <p className="text-2xl font-bold text-gray-900">
+                      {summary?.border_encounters?.toLocaleString() || '—'}
+                    </p>
+                    <p className="text-xs text-gray-500">CBP Southwest Border</p>
+                  </div>
+                  
+                  <div className="bg-white rounded-xl shadow-sm p-6">
+                    <div className="flex items-center gap-2 text-gray-500 text-sm mb-1">
+                      <Calendar className="h-4 w-4 text-blue-500" />
+                      Data Year
+                    </div>
+                    <p className="text-2xl font-bold text-gray-900">FY {fiscalYear || '—'}</p>
+                    <p className="text-xs text-green-600">✓ Live from API</p>
+                  </div>
+                </>
+              )}
             </div>
 
             {/* Ratio Highlight */}
@@ -151,7 +147,7 @@ function ImmigrationPageContent() {
                 <div className="mt-4 md:mt-0 flex items-center gap-8">
                   <div className="text-center">
                     {summaryLoading ? (
-                      <div className="h-9 bg-gray-200 animate-pulse rounded w-16 mx-auto"></div>
+                      <Skeleton className="h-9 w-16 mx-auto" />
                     ) : (
                       <p className="text-3xl font-bold text-blue-600">{ratio}</p>
                     )}
@@ -159,7 +155,7 @@ function ImmigrationPageContent() {
                   </div>
                   <div className="text-center">
                     {summaryLoading ? (
-                      <div className="h-9 bg-gray-200 animate-pulse rounded w-24 mx-auto"></div>
+                      <Skeleton className="h-9 w-24 mx-auto" />
                     ) : (
                       <p className="text-3xl font-bold text-green-600">
                         +{netMigration.toLocaleString()}
@@ -199,12 +195,17 @@ function ImmigrationPageContent() {
                   </thead>
                   <tbody className="divide-y divide-gray-200">
                     {historicalLoading ? (
-                      <tr>
-                        <td colSpan={5} className="px-6 py-8 text-center text-gray-500">
-                          <RefreshCw className="h-5 w-5 animate-spin inline mr-2" />
-                          Loading historical data...
-                        </td>
-                      </tr>
+                      <>
+                        {[1, 2, 3, 4, 5, 6].map((i) => (
+                          <tr key={i}>
+                            <td className="px-6 py-4"><Skeleton className="h-4 w-16" /></td>
+                            <td className="px-6 py-4 text-right"><Skeleton className="h-4 w-20 ml-auto" /></td>
+                            <td className="px-6 py-4 text-right"><Skeleton className="h-4 w-16 ml-auto" /></td>
+                            <td className="px-6 py-4 text-right"><Skeleton className="h-4 w-20 ml-auto" /></td>
+                            <td className="px-6 py-4 text-right"><Skeleton className="h-4 w-12 ml-auto" /></td>
+                          </tr>
+                        ))}
+                      </>
                     ) : historicalData?.data && historicalData.data.length > 0 ? (
                       historicalData.data.map((row, idx) => {
                         const rowRatio = (row.legal_admissions / row.removals).toFixed(1);
@@ -253,9 +254,12 @@ function ImmigrationPageContent() {
                 {categoriesLoading ? (
                   <div className="space-y-4">
                     {[1, 2, 3, 4, 5].map((i) => (
-                      <div key={i} className="animate-pulse">
-                        <div className="h-4 bg-gray-200 rounded w-3/4 mb-2"></div>
-                        <div className="h-2 bg-gray-200 rounded"></div>
+                      <div key={i}>
+                        <div className="flex justify-between mb-2">
+                          <Skeleton className="h-4 w-3/4" />
+                          <Skeleton className="h-4 w-16" />
+                        </div>
+                        <Skeleton className="h-2 w-full rounded-full" />
                       </div>
                     ))}
                   </div>
@@ -303,9 +307,9 @@ function ImmigrationPageContent() {
               {countriesLoading ? (
                 <div className="p-6 space-y-4">
                   {[1, 2, 3, 4, 5, 6].map((i) => (
-                    <div key={i} className="flex justify-between animate-pulse">
-                      <div className="h-4 bg-gray-200 rounded w-24"></div>
-                      <div className="h-4 bg-gray-200 rounded w-16"></div>
+                    <div key={i} className="flex justify-between">
+                      <Skeleton className="h-4 w-24" />
+                      <Skeleton className="h-4 w-16" />
                     </div>
                   ))}
                 </div>
