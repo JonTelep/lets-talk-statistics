@@ -23,7 +23,8 @@ import { ErrorBoundary } from '@/components/ui/ErrorBoundary';
 import { ErrorStateCompact, ErrorStateTableRow } from '@/components/ui/ErrorState';
 import { Skeleton, StatCardSkeleton } from '@/components/ui/Skeleton';
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000/api/v1';
+const API_HOST = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
+const API_URL = `${API_HOST.replace(/\/$/, '')}/api/v1`;
 
 // Static data that doesn't come from the unemployment API
 // (would need additional BLS series for these)

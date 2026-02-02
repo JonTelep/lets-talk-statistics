@@ -36,7 +36,8 @@ function ChartSkeleton({ height = 300 }: { height?: number }) {
   );
 }
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000/api/v1';
+const API_HOST = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
+const API_URL = `${API_HOST.replace(/\/$/, '')}/api/v1`;
 
 function ImmigrationPageContent() {
   // Fetch all immigration data

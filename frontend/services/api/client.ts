@@ -3,9 +3,11 @@
  * 
  * Base URL defaults to localhost:8000 in development,
  * can be overridden via NEXT_PUBLIC_API_URL environment variable.
+ * The /api/v1 prefix is always appended automatically.
  */
 
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000/api/v1';
+const API_HOST = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
+const API_BASE_URL = `${API_HOST.replace(/\/$/, '')}/api/v1`;
 
 interface FetchOptions extends RequestInit {
   params?: Record<string, string | number | boolean | undefined>;

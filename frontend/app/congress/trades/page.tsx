@@ -4,7 +4,8 @@ import { useState, useEffect } from 'react';
 import { TrendingUp, TrendingDown, Search, Filter, Calendar, DollarSign, Loader2, AlertTriangle, ExternalLink } from 'lucide-react';
 import Link from 'next/link';
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000/api/v1';
+const API_HOST = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
+const API_URL = `${API_HOST.replace(/\/$/, '')}/api/v1`;
 
 interface Trade {
   politician: string;
