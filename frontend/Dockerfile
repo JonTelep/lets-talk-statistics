@@ -1,5 +1,5 @@
 # Frontend Dockerfile - Multi-stage build
-FROM docker.io/library/node:18-alpine AS builder
+FROM docker.io/library/node:20-alpine AS builder
 
 WORKDIR /app
 
@@ -24,7 +24,7 @@ COPY . .
 RUN npm run build
 
 # Production stage
-FROM docker.io/library/node:18-alpine AS runner
+FROM docker.io/library/node:20-alpine AS runner
 
 WORKDIR /app
 
