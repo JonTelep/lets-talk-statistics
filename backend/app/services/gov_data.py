@@ -162,7 +162,7 @@ class GovDataService:
                     "rate": float(item["value"])
                 }
                 for item in series_data
-                if item["period"].startswith("M")  # Monthly data only
+                if item["period"].startswith("M") and item["value"] != "-"  # Monthly data only, skip missing values
             ]
         }
         

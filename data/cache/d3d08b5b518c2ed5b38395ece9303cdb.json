@@ -1,0 +1,10 @@
+{
+  "source": "U.S. Treasury Fiscal Data",
+  "fetched_at": "2026-02-02T04:17:34.954422",
+  "data": [
+    {
+      "date": "2026-01-29",
+      "total_debt": 38568501122811.36
+    }
+  ]
+}

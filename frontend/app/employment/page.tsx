@@ -1,7 +1,6 @@
 'use client';
 
 import { Briefcase, TrendingUp, TrendingDown, Users, Building2, AlertTriangle, RefreshCw, Minus } from 'lucide-react';
-import Link from 'next/link';
 import {
   LineChart,
   Line,
@@ -261,11 +260,8 @@ function EmploymentPageContent() {
           {/* Monthly Unemployment Rate */}
           <div className="lg:col-span-2">
             <div className="bg-white rounded-xl shadow-sm">
-              <div className="px-6 py-4 border-b border-gray-200 flex justify-between items-center">
+              <div className="px-6 py-4 border-b border-gray-200">
                 <h2 className="text-lg font-semibold text-gray-900">Monthly Unemployment Rate</h2>
-                <Link href="/employment/historical" className="text-sm text-primary-600 hover:text-primary-700">
-                  Full history →
-                </Link>
               </div>
               <div className="overflow-x-auto">
                 <table className="w-full">
@@ -391,11 +387,8 @@ function EmploymentPageContent() {
           <div>
             {/* Unemployment by State - Static for now */}
             <div className="bg-white rounded-xl shadow-sm">
-              <div className="px-6 py-4 border-b border-gray-200 flex justify-between items-center">
+              <div className="px-6 py-4 border-b border-gray-200">
                 <h2 className="text-lg font-semibold text-gray-900">By State</h2>
-                <Link href="/employment/states" className="text-sm text-primary-600 hover:text-primary-700">
-                  All states →
-                </Link>
               </div>
               <div className="divide-y divide-gray-200">
                 <div className="px-6 py-2 bg-gray-50">

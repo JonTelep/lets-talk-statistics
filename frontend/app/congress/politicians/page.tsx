@@ -25,7 +25,7 @@ export default function PoliticiansPage() {
         setLoading(true);
         setError(null);
         
-        const response = await fetch(`${API_URL}/congress/traders?limit=50`);
+        const response = await fetch(`${API_URL}/api/v1/congress/traders?limit=50`);
         if (!response.ok) throw new Error('Failed to fetch traders');
         
         const data = await response.json();
