@@ -4,7 +4,8 @@ import { useState, useEffect } from 'react';
 import { Search, TrendingUp, Users, Loader2, AlertTriangle } from 'lucide-react';
 import Link from 'next/link';
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
+const API_HOST = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
+const API_URL = `${API_HOST.replace(/\/$/, '')}/api/v1`;
 
 interface Trader {
   name: string;

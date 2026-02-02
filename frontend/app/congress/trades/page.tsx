@@ -4,7 +4,8 @@ import { useState, useEffect } from 'react';
 import { TrendingUp, TrendingDown, Search, Filter, Calendar, DollarSign, Loader2, AlertTriangle, ExternalLink } from 'lucide-react';
 import Link from 'next/link';
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
+const API_HOST = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
+const API_URL = `${API_HOST.replace(/\/$/, '')}/api/v1`;
 
 interface Trade {
   politician: string;
@@ -60,7 +61,7 @@ export default function TradesPage() {
           params.set('type', typeFilter);
         }
 
-        const response = await fetch(`${API_URL}/api/v1/congress/trades?${params}`);
+        const response = await fetch(`${API_URL}/congress/trades?${params}`);
         if (!response.ok) throw new Error('Failed to fetch trades');
 
         const data: TradesResponse = await response.json();

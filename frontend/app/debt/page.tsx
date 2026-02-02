@@ -21,7 +21,8 @@ import { ErrorBoundary } from '@/components/ui/ErrorBoundary';
 import { ErrorStateCompact, ErrorStateTableRow } from '@/components/ui/ErrorState';
 import { Skeleton, StatCardSkeleton, HeroCounterSkeleton } from '@/components/ui/Skeleton';
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
+const API_HOST = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
+const API_URL = `${API_HOST.replace(/\/$/, '')}/api/v1`;
 
 // Static data that doesn't come from the API (would need additional endpoints)
 const debtHolders = [
@@ -482,12 +483,12 @@ function DebtPageContent() {
                 endpoints={[
                   {
                     label: 'Debt History (3 years)',
-                    url: `${API_URL}/api/v1/debt/?days=1095`,
+                    url: `${API_URL}/debt/?days=1095`,
                     filename: 'debt_history.json'
                   },
                   {
                     label: 'Latest Debt Figure',
-                    url: `${API_URL}/api/v1/debt/latest`,
+                    url: `${API_URL}/debt/latest`,
                     filename: 'debt_latest.json'
                   }
                 ]}

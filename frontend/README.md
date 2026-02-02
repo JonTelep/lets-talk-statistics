@@ -39,11 +39,11 @@ npm install
 The `.env.local` file is already configured with:
 
 ```
-NEXT_PUBLIC_API_URL=http://localhost:8000/api/v1
+NEXT_PUBLIC_API_URL=http://localhost:8000
 NEXT_PUBLIC_SITE_NAME=Let's Talk Statistics
 ```
 
-Modify if your backend runs on a different URL.
+The `/api/v1` prefix is auto-appended by the frontend code. Modify if your backend runs on a different host/port.
 
 3. **Run the development server**
 

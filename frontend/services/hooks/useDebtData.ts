@@ -2,7 +2,8 @@
 
 import { useState, useEffect } from 'react';
 
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000/api/v1';
+const API_HOST = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
+const API_BASE_URL = `${API_HOST.replace(/\/$/, '')}/api/v1`;
 
 interface DebtDataPoint {
   date: string;

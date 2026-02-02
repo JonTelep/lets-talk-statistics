@@ -1,0 +1,807 @@
+{
+  "source": "Federal Election Commission",
+  "cycle": 2026,
+  "fetched_at": "2026-02-02T04:17:45.458107",
+  "data": [
+    {
+      "name": "OSSOFF, T. JONATHAN",
+      "party": "DEM",
+      "office": "S",
+      "state": "GA",
+      "receipts": 63937894.2,
+      "disbursements": 42718888.79
+    },
+    {
+      "name": "BOOKER, CORY A.",
+      "party": "DEM",
+      "office": "S",
+      "state": "NJ",
+      "receipts": 30106071.2,
+      "disbursements": 14088433.67
+    },
+    {
+      "name": "KRISHNAMOORTHI, S",
+      "party": "DEM",
+      "office": "S",
+      "state": "IL",
+      "receipts": 28480747.61,
+      "disbursements": 13234415.38
+    },
+    {
+      "name": "OCASIO-CORTEZ, ALEXANDRIA",
+      "party": "DEM",
+      "office": "H",
+      "state": "NY",
+      "receipts": 23658044.51,
+      "disbursements": 13983781.3
+    },
+    {
+      "name": "GRAHAM, LINDSEY O.",
+      "party": "REP",
+      "office": "S",
+      "state": "SC",
+      "receipts": 19638469.94,
+      "disbursements": 18722190.41
+    },
+    {
+      "name": "WARNER, MARK ROBERT",
+      "party": "DEM",
+      "office": "S",
+      "state": "VA",
+      "receipts": 19412858.59,
+      "disbursements": 6435682.35
+    },
+    {
+      "name": "COOPER, ROY",
+      "party": "DEM",
+      "office": "S",
+      "state": "NC",
+      "receipts": 17979856.08,
+      "disbursements": 5610561.87
+    },
+    {
+      "name": "WEIL, JOSHUA JOSEPH",
+      "party": "DEM",
+      "office": "S",
+      "state": "FL",
+      "receipts": 15933478.15,
+      "disbursements": 15933478.15
+    },
+    {
+      "name": "JOHNSON, JAMES MICHAEL",
+      "party": "REP",
+      "office": "H",
+      "state": "LA",
+      "receipts": 14500289.62,
+      "disbursements": 6600177.61
+    },
+    {
+      "name": "BROWN, SHERROD",
+      "party": "DEM",
+      "office": "S",
+      "state": "OH",
+      "receipts": 14356450.8,
+      "disbursements": 4456808.88
+    },
+    {
+      "name": "HAGERTY, BILL",
+      "party": "REP",
+      "office": "S",
+      "state": "TN",
+      "receipts": 13807466.33,
+      "disbursements": 8565077.52
+    },
+    {
+      "name": "CASSIDY, WILLIAM M.",
+      "party": "REP",
+      "office": "S",
+      "state": "LA",
+      "receipts": 11729417.39,
+      "disbursements": 3262574.99
+    },
+    {
+      "name": "COTTON, THOMAS",
+      "party": "REP",
+      "office": "S",
+      "state": "AR",
+      "receipts": 11515888.16,
+      "disbursements": 8267687.69
+    },
+    {
+      "name": "JEFFRIES, HAKEEM",
+      "party": "DEM",
+      "office": "H",
+      "state": "NY",
+      "receipts": 10327240.61,
+      "disbursements": 9417063.24
+    },
+    {
+      "name": "COLLINS, SUSAN M.",
+      "party": "REP",
+      "office": "S",
+      "state": "ME",
+      "receipts": 10153541.96,
+      "disbursements": 3409500.84
+    },
+    {
+      "name": "CORNYN, JOHN SEN",
+      "party": "REP",
+      "office": "S",
+      "state": "TX",
+      "receipts": 10030735.85,
+      "disbursements": 4802389.85
+    },
+    {
+      "name": "KHANNA, ROHIT",
+      "party": "DEM",
+      "office": "H",
+      "state": "CA",
+      "receipts": 9579627.81,
+      "disbursements": 4833756.1
+    },
+    {
+      "name": "FLEMING, JOHN C. JR.",
+      "party": "REP",
+      "office": "S",
+      "state": "LA",
+      "receipts": 8718120.93,
+      "disbursements": 6602209.27
+    },
+    {
+      "name": "DAINES, STEVE",
+      "party": "REP",
+      "office": "S",
+      "state": "MT",
+      "receipts": 8108303.29,
+      "disbursements": 3311751.46
+    },
+    {
+      "name": "PLATNER, GRAHAM",
+      "party": "DEM",
+      "office": "S",
+      "state": "ME",
+      "receipts": 7867907.68,
+      "disbursements": 4150630.03
+    },
+    {
+      "name": "SCALISE, STEVE MR",
+      "party": "REP",
+      "office": "H",
+      "state": "LA",
+      "receipts": 7843280.41,
+      "disbursements": 6446146.58
+    },
+    {
+      "name": "HICKENLOOPER, JOHN W.",
+      "party": "DEM",
+      "office": "S",
+      "state": "CO",
+      "receipts": 7607184.42,
+      "disbursements": 5371502.05
+    },
+    {
+      "name": "CONSTANTINO, ANTHONY THOMAS",
+      "party": "REP",
+      "office": "H",
+      "state": "NY",
+      "receipts": 7605073.26,
+      "disbursements": 2549839.56
+    },
+    {
+      "name": "ALLRED, COLIN",
+      "party": "DEM",
+      "office": "S",
+      "state": "TX",
+      "receipts": 7460526.24,
+      "disbursements": 6945994.07
+    },
+    {
+      "name": "SULLIVAN, DAN",
+      "party": "REP",
+      "office": "S",
+      "state": "AK",
+      "receipts": 7365341.71,
+      "disbursements": 2262210.54
+    },
+    {
+      "name": "HUSTED, JON",
+      "party": "REP",
+      "office": "S",
+      "state": "OH",
+      "receipts": 7348700.47,
+      "disbursements": 1385261.87
+    },
+    {
+      "name": "VINDMAN, YEVGENY 'EUGENE'",
+      "party": "DEM",
+      "office": "H",
+      "state": "VA",
+      "receipts": 7044268.25,
+      "disbursements": 3057881.33
+    },
+    {
+      "name": "ERNST, JONI K",
+      "party": "REP",
+      "office": "S",
+      "state": "IA",
+      "receipts": 6953112.74,
+      "disbursements": 5350947.41
+    },
+    {
+      "name": "STEVENS, HALEY",
+      "party": "DEM",
+      "office": "S",
+      "state": "MI",
+      "receipts": 6839672.42,
+      "disbursements": 3785378.59
+    },
+    {
+      "name": "EMMER, THOMAS EARL JR.",
+      "party": "REP",
+      "office": "H",
+      "state": "MN",
+      "receipts": 6763926.56,
+      "disbursements": 3507247.18
+    },
+    {
+      "name": "PAPPAS, CHRIS",
+      "party": "DEM",
+      "office": "S",
+      "state": "NH",
+      "receipts": 6552817.36,
+      "disbursements": 3722790.28
+    },
+    {
+      "name": "CROCKETT, JASMINE",
+      "party": "DEM",
+      "office": "S",
+      "state": "TX",
+      "receipts": 6531174.41,
+      "disbursements": 910537.58
+    },
+    {
+      "name": "LUJAN, BEN RAY",
+      "party": "DEM",
+      "office": "S",
+      "state": "NM",
+      "receipts": 6500680.42,
+      "disbursements": 2863750.17
+    },
+    {
+      "name": "BARR, GARLAND ANDY",
+      "party": "REP",
+      "office": "S",
+      "state": "KY",
+      "receipts": 6489657.44,
+      "disbursements": 3711685.3
+    },
+    {
+      "name": "LAUBACHER, EILEEN",
+      "party": "DEM",
+      "office": "H",
+      "state": "CO",
+      "receipts": 6448749.63,
+      "disbursements": 3920034.67
+    },
+    {
+      "name": "TALARICO, JAMES",
+      "party": "DEM",
+      "office": "S",
+      "state": "TX",
+      "receipts": 6268609.51,
+      "disbursements": 1309971.25
+    },
+    {
+      "name": "CARTER, EARL LEROY",
+      "party": "REP",
+      "office": "S",
+      "state": "GA",
+      "receipts": 6243857.86,
+      "disbursements": 5070230.0
+    },
+    {
+      "name": "MERKLEY, JEFFREY ALAN",
+      "party": "DEM",
+      "office": "S",
+      "state": "OR",
+      "receipts": 6114209.71,
+      "disbursements": 3968071.92
+    },
+    {
+      "name": "CHATZKY, PETER",
+      "party": "DEM",
+      "office": "H",
+      "state": "NY",
+      "receipts": 6051759.77,
+      "disbursements": 527684.11
+    },
+    {
+      "name": "TRONE, DAVID",
+      "party": "DEM",
+      "office": "H",
+      "state": "MD",
+      "receipts": 6010147.95,
+      "disbursements": 2383972.11
+    },
+    {
+      "name": "MORRIS, NATE",
+      "party": "REP",
+      "office": "S",
+      "state": "KY",
+      "receipts": 6005802.81,
+      "disbursements": 4581141.31
+    },
+    {
+      "name": "MOODY, ASHLEY",
+      "party": "REP",
+      "office": "S",
+      "state": "FL",
+      "receipts": 5795699.34,
+      "disbursements": 698880.06
+    },
+    {
+      "name": "MCMORROW, MALLORY",
+      "party": "DEM",
+      "office": "S",
+      "state": "MI",
+      "receipts": 5595106.45,
+      "disbursements": 3643959.48
+    },
+    {
+      "name": "LYNCH, MARK",
+      "party": "REP",
+      "office": "S",
+      "state": "SC",
+      "receipts": 5573432.8,
+      "disbursements": 999021.91
+    },
+    {
+      "name": "CRANE, ELI",
+      "party": "REP",
+      "office": "H",
+      "state": "AZ",
+      "receipts": 5569196.43,
+      "disbursements": 3480368.18
+    },
+    {
+      "name": "ROGERS, MICHAEL J",
+      "party": "REP",
+      "office": "S",
+      "state": "MI",
+      "receipts": 5382858.37,
+      "disbursements": 2183554.5
+    },
+    {
+      "name": "EL-SAYED, ABDUL",
+      "party": "DEM",
+      "office": "S",
+      "state": "MI",
+      "receipts": 5350824.42,
+      "disbursements": 3371644.53
+    },
+    {
+      "name": "PAXTON, WARREN KENNETH JR.",
+      "party": "REP",
+      "office": "S",
+      "state": "TX",
+      "receipts": 5320190.83,
+      "disbursements": 1654743.68
+    },
+    {
+      "name": "COONS, CHRISTOPHER A.",
+      "party": "DEM",
+      "office": "S",
+      "state": "DE",
+      "receipts": 5285973.11,
+      "disbursements": 3248305.81
+    },
+    {
+      "name": "LAWLER, MICHAEL VINCENT",
+      "party": "REP",
+      "office": "H",
+      "state": "NY",
+      "receipts": 5209722.98,
+      "disbursements": 1870219.97
+    },
+    {
+      "name": "WHATLEY, MICHAEL",
+      "party": "REP",
+      "office": "S",
+      "state": "NC",
+      "receipts": 5195891.24,
+      "disbursements": 1458846.63
+    },
+    {
+      "name": "ODE, FREDERICK J",
+      "party": "DEM",
+      "office": "S",
+      "state": "OH",
+      "receipts": 5000086.65,
+      "disbursements": 4959458.16
+    },
+    {
+      "name": "ARENHOLZ, ASHLEY HINSON",
+      "party": "REP",
+      "office": "S",
+      "state": "IA",
+      "receipts": 4892227.45,
+      "disbursements": 1650040.32
+    },
+    {
+      "name": "MARKEY, EDWARD SEN.",
+      "party": "DEM",
+      "office": "S",
+      "state": "MA",
+      "receipts": 4855058.26,
+      "disbursements": 3844834.23
+    },
+    {
+      "name": "KIM, YOUNG",
+      "party": "REP",
+      "office": "H",
+      "state": "CA",
+      "receipts": 4811184.83,
+      "disbursements": 1789629.83
+    },
+    {
+      "name": "MARSHALL, ROGER W",
+      "party": "REP",
+      "office": "S",
+      "state": "KS",
+      "receipts": 4759694.8,
+      "disbursements": 897358.1
+    },
+    {
+      "name": "CRAIG, ANGIE",
+      "party": "DEM",
+      "office": "S",
+      "state": "MN",
+      "receipts": 4688413.63,
+      "disbursements": 1735014.65
+    },
+    {
+      "name": "MULLIN, MARKWAYNE",
+      "party": "REP",
+      "office": "S",
+      "state": "OK",
+      "receipts": 4666234.17,
+      "disbursements": 2472619.66
+    },
+    {
+      "name": "ALLRED, COLIN",
+      "party": "DEM",
+      "office": "H",
+      "state": "TX",
+      "receipts": 4605512.16,
+      "disbursements": 3133554.76
+    },
+    {
+      "name": "CAPITO, SHELLEY MOORE",
+      "party": "REP",
+      "office": "S",
+      "state": "WV",
+      "receipts": 4455751.94,
+      "disbursements": 2587443.61
+    },
+    {
+      "name": "RASKIN, JAMIE",
+      "party": "DEM",
+      "office": "H",
+      "state": "MD",
+      "receipts": 4396224.88,
+      "disbursements": 2984270.08
+    },
+    {
+      "name": "HYDE-SMITH, CINDY",
+      "party": "REP",
+      "office": "S",
+      "state": "MS",
+      "receipts": 4391523.67,
+      "disbursements": 2059518.4
+    },
+    {
+      "name": "VAN ORDEN, DERRICK F. MR.",
+      "party": "REP",
+      "office": "H",
+      "state": "WI",
+      "receipts": 4348057.86,
+      "disbursements": 2130137.8
+    },
+    {
+      "name": "CALVERT, KEN",
+      "party": "REP",
+      "office": "H",
+      "state": "CA",
+      "receipts": 4343643.85,
+      "disbursements": 1188897.29
+    },
+    {
+      "name": "ANDREWS, ANNIE",
+      "party": "DEM",
+      "office": "S",
+      "state": "SC",
+      "receipts": 4306089.63,
+      "disbursements": 2725151.77
+    },
+    {
+      "name": "FITZPATRICK, BRIAN",
+      "party": "REP",
+      "office": "H",
+      "state": "PA",
+      "receipts": 4286172.33,
+      "disbursements": 1348181.35
+    },
+    {
+      "name": "ZINKE, RYAN K",
+      "party": "REP",
+      "office": "H",
+      "state": "MT",
+      "receipts": 4090593.54,
+      "disbursements": 1971880.35
+    },
+    {
+      "name": "COOKE, REBECCA",
+      "party": "DEM",
+      "office": "H",
+      "state": "WI",
+      "receipts": 4065498.85,
+      "disbursements": 1525774.45
+    },
+    {
+      "name": "GENDEBIEN, BLAKE",
+      "party": "DEM",
+      "office": "H",
+      "state": "NY",
+      "receipts": 4051856.72,
+      "disbursements": 2089109.88
+    },
+    {
+      "name": "CISCOMANI, JUAN",
+      "party": "REP",
+      "office": "H",
+      "state": "AZ",
+      "receipts": 3944898.01,
+      "disbursements": 1029662.9
+    },
+    {
+      "name": "TORRES, RITCHIE JOHN",
+      "party": "DEM",
+      "office": "H",
+      "state": "NY",
+      "receipts": 3905925.07,
+      "disbursements": 939423.41
+    },
+    {
+      "name": "SMITH, JASON T",
+      "party": "REP",
+      "office": "H",
+      "state": "MO",
+      "receipts": 3788160.79,
+      "disbursements": 2107662.72
+    },
+    {
+      "name": "RICKETTS, PETE",
+      "party": "REP",
+      "office": "S",
+      "state": "NE",
+      "receipts": 3597202.77,
+      "disbursements": 3562993.09
+    },
+    {
+      "name": "KIGGANS, JENNIFER",
+      "party": "REP",
+      "office": "H",
+      "state": "VA",
+      "receipts": 3578435.43,
+      "disbursements": 1306000.18
+    },
+    {
+      "name": "ROBERSON, SANDY",
+      "party": "REP",
+      "office": "H",
+      "state": "NC",
+      "receipts": 3539072.44,
+      "disbursements": 3190871.17
+    },
+    {
+      "name": "FINE, RANDY",
+      "party": "REP",
+      "office": "H",
+      "state": "FL",
+      "receipts": 3518493.01,
+      "disbursements": 2882217.88
+    },
+    {
+      "name": "RYAN, PATRICK",
+      "party": "DEM",
+      "office": "H",
+      "state": "NY",
+      "receipts": 3457307.15,
+      "disbursements": 1076475.74
+    },
+    {
+      "name": "STEIL, BRYAN GEORGE",
+      "party": "REP",
+      "office": "H",
+      "state": "WI",
+      "receipts": 3443146.24,
+      "disbursements": 759867.97
+    },
+    {
+      "name": "MCCLAIN, LISA",
+      "party": "REP",
+      "office": "H",
+      "state": "MI",
+      "receipts": 3382948.02,
+      "disbursements": 2405328.74
+    },
+    {
+      "name": "OBERWEIS, JAMES MR.",
+      "party": "REP",
+      "office": "H",
+      "state": "FL",
+      "receipts": 3352478.65,
+      "disbursements": 412409.64
+    },
+    {
+      "name": "ARQUETTE, ADAM PEREZ",
+      "party": "REP",
+      "office": "H",
+      "state": "KY",
+      "receipts": 3329000.0,
+      "disbursements": 1667032.0
+    },
+    {
+      "name": "MCDONALD RIVET, KRISTEN",
+      "party": "DEM",
+      "office": "H",
+      "state": "MI",
+      "receipts": 3305119.69,
+      "disbursements": 691918.27
+    },
+    {
+      "name": "REED, JOHN F.",
+      "party": "DEM",
+      "office": "S",
+      "state": "RI",
+      "receipts": 3297808.65,
+      "disbursements": 2116374.72
+    },
+    {
+      "name": "FLANAGAN, MARGARET",
+      "party": "DFL",
+      "office": "S",
+      "state": "MN",
+      "receipts": 3287670.06,
+      "disbursements": 2477023.89
+    },
+    {
+      "name": "COLLINS, MICHAEL A JR",
+      "party": "REP",
+      "office": "S",
+      "state": "GA",
+      "receipts": 3280001.24,
+      "disbursements": 1544393.21
+    },
+    {
+      "name": "DE LA CRUZ, MONICA",
+      "party": "REP",
+      "office": "H",
+      "state": "TX",
+      "receipts": 3269991.58,
+      "disbursements": 1871440.42
+    },
+    {
+      "name": "SUOZZI, THOMAS",
+      "party": "DEM",
+      "office": "H",
+      "state": "NY",
+      "receipts": 3246484.08,
+      "disbursements": 799567.86
+    },
+    {
+      "name": "GLUESENKAMP PEREZ, MARIE",
+      "party": "DEM",
+      "office": "H",
+      "state": "WA",
+      "receipts": 3240473.04,
+      "disbursements": 842920.35
+    },
+    {
+      "name": "BEGICH, NICHOLAS III",
+      "party": "REP",
+      "office": "H",
+      "state": "AK",
+      "receipts": 3227987.94,
+      "disbursements": 1126626.18
+    },
+    {
+      "name": "STRATTON, JULIANA",
+      "party": "DEM",
+      "office": "S",
+      "state": "IL",
+      "receipts": 3199074.9,
+      "disbursements": 2077479.85
+    },
+    {
+      "name": "MCBRIDE, SARAH ELIZABETH",
+      "party": "DEM",
+      "office": "H",
+      "state": "DE",
+      "receipts": 3191371.62,
+      "disbursements": 1186551.6
+    },
+    {
+      "name": "ROUNDS, MIKE",
+      "party": "REP",
+      "office": "S",
+      "state": "SD",
+      "receipts": 3188338.77,
+      "disbursements": 1975400.78
+    },
+    {
+      "name": "BEHN, AFTYN",
+      "party": "DEM",
+      "office": "H",
+      "state": "TN",
+      "receipts": 3179433.46,
+      "disbursements": 2893097.87
+    },
+    {
+      "name": "MOULTON, SETH",
+      "party": "DEM",
+      "office": "S",
+      "state": "MA",
+      "receipts": 3165414.27,
+      "disbursements": 1911413.75
+    },
+    {
+      "name": "MILLER-MEEKS, MARIANNETTE JANE",
+      "party": "REP",
+      "office": "H",
+      "state": "IA",
+      "receipts": 3156832.22,
+      "disbursements": 891127.93
+    },
+    {
+      "name": "O'DONNELL, MARTY",
+      "party": "REP",
+      "office": "H",
+      "state": "NV",
+      "receipts": 3154408.66,
+      "disbursements": 406537.23
+    },
+    {
+      "name": "RILEY, JOSH",
+      "party": "DEM",
+      "office": "H",
+      "state": "NY",
+      "receipts": 3129176.0,
+      "disbursements": 807475.87
+    },
+    {
+      "name": "OMAR, ILHAN",
+      "party": "DFL",
+      "office": "H",
+      "state": "MN",
+      "receipts": 3125782.67,
+      "disbursements": 2329198.78
+    },
+    {
+      "name": "HILL, JAMES FRENCH",
+      "party": "REP",
+      "office": "H",
+      "state": "AR",
+      "receipts": 3122293.56,
+      "disbursements": 1745946.11
+    },
+    {
+      "name": "WOOD, JORDAN",
+      "party": "DEM",
+      "office": "H",
+      "state": "ME",
+      "receipts": 3098912.33,
+      "disbursements": 2178442.61
+    }
+  ]
+}
