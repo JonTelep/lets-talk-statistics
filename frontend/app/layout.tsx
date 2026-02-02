@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { Inter, JetBrains_Mono } from 'next/font/google';
 import '../styles/globals.css';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
@@ -10,14 +10,20 @@ const inter = Inter({
   variable: '--font-inter',
 });
 
+const jetbrainsMono = JetBrains_Mono({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-jetbrains-mono',
+});
+
 export const metadata: Metadata = {
-  title: "Let's Talk Statistics | Objective Crime Data",
-  description: 'Explore US crime statistics from government sources. Understand the data, analyze trends, and draw your own conclusions.',
-  keywords: ['crime statistics', 'FBI data', 'per capita', 'government data', 'crime trends'],
+  title: "Let's Talk Statistics | Dark Terminal",
+  description: 'Government data with terminal aesthetics. Raw numbers, matrix vibes.',
+  keywords: ['government data', 'statistics', 'terminal', 'dark theme', 'data visualization'],
   authors: [{ name: "Let's Talk Statistics" }],
   openGraph: {
-    title: "Let's Talk Statistics",
-    description: 'Objective crime statistics from US government sources',
+    title: "Let's Talk Statistics | Dark Terminal",
+    description: 'Government data with terminal aesthetics',
     type: 'website',
   },
 };
@@ -28,10 +34,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={inter.variable}>
-      <body className="flex min-h-screen flex-col">
+    <html lang="en" className={`${inter.variable} ${jetbrainsMono.variable}`}>
+      <body className="flex min-h-screen flex-col bg-terminal-bg text-terminal-text">
         <Header />
-        <main className="flex-1">{children}</main>
+        <main className="flex-1 bg-terminal-grid">{children}</main>
         <Footer />
       </body>
     </html>

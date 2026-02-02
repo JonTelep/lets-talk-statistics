@@ -2,18 +2,42 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Import JetBrains Mono font */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 10 10 10;
+    --foreground: 229 229 229;
   }
 
   body {
-    @apply bg-white text-gray-900 antialiased;
+    @apply bg-terminal-bg text-terminal-text antialiased;
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.02'%3E%3Ccircle cx='30' cy='30' r='1'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
   }
 
   * {
-    @apply border-gray-200;
+    @apply border-terminal-border;
+  }
+
+  /* Terminal-style scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-terminal-surface;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-terminal-cyan;
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-terminal-cyan;
+    filter: brightness(1.2);
   }
 }
 
@@ -25,10 +49,50 @@
   .font-feature-numeric {
     font-feature-settings: 'tnum' on, 'lnum' on;
   }
+
+  .glow-cyan {
+    text-shadow: 0 0 5px theme('colors.terminal.cyan'), 0 0 10px theme('colors.terminal.cyan');
+  }
+
+  .glow-green {
+    text-shadow: 0 0 5px theme('colors.terminal.green'), 0 0 10px theme('colors.terminal.green');
+  }
+
+  .glow-amber {
+    text-shadow: 0 0 5px theme('colors.terminal.amber'), 0 0 10px theme('colors.terminal.amber');
+  }
+
+  .border-glow-cyan {
+    border: 1px solid theme('colors.terminal.cyan');
+    box-shadow: 0 0 5px rgba(0, 255, 255, 0.3), inset 0 0 5px rgba(0, 255, 255, 0.1);
+  }
+
+  .bg-terminal-grid {
+    background-image: linear-gradient(rgba(0, 255, 255, 0.03) 1px, transparent 1px),
+                      linear-gradient(90deg, rgba(0, 255, 255, 0.03) 1px, transparent 1px);
+    background-size: 20px 20px;
+  }
+
+  .terminal-card {
+    @apply bg-terminal-surface border border-terminal-border;
+    background: linear-gradient(145deg, rgba(17, 17, 17, 0.8), rgba(26, 26, 26, 0.8));
+    backdrop-filter: blur(10px);
+  }
+
+  .terminal-button {
+    @apply bg-terminal-surface border border-terminal-cyan text-terminal-cyan font-mono;
+    transition: all 0.3s ease;
+  }
+
+  .terminal-button:hover {
+    @apply glow-cyan;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.4);
+    background: rgba(0, 255, 255, 0.1);
+  }
 }
 
-/* Skeleton loading shimmer animation */
-@keyframes shimmer {
+/* Dark theme skeleton animation */
+@keyframes shimmer-dark {
   0% {
     background-position: 200% 0;
   }
@@ -38,12 +102,12 @@
 }
 
 .animate-shimmer {
-  animation: shimmer 1.5s ease-in-out infinite;
+  animation: shimmer-dark 1.5s ease-in-out infinite;
   background: linear-gradient(
     90deg,
-    #e5e7eb 0%,
-    #f3f4f6 50%,
-    #e5e7eb 100%
+    rgba(17, 17, 17, 0.8) 0%,
+    rgba(26, 26, 26, 0.8) 50%,
+    rgba(17, 17, 17, 0.8) 100%
   );
   background-size: 200% 100%;
 }
