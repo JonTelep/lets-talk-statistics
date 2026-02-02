@@ -1,250 +1,325 @@
 import Link from 'next/link';
-import { BarChart3, TrendingUp, Users, DollarSign, Briefcase, Building2, ArrowRight, Vote } from 'lucide-react';
+import { TrendingUp, Users, DollarSign, Briefcase, Building2, ArrowRight, Vote, Clock, MapPin } from 'lucide-react';
 
 const categories = [
   {
     name: 'Congressional Trading',
-    description: 'Stock trades by members of Congress under STOCK Act disclosures.',
+    kicker: 'Capitol Hill',
+    description: 'How lawmakers\' stock trades reveal conflicts of interest in real-time.',
     href: '/congress',
     icon: TrendingUp,
-    color: 'from-indigo-500 to-purple-600',
-    stats: '435+ Members • Real-time Trades • Performance Tracking',
+    color: 'text-editorial-blue-600',
+    borderColor: 'border-editorial-blue-600',
+    stats: '435 Members Tracked',
+    updated: '2 hours ago',
   },
   {
-    name: 'Immigration',
-    description: 'Legal immigration, deportations, and border encounter statistics.',
+    name: 'Immigration Crisis',
+    kicker: 'Border Data',
+    description: 'The numbers behind America\'s immigration system and border security.',
     href: '/immigration',
     icon: Users,
-    color: 'from-emerald-500 to-teal-600',
-    stats: 'DHS Data • Historical Trends • Country Breakdown',
+    color: 'text-editorial-green-600',
+    borderColor: 'border-editorial-green-600',
+    stats: 'DHS Official Data',
+    updated: 'Daily updates',
   },
   {
-    name: 'Federal Budget',
-    description: 'Government spending, revenue, and deficit tracking by agency.',
+    name: 'Federal Spending',
+    kicker: 'Your Tax Dollars',
+    description: 'Where every dollar of government spending actually goes, by agency.',
     href: '/budget',
     icon: DollarSign,
-    color: 'from-green-500 to-emerald-600',
-    stats: 'USASpending.gov • Agency Breakdown • Historical Data',
+    color: 'text-editorial-gold-600',
+    borderColor: 'border-editorial-gold-600',
+    stats: 'Treasury Direct',
+    updated: 'Monthly',
   },
   {
-    name: 'Employment',
-    description: 'Unemployment rates, job growth, and labor force statistics.',
+    name: 'Jobs Report',
+    kicker: 'Labor Market',
+    description: 'Beyond the headlines: what unemployment data reveals about America.',
     href: '/employment',
     icon: Briefcase,
-    color: 'from-blue-500 to-indigo-600',
-    stats: 'BLS Data • State Rankings • Monthly Updates',
+    color: 'text-editorial-blue-700',
+    borderColor: 'border-editorial-blue-700',
+    stats: 'BLS Data',
+    updated: 'Monthly',
   },
   {
     name: 'National Debt',
-    description: 'Federal debt tracking, who holds our debt, and historical growth.',
+    kicker: 'Fiscal Reality',
+    description: 'The mounting debt crisis that politicians don\'t want to discuss.',
     href: '/debt',
     icon: Building2,
-    color: 'from-red-500 to-rose-600',
-    stats: 'Treasury Data • Real-time • Debt Holders',
+    color: 'text-editorial-red-600',
+    borderColor: 'border-editorial-red-600',
+    stats: 'Real-time tracking',
+    updated: 'Live',
   },
   {
     name: 'Election Funding',
-    description: 'How the two-party system is rigged against third parties. The data speaks for itself.',
+    kicker: 'Democracy Watch',
+    description: 'How money flows through politics and shapes electoral outcomes.',
     href: '/elections',
     icon: Vote,
-    color: 'from-purple-600 to-indigo-700',
-    stats: 'FEC Data • Public Funding • Ballot Access',
+    color: 'text-editorial-gray-700',
+    borderColor: 'border-editorial-gray-700',
+    stats: 'FEC Reports',
+    updated: 'Quarterly',
   },
 ];
 
 export default function Home() {
   return (
     <div className="flex flex-col">
-      {/* Hero Section */}
-      <section className="bg-gradient-to-br from-primary-600 via-primary-700 to-primary-900 text-white">
-        <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <div className="flex justify-center mb-6">
-              <BarChart3 className="h-16 w-16 text-primary-200" />
+      {/* Editorial Header */}
+      <section className="border-b-4 border-editorial-red-600 bg-white">
+        <div className="container-editorial py-4">
+          <div className="flex items-center justify-between">
+            <div className="editorial-byline">
+              <span className="text-editorial-red-600">GOVERNMENT DATA</span> • LIVE ANALYSIS
             </div>
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
-              Let's Talk Statistics
-            </h1>
-            <p className="text-xl sm:text-2xl text-primary-100 max-w-3xl mx-auto mb-8">
-              Government data, clearly presented. No spin, no agenda — just the numbers.
-            </p>
-            <p className="text-primary-200 max-w-2xl mx-auto">
-              Explore congressional trading, immigration, federal spending,
-              employment, national debt, and elections — all from official government sources.
-            </p>
+            <div className="flex items-center gap-3 text-sm text-editorial-gray-600">
+              <Clock className="h-4 w-4" />
+              Updated continuously
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Categories Grid */}
-      <section className="bg-gray-50 py-16 px-4 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-7xl">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Explore the Data</h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Choose a category to dive into the statistics. All data comes from official 
-              U.S. government sources and is updated regularly.
+      {/* Hero Section */}
+      <section className="section-editorial bg-editorial-gray-100 border-b border-editorial-gray-300">
+        <div className="container-editorial">
+          <div className="max-w-4xl mx-auto text-center animate-fade-in-up">
+            <p className="kicker mb-4">OFFICIAL DATA ANALYSIS</p>
+            <h1 className="editorial-headline text-editorial-xl mb-8">
+              Let's Talk Statistics
+            </h1>
+            <div className="editorial-deck max-w-3xl mx-auto mb-8">
+              Government data without the spin. Raw numbers from official sources, 
+              presented with the rigor of investigative journalism and the clarity of data science.
+            </div>
+            <p className="text-lg text-editorial-gray-600 max-w-2xl mx-auto mb-12">
+              From congressional stock trades to immigration flows, we track the metrics 
+              that matter to American democracy.
+            </p>
+            <div className="inline-flex items-center gap-4 bg-white px-6 py-3 shadow-editorial border-l-4 border-editorial-red-600">
+              <div className="w-3 h-3 bg-editorial-red-600 rounded-full animate-pulse"></div>
+              <span className="font-medium">Live data feeds • Government verified</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Featured Stories Grid */}
+      <section className="section-editorial bg-white">
+        <div className="container-editorial">
+          <div className="mb-12">
+            <h2 className="editorial-headline text-editorial-lg mb-4">
+              Today's Data Stories
+            </h2>
+            <p className="editorial-deck max-w-2xl">
+              Choose a beat to explore the underlying data. Each analysis links directly 
+              to government sources and updates in real-time.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {categories.map((category) => {
+          <div className="grid lg:grid-cols-2 gap-8">
+            {categories.map((category, index) => {
               const Icon = category.icon;
+              const isFeature = index === 0; // Make first article featured
+              
               return (
-                <Link key={category.name} href={category.href} className="group">
-                  <div className="bg-white rounded-xl shadow-sm overflow-hidden h-full hover:shadow-lg transition-shadow">
-                    <div className={`bg-gradient-to-r ${category.color} p-6`}>
-                      <Icon className="h-10 w-10 text-white" />
-                    </div>
-                    <div className="p-6">
-                      <div className="flex items-center justify-between mb-2">
-                        <h3 className="text-xl font-semibold text-gray-900 group-hover:text-primary-600 transition-colors">
-                          {category.name}
-                        </h3>
-                        <ArrowRight className="h-5 w-5 text-gray-400 group-hover:text-primary-600 group-hover:translate-x-1 transition-all" />
+                <article key={category.name} className={`group ${isFeature ? 'lg:col-span-2' : ''}`}>
+                  <Link href={category.href} className="block">
+                    <div className={`editorial-card p-8 hover:shadow-editorial-lg transition-all duration-200 ${category.borderColor}`}>
+                      <div className="flex items-start gap-6">
+                        <div className={`flex-shrink-0 p-3 bg-editorial-gray-100 rounded ${category.color}`}>
+                          <Icon className="h-8 w-8" />
+                        </div>
+                        <div className="flex-1">
+                          <p className={`kicker mb-2 ${category.color}`}>
+                            {category.kicker}
+                          </p>
+                          <h3 className={`editorial-headline ${isFeature ? 'text-editorial-lg' : 'text-editorial-md'} mb-3 group-hover:text-editorial-red-600 transition-colors`}>
+                            {category.name}
+                          </h3>
+                          <p className={`editorial-deck mb-4 ${isFeature ? 'text-lg' : ''}`}>
+                            {category.description}
+                          </p>
+                          <div className="flex items-center justify-between">
+                            <div className="flex items-center gap-4 text-sm text-editorial-gray-600">
+                              <div className="flex items-center gap-1">
+                                <MapPin className="h-4 w-4" />
+                                {category.stats}
+                              </div>
+                              <div className="flex items-center gap-1">
+                                <Clock className="h-4 w-4" />
+                                {category.updated}
+                              </div>
+                            </div>
+                            <ArrowRight className="h-5 w-5 text-editorial-gray-400 group-hover:text-editorial-red-600 group-hover:translate-x-1 transition-all" />
+                          </div>
+                        </div>
                       </div>
-                      <p className="text-gray-600 mb-4">{category.description}</p>
-                      <p className="text-sm text-gray-500">{category.stats}</p>
                     </div>
-                  </div>
-                </Link>
+                  </Link>
+                </article>
               );
             })}
           </div>
         </div>
       </section>
 
-      {/* Philosophy Section */}
-      <section className="bg-white py-16 px-4 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-4xl text-center">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">Our Philosophy</h2>
+      {/* Editorial Principles */}
+      <section className="section-editorial bg-editorial-gray-100">
+        <div className="container-editorial">
+          <div className="text-center mb-16">
+            <h2 className="editorial-headline text-editorial-lg mb-6">
+              Our Editorial Standards
+            </h2>
+            <p className="editorial-deck max-w-3xl mx-auto">
+              We apply the same rigorous standards as investigative journalism to government data analysis.
+            </p>
+          </div>
           
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="p-6">
-              <div className="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl">📊</span>
+          <div className="grid md:grid-cols-3 gap-12">
+            <div className="text-center">
+              <div className="w-16 h-16 bg-editorial-red-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                <span className="text-3xl text-white font-bold">1</span>
               </div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">Data First</h3>
-              <p className="text-gray-600">
-                We present the raw numbers from official government sources. No cherry-picking, no selective framing.
+              <h3 className="editorial-headline text-editorial-sm mb-4">Source First</h3>
+              <p className="text-editorial-gray-700 leading-relaxed">
+                Every statistic traces back to official government APIs and databases. 
+                No third-party aggregators, no interpretation layers.
               </p>
             </div>
             
-            <div className="p-6">
-              <div className="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl">⚖️</span>
+            <div className="text-center">
+              <div className="w-16 h-16 bg-editorial-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                <span className="text-3xl text-white font-bold">2</span>
               </div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">Unbiased</h3>
-              <p className="text-gray-600">
-                No editorializing. We show what the data says and let you draw your own conclusions.
+              <h3 className="editorial-headline text-editorial-sm mb-4">Context Matters</h3>
+              <p className="text-editorial-gray-700 leading-relaxed">
+                Raw numbers without context mislead. We provide historical trends, 
+                per-capita adjustments, and methodological transparency.
               </p>
             </div>
             
-            <div className="p-6">
-              <div className="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl">🔍</span>
+            <div className="text-center">
+              <div className="w-16 h-16 bg-editorial-green-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                <span className="text-3xl text-white font-bold">3</span>
               </div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">Transparent</h3>
-              <p className="text-gray-600">
-                Every statistic links back to its source. You can verify everything we present.
+              <h3 className="editorial-headline text-editorial-sm mb-4">Editorial Independence</h3>
+              <p className="text-editorial-gray-700 leading-relaxed">
+                We present what the data shows, not what politics demands. 
+                Uncomfortable truths included.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Understanding Statistics */}
-      <section className="bg-gray-100 py-16 px-4 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-7xl">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+      {/* Methodology Section */}
+      <section className="section-editorial bg-white border-t border-editorial-gray-300">
+        <div className="container-editorial">
+          <div className="grid lg:grid-cols-2 gap-16 items-start">
             <div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">
-                Understanding Per Capita
+              <h2 className="editorial-headline text-editorial-lg mb-8">
+                Understanding the Numbers
               </h2>
-              <p className="text-lg text-gray-600 mb-4">
-                Throughout this site, you'll see "per capita" rates — a crucial concept for 
-                fair comparisons between areas with different population sizes.
+              <p className="editorial-deck mb-8">
+                Behind every statistic is a methodology. We explain ours so you can 
+                judge the reliability of our analysis.
               </p>
-              <div className="bg-white rounded-lg p-6 shadow-sm">
-                <p className="font-mono text-gray-700 mb-4">
-                  Per Capita Rate = (Count ÷ Population) × 100,000
-                </p>
-                <p className="text-gray-600 text-sm">
-                  <strong>Example:</strong> California may have more total crimes than Wyoming, 
-                  but per capita rates reveal which state has a higher rate relative to its population.
-                </p>
+              
+              <div className="pullquote">
+                "Population matters more than totals. Per-capita rates reveal 
+                the true story behind raw counts."
               </div>
+              
+              <p className="text-editorial-gray-700 leading-relaxed">
+                Throughout our coverage, you'll see per-capita calculations — the most reliable 
+                way to compare statistics across jurisdictions of different sizes. It's the difference 
+                between reporting and analysis.
+              </p>
             </div>
             
-            <div className="bg-white rounded-xl shadow-sm p-8">
-              <h3 className="text-xl font-semibold text-gray-900 mb-6">Why It Matters</h3>
-              <div className="space-y-4">
-                <div className="flex gap-4">
-                  <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <span className="text-xl">🏙️</span>
-                  </div>
-                  <div>
-                    <p className="font-medium text-gray-900">City A</p>
-                    <p className="text-sm text-gray-600">10,000 incidents • 10M people</p>
-                    <p className="text-sm font-medium text-blue-600">= 100 per 100,000</p>
-                  </div>
-                </div>
-                
-                <div className="flex gap-4">
-                  <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <span className="text-xl">🏘️</span>
-                  </div>
-                  <div>
-                    <p className="font-medium text-gray-900">Town B</p>
-                    <p className="text-sm text-gray-600">500 incidents • 100K people</p>
-                    <p className="text-sm font-medium text-red-600">= 500 per 100,000</p>
-                  </div>
-                </div>
-                
-                <p className="text-sm text-gray-500 pt-4 border-t">
-                  Town B has fewer total incidents but a <strong>5x higher rate</strong> per capita.
+            <div className="editorial-card p-10">
+              <h3 className="editorial-headline text-editorial-md mb-8">The Formula</h3>
+              <div className="bg-editorial-gray-100 p-6 rounded mb-6">
+                <p className="font-mono text-xl text-center text-editorial-black font-bold">
+                  Rate = (Count ÷ Population) × 100,000
                 </p>
+              </div>
+              
+              <div className="space-y-6">
+                <div className="border-l-4 border-editorial-blue-600 pl-6">
+                  <h4 className="font-bold text-editorial-black mb-2">Large City</h4>
+                  <p className="text-editorial-gray-600 mb-1">10,000 incidents • 10 million people</p>
+                  <p className="stat-highlight">100 per 100k</p>
+                </div>
+                
+                <div className="editorial-rule"></div>
+                
+                <div className="border-l-4 border-editorial-red-600 pl-6">
+                  <h4 className="font-bold text-editorial-black mb-2">Small Town</h4>
+                  <p className="text-editorial-gray-600 mb-1">500 incidents • 100,000 people</p>
+                  <p className="stat-highlight">500 per 100k</p>
+                </div>
+                
+                <div className="bg-editorial-gold-100 p-4 rounded border-l-4 border-editorial-gold-500">
+                  <p className="font-bold text-editorial-black">
+                    The small town's rate is 5× higher despite having fewer total incidents.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="bg-primary-600 py-16 px-4 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-3xl text-center">
-          <h2 className="text-3xl font-bold text-white mb-4">
-            Ready to Explore?
-          </h2>
-          <p className="text-xl text-primary-100 mb-8">
-            Pick a category above and start exploring the data. All statistics are free to access 
-            and downloadable for your own analysis.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              href="/debt"
-              className="inline-flex items-center justify-center rounded-md bg-white px-8 py-3 text-base font-medium text-primary-600 shadow-sm hover:bg-primary-50"
-            >
-              Explore National Debt
-            </Link>
-            <Link
-              href="/about"
-              className="inline-flex items-center justify-center rounded-md border-2 border-white px-8 py-3 text-base font-medium text-white hover:bg-primary-700"
-            >
-              Learn More
-            </Link>
+      {/* Call to Action */}
+      <section className="section-editorial bg-editorial-black text-white">
+        <div className="container-editorial">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="editorial-headline text-editorial-lg text-white mb-6">
+              Start Your Investigation
+            </h2>
+            <p className="text-xl mb-12 text-gray-300 max-w-2xl mx-auto">
+              Choose your beat from the stories above. Every dataset includes download 
+              options for independent verification and analysis.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-6 justify-center">
+              <Link
+                href="/debt"
+                className="editorial-button-primary px-10 py-4 text-lg"
+              >
+                Investigate Debt Crisis
+              </Link>
+              <Link
+                href="/about"
+                className="editorial-button-secondary px-10 py-4 text-lg border-white text-white hover:bg-white hover:text-editorial-black"
+              >
+                About Our Methods
+              </Link>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Footer Note */}
-      <section className="bg-gray-900 text-gray-400 py-8 px-4 text-center text-sm">
-        <p>
-          Data sourced from FBI, DHS, Treasury, BLS, OMB, and other official U.S. government agencies.
-          <br />
-          Built by <a href="https://telep.io" className="text-primary-400 hover:text-primary-300">Telep IO</a> — 
-          Making data accessible to everyone.
-        </p>
+      {/* Attribution */}
+      <section className="bg-editorial-gray-800 text-editorial-gray-300 py-12 px-6 text-center border-t-4 border-editorial-red-600">
+        <div className="max-w-4xl mx-auto">
+          <p className="text-lg mb-3 font-medium">
+            Data Sources: FBI • DHS • Treasury • BLS • OMB • FEC
+          </p>
+          <p className="editorial-byline">
+            Published by <a href="https://telep.io" className="text-editorial-red-500 hover:text-editorial-red-400 transition-colors">Telep IO</a> • 
+            Making government data accessible to all Americans
+          </p>
+        </div>
       </section>
     </div>
   );

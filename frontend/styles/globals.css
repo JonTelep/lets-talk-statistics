@@ -1,19 +1,57 @@
+/* Import fonts - Editorial typography */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 254 252 247;
+    --foreground: 28 25 23;
+    --cream: 254 252 247;
+    --stone-dark: 28 25 23;
+    --accent-red: 220 38 127;
+    --accent-blue: 37 99 235;
+    --accent-emerald: 5 150 105;
   }
 
   body {
-    @apply bg-white text-gray-900 antialiased;
+    @apply bg-editorial-cream text-editorial-stone antialiased;
+    font-feature-settings: 'kern' 1, 'liga' 1, 'calt' 1, 'pnum' 1, 'tnum' 0, 'onum' 1, 'lnum' 0, 'dlig' 1;
+    letter-spacing: -0.005em;
+    line-height: 1.6;
   }
 
   * {
-    @apply border-gray-200;
+    @apply border-editorial-stone/20;
+  }
+
+  /* Editorial typography */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-editorial-cream;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-editorial-stone/30 rounded;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-editorial-stone/50;
   }
 }
 
@@ -25,10 +63,148 @@
   .font-feature-numeric {
     font-feature-settings: 'tnum' on, 'lnum' on;
   }
+
+  /* Editorial Card Styles */
+  .card-editorial {
+    @apply bg-white border-2 border-editorial-stone/10;
+    box-shadow: 0 8px 32px rgba(28, 25, 23, 0.08), 0 2px 8px rgba(28, 25, 23, 0.04);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .card-editorial:hover {
+    box-shadow: 0 20px 64px rgba(28, 25, 23, 0.12), 0 8px 24px rgba(28, 25, 23, 0.08);
+    transform: translateY(-2px);
+  }
+
+  /* Editorial Typography */
+  .headline-main {
+    @apply font-headline font-black text-editorial-stone;
+    font-size: clamp(2.5rem, 8vw, 6rem);
+    line-height: 0.9;
+    letter-spacing: -0.04em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .headline-section {
+    @apply font-headline font-bold text-editorial-stone;
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+  }
+
+  .subhead {
+    @apply font-serif text-editorial-stone/80 text-xl font-semibold;
+    line-height: 1.4;
+    letter-spacing: -0.01em;
+  }
+
+  .body-text {
+    @apply font-serif text-editorial-stone/90;
+    font-size: 1.125rem;
+    line-height: 1.7;
+    letter-spacing: -0.005em;
+  }
+
+  /* Editorial Buttons */
+  .button-editorial {
+    @apply bg-editorial-stone text-editorial-cream px-8 py-4 font-sans font-bold uppercase tracking-wider text-sm;
+    border: 2px solid transparent;
+    transition: all 0.2s ease;
+  }
+
+  .button-editorial:hover {
+    @apply bg-editorial-cream text-editorial-stone border-editorial-stone;
+    transform: translateY(-1px);
+  }
+
+  .button-editorial-outline {
+    @apply bg-transparent text-editorial-stone border-2 border-editorial-stone px-8 py-4 font-sans font-bold uppercase tracking-wider text-sm;
+    transition: all 0.2s ease;
+  }
+
+  .button-editorial-outline:hover {
+    @apply bg-editorial-stone text-editorial-cream;
+    transform: translateY(-1px);
+  }
+
+  /* Pull Quotes */
+  .pullquote {
+    @apply font-headline text-3xl md:text-4xl font-bold text-editorial-red italic relative;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+  }
+
+  .pullquote::before {
+    content: '"';
+    @apply absolute text-6xl -top-4 -left-6 text-editorial-red/30;
+    font-family: 'Playfair Display', serif;
+  }
+
+  /* Editorial Layout */
+  .layout-magazine {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 2rem;
+  }
+
+  .col-span-magazine-full { grid-column: 1 / -1; }
+  .col-span-magazine-8 { grid-column: span 8; }
+  .col-span-magazine-4 { grid-column: span 4; }
+  .col-span-magazine-6 { grid-column: span 6; }
+
+  /* Data Visualization Enhancements */
+  .data-highlight {
+    @apply font-headline font-black text-4xl md:text-6xl;
+    color: var(--accent-red);
+    text-shadow: 2px 2px 4px rgba(220, 38, 127, 0.1);
+  }
+
+  .stat-emphasis {
+    @apply bg-editorial-red/5 border-l-4 border-editorial-red p-6;
+  }
+
+  /* Editorial Colors */
+  .text-editorial-red { color: rgb(220 38 127); }
+  .bg-editorial-red { background-color: rgb(220 38 127); }
+  .border-editorial-red { border-color: rgb(220 38 127); }
+
+  .text-editorial-blue { color: rgb(37 99 235); }
+  .bg-editorial-blue { background-color: rgb(37 99 235); }
+  .border-editorial-blue { border-color: rgb(37 99 235); }
+
+  .text-editorial-emerald { color: rgb(5 150 105); }
+  .bg-editorial-emerald { background-color: rgb(5 150 105); }
+  .border-editorial-emerald { border-color: rgb(5 150 105); }
+
+  .text-editorial-stone { color: rgb(28 25 23); }
+  .bg-editorial-stone { background-color: rgb(28 25 23); }
+  .border-editorial-stone { border-color: rgb(28 25 23); }
+
+  .text-editorial-cream { color: rgb(254 252 247); }
+  .bg-editorial-cream { background-color: rgb(254 252 247); }
+  .border-editorial-cream { border-color: rgb(254 252 247); }
+
+  /* Editorial Dividers */
+  .divider-editorial {
+    @apply border-t-2 border-editorial-stone/20;
+    position: relative;
+  }
+
+  .divider-editorial::before {
+    content: '❖';
+    @apply absolute -top-2 left-1/2 transform -translate-x-1/2 bg-editorial-cream text-editorial-stone/40;
+    padding: 0 1rem;
+    font-size: 0.875rem;
+  }
+
+  /* Dropcap */
+  .dropcap::first-letter {
+    @apply font-headline text-7xl font-black leading-none float-left mr-2 mt-1 text-editorial-red;
+  }
 }
 
-/* Skeleton loading shimmer animation */
-@keyframes shimmer {
+/* Editorial theme skeleton animation */
+@keyframes shimmer-editorial {
   0% {
     background-position: 200% 0;
   }
@@ -38,12 +214,22 @@
 }
 
 .animate-shimmer {
-  animation: shimmer 1.5s ease-in-out infinite;
+  animation: shimmer-editorial 2s ease-in-out infinite;
   background: linear-gradient(
     90deg,
-    #e5e7eb 0%,
-    #f3f4f6 50%,
-    #e5e7eb 100%
+    rgb(255 255 255) 0%,
+    rgb(250 250 250) 50%,
+    rgb(255 255 255) 100%
   );
   background-size: 200% 100%;
+}
+
+/* Hover effects for editorial elements */
+.hover-lift {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hover-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(28, 25, 23, 0.15);
 }
