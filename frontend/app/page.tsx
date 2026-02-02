@@ -91,7 +91,7 @@ export default function Home() {
             <div className="font-mono text-terminal-amber mb-8">
               <p className="text-xl mb-2">[SYSTEM] Data pipeline initialized</p>
               <p className="text-lg text-terminal-muted">
-                >> Raw government feeds | No preprocessing | Direct from source
+                {'>>'} Raw government feeds | No preprocessing | Direct from source
               </p>
             </div>
             <div className="inline-block border border-terminal-cyan bg-terminal-surface/50 backdrop-blur px-6 py-3 font-mono text-terminal-cyan">

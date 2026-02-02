@@ -1,6 +1,6 @@
 'use client';
 
-import { Building2, TrendingUp, DollarSign, Users, Clock, AlertTriangle, RefreshCw } from 'lucide-react';
+import { Building2, TrendingUp, DollarSign, Users, Clock, AlertTriangle, RefreshCw, Terminal } from 'lucide-react';
 import Link from 'next/link';
 import {
   LineChart,
@@ -52,28 +52,28 @@ const milestones = [
   { amount: '$35 Trillion', year: '2024', daysTo: '730 days' },
 ];
 
-// Colors for pie chart
-const PIE_COLORS = ['#ef4444', '#f97316', '#eab308', '#22c55e', '#0ea5e9', '#8b5cf6'];
+// Dark terminal colors for charts
+const TERMINAL_PIE_COLORS = ['#00ffff', '#00ff41', '#ffbf00', '#ff0040', '#bf00ff', '#0088ff'];
 
-// Chart skeleton component
+// Chart skeleton component for dark theme
 function ChartSkeleton({ height = 300 }: { height?: number }) {
   return (
     <div className="animate-pulse" style={{ height }}>
-      <div className="h-full bg-gray-200 rounded-lg flex items-center justify-center">
-        <div className="text-gray-400 text-sm">Loading chart...</div>
+      <div className="h-full bg-terminal-surface border border-terminal-border rounded-lg flex items-center justify-center">
+        <div className="text-terminal-muted text-sm font-mono">LOADING_CHART...</div>
       </div>
     </div>
   );
 }
 
-// Table row skeleton for historical debt table
+// Table row skeleton for dark theme
 function TableRowSkeleton() {
   return (
-    <tr>
-      <td className="px-6 py-4"><Skeleton className="h-4 w-12" /></td>
-      <td className="px-6 py-4 text-right"><Skeleton className="h-4 w-16 ml-auto" /></td>
-      <td className="px-6 py-4 text-right"><Skeleton className="h-4 w-14 ml-auto" /></td>
-      <td className="px-6 py-4 text-right"><Skeleton className="h-4 w-12 ml-auto" /></td>
+    <tr className="border-terminal-border">
+      <td className="px-6 py-4"><Skeleton className="h-4 w-12 bg-terminal-surface" /></td>
+      <td className="px-6 py-4 text-right"><Skeleton className="h-4 w-16 ml-auto bg-terminal-surface" /></td>
+      <td className="px-6 py-4 text-right"><Skeleton className="h-4 w-14 ml-auto bg-terminal-surface" /></td>
+      <td className="px-6 py-4 text-right"><Skeleton className="h-4 w-12 ml-auto bg-terminal-surface" /></td>
     </tr>
   );
 }
@@ -120,73 +120,84 @@ function DebtPageContent() {
   const interestDaily = stats ? (parseFloat(stats.totalDebtTrillions) * 0.03 / 365).toFixed(1) : '3.0';
 
   return (
-    <div className="min-h-screen bg-gray-50">
-      {/* Hero Section */}
-      <div className="bg-gradient-to-r from-red-600 to-rose-700 text-white">
-        <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-terminal-bg bg-terminal-grid">
+      {/* Hero Section - Terminal Style */}
+      <div className="bg-gradient-to-r from-terminal-surface via-terminal-bg to-terminal-surface border-b border-terminal-cyan relative overflow-hidden">
+        <div className="absolute inset-0 bg-grid-terminal bg-grid-20 opacity-30"></div>
+        <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 relative z-10">
           <div className="flex items-center gap-3 mb-4">
-            <Building2 className="h-10 w-10" />
-            <h1 className="text-4xl font-bold">National Debt</h1>
+            <Terminal className="h-10 w-10 text-terminal-cyan glow-cyan" />
+            <h1 className="text-4xl font-bold text-terminal-cyan glow-cyan font-mono">[NATIONAL_DEBT]</h1>
           </div>
-          <p className="text-xl text-red-100 max-w-3xl">
-            Track the U.S. national debt in real-time. See who holds our debt, how fast it's growing, 
-            and how it compares to GDP. All data from the U.S. Treasury Department.
+          <p className="text-xl text-terminal-text max-w-3xl font-mono leading-relaxed">
+            <span className="text-terminal-green">{'>'}</span> Tracking U.S. national debt in real-time<br/>
+            <span className="text-terminal-amber">{'>'}</span> Analyzing debt holders, growth rates, GDP ratios<br/>
+            <span className="text-terminal-cyan">{'>'}</span> Source: U.S. Treasury Department [CLASSIFIED]
           </p>
         </div>
       </div>
 
-      {/* Live Counter Section */}
+      {/* Live Counter Section - Terminal Style */}
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 -mt-8">
         {loading ? (
-          <HeroCounterSkeleton />
+          <div className="terminal-card rounded-xl p-8 text-center">
+            <div className="animate-pulse">
+              <div className="h-4 w-32 bg-terminal-surface mx-auto mb-4"></div>
+              <div className="h-16 w-96 bg-terminal-surface mx-auto mb-4"></div>
+              <div className="h-4 w-48 bg-terminal-surface mx-auto"></div>
+            </div>
+          </div>
         ) : error ? (
-          <div className="bg-white rounded-xl shadow-lg p-8 text-center">
-            <ErrorStateCompact 
-              message="Failed to load live data" 
-              onRetry={refetch} 
-            />
+          <div className="terminal-card rounded-xl p-8 text-center border-glow-cyan">
+            <div className="text-terminal-red font-mono">
+              [ERROR] Failed to load live data
+            </div>
+            <button onClick={refetch} className="terminal-button mt-4 px-4 py-2 rounded">
+              <RefreshCw className="h-4 w-4 inline mr-2" />
+              RETRY_CONNECTION
+            </button>
           </div>
         ) : stats ? (
-          <div className="bg-white rounded-xl shadow-lg p-8 text-center">
-            <p className="text-sm text-gray-500 mb-2">U.S. National Debt</p>
-            <p className="text-5xl md:text-6xl font-bold text-red-600 font-mono">
-              ${stats.totalDebtTrillions} Trillion
+          <div className="terminal-card rounded-xl p-8 text-center border-glow-cyan">
+            <p className="text-sm text-terminal-muted mb-2 font-mono">[U.S._NATIONAL_DEBT]</p>
+            <p className="text-5xl md:text-6xl font-bold text-terminal-red glow-amber font-mono">
+              ${stats.totalDebtTrillions}_TRILLION
             </p>
-            <p className="text-sm text-gray-500 mt-2">As of {stats.lastUpdated}</p>
-            <div className="mt-4 flex justify-center gap-8 text-sm">
-              <div>
-                <span className="text-red-500 font-medium">+${stats.dailyIncreaseBillions}B</span>
-                <span className="text-gray-500"> per day (avg)</span>
+            <p className="text-sm text-terminal-muted mt-2 font-mono">As of {stats.lastUpdated}</p>
+            <div className="mt-6 flex justify-center gap-8 text-sm font-mono">
+              <div className="border border-terminal-border bg-terminal-surface/50 p-3 rounded">
+                <span className="text-terminal-red font-medium glow-green">+${stats.dailyIncreaseBillions}B</span>
+                <div className="text-terminal-muted text-xs">DAILY_INCREASE</div>
               </div>
-              <div>
-                <span className="text-red-500 font-medium">${interestDaily}B</span>
-                <span className="text-gray-500"> daily interest (est)</span>
+              <div className="border border-terminal-border bg-terminal-surface/50 p-3 rounded">
+                <span className="text-terminal-red font-medium glow-amber">${interestDaily}B</span>
+                <div className="text-terminal-muted text-xs">DAILY_INTEREST</div>
               </div>
             </div>
-            <p className="text-xs text-green-600 mt-3">
-              ✓ Live data from U.S. Treasury Fiscal Data API
+            <p className="text-xs text-terminal-green mt-4 font-mono">
+              [✓] LIVE_DATA_STREAM_ACTIVE // treasury.gov.api
             </p>
           </div>
         ) : null}
       </div>
 
-      {/* Disclaimer */}
+      {/* Disclaimer - Terminal Style */}
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mt-6">
-        <div className="bg-amber-50 border border-amber-200 rounded-lg p-4 flex items-start gap-3">
-          <AlertTriangle className="h-5 w-5 text-amber-600 flex-shrink-0 mt-0.5" />
-          <div className="text-sm text-amber-800">
-            <strong>Data Source:</strong> U.S. Treasury Department - Bureau of the Fiscal Service. 
+        <div className="border border-terminal-amber bg-terminal-surface/30 rounded-lg p-4 flex items-start gap-3">
+          <AlertTriangle className="h-5 w-5 text-terminal-amber flex-shrink-0 mt-0.5" />
+          <div className="text-sm text-terminal-text font-mono">
+            <span className="text-terminal-amber font-bold">[DATA_SOURCE]:</span> U.S. Treasury Department - Bureau of the Fiscal Service. 
             "Total Public Debt Outstanding" includes both debt held by the public and intragovernmental holdings.
             {debtData && (
-              <span className="ml-1 text-green-700">
-                Last fetched: {new Date(debtData.fetched_at).toLocaleString()}
-              </span>
+              <div className="mt-1 text-terminal-green text-xs">
+                Last sync: {new Date(debtData.fetched_at).toLocaleString()} [UTC]
+              </div>
             )}
           </div>
         </div>
       </div>
 
-      {/* Per Person Stats */}
+      {/* Per Person Stats - Terminal Style */}
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
           {loading ? (
@@ -198,99 +209,115 @@ function DebtPageContent() {
             </>
           ) : (
             <>
-              <div className="bg-white rounded-xl shadow-sm p-6">
-                <div className="flex items-center gap-2 text-gray-500 text-sm mb-1">
-                  <Users className="h-4 w-4" />
-                  Debt Per Citizen
+              <div className="terminal-card rounded-xl p-6 hover:border-glow-cyan transition-all duration-300">
+                <div className="flex items-center gap-2 text-terminal-muted text-sm mb-2 font-mono">
+                  <Users className="h-4 w-4 text-terminal-cyan" />
+                  DEBT_PER_CITIZEN
                 </div>
-                <p className="text-2xl font-bold text-red-600">
+                <p className="text-2xl font-bold text-terminal-red glow-green font-mono">
                   ${stats?.debtPerCitizen.toLocaleString() || '---'}
                 </p>
-                <p className="text-xs text-gray-500">Every man, woman, child</p>
+                <p className="text-xs text-terminal-muted font-mono">Every man, woman, child</p>
               </div>
               
-              <div className="bg-white rounded-xl shadow-sm p-6">
-                <div className="flex items-center gap-2 text-gray-500 text-sm mb-1">
-                  <DollarSign className="h-4 w-4" />
-                  Debt Per Taxpayer
+              <div className="terminal-card rounded-xl p-6 hover:border-glow-cyan transition-all duration-300">
+                <div className="flex items-center gap-2 text-terminal-muted text-sm mb-2 font-mono">
+                  <DollarSign className="h-4 w-4 text-terminal-amber" />
+                  DEBT_PER_TAXPAYER
                 </div>
-                <p className="text-2xl font-bold text-red-600">
+                <p className="text-2xl font-bold text-terminal-red glow-amber font-mono">
                   ${stats?.debtPerTaxpayer.toLocaleString() || '---'}
                 </p>
-                <p className="text-xs text-gray-500">Per tax-filing household</p>
+                <p className="text-xs text-terminal-muted font-mono">Per tax-filing household</p>
               </div>
               
-              <div className="bg-white rounded-xl shadow-sm p-6">
-                <div className="flex items-center gap-2 text-gray-500 text-sm mb-1">
-                  <TrendingUp className="h-4 w-4" />
-                  Debt-to-GDP Ratio
+              <div className="terminal-card rounded-xl p-6 hover:border-glow-cyan transition-all duration-300">
+                <div className="flex items-center gap-2 text-terminal-muted text-sm mb-2 font-mono">
+                  <TrendingUp className="h-4 w-4 text-terminal-green" />
+                  DEBT_TO_GDP_RATIO
                 </div>
-                <p className="text-2xl font-bold text-gray-900">
+                <p className="text-2xl font-bold text-terminal-cyan glow-cyan font-mono">
                   {stats?.gdpRatio || '---'}%
                 </p>
-                <p className="text-xs text-gray-500">Debt exceeds annual GDP</p>
+                <p className="text-xs text-terminal-muted font-mono">Debt exceeds annual GDP</p>
               </div>
               
-              <div className="bg-white rounded-xl shadow-sm p-6">
-                <div className="flex items-center gap-2 text-gray-500 text-sm mb-1">
-                  <Clock className="h-4 w-4" />
-                  Interest Paid (FY24)
+              <div className="terminal-card rounded-xl p-6 hover:border-glow-cyan transition-all duration-300">
+                <div className="flex items-center gap-2 text-terminal-muted text-sm mb-2 font-mono">
+                  <Clock className="h-4 w-4 text-terminal-purple" />
+                  INTEREST_PAID_FY24
                 </div>
-                <p className="text-2xl font-bold text-red-600">$1.13T</p>
-                <p className="text-xs text-gray-500">Just to service the debt</p>
+                <p className="text-2xl font-bold text-terminal-red glow-green font-mono">$1.13T</p>
+                <p className="text-xs text-terminal-muted font-mono">Just to service the debt</p>
               </div>
             </>
           )}
         </div>
       </div>
 
-      {/* Debt Growth Chart */}
+      {/* Debt Growth Chart - Terminal Style */}
       <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
-        <div className="bg-white rounded-xl shadow-sm p-6">
-          <h2 className="text-lg font-semibold text-gray-900 mb-4">Debt Growth Over Time</h2>
+        <div className="terminal-card rounded-xl p-6 border-glow-cyan">
+          <h2 className="text-lg font-semibold text-terminal-cyan mb-4 font-mono glow-cyan">[DEBT_GROWTH_ANALYSIS]</h2>
           {loading ? (
             <ChartSkeleton height={350} />
           ) : error ? (
-            <ErrorStateCompact message="Failed to load chart data" onRetry={refetch} />
+            <div className="h-[350px] flex items-center justify-center text-terminal-red font-mono">
+              [ERROR] Failed to load chart data
+            </div>
           ) : historicalDebt.length > 0 ? (
             <ResponsiveContainer width="100%" height={350}>
               <LineChart
                 data={[...historicalDebt].reverse()}
                 margin={{ top: 5, right: 30, left: 20, bottom: 5 }}
               >
-                <CartesianGrid strokeDasharray="3 3" stroke="#e5e7eb" />
+                <CartesianGrid strokeDasharray="2 2" stroke="rgba(0, 255, 255, 0.1)" />
                 <XAxis 
                   dataKey="year" 
-                  stroke="#6b7280"
-                  fontSize={12}
+                  stroke="#00ffff"
+                  fontSize={11}
+                  fontFamily="JetBrains Mono"
                 />
                 <YAxis 
-                  stroke="#6b7280"
-                  fontSize={12}
+                  stroke="#00ffff"
+                  fontSize={11}
+                  fontFamily="JetBrains Mono"
                   tickFormatter={(value) => `$${value}T`}
                 />
                 <Tooltip
                   contentStyle={{
-                    backgroundColor: '#fff',
-                    border: '1px solid #e5e7eb',
+                    backgroundColor: '#111111',
+                    border: '1px solid #00ffff',
                     borderRadius: '8px',
-                    boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)',
+                    boxShadow: '0 0 10px rgba(0, 255, 255, 0.3)',
+                    fontFamily: 'JetBrains Mono',
+                    color: '#e5e5e5',
                   }}
-                  formatter={(value: number) => [`$${value.toFixed(2)}T`, 'Total Debt']}
+                  formatter={(value: number) => [`$${value.toFixed(2)}T`, 'TOTAL_DEBT']}
                 />
                 <Line
                   type="monotone"
                   dataKey="debt"
-                  stroke="#ef4444"
-                  strokeWidth={3}
-                  dot={{ fill: '#ef4444', strokeWidth: 2, r: 4 }}
-                  activeDot={{ r: 6, fill: '#dc2626' }}
+                  stroke="#00ff41"
+                  strokeWidth={2}
+                  dot={{ fill: '#00ff41', strokeWidth: 2, r: 3 }}
+                  activeDot={{ r: 5, fill: '#00ff41', stroke: '#00ffff', strokeWidth: 2 }}
+                  filter="url(#glow)"
                 />
+                <defs>
+                  <filter id="glow">
+                    <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+                    <feMerge> 
+                      <feMergeNode in="coloredBlur"/>
+                      <feMergeNode in="SourceGraphic"/>
+                    </feMerge>
+                  </filter>
+                </defs>
               </LineChart>
             </ResponsiveContainer>
           ) : (
-            <div className="h-[350px] flex items-center justify-center text-gray-500">
-              No data available for chart
+            <div className="h-[350px] flex items-center justify-center text-terminal-muted font-mono">
+              [NO_DATA_AVAILABLE]
             </div>
           )}
         </div>
@@ -301,24 +328,24 @@ function DebtPageContent() {
         <div className="grid lg:grid-cols-3 gap-8">
           {/* Historical Data */}
           <div className="lg:col-span-2">
-            <div className="bg-white rounded-xl shadow-sm">
-              <div className="px-6 py-4 border-b border-gray-200 flex justify-between items-center">
-                <h2 className="text-lg font-semibold text-gray-900">Historical National Debt</h2>
-                <Link href="/debt/historical" className="text-sm text-primary-600 hover:text-primary-700">
-                  Full history →
+            <div className="terminal-card rounded-xl border-glow-cyan">
+              <div className="px-6 py-4 border-b border-terminal-border flex justify-between items-center">
+                <h2 className="text-lg font-semibold text-terminal-cyan font-mono glow-cyan">[HISTORICAL_DEBT_LOG]</h2>
+                <Link href="/debt/historical" className="text-sm text-terminal-amber hover:glow-amber font-mono transition-all duration-300">
+                  FULL_HISTORY_{'>>'} 
                 </Link>
               </div>
               <div className="overflow-x-auto">
-                <table className="w-full">
-                  <thead className="bg-gray-50">
+                <table className="w-full font-mono">
+                  <thead className="bg-terminal-surface">
                     <tr>
-                      <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Year</th>
-                      <th className="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase">Total Debt</th>
-                      <th className="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase">Debt/GDP</th>
-                      <th className="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase">Growth</th>
+                      <th className="px-6 py-3 text-left text-xs font-medium text-terminal-muted uppercase">YEAR</th>
+                      <th className="px-6 py-3 text-right text-xs font-medium text-terminal-muted uppercase">TOTAL_DEBT</th>
+                      <th className="px-6 py-3 text-right text-xs font-medium text-terminal-muted uppercase">DEBT/GDP</th>
+                      <th className="px-6 py-3 text-right text-xs font-medium text-terminal-muted uppercase">GROWTH</th>
                     </tr>
                   </thead>
-                  <tbody className="divide-y divide-gray-200">
+                  <tbody className="divide-y divide-terminal-border">
                     {loading ? (
                       <>
                         <TableRowSkeleton />
@@ -331,27 +358,27 @@ function DebtPageContent() {
                         <TableRowSkeleton />
                       </>
                     ) : error ? (
-                      <ErrorStateTableRow 
-                        colSpan={4} 
-                        message="Failed to load historical data" 
-                        onRetry={refetch} 
-                      />
+                      <tr>
+                        <td colSpan={4} className="px-6 py-8 text-center text-terminal-red font-mono">
+                          [ERROR] Failed to load historical data
+                        </td>
+                      </tr>
                     ) : historicalDebt.length > 0 ? (
                       historicalDebt.map((row, idx) => {
                         const prevDebt = historicalDebt[idx + 1]?.debt || row.debt;
                         const growth = ((row.debt - prevDebt) / prevDebt * 100).toFixed(1);
                         return (
-                          <tr key={idx} className="hover:bg-gray-50">
-                            <td className="px-6 py-4 text-sm font-medium text-gray-900">{row.year}</td>
-                            <td className="px-6 py-4 text-sm text-right font-medium text-red-600">
+                          <tr key={idx} className="hover:bg-terminal-surface/30 transition-colors">
+                            <td className="px-6 py-4 text-sm font-medium text-terminal-text">{row.year}</td>
+                            <td className="px-6 py-4 text-sm text-right font-medium text-terminal-red glow-green">
                               ${row.debt.toFixed(2)}T
                             </td>
-                            <td className="px-6 py-4 text-sm text-right text-gray-500">
+                            <td className="px-6 py-4 text-sm text-right text-terminal-amber">
                               {row.gdpRatio.toFixed(1)}%
                             </td>
                             <td className="px-6 py-4 text-sm text-right">
                               {idx < historicalDebt.length - 1 && parseFloat(growth) !== 0 && (
-                                <span className={parseFloat(growth) > 0 ? 'text-red-600' : 'text-green-600'}>
+                                <span className={parseFloat(growth) > 0 ? 'text-terminal-red glow-green' : 'text-terminal-green'}>
                                   {parseFloat(growth) > 0 ? '+' : ''}{growth}%
                                 </span>
                               )}
@@ -361,8 +388,8 @@ function DebtPageContent() {
                       })
                     ) : (
                       <tr>
-                        <td colSpan={4} className="px-6 py-8 text-center text-gray-500">
-                          No data available
+                        <td colSpan={4} className="px-6 py-8 text-center text-terminal-muted font-mono">
+                          [NO_DATA_AVAILABLE]
                         </td>
                       </tr>
                     )}
@@ -372,21 +399,21 @@ function DebtPageContent() {
             </div>
 
             {/* Milestones */}
-            <div className="mt-8 bg-white rounded-xl shadow-sm">
-              <div className="px-6 py-4 border-b border-gray-200">
-                <h2 className="text-lg font-semibold text-gray-900">Debt Milestones</h2>
-                <p className="text-sm text-gray-500">How long it took to add each trillion</p>
+            <div className="mt-8 terminal-card rounded-xl">
+              <div className="px-6 py-4 border-b border-terminal-border">
+                <h2 className="text-lg font-semibold text-terminal-cyan font-mono glow-cyan">[DEBT_MILESTONES]</h2>
+                <p className="text-sm text-terminal-muted font-mono">Time intervals between trillion-dollar thresholds</p>
               </div>
               <div className="p-6">
                 <div className="relative">
                   {milestones.map((milestone, idx) => (
-                    <div key={idx} className="flex items-center mb-4 last:mb-0">
-                      <div className="w-28 text-right pr-4">
-                        <p className="text-sm font-bold text-gray-900">{milestone.amount}</p>
-                        <p className="text-xs text-gray-500">{milestone.year}</p>
+                    <div key={idx} className="flex items-center mb-6 last:mb-0 group">
+                      <div className="w-32 text-right pr-4 font-mono">
+                        <p className="text-sm font-bold text-terminal-cyan glow-cyan">{milestone.amount}</p>
+                        <p className="text-xs text-terminal-muted">[{milestone.year}]</p>
                       </div>
-                      <div className="w-4 h-4 bg-red-500 rounded-full border-4 border-red-200 z-10" />
-                      <div className="ml-4 text-sm text-gray-600">
+                      <div className="w-4 h-4 bg-terminal-red rounded-full border-2 border-terminal-cyan z-10 group-hover:animate-pulse" />
+                      <div className="ml-4 text-sm text-terminal-amber font-mono">
                         {milestone.daysTo !== '-' && <span>+{milestone.daysTo}</span>}
                       </div>
                     </div>
@@ -399,9 +426,9 @@ function DebtPageContent() {
           {/* Sidebar */}
           <div>
             {/* Who Holds the Debt */}
-            <div className="bg-white rounded-xl shadow-sm">
-              <div className="px-6 py-4 border-b border-gray-200">
-                <h2 className="text-lg font-semibold text-gray-900">Who Holds Our Debt?</h2>
+            <div className="terminal-card rounded-xl border-glow-cyan">
+              <div className="px-6 py-4 border-b border-terminal-border">
+                <h2 className="text-lg font-semibold text-terminal-cyan font-mono glow-cyan">[DEBT_HOLDERS_MATRIX]</h2>
               </div>
               <div className="p-6">
                 {/* Pie Chart */}
@@ -417,31 +444,33 @@ function DebtPageContent() {
                       dataKey="value"
                     >
                       {debtHolders.map((_, idx) => (
-                        <Cell key={`cell-${idx}`} fill={PIE_COLORS[idx % PIE_COLORS.length]} />
+                        <Cell key={`cell-${idx}`} fill={TERMINAL_PIE_COLORS[idx % TERMINAL_PIE_COLORS.length]} />
                       ))}
                     </Pie>
                     <Tooltip
                       contentStyle={{
-                        backgroundColor: '#fff',
-                        border: '1px solid #e5e7eb',
+                        backgroundColor: '#111111',
+                        border: '1px solid #00ffff',
                         borderRadius: '8px',
+                        fontFamily: 'JetBrains Mono',
+                        color: '#e5e5e5',
                       }}
-                      formatter={(value: number) => [`$${value}T`, 'Amount']}
+                      formatter={(value: number) => [`$${value}T`, 'AMOUNT']}
                     />
                   </PieChart>
                 </ResponsiveContainer>
                 {/* Legend as list */}
-                <div className="mt-4 space-y-2">
+                <div className="mt-4 space-y-3 font-mono">
                   {debtHolders.map((holder, idx) => (
-                    <div key={idx} className="flex items-center justify-between text-sm">
-                      <div className="flex items-center gap-2">
+                    <div key={idx} className="flex items-center justify-between text-sm hover:bg-terminal-surface/30 p-2 rounded transition-colors">
+                      <div className="flex items-center gap-3">
                         <div 
-                          className="w-3 h-3 rounded-full" 
-                          style={{ backgroundColor: PIE_COLORS[idx % PIE_COLORS.length] }} 
+                          className="w-3 h-3 rounded-sm" 
+                          style={{ backgroundColor: TERMINAL_PIE_COLORS[idx % TERMINAL_PIE_COLORS.length] }} 
                         />
-                        <span className="text-gray-700">{holder.holder}</span>
+                        <span className="text-terminal-text">{holder.holder}</span>
                       </div>
-                      <span className="text-gray-900 font-medium">${holder.amount}T ({holder.percent}%)</span>
+                      <span className="text-terminal-cyan glow-cyan">${holder.amount}T ({holder.percent}%)</span>
                     </div>
                   ))}
                 </div>
@@ -449,50 +478,49 @@ function DebtPageContent() {
             </div>
 
             {/* Top Foreign Holders */}
-            <div className="mt-6 bg-white rounded-xl shadow-sm">
-              <div className="px-6 py-4 border-b border-gray-200">
-                <h2 className="text-lg font-semibold text-gray-900">Top Foreign Holders</h2>
+            <div className="mt-6 terminal-card rounded-xl">
+              <div className="px-6 py-4 border-b border-terminal-border">
+                <h2 className="text-lg font-semibold text-terminal-cyan font-mono glow-cyan">[FOREIGN_HOLDERS_TOP6]</h2>
               </div>
-              <div className="divide-y divide-gray-200">
+              <div className="divide-y divide-terminal-border">
                 {topForeignHolders.map((country, idx) => (
-                  <div key={idx} className="px-6 py-3 flex items-center justify-between">
+                  <div key={idx} className="px-6 py-4 flex items-center justify-between hover:bg-terminal-surface/30 transition-colors font-mono">
                     <div className="flex items-center">
-                      <span className="text-sm font-bold text-gray-300 w-6">#{idx + 1}</span>
-                      <span className="text-sm text-gray-700">{country.country}</span>
+                      <span className="text-sm font-bold text-terminal-muted w-8">#{idx + 1}</span>
+                      <span className="text-sm text-terminal-text">{country.country}</span>
                     </div>
-                    <span className="text-sm font-medium text-gray-900">${country.amount}T</span>
+                    <span className="text-sm font-medium text-terminal-amber glow-amber">${country.amount}T</span>
                   </div>
                 ))}
               </div>
             </div>
 
             {/* Data Sources */}
-            <div className="mt-6 bg-white rounded-xl shadow-sm p-6">
-              <h3 className="text-lg font-semibold text-gray-900 mb-3">Data Sources</h3>
-              <ul className="text-sm text-gray-600 space-y-2">
-                <li>• <a href="https://fiscaldata.treasury.gov/" target="_blank" rel="noopener noreferrer" className="text-primary-600 hover:underline">Treasury Fiscal Data API</a> (Live)</li>
-                <li>• TreasuryDirect.gov</li>
-                <li>• Bureau of the Fiscal Service</li>
-                <li>• Treasury International Capital (TIC)</li>
+            <div className="mt-6 terminal-card rounded-xl p-6">
+              <h3 className="text-lg font-semibold text-terminal-cyan mb-4 font-mono glow-cyan">[DATA_SOURCES]</h3>
+              <ul className="text-sm text-terminal-text space-y-3 font-mono">
+                <li className="hover:text-terminal-cyan transition-colors">
+                  {'>'} <a href="https://fiscaldata.treasury.gov/" target="_blank" rel="noopener noreferrer" className="text-terminal-amber hover:glow-amber">Treasury Fiscal Data API</a> [LIVE]
+                </li>
+                <li className="hover:text-terminal-cyan transition-colors">{'>'} TreasuryDirect.gov [ARCHIVED]</li>
+                <li className="hover:text-terminal-cyan transition-colors">{'>'} Bureau of the Fiscal Service [GOV]</li>
+                <li className="hover:text-terminal-cyan transition-colors">{'>'} Treasury International Capital (TIC) [INT]</li>
               </ul>
             </div>
 
             {/* Download Raw Data */}
             <div className="mt-6">
-              <DownloadRawData
-                endpoints={[
-                  {
-                    label: 'Debt History (3 years)',
-                    url: `${API_URL}/debt/?days=1095`,
-                    filename: 'debt_history.json'
-                  },
-                  {
-                    label: 'Latest Debt Figure',
-                    url: `${API_URL}/debt/latest`,
-                    filename: 'debt_latest.json'
-                  }
-                ]}
-              />
+              <div className="terminal-card rounded-xl p-6">
+                <h3 className="text-lg font-semibold text-terminal-cyan mb-4 font-mono glow-cyan">[RAW_DATA_EXPORT]</h3>
+                <div className="space-y-3">
+                  <button className="terminal-button w-full px-4 py-3 rounded text-left font-mono transition-all duration-300">
+                    {'>'} DEBT_HISTORY_3Y.json
+                  </button>
+                  <button className="terminal-button w-full px-4 py-3 rounded text-left font-mono transition-all duration-300">
+                    {'>'} DEBT_LATEST.json
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
