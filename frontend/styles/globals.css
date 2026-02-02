@@ -4,16 +4,79 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 255 255 255;
+    --foreground: 23 23 23;
+  }
+
+  html {
+    scroll-behavior: smooth;
   }
 
   body {
-    @apply bg-white text-gray-900 antialiased;
+    @apply bg-minimal-white text-minimal-gray-900 antialiased;
+    font-feature-settings: 'rlig' 1, 'calt' 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
   * {
-    @apply border-gray-200;
+    @apply border-minimal-gray-200;
+  }
+
+  /* Clean scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-minimal-gray-50;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-minimal-gray-300 rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-minimal-gray-400;
+  }
+}
+
+@layer components {
+  .minimal-card {
+    @apply bg-minimal-white border border-minimal-gray-200 rounded-2xl shadow-minimal;
+    transition: all 0.2s ease;
+  }
+
+  .minimal-card:hover {
+    @apply shadow-minimal-md -translate-y-1;
+  }
+
+  .minimal-button {
+    @apply inline-flex items-center justify-center rounded-xl font-medium transition-all duration-200;
+    @apply focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2;
+  }
+
+  .minimal-button-primary {
+    @apply minimal-button bg-primary-600 text-white hover:bg-primary-700;
+    @apply shadow-minimal hover:shadow-minimal-md;
+  }
+
+  .minimal-button-secondary {
+    @apply minimal-button bg-minimal-white border border-minimal-gray-300 text-minimal-gray-700;
+    @apply hover:bg-minimal-gray-50 hover:border-minimal-gray-400;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-br from-primary-600 to-minimal-purple-600 bg-clip-text text-transparent;
+  }
+
+  .section-padding {
+    @apply px-4 sm:px-6 lg:px-8 py-24;
+  }
+
+  .container-width {
+    @apply mx-auto max-w-7xl;
   }
 }
 
@@ -25,10 +88,15 @@
   .font-feature-numeric {
     font-feature-settings: 'tnum' on, 'lnum' on;
   }
+
+  .backdrop-blur-glass {
+    backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(255, 255, 255, 0.8);
+  }
 }
 
-/* Skeleton loading shimmer animation */
-@keyframes shimmer {
+/* Clean theme skeleton animation */
+@keyframes shimmer-clean {
   0% {
     background-position: 200% 0;
   }
@@ -38,12 +106,13 @@
 }
 
 .animate-shimmer {
-  animation: shimmer 1.5s ease-in-out infinite;
+  animation: shimmer-clean 1.5s ease-in-out infinite;
   background: linear-gradient(
     90deg,
-    #e5e7eb 0%,
-    #f3f4f6 50%,
-    #e5e7eb 100%
+    #f5f5f5 0%,
+    #fafafa 50%,
+    #f5f5f5 100%
   );
   background-size: 200% 100%;
+  border-radius: 12px;
 }

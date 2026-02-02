@@ -8,16 +8,17 @@ const inter = Inter({
   subsets: ['latin'],
   display: 'swap',
   variable: '--font-inter',
+  weight: ['400', '500', '600', '700', '800'],
 });
 
 export const metadata: Metadata = {
-  title: "Let's Talk Statistics | Objective Crime Data",
-  description: 'Explore US crime statistics from government sources. Understand the data, analyze trends, and draw your own conclusions.',
-  keywords: ['crime statistics', 'FBI data', 'per capita', 'government data', 'crime trends'],
+  title: "Let's Talk Statistics | Clean Design",
+  description: 'Beautiful government data visualization. Clean, minimal, trustworthy.',
+  keywords: ['government data', 'statistics', 'clean design', 'data visualization', 'minimal'],
   authors: [{ name: "Let's Talk Statistics" }],
   openGraph: {
-    title: "Let's Talk Statistics",
-    description: 'Objective crime statistics from US government sources',
+    title: "Let's Talk Statistics | Clean Design",
+    description: 'Beautiful government data visualization',
     type: 'website',
   },
 };
@@ -29,7 +30,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={inter.variable}>
-      <body className="flex min-h-screen flex-col">
+      <body className="flex min-h-screen flex-col bg-minimal-white text-minimal-gray-900">
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
