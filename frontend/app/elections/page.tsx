@@ -30,7 +30,7 @@ function ChartSkeleton({ height = 300 }: { height?: number }) {
   );
 }
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
+const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000/api/v1';
 
 // Data based on FEC, CPD, and state election board records
 const fundingComparison = {
@@ -507,7 +507,7 @@ function ElectionsPageContent() {
             endpoints={[
               {
                 label: 'Campaign Finance Data',
-                url: `${API_URL}/api/v1/elections/candidates`,
+                url: `${API_URL}/elections/candidates`,
                 filename: 'election_candidates.json'
               }
             ]}

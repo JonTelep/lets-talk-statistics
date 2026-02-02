@@ -36,7 +36,7 @@ function ChartSkeleton({ height = 300 }: { height?: number }) {
   );
 }
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
+const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000/api/v1';
 
 function ImmigrationPageContent() {
   // Fetch all immigration data
@@ -491,22 +491,22 @@ function ImmigrationPageContent() {
                 endpoints={[
                   {
                     label: 'Immigration Summary',
-                    url: `${API_URL}/api/v1/immigration/summary`,
+                    url: `${API_URL}/immigration/summary`,
                     filename: 'immigration_summary.json'
                   },
                   {
                     label: 'Historical Data',
-                    url: `${API_URL}/api/v1/immigration/historical`,
+                    url: `${API_URL}/immigration/historical`,
                     filename: 'immigration_historical.json'
                   },
                   {
                     label: 'By Category',
-                    url: `${API_URL}/api/v1/immigration/categories`,
+                    url: `${API_URL}/immigration/categories`,
                     filename: 'immigration_categories.json'
                   },
                   {
                     label: 'Top Countries',
-                    url: `${API_URL}/api/v1/immigration/countries`,
+                    url: `${API_URL}/immigration/countries`,
                     filename: 'immigration_countries.json'
                   }
                 ]}

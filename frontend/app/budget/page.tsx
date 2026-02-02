@@ -35,7 +35,7 @@ function ChartSkeleton({ height = 300 }: { height?: number }) {
   );
 }
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
+const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000/api/v1';
 
 // Static data for categories (Treasury MTS data structure is complex, these are representative)
 const spendingCategories = [
@@ -459,7 +459,7 @@ function BudgetPageContent() {
                 endpoints={[
                   {
                     label: 'Budget Summary (Current FY)',
-                    url: `${API_URL}/api/v1/budget/`,
+                    url: `${API_URL}/budget/`,
                     filename: 'budget_summary.json'
                   }
                 ]}

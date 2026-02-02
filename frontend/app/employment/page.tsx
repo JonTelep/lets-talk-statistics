@@ -23,7 +23,7 @@ import { ErrorBoundary } from '@/components/ui/ErrorBoundary';
 import { ErrorStateCompact, ErrorStateTableRow } from '@/components/ui/ErrorState';
 import { Skeleton, StatCardSkeleton } from '@/components/ui/Skeleton';
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
+const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000/api/v1';
 
 // Static data that doesn't come from the unemployment API
 // (would need additional BLS series for these)
@@ -464,12 +464,12 @@ function EmploymentPageContent() {
                 endpoints={[
                   {
                     label: 'Unemployment History (2 years)',
-                    url: `${API_URL}/api/v1/employment/unemployment?years=2`,
+                    url: `${API_URL}/employment/unemployment?years=2`,
                     filename: 'unemployment_history.json'
                   },
                   {
                     label: 'Latest Unemployment Rate',
-                    url: `${API_URL}/api/v1/employment/unemployment/latest`,
+                    url: `${API_URL}/employment/unemployment/latest`,
                     filename: 'unemployment_latest.json'
                   }
                 ]}

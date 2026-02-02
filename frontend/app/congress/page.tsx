@@ -39,7 +39,7 @@ function ChartSkeleton({ height = 250 }: { height?: number }) {
   );
 }
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
+const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000/api/v1';
 
 interface PartyStats {
   trades: number;
@@ -121,10 +121,10 @@ function CongressPageContent() {
       if (chamberFilter !== 'all') traderParams.set('chamber', chamberFilter);
 
       const [statsRes, tradesRes, tradersRes, tickersRes] = await Promise.all([
-        fetch(`${API_URL}/api/v1/congress/stats`),
-        fetch(`${API_URL}/api/v1/congress/trades/recent?limit=10`),
-        fetch(`${API_URL}/api/v1/congress/traders?${traderParams}`),
-        fetch(`${API_URL}/api/v1/congress/tickers?limit=10`)
+        fetch(`${API_URL}/congress/stats`),
+        fetch(`${API_URL}/congress/trades/recent?limit=10`),
+        fetch(`${API_URL}/congress/traders?${traderParams}`),
+        fetch(`${API_URL}/congress/tickers?limit=10`)
       ]);
 
       if (!statsRes.ok || !tradesRes.ok || !tradersRes.ok || !tickersRes.ok) {
@@ -744,22 +744,22 @@ function CongressPageContent() {
                 endpoints={[
                   {
                     label: 'Trading Statistics',
-                    url: `${API_URL}/api/v1/congress/stats`,
+                    url: `${API_URL}/congress/stats`,
                     filename: 'congress_stats.json'
                   },
                   {
                     label: 'Recent Trades',
-                    url: `${API_URL}/api/v1/congress/trades/recent?limit=50`,
+                    url: `${API_URL}/congress/trades/recent?limit=50`,
                     filename: 'congress_recent_trades.json'
                   },
                   {
                     label: 'All Trades',
-                    url: `${API_URL}/api/v1/congress/trades?limit=200`,
+                    url: `${API_URL}/congress/trades?limit=200`,
                     filename: 'congress_all_trades.json'
                   },
                   {
                     label: 'Top Traders',
-                    url: `${API_URL}/api/v1/congress/traders`,
+                    url: `${API_URL}/congress/traders`,
                     filename: 'congress_traders.json'
                   }
                 ]}
