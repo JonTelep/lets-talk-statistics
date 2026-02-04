@@ -13,4 +13,5 @@ COPY . .
 RUN mkdir -p /app/data/cache
 
 # Run the application
-CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
+EXPOSE 6003
+CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "6003"]

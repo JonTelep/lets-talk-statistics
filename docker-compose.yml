@@ -9,10 +9,7 @@ services:
     environment:
       PYTHONUNBUFFERED: 1
     ports:
-      - "8000:8000"
-    volumes:
-      - ./backend:/app
-      - ./data:/app/data
+      - "6003:6003"
     networks:
       - lts_network
     restart: unless-stopped
@@ -22,11 +19,11 @@ services:
       context: ./frontend
       dockerfile: Dockerfile
       args:
-        NEXT_PUBLIC_API_URL: http://localhost:8000
+        NEXT_PUBLIC_API_URL: ${NEXT_PUBLIC_API_URL:-http://backend:6003}
         NEXT_PUBLIC_SITE_NAME: Let's Talk Statistics
     container_name: lts_frontend
     ports:
-      - "3000:3000"
+      - "3003:3003"
     depends_on:
       - backend
     networks:
