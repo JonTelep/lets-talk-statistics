@@ -36,6 +36,12 @@ services:
       - backend
     networks:
       - lts_network
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.lts-frontend.rule=Host(`letstalkstatistics.com`)"
+      - "traefik.http.routers.lts-frontend.entrypoints=https"
+      - "traefik.http.routers.lts-frontend.tls=true"
+      - "traefik.http.services.lts-frontend.loadbalancer.server.port=3003"
     restart: unless-stopped
 
 networks:
