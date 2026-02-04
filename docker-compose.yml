@@ -12,6 +12,12 @@ services:
       - "6003:6003"
     networks:
       - lts_network
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.lts-backend.rule=Host(`api.letstalkstatistics.com`)"
+      - "traefik.http.routers.lts-backend.entrypoints=https"
+      - "traefik.http.routers.lts-backend.tls=true"
+      - "traefik.http.services.lts-backend.loadbalancer.server.port=6003"
     restart: unless-stopped
 
   frontend:
@@ -19,7 +25,7 @@ services:
       context: ./frontend
       dockerfile: Dockerfile
       args:
-        NEXT_PUBLIC_API_URL: ${NEXT_PUBLIC_API_URL:-http://backend:6003}
+        NEXT_PUBLIC_API_URL: ${NEXT_PUBLIC_API_URL:-https://api.letstalkstatistics.com}
         NEXT_PUBLIC_SITE_NAME: Let's Talk Statistics
     container_name: lts_frontend
     ports:
@@ -28,6 +34,12 @@ services:
       - backend
     networks:
       - lts_network
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.lts-frontend.rule=Host(`letstalkstatistics.com`)"
+      - "traefik.http.routers.lts-frontend.entrypoints=https"
+      - "traefik.http.routers.lts-frontend.tls=true"
+      - "traefik.http.services.lts-frontend.loadbalancer.server.port=3003"
     restart: unless-stopped
 
 networks:
