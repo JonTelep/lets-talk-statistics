@@ -1,37 +1,37 @@
 """
 Congress Trading Data Service
-Reads from capitol-trades repo data files and serves congressional stock trading data.
+
+Fetches congressional stock trading data from the Capitol Trades API.
+API: https://trades.telep.io
 """
 
-import json
-from pathlib import Path
-from datetime import datetime
+import os
+import httpx
 from typing import Optional
 from collections import defaultdict
 
-from app.config import get_settings
 from app.utils.logger import get_logger
-
-settings = get_settings()
 
 logger = get_logger(__name__)
 
-# Path to capitol-trades data file (unified format)
-CAPITOL_TRADES_DATA = Path("/root/Projects/capitol-trades/data/all_transactions.json")
+# Capitol Trades API base URL
+CAPITOL_TRADES_API = os.getenv("CAPITOL_TRADES_API", "https://trades.telep.io")
 
 
-def _load_transactions() -> dict:
-    """Load transactions from capitol-trades data file"""
-    if not CAPITOL_TRADES_DATA.exists():
-        logger.warning(f"Capitol trades data not found at {CAPITOL_TRADES_DATA}")
-        return {"metadata": {}, "transactions": []}
-    
+async def _fetch_trades(endpoint: str, params: dict = None) -> dict:
+    """Fetch data from Capitol Trades API"""
+    url = f"{CAPITOL_TRADES_API}/api{endpoint}"
     try:
-        with open(CAPITOL_TRADES_DATA) as f:
-            return json.load(f)
-    except Exception as e:
-        logger.error(f"Error loading capitol trades data: {e}")
-        return {"metadata": {}, "transactions": []}
+        async with httpx.AsyncClient(timeout=30.0) as client:
+            response = await client.get(url, params=params)
+            response.raise_for_status()
+            return response.json()
+    except httpx.RequestError as e:
+        logger.error(f"Error fetching from Capitol Trades API: {e}")
+        return {}
+    except httpx.HTTPStatusError as e:
+        logger.error(f"Capitol Trades API error: {e.response.status_code}")
+        return {}
 
 
 def _normalize_transaction_type(tx_type: str) -> str:
@@ -53,7 +53,6 @@ def _parse_amount_range(amount_text: str) -> tuple[int, int]:
     if not amount_text:
         return 0, 0
     try:
-        # Remove $ and commas, split by -
         cleaned = amount_text.replace("$", "").replace(",", "")
         if " - " in cleaned:
             parts = cleaned.split(" - ")
@@ -79,22 +78,16 @@ def _calculate_party_stats(transactions: list) -> dict:
         
         party_stats[party]["trades"] += 1
         
-        # Calculate volume
-        if tx.get("amount_min") and tx.get("amount_max"):
-            vol = (tx["amount_min"] + tx["amount_max"]) // 2
-        else:
-            min_amt, max_amt = _parse_amount_range(tx.get("amount_text", ""))
-            vol = (min_amt + max_amt) // 2
+        min_amt, max_amt = _parse_amount_range(tx.get("amount_text", ""))
+        vol = (min_amt + max_amt) // 2
         party_stats[party]["volume"] += vol
         
-        # Track buys/sells
         tx_type = _normalize_transaction_type(tx.get("transaction_type", ""))
         if tx_type == "Buy":
             party_stats[party]["buys"] += 1
         elif tx_type == "Sell":
             party_stats[party]["sells"] += 1
     
-    # Format volumes
     for party in party_stats:
         vol = party_stats[party]["volume"]
         if vol >= 1_000_000_000:
@@ -107,59 +100,59 @@ def _calculate_party_stats(transactions: list) -> dict:
     return party_stats
 
 
-def get_congress_stats() -> dict:
+async def get_congress_stats() -> dict:
     """Get summary statistics for congressional trading"""
-    data = _load_transactions()
-    metadata = data.get("metadata", {})
-    transactions = data.get("transactions", [])
+    # Fetch a large batch to calculate stats
+    data = await _fetch_trades("/trades", {"per_page": 500})
+    transactions = data.get("trades", [])
+    total = data.get("total", 0)
     
-    # Calculate volume estimate (midpoint of ranges)
+    # Fetch politicians count
+    politicians_data = await _fetch_trades("/politicians", {"per_page": 1})
+    politicians_count = politicians_data.get("total", 0)
+    
+    # Calculate volume estimate
     total_volume = 0
     for tx in transactions:
-        # Handle both direct amount_min/max and amount_text
-        if tx.get("amount_min") and tx.get("amount_max"):
-            total_volume += (tx["amount_min"] + tx["amount_max"]) // 2
-        else:
-            min_amt, max_amt = _parse_amount_range(tx.get("amount_text", ""))
-            total_volume += (min_amt + max_amt) // 2
+        min_amt, max_amt = _parse_amount_range(tx.get("amount_text", ""))
+        total_volume += (min_amt + max_amt) // 2
     
-    # Format volume
-    if total_volume >= 1_000_000_000:
-        volume_str = f"${total_volume / 1_000_000_000:.1f}B"
-    elif total_volume >= 1_000_000:
-        volume_str = f"${total_volume / 1_000_000:.1f}M"
+    # Extrapolate volume based on sample
+    if len(transactions) > 0:
+        avg_volume = total_volume / len(transactions)
+        estimated_total_volume = int(avg_volume * total)
     else:
-        volume_str = f"${total_volume:,}"
+        estimated_total_volume = 0
     
-    # Get by_politician from metadata or calculate
-    by_politician = metadata.get("top_traders", {})
-    if not by_politician:
-        by_politician = metadata.get("by_politician", {})
+    if estimated_total_volume >= 1_000_000_000:
+        volume_str = f"${estimated_total_volume / 1_000_000_000:.1f}B"
+    elif estimated_total_volume >= 1_000_000:
+        volume_str = f"${estimated_total_volume / 1_000_000:.1f}M"
+    else:
+        volume_str = f"${estimated_total_volume:,}"
     
-    # Calculate party breakdown
     party_stats = _calculate_party_stats(transactions)
     
     return {
-        "total_trades": metadata.get("total_transactions", len(transactions)),
+        "total_trades": total,
         "total_volume": volume_str,
-        "traders_count": metadata.get("unique_politicians", 0),
-        "date_range": metadata.get("date_range", {}),
-        "last_updated": metadata.get("generated_at", ""),
-        "by_type": metadata.get("by_type", {}),
-        "by_chamber": metadata.get("by_chamber", {}),
+        "traders_count": politicians_count,
+        "date_range": {},
+        "last_updated": "",
+        "by_type": {},
+        "by_chamber": {},
         "by_party": party_stats,
-        "by_politician": by_politician
+        "by_politician": {}
     }
 
 
-def get_recent_trades(limit: int = 10) -> list[dict]:
+async def get_recent_trades(limit: int = 10) -> list[dict]:
     """Get most recent trades"""
-    data = _load_transactions()
-    transactions = data.get("transactions", [])
+    data = await _fetch_trades("/trades", {"per_page": limit, "sort_by": "transaction_date", "sort_order": "desc"})
+    transactions = data.get("trades", [])
     
     recent = []
-    for tx in transactions[:limit]:
-        # Handle unified flat format
+    for tx in transactions:
         recent.append({
             "politician": tx.get("politician_name", "Unknown"),
             "party": tx.get("party", ""),
@@ -177,90 +170,57 @@ def get_recent_trades(limit: int = 10) -> list[dict]:
     return recent
 
 
-def get_top_traders(
+async def get_top_traders(
     limit: int = 10,
     party: Optional[str] = None,
     chamber: Optional[str] = None
 ) -> list[dict]:
-    """Get politicians with most trades, optionally filtered by party/chamber"""
-    data = _load_transactions()
-    transactions = data.get("transactions", [])
-    
-    # Filter transactions if needed
-    filtered = transactions
+    """Get politicians with most trades"""
+    params = {"per_page": limit, "sort_by": "trade_count", "sort_order": "desc"}
     if party:
-        party_upper = party.upper()
-        filtered = [tx for tx in filtered if (tx.get("party") or "").upper() == party_upper]
+        params["party"] = party.upper()
     if chamber:
-        chamber_lower = chamber.lower()
-        filtered = [tx for tx in filtered if tx.get("chamber", "").lower() == chamber_lower]
+        params["chamber"] = chamber.lower()
     
-    # Calculate from filtered transactions
-    trader_data = defaultdict(lambda: {"count": 0, "chamber": "", "party": "", "state": "", "buys": 0, "sells": 0, "volume": 0})
+    data = await _fetch_trades("/politicians", params)
+    politicians = data.get("politicians", [])
     
-    for tx in filtered:
-        name = tx.get("politician_name", "Unknown")
-        trader_data[name]["count"] += 1
-        
-        if not trader_data[name]["chamber"]:
-            trader_data[name]["chamber"] = tx.get("chamber", "").title()
-        if not trader_data[name]["party"]:
-            trader_data[name]["party"] = tx.get("party", "")
-        if not trader_data[name]["state"]:
-            trader_data[name]["state"] = tx.get("state", "")
-        
-        # Track buys/sells
-        tx_type = _normalize_transaction_type(tx.get("transaction_type", ""))
-        if tx_type == "Buy":
-            trader_data[name]["buys"] += 1
-        elif tx_type == "Sell":
-            trader_data[name]["sells"] += 1
-        
-        # Track volume
-        if tx.get("amount_min") and tx.get("amount_max"):
-            trader_data[name]["volume"] += (tx["amount_min"] + tx["amount_max"]) // 2
-        else:
-            min_amt, max_amt = _parse_amount_range(tx.get("amount_text", ""))
-            trader_data[name]["volume"] += (min_amt + max_amt) // 2
-    
-    sorted_traders = sorted(trader_data.items(), key=lambda x: x[1]["count"], reverse=True)
     return [
         {
-            "name": name,
-            "trades": data["count"],
-            "chamber": data["chamber"],
-            "party": data["party"],
-            "state": data["state"],
-            "buys": data["buys"],
-            "sells": data["sells"],
-            "volume": data["volume"]
+            "name": p.get("name", "Unknown"),
+            "trades": p.get("trade_count", 0),
+            "chamber": p.get("chamber", "").title() if p.get("chamber") else "",
+            "party": p.get("party", ""),
+            "state": p.get("state", ""),
+            "buys": 0,
+            "sells": 0,
+            "volume": 0
         }
-        for name, data in sorted_traders[:limit]
+        for p in politicians
     ]
 
 
-def get_trades_by_ticker(ticker: str) -> list[dict]:
+async def get_trades_by_ticker(ticker: str) -> list[dict]:
     """Get all trades for a specific stock ticker"""
-    data = _load_transactions()
-    transactions = data.get("transactions", [])
+    data = await _fetch_trades("/trades", {"ticker": ticker.upper(), "per_page": 200})
+    transactions = data.get("trades", [])
     
     results = []
     for tx in transactions:
-        if tx.get("ticker", "").upper() == ticker.upper():
-            results.append({
-                "politician": tx.get("politician_name", "Unknown"),
-                "chamber": tx.get("chamber", "").title() if tx.get("chamber") else "",
-                "state": tx.get("state", ""),
-                "type": _normalize_transaction_type(tx.get("transaction_type", "")),
-                "amount": tx.get("amount_text", ""),
-                "date": tx.get("transaction_date", ""),
-                "disclosure_date": tx.get("disclosure_date", "")
-            })
+        results.append({
+            "politician": tx.get("politician_name", "Unknown"),
+            "chamber": tx.get("chamber", "").title() if tx.get("chamber") else "",
+            "state": tx.get("state", ""),
+            "type": _normalize_transaction_type(tx.get("transaction_type", "")),
+            "amount": tx.get("amount_text", ""),
+            "date": tx.get("transaction_date", ""),
+            "disclosure_date": tx.get("disclosure_date", "")
+        })
     
     return results
 
 
-def get_all_transactions(
+async def get_all_transactions(
     limit: int = 100,
     offset: int = 0,
     politician: Optional[str] = None,
@@ -270,54 +230,26 @@ def get_all_transactions(
     party: Optional[str] = None
 ) -> dict:
     """Get paginated transactions with optional filters"""
-    data = _load_transactions()
-    transactions = data.get("transactions", [])
+    page = (offset // limit) + 1
     
-    # Apply filters
-    filtered = transactions
-    
+    params = {"per_page": limit, "page": page}
     if politician:
-        politician_lower = politician.lower()
-        filtered = [
-            tx for tx in filtered
-            if politician_lower in tx.get("politician_name", "").lower()
-        ]
-    
+        params["politician"] = politician
     if ticker:
-        ticker_upper = ticker.upper()
-        filtered = [
-            tx for tx in filtered
-            if tx.get("ticker", "").upper() == ticker_upper
-        ]
-    
-    if tx_type:
-        tx_type_normalized = _normalize_transaction_type(tx_type)
-        filtered = [
-            tx for tx in filtered
-            if _normalize_transaction_type(tx.get("transaction_type", "")) == tx_type_normalized
-        ]
-    
+        params["ticker"] = ticker.upper()
     if chamber:
-        chamber_lower = chamber.lower()
-        filtered = [
-            tx for tx in filtered
-            if tx.get("chamber", "").lower() == chamber_lower
-        ]
-    
+        params["chamber"] = chamber.lower()
     if party:
-        party_upper = party.upper()
-        filtered = [
-            tx for tx in filtered
-            if (tx.get("party") or "").upper() == party_upper
-        ]
+        params["party"] = party.upper()
+    if tx_type:
+        params["transaction_type"] = tx_type.lower()
     
-    # Get page
-    total = len(filtered)
-    page = filtered[offset:offset + limit]
+    data = await _fetch_trades("/trades", params)
+    transactions = data.get("trades", [])
+    total = data.get("total", 0)
     
-    # Transform for response
     results = []
-    for tx in page:
+    for tx in transactions:
         results.append({
             "politician": tx.get("politician_name", "Unknown"),
             "chamber": tx.get("chamber", "").title() if tx.get("chamber") else "",
@@ -340,23 +272,19 @@ def get_all_transactions(
     }
 
 
-def get_popular_tickers(limit: int = 10) -> list[dict]:
+async def get_popular_tickers(limit: int = 10) -> list[dict]:
     """Get most traded stock tickers"""
-    data = _load_transactions()
-    transactions = data.get("transactions", [])
+    data = await _fetch_trades("/trades/tickers")
+    tickers = data.get("tickers", [])[:limit]
     
-    ticker_counts = defaultdict(lambda: {"count": 0, "name": ""})
+    # Need to get trade counts per ticker
+    results = []
+    for ticker in tickers:
+        ticker_data = await _fetch_trades("/trades", {"ticker": ticker, "per_page": 1})
+        results.append({
+            "ticker": ticker,
+            "name": "",
+            "trades": ticker_data.get("total", 0)
+        })
     
-    for tx in transactions:
-        ticker = tx.get("ticker", "")
-        if ticker and ticker != "N/A":
-            ticker_counts[ticker]["count"] += 1
-            if not ticker_counts[ticker]["name"]:
-                ticker_counts[ticker]["name"] = tx.get("asset_name", "")
-    
-    sorted_tickers = sorted(ticker_counts.items(), key=lambda x: x[1]["count"], reverse=True)
-    
-    return [
-        {"ticker": ticker, "name": data["name"], "trades": data["count"]}
-        for ticker, data in sorted_tickers[:limit]
-    ]
+    return sorted(results, key=lambda x: x["trades"], reverse=True)

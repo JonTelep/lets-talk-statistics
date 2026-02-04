@@ -20,7 +20,7 @@ async def get_stats():
     
     Returns total trades, volume, unique traders, and date range.
     """
-    return congress_service.get_congress_stats()
+    return await congress_service.get_congress_stats()
 
 
 @router.get("/trades/recent")
@@ -32,7 +32,7 @@ async def get_recent_trades(
     
     Returns trades sorted by disclosure date (newest first).
     """
-    return congress_service.get_recent_trades(limit=limit)
+    return await congress_service.get_recent_trades(limit=limit)
 
 
 @router.get("/trades")
@@ -50,7 +50,7 @@ async def get_all_trades(
     
     Supports filtering by politician name, stock ticker, transaction type, chamber, and party.
     """
-    return congress_service.get_all_transactions(
+    return await congress_service.get_all_transactions(
         limit=limit,
         offset=offset,
         politician=politician,
@@ -73,7 +73,7 @@ async def get_top_traders(
     Returns the most active congressional stock traders.
     Optionally filter by party (R/D/I) or chamber (house/senate).
     """
-    return congress_service.get_top_traders(limit=limit, party=party, chamber=chamber)
+    return await congress_service.get_top_traders(limit=limit, party=party, chamber=chamber)
 
 
 @router.get("/tickers")
@@ -85,7 +85,7 @@ async def get_popular_tickers(
     
     Returns tickers ranked by number of transactions.
     """
-    return congress_service.get_popular_tickers(limit=limit)
+    return await congress_service.get_popular_tickers(limit=limit)
 
 
 @router.get("/tickers/{ticker}")
@@ -95,4 +95,4 @@ async def get_trades_by_ticker(ticker: str):
     
     Returns all Buy and Sell transactions for the given ticker symbol.
     """
-    return congress_service.get_trades_by_ticker(ticker)
+    return await congress_service.get_trades_by_ticker(ticker)
