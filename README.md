@@ -11,7 +11,7 @@ A straightforward platform for exploring US government statistics - debt, employ
 
 **Philosophy:** No opinions. No narratives. Just data from official sources.
 
-**Live at:** [letstalkstatistics.com](https://letstalkstatistics.com) *(coming soon)*
+**Live at:** [letstalkstatistics.com](https://letstalkstatistics.com) *(live)*
 
 ## Features
 
