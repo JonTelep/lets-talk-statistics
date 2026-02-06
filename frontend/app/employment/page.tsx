@@ -95,18 +95,47 @@ function EmploymentPageContent() {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      {/* Hero Section */}
-      <div className="bg-gradient-to-r from-blue-600 to-indigo-700 text-white">
-        <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
-          <div className="flex items-center gap-3 mb-4">
-            <Briefcase className="h-10 w-10" />
-            <h1 className="text-4xl font-bold">Employment Statistics</h1>
-          </div>
-          <p className="text-xl text-blue-100 max-w-3xl">
-            Track U.S. employment, unemployment rates, and job growth from the Bureau of Labor Statistics. 
-            See how the labor market is performing across states, sectors, and demographics.
-          </p>
+      {/* Hero Section - Federal Brutalism Style */}
+      <div className="bg-federal-gradient text-white relative overflow-hidden">
+        {/* Geometric background patterns */}
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute top-1/3 left-1/4 w-80 h-80 border-4 border-federal-gold-400 transform -rotate-6"></div>
+          <div className="absolute bottom-0 right-0 w-64 h-96 border-4 border-federal-red-400 transform skew-x-12 translate-x-32"></div>
         </div>
+        
+        <div className="relative mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
+          <div className="max-w-4xl">
+            {/* Category badge */}
+            <div className="inline-flex items-center gap-2 bg-federal-gold-600 text-federal-navy-900 px-4 py-2 text-sm font-bold uppercase tracking-wider mb-6 shadow-brutal-gold">
+              <Briefcase className="h-4 w-4" />
+              Employment Analysis
+            </div>
+            
+            {/* Main heading */}
+            <h1 className="heading-display mb-8 text-white">
+              LABOR
+              <br />
+              <span className="text-federal-gold-400">STATISTICS</span>
+            </h1>
+            
+            {/* Description with angular design */}
+            <div className="relative mb-8">
+              <div className="absolute -inset-4 bg-federal-charcoal-800 transform skew-x-6 -z-10"></div>
+              <p className="relative text-lg text-white px-4 py-6 font-medium leading-relaxed">
+                Comprehensive employment data from Bureau of Labor Statistics. Real-time 
+                unemployment rates, job growth analysis, demographic breakdowns, and state rankings.
+              </p>
+            </div>
+            
+            <p className="text-federal-navy-100 max-w-2xl">
+              Monthly data releases from BLS Current Population Survey and 
+              Current Employment Statistics program.
+            </p>
+          </div>
+        </div>
+        
+        {/* Bottom geometric accent */}
+        <div className="absolute bottom-0 left-0 right-0 h-6 bg-federal-red-500 transform skew-y-1 origin-bottom-right"></div>
       </div>
 
       {/* Disclaimer */}

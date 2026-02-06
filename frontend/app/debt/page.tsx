@@ -121,51 +121,107 @@ function DebtPageContent() {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      {/* Hero Section */}
-      <div className="bg-gradient-to-r from-red-600 to-rose-700 text-white">
-        <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
-          <div className="flex items-center gap-3 mb-4">
-            <Building2 className="h-10 w-10" />
-            <h1 className="text-4xl font-bold">National Debt</h1>
-          </div>
-          <p className="text-xl text-red-100 max-w-3xl">
-            Track the U.S. national debt in real-time. See who holds our debt, how fast it's growing, 
-            and how it compares to GDP. All data from the U.S. Treasury Department.
-          </p>
+      {/* Hero Section - Federal Brutalism Style */}
+      <div className="bg-federal-gradient text-white relative overflow-hidden">
+        {/* Geometric background */}
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute top-1/4 right-1/4 w-64 h-64 border-4 border-federal-red-400 transform rotate-12"></div>
+          <div className="absolute bottom-0 left-0 w-96 h-32 border-4 border-federal-gold-400 transform -skew-x-12"></div>
         </div>
+        
+        <div className="relative mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
+          <div className="max-w-4xl">
+            {/* Category badge */}
+            <div className="inline-flex items-center gap-2 bg-federal-red-600 text-white px-4 py-2 text-sm font-bold uppercase tracking-wider mb-6 shadow-brutal-red">
+              <Building2 className="h-4 w-4" />
+              Federal Debt Analysis
+            </div>
+            
+            {/* Main heading */}
+            <h1 className="heading-display mb-8 text-white">
+              NATIONAL
+              <br />
+              <span className="text-federal-gold-400">DEBT</span>
+            </h1>
+            
+            {/* Description */}
+            <div className="relative mb-8">
+              <div className="absolute -inset-4 bg-federal-charcoal-800 transform -skew-x-6 -z-10"></div>
+              <p className="relative text-lg text-white px-4 py-6 font-medium leading-relaxed">
+                Real-time tracking of U.S. federal debt obligations. Direct data feed from 
+                Treasury Department. Analysis of debt holders, growth patterns, and GDP ratios.
+              </p>
+            </div>
+            
+            <p className="text-federal-navy-100 max-w-2xl">
+              Complete transparency into America's financial obligations, updated daily 
+              from official Bureau of Fiscal Service records.
+            </p>
+          </div>
+        </div>
+        
+        {/* Bottom accent */}
+        <div className="absolute bottom-0 left-0 right-0 h-6 bg-federal-gold-500 transform -skew-y-1 origin-bottom-left"></div>
       </div>
 
-      {/* Live Counter Section */}
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 -mt-8">
+      {/* Live Counter Section - Federal Dashboard Style */}
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 -mt-12">
         {loading ? (
           <HeroCounterSkeleton />
         ) : error ? (
-          <div className="bg-white rounded-xl shadow-lg p-8 text-center">
+          <div className="card-federal-accent p-8 text-center">
             <ErrorStateCompact 
               message="Failed to load live data" 
               onRetry={refetch} 
             />
           </div>
         ) : stats ? (
-          <div className="bg-white rounded-xl shadow-lg p-8 text-center">
-            <p className="text-sm text-gray-500 mb-2">U.S. National Debt</p>
-            <p className="text-5xl md:text-6xl font-bold text-red-600 font-mono">
-              ${stats.totalDebtTrillions} Trillion
-            </p>
-            <p className="text-sm text-gray-500 mt-2">As of {stats.lastUpdated}</p>
-            <div className="mt-4 flex justify-center gap-8 text-sm">
-              <div>
-                <span className="text-red-500 font-medium">+${stats.dailyIncreaseBillions}B</span>
-                <span className="text-gray-500"> per day (avg)</span>
+          <div className="card-federal-accent bg-white p-8 relative overflow-hidden">
+            {/* Background pattern */}
+            <div className="absolute top-0 right-0 w-32 h-32 border border-federal-red-200 transform rotate-45 translate-x-16 -translate-y-16 opacity-20"></div>
+            
+            <div className="relative">
+              {/* Header */}
+              <div className="text-center mb-6">
+                <div className="inline-block bg-federal-navy-900 text-white px-4 py-2 text-sm font-bold uppercase tracking-wider mb-2">
+                  Current Federal Debt
+                </div>
+                <div className="w-24 h-1 bg-federal-red-600 mx-auto"></div>
               </div>
-              <div>
-                <span className="text-red-500 font-medium">${interestDaily}B</span>
-                <span className="text-gray-500"> daily interest (est)</span>
+              
+              {/* Main counter */}
+              <div className="text-center mb-8">
+                <p className="data-value text-6xl md:text-7xl text-federal-red-600 mb-2">
+                  ${stats.totalDebtTrillions}T
+                </p>
+                <p className="data-label">As of {stats.lastUpdated}</p>
+              </div>
+              
+              {/* Daily statistics */}
+              <div className="grid md:grid-cols-2 gap-6 mb-6">
+                <div className="text-center p-4 bg-federal-red-50 border border-federal-red-200">
+                  <div className="data-value text-2xl text-federal-red-600">
+                    +${stats.dailyIncreaseBillions}B
+                  </div>
+                  <div className="data-label mt-1">Daily Increase (Average)</div>
+                </div>
+                
+                <div className="text-center p-4 bg-federal-gold-50 border border-federal-gold-300">
+                  <div className="data-value text-2xl text-federal-gold-600">
+                    ${interestDaily}B
+                  </div>
+                  <div className="data-label mt-1">Daily Interest (Estimated)</div>
+                </div>
+              </div>
+              
+              {/* Source verification */}
+              <div className="text-center">
+                <div className="inline-flex items-center gap-2 bg-federal-navy-900 text-white px-3 py-2 text-xs font-mono uppercase tracking-wide">
+                  <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
+                  Live Treasury Fiscal Data API
+                </div>
               </div>
             </div>
-            <p className="text-xs text-green-600 mt-3">
-              ✓ Live data from U.S. Treasury Fiscal Data API
-            </p>
           </div>
         ) : null}
       </div>
