@@ -4,14 +4,14 @@ interface CardProps {
   children: ReactNode;
   className?: string;
   padding?: 'none' | 'sm' | 'md' | 'lg';
-  hover?: boolean;
+  variant?: 'default' | 'accent' | 'border-only';
 }
 
 export default function Card({
   children,
   className = '',
   padding = 'md',
-  hover = false,
+  variant = 'default',
 }: CardProps) {
   const paddingClasses = {
     none: '',
@@ -20,11 +20,15 @@ export default function Card({
     lg: 'p-8',
   };
 
-  const hoverClass = hover ? 'hover:shadow-lg transition-shadow' : '';
+  const variantClasses = {
+    default: 'card-federal',
+    accent: 'card-federal-accent',
+    'border-only': 'bg-white border border-federal-charcoal-300',
+  };
 
   return (
     <div
-      className={`bg-white rounded-lg shadow ${paddingClasses[padding]} ${hoverClass} ${className}`}
+      className={`${variantClasses[variant]} ${paddingClasses[padding]} ${className}`}
     >
       {children}
     </div>
