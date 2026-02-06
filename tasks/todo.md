@@ -1,34 +1,49 @@
 # tasks/todo.md - lets-talk-statistics
 
 ## 🚀 High Priority
-- [ ] **Deploy to production** - All 4 blocking PRs merged, ready for ship!
-- [ ] Update PROJECTS.md status (blocking PRs resolved)
-- [ ] Final QA testing before deployment
+
+### Congress Page Enhancements
+- [ ] Add callout: "This data is powered by the Capitol Trades API - free to use!"
+- [ ] Add "Get API Access" button linking to telep.io/pricing
+- [ ] Enhanced filtering (by party, state, ticker, date range)
+- [ ] Individual politician detail view (click to see all their trades)
+
+### New Pages
+- [ ] **Healthcare Page** - Healthcare spending, coverage statistics
+- [ ] **Education Page** - Education spending, enrollment, outcomes
+
+### SEO Optimization
+- [ ] Add meta descriptions to all pages
+- [ ] Add OpenGraph tags for social sharing
+- [ ] Add structured data (JSON-LD) for search engines
+- [ ] Create sitemap.xml
+- [ ] Optimize page titles
 
 ## 📈 Medium Priority
-- [ ] Choose design theme (3 open PRs: bold editorial, clean minimal, dark terminal)
-- [ ] Add more government data sources
-- [ ] Performance optimization
-- [ ] SEO optimization
+
+### UI/UX
+- [ ] Social sharing buttons on each page
+- [ ] Mobile responsiveness polish
+- [ ] Performance optimization (lazy loading, caching)
+
+### Data
+- [ ] Add more data sources
+- [ ] Historical comparison views (year over year)
 
 ## 🔧 Low Priority
-- [ ] Add user analytics/tracking
-- [ ] Add social sharing features
-- [ ] Mobile responsiveness improvements
-
-## 💡 Ideas
-- [ ] Real-time data updates
+- [ ] User analytics/tracking
 - [ ] Data export functionality
 - [ ] User favorites/bookmarks
+- [ ] Theme selector (bold editorial, clean minimal, dark terminal)
 
 ---
 
-## ✅ Recently Completed
-- [x] **#17**: Congress page enhancements (party breakdown, filters, visual indicators)
-- [x] **#20**: Next.js security update (5 high severity fixes)
-- [x] **#21**: Interactive charts on Debt page (Recharts)
-- [x] **#22**: Charts on Budget, Elections, Immigration, and Congress pages
+## ✅ Completed
+- [x] All 6 pages live with charts and real data
 - [x] Loading skeletons on all pages
-- [x] Error boundaries and error handling
+- [x] Error boundaries and retry functionality
 - [x] Last updated timestamps
-- [x] All 6 pages with live data integration
+- [x] Congress page with Capitol Trades API
+- [x] Mobile horizontal scroll fix
+- [x] CORS configuration for production
+- [x] Theme toggle integrated into navbar
