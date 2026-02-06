@@ -1,0 +1,43 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#0a1628"/>
+  
+  <!-- Accent stripe -->
+  <rect x="0" y="0" width="8" height="630" fill="#bf0a30"/>
+  
+  <!-- Grid pattern overlay -->
+  <defs>
+    <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M 60 0 L 0 0 0 60" fill="none" stroke="#1a2d47" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="url(#grid)" opacity="0.5"/>
+  
+  <!-- Main title -->
+  <text x="60" y="260" font-family="Georgia, serif" font-size="72" font-weight="bold" fill="#ffffff">
+    Let's Talk Statistics
+  </text>
+  
+  <!-- Subtitle -->
+  <text x="60" y="340" font-family="Arial, sans-serif" font-size="32" fill="#8faabe">
+    Government Data Without Spin
+  </text>
+  
+  <!-- Description -->
+  <text x="60" y="420" font-family="Arial, sans-serif" font-size="24" fill="#6b8299">
+    Objective analysis of US government statistics from official sources
+  </text>
+  
+  <!-- Bottom accent line -->
+  <rect x="60" y="500" width="200" height="4" fill="#bf0a30"/>
+  
+  <!-- Powered by -->
+  <text x="60" y="560" font-family="Arial, sans-serif" font-size="18" fill="#4a5f73">
+    Powered by Telep IO
+  </text>
+  
+  <!-- URL -->
+  <text x="1140" y="560" font-family="monospace" font-size="16" fill="#4a5f73" text-anchor="end">
+    letstalkstatistics.com
+  </text>
+</svg>

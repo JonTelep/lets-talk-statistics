@@ -26,14 +26,47 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Let's Talk Statistics | Government Data Without Spin",
+  metadataBase: new URL('https://letstalkstatistics.com'),
+  title: {
+    default: "Let's Talk Statistics | Government Data Without Spin",
+    template: "%s | Let's Talk Statistics",
+  },
   description: 'Objective analysis of US government statistics. Explore federal spending, national debt, employment data, and more from official sources.',
-  keywords: ['government statistics', 'federal data', 'national debt', 'public spending', 'objective analysis'],
-  authors: [{ name: "Let's Talk Statistics" }],
+  keywords: ['government statistics', 'federal data', 'national debt', 'public spending', 'objective analysis', 'congressional trades'],
+  authors: [{ name: "Let's Talk Statistics", url: 'https://letstalkstatistics.com' }],
+  creator: 'Telep IO',
+  publisher: 'Telep IO',
+  icons: {
+    icon: '/favicon.svg',
+    shortcut: '/favicon.svg',
+    apple: '/favicon.svg',
+  },
   openGraph: {
     title: "Let's Talk Statistics",
-    description: 'Government data without spin - objective statistical analysis',
+    description: 'Government data without spin - objective statistical analysis from official sources',
+    url: 'https://letstalkstatistics.com',
+    siteName: "Let's Talk Statistics",
+    locale: 'en_US',
     type: 'website',
+    images: [
+      {
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: "Let's Talk Statistics - Government Data Without Spin",
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "Let's Talk Statistics",
+    description: 'Government data without spin - objective statistical analysis',
+    creator: '@telep_io',
+    images: ['/og-image.png'],
+  },
+  robots: {
+    index: true,
+    follow: true,
   },
 };
 
