@@ -17,6 +17,11 @@ export const metadata: Metadata = {
     template: "%s | Let's Talk Statistics",
   },
   description: 'Objective analysis of US government statistics. Explore federal spending, national debt, employment data, congressional trades, and more from official sources.',
+  icons: {
+    icon: '/favicon.svg',
+    shortcut: '/favicon.svg',
+    apple: '/favicon.svg',
+  },
   keywords: ['government statistics', 'federal data', 'national debt', 'public spending', 'objective analysis', 'employment data', 'congressional trades'],
   authors: [{ name: "Let's Talk Statistics", url: 'https://letstalkstatistics.com' }],
   creator: 'Telep IO',
