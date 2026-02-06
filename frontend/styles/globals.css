@@ -5,20 +5,119 @@
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --foreground: 210 40% 8%;
+    
+    /* Federal Design System Variables */
+    --federal-navy: 221 39% 11%;
+    --federal-red: 0 84% 60%;
+    --federal-gold: 32 95% 44%;
+    --federal-charcoal: 220 13% 18%;
   }
 
   html,
   body {
     overflow-x: hidden;
+    scroll-behavior: smooth;
   }
 
   body {
-    @apply bg-white text-gray-900 antialiased;
+    @apply bg-gray-50 text-federal-charcoal-900 antialiased;
   }
 
   * {
-    @apply border-gray-200;
+    @apply border-federal-charcoal-200;
+  }
+
+  /* Typography Hierarchy */
+  h1, .heading-display {
+    @apply font-serif text-display text-federal-navy-900 tracking-tight;
+  }
+
+  h2, .heading-hero {
+    @apply font-serif text-hero text-federal-navy-900 tracking-tight;
+  }
+
+  h3, .heading-section {
+    @apply font-serif text-section text-federal-navy-900 tracking-tight;
+  }
+
+  h4, h5, h6 {
+    @apply font-serif text-xl font-semibold text-federal-navy-800;
+  }
+
+  p {
+    @apply text-federal-charcoal-700 leading-relaxed;
+  }
+  
+  /* Data Typography */
+  .data-value {
+    @apply font-mono font-bold tracking-tight;
+  }
+  
+  .data-label {
+    @apply font-sans text-sm font-medium text-federal-charcoal-600 uppercase tracking-wide;
+  }
+}
+
+@layer components {
+  /* Federal Design System Components */
+  .card-federal {
+    @apply bg-white border border-federal-charcoal-200 shadow-brutal transition-all duration-200 hover:shadow-brutal-lg hover:translate-x-1 hover:-translate-y-1;
+  }
+  
+  .card-federal-accent {
+    @apply bg-white border-2 border-federal-red-600 shadow-brutal-red transition-all duration-200 hover:shadow-brutal-red hover:translate-x-1 hover:-translate-y-1;
+  }
+  
+  .btn-federal {
+    @apply inline-flex items-center justify-center px-6 py-3 font-sans font-semibold text-sm uppercase tracking-wide border-2 shadow-brutal transition-all duration-200 hover:translate-x-1 hover:-translate-y-1 active:translate-x-0 active:translate-y-0 active:shadow-none;
+  }
+  
+  .btn-federal-primary {
+    @apply btn-federal bg-federal-navy-900 border-federal-navy-900 text-white hover:bg-federal-navy-800 hover:border-federal-navy-800;
+  }
+  
+  .btn-federal-accent {
+    @apply btn-federal bg-federal-red-600 border-federal-red-600 text-white hover:bg-federal-red-700 hover:border-federal-red-700;
+  }
+  
+  .btn-federal-outline {
+    @apply btn-federal bg-white border-federal-navy-900 text-federal-navy-900 hover:bg-federal-navy-50;
+  }
+  
+  /* Geometric Elements */
+  .geometric-border {
+    @apply relative;
+  }
+  
+  .geometric-border::before {
+    content: '';
+    @apply absolute -inset-1 bg-federal-gold-400 -z-10 transform rotate-1;
+  }
+  
+  /* Animation Classes */
+  .stagger-children > * {
+    animation: slide-in-up 0.4s ease-out;
+  }
+  
+  .stagger-children > *:nth-child(2) {
+    animation-delay: 0.1s;
+  }
+  
+  .stagger-children > *:nth-child(3) {
+    animation-delay: 0.2s;
+  }
+  
+  .stagger-children > *:nth-child(4) {
+    animation-delay: 0.3s;
+  }
+  
+  .stagger-children > *:nth-child(5) {
+    animation-delay: 0.4s;
+  }
+  
+  .stagger-children > *:nth-child(6) {
+    animation-delay: 0.5s;
   }
 }
 
@@ -29,6 +128,22 @@
 
   .font-feature-numeric {
     font-feature-settings: 'tnum' on, 'lnum' on;
+  }
+  
+  /* Federal spacing system */
+  .space-federal-xs { @apply space-y-2; }
+  .space-federal-sm { @apply space-y-4; }
+  .space-federal-md { @apply space-y-6; }
+  .space-federal-lg { @apply space-y-8; }
+  .space-federal-xl { @apply space-y-12; }
+  
+  /* Grid utilities for brutalist layouts */
+  .grid-brutal {
+    @apply grid gap-0;
+  }
+  
+  .border-brutal {
+    @apply border-4 border-federal-navy-900;
   }
 }
 
@@ -51,4 +166,31 @@
     #e5e7eb 100%
   );
   background-size: 200% 100%;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-federal-charcoal-100;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-federal-charcoal-400 rounded-sm;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-federal-charcoal-500;
+}
+
+/* Selection */
+::selection {
+  @apply bg-federal-gold-200 text-federal-navy-900;
+}
+
+/* Focus styles */
+:focus-visible {
+  @apply outline-none ring-2 ring-federal-red-500 ring-offset-2 ring-offset-white;
 }
