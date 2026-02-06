@@ -27,7 +27,7 @@ class Settings(BaseSettings):
 
     # Data cache settings
     data_dir: Path = Path("/app/data")
-    cache_ttl_hours: int = 24  # How long to cache API responses
+    cache_ttl_hours: int = 48  # How long to cache API responses (increased for performance)
 
     # CORS
     cors_origins: list[str] = ["http://localhost:3000", "http://127.0.0.1:3000"]

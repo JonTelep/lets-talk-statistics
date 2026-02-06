@@ -15,6 +15,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from app.api.v1.router import router as api_router
 from app.config import get_settings
 from app.services.gov_data import get_gov_data_service
+from app.middleware.cache import CacheControlMiddleware
 
 settings = get_settings()
 
@@ -44,6 +45,9 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+# Cache-Control headers middleware (enables CDN/browser caching)
+app.add_middleware(CacheControlMiddleware)
 
 # Mount API router
 app.include_router(api_router, prefix="/api/v1")

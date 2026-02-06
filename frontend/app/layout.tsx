@@ -3,6 +3,7 @@ import { Source_Sans_3, Zilla_Slab, JetBrains_Mono } from 'next/font/google';
 import '../styles/globals.css';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
+import { SWRProvider } from '@/components/providers/SWRProvider';
 
 const sourceSans = Source_Sans_3({
   subsets: ['latin'],
@@ -78,9 +79,11 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${sourceSans.variable} ${zillaSlab.variable} ${jetbrainsMono.variable}`}>
       <body className="font-sans flex min-h-screen flex-col bg-gray-50 text-federal-charcoal-900 antialiased">
-        <Header />
-        <main className="flex-1">{children}</main>
-        <Footer />
+        <SWRProvider>
+          <Header />
+          <main className="flex-1">{children}</main>
+          <Footer />
+        </SWRProvider>
       </body>
     </html>
   );

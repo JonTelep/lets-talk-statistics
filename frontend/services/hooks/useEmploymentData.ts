@@ -1,9 +1,7 @@
 'use client';
 
-import { useState, useEffect } from 'react';
-
-const API_HOST = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
-const API_BASE_URL = `${API_HOST.replace(/\/$/, '')}/api/v1`;
+import useSWR from 'swr';
+import { API_URL, fetcher } from '@/utils/swr';
 
 interface UnemploymentDataPoint {
   year: number;
@@ -33,70 +31,40 @@ interface UseDataResult<T> {
   refetch: () => void;
 }
 
-function useAsyncData<T>(fetchFn: () => Promise<T>, deps: unknown[] = []): UseDataResult<T> {
-  const [data, setData] = useState<T | null>(null);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<Error | null>(null);
-  const [refetchTrigger, setRefetchTrigger] = useState(0);
-
-  useEffect(() => {
-    let cancelled = false;
-    
-    setLoading(true);
-    setError(null);
-    
-    fetchFn()
-      .then((result) => {
-        if (!cancelled) {
-          setData(result);
-          setLoading(false);
-        }
-      })
-      .catch((err) => {
-        if (!cancelled) {
-          setError(err instanceof Error ? err : new Error(String(err)));
-          setLoading(false);
-        }
-      });
-
-    return () => {
-      cancelled = true;
-    };
-  }, [refetchTrigger, ...deps]); // eslint-disable-line react-hooks/exhaustive-deps
-
-  const refetch = () => setRefetchTrigger((t) => t + 1);
-
-  return { data, loading, error, refetch };
-}
-
-async function fetchUnemployment(years: number): Promise<UnemploymentResponse> {
-  const response = await fetch(`${API_BASE_URL}/employment/unemployment?years=${years}`);
-  if (!response.ok) {
-    throw new Error(`Failed to fetch unemployment data: ${response.status}`);
-  }
-  return response.json();
-}
-
-async function fetchLatestUnemployment(): Promise<LatestUnemploymentResponse> {
-  const response = await fetch(`${API_BASE_URL}/employment/unemployment/latest`);
-  if (!response.ok) {
-    throw new Error(`Failed to fetch latest unemployment: ${response.status}`);
-  }
-  return response.json();
-}
-
 /**
  * Hook to fetch historical unemployment data
+ * Uses SWR for caching and stale-while-revalidate
  */
 export function useUnemploymentHistory(years: number = 5): UseDataResult<UnemploymentResponse> {
-  return useAsyncData(() => fetchUnemployment(years), [years]);
+  const { data, error, isLoading, mutate } = useSWR<UnemploymentResponse>(
+    `${API_URL}/employment/unemployment?years=${years}`,
+    fetcher
+  );
+
+  return {
+    data: data ?? null,
+    loading: isLoading,
+    error: error ?? null,
+    refetch: () => mutate(),
+  };
 }
 
 /**
  * Hook to fetch the latest unemployment rate
+ * Uses SWR for caching and stale-while-revalidate
  */
 export function useLatestUnemployment(): UseDataResult<LatestUnemploymentResponse> {
-  return useAsyncData(() => fetchLatestUnemployment());
+  const { data, error, isLoading, mutate } = useSWR<LatestUnemploymentResponse>(
+    `${API_URL}/employment/unemployment/latest`,
+    fetcher
+  );
+
+  return {
+    data: data ?? null,
+    loading: isLoading,
+    error: error ?? null,
+    refetch: () => mutate(),
+  };
 }
 
 /**
