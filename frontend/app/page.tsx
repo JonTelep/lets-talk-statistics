@@ -73,7 +73,7 @@ export default function Home() {
             </div>
             
             {/* Main heading */}
-            <h1 className="text-6xl sm:text-7xl lg:text-8xl font-serif font-bold tracking-tight mb-8 leading-none">
+            <h1 className="text-6xl sm:text-7xl lg:text-8xl font-serif font-bold tracking-tight mb-8 leading-none text-white">
               LET'S TALK
               <br />
               <span className="text-federal-gold-400">STATISTICS</span>

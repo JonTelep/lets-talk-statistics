@@ -147,7 +147,7 @@ export default function Footer() {
             
             <div className="flex items-center gap-4 mt-4 md:mt-0">
               <a
-                href="https://github.com"
+                href="https://github.com/JonTelep/lets-talk-statistics"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-8 h-8 bg-federal-charcoal-700 hover:bg-federal-gold-500 border border-federal-charcoal-600 flex items-center justify-center transition-colors group"
