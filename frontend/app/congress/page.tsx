@@ -739,6 +739,28 @@ function CongressPageContent() {
               </p>
             </div>
 
+            {/* Capitol Trades API Promo */}
+            <div className="bg-gradient-to-br from-primary-600 to-primary-800 rounded-xl shadow-lg p-6 text-white">
+              <div className="flex items-center gap-2 mb-2">
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                </svg>
+                <h3 className="text-lg font-bold">Capitol Trades API</h3>
+              </div>
+              <p className="text-sm text-primary-100 mb-4">
+                This data is powered by the Capitol Trades API — <strong className="text-white">free to use!</strong> Build your own apps with congressional stock trading data.
+              </p>
+              <a
+                href="https://telep.io/pricing"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-white text-primary-700 px-4 py-2 rounded-lg font-semibold text-sm hover:bg-primary-50 transition-colors shadow-md"
+              >
+                Get API Access
+                <ExternalLink className="h-4 w-4" />
+              </a>
+            </div>
+
             {/* Download Raw Data */}
             <div className="mt-6">
               <DownloadRawData
