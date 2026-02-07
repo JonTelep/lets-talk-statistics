@@ -1,5 +1,5 @@
 # Web Framework
-fastapi==0.115.12
+fastapi==0.128.3
 uvicorn[standard]==0.32.1
 
 # HTTP Client
