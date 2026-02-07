@@ -1,6 +1,6 @@
 'use client';
 
-import { lazy, Suspense } from 'react';
+import { lazy, Suspense, ComponentType } from 'react';
 import { ChartSkeleton } from '../ui/ChartSkeleton';
 
 // Lazy load the LineChart component
@@ -16,8 +16,15 @@ const LineChartComponent = lazy(() =>
   }))
 );
 
+// Type helper for lazy loaded recharts components
+const createLazyComponent = <T,>(
+  loader: () => Promise<{ default: T }>
+): ComponentType<any> => {
+  return lazy(loader as any) as unknown as ComponentType<any>;
+};
+
 // Lazy load the Line element
-export const LazyLine = lazy(() => 
+export const LazyLine = createLazyComponent(() => 
   import('recharts').then(module => ({ default: module.Line }))
 );
 

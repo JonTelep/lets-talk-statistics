@@ -2,7 +2,7 @@
 
 import { useState, useRef, useEffect } from 'react';
 import Link from 'next/link';
-import { Menu, X, BarChart3, ChevronDown, TrendingUp, Users, DollarSign, Briefcase, Building2 } from 'lucide-react';
+import { Menu, X, BarChart3, ChevronDown, TrendingUp, Users, DollarSign, Briefcase, Building2, Crown } from 'lucide-react';
 
 const categories = [
   {
@@ -149,6 +149,14 @@ export default function Header() {
             >
               About
             </Link>
+
+            <Link
+              href="/pricing"
+              className="ml-2 flex items-center gap-2 px-4 py-2 bg-federal-gold-500 text-federal-navy-900 text-sm font-sans font-bold uppercase tracking-wide hover:bg-federal-gold-400 transition-colors shadow-brutal-gold"
+            >
+              <Crown className="h-4 w-4" />
+              Pro
+            </Link>
           </div>
 
           {/* Mobile menu button */}
@@ -207,6 +215,15 @@ export default function Header() {
                 onClick={() => setMobileMenuOpen(false)}
               >
                 About
+              </Link>
+
+              <Link
+                href="/pricing"
+                className="flex items-center gap-2 bg-federal-gold-500 px-4 py-3 text-sm font-sans font-bold text-federal-navy-900 hover:bg-federal-gold-400 uppercase tracking-wide"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                <Crown className="h-4 w-4" />
+                Upgrade to Pro
               </Link>
             </div>
           </div>

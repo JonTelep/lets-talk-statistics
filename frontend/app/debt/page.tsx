@@ -17,6 +17,8 @@ import {
 } from '@/components/charts';
 import { useDebtHistory, calculateDebtStats, DebtDataPoint } from '@/services/hooks/useDebtData';
 import { DownloadRawData } from '@/components/ui/DownloadRawData';
+import { PremiumExport } from '@/components/ui/PremiumExport';
+import { UpgradeBanner } from '@/components/ui/UpgradeBanner';
 import { ErrorBoundary } from '@/components/ui/ErrorBoundary';
 import { ErrorStateCompact, ErrorStateTableRow } from '@/components/ui/ErrorState';
 import { Skeleton, StatCardSkeleton, HeroCounterSkeleton, ChartSkeleton } from '@/components/ui/Skeleton';
@@ -324,7 +326,7 @@ function DebtPageContent() {
                   borderRadius: '8px',
                   boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)',
                 }}
-                formatter={(value: number) => [`$${value.toFixed(2)}T`, 'Total Debt']}
+                formatter={(value: any) => [`$${Number(value).toFixed(2)}T`, 'Total Debt']}
               />
               <LazyLine
                 type="monotone"
@@ -472,7 +474,7 @@ function DebtPageContent() {
                       border: '1px solid #e5e7eb',
                       borderRadius: '8px',
                     }}
-                    formatter={(value: number) => [`$${value}T`, 'Amount']}
+                    formatter={(value: any) => [`$${Number(value)}T`, 'Amount']}
                   />
                 </LazyPieChart>
                 {/* Legend as list */}
@@ -538,6 +540,20 @@ function DebtPageContent() {
                   }
                 ]}
               />
+            </div>
+
+            {/* Premium Export Options */}
+            <div className="mt-6">
+              <PremiumExport 
+                data={debtData?.data || []} 
+                filename="national_debt_data"
+                isPremium={false}
+              />
+            </div>
+
+            {/* Upgrade Banner */}
+            <div className="mt-6">
+              <UpgradeBanner variant="card" />
             </div>
           </div>
         </div>
