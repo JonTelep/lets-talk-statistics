@@ -1,6 +1,6 @@
 'use client';
 
-import { lazy, Suspense } from 'react';
+import { lazy, Suspense, ComponentType } from 'react';
 import { ChartSkeleton } from '../ui/ChartSkeleton';
 
 // Lazy load the PieChart component
@@ -16,16 +16,23 @@ const PieChartComponent = lazy(() =>
   }))
 );
 
+// Type helper for lazy loaded recharts components
+const createLazyComponent = <T,>(
+  loader: () => Promise<{ default: T }>
+): ComponentType<any> => {
+  return lazy(loader as any) as unknown as ComponentType<any>;
+};
+
 // Lazy load individual chart elements
-export const LazyPie = lazy(() => 
+export const LazyPie = createLazyComponent(() => 
   import('recharts').then(module => ({ default: module.Pie }))
 );
 
-export const LazyCell = lazy(() => 
+export const LazyCell = createLazyComponent(() => 
   import('recharts').then(module => ({ default: module.Cell }))
 );
 
-export const LazyLegend = lazy(() => 
+export const LazyLegend = createLazyComponent(() => 
   import('recharts').then(module => ({ default: module.Legend }))
 );
 
