@@ -3,37 +3,26 @@
 import { DollarSign, TrendingUp, TrendingDown, PieChart as PieChartIcon, AlertTriangle, Calendar, Building2, RefreshCw } from 'lucide-react';
 import Link from 'next/link';
 import {
-  BarChart,
-  Bar,
-  XAxis,
-  YAxis,
-  CartesianGrid,
-  Tooltip,
-  ResponsiveContainer,
-  PieChart,
-  Pie,
-  Cell,
-  Legend,
-} from 'recharts';
+  LazyBarChart,
+  LazyBar,
+  LazyXAxis,
+  LazyYAxis,
+  LazyCartesianGrid,
+  LazyTooltip,
+  LazyResponsiveContainer,
+  LazyPieChart,
+  LazyPie,
+  LazyCell,
+  LazyLegend,
+} from '@/components/charts';
 import { useBudgetSummary, formatBudgetNumber } from '@/services/hooks/useBudgetData';
 import { DownloadRawData } from '@/components/ui/DownloadRawData';
 import { ErrorBoundary } from '@/components/ui/ErrorBoundary';
 import { ErrorState } from '@/components/ui/ErrorState';
-import { Skeleton, StatCardSkeleton, TableSkeleton } from '@/components/ui/Skeleton';
+import { Skeleton, StatCardSkeleton, TableSkeleton, ChartSkeleton } from '@/components/ui/Skeleton';
 
 // Colors for pie chart
 const PIE_COLORS = ['#3b82f6', '#22c55e', '#ef4444', '#f59e0b', '#8b5cf6'];
-
-// Chart skeleton component
-function ChartSkeleton({ height = 300 }: { height?: number }) {
-  return (
-    <div className="animate-pulse" style={{ height }}>
-      <div className="h-full bg-gray-200 rounded-lg flex items-center justify-center">
-        <div className="text-gray-400 text-sm">Loading chart...</div>
-      </div>
-    </div>
-  );
-}
 
 const API_HOST = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
 const API_URL = `${API_HOST.replace(/\/$/, '')}/api/v1`;
@@ -191,39 +180,38 @@ function BudgetPageContent() {
           {/* Historical Deficit Bar Chart */}
           <div className="bg-white rounded-xl shadow-sm p-6">
             <h3 className="text-lg font-semibold text-gray-900 mb-4">Historical Budget Deficit</h3>
-            <ResponsiveContainer width="100%" height={280}>
-              <BarChart
-                data={[...historicalDeficit].reverse()}
-                margin={{ top: 5, right: 30, left: 20, bottom: 5 }}
-              >
-                <CartesianGrid strokeDasharray="3 3" stroke="#e5e7eb" />
-                <XAxis 
-                  dataKey="year" 
-                  stroke="#6b7280"
-                  fontSize={12}
-                  tickFormatter={(value) => value.replace('FY ', "'")}
-                />
-                <YAxis 
-                  stroke="#6b7280"
-                  fontSize={12}
-                  tickFormatter={(value) => `$${value}T`}
-                />
-                <Tooltip
-                  contentStyle={{
-                    backgroundColor: '#fff',
-                    border: '1px solid #e5e7eb',
-                    borderRadius: '8px',
-                    boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)',
-                  }}
-                  formatter={(value: number) => [`$${value.toFixed(2)}T`, 'Deficit']}
-                />
-                <Bar 
-                  dataKey="deficit" 
-                  fill="#ef4444" 
-                  radius={[4, 4, 0, 0]}
-                />
-              </BarChart>
-            </ResponsiveContainer>
+            <LazyBarChart
+              data={[...historicalDeficit].reverse()}
+              height={280}
+              margin={{ top: 5, right: 30, left: 20, bottom: 5 }}
+            >
+              <LazyCartesianGrid strokeDasharray="3 3" stroke="#e5e7eb" />
+              <LazyXAxis 
+                dataKey="year" 
+                stroke="#6b7280"
+                fontSize={12}
+                tickFormatter={(value) => value.replace('FY ', "'")}
+              />
+              <LazyYAxis 
+                stroke="#6b7280"
+                fontSize={12}
+                tickFormatter={(value) => `$${value}T`}
+              />
+              <LazyTooltip
+                contentStyle={{
+                  backgroundColor: '#fff',
+                  border: '1px solid #e5e7eb',
+                  borderRadius: '8px',
+                  boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)',
+                }}
+                formatter={(value: any) => [`$${Number(value).toFixed(2)}T`, 'Deficit']}
+              />
+              <LazyBar 
+                dataKey="deficit" 
+                fill="#ef4444" 
+                radius={[4, 4, 0, 0]}
+              />
+            </LazyBarChart>
             <p className="text-xs text-gray-500 mt-2 text-center">
               Higher bars = larger deficit
             </p>
@@ -232,40 +220,38 @@ function BudgetPageContent() {
           {/* Spending Categories Pie Chart */}
           <div className="bg-white rounded-xl shadow-sm p-6">
             <h3 className="text-lg font-semibold text-gray-900 mb-4">Federal Spending Breakdown</h3>
-            <ResponsiveContainer width="100%" height={280}>
-              <PieChart>
-                <Pie
-                  data={spendingCategories.map(cat => ({
-                    name: cat.category.split(' ')[0], // Short name
-                    fullName: cat.category,
-                    value: cat.amount
-                  }))}
-                  cx="50%"
-                  cy="50%"
-                  innerRadius={60}
-                  outerRadius={90}
-                  paddingAngle={2}
-                  dataKey="value"
-                  label={({ name, percent }) => `${name} ${(percent * 100).toFixed(0)}%`}
-                  labelLine={false}
-                >
-                  {spendingCategories.map((_, idx) => (
-                    <Cell key={`cell-${idx}`} fill={PIE_COLORS[idx % PIE_COLORS.length]} />
-                  ))}
-                </Pie>
-                <Tooltip
-                  contentStyle={{
-                    backgroundColor: '#fff',
-                    border: '1px solid #e5e7eb',
-                    borderRadius: '8px',
-                  }}
-                  formatter={(value: number, name: string, props: any) => [
-                    `$${value}T`,
-                    props.payload.fullName
-                  ]}
-                />
-              </PieChart>
-            </ResponsiveContainer>
+            <LazyPieChart height={280}>
+              <LazyPie
+                data={spendingCategories.map(cat => ({
+                  name: cat.category.split(' ')[0], // Short name
+                  fullName: cat.category,
+                  value: cat.amount
+                }))}
+                cx="50%"
+                cy="50%"
+                innerRadius={60}
+                outerRadius={90}
+                paddingAngle={2}
+                dataKey="value"
+                label={({ name, percent }: any) => `${name} ${(percent * 100).toFixed(0)}%`}
+                labelLine={false}
+              >
+                {spendingCategories.map((_, idx) => (
+                  <LazyCell key={`cell-${idx}`} fill={PIE_COLORS[idx % PIE_COLORS.length]} />
+                ))}
+              </LazyPie>
+              <LazyTooltip
+                contentStyle={{
+                  backgroundColor: '#fff',
+                  border: '1px solid #e5e7eb',
+                  borderRadius: '8px',
+                }}
+                formatter={(value: any, name: any, props: any) => [
+                  `$${Number(value)}T`,
+                  props?.payload?.fullName || name
+                ]}
+              />
+            </LazyPieChart>
             <div className="flex justify-center gap-4 mt-2 text-xs">
               {spendingCategories.map((cat, idx) => (
                 <div key={idx} className="flex items-center gap-1">
@@ -331,7 +317,7 @@ function BudgetPageContent() {
             <div className="bg-white rounded-xl shadow-sm">
               <div className="px-6 py-4 border-b border-gray-200">
                 <h2 className="text-lg font-semibold text-gray-900 flex items-center gap-2">
-                  <PieChart className="h-5 w-5 text-green-600" />
+                  <PieChartIcon className="h-5 w-5 text-green-600" />
                   Spending by Category
                 </h2>
                 <p className="text-xs text-gray-500 mt-1">Representative breakdown (detailed API data requires processing)</p>

@@ -3,17 +3,17 @@
 import { Users, TrendingUp, TrendingDown, ArrowRight, ArrowLeft, AlertTriangle, Calendar, RefreshCw } from 'lucide-react';
 import Link from 'next/link';
 import {
-  LineChart,
-  Line,
-  XAxis,
-  YAxis,
-  CartesianGrid,
-  Tooltip,
-  ResponsiveContainer,
-  Legend,
-  BarChart,
-  Bar,
-} from 'recharts';
+  LazyLineChart,
+  LazyLine,
+  LazyXAxis,
+  LazyYAxis,
+  LazyCartesianGrid,
+  LazyTooltip,
+  LazyResponsiveContainer,
+  LazyLegend,
+  LazyBarChart,
+  LazyBar,
+} from '@/components/charts';
 import {
   useImmigrationSummary,
   useImmigrationHistorical,
@@ -23,18 +23,7 @@ import {
 import { DownloadRawData } from '@/components/ui/DownloadRawData';
 import { ErrorBoundary } from '@/components/ui/ErrorBoundary';
 import { ErrorStateCompact, ErrorStateTableRow } from '@/components/ui/ErrorState';
-import { Skeleton, StatCardSkeleton } from '@/components/ui/Skeleton';
-
-// Chart skeleton component
-function ChartSkeleton({ height = 300 }: { height?: number }) {
-  return (
-    <div className="animate-pulse" style={{ height }}>
-      <div className="h-full bg-gray-200 rounded-lg flex items-center justify-center">
-        <div className="text-gray-400 text-sm">Loading chart...</div>
-      </div>
-    </div>
-  );
-}
+import { Skeleton, StatCardSkeleton, ChartSkeleton } from '@/components/ui/Skeleton';
 
 const API_HOST = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
 const API_URL = `${API_HOST.replace(/\/$/, '')}/api/v1`;
@@ -165,70 +154,69 @@ function ImmigrationPageContent() {
               {historicalLoading ? (
                 <ChartSkeleton height={300} />
               ) : historicalData?.data && historicalData.data.length > 0 ? (
-                <ResponsiveContainer width="100%" height={300}>
-                  <LineChart
-                    data={[...historicalData.data].reverse().map(d => ({
-                      year: `FY ${d.fiscal_year}`,
-                      admissions: d.legal_admissions,
-                      removals: d.removals,
-                      encounters: d.border_encounters,
-                    }))}
-                    margin={{ top: 5, right: 30, left: 20, bottom: 5 }}
-                  >
-                    <CartesianGrid strokeDasharray="3 3" stroke="#e5e7eb" />
-                    <XAxis 
-                      dataKey="year" 
-                      stroke="#6b7280"
-                      fontSize={12}
-                      tickFormatter={(value) => value.replace('FY ', "'")}
-                    />
-                    <YAxis 
-                      stroke="#6b7280"
-                      fontSize={12}
-                      tickFormatter={(value) => `${(value / 1000000).toFixed(1)}M`}
-                    />
-                    <Tooltip
-                      contentStyle={{
-                        backgroundColor: '#fff',
-                        border: '1px solid #e5e7eb',
-                        borderRadius: '8px',
-                        boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)',
-                      }}
-                      formatter={(value: number, name: string) => [
-                        value.toLocaleString(),
-                        name === 'admissions' ? 'Legal Admissions' : 
-                        name === 'removals' ? 'Deportations' : 'Border Encounters'
-                      ]}
-                    />
-                    <Legend 
-                      formatter={(value) => 
-                        value === 'admissions' ? 'Legal Admissions' : 
-                        value === 'removals' ? 'Deportations' : 'Border Encounters'
-                      }
-                    />
-                    <Line
-                      type="monotone"
-                      dataKey="admissions"
-                      stroke="#22c55e"
-                      strokeWidth={2}
-                      dot={{ fill: '#22c55e', strokeWidth: 2, r: 3 }}
-                    />
-                    <Line
-                      type="monotone"
-                      dataKey="removals"
-                      stroke="#ef4444"
-                      strokeWidth={2}
-                      dot={{ fill: '#ef4444', strokeWidth: 2, r: 3 }}
-                    />
-                    <Line
-                      type="monotone"
-                      dataKey="encounters"
-                      stroke="#f59e0b"
-                      strokeWidth={2}
-                      dot={{ fill: '#f59e0b', strokeWidth: 2, r: 3 }}
-                    />
-                  </LineChart>
-                </ResponsiveContainer>
+                <LazyLineChart
+                  data={[...historicalData.data].reverse().map(d => ({
+                    year: `FY ${d.fiscal_year}`,
+                    admissions: d.legal_admissions,
+                    removals: d.removals,
+                    encounters: d.border_encounters,
+                  }))}
+                  height={300}
+                  margin={{ top: 5, right: 30, left: 20, bottom: 5 }}
+                >
+                  <LazyCartesianGrid strokeDasharray="3 3" stroke="#e5e7eb" />
+                  <LazyXAxis 
+                    dataKey="year" 
+                    stroke="#6b7280"
+                    fontSize={12}
+                    tickFormatter={(value) => value.replace('FY ', "'")}
+                  />
+                  <LazyYAxis 
+                    stroke="#6b7280"
+                    fontSize={12}
+                    tickFormatter={(value) => `${(value / 1000000).toFixed(1)}M`}
+                  />
+                  <LazyTooltip
+                    contentStyle={{
+                      backgroundColor: '#fff',
+                      border: '1px solid #e5e7eb',
+                      borderRadius: '8px',
+                      boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)',
+                    }}
+                    formatter={(value: number, name: string) => [
+                      value.toLocaleString(),
+                      name === 'admissions' ? 'Legal Admissions' : 
+                      name === 'removals' ? 'Deportations' : 'Border Encounters'
+                    ]}
+                  />
+                  <LazyLegend 
+                    formatter={(value) => 
+                      value === 'admissions' ? 'Legal Admissions' : 
+                      value === 'removals' ? 'Deportations' : 'Border Encounters'
+                    }
+                  />
+                  <LazyLine
+                    type="monotone"
+                    dataKey="admissions"
+                    stroke="#22c55e"
+                    strokeWidth={2}
+                    dot={{ fill: '#22c55e', strokeWidth: 2, r: 3 }}
+                  />
+                  <LazyLine
+                    type="monotone"
+                    dataKey="removals"
+                    stroke="#ef4444"
+                    strokeWidth={2}
+                    dot={{ fill: '#ef4444', strokeWidth: 2, r: 3 }}
+                  />
+                  <LazyLine
+                    type="monotone"
+                    dataKey="encounters"
+                    stroke="#f59e0b"
+                    strokeWidth={2}
+                    dot={{ fill: '#f59e0b', strokeWidth: 2, r: 3 }}
+                  />
+                </LazyLineChart>
               ) : (
                 <div className="h-[300px] flex items-center justify-center text-gray-500">
                   No historical data available for chart

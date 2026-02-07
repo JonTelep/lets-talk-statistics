@@ -2,16 +2,16 @@
 
 import { Briefcase, TrendingUp, TrendingDown, Users, Building2, AlertTriangle, RefreshCw, Minus } from 'lucide-react';
 import {
-  LineChart,
-  Line,
-  XAxis,
-  YAxis,
-  CartesianGrid,
-  Tooltip,
-  ResponsiveContainer,
-  BarChart,
-  Bar,
-} from 'recharts';
+  LazyLineChart,
+  LazyLine,
+  LazyXAxis,
+  LazyYAxis,
+  LazyCartesianGrid,
+  LazyTooltip,
+  LazyResponsiveContainer,
+  LazyBarChart,
+  LazyBar,
+} from '@/components/charts';
 import { 
   useUnemploymentHistory, 
   calculateEmploymentStats, 
@@ -20,7 +20,7 @@ import {
 import { DownloadRawData } from '@/components/ui/DownloadRawData';
 import { ErrorBoundary } from '@/components/ui/ErrorBoundary';
 import { ErrorStateCompact, ErrorStateTableRow } from '@/components/ui/ErrorState';
-import { Skeleton, StatCardSkeleton } from '@/components/ui/Skeleton';
+import { Skeleton, StatCardSkeleton, ChartSkeleton } from '@/components/ui/Skeleton';
 
 const API_HOST = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
 const API_URL = `${API_HOST.replace(/\/$/, '')}/api/v1`;
@@ -64,16 +64,7 @@ function TrendIcon({ direction }: { direction: string }) {
   return <Minus className="h-4 w-4 text-gray-400" />;
 }
 
-// Chart skeleton component
-function ChartSkeleton({ height = 300 }: { height?: number }) {
-  return (
-    <div className="animate-pulse" style={{ height }}>
-      <div className="h-full bg-gray-200 rounded-lg flex items-center justify-center">
-        <div className="text-gray-400 text-sm">Loading chart...</div>
-      </div>
-    </div>
-  );
-}
+// Using ChartSkeleton from @/components/ui/ChartSkeleton
 
 // Table row skeleton
 function TableRowSkeleton() {
@@ -233,48 +224,47 @@ function EmploymentPageContent() {
           ) : error ? (
             <ErrorStateCompact message="Failed to load chart data" onRetry={refetch} />
           ) : monthlyData.length > 0 ? (
-            <ResponsiveContainer width="100%" height={300}>
-              <LineChart
-                data={[...monthlyData].reverse()}
-                margin={{ top: 5, right: 30, left: 20, bottom: 5 }}
-              >
-                <CartesianGrid strokeDasharray="3 3" stroke="#e5e7eb" />
-                <XAxis 
-                  dataKey="month" 
-                  stroke="#6b7280"
-                  fontSize={12}
-                  interval="preserveStartEnd"
-                  tickFormatter={(value) => {
-                    // Shorten month names for readability
-                    const parts = value.split(' ');
-                    return parts[0].substring(0, 3) + ' ' + parts[1]?.substring(2);
-                  }}
-                />
-                <YAxis 
-                  stroke="#6b7280"
-                  fontSize={12}
-                  domain={['dataMin - 0.5', 'dataMax + 0.5']}
-                  tickFormatter={(value) => `${value}%`}
-                />
-                <Tooltip
-                  contentStyle={{
-                    backgroundColor: '#fff',
-                    border: '1px solid #e5e7eb',
-                    borderRadius: '8px',
-                    boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)',
-                  }}
-                  formatter={(value: number) => [`${value}%`, 'Unemployment Rate']}
-                />
-                <Line
-                  type="monotone"
-                  dataKey="rate"
-                  stroke="#3b82f6"
-                  strokeWidth={3}
-                  dot={{ fill: '#3b82f6', strokeWidth: 2, r: 3 }}
-                  activeDot={{ r: 6, fill: '#2563eb' }}
-                />
-              </LineChart>
-            </ResponsiveContainer>
+            <LazyLineChart
+              data={[...monthlyData].reverse()}
+              height={300}
+              margin={{ top: 5, right: 30, left: 20, bottom: 5 }}
+            >
+              <LazyCartesianGrid strokeDasharray="3 3" stroke="#e5e7eb" />
+              <LazyXAxis 
+                dataKey="month" 
+                stroke="#6b7280"
+                fontSize={12}
+                interval="preserveStartEnd"
+                tickFormatter={(value) => {
+                  // Shorten month names for readability
+                  const parts = value.split(' ');
+                  return parts[0].substring(0, 3) + ' ' + parts[1]?.substring(2);
+                }}
+              />
+              <LazyYAxis 
+                stroke="#6b7280"
+                fontSize={12}
+                domain={['dataMin - 0.5', 'dataMax + 0.5']}
+                tickFormatter={(value) => `${value}%`}
+              />
+              <LazyTooltip
+                contentStyle={{
+                  backgroundColor: '#fff',
+                  border: '1px solid #e5e7eb',
+                  borderRadius: '8px',
+                  boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)',
+                }}
+                formatter={(value: number) => [`${value}%`, 'Unemployment Rate']}
+              />
+              <LazyLine
+                type="monotone"
+                dataKey="rate"
+                stroke="#3b82f6"
+                strokeWidth={3}
+                dot={{ fill: '#3b82f6', strokeWidth: 2, r: 3 }}
+                activeDot={{ r: 6, fill: '#2563eb' }}
+              />
+            </LazyLineChart>
           ) : (
             <div className="h-[300px] flex items-center justify-center text-gray-500">
               No data available for chart
@@ -365,48 +355,47 @@ function EmploymentPageContent() {
                 <p className="text-sm text-gray-500">Monthly job growth by industry</p>
               </div>
               <div className="p-6">
-                <ResponsiveContainer width="100%" height={250}>
-                  <BarChart
-                    data={sectorJobs.map(s => ({ 
-                      name: s.sector.split(' ')[0], // Short name
-                      fullName: s.sector,
-                      jobs: s.jobs 
-                    }))}
-                    layout="vertical"
-                    margin={{ top: 5, right: 30, left: 20, bottom: 5 }}
-                  >
-                    <CartesianGrid strokeDasharray="3 3" stroke="#e5e7eb" />
-                    <XAxis 
-                      type="number" 
-                      stroke="#6b7280" 
-                      fontSize={12}
-                      tickFormatter={(value) => `+${(value / 1000).toFixed(0)}k`}
-                    />
-                    <YAxis 
-                      dataKey="name" 
-                      type="category" 
-                      stroke="#6b7280" 
-                      fontSize={11}
-                      width={80}
-                    />
-                    <Tooltip
-                      contentStyle={{
-                        backgroundColor: '#fff',
-                        border: '1px solid #e5e7eb',
-                        borderRadius: '8px',
-                      }}
-                      formatter={(value: number, name: string, props: any) => [
-                        `+${value.toLocaleString()} jobs`,
-                        props.payload.fullName
-                      ]}
-                    />
-                    <Bar 
-                      dataKey="jobs" 
-                      fill="#22c55e" 
-                      radius={[0, 4, 4, 0]}
-                    />
-                  </BarChart>
-                </ResponsiveContainer>
+                <LazyBarChart
+                  data={sectorJobs.map(s => ({ 
+                    name: s.sector.split(' ')[0], // Short name
+                    fullName: s.sector,
+                    jobs: s.jobs 
+                  }))}
+                  height={250}
+                  layout="vertical"
+                  margin={{ top: 5, right: 30, left: 20, bottom: 5 }}
+                >
+                  <LazyCartesianGrid strokeDasharray="3 3" stroke="#e5e7eb" />
+                  <LazyXAxis 
+                    type="number" 
+                    stroke="#6b7280" 
+                    fontSize={12}
+                    tickFormatter={(value) => `+${(value / 1000).toFixed(0)}k`}
+                  />
+                  <LazyYAxis 
+                    dataKey="name" 
+                    type="category" 
+                    stroke="#6b7280" 
+                    fontSize={11}
+                    width={80}
+                  />
+                  <LazyTooltip
+                    contentStyle={{
+                      backgroundColor: '#fff',
+                      border: '1px solid #e5e7eb',
+                      borderRadius: '8px',
+                    }}
+                    formatter={(value: number, name: string, props: any) => [
+                      `+${value.toLocaleString()} jobs`,
+                      props.payload.fullName
+                    ]}
+                  />
+                  <LazyBar 
+                    dataKey="jobs" 
+                    fill="#22c55e" 
+                    radius={[0, 4, 4, 0]}
+                  />
+                </LazyBarChart>
                 <p className="text-xs text-gray-400 mt-4">* Sector data is illustrative (would need additional BLS series)</p>
               </div>
             </div>

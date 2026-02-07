@@ -229,6 +229,56 @@ export function FilterBarSkeleton() {
   );
 }
 
+// Chart skeleton with animated elements to mimic chart loading
+export function ChartSkeleton({ height = 300 }: { height?: number }) {
+  return (
+    <div className="animate-pulse bg-white rounded-lg p-6" style={{ height }}>
+      <div className="h-full flex flex-col">
+        {/* Chart title area */}
+        <div className="mb-4">
+          <Skeleton className="h-4 w-48 mb-2" />
+          <Skeleton className="h-3 w-32" />
+        </div>
+        
+        {/* Chart area */}
+        <div className="flex-1 bg-gray-100 rounded-lg relative overflow-hidden">
+          {/* Simulated chart bars/lines */}
+          <div className="absolute bottom-4 left-4 right-4 flex items-end justify-between gap-2">
+            {Array.from({ length: 8 }).map((_, i) => (
+              <div
+                key={i}
+                className="bg-gray-200 rounded-t-sm animate-shimmer"
+                style={{
+                  height: `${Math.random() * 60 + 20}%`,
+                  flex: 1,
+                  maxWidth: '20px',
+                }}
+              />
+            ))}
+          </div>
+          
+          {/* Loading text */}
+          <div className="absolute inset-0 flex items-center justify-center">
+            <div className="text-gray-400 text-sm">Loading chart...</div>
+          </div>
+        </div>
+        
+        {/* Legend area */}
+        <div className="mt-4 flex gap-4 justify-center">
+          <div className="flex items-center gap-2">
+            <div className="w-3 h-3 bg-gray-200 rounded-full" />
+            <Skeleton className="h-3 w-16" />
+          </div>
+          <div className="flex items-center gap-2">
+            <div className="w-3 h-3 bg-gray-200 rounded-full" />
+            <Skeleton className="h-3 w-12" />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 // Export all skeleton types
 export const Skeletons = {
   Base: Skeleton,
@@ -242,4 +292,5 @@ export const Skeletons = {
   TradesTable: TradesTableSkeleton,
   PoliticianList: PoliticianListSkeleton,
   FilterBar: FilterBarSkeleton,
+  Chart: ChartSkeleton,
 };

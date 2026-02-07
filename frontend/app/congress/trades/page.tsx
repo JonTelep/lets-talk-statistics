@@ -169,7 +169,8 @@ export default function TradesPage() {
               )}
             </div>
 
-            <div className="overflow-x-auto">
+            {/* Desktop Table View */}
+            <div className="hidden lg:block overflow-x-auto">
               <table className="w-full">
                 <thead className="bg-gray-50">
                   <tr>
@@ -234,6 +235,80 @@ export default function TradesPage() {
                   ))}
                 </tbody>
               </table>
+            </div>
+
+            {/* Mobile Card View */}
+            <div className="lg:hidden space-y-4">
+              {trades.map((trade, idx) => (
+                <div key={idx} className="bg-gray-50 rounded-lg p-4 space-y-3">
+                  {/* Header with politician and type */}
+                  <div className="flex items-start justify-between">
+                    <div className="flex items-center gap-2">
+                      <span className="inline-flex items-center justify-center w-6 h-6 rounded-full text-xs font-bold bg-purple-100 text-purple-700">
+                        S
+                      </span>
+                      <div>
+                        <div className="text-sm font-medium text-gray-900">{trade.politician}</div>
+                        <div className="text-xs text-gray-500">{trade.chamber}</div>
+                      </div>
+                    </div>
+                    <span className={`inline-flex items-center px-2 py-1 rounded-full text-xs font-semibold ${
+                      trade.type === 'Buy' 
+                        ? 'bg-green-100 text-green-800' 
+                        : trade.type === 'Sell'
+                        ? 'bg-red-100 text-red-800'
+                        : 'bg-gray-100 text-gray-800'
+                    }`}>
+                      {trade.type === 'Buy' ? <TrendingUp className="h-3 w-3 mr-1" /> : 
+                       trade.type === 'Sell' ? <TrendingDown className="h-3 w-3 mr-1" /> : null}
+                      {trade.type}
+                    </span>
+                  </div>
+                  
+                  {/* Stock info */}
+                  <div className="border-t border-gray-200 pt-3">
+                    <div className="grid grid-cols-2 gap-3 text-sm">
+                      <div>
+                        <span className="text-gray-500">Stock:</span>
+                        <div className="font-medium text-gray-900">{trade.ticker || 'N/A'}</div>
+                        <div className="text-xs text-gray-500 truncate" title={trade.asset_name}>
+                          {trade.asset_name}
+                        </div>
+                      </div>
+                      <div>
+                        <span className="text-gray-500">Amount:</span>
+                        <div className="font-medium text-gray-900">{trade.amount}</div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  {/* Dates and filing */}
+                  <div className="border-t border-gray-200 pt-3">
+                    <div className="grid grid-cols-2 gap-3 text-sm">
+                      <div>
+                        <span className="text-gray-500">Trade Date:</span>
+                        <div className="text-gray-900">{formatDate(trade.date)}</div>
+                      </div>
+                      <div>
+                        <span className="text-gray-500">Disclosed:</span>
+                        <div className="text-gray-900">{formatDate(trade.disclosure_date)}</div>
+                      </div>
+                    </div>
+                    {trade.filing_url && (
+                      <div className="mt-2">
+                        <a 
+                          href={trade.filing_url} 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-1 text-sm text-primary-600 hover:text-primary-700 font-medium"
+                        >
+                          View Filing <ExternalLink className="h-3 w-3" />
+                        </a>
+                      </div>
+                    )}
+                  </div>
+                </div>
+              ))}
             </div>
 
             {trades.length === 0 && (
