@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect, useCallback } from 'react';
-import { TrendingUp, TrendingDown, Users, Calendar, DollarSign, AlertTriangle, ExternalLink, Loader2, RefreshCw, Filter, ArrowUpDown, Building2 } from 'lucide-react';
+import { TrendingUp, TrendingDown, Users, Calendar, DollarSign, AlertTriangle, ExternalLink, Loader2, RefreshCw, Filter, ArrowUpDown, Building2, FileText, CheckCircle } from 'lucide-react';
 import Link from 'next/link';
 import {
   BarChart,
@@ -241,6 +241,16 @@ function CongressPageContent() {
                 Last updated: {new Date(stats.last_updated).toLocaleString()}
               </span>
             )}
+          </div>
+        </div>
+        
+        {/* Transparency Notice */}
+        <div className="mt-4 bg-green-50 border border-green-200 rounded-lg p-4 flex items-start gap-3">
+          <CheckCircle className="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" />
+          <div className="text-sm text-green-800">
+            <strong>100% Verifiable:</strong> Every trade shown includes a direct link to the original 
+            disclosure document. Click <FileText className="h-4 w-4 inline mx-1" /> to view the actual 
+            hand-written or typed filings submitted by members of Congress. See for yourself — transparency matters.
           </div>
         </div>
       </div>
@@ -540,6 +550,7 @@ function CongressPageContent() {
                         <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Type</th>
                         <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Amount</th>
                         <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Date</th>
+                        <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Source</th>
                       </tr>
                     </thead>
                     <tbody className="divide-y divide-gray-200">
@@ -580,15 +591,23 @@ function CongressPageContent() {
                             <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{trade.amount}</td>
                             <td className="px-6 py-4 whitespace-nowrap">
                               <div className="text-sm text-gray-900">{formatDate(trade.date)}</div>
-                              {trade.filing_url && (
+                              <div className="text-xs text-gray-500">Filed: {formatDate(trade.disclosure_date)}</div>
+                            </td>
+                            <td className="px-6 py-4 whitespace-nowrap">
+                              {trade.filing_url ? (
                                 <a 
                                   href={trade.filing_url} 
                                   target="_blank" 
                                   rel="noopener noreferrer"
-                                  className="text-xs text-primary-600 hover:text-primary-700 flex items-center gap-1"
+                                  className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-green-50 text-green-700 border border-green-200 rounded-lg hover:bg-green-100 transition-colors text-xs font-medium"
+                                  title="View original disclosure document"
                                 >
-                                  Filing <ExternalLink className="h-3 w-3" />
+                                  <FileText className="h-3.5 w-3.5" />
+                                  View Filing
+                                  <ExternalLink className="h-3 w-3" />
                                 </a>
+                              ) : (
+                                <span className="text-xs text-gray-400">—</span>
                               )}
                             </td>
                           </tr>
@@ -723,20 +742,36 @@ function CongressPageContent() {
 
             {/* Data Sources Card */}
             <div className="bg-white rounded-xl shadow-sm p-6">
-              <h3 className="text-lg font-semibold text-gray-900 mb-3">Data Sources</h3>
-              <ul className="text-sm text-gray-600 space-y-2">
-                <li className="flex items-center gap-2">
-                  <span className="w-2 h-2 bg-green-500 rounded-full"></span>
-                  Senate Financial Disclosures (efdsearch.senate.gov)
+              <h3 className="text-lg font-semibold text-gray-900 mb-3 flex items-center gap-2">
+                <CheckCircle className="h-5 w-5 text-green-600" />
+                Verified Sources
+              </h3>
+              <ul className="text-sm text-gray-600 space-y-3">
+                <li className="flex items-start gap-2">
+                  <span className="w-2 h-2 bg-green-500 rounded-full mt-1.5 flex-shrink-0"></span>
+                  <div>
+                    <a href="https://efdsearch.senate.gov" target="_blank" rel="noopener noreferrer" className="text-primary-600 hover:underline font-medium">
+                      Senate Financial Disclosures
+                    </a>
+                    <p className="text-xs text-gray-500">efdsearch.senate.gov</p>
+                  </div>
                 </li>
-                <li className="flex items-center gap-2">
-                  <span className="w-2 h-2 bg-green-500 rounded-full"></span>
-                  House Financial Disclosures (disclosures-clerk.house.gov)
+                <li className="flex items-start gap-2">
+                  <span className="w-2 h-2 bg-green-500 rounded-full mt-1.5 flex-shrink-0"></span>
+                  <div>
+                    <a href="https://disclosures-clerk.house.gov" target="_blank" rel="noopener noreferrer" className="text-primary-600 hover:underline font-medium">
+                      House Financial Disclosures
+                    </a>
+                    <p className="text-xs text-gray-500">disclosures-clerk.house.gov</p>
+                  </div>
                 </li>
               </ul>
-              <p className="text-xs text-gray-500 mt-4">
-                Data updated from STOCK Act of 2012 required disclosures.
-              </p>
+              <div className="mt-4 pt-4 border-t border-gray-100">
+                <p className="text-xs text-gray-500">
+                  <strong className="text-gray-700">Every trade links to the original filing.</strong> Many are hand-written 
+                  forms submitted by members. See how the transparency process actually works.
+                </p>
+              </div>
             </div>
 
             {/* Download Raw Data */}
