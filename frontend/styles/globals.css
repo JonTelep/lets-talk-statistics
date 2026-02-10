@@ -1,123 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Rajdhani:wght@300;400;500;600;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 210 40% 8%;
+    --background: 220 27% 4%;
+    --foreground: 185 100% 85%;
     
-    /* Federal Design System Variables */
-    --federal-navy: 221 39% 11%;
-    --federal-red: 0 84% 60%;
-    --federal-gold: 32 95% 44%;
-    --federal-charcoal: 220 13% 18%;
+    /* Retro-Futuristic NASA Color System */
+    --space-navy: 220 27% 4%;
+    --space-blue: 220 39% 11%;
+    --cyber-orange: 25 100% 50%;
+    --neon-cyan: 185 100% 50%;
+    --radar-green: 120 100% 40%;
+    --console-amber: 45 100% 60%;
+    --steel-gray: 220 10% 20%;
+    --hologram-blue: 215 100% 65%;
   }
 
   html,
   body {
     overflow-x: hidden;
     scroll-behavior: smooth;
+    @apply bg-space-navy-950;
   }
 
   body {
-    @apply bg-gray-50 text-federal-charcoal-900 antialiased;
+    @apply bg-space-navy-950 text-neon-cyan-200 antialiased;
+    font-family: 'Rajdhani', sans-serif;
+    background-image: 
+      radial-gradient(circle at 25% 25%, rgba(0, 255, 255, 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 75% 75%, rgba(255, 140, 0, 0.1) 0%, transparent 50%),
+      linear-gradient(135deg, rgb(2, 6, 23) 0%, rgb(15, 23, 42) 50%, rgb(30, 41, 59) 100%);
+    background-attachment: fixed;
+    position: relative;
   }
 
-  * {
-    @apply border-federal-charcoal-200;
+  /* Cosmic grid overlay */
+  body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+      linear-gradient(rgba(0, 255, 255, 0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0, 255, 255, 0.03) 1px, transparent 1px);
+    background-size: 50px 50px;
+    pointer-events: none;
+    z-index: -1;
+    animation: grid-scan 20s linear infinite;
+  }
+
+  /* Scanner line effect */
+  body::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, rgba(0, 255, 255, 0.8), transparent);
+    z-index: 1000;
+    pointer-events: none;
+    animation: scanner-sweep 8s linear infinite;
   }
 
   /* Typography Hierarchy */
   h1, .heading-display {
-    @apply font-serif text-display text-federal-navy-900 tracking-tight;
+    font-family: 'Orbitron', monospace;
+    @apply text-display text-white font-black tracking-tight;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
   }
 
   h2, .heading-hero {
-    @apply font-serif text-hero text-federal-navy-900 tracking-tight;
+    font-family: 'Orbitron', monospace;
+    @apply text-hero text-cyber-orange-400 font-bold tracking-tight;
+    text-transform: uppercase;
   }
 
   h3, .heading-section {
-    @apply font-serif text-section text-federal-navy-900 tracking-tight;
+    font-family: 'Orbitron', monospace;
+    @apply text-section text-neon-cyan-300 font-semibold tracking-wide;
+    text-transform: uppercase;
   }
 
   h4, h5, h6 {
-    @apply font-serif text-xl font-semibold text-federal-navy-800;
+    font-family: 'Rajdhani', sans-serif;
+    @apply text-xl font-semibold text-hologram-blue-400;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
   }
 
   p {
-    @apply text-federal-charcoal-700 leading-relaxed;
+    @apply text-neon-cyan-200 leading-relaxed;
+    font-family: 'Rajdhani', sans-serif;
   }
   
   /* Data Typography */
   .data-value {
-    @apply font-mono font-bold tracking-tight;
+    font-family: 'Space Mono', monospace;
+    @apply font-bold tracking-tight text-console-amber-400;
+    text-shadow: 0 0 10px rgba(255, 193, 7, 0.5);
   }
   
   .data-label {
-    @apply font-sans text-sm font-medium text-federal-charcoal-600 uppercase tracking-wide;
+    font-family: 'Rajdhani', sans-serif;
+    @apply text-sm font-medium text-steel-gray-300 uppercase tracking-wide;
+  }
+
+  /* Terminal text effects */
+  .terminal-text {
+    font-family: 'Space Mono', monospace;
+    @apply text-neon-cyan-300;
+    text-shadow: 0 0 5px currentColor;
+  }
+
+  .mission-text {
+    font-family: 'Orbitron', monospace;
+    @apply text-cyber-orange-400 font-semibold uppercase tracking-wide;
+    text-shadow: 0 0 10px currentColor;
   }
 }
 
 @layer components {
-  /* Federal Design System Components */
-  .card-federal {
-    @apply bg-white border border-federal-charcoal-200 shadow-brutal transition-all duration-200 hover:shadow-brutal-lg hover:translate-x-1 hover:-translate-y-1;
+  /* Retro-Futuristic Component System */
+  .panel-nasa {
+    @apply bg-space-navy-900 border border-neon-cyan-600 relative;
+    box-shadow: 
+      inset 0 1px 0 0 rgba(0, 255, 255, 0.2),
+      0 0 20px rgba(0, 255, 255, 0.1),
+      0 4px 20px rgba(0, 0, 0, 0.3);
+    position: relative;
+  }
+
+  .panel-nasa::before {
+    content: '';
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    right: -1px;
+    bottom: -1px;
+    background: linear-gradient(45deg, transparent, rgba(0, 255, 255, 0.3), transparent);
+    z-index: -1;
+    border-radius: inherit;
+    animation: border-scan 3s linear infinite;
   }
   
-  .card-federal-accent {
-    @apply bg-white border-2 border-federal-red-600 shadow-brutal-red transition-all duration-200 hover:shadow-brutal-red hover:translate-x-1 hover:-translate-y-1;
+  .panel-console {
+    @apply bg-steel-gray-900 border border-console-amber-500 relative;
+    box-shadow: 
+      inset 0 1px 0 0 rgba(255, 193, 7, 0.3),
+      0 0 30px rgba(255, 140, 0, 0.2),
+      0 6px 30px rgba(0, 0, 0, 0.4);
+    background-image: 
+      radial-gradient(circle at 100% 0%, rgba(255, 140, 0, 0.1) 0%, transparent 50%);
   }
   
-  .btn-federal {
-    @apply inline-flex items-center justify-center px-6 py-3 font-sans font-semibold text-sm uppercase tracking-wide border-2 shadow-brutal transition-all duration-200 hover:translate-x-1 hover:-translate-y-1 active:translate-x-0 active:translate-y-0 active:shadow-none;
+  .panel-radar {
+    @apply bg-space-blue-900 border border-radar-green-500;
+    box-shadow: 
+      inset 0 1px 0 0 rgba(0, 255, 0, 0.2),
+      0 0 25px rgba(0, 255, 0, 0.15);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .panel-radar::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(0, 255, 0, 0.1), transparent);
+    animation: radar-sweep 4s ease-in-out infinite;
   }
   
-  .btn-federal-primary {
-    @apply btn-federal bg-federal-navy-900 border-federal-navy-900 text-white hover:bg-federal-navy-800 hover:border-federal-navy-800;
+  .btn-mission {
+    @apply inline-flex items-center justify-center px-8 py-4 font-bold text-sm uppercase tracking-wider relative overflow-hidden;
+    font-family: 'Orbitron', monospace;
+    background: linear-gradient(135deg, rgba(0, 255, 255, 0.1) 0%, rgba(0, 150, 255, 0.2) 100%);
+    border: 2px solid rgba(0, 255, 255, 0.8);
+    color: rgba(0, 255, 255, 1);
+    text-shadow: 0 0 10px currentColor;
+    transition: all 0.3s ease;
+    clip-path: polygon(0 0, calc(100% - 12px) 0, 100% 100%, 12px 100%);
   }
   
-  .btn-federal-accent {
-    @apply btn-federal bg-federal-red-600 border-federal-red-600 text-white hover:bg-federal-red-700 hover:border-federal-red-700;
+  .btn-mission:hover {
+    background: linear-gradient(135deg, rgba(0, 255, 255, 0.2) 0%, rgba(0, 150, 255, 0.4) 100%);
+    box-shadow: 
+      0 0 30px rgba(0, 255, 255, 0.4),
+      inset 0 0 20px rgba(0, 255, 255, 0.1);
+    transform: translateY(-2px);
+  }
+
+  .btn-mission::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s ease;
+  }
+
+  .btn-mission:hover::before {
+    left: 100%;
   }
   
-  .btn-federal-outline {
-    @apply btn-federal bg-white border-federal-navy-900 text-federal-navy-900 hover:bg-federal-navy-50;
+  .btn-console {
+    @apply btn-mission;
+    background: linear-gradient(135deg, rgba(255, 140, 0, 0.1) 0%, rgba(255, 193, 7, 0.2) 100%);
+    border-color: rgba(255, 140, 0, 0.8);
+    color: rgba(255, 140, 0, 1);
+  }
+
+  .btn-console:hover {
+    background: linear-gradient(135deg, rgba(255, 140, 0, 0.2) 0%, rgba(255, 193, 7, 0.4) 100%);
+    box-shadow: 
+      0 0 30px rgba(255, 140, 0, 0.4),
+      inset 0 0 20px rgba(255, 140, 0, 0.1);
   }
   
-  /* Geometric Elements */
-  .geometric-border {
+  /* Hexagonal grid elements */
+  .hex-grid {
+    position: relative;
+    background-image: 
+      radial-gradient(circle at center, rgba(0, 255, 255, 0.1) 1px, transparent 1px);
+    background-size: 30px 30px;
+    background-position: 0 0, 15px 15px;
+  }
+  
+  /* Holographic text effect */
+  .holo-text {
+    background: linear-gradient(45deg, #00ffff, #0080ff, #ff8c00, #00ffff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 200%;
+    animation: holo-shift 3s ease-in-out infinite;
+  }
+  
+  /* Circuit board patterns */
+  .circuit-bg {
+    background-image: 
+      linear-gradient(90deg, rgba(0, 255, 255, 0.05) 50%, transparent 50%),
+      linear-gradient(rgba(0, 255, 255, 0.05) 50%, transparent 50%);
+    background-size: 20px 20px;
+  }
+
+  /* Status indicators */
+  .status-online {
     @apply relative;
   }
-  
-  .geometric-border::before {
+
+  .status-online::before {
     content: '';
-    @apply absolute -inset-1 bg-federal-gold-400 -z-10 transform rotate-1;
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background: #00ff00;
+    border-radius: 50%;
+    margin-right: 8px;
+    box-shadow: 0 0 10px #00ff00;
+    animation: status-blink 2s ease-in-out infinite;
   }
-  
-  /* Animation Classes */
-  .stagger-children > * {
-    animation: slide-in-up 0.4s ease-out;
+
+  /* Data stream effect */
+  .data-stream {
+    position: relative;
+    overflow: hidden;
   }
-  
-  .stagger-children > *:nth-child(2) {
-    animation-delay: 0.1s;
-  }
-  
-  .stagger-children > *:nth-child(3) {
-    animation-delay: 0.2s;
-  }
-  
-  .stagger-children > *:nth-child(4) {
-    animation-delay: 0.3s;
-  }
-  
-  .stagger-children > *:nth-child(5) {
-    animation-delay: 0.4s;
-  }
-  
-  .stagger-children > *:nth-child(6) {
-    animation-delay: 0.5s;
+
+  .data-stream::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(0, 255, 255, 0.8), transparent);
+    animation: data-flow 2s linear infinite;
   }
 }
 
@@ -130,67 +299,159 @@
     font-feature-settings: 'tnum' on, 'lnum' on;
   }
   
-  /* Federal spacing system */
-  .space-federal-xs { @apply space-y-2; }
-  .space-federal-sm { @apply space-y-4; }
-  .space-federal-md { @apply space-y-6; }
-  .space-federal-lg { @apply space-y-8; }
-  .space-federal-xl { @apply space-y-12; }
-  
-  /* Grid utilities for brutalist layouts */
-  .grid-brutal {
-    @apply grid gap-0;
+  /* Glow utilities */
+  .glow-cyan { 
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.8), 0 0 20px rgba(0, 255, 255, 0.4); 
+  }
+  .glow-orange { 
+    text-shadow: 0 0 10px rgba(255, 140, 0, 0.8), 0 0 20px rgba(255, 140, 0, 0.4); 
+  }
+  .glow-green { 
+    text-shadow: 0 0 10px rgba(0, 255, 0, 0.8), 0 0 20px rgba(0, 255, 0, 0.4); 
   }
   
-  .border-brutal {
-    @apply border-4 border-federal-navy-900;
+  /* Scan line animation */
+  .scan-lines {
+    position: relative;
+  }
+  
+  .scan-lines::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 2px,
+      rgba(0, 255, 255, 0.03) 2px,
+      rgba(0, 255, 255, 0.03) 4px
+    );
+    pointer-events: none;
   }
 }
 
-/* Skeleton loading shimmer animation */
-@keyframes shimmer {
-  0% {
-    background-position: 200% 0;
+/* Retro-Futuristic Animations */
+@keyframes grid-scan {
+  0% { transform: translateY(0px); }
+  100% { transform: translateY(50px); }
+}
+
+@keyframes scanner-sweep {
+  0%, 20% { transform: translateX(-100%); }
+  21%, 80% { transform: translateX(0%); }
+  81%, 100% { transform: translateX(100vw); }
+}
+
+@keyframes border-scan {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes radar-sweep {
+  0%, 10% { left: -100%; }
+  50% { left: 100%; }
+  100% { left: 100%; }
+}
+
+@keyframes holo-shift {
+  0%, 100% { background-position: 0% 0%; }
+  25% { background-position: 100% 0%; }
+  50% { background-position: 100% 100%; }
+  75% { background-position: 0% 100%; }
+}
+
+@keyframes status-blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0.3; }
+}
+
+@keyframes data-flow {
+  0% { left: -100%; }
+  100% { left: 100%; }
+}
+
+@keyframes mission-pulse {
+  0%, 100% { 
+    transform: scale(1);
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
   }
-  100% {
-    background-position: -200% 0;
+  50% { 
+    transform: scale(1.02);
+    box-shadow: 0 0 40px rgba(0, 255, 255, 0.4);
   }
 }
 
-.animate-shimmer {
-  animation: shimmer 1.5s ease-in-out infinite;
-  background: linear-gradient(
-    90deg,
-    #e5e7eb 0%,
-    #f3f4f6 50%,
-    #e5e7eb 100%
-  );
-  background-size: 200% 100%;
+/* Loading terminal effect */
+@keyframes terminal-cursor {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+.terminal-cursor::after {
+  content: '_';
+  animation: terminal-cursor 1s infinite;
+  color: #00ff00;
 }
 
 /* Custom scrollbar */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 12px;
 }
 
 ::-webkit-scrollbar-track {
-  @apply bg-federal-charcoal-100;
+  background: rgba(30, 41, 59, 0.5);
+  border-left: 1px solid rgba(0, 255, 255, 0.2);
 }
 
 ::-webkit-scrollbar-thumb {
-  @apply bg-federal-charcoal-400 rounded-sm;
+  background: linear-gradient(180deg, rgba(0, 255, 255, 0.6), rgba(0, 150, 255, 0.6));
+  border-radius: 0;
+  box-shadow: inset 0 0 5px rgba(0, 255, 255, 0.3);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  @apply bg-federal-charcoal-500;
+  background: linear-gradient(180deg, rgba(0, 255, 255, 0.8), rgba(0, 150, 255, 0.8));
 }
 
 /* Selection */
 ::selection {
-  @apply bg-federal-gold-200 text-federal-navy-900;
+  background: rgba(0, 255, 255, 0.3);
+  color: white;
 }
 
 /* Focus styles */
 :focus-visible {
-  @apply outline-none ring-2 ring-federal-red-500 ring-offset-2 ring-offset-white;
+  outline: none;
+  box-shadow: 
+    0 0 0 2px rgba(0, 255, 255, 0.8),
+    0 0 20px rgba(0, 255, 255, 0.3);
+}
+
+/* Matrix-style background for enhanced sections */
+.matrix-bg {
+  position: relative;
+  overflow: hidden;
+}
+
+.matrix-bg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    linear-gradient(0deg, transparent 24%, rgba(0, 255, 0, 0.05) 25%, rgba(0, 255, 0, 0.05) 26%, transparent 27%, transparent 74%, rgba(0, 255, 0, 0.05) 75%, rgba(0, 255, 0, 0.05) 76%, transparent 77%, transparent),
+    linear-gradient(90deg, transparent 24%, rgba(0, 255, 255, 0.05) 25%, rgba(0, 255, 255, 0.05) 26%, transparent 27%, transparent 74%, rgba(0, 255, 255, 0.05) 75%, rgba(0, 255, 255, 0.05) 76%, transparent 77%, transparent);
+  background-size: 50px 50px;
+  animation: matrix-move 20s linear infinite;
+  pointer-events: none;
+}
+
+@keyframes matrix-move {
+  0% { transform: translate(0, 0); }
+  100% { transform: translate(50px, 50px); }
 }
