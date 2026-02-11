@@ -3,79 +3,61 @@
 import { useState, useRef, useEffect } from 'react';
 import Link from 'next/link';
 import { 
-  Menu, X, Satellite, ChevronDown, TrendingUp, Users, DollarSign, 
-  Briefcase, Building2, Vote, Terminal, Activity, Zap, Database
+  Menu, X, ChevronDown, TrendingUp, Users, DollarSign, 
+  Briefcase, Building2, Vote, Database, BarChart3, Calendar
 } from 'lucide-react';
 
-const missionModules = [
+const dataCategories = [
   {
-    name: 'CONGRESSIONAL TRADING',
-    designation: 'CT-001',
+    name: 'Congressional Trading',
     href: '/congress',
     icon: TrendingUp,
-    description: 'Real-time stock transactions by legislative personnel',
-    priority: 'critical',
+    description: 'Real-time stock transactions by members of Congress',
+    source: 'STOCK Act',
     subItems: [
-      { name: 'Mission Overview', href: '/congress' },
-      { name: 'Personnel Tracking', href: '/congress/politicians' },
-      { name: 'Transaction Log', href: '/congress/trades' },
+      { name: 'Overview', href: '/congress' },
+      { name: 'Politicians', href: '/congress/politicians' },
+      { name: 'Trades', href: '/congress/trades' },
     ],
   },
   {
-    name: 'IMMIGRATION TRACKING',
-    designation: 'IT-002',
+    name: 'Immigration Data',
     href: '/immigration',
     icon: Users,
-    description: 'DHS data stream analysis and border metrics',
-    priority: 'standard',
+    description: 'DHS migration statistics and border data',
+    source: 'DHS',
     subItems: [
-      { name: 'Mission Overview', href: '/immigration' },
-      { name: 'Trend Analysis', href: '/immigration/trends' },
+      { name: 'Overview', href: '/immigration' },
+      { name: 'Trends', href: '/immigration/trends' },
     ],
   },
   {
-    name: 'FEDERAL BUDGET',
-    designation: 'FB-003',
+    name: 'Federal Budget',
     href: '/budget',
     icon: DollarSign,
-    description: 'USASpending.gov expenditure tracking',
-    priority: 'critical',
-    subItems: [
-      { name: 'Mission Overview', href: '/budget' },
-      { name: 'Agency Breakdown', href: '/budget/agencies' },
-    ],
+    description: 'Government spending and fiscal analysis',
+    source: 'Treasury',
   },
   {
-    name: 'EMPLOYMENT METRICS',
-    designation: 'EM-004',
+    name: 'Employment Data',
     href: '/employment',
     icon: Briefcase,
-    description: 'Bureau of Labor Statistics pipeline',
-    priority: 'standard',
-    subItems: [
-      { name: 'Mission Overview', href: '/employment' },
-      { name: 'Regional Analysis', href: '/employment/states' },
-    ],
+    description: 'Labor statistics and unemployment rates',
+    source: 'BLS',
   },
   {
-    name: 'NATIONAL DEBT',
-    designation: 'ND-005',
+    name: 'National Debt',
     href: '/debt',
     icon: Building2,
-    description: 'Treasury fiscal data and debt tracking',
-    priority: 'critical',
-    subItems: [
-      { name: 'Mission Overview', href: '/debt' },
-      { name: 'Historical Data', href: '/debt/historical' },
-    ],
+    description: 'Federal debt tracking and creditor analysis',
+    source: 'Treasury',
   },
   {
-    name: 'ELECTION FUNDING',
-    designation: 'EF-006',
+    name: 'Election Finance',
     href: '/elections',
     icon: Vote,
-    description: 'FEC database analysis and campaign finance',
-    priority: 'standard',
+    description: 'Campaign finance and public funding data',
+    source: 'FEC',
   },
 ];
 
@@ -96,128 +78,94 @@ export default function Header() {
   }, []);
 
   return (
-    <header className="bg-steel-gray-900 border-b-2 border-neon-cyan-400 sticky top-0 z-50 relative">
-      {/* Scanner line */}
-      <div className="absolute top-0 left-0 right-0 h-px bg-neon-cyan-400 animate-data-flow"></div>
-      
-      <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative" aria-label="Mission Control Navigation">
-        <div className="flex w-full items-center justify-between py-4">
-          {/* Mission Control Logo */}
+    <header className="nav-editorial sticky top-0 z-50">
+      <nav className="container-editorial" aria-label="Main navigation">
+        <div className="flex w-full items-center justify-between py-6">
+          {/* Logo */}
           <div className="flex items-center">
             <Link href="/" className="flex items-center space-x-4 group">
-              <div className="relative">
-                <div className="w-12 h-12 bg-neon-cyan-400 border-2 border-cyber-orange-400 flex items-center justify-center group-hover:bg-cyber-orange-400 transition-all duration-300 relative">
-                  <Satellite className="h-7 w-7 text-space-navy-950 group-hover:rotate-12 transition-transform duration-300" />
-                  <div className="absolute inset-0 border border-neon-cyan-600 animate-mission-pulse"></div>
-                </div>
-                {/* Status indicator */}
-                <div className="absolute -top-1 -right-1 w-3 h-3 bg-radar-green-400 rounded-full animate-status-blink shadow-neon-green"></div>
+              <div className="w-10 h-10 bg-editorial-accent flex items-center justify-center group-hover:bg-editorial-dark transition-colors duration-200">
+                <Database className="h-6 w-6 text-white" />
               </div>
-              
               <div>
-                <div className="flex items-center gap-2">
-                  <span className="font-display text-xl font-bold text-white leading-none tracking-wide">
-                    LET'S TALK
-                  </span>
-                  <Terminal className="h-4 w-4 text-neon-cyan-400" />
+                <div className="font-display text-2xl font-bold text-editorial-dark">
+                  Let's Talk Statistics
                 </div>
-                <span className="block mission-text text-sm leading-none">
-                  STATISTICS
-                </span>
+                <div className="text-byline text-editorial-accent">
+                  Government Data • Unfiltered
+                </div>
               </div>
             </Link>
           </div>
 
-          {/* Desktop Mission Control Panel */}
-          <div className="hidden lg:flex lg:items-center lg:space-x-1">
-            <Link
-              href="/"
-              className="flex items-center gap-2 px-4 py-3 text-sm font-medium text-neon-cyan-200 hover:bg-neon-cyan-400 hover:text-space-navy-950 transition-all duration-200 relative group"
-            >
-              <Activity className="h-4 w-4" />
-              <span className="terminal-text">HOME</span>
+          {/* Desktop Navigation */}
+          <div className="hidden lg:flex lg:items-center lg:space-x-8">
+            <Link href="/" className="nav-link">
+              Home
             </Link>
 
-            {/* Mission Modules Dropdown */}
+            {/* Data Categories Dropdown */}
             <div className="relative" ref={dropdownRef}>
               <button
                 onClick={() => setCategoriesOpen(!categoriesOpen)}
-                className="flex items-center gap-2 px-4 py-3 text-sm font-medium text-neon-cyan-200 hover:bg-neon-cyan-400 hover:text-space-navy-950 transition-all duration-200 group"
+                className="nav-link flex items-center gap-1"
               >
-                <Database className="h-4 w-4" />
-                <span className="terminal-text">MISSIONS</span>
+                Data Categories
                 <ChevronDown className={`h-4 w-4 transition-transform duration-200 ${categoriesOpen ? 'rotate-180' : ''}`} />
               </button>
 
               {categoriesOpen && (
-                <div className="absolute right-0 mt-2 w-[500px] panel-nasa p-0 overflow-hidden z-50">
+                <div className="absolute right-0 mt-2 w-96 card-editorial p-0 shadow-editorial-xl z-50">
                   {/* Header */}
-                  <div className="bg-neon-cyan-400 text-space-navy-950 p-4 border-b border-steel-gray-700">
+                  <div className="bg-editorial-dark text-white p-4 border-b border-border-light">
                     <div className="flex items-center gap-3">
-                      <div className="w-8 h-8 bg-space-navy-950 flex items-center justify-center">
-                        <Database className="h-5 w-5 text-neon-cyan-400" />
-                      </div>
+                      <BarChart3 className="h-5 w-5" />
                       <div>
-                        <h3 className="font-display font-bold text-lg uppercase">MISSION MODULES</h3>
-                        <p className="text-xs font-mono opacity-80">GOVERNMENT_DATA_STREAMS</p>
+                        <h3 className="font-serif text-lg font-semibold">Data Categories</h3>
+                        <p className="text-sm opacity-90">Direct government sources</p>
                       </div>
                     </div>
                   </div>
                   
-                  {/* Mission list */}
+                  {/* Categories list */}
                   <div className="max-h-80 overflow-y-auto">
-                    {missionModules.map((mission, index) => {
-                      const Icon = mission.icon;
-                      const isCritical = mission.priority === 'critical';
+                    {dataCategories.map((category) => {
+                      const Icon = category.icon;
                       
                       return (
                         <Link
-                          key={mission.name}
-                          href={mission.href}
-                          className="flex items-center p-4 border-b border-steel-gray-700 last:border-b-0 hover:bg-steel-gray-800 transition-all group relative"
+                          key={category.name}
+                          href={category.href}
+                          className="flex items-start p-4 border-b border-border-light last:border-b-0 hover:bg-paper-cream transition-colors group"
                           onClick={() => setCategoriesOpen(false)}
                         >
-                          {/* Priority indicator */}
                           <div className="flex-shrink-0 mr-4">
-                            <div className={`w-10 h-10 border-2 flex items-center justify-center relative ${
-                              isCritical 
-                                ? 'bg-cyber-orange-400 border-cyber-orange-600 text-space-navy-950' 
-                                : 'bg-neon-cyan-400 border-neon-cyan-600 text-space-navy-950'
-                            }`}>
-                              <Icon className="h-5 w-5" />
-                              {isCritical && (
-                                <div className="absolute -top-1 -right-1 w-3 h-3 bg-cyber-orange-600 rounded-full"></div>
-                              )}
+                            <div className="w-10 h-10 bg-editorial-navy/10 flex items-center justify-center">
+                              <Icon className="h-5 w-5 text-editorial-navy" />
                             </div>
                           </div>
                           
                           <div className="flex-1 min-w-0">
                             <div className="flex items-center gap-2 mb-1">
-                              <p className="heading-section text-sm group-hover:text-cyber-orange-400 transition-colors">
-                                {mission.name}
-                              </p>
-                              <span className="terminal-text text-xs opacity-60">
-                                {mission.designation}
+                              <h4 className="font-serif font-semibold text-editorial-dark group-hover:text-editorial-accent transition-colors">
+                                {category.name}
+                              </h4>
+                              <span className="text-xs px-2 py-0.5 bg-editorial-gold/10 text-editorial-gold font-medium">
+                                {category.source}
                               </span>
                             </div>
-                            <p className="text-xs text-neon-cyan-300 mb-2">{mission.description}</p>
+                            <p className="text-sm text-editorial-gray mb-2">{category.description}</p>
                             
-                            {/* Sub-items if available */}
-                            {mission.subItems && (
-                              <div className="flex gap-2 mt-2">
-                                {mission.subItems.map((subItem, subIndex) => (
-                                  <span key={subIndex} className="text-xs terminal-text opacity-50">
+                            {category.subItems && (
+                              <div className="flex flex-wrap gap-2">
+                                {category.subItems.map((subItem, index) => (
+                                  <span key={index} className="text-xs text-editorial-accent">
                                     {subItem.name}
-                                    {subIndex < mission.subItems!.length - 1 && ' •'}
+                                    {index < category.subItems!.length - 1 && ' •'}
                                   </span>
                                 ))}
                               </div>
                             )}
-                          </div>
-                          
-                          {/* Status indicator */}
-                          <div className="flex-shrink-0 ml-3">
-                            <div className="w-2 h-2 bg-radar-green-400 rounded-full animate-status-blink"></div>
                           </div>
                         </Link>
                       );
@@ -225,92 +173,88 @@ export default function Header() {
                   </div>
                   
                   {/* Footer */}
-                  <div className="bg-steel-gray-800 p-3 border-t border-steel-gray-700">
-                    <p className="terminal-text text-xs text-center">
-                      ALL_SYSTEMS_OPERATIONAL • DATA_FEEDS_ACTIVE
+                  <div className="bg-paper-cream p-3 border-t border-border-light">
+                    <p className="text-xs text-editorial-gray text-center">
+                      All data verified against official sources
                     </p>
                   </div>
                 </div>
               )}
             </div>
 
-            <Link
-              href="/about"
-              className="flex items-center gap-2 px-4 py-3 text-sm font-medium text-neon-cyan-200 hover:bg-neon-cyan-400 hover:text-space-navy-950 transition-all duration-200 group"
-            >
-              <Terminal className="h-4 w-4" />
-              <span className="terminal-text">ABOUT</span>
+            <Link href="/about" className="nav-link">
+              About
             </Link>
+
+            {/* Date display */}
+            <div className="flex items-center gap-2 text-sm text-editorial-gray border-l border-border-light pl-8">
+              <Calendar className="h-4 w-4" />
+              <span>
+                {new Date().toLocaleDateString('en-US', { 
+                  month: 'short', 
+                  day: 'numeric',
+                  year: 'numeric'
+                })}
+              </span>
+            </div>
           </div>
 
-          {/* Mobile menu control */}
+          {/* Mobile menu button */}
           <div className="flex lg:hidden">
             <button
               type="button"
-              className="w-12 h-12 bg-neon-cyan-400 border-2 border-cyber-orange-400 flex items-center justify-center text-space-navy-950 hover:bg-cyber-orange-400 transition-all duration-300 relative"
+              className="w-10 h-10 bg-editorial-accent hover:bg-editorial-dark transition-colors duration-200 flex items-center justify-center text-white"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             >
-              <span className="sr-only">Toggle mission control menu</span>
+              <span className="sr-only">Toggle menu</span>
               {mobileMenuOpen ? (
-                <X className="h-6 w-6" aria-hidden="true" />
+                <X className="h-5 w-5" />
               ) : (
-                <Menu className="h-6 w-6" aria-hidden="true" />
+                <Menu className="h-5 w-5" />
               )}
-              <div className="absolute inset-0 border border-neon-cyan-600 animate-border-scan"></div>
             </button>
           </div>
         </div>
 
-        {/* Mobile Mission Control Panel */}
+        {/* Mobile Menu */}
         {mobileMenuOpen && (
-          <div className="lg:hidden border-t-2 border-neon-cyan-400 bg-steel-gray-900 relative">
-            <div className="absolute top-0 left-0 right-0 h-px bg-neon-cyan-400 animate-data-flow"></div>
-            
-            <div className="py-4 space-y-0">
+          <div className="lg:hidden border-t border-border-light bg-white">
+            <div className="py-4 space-y-1">
               {/* Home */}
               <Link
                 href="/"
-                className="flex items-center gap-3 border-b border-steel-gray-700 px-4 py-4 text-sm font-medium text-neon-cyan-200 hover:bg-steel-gray-800 hover:text-cyber-orange-400 transition-all"
+                className="block px-4 py-3 text-editorial-gray hover:text-editorial-dark hover:bg-paper-cream transition-colors"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                <Activity className="h-5 w-5" />
-                <span className="terminal-text">HOME</span>
+                Home
               </Link>
 
-              {/* Mission modules header */}
-              <div className="px-4 py-3 bg-steel-gray-800 border-b border-steel-gray-700">
+              {/* Categories header */}
+              <div className="px-4 py-2 bg-paper-cream border-y border-border-light">
                 <div className="flex items-center gap-2">
-                  <Database className="h-4 w-4 text-neon-cyan-400" />
-                  <p className="mission-text text-sm">MISSION MODULES</p>
+                  <BarChart3 className="h-4 w-4 text-editorial-accent" />
+                  <span className="text-byline text-editorial-accent">Data Categories</span>
                 </div>
               </div>
 
-              {/* Mission modules */}
-              {missionModules.map((mission, index) => {
-                const Icon = mission.icon;
-                const isCritical = mission.priority === 'critical';
+              {/* Categories */}
+              {dataCategories.map((category) => {
+                const Icon = category.icon;
                 
                 return (
                   <Link
-                    key={mission.name}
-                    href={mission.href}
-                    className="flex items-center gap-3 border-b border-steel-gray-700 px-4 py-4 text-sm font-medium text-neon-cyan-200 hover:bg-steel-gray-800 hover:text-cyber-orange-400 transition-all group"
+                    key={category.name}
+                    href={category.href}
+                    className="flex items-center gap-3 px-4 py-3 text-editorial-gray hover:text-editorial-dark hover:bg-paper-cream transition-colors group"
                     onClick={() => setMobileMenuOpen(false)}
                   >
-                    <div className={`w-8 h-8 border flex items-center justify-center flex-shrink-0 ${
-                      isCritical 
-                        ? 'bg-cyber-orange-400 border-cyber-orange-600 text-space-navy-950' 
-                        : 'bg-neon-cyan-400 border-neon-cyan-600 text-space-navy-950'
-                    }`}>
-                      <Icon className="h-4 w-4" />
+                    <div className="w-8 h-8 bg-editorial-navy/10 flex items-center justify-center flex-shrink-0">
+                      <Icon className="h-4 w-4 text-editorial-navy" />
                     </div>
                     <div className="flex-1">
-                      <div className="terminal-text">{mission.name}</div>
-                      <div className="text-xs text-neon-cyan-400 mt-1">{mission.designation}</div>
+                      <div className="font-medium">{category.name}</div>
+                      <div className="text-sm text-editorial-accent">{category.source}</div>
                     </div>
-                    {isCritical && (
-                      <Zap className="h-4 w-4 text-cyber-orange-400" />
-                    )}
                   </Link>
                 );
               })}
@@ -318,23 +262,22 @@ export default function Header() {
               {/* About */}
               <Link
                 href="/about"
-                className="flex items-center gap-3 px-4 py-4 text-sm font-medium text-neon-cyan-200 hover:bg-steel-gray-800 hover:text-cyber-orange-400 transition-all"
+                className="block px-4 py-3 text-editorial-gray hover:text-editorial-dark hover:bg-paper-cream transition-colors border-t border-border-light"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                <Terminal className="h-5 w-5" />
-                <span className="terminal-text">ABOUT</span>
+                About
               </Link>
             </div>
             
             {/* Status footer */}
-            <div className="border-t border-neon-cyan-400 bg-steel-gray-800 px-4 py-3">
-              <div className="flex items-center justify-between text-xs">
+            <div className="border-t border-border-light bg-paper-cream px-4 py-3">
+              <div className="flex items-center justify-between text-xs text-editorial-gray">
                 <div className="flex items-center gap-2">
-                  <div className="w-2 h-2 bg-radar-green-400 rounded-full animate-status-blink"></div>
-                  <span className="terminal-text">SYSTEM_OPERATIONAL</span>
+                  <div className="w-2 h-2 bg-editorial-forest rounded-full"></div>
+                  <span>Data feeds active</span>
                 </div>
-                <span className="terminal-text opacity-60">
-                  {new Date().toLocaleTimeString()}
+                <span>
+                  {new Date().toLocaleDateString()}
                 </span>
               </div>
             </div>
