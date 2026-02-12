@@ -245,6 +245,42 @@ function CongressPageContent() {
             hand-written or typed filings submitted by members of Congress. See for yourself — transparency matters.
           </div>
         </div>
+
+        {/* API Access Notice */}
+        <div className="mt-4 bg-primary-50 border border-primary-200 rounded-lg p-4 flex items-start gap-3">
+          <div className="flex-shrink-0">
+            <svg className="h-5 w-5 text-primary-600 mt-0.5" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5" />
+            </svg>
+          </div>
+          <div className="text-sm text-primary-800 flex-1">
+            <strong>Powered by Capitol Trades API:</strong> This data is provided by our free congressional trading API. 
+            Access 16,200+ trades programmatically with our JSON REST API — completely free to use!
+            <div className="mt-2">
+              <a 
+                href="https://telep.io/pricing" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-3 py-1.5 bg-primary-600 text-white text-xs font-medium rounded-lg hover:bg-primary-700 transition-colors"
+              >
+                <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+                </svg>
+                Get FREE API Access
+                <ExternalLink className="h-3 w-3" />
+              </a>
+              <a 
+                href="https://trades.telep.io" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-3 py-1.5 bg-white text-primary-700 text-xs font-medium rounded-lg border border-primary-300 hover:bg-primary-50 transition-colors ml-2"
+              >
+                View API Docs
+                <ExternalLink className="h-3 w-3" />
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
 
       {/* Stats Grid */}
