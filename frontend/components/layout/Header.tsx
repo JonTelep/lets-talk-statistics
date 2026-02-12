@@ -4,7 +4,8 @@ import { useState, useRef, useEffect } from 'react';
 import Link from 'next/link';
 import { 
   Menu, X, ChevronDown, TrendingUp, Users, DollarSign, 
-  Briefcase, Building2, Vote, Database, BarChart3, Calendar
+  Briefcase, Building2, Vote, Database, BarChart3, Calendar,
+  Heart, GraduationCap
 } from 'lucide-react';
 
 const dataCategories = [
@@ -58,6 +59,20 @@ const dataCategories = [
     icon: Vote,
     description: 'Campaign finance and public funding data',
     source: 'FEC',
+  },
+  {
+    name: 'Healthcare',
+    href: '/healthcare',
+    icon: Heart,
+    description: 'Healthcare spending, coverage, and outcomes',
+    source: 'CMS',
+  },
+  {
+    name: 'Education',
+    href: '/education',
+    icon: GraduationCap,
+    description: 'Education spending, enrollment, and performance',
+    source: 'DOE',
   },
 ];
 
