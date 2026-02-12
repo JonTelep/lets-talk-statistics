@@ -1,17 +1,11 @@
 import type { Metadata } from 'next';
-import { Playfair_Display, Inter, Crimson_Text, Source_Serif_4 } from 'next/font/google';
+import { Inter, Crimson_Text, Source_Serif_4 } from 'next/font/google';
 import '../styles/globals.css';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import { SWRProvider } from '@/components/providers/SWRProvider';
 
-const playfairDisplay = Playfair_Display({
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-display',
-  weight: ['400', '500', '600', '700', '800', '900'],
-});
-
+// Fraunces is loaded via CSS @import in globals.css for editorial maximalism aesthetic
 const crimsonText = Crimson_Text({
   subsets: ['latin'],
   display: 'swap',
@@ -30,7 +24,7 @@ const inter = Inter({
   subsets: ['latin'],
   display: 'swap',
   variable: '--font-sans',
-  weight: ['300', '400', '500', '600', '700'],
+  weight: ['300', '400', '500', '600', '700', '800'],
 });
 
 export const metadata: Metadata = {
@@ -84,8 +78,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${inter.variable} ${playfairDisplay.variable} ${crimsonText.variable} ${sourceSerif.variable}`}>
-      <body className="font-sans flex min-h-screen flex-col bg-warm-white text-editorial-dark antialiased">
+    <html lang="en" className={`${inter.variable} ${crimsonText.variable} ${sourceSerif.variable}`}>
+      <body className="font-sans flex min-h-screen flex-col bg-newsprint text-editorial-gray antialiased">
         <SWRProvider>
           <Header />
           <main className="flex-1">{children}</main>

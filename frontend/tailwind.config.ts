@@ -9,7 +9,8 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // Editorial Magazine Color Scheme
+        // Editorial Maximalism Color Scheme
+        'editorial-ink': 'rgb(12 16 23)',
         'editorial-dark': {
           DEFAULT: 'rgb(22 33 48)',
           50: 'rgb(248 250 252)',
@@ -25,14 +26,14 @@ const config: Config = {
           950: 'rgb(15 23 42)',
         },
         'editorial-gray': {
-          DEFAULT: 'rgb(94 99 105)',
+          DEFAULT: 'rgb(70 80 95)',
           50: 'rgb(250 250 250)',
           100: 'rgb(245 245 245)',
           200: 'rgb(229 229 229)',
           300: 'rgb(212 212 212)',
           400: 'rgb(163 163 163)',
           500: 'rgb(115 115 115)',
-          600: 'rgb(94 99 105)',
+          600: 'rgb(70 80 95)',
           700: 'rgb(82 82 82)',
           800: 'rgb(64 64 64)',
           900: 'rgb(38 38 38)',
@@ -66,6 +67,7 @@ const config: Config = {
           900: 'rgb(120 53 15)',
           950: 'rgb(69 26 3)',
         },
+        'editorial-orange': 'rgb(235 87 35)',
         'editorial-forest': {
           DEFAULT: 'rgb(76 110 81)',
           50: 'rgb(240 253 244)',
@@ -94,10 +96,13 @@ const config: Config = {
           900: 'rgb(30 58 138)',
           950: 'rgb(23 37 84)',
         },
+        'editorial-electric': 'rgb(0 122 255)',
         'warm-white': 'rgb(255 253 251)',
         'paper-cream': 'rgb(253 251 247)',
+        'newsprint': 'rgb(249 248 245)',
         'border-light': 'rgb(234 229 220)',
         'border-medium': 'rgb(203 193 176)',
+        'border-bold': 'rgb(150 140 120)',
       },
       fontFamily: {
         display: ['var(--font-display)', 'serif'],

@@ -2,119 +2,230 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Custom Font Imports */
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,800;9..144,900&display=swap');
+
 @layer base {
   :root {
-    /* Editorial Color Palette */
+    /* Editorial Maximalism Color Palette */
+    --editorial-ink: 12 16 23;         /* Almost black for maximum contrast */
     --editorial-dark: 22 33 48;        /* Deep navy for headings */
-    --editorial-gray: 94 99 105;       /* Sophisticated gray for body text */
+    --editorial-gray: 70 80 95;        /* Stronger gray for readability */
     --editorial-accent: 168 50 50;     /* Deep burgundy for accents */
     --editorial-gold: 218 165 32;      /* Golden accent for highlights */
+    --editorial-orange: 235 87 35;     /* Bold orange for alerts */
     --editorial-forest: 76 110 81;     /* Forest green for data positives */
     --editorial-navy: 26 46 73;        /* Navy blue for trust elements */
+    --editorial-electric: 0 122 255;   /* Electric blue for interactive elements */
     --warm-white: 255 253 251;         /* Warm off-white background */
     --paper-cream: 253 251 247;        /* Paper-like cream for cards */
+    --newsprint: 249 248 245;          /* Slightly more yellow newsprint */
     --border-light: 234 229 220;       /* Subtle borders */
     --border-medium: 203 193 176;      /* Medium borders */
+    --border-bold: 150 140 120;        /* Bold borders for emphasis */
+    --shadow-editorial: rgba(22, 33, 48, 0.1);
   }
 
   html, body {
     scroll-behavior: smooth;
-    @apply bg-warm-white;
+    @apply bg-newsprint;
   }
 
   body {
     @apply text-editorial-gray leading-relaxed;
     font-family: var(--font-sans);
-    line-height: 1.7;
+    line-height: 1.65;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
-  /* Editorial Typography System */
+  /* Editorial Maximalism Typography System */
   .text-display {
-    font-family: var(--font-display);
-    @apply text-6xl md:text-8xl font-black text-editorial-dark leading-none;
-    letter-spacing: -0.02em;
+    font-family: 'Fraunces', var(--font-display);
+    @apply text-7xl md:text-9xl lg:text-[12rem] font-black text-editorial-ink leading-none;
+    letter-spacing: -0.03em;
+    text-shadow: 2px 4px 8px var(--shadow-editorial);
+  }
+
+  .text-masthead {
+    font-family: 'Fraunces', var(--font-display);
+    @apply text-5xl md:text-7xl lg:text-8xl font-black text-editorial-ink leading-none;
+    letter-spacing: -0.025em;
   }
 
   .text-headline-1 {
-    font-family: var(--font-display);
-    @apply text-4xl md:text-6xl font-bold text-editorial-dark leading-tight;
-    letter-spacing: -0.01em;
+    font-family: 'Fraunces', var(--font-display);
+    @apply text-5xl md:text-7xl lg:text-8xl font-black text-editorial-ink leading-tight;
+    letter-spacing: -0.02em;
   }
 
   .text-headline-2 {
-    font-family: var(--font-display);
-    @apply text-3xl md:text-4xl font-semibold text-editorial-dark leading-tight;
+    font-family: 'Fraunces', var(--font-display);
+    @apply text-4xl md:text-5xl lg:text-6xl font-bold text-editorial-dark leading-tight;
+    letter-spacing: -0.015em;
   }
 
   .text-headline-3 {
     font-family: var(--font-serif);
-    @apply text-2xl md:text-3xl font-semibold text-editorial-dark leading-snug;
+    @apply text-2xl md:text-4xl font-semibold text-editorial-dark leading-snug;
+  }
+
+  .text-headline-4 {
+    font-family: var(--font-serif);
+    @apply text-xl md:text-2xl font-semibold text-editorial-dark leading-snug;
+  }
+
+  .text-breaking {
+    font-family: var(--font-sans);
+    @apply text-xs font-black text-white bg-editorial-orange px-3 py-1 uppercase tracking-widest;
+    letter-spacing: 0.15em;
+  }
+
+  .text-kicker {
+    font-family: var(--font-sans);
+    @apply text-xs md:text-sm font-bold text-editorial-accent uppercase tracking-widest;
+    letter-spacing: 0.12em;
   }
 
   .text-byline {
     font-family: var(--font-sans);
-    @apply text-sm font-medium text-editorial-accent uppercase tracking-wide;
-    letter-spacing: 0.1em;
+    @apply text-sm font-semibold text-editorial-accent uppercase tracking-wide;
+    letter-spacing: 0.08em;
   }
 
   .text-body {
     font-family: var(--font-sans);
-    @apply text-lg text-editorial-gray leading-relaxed;
+    @apply text-lg md:text-xl text-editorial-gray leading-relaxed;
   }
 
   .text-body-large {
     font-family: var(--font-serif);
-    @apply text-xl text-editorial-gray leading-relaxed;
+    @apply text-xl md:text-2xl text-editorial-gray leading-relaxed;
+  }
+
+  .text-body-editorial {
+    font-family: var(--font-serif);
+    @apply text-lg md:text-xl text-editorial-gray leading-loose;
   }
 
   .text-caption {
     font-family: var(--font-sans);
-    @apply text-sm text-editorial-gray italic;
+    @apply text-sm text-editorial-gray;
+  }
+
+  .text-data-massive {
+    font-family: 'Fraunces', var(--font-serif-alt);
+    @apply text-6xl md:text-8xl lg:text-9xl font-black text-editorial-ink;
+    font-feature-settings: 'tnum' on, 'lnum' on;
+    letter-spacing: -0.02em;
   }
 
   .text-data-value {
     font-family: var(--font-serif-alt);
-    @apply text-3xl md:text-4xl font-bold text-editorial-dark;
+    @apply text-4xl md:text-5xl lg:text-6xl font-bold text-editorial-dark;
+    font-feature-settings: 'tnum' on, 'lnum' on;
+  }
+
+  .text-data-medium {
+    font-family: var(--font-serif-alt);
+    @apply text-2xl md:text-3xl font-semibold text-editorial-dark;
     font-feature-settings: 'tnum' on, 'lnum' on;
   }
 
   .text-data-label {
     font-family: var(--font-sans);
-    @apply text-sm font-medium text-editorial-gray uppercase tracking-wide;
-    letter-spacing: 0.05em;
+    @apply text-xs md:text-sm font-semibold text-editorial-gray uppercase tracking-widest;
+    letter-spacing: 0.08em;
+  }
+
+  .text-terminal {
+    font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Roboto Mono', monospace;
+    @apply text-sm text-editorial-electric bg-editorial-ink px-2 py-1 rounded;
   }
 }
 
 @layer components {
-  /* Editorial Layout System */
+  /* Editorial Maximalism Layout System */
   .container-editorial {
-    @apply max-w-7xl mx-auto px-6 lg:px-8;
+    @apply max-w-8xl mx-auto px-6 lg:px-12;
+  }
+
+  .container-wide {
+    @apply max-w-9xl mx-auto px-6 lg:px-16;
   }
 
   .container-article {
-    @apply max-w-4xl mx-auto px-6 lg:px-8;
+    @apply max-w-5xl mx-auto px-6 lg:px-8;
   }
 
   .container-narrow {
     @apply max-w-3xl mx-auto px-6 lg:px-8;
   }
 
-  /* Card Components */
+  .container-tight {
+    @apply max-w-2xl mx-auto px-6 lg:px-8;
+  }
+
+  /* Card Components - Editorial Maximalism */
   .card-editorial {
-    @apply bg-paper-cream border border-border-light shadow-sm hover:shadow-md transition-shadow duration-200;
+    @apply bg-white border-2 border-border-medium shadow-lg hover:shadow-2xl transition-all duration-300;
+    box-shadow: 
+      0 4px 6px var(--shadow-editorial),
+      0 10px 20px rgba(22, 33, 48, 0.05);
   }
 
   .card-feature {
-    @apply bg-paper-cream border-l-4 border-editorial-accent shadow-lg;
+    @apply bg-paper-cream border-l-8 border-editorial-accent shadow-xl relative;
+    box-shadow: 
+      8px 0 0 rgba(168, 50, 50, 0.1),
+      0 8px 32px var(--shadow-editorial);
   }
 
   .card-data {
-    @apply bg-white border border-border-medium p-8 relative;
-    box-shadow: 0 2px 4px rgba(22, 33, 48, 0.05), 0 1px 2px rgba(22, 33, 48, 0.1);
+    @apply bg-white border-2 border-border-bold p-8 lg:p-12 relative;
+    box-shadow: 
+      0 8px 16px var(--shadow-editorial),
+      0 4px 8px rgba(22, 33, 48, 0.1),
+      inset 0 1px 0 rgba(255, 255, 255, 0.9);
+  }
+
+  .card-data::before {
+    content: '';
+    @apply absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-editorial-accent via-editorial-gold to-editorial-forest;
+  }
+
+  .card-breaking {
+    @apply bg-editorial-orange text-white border-4 border-editorial-ink relative overflow-hidden;
+    box-shadow: 
+      0 8px 32px rgba(235, 87, 35, 0.3),
+      0 4px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  .card-breaking::before {
+    content: '';
+    @apply absolute top-0 left-0 w-full h-1 bg-white animate-pulse;
   }
 
   .card-highlight {
-    @apply bg-gradient-to-br from-editorial-gold/10 to-editorial-accent/10 border border-editorial-gold/20;
+    @apply bg-gradient-to-br from-editorial-gold/20 via-editorial-accent/15 to-editorial-forest/20 
+           border-4 border-editorial-gold/30 relative;
+    box-shadow: 
+      0 12px 24px rgba(218, 165, 32, 0.15),
+      inset 0 1px 0 rgba(255, 255, 255, 0.5);
+  }
+
+  .card-terminal {
+    @apply bg-editorial-ink text-editorial-electric border-2 border-editorial-electric/30 
+           font-mono relative overflow-hidden;
+    box-shadow: 
+      0 0 20px rgba(0, 122, 255, 0.3),
+      inset 0 0 20px rgba(0, 122, 255, 0.1);
+  }
+
+  .card-terminal::before {
+    content: '';
+    @apply absolute top-0 left-0 w-full h-px bg-editorial-electric animate-pulse;
   }
 
   /* Button System */
@@ -149,21 +260,52 @@
     @apply text-editorial-dark border-editorial-accent;
   }
 
-  /* Section Styling */
+  /* Section Styling - Editorial Maximalism */
   .section-hero {
-    @apply py-20 lg:py-32 bg-gradient-to-b from-warm-white to-paper-cream/50;
+    @apply py-24 lg:py-40 bg-gradient-to-br from-newsprint via-warm-white to-paper-cream relative;
+    background-image: 
+      radial-gradient(circle at 20% 20%, rgba(22, 33, 48, 0.03) 0%, transparent 50%),
+      radial-gradient(circle at 80% 80%, rgba(168, 50, 50, 0.02) 0%, transparent 50%);
+  }
+
+  .section-breaking {
+    @apply py-16 lg:py-20 bg-gradient-to-r from-editorial-orange via-editorial-accent to-editorial-orange 
+           text-white relative overflow-hidden;
+  }
+
+  .section-breaking::before {
+    content: '';
+    @apply absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent;
+    animation: shimmer 3s infinite;
   }
 
   .section-content {
-    @apply py-16 lg:py-24;
+    @apply py-20 lg:py-32;
   }
 
   .section-feature {
-    @apply py-20 lg:py-28 bg-paper-cream;
+    @apply py-24 lg:py-36 bg-gradient-to-br from-paper-cream via-newsprint to-warm-white relative;
+    background-image: 
+      linear-gradient(45deg, rgba(22, 33, 48, 0.02) 25%, transparent 25%),
+      linear-gradient(-45deg, rgba(22, 33, 48, 0.02) 25%, transparent 25%);
+    background-size: 60px 60px;
+  }
+
+  .section-data {
+    @apply py-20 lg:py-32 bg-white border-y-4 border-editorial-ink relative;
   }
 
   .section-dark {
-    @apply py-20 lg:py-28 bg-editorial-dark text-white;
+    @apply py-24 lg:py-36 bg-gradient-to-br from-editorial-ink via-editorial-dark to-editorial-navy text-white relative;
+    background-image: 
+      radial-gradient(circle at 30% 40%, rgba(0, 122, 255, 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 70% 80%, rgba(218, 165, 32, 0.05) 0%, transparent 50%);
+  }
+
+  .section-terminal {
+    @apply py-16 lg:py-24 bg-editorial-ink text-editorial-electric relative;
+    background-image: 
+      repeating-linear-gradient(90deg, transparent, transparent 98px, rgba(0, 122, 255, 0.03) 100px);
   }
 
   /* Dividers & Separators */
@@ -354,18 +496,113 @@
   }
 
   /* Color Utilities */
+  .text-editorial-ink { @apply text-editorial-ink; }
   .text-editorial-dark { @apply text-editorial-dark; }
   .text-editorial-gray { @apply text-editorial-gray; }
   .text-editorial-accent { @apply text-editorial-accent; }
   .text-editorial-gold { @apply text-editorial-gold; }
+  .text-editorial-orange { @apply text-editorial-orange; }
   .text-editorial-forest { @apply text-editorial-forest; }
   .text-editorial-navy { @apply text-editorial-navy; }
+  .text-editorial-electric { @apply text-editorial-electric; }
   
   .bg-warm-white { @apply bg-warm-white; }
   .bg-paper-cream { @apply bg-paper-cream; }
+  .bg-newsprint { @apply bg-newsprint; }
+  .bg-editorial-ink { @apply bg-editorial-ink; }
   .bg-editorial-dark { @apply bg-editorial-dark; }
   .bg-editorial-accent { @apply bg-editorial-accent; }
   .bg-editorial-gold { @apply bg-editorial-gold; }
+  .bg-editorial-orange { @apply bg-editorial-orange; }
+  .bg-editorial-forest { @apply bg-editorial-forest; }
+  .bg-editorial-navy { @apply bg-editorial-navy; }
+  .bg-editorial-electric { @apply bg-editorial-electric; }
+
+  /* Animation Utilities */
+  @keyframes shimmer {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+  }
+
+  @keyframes typewriter {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+
+  @keyframes slideInFromLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes slideInFromRight {
+    0% {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes scaleIn {
+    0% {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  .animate-typewriter {
+    overflow: hidden;
+    border-right: 2px solid;
+    white-space: nowrap;
+    animation: typewriter 2s steps(40, end), blink-caret 0.75s step-end infinite;
+  }
+
+  .animate-slide-in-left {
+    animation: slideInFromLeft 0.8s ease-out forwards;
+  }
+
+  .animate-slide-in-right {
+    animation: slideInFromRight 0.8s ease-out forwards;
+  }
+
+  .animate-fade-in-up {
+    animation: fadeInUp 0.6s ease-out forwards;
+  }
+
+  .animate-scale-in {
+    animation: scaleIn 0.5s ease-out forwards;
+  }
+
+  .animate-delay-100 { animation-delay: 0.1s; }
+  .animate-delay-200 { animation-delay: 0.2s; }
+  .animate-delay-300 { animation-delay: 0.3s; }
+  .animate-delay-400 { animation-delay: 0.4s; }
+  .animate-delay-500 { animation-delay: 0.5s; }
+  .animate-delay-700 { animation-delay: 0.7s; }
+  .animate-delay-1000 { animation-delay: 1s; }
 
   /* Typography Utilities */
   .font-display { font-family: var(--font-display); }
