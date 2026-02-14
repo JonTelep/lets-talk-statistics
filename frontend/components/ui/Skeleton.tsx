@@ -8,13 +8,15 @@
 
 interface SkeletonProps {
   className?: string;
+  style?: React.CSSProperties;
 }
 
 // Base skeleton element with shimmer animation
-export function Skeleton({ className = '' }: SkeletonProps) {
+export function Skeleton({ className = '', style }: SkeletonProps) {
   return (
     <div
       className={`animate-shimmer bg-gradient-to-r from-gray-200 via-gray-100 to-gray-200 bg-[length:200%_100%] rounded ${className}`}
+      style={style}
     />
   );
 }

@@ -1,6 +1,6 @@
 'use client';
 
-import { lazy, Suspense } from 'react';
+import { lazy, Suspense, ComponentType } from 'react';
 import { ChartSkeleton } from '../ui/ChartSkeleton';
 
 // Lazy load the BarChart component
@@ -16,24 +16,31 @@ const BarChartComponent = lazy(() =>
   }))
 );
 
+// Type helper for lazy loaded recharts components
+const createLazyComponent = <T,>(
+  loader: () => Promise<{ default: T }>
+): ComponentType<any> => {
+  return lazy(loader as any) as unknown as ComponentType<any>;
+};
+
 // Lazy load individual chart elements
-export const LazyBar = lazy(() => 
+export const LazyBar = createLazyComponent(() => 
   import('recharts').then(module => ({ default: module.Bar }))
 );
 
-export const LazyXAxis = lazy(() => 
+export const LazyXAxis = createLazyComponent(() => 
   import('recharts').then(module => ({ default: module.XAxis }))
 );
 
-export const LazyYAxis = lazy(() => 
+export const LazyYAxis = createLazyComponent(() => 
   import('recharts').then(module => ({ default: module.YAxis }))
 );
 
-export const LazyCartesianGrid = lazy(() => 
+export const LazyCartesianGrid = createLazyComponent(() => 
   import('recharts').then(module => ({ default: module.CartesianGrid }))
 );
 
-export const LazyTooltip = lazy(() => 
+export const LazyTooltip = createLazyComponent(() => 
   import('recharts').then(module => ({ default: module.Tooltip }))
 );
 

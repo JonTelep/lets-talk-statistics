@@ -2,6 +2,16 @@
 
 ## 🚀 High Priority
 
+### Revenue Features (In Progress - PR #32)
+- [x] Create pricing page with freemium tiers
+- [x] Add premium export component (CSV/Excel/PDF)
+- [x] Add upgrade banner components
+- [x] Add Pro badge to navigation
+- [ ] Integrate NextAuth.js for user authentication
+- [ ] Add Stripe payment integration
+- [ ] Implement subscription management
+- [ ] Add usage tracking and limits
+
 ### Congress Page Enhancements
 - [ ] Add callout: "This data is powered by the Capitol Trades API - free to use!"
 - [ ] Add "Get API Access" button linking to telep.io/pricing
@@ -21,6 +31,12 @@
 
 ## 📈 Medium Priority
 
+### Premium Features (Post-Auth)
+- [ ] Custom dashboard builder
+- [ ] Email alerts for key indicators
+- [ ] API access with rate limiting
+- [ ] Historical data access controls
+
 ### UI/UX
 - [ ] Social sharing buttons on each page
 - [ ] Mobile responsiveness polish
@@ -32,7 +48,6 @@
 
 ## 🔧 Low Priority
 - [ ] User analytics/tracking
-- [ ] Data export functionality
 - [ ] User favorites/bookmarks
 - [ ] Theme selector (bold editorial, clean minimal, dark terminal)
 
@@ -47,3 +62,7 @@
 - [x] Mobile horizontal scroll fix
 - [x] CORS configuration for production
 - [x] Theme toggle integrated into navbar
+- [x] Pricing page with Free/Pro/Enterprise tiers (PR #32)
+- [x] Premium export component with upgrade prompts (PR #32)
+- [x] Upgrade banners (inline, sticky, card variants) (PR #32)
+- [x] Fixed TypeScript issues with lazy chart components (PR #32)
