@@ -315,7 +315,7 @@ function DebtPageContent() {
               <LazyYAxis 
                 stroke="#6b7280"
                 fontSize={12}
-                tickFormatter={(value) => `$${value}T`}
+                tickFormatter={(value: any) => `$${value}T`}
               />
               <LazyTooltip
                 contentStyle={{
@@ -324,7 +324,7 @@ function DebtPageContent() {
                   borderRadius: '8px',
                   boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)',
                 }}
-                formatter={(value: number) => [`$${value.toFixed(2)}T`, 'Total Debt']}
+                formatter={(value: any) => [`$${Number(value).toFixed(2)}T`, 'Total Debt']}
               />
               <LazyLine
                 type="monotone"
@@ -472,7 +472,7 @@ function DebtPageContent() {
                       border: '1px solid #e5e7eb',
                       borderRadius: '8px',
                     }}
-                    formatter={(value: number) => [`$${value}T`, 'Amount']}
+                    formatter={(value: any) => [`$${value}T`, 'Amount']}
                   />
                 </LazyPieChart>
                 {/* Legend as list */}

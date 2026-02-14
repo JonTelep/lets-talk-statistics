@@ -235,7 +235,7 @@ function EmploymentPageContent() {
                 stroke="#6b7280"
                 fontSize={12}
                 interval="preserveStartEnd"
-                tickFormatter={(value) => {
+                tickFormatter={(value: any) => {
                   // Shorten month names for readability
                   const parts = value.split(' ');
                   return parts[0].substring(0, 3) + ' ' + parts[1]?.substring(2);
@@ -245,7 +245,7 @@ function EmploymentPageContent() {
                 stroke="#6b7280"
                 fontSize={12}
                 domain={['dataMin - 0.5', 'dataMax + 0.5']}
-                tickFormatter={(value) => `${value}%`}
+                tickFormatter={(value: any) => `${value}%`}
               />
               <LazyTooltip
                 contentStyle={{
@@ -254,7 +254,7 @@ function EmploymentPageContent() {
                   borderRadius: '8px',
                   boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)',
                 }}
-                formatter={(value: number) => [`${value}%`, 'Unemployment Rate']}
+                formatter={(value: any) => [`${value}%`, 'Unemployment Rate']}
               />
               <LazyLine
                 type="monotone"
@@ -370,7 +370,7 @@ function EmploymentPageContent() {
                     type="number" 
                     stroke="#6b7280" 
                     fontSize={12}
-                    tickFormatter={(value) => `+${(value / 1000).toFixed(0)}k`}
+                    tickFormatter={(value: any) => `+${(value / 1000).toFixed(0)}k`}
                   />
                   <LazyYAxis 
                     dataKey="name" 
@@ -385,8 +385,8 @@ function EmploymentPageContent() {
                       border: '1px solid #e5e7eb',
                       borderRadius: '8px',
                     }}
-                    formatter={(value: number, name: string, props: any) => [
-                      `+${value.toLocaleString()} jobs`,
+                    formatter={(value: any, name: any, props: any) => [
+                      `+${Number(value).toLocaleString()} jobs`,
                       props.payload.fullName
                     ]}
                   />

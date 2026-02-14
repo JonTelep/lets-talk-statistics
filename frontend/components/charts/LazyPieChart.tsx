@@ -17,16 +17,19 @@ const PieChartComponent = lazy(() =>
 );
 
 // Lazy load individual chart elements
-export const LazyPie = lazy(() => 
-  import('recharts').then(module => ({ default: module.Pie }))
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export const LazyPie: any = lazy(() =>
+  import('recharts').then(module => ({ default: module.Pie as any }))
 );
 
-export const LazyCell = lazy(() => 
-  import('recharts').then(module => ({ default: module.Cell }))
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export const LazyCell: any = lazy(() =>
+  import('recharts').then(module => ({ default: module.Cell as any }))
 );
 
-export const LazyLegend = lazy(() => 
-  import('recharts').then(module => ({ default: module.Legend }))
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export const LazyLegend: any = lazy(() =>
+  import('recharts').then(module => ({ default: module.Legend as any }))
 );
 
 interface LazyPieChartProps {

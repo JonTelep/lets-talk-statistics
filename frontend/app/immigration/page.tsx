@@ -169,12 +169,12 @@ function ImmigrationPageContent() {
                     dataKey="year" 
                     stroke="#6b7280"
                     fontSize={12}
-                    tickFormatter={(value) => value.replace('FY ', "'")}
+                    tickFormatter={(value: any) => value.replace('FY ', "'")}
                   />
                   <LazyYAxis 
                     stroke="#6b7280"
                     fontSize={12}
-                    tickFormatter={(value) => `${(value / 1000000).toFixed(1)}M`}
+                    tickFormatter={(value: any) => `${(value / 1000000).toFixed(1)}M`}
                   />
                   <LazyTooltip
                     contentStyle={{
@@ -183,15 +183,15 @@ function ImmigrationPageContent() {
                       borderRadius: '8px',
                       boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)',
                     }}
-                    formatter={(value: number, name: string) => [
-                      value.toLocaleString(),
-                      name === 'admissions' ? 'Legal Admissions' : 
+                    formatter={(value: any, name: any) => [
+                      Number(value).toLocaleString(),
+                      name === 'admissions' ? 'Legal Admissions' :
                       name === 'removals' ? 'Deportations' : 'Border Encounters'
                     ]}
                   />
                   <LazyLegend 
-                    formatter={(value) => 
-                      value === 'admissions' ? 'Legal Admissions' : 
+                    formatter={(value: any) =>
+                      value === 'admissions' ? 'Legal Admissions' :
                       value === 'removals' ? 'Deportations' : 'Border Encounters'
                     }
                   />

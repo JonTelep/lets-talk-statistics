@@ -190,12 +190,12 @@ function BudgetPageContent() {
                 dataKey="year" 
                 stroke="#6b7280"
                 fontSize={12}
-                tickFormatter={(value) => value.replace('FY ', "'")}
+                tickFormatter={(value: any) => value.replace('FY ', "'")}
               />
               <LazyYAxis 
                 stroke="#6b7280"
                 fontSize={12}
-                tickFormatter={(value) => `$${value}T`}
+                tickFormatter={(value: any) => `$${value}T`}
               />
               <LazyTooltip
                 contentStyle={{
