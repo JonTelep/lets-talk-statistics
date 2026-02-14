@@ -17,8 +17,9 @@ const LineChartComponent = lazy(() =>
 );
 
 // Lazy load the Line element
-export const LazyLine = lazy(() => 
-  import('recharts').then(module => ({ default: module.Line }))
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export const LazyLine: any = lazy(() =>
+  import('recharts').then(module => ({ default: module.Line as any }))
 );
 
 interface LazyLineChartProps {

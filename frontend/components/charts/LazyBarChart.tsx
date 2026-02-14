@@ -17,24 +17,29 @@ const BarChartComponent = lazy(() =>
 );
 
 // Lazy load individual chart elements
-export const LazyBar = lazy(() => 
-  import('recharts').then(module => ({ default: module.Bar }))
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export const LazyBar: any = lazy(() =>
+  import('recharts').then(module => ({ default: module.Bar as any }))
 );
 
-export const LazyXAxis = lazy(() => 
-  import('recharts').then(module => ({ default: module.XAxis }))
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export const LazyXAxis: any = lazy(() =>
+  import('recharts').then(module => ({ default: module.XAxis as any }))
 );
 
-export const LazyYAxis = lazy(() => 
-  import('recharts').then(module => ({ default: module.YAxis }))
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export const LazyYAxis: any = lazy(() =>
+  import('recharts').then(module => ({ default: module.YAxis as any }))
 );
 
-export const LazyCartesianGrid = lazy(() => 
-  import('recharts').then(module => ({ default: module.CartesianGrid }))
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export const LazyCartesianGrid: any = lazy(() =>
+  import('recharts').then(module => ({ default: module.CartesianGrid as any }))
 );
 
-export const LazyTooltip = lazy(() => 
-  import('recharts').then(module => ({ default: module.Tooltip }))
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export const LazyTooltip: any = lazy(() =>
+  import('recharts').then(module => ({ default: module.Tooltip as any }))
 );
 
 interface LazyBarChartProps {

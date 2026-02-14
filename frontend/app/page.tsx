@@ -1,188 +1,277 @@
 import Link from 'next/link';
-import { BarChart3, TrendingUp, Users, DollarSign, Briefcase, Building2, ArrowRight, Vote, Shield, Target, Eye } from 'lucide-react';
+import { 
+  Activity, TrendingUp, Users, DollarSign, Briefcase, Building2, 
+  ArrowRight, Vote, Shield, Target, Eye, Zap, Radar, Terminal,
+  Satellite, BarChart3, PieChart, LineChart, Database
+} from 'lucide-react';
 
-const categories = [
+const missionCategories = [
   {
-    name: 'Congressional Trading',
-    description: 'Stock trades by members of Congress under STOCK Act disclosures.',
+    name: 'CONGRESSIONAL TRADING',
+    designation: 'CT-001',
+    description: 'Monitor real-time stock transactions by legislative personnel under STOCK Act protocols.',
     href: '/congress',
     icon: TrendingUp,
-    stats: '435+ Members • Real-time Trades • Performance Tracking',
-    priority: 'high',
+    stats: '435+ TRACKED • REAL-TIME • PERFORMANCE ANALYSIS',
+    priority: 'critical',
+    status: 'online',
   },
   {
-    name: 'Immigration',
-    description: 'Legal immigration, deportations, and border encounter statistics.',
+    name: 'IMMIGRATION TRACKING',
+    designation: 'IT-002', 
+    description: 'DHS data stream analysis: legal migration, deportation metrics, border encounter statistics.',
     href: '/immigration',
     icon: Users,
-    stats: 'DHS Data • Historical Trends • Country Breakdown',
-    priority: 'medium',
+    stats: 'DHS FEED • HISTORICAL ANALYTICS • GEOGRAPHIC BREAKDOWN',
+    priority: 'high',
+    status: 'online',
   },
   {
-    name: 'Federal Budget',
-    description: 'Government spending, revenue, and deficit tracking by agency.',
+    name: 'FEDERAL BUDGET',
+    designation: 'FB-003',
+    description: 'USASpending.gov integration: expenditure tracking, agency allocation, deficit monitoring.',
     href: '/budget',
     icon: DollarSign,
-    stats: 'USASpending.gov • Agency Breakdown • Historical Data',
-    priority: 'high',
+    stats: 'TREASURY FEED • AGENCY BREAKDOWN • FISCAL ANALYTICS',
+    priority: 'critical',
+    status: 'online',
   },
   {
-    name: 'Employment',
-    description: 'Unemployment rates, job growth, and labor force statistics.',
+    name: 'EMPLOYMENT METRICS',
+    designation: 'EM-004',
+    description: 'Bureau of Labor Statistics pipeline: unemployment rates, job growth, workforce analytics.',
     href: '/employment',
     icon: Briefcase,
-    stats: 'BLS Data • State Rankings • Monthly Updates',
-    priority: 'medium',
+    stats: 'BLS DATA • STATE RANKINGS • MONTHLY UPDATES',
+    priority: 'standard',
+    status: 'online',
   },
   {
-    name: 'National Debt',
-    description: 'Federal debt tracking, who holds our debt, and historical growth.',
+    name: 'NATIONAL DEBT',
+    designation: 'ND-005',
+    description: 'Treasury fiscal data: debt tracking, creditor analysis, historical growth patterns.',
     href: '/debt',
     icon: Building2,
-    stats: 'Treasury Data • Real-time • Debt Holders',
-    priority: 'high',
+    stats: 'TREASURY DIRECT • REAL-TIME • CREDITOR TRACKING',
+    priority: 'critical',
+    status: 'online',
   },
   {
-    name: 'Election Funding',
-    description: 'How the two-party system is rigged against third parties. The data speaks for itself.',
+    name: 'ELECTION FUNDING',
+    designation: 'EF-006',
+    description: 'FEC database analysis: campaign finance tracking, two-party system metrics.',
     href: '/elections',
     icon: Vote,
-    stats: 'FEC Data • Public Funding • Ballot Access',
-    priority: 'medium',
+    stats: 'FEC DATABASE • PUBLIC FUNDING • BALLOT ACCESS',
+    priority: 'standard',
+    status: 'online',
   },
 ];
 
 export default function Home() {
   return (
-    <div className="flex flex-col">
-      {/* Hero Section - Federal Brutalism Style */}
-      <section className="relative bg-federal-gradient text-white overflow-hidden">
-        {/* Geometric background pattern */}
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-0 left-0 w-96 h-96 border-4 border-white transform -rotate-12 -translate-x-48 -translate-y-48"></div>
-          <div className="absolute top-1/2 right-0 w-64 h-64 border-4 border-federal-gold-400 transform rotate-45 translate-x-32"></div>
-          <div className="absolute bottom-0 left-1/3 w-80 h-80 border-4 border-federal-red-400 transform -rotate-6 translate-y-40"></div>
+    <div className="flex flex-col min-h-screen">
+      {/* Mission Control Header */}
+      <section className="relative bg-space-gradient text-white overflow-hidden min-h-screen flex items-center">
+        {/* Animated background grid */}
+        <div className="absolute inset-0 hex-grid opacity-30"></div>
+        
+        {/* Floating geometric elements */}
+        <div className="absolute inset-0 overflow-hidden">
+          <div className="absolute top-1/4 left-10 w-32 h-32 border-2 border-neon-cyan-400 transform rotate-45 animate-mission-pulse"></div>
+          <div className="absolute top-1/2 right-20 w-24 h-24 border-2 border-cyber-orange-400 transform -rotate-12 animation-delay-1000"></div>
+          <div className="absolute bottom-1/4 left-1/2 w-40 h-40 border border-radar-green-400 transform rotate-12 animation-delay-2000"></div>
+          
+          {/* Mission patches */}
+          <div className="absolute top-20 right-10 w-16 h-16 bg-steel-gray-800 border border-console-amber-400 rotate-12 flex items-center justify-center">
+            <Satellite className="h-8 w-8 text-console-amber-400" />
+          </div>
+          <div className="absolute bottom-20 left-20 w-20 h-20 bg-space-navy-900 border border-neon-cyan-400 -rotate-6 flex items-center justify-center">
+            <Radar className="h-10 w-10 text-neon-cyan-400" />
+          </div>
         </div>
         
-        <div className="relative mx-auto max-w-7xl px-4 py-24 sm:px-6 lg:px-8">
-          <div className="max-w-4xl">
-            {/* Badge */}
-            <div className="inline-flex items-center gap-2 bg-federal-gold-400 text-federal-navy-900 px-4 py-2 text-sm font-bold uppercase tracking-wider mb-8 shadow-brutal-gold">
-              <Shield className="h-4 w-4" />
-              Official Government Data
+        <div className="relative mx-auto max-w-7xl px-4 py-24 sm:px-6 lg:px-8 z-10">
+          <div className="max-w-5xl">
+            {/* Mission Badge */}
+            <div className="inline-flex items-center gap-3 bg-steel-gray-900 border border-neon-cyan-400 px-6 py-3 text-sm font-bold uppercase tracking-wider mb-8 panel-nasa">
+              <div className="status-online"></div>
+              <Terminal className="h-4 w-4 text-neon-cyan-400" />
+              <span className="terminal-text">MISSION: DATA TRANSPARENCY</span>
             </div>
             
-            {/* Main heading */}
-            <h1 className="text-6xl sm:text-7xl lg:text-8xl font-serif font-bold tracking-tight mb-8 leading-none text-white">
-              LET'S TALK
-              <br />
-              <span className="text-federal-gold-400">STATISTICS</span>
+            {/* Main Display */}
+            <h1 className="font-display text-display font-black tracking-tight mb-8 leading-none">
+              <span className="block">LET'S TALK</span>
+              <span className="block holo-text">STATISTICS</span>
             </h1>
             
-            {/* Subtitle with angular design */}
-            <div className="relative mb-12">
-              <div className="absolute -inset-4 bg-federal-red-600 transform -skew-x-12 -z-10"></div>
-              <p className="relative text-xl sm:text-2xl font-sans font-semibold uppercase tracking-wide px-4 py-6 text-white">
-                Government data without the spin.
-                <br />
-                No agenda. Just numbers.
-              </p>
+            {/* Mission Statement Panel */}
+            <div className="panel-console p-8 mb-12 relative overflow-hidden">
+              <div className="absolute top-0 left-0 right-0 h-px bg-console-amber-400 data-stream"></div>
+              <div className="flex items-start gap-4">
+                <div className="flex-shrink-0">
+                  <div className="w-12 h-12 bg-console-amber-400 flex items-center justify-center">
+                    <Shield className="h-6 w-6 text-space-navy-950" />
+                  </div>
+                </div>
+                <div>
+                  <p className="mission-text text-xl mb-4">
+                    OBJECTIVE: GOVERNMENT DATA WITHOUT SPIN
+                  </p>
+                  <p className="text-lg text-neon-cyan-200 leading-relaxed">
+                    Direct access to official U.S. government statistical databases. 
+                    Zero editorial interpretation. Zero agenda. Pure data analysis 
+                    for democratic transparency.
+                  </p>
+                </div>
+              </div>
             </div>
             
-            {/* Description */}
-            <p className="text-lg text-federal-navy-100 max-w-2xl mb-12 leading-relaxed">
-              Explore congressional trading, federal spending, national debt, employment data, 
-              immigration statistics, and election funding — all sourced directly from 
-              official U.S. government agencies.
-            </p>
-            
-            {/* CTA Buttons */}
-            <div className="flex flex-wrap gap-4">
-              <Link href="/debt" className="btn-federal-accent">
-                <DollarSign className="h-5 w-5 mr-2" />
-                National Debt
+            {/* Launch Controls */}
+            <div className="flex flex-wrap gap-6">
+              <Link href="/debt" className="btn-mission group">
+                <Building2 className="h-5 w-5 mr-3" />
+                <span>INITIATE: DEBT ANALYSIS</span>
+                <ArrowRight className="h-5 w-5 ml-3 group-hover:translate-x-1 transition-transform" />
               </Link>
-              <Link href="/congress" className="btn-federal-outline">
-                <TrendingUp className="h-5 w-5 mr-2" />
-                Congressional Trading
+              <Link href="/congress" className="btn-console group">
+                <TrendingUp className="h-5 w-5 mr-3" />
+                <span>MONITOR: CONGRESSIONAL TRADING</span>
+                <ArrowRight className="h-5 w-5 ml-3 group-hover:translate-x-1 transition-transform" />
               </Link>
             </div>
           </div>
         </div>
         
-        {/* Bottom geometric accent */}
-        <div className="absolute bottom-0 left-0 right-0 h-8 bg-federal-gold-500 transform -skew-y-1 origin-bottom-left"></div>
+        {/* Status bar at bottom */}
+        <div className="absolute bottom-0 left-0 right-0 bg-steel-gray-900 border-t border-neon-cyan-400 p-4">
+          <div className="mx-auto max-w-7xl flex items-center justify-between text-sm">
+            <div className="flex items-center gap-6">
+              <div className="flex items-center gap-2">
+                <div className="w-2 h-2 bg-radar-green-400 rounded-full animate-status-blink"></div>
+                <span className="terminal-text">SYSTEM STATUS: OPERATIONAL</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <Database className="h-4 w-4 text-console-amber-400" />
+                <span className="terminal-text">DATA FEEDS: 6 ACTIVE</span>
+              </div>
+            </div>
+            <div className="terminal-text">
+              MISSION TIME: {new Date().toLocaleTimeString()} UTC
+            </div>
+          </div>
+        </div>
       </section>
 
-      {/* Categories Grid - Brutalist Data Sections */}
-      <section className="bg-gray-100 py-20 px-4 sm:px-6 lg:px-8">
+      {/* Mission Control Console - Data Categories */}
+      <section className="bg-space-navy-950 py-20 px-4 sm:px-6 lg:px-8 relative matrix-bg">
         <div className="mx-auto max-w-7xl">
-          {/* Section Header */}
+          {/* Control Panel Header */}
           <div className="mb-16">
-            <div className="flex items-center gap-4 mb-6">
-              <div className="w-12 h-1 bg-federal-red-600"></div>
-              <h2 className="heading-hero">DATA CATEGORIES</h2>
+            <div className="panel-nasa p-8 relative">
+              <div className="absolute top-0 left-0 right-0 h-px bg-neon-cyan-400 animate-data-flow"></div>
+              <div className="flex items-center gap-4 mb-6">
+                <div className="w-16 h-16 bg-neon-cyan-400 flex items-center justify-center">
+                  <BarChart3 className="h-8 w-8 text-space-navy-950" />
+                </div>
+                <div>
+                  <h2 className="heading-hero mb-2">MISSION DASHBOARD</h2>
+                  <p className="terminal-text">ACCESS GOVERNMENT DATA STREAMS</p>
+                </div>
+              </div>
+              <p className="text-xl text-neon-cyan-200 max-w-4xl font-medium">
+                Each mission module provides direct pipeline access to official U.S. government data sources. 
+                No interpretation algorithms. No manipulation protocols. Pure statistical analysis for democratic oversight.
+              </p>
             </div>
-            <p className="text-xl text-federal-charcoal-600 max-w-3xl font-medium">
-              Each category represents a direct pipeline to official U.S. government data sources. 
-              No interpretation. No manipulation. Pure statistical analysis.
-            </p>
           </div>
 
-          {/* Grid of data categories */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-0 stagger-children">
-            {categories.map((category, index) => {
-              const Icon = category.icon;
-              const isHighPriority = category.priority === 'high';
+          {/* Mission Modules Grid */}
+          <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-8">
+            {missionCategories.map((mission, index) => {
+              const Icon = mission.icon;
+              const isCritical = mission.priority === 'critical';
               
               return (
-                <Link key={category.name} href={category.href} className="group block">
+                <Link key={mission.name} href={mission.href} className="group block">
                   <div className={`
-                    ${isHighPriority ? 'card-federal-accent' : 'card-federal'} 
-                    h-full p-0 transition-all duration-300 group-hover:z-10 relative
+                    ${isCritical ? 'panel-console' : 'panel-nasa'} 
+                    h-full p-0 transition-all duration-300 group-hover:scale-105 relative overflow-hidden
                     ${index % 2 === 0 ? 'lg:translate-y-4' : ''}
                   `}>
-                    {/* Header section with icon */}
-                    <div className={`
-                      ${isHighPriority 
-                        ? 'bg-federal-red-600 text-white' 
-                        : 'bg-federal-navy-900 text-white'
-                      } 
-                      p-6 flex items-center justify-between
-                    `}>
-                      <Icon className="h-8 w-8" />
-                      <div className="text-right">
-                        <div className={`
-                          w-6 h-6 border-2 
-                          ${isHighPriority ? 'border-white' : 'border-federal-gold-400'}
-                        `}></div>
-                      </div>
+                    {/* Status indicator */}
+                    <div className="absolute top-4 right-4 flex items-center gap-2">
+                      <div className={`w-2 h-2 rounded-full animate-status-blink ${
+                        isCritical ? 'bg-cyber-orange-400' : 'bg-radar-green-400'
+                      }`}></div>
+                      <span className="text-xs terminal-text">{mission.status.toUpperCase()}</span>
                     </div>
                     
-                    {/* Content */}
-                    <div className="p-6 space-y-4">
-                      <div className="flex items-start justify-between">
-                        <h3 className="text-xl font-serif font-semibold text-federal-navy-900 group-hover:text-federal-red-600 transition-colors leading-tight">
-                          {category.name}
-                        </h3>
-                        <ArrowRight className="h-5 w-5 text-federal-charcoal-400 group-hover:text-federal-red-600 group-hover:translate-x-1 transition-all mt-1 flex-shrink-0" />
+                    {/* Mission designation header */}
+                    <div className={`
+                      ${isCritical 
+                        ? 'bg-cyber-orange-600 text-space-navy-950' 
+                        : 'bg-neon-cyan-600 text-space-navy-950'
+                      } 
+                      p-6 relative overflow-hidden
+                    `}>
+                      <div className="flex items-center justify-between">
+                        <div className="flex items-center gap-3">
+                          <Icon className="h-8 w-8" />
+                          <div>
+                            <div className="font-display font-bold text-lg">
+                              {mission.designation}
+                            </div>
+                          </div>
+                        </div>
                       </div>
                       
-                      <p className="text-federal-charcoal-600 text-sm leading-relaxed">
-                        {category.description}
+                      {/* Scanning line effect */}
+                      <div className="absolute bottom-0 left-0 right-0 h-px bg-white animate-data-flow"></div>
+                    </div>
+                    
+                    {/* Mission details */}
+                    <div className="p-6 space-y-4 relative">
+                      <div className="flex items-start justify-between gap-4">
+                        <h3 className="heading-section text-lg group-hover:text-cyber-orange-400 transition-colors leading-tight">
+                          {mission.name}
+                        </h3>
+                        <div className={`
+                          w-8 h-8 border-2 flex items-center justify-center 
+                          ${isCritical ? 'border-cyber-orange-400' : 'border-neon-cyan-400'}
+                          group-hover:rotate-90 transition-transform
+                        `}>
+                          <ArrowRight className={`h-4 w-4 ${
+                            isCritical ? 'text-cyber-orange-400' : 'text-neon-cyan-400'
+                          }`} />
+                        </div>
+                      </div>
+                      
+                      <p className="text-neon-cyan-200 text-sm leading-relaxed font-medium">
+                        {mission.description}
                       </p>
                       
-                      {/* Stats with data styling */}
-                      <div className="pt-3 border-t border-federal-charcoal-200">
-                        <p className="data-label text-xs">
-                          {category.stats}
+                      {/* Technical specs */}
+                      <div className="pt-4 border-t border-steel-gray-700">
+                        <div className="flex items-center gap-2 mb-2">
+                          <Terminal className="h-3 w-3 text-console-amber-400" />
+                          <span className="data-label text-xs">TECHNICAL SPECIFICATIONS</span>
+                        </div>
+                        <p className="terminal-text text-xs">
+                          {mission.stats}
                         </p>
                       </div>
                     </div>
                     
                     {/* Priority indicator */}
-                    {isHighPriority && (
-                      <div className="absolute top-0 right-0 w-0 h-0 border-l-[20px] border-l-transparent border-t-[20px] border-t-federal-gold-500"></div>
+                    {isCritical && (
+                      <div className="absolute top-0 right-0">
+                        <div className="w-0 h-0 border-l-[30px] border-l-transparent border-t-[30px] border-t-cyber-orange-400"></div>
+                        <div className="absolute top-1 right-1">
+                          <Zap className="h-4 w-4 text-space-navy-950" />
+                        </div>
+                      </div>
                     )}
                   </div>
                 </Link>
@@ -190,319 +279,371 @@ export default function Home() {
             })}
           </div>
           
-          {/* Additional info */}
+          {/* System verification */}
           <div className="mt-16 text-center">
-            <div className="inline-flex items-center gap-3 bg-white border border-federal-charcoal-300 px-6 py-4 shadow-brutal">
-              <Target className="h-5 w-5 text-federal-red-600" />
-              <span className="font-sans font-semibold text-federal-charcoal-800 uppercase tracking-wide text-sm">
-                All data sourced from official U.S. government agencies
-              </span>
+            <div className="inline-flex items-center gap-4 panel-nasa p-6">
+              <Target className="h-6 w-6 text-radar-green-400" />
+              <div className="text-left">
+                <div className="mission-text text-lg mb-1">
+                  ALL DATA VERIFIED AGAINST SOURCE
+                </div>
+                <div className="terminal-text text-sm">
+                  Direct integration with official U.S. government databases
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Philosophy Section - Government Principles */}
-      <section className="bg-white py-20 px-4 sm:px-6 lg:px-8 relative">
-        {/* Geometric accent */}
-        <div className="absolute top-0 left-0 right-0 h-4 bg-federal-gold-500 transform skew-y-1 origin-top-left"></div>
+      {/* NASA Mission Philosophy */}
+      <section className="bg-steel-gray-900 py-20 px-4 sm:px-6 lg:px-8 relative">
+        {/* Circuit board background pattern */}
+        <div className="absolute inset-0 circuit-bg opacity-20"></div>
         
-        <div className="mx-auto max-w-6xl">
+        <div className="relative mx-auto max-w-7xl">
           <div className="text-center mb-16">
-            <h2 className="heading-hero mb-6">OPERATIONAL PRINCIPLES</h2>
-            <div className="w-24 h-1 bg-federal-red-600 mx-auto"></div>
+            <h2 className="heading-hero mb-6 glow-cyan">MISSION PARAMETERS</h2>
+            <div className="w-32 h-1 bg-neon-cyan-400 mx-auto shadow-neon-cyan"></div>
           </div>
           
-          <div className="grid md:grid-cols-3 gap-0">
-            {/* Data First */}
-            <div className="card-federal p-8 md:p-10 group">
-              <div className="flex items-center justify-between mb-6">
-                <div className="w-16 h-16 bg-federal-navy-900 border-4 border-federal-gold-400 flex items-center justify-center">
-                  <BarChart3 className="h-8 w-8 text-white" />
+          <div className="grid md:grid-cols-3 gap-8">
+            {/* Data First Protocol */}
+            <div className="panel-radar p-8 group relative">
+              <div className="absolute top-4 right-4">
+                <div className="text-xs terminal-text">PROTOCOL 01</div>
+              </div>
+              
+              <div className="flex items-center gap-4 mb-6">
+                <div className="w-16 h-16 bg-radar-green-400 flex items-center justify-center relative">
+                  <Database className="h-8 w-8 text-space-navy-950" />
+                  <div className="absolute inset-0 border border-radar-green-600 animate-mission-pulse"></div>
                 </div>
-                <div className="text-right">
-                  <span className="data-label">01</span>
+                <div>
+                  <h3 className="heading-section text-radar-green-400 mb-1">
+                    DATA FIRST
+                  </h3>
+                  <div className="terminal-text text-xs">PRIMARY DIRECTIVE</div>
                 </div>
               </div>
               
-              <h3 className="text-xl font-serif font-semibold text-federal-navy-900 mb-4 uppercase tracking-wide">
-                Data First
-              </h3>
-              <p className="text-federal-charcoal-600 leading-relaxed">
-                Raw numbers from official government sources. No cherry-picking, 
-                no selective framing, no editorial interpretation.
+              <p className="text-neon-cyan-200 leading-relaxed mb-6">
+                Raw statistical feeds from official government databases. 
+                Zero algorithmic interpretation. Zero editorial modification. 
+                Zero selective data filtering.
               </p>
               
-              <div className="mt-6 pt-4 border-t-2 border-federal-charcoal-200">
-                <span className="text-xs font-mono text-federal-charcoal-500 uppercase tracking-widest">
-                  Source → Display → Analysis
-                </span>
+              <div className="pt-4 border-t border-radar-green-600">
+                <div className="terminal-text text-xs">
+                  <span className="text-radar-green-400">$</span> SOURCE → DISPLAY → ANALYSIS
+                </div>
               </div>
             </div>
             
-            {/* Unbiased */}
-            <div className="card-federal p-8 md:p-10 group md:translate-y-8">
-              <div className="flex items-center justify-between mb-6">
-                <div className="w-16 h-16 bg-federal-red-600 border-4 border-federal-gold-400 flex items-center justify-center">
-                  <Shield className="h-8 w-8 text-white" />
+            {/* Unbiased Analysis */}
+            <div className="panel-nasa p-8 group relative md:translate-y-8">
+              <div className="absolute top-4 right-4">
+                <div className="text-xs terminal-text">PROTOCOL 02</div>
+              </div>
+              
+              <div className="flex items-center gap-4 mb-6">
+                <div className="w-16 h-16 bg-neon-cyan-400 flex items-center justify-center relative">
+                  <Shield className="h-8 w-8 text-space-navy-950" />
+                  <div className="absolute inset-0 border border-neon-cyan-600 animate-mission-pulse"></div>
                 </div>
-                <div className="text-right">
-                  <span className="data-label">02</span>
+                <div>
+                  <h3 className="heading-section text-neon-cyan-400 mb-1">
+                    UNBIASED
+                  </h3>
+                  <div className="terminal-text text-xs">NEUTRALITY PROTOCOL</div>
                 </div>
               </div>
               
-              <h3 className="text-xl font-serif font-semibold text-federal-navy-900 mb-4 uppercase tracking-wide">
-                Unbiased
-              </h3>
-              <p className="text-federal-charcoal-600 leading-relaxed">
-                Zero editorializing. We present statistical findings and 
-                let you form your own conclusions based on the evidence.
+              <p className="text-neon-cyan-200 leading-relaxed mb-6">
+                Zero editorial commentary. Zero political interpretation. 
+                Statistical analysis presented without contextual bias. 
+                User draws conclusions from evidence.
               </p>
               
-              <div className="mt-6 pt-4 border-t-2 border-federal-charcoal-200">
-                <span className="text-xs font-mono text-federal-charcoal-500 uppercase tracking-widest">
-                  Facts → You → Conclusions
-                </span>
+              <div className="pt-4 border-t border-neon-cyan-600">
+                <div className="terminal-text text-xs">
+                  <span className="text-neon-cyan-400">$</span> FACTS → USER → CONCLUSIONS
+                </div>
               </div>
             </div>
             
-            {/* Transparent */}
-            <div className="card-federal p-8 md:p-10 group">
-              <div className="flex items-center justify-between mb-6">
-                <div className="w-16 h-16 bg-federal-gold-600 border-4 border-federal-navy-900 flex items-center justify-center">
-                  <Eye className="h-8 w-8 text-white" />
+            {/* Transparent Methodology */}
+            <div className="panel-console p-8 group relative">
+              <div className="absolute top-4 right-4">
+                <div className="text-xs terminal-text">PROTOCOL 03</div>
+              </div>
+              
+              <div className="flex items-center gap-4 mb-6">
+                <div className="w-16 h-16 bg-console-amber-400 flex items-center justify-center relative">
+                  <Eye className="h-8 w-8 text-space-navy-950" />
+                  <div className="absolute inset-0 border border-console-amber-600 animate-mission-pulse"></div>
                 </div>
-                <div className="text-right">
-                  <span className="data-label">03</span>
+                <div>
+                  <h3 className="heading-section text-console-amber-400 mb-1">
+                    TRANSPARENT
+                  </h3>
+                  <div className="terminal-text text-xs">VERIFICATION ENABLED</div>
                 </div>
               </div>
               
-              <h3 className="text-xl font-serif font-semibold text-federal-navy-900 mb-4 uppercase tracking-wide">
-                Transparent
-              </h3>
-              <p className="text-federal-charcoal-600 leading-relaxed">
-                Every statistic links directly to its government source. 
-                Full methodology disclosed. Complete verification enabled.
+              <p className="text-neon-cyan-200 leading-relaxed mb-6">
+                Direct source linking to government databases. 
+                Complete methodology disclosure. Full verification 
+                capabilities. Auditable data pathways.
               </p>
               
-              <div className="mt-6 pt-4 border-t-2 border-federal-charcoal-200">
-                <span className="text-xs font-mono text-federal-charcoal-500 uppercase tracking-widest">
-                  Source → Method → Verify
-                </span>
+              <div className="pt-4 border-t border-console-amber-600">
+                <div className="terminal-text text-xs">
+                  <span className="text-console-amber-400">$</span> SOURCE → METHOD → VERIFY
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Statistical Methodology - Per Capita Explanation */}
-      <section className="bg-federal-charcoal-900 text-white py-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
-        {/* Background geometric pattern */}
-        <div className="absolute inset-0 opacity-5">
-          <div className="absolute top-1/4 left-1/4 w-32 h-32 border-2 border-white transform rotate-45"></div>
-          <div className="absolute top-3/4 right-1/4 w-24 h-24 border-2 border-federal-gold-400 transform -rotate-12"></div>
-          <div className="absolute bottom-1/4 left-1/2 w-40 h-40 border-2 border-federal-red-400"></div>
-        </div>
+      {/* Per Capita Analysis Terminal */}
+      <section className="bg-space-navy-950 text-white py-20 px-4 sm:px-6 lg:px-8 relative">
+        <div className="absolute inset-0 scan-lines pointer-events-none"></div>
         
         <div className="relative mx-auto max-w-7xl">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
-            {/* Left: Methodology */}
+            {/* Terminal Interface */}
             <div>
-              <div className="mb-8">
-                <div className="inline-block bg-federal-gold-500 text-federal-navy-900 px-4 py-2 text-sm font-bold uppercase tracking-wider mb-6">
-                  Statistical Methodology
-                </div>
-                <h2 className="heading-hero text-white mb-6">
-                  Understanding
-                  <br />
-                  <span className="text-federal-gold-400">Per Capita Rates</span>
-                </h2>
-              </div>
-              
-              <p className="text-lg text-gray-300 mb-8 leading-relaxed">
-                Critical for fair comparisons between areas with different population sizes. 
-                Raw numbers lie. Proportional analysis reveals truth.
-              </p>
-              
-              {/* Formula display */}
-              <div className="card-federal bg-white p-6 mb-8">
-                <div className="text-center">
-                  <p className="data-label text-federal-charcoal-600 mb-3">Standard Formula</p>
-                  <div className="font-mono text-2xl font-bold text-federal-navy-900 mb-4">
-                    (Count ÷ Population) × 100,000
+              <div className="panel-nasa p-8 relative">
+                <div className="absolute top-0 left-0 right-0 h-8 bg-steel-gray-800 border-b border-neon-cyan-600 flex items-center px-4">
+                  <div className="flex gap-2">
+                    <div className="w-3 h-3 bg-cyber-orange-400 rounded-full"></div>
+                    <div className="w-3 h-3 bg-console-amber-400 rounded-full"></div>
+                    <div className="w-3 h-3 bg-radar-green-400 rounded-full"></div>
                   </div>
-                  <div className="text-sm text-federal-charcoal-600">
-                    = Rate per 100,000 people
+                  <div className="ml-4 terminal-text text-xs">STATISTICAL_ANALYSIS.EXE</div>
+                </div>
+                
+                <div className="pt-8">
+                  <div className="mb-6">
+                    <div className="mission-text text-lg mb-2">
+                      METHODOLOGY: PER CAPITA ANALYSIS
+                    </div>
+                    <div className="terminal-text text-sm">
+                      SYSTEM: STATISTICAL_NORMALIZATION_v2.1
+                    </div>
+                  </div>
+                  
+                  <p className="text-lg text-neon-cyan-200 mb-8 leading-relaxed">
+                    Essential for fair statistical comparison between regions 
+                    with varying population densities. Raw numbers obscure truth. 
+                    Proportional analysis reveals accurate patterns.
+                  </p>
+                  
+                  {/* Formula display */}
+                  <div className="panel-console p-6 mb-8">
+                    <div className="text-center">
+                      <div className="data-label mb-3">CALCULATION FORMULA</div>
+                      <div className="font-mono text-3xl font-bold text-console-amber-400 mb-4 glow-orange">
+                        (COUNT ÷ POPULATION) × 100,000
+                      </div>
+                      <div className="terminal-text text-sm">
+                        = RATE_PER_100K_CITIZENS
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div className="terminal-text text-sm">
+                    <span className="text-radar-green-400">EXAMPLE:</span> California raw numbers exceed Wyoming by magnitude, 
+                    but per capita analysis reveals true per-citizen impact ratios.
                   </div>
                 </div>
               </div>
-              
-              <p className="text-sm text-gray-400 font-mono">
-                <strong className="text-federal-gold-400">EXAMPLE:</strong> California's raw numbers dwarf Wyoming's, 
-                but per capita analysis shows relative impact per citizen.
-              </p>
             </div>
             
-            {/* Right: Comparative Example */}
+            {/* Comparative Analysis Display */}
             <div className="space-y-6">
-              <h3 className="heading-section text-white mb-8">Comparative Analysis</h3>
+              <h3 className="heading-section text-cyber-orange-400 mb-8 glow-orange">
+                COMPARATIVE ANALYSIS MODULE
+              </h3>
               
-              {/* City A */}
-              <div className="card-federal bg-white p-6">
-                <div className="flex items-center justify-between mb-4">
-                  <div className="flex items-center gap-3">
-                    <div className="w-12 h-12 bg-federal-navy-900 flex items-center justify-center">
-                      <span className="text-xl text-white font-bold">A</span>
-                    </div>
-                    <div>
-                      <p className="font-serif font-semibold text-federal-navy-900">Metropolitan Area</p>
-                      <p className="text-sm text-federal-charcoal-600">Large Population Center</p>
-                    </div>
+              {/* Region A */}
+              <div className="panel-nasa p-6 relative group">
+                <div className="absolute top-0 right-0 bg-neon-cyan-400 text-space-navy-950 px-3 py-1 text-xs font-bold">
+                  REGION_A
+                </div>
+                
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="w-12 h-12 bg-neon-cyan-400 flex items-center justify-center">
+                    <span className="text-xl text-space-navy-950 font-bold">A</span>
+                  </div>
+                  <div>
+                    <div className="mission-text">METROPOLITAN ZONE</div>
+                    <div className="terminal-text text-xs">HIGH_DENSITY_POPULATION</div>
                   </div>
                 </div>
                 
-                <div className="space-y-2 mb-4">
+                <div className="space-y-3 mb-4">
                   <div className="flex justify-between items-center">
-                    <span className="data-label">Total Incidents</span>
-                    <span className="data-value text-federal-navy-900">10,000</span>
+                    <span className="data-label">TOTAL_INCIDENTS</span>
+                    <span className="data-value text-neon-cyan-400">10,000</span>
                   </div>
                   <div className="flex justify-between items-center">
-                    <span className="data-label">Population</span>
-                    <span className="data-value text-federal-navy-900">10,000,000</span>
+                    <span className="data-label">POPULATION_COUNT</span>
+                    <span className="data-value text-neon-cyan-400">10,000,000</span>
                   </div>
                 </div>
                 
-                <div className="pt-4 border-t-2 border-federal-charcoal-200">
+                <div className="pt-4 border-t border-neon-cyan-600">
                   <div className="flex justify-between items-center">
-                    <span className="data-label">Per Capita Rate</span>
-                    <span className="data-value text-lg text-federal-gold-600">100 / 100k</span>
+                    <span className="data-label">PER_CAPITA_RATE</span>
+                    <span className="data-value text-lg text-console-amber-400 glow-orange">100 / 100K</span>
                   </div>
                 </div>
               </div>
               
-              {/* City B */}
-              <div className="card-federal-accent bg-white p-6">
-                <div className="flex items-center justify-between mb-4">
-                  <div className="flex items-center gap-3">
-                    <div className="w-12 h-12 bg-federal-red-600 flex items-center justify-center">
-                      <span className="text-xl text-white font-bold">B</span>
-                    </div>
-                    <div>
-                      <p className="font-serif font-semibold text-federal-navy-900">Rural Region</p>
-                      <p className="text-sm text-federal-charcoal-600">Smaller Population</p>
-                    </div>
+              {/* Region B */}
+              <div className="panel-console p-6 relative group">
+                <div className="absolute top-0 right-0 bg-cyber-orange-400 text-space-navy-950 px-3 py-1 text-xs font-bold">
+                  REGION_B
+                </div>
+                
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="w-12 h-12 bg-cyber-orange-400 flex items-center justify-center">
+                    <span className="text-xl text-space-navy-950 font-bold">B</span>
+                  </div>
+                  <div>
+                    <div className="mission-text">RURAL TERRITORY</div>
+                    <div className="terminal-text text-xs">LOW_DENSITY_POPULATION</div>
                   </div>
                 </div>
                 
-                <div className="space-y-2 mb-4">
+                <div className="space-y-3 mb-4">
                   <div className="flex justify-between items-center">
-                    <span className="data-label">Total Incidents</span>
-                    <span className="data-value text-federal-navy-900">500</span>
+                    <span className="data-label">TOTAL_INCIDENTS</span>
+                    <span className="data-value text-cyber-orange-400">500</span>
                   </div>
                   <div className="flex justify-between items-center">
-                    <span className="data-label">Population</span>
-                    <span className="data-value text-federal-navy-900">100,000</span>
+                    <span className="data-label">POPULATION_COUNT</span>
+                    <span className="data-value text-cyber-orange-400">100,000</span>
                   </div>
                 </div>
                 
-                <div className="pt-4 border-t-2 border-federal-red-600">
+                <div className="pt-4 border-t border-cyber-orange-600">
                   <div className="flex justify-between items-center">
-                    <span className="data-label">Per Capita Rate</span>
-                    <span className="data-value text-lg text-federal-red-600">500 / 100k</span>
+                    <span className="data-label">PER_CAPITA_RATE</span>
+                    <span className="data-value text-lg text-cyber-orange-400 glow-orange">500 / 100K</span>
                   </div>
                 </div>
               </div>
               
-              {/* Conclusion */}
-              <div className="bg-federal-gold-500 text-federal-navy-900 p-6 shadow-brutal-gold">
-                <p className="font-serif font-semibold text-center">
-                  Region B: <span className="text-xl">5× Higher</span> per capita rate
-                </p>
-                <p className="text-sm text-center mt-2 font-mono uppercase tracking-wide">
-                  Fewer total incidents, greater relative impact
-                </p>
+              {/* Analysis Result */}
+              <div className="panel-radar p-6 relative overflow-hidden">
+                <div className="absolute inset-0 bg-radar-gradient"></div>
+                <div className="relative">
+                  <div className="text-center">
+                    <div className="mission-text text-2xl mb-2">
+                      REGION_B: <span className="text-3xl glow-green">5× HIGHER</span> RATE
+                    </div>
+                    <div className="terminal-text text-sm">
+                      FEWER_ABSOLUTE_INCIDENTS • GREATER_RELATIVE_IMPACT
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Final CTA Section */}
-      <section className="bg-federal-red-600 py-20 px-4 sm:px-6 lg:px-8 relative">
-        {/* Geometric elements */}
-        <div className="absolute top-0 left-0 right-0 h-8 bg-federal-gold-500 transform skew-y-1 origin-top-right"></div>
-        <div className="absolute bottom-0 left-0 right-0 h-8 bg-federal-navy-900 transform -skew-y-1 origin-bottom-left"></div>
+      {/* Mission Launch CTA */}
+      <section className="bg-cyber-gradient py-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+        {/* Animated geometric background */}
+        <div className="absolute inset-0">
+          <div className="absolute top-10 left-10 w-64 h-64 border border-neon-cyan-400 transform rotate-45 animate-mission-pulse"></div>
+          <div className="absolute bottom-10 right-10 w-32 h-32 border-2 border-cyber-orange-400 transform -rotate-12 animate-mission-pulse"></div>
+          <div className="absolute top-1/2 left-1/2 w-48 h-48 border border-radar-green-400 transform -translate-x-1/2 -translate-y-1/2 rotate-12 animate-mission-pulse"></div>
+        </div>
         
         <div className="relative mx-auto max-w-5xl text-center">
-          <h2 className="heading-hero text-white mb-8">
-            START YOUR
-            <br />
-            <span className="text-federal-gold-400">ANALYSIS</span>
+          <h2 className="heading-hero text-white mb-8 glow-cyan">
+            INITIATE MISSION
           </h2>
           
-          <p className="text-xl text-red-100 mb-12 max-w-3xl mx-auto font-medium">
-            Choose any data category. Full access to government statistics. 
-            Download capabilities included. Zero cost.
+          <p className="text-xl text-neon-cyan-200 mb-12 max-w-3xl mx-auto font-medium">
+            Select any data stream for immediate analysis. Full access to government statistical databases. 
+            Download capabilities enabled. Zero cost. Zero registration required.
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-            <Link href="/debt" className="btn-federal group">
-              <span className="bg-white text-federal-red-600 border border-federal-red-600">
-                <Building2 className="h-5 w-5 mr-3" />
-                National Debt Analysis
-              </span>
+          <div className="flex flex-col sm:flex-row gap-8 justify-center items-center">
+            <Link href="/debt" className="btn-mission group min-w-[280px]">
+              <Building2 className="h-6 w-6 mr-3" />
+              <span>LAUNCH: DEBT_ANALYSIS</span>
+              <ArrowRight className="h-6 w-6 ml-3 group-hover:translate-x-2 transition-transform" />
             </Link>
             
-            <div className="text-white font-mono text-sm opacity-75">OR</div>
+            <div className="text-neon-cyan-400 font-mono text-sm opacity-75">OR</div>
             
-            <Link href="/congress" className="btn-federal group">
-              <span className="bg-federal-gold-500 text-federal-navy-900 border border-federal-gold-500">
-                <TrendingUp className="h-5 w-5 mr-3" />
-                Congressional Trading
-              </span>
+            <Link href="/congress" className="btn-console group min-w-[280px]">
+              <TrendingUp className="h-6 w-6 mr-3" />
+              <span>MONITOR: CONGRESS_TRADES</span>
+              <ArrowRight className="h-6 w-6 ml-3 group-hover:translate-x-2 transition-transform" />
             </Link>
           </div>
           
-          <div className="mt-12 pt-8 border-t border-red-500">
-            <p className="text-sm text-red-200 font-mono uppercase tracking-widest">
-              All data verified • Sources cited • Methods disclosed
-            </p>
+          <div className="mt-12 pt-8 border-t border-neon-cyan-400">
+            <div className="terminal-text text-sm">
+              ALL_DATA_VERIFIED • SOURCES_CITED • METHODS_DISCLOSED
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Data Source Attribution */}
-      <section className="bg-federal-navy-950 text-gray-400 py-12 px-4 text-center">
-        <div className="mx-auto max-w-4xl">
-          <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div className="text-left md:text-left">
-              <h4 className="text-white font-serif font-semibold mb-3 text-lg">Official Data Sources</h4>
-              <p className="text-sm leading-relaxed">
-                Direct integration with U.S. Treasury, Department of Homeland Security, 
-                Bureau of Labor Statistics, Office of Management and Budget, 
-                and Federal Election Commission databases.
+      {/* System Attribution Footer */}
+      <section className="bg-steel-gray-900 text-neon-cyan-200 py-12 px-4 border-t border-neon-cyan-600">
+        <div className="mx-auto max-w-6xl">
+          <div className="grid md:grid-cols-3 gap-8 items-center">
+            <div>
+              <h4 className="mission-text text-lg mb-3">OFFICIAL DATA SOURCES</h4>
+              <p className="terminal-text text-sm leading-relaxed">
+                Direct integration protocols with U.S. Treasury, Department of Homeland Security, 
+                Bureau of Labor Statistics, Office of Management and Budget, Federal Election Commission.
               </p>
             </div>
             
-            <div className="text-left md:text-right">
-              <h4 className="text-white font-serif font-semibold mb-3 text-lg">Built By</h4>
-              <p className="text-sm">
-                <a 
-                  href="https://telep.io" 
-                  className="text-federal-gold-400 hover:text-federal-gold-300 font-medium transition-colors"
-                >
-                  Telep IO
-                </a>
-                <br />
-                <span className="text-gray-500">Making government data accessible</span>
-              </p>
+            <div className="text-center">
+              <div className="panel-nasa p-4 inline-block">
+                <div className="flex items-center gap-3">
+                  <Satellite className="h-6 w-6 text-neon-cyan-400" />
+                  <div>
+                    <div className="mission-text text-sm">SYSTEM DEVELOPED BY</div>
+                    <a 
+                      href="https://telep.io" 
+                      className="text-cyber-orange-400 hover:text-cyber-orange-300 font-bold transition-colors glow-orange"
+                    >
+                      TELEP.IO
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div className="text-right">
+              <h4 className="mission-text text-lg mb-3">MISSION PARAMETERS</h4>
+              <div className="terminal-text text-sm space-y-1">
+                <div>STATUS: OPERATIONAL</div>
+                <div>UPTIME: 99.9%</div>
+                <div>FEEDS: 6 ACTIVE</div>
+                <div>ACCESS: UNRESTRICTED</div>
+              </div>
             </div>
           </div>
           
-          <div className="mt-8 pt-6 border-t border-gray-700 text-center">
-            <p className="text-xs text-gray-500 font-mono uppercase tracking-widest">
-              Statistical analysis for democratic transparency
-            </p>
+          <div className="mt-8 pt-6 border-t border-steel-gray-700 text-center">
+            <div className="terminal-text text-xs">
+              STATISTICAL_ANALYSIS • DEMOCRATIC_TRANSPARENCY • DATA_LIBERATION
+            </div>
           </div>
         </div>
       </section>
