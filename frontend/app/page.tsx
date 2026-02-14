@@ -179,12 +179,12 @@ export default function Home() {
               </div>
               
               <div className="flex flex-col lg:flex-row gap-6 animate-fade-in-up animate-delay-500">
-                <Link href="/debt" className="btn-primary group text-lg px-8 py-4">
+                <Link href="/debt" className="btn-impact group text-lg hover-scale-102">
                   <Building2 className="h-6 w-6 mr-3" />
-                  $34T Debt Crisis
+                  <span className="text-emphasis-strong">$34T Debt Crisis</span>
                   <ArrowRight className="h-6 w-6 ml-3 group-hover:translate-x-2 transition-transform duration-300" />
                 </Link>
-                <Link href="/congress" className="btn-secondary group text-lg px-8 py-4">
+                <Link href="/congress" className="btn-data group text-lg hover-scale-102">
                   <TrendingUp className="h-6 w-6 mr-3" />
                   Live Congressional Trades
                   <ArrowRight className="h-6 w-6 ml-3 group-hover:translate-x-2 transition-transform duration-300" />
@@ -239,13 +239,13 @@ export default function Home() {
                   <div className="text-kicker text-editorial-accent">LIVE TRACKER</div>
                   
                   <div className="grid grid-cols-2 gap-4">
-                    <div>
+                    <div className="card-metric p-4 animate-data-rise">
                       <div className="text-data-label">Debt Per Second</div>
-                      <div className="text-data-medium text-editorial-accent">$1,487</div>
+                      <div className="text-stats-impact animate-glow-pulse">$1,487</div>
                     </div>
-                    <div>
+                    <div className="card-metric p-4 animate-data-rise animate-delay-200">
                       <div className="text-data-label">Per Citizen</div>
-                      <div className="text-data-medium text-editorial-dark">$102,847</div>
+                      <div className="text-stats-impact">$102,847</div>
                     </div>
                   </div>
                   

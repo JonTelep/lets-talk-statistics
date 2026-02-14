@@ -1,5 +1,7 @@
-/* Custom Font Imports */
+/* Custom Font Imports - Enhanced Editorial Typography */
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,800;9..144,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -140,8 +142,27 @@
   }
 
   .text-terminal {
-    font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Roboto Mono', monospace;
+    font-family: 'JetBrains Mono', 'SF Mono', 'Monaco', 'Inconsolata', 'Roboto Mono', monospace;
     @apply text-sm text-editorial-electric bg-editorial-ink px-2 py-1 rounded;
+  }
+
+  /* Enhanced Interactive Elements */
+  .text-highlight-editorial {
+    @apply bg-gradient-to-r from-editorial-gold/20 to-editorial-accent/20 px-2 py-1 rounded;
+    background-image: linear-gradient(120deg, rgba(218, 165, 32, 0.2) 0%, rgba(168, 50, 50, 0.2) 100%);
+  }
+
+  .text-emphasis-strong {
+    @apply text-editorial-ink font-bold;
+    text-shadow: 1px 1px 2px rgba(22, 33, 48, 0.1);
+  }
+
+  .text-stats-impact {
+    font-family: 'Fraunces', var(--font-serif-alt);
+    @apply text-3xl md:text-4xl font-black text-editorial-accent;
+    font-feature-settings: 'tnum' on, 'lnum' on;
+    letter-spacing: -0.01em;
+    text-shadow: 2px 2px 4px rgba(168, 50, 50, 0.1);
   }
 }
 
@@ -228,6 +249,43 @@
     @apply absolute top-0 left-0 w-full h-px bg-editorial-electric animate-pulse;
   }
 
+  /* Enhanced Card Variants */
+  .card-impact {
+    @apply bg-gradient-to-br from-editorial-accent/10 via-editorial-gold/5 to-editorial-forest/10 
+           border-4 border-editorial-accent/40 relative overflow-hidden;
+    box-shadow: 
+      0 20px 40px rgba(168, 50, 50, 0.2),
+      inset 0 1px 0 rgba(255, 255, 255, 0.6);
+  }
+
+  .card-impact::before {
+    content: '';
+    @apply absolute inset-0 bg-gradient-to-br from-transparent via-white/10 to-transparent;
+    animation: shimmer-slow 4s infinite;
+  }
+
+  .card-insight {
+    @apply bg-white/95 backdrop-blur-sm border-l-8 border-editorial-forest 
+           shadow-2xl relative;
+    box-shadow: 
+      12px 0 0 rgba(76, 110, 81, 0.1),
+      0 12px 40px rgba(22, 33, 48, 0.15);
+  }
+
+  .card-metric {
+    @apply bg-gradient-to-br from-paper-cream to-white 
+           border-2 border-editorial-gold/30 relative overflow-hidden;
+    box-shadow: 
+      0 8px 25px rgba(218, 165, 32, 0.1),
+      inset 0 1px 0 rgba(255, 255, 255, 0.8);
+  }
+
+  .card-metric::after {
+    content: '';
+    @apply absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r 
+           from-editorial-gold via-editorial-accent to-editorial-forest;
+  }
+
   /* Button System */
   .btn-primary {
     @apply inline-flex items-center px-8 py-4 bg-editorial-dark text-white font-semibold;
@@ -244,6 +302,42 @@
   .btn-accent {
     @apply inline-flex items-center px-8 py-4 bg-editorial-accent text-white font-semibold;
     @apply hover:bg-editorial-accent/90 transition-colors duration-200;
+  }
+
+  /* Enhanced Button System */
+  .btn-impact {
+    @apply inline-flex items-center px-10 py-5 bg-gradient-to-r from-editorial-accent to-editorial-orange;
+    @apply text-white font-bold text-lg relative overflow-hidden;
+    @apply hover:shadow-2xl transition-all duration-300;
+    box-shadow: 
+      0 8px 25px rgba(168, 50, 50, 0.3),
+      inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  }
+
+  .btn-impact::before {
+    content: '';
+    @apply absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent;
+    @apply transform -translate-x-full transition-transform duration-500;
+  }
+
+  .btn-impact:hover::before {
+    @apply translate-x-full;
+  }
+
+  .btn-data {
+    @apply inline-flex items-center px-6 py-3 bg-editorial-navy/10 text-editorial-navy;
+    @apply border-2 border-editorial-navy/20 font-semibold;
+    @apply hover:bg-editorial-navy hover:text-white hover:border-editorial-navy;
+    @apply transition-all duration-300 backdrop-blur-sm;
+  }
+
+  .btn-minimal {
+    @apply inline-flex items-center px-4 py-2 text-editorial-gray;
+    @apply hover:text-editorial-dark hover:bg-editorial-gray/10;
+    @apply transition-all duration-200 rounded-sm;
+    @apply relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5;
+    @apply after:bg-editorial-accent after:transition-all after:duration-300;
+    @apply hover:after:w-full;
   }
 
   /* Navigation */
@@ -503,6 +597,44 @@
     100% { transform: translateX(100%); }
   }
 
+  @keyframes shimmer-slow {
+    0% { transform: translateX(-100%) skewX(-15deg); }
+    100% { transform: translateX(200%) skewX(-15deg); }
+  }
+
+  @keyframes glow-pulse {
+    0%, 100% { 
+      box-shadow: 0 0 20px rgba(0, 122, 255, 0.3);
+    }
+    50% { 
+      box-shadow: 0 0 40px rgba(0, 122, 255, 0.5);
+    }
+  }
+
+  @keyframes data-rise {
+    0% {
+      opacity: 0;
+      transform: translateY(40px) scale(0.95);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+
+  @keyframes text-reveal {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+      background-position: 100% 0;
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+      background-position: 0 0;
+    }
+  }
+
   @keyframes typewriter {
     from { width: 0; }
     to { width: 100%; }
@@ -582,6 +714,39 @@
   .animate-delay-500 { animation-delay: 0.5s; }
   .animate-delay-700 { animation-delay: 0.7s; }
   .animate-delay-1000 { animation-delay: 1s; }
+
+  /* Enhanced Animation Classes */
+  .animate-glow-pulse {
+    animation: glow-pulse 2s ease-in-out infinite;
+  }
+
+  .animate-data-rise {
+    animation: data-rise 0.8s ease-out forwards;
+  }
+
+  .animate-text-reveal {
+    animation: text-reveal 1s ease-out forwards;
+  }
+
+  .animate-shimmer-slow {
+    animation: shimmer-slow 4s ease-in-out infinite;
+  }
+
+  .hover-scale-102 {
+    @apply transition-transform duration-300 ease-out;
+  }
+
+  .hover-scale-102:hover {
+    transform: scale(1.02);
+  }
+
+  .hover-scale-105 {
+    @apply transition-transform duration-300 ease-out;
+  }
+
+  .hover-scale-105:hover {
+    transform: scale(1.05);
+  }
 
   /* Typography Utilities */
   .font-display { font-family: var(--font-display); }
