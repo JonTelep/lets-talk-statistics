@@ -1,20 +1,12 @@
 'use client';
 
-import { Building2, TrendingUp, DollarSign, Users, Clock, AlertTriangle, RefreshCw } from 'lucide-react';
+import { Building2, TrendingUp, DollarSign, Users, Clock, AlertTriangle } from 'lucide-react';
 import Link from 'next/link';
 import {
-  LazyLineChart,
-  LazyLine,
-  LazyXAxis,
-  LazyYAxis,
-  LazyCartesianGrid,
-  LazyTooltip,
-  LazyResponsiveContainer,
-  LazyPieChart,
-  LazyPie,
-  LazyCell,
-  LazyLegend,
+  LazyLineChart, LazyLine, LazyXAxis, LazyYAxis, LazyCartesianGrid, LazyTooltip,
+  LazyPieChart, LazyPie, LazyCell,
 } from '@/components/charts';
+import { chartTooltipStyle, chartAxisStyle, chartGridStyle, PIE_COLORS } from '@/components/charts/theme';
 import { useDebtHistory, calculateDebtStats, DebtDataPoint } from '@/services/hooks/useDebtData';
 import { DownloadRawData } from '@/components/ui/DownloadRawData';
 import { ErrorBoundary } from '@/components/ui/ErrorBoundary';
@@ -24,41 +16,33 @@ import { Skeleton, StatCardSkeleton, HeroCounterSkeleton, ChartSkeleton } from '
 const API_HOST = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
 const API_URL = `${API_HOST.replace(/\/$/, '')}/api/v1`;
 
-// Static data that doesn't come from the API (would need additional endpoints)
 const debtHolders = [
   { holder: 'Federal Reserve', amount: 5.02, percent: 13.9 },
   { holder: 'Foreign Governments', amount: 7.94, percent: 21.9 },
   { holder: 'Mutual Funds', amount: 3.28, percent: 9.1 },
-  { holder: 'State & Local Governments', amount: 1.45, percent: 4.0 },
+  { holder: 'State & Local Govts', amount: 1.45, percent: 4.0 },
   { holder: 'Private Pensions', amount: 0.97, percent: 2.7 },
-  { holder: 'Other (Banks, Insurance, etc.)', amount: 17.56, percent: 48.4 },
+  { holder: 'Other', amount: 17.56, percent: 48.4 },
 ];
 
 const topForeignHolders = [
-  { country: 'Japan', amount: 1.08, percent: 13.6 },
-  { country: 'China', amount: 0.77, percent: 9.7 },
-  { country: 'United Kingdom', amount: 0.72, percent: 9.1 },
-  { country: 'Luxembourg', amount: 0.39, percent: 4.9 },
-  { country: 'Canada', amount: 0.35, percent: 4.4 },
-  { country: 'Belgium', amount: 0.33, percent: 4.2 },
+  { country: 'Japan', amount: 1.08 },
+  { country: 'China', amount: 0.77 },
+  { country: 'United Kingdom', amount: 0.72 },
+  { country: 'Luxembourg', amount: 0.39 },
+  { country: 'Canada', amount: 0.35 },
+  { country: 'Belgium', amount: 0.33 },
 ];
 
 const milestones = [
-  { amount: '$1 Trillion', year: '1982', daysTo: '-' },
-  { amount: '$5 Trillion', year: '1996', daysTo: '5,110 days' },
-  { amount: '$10 Trillion', year: '2008', daysTo: '4,380 days' },
-  { amount: '$20 Trillion', year: '2017', daysTo: '3,285 days' },
-  { amount: '$30 Trillion', year: '2022', daysTo: '1,825 days' },
-  { amount: '$35 Trillion', year: '2024', daysTo: '730 days' },
+  { amount: '$1T', year: '1982', days: '—' },
+  { amount: '$5T', year: '1996', days: '5,110' },
+  { amount: '$10T', year: '2008', days: '4,380' },
+  { amount: '$20T', year: '2017', days: '3,285' },
+  { amount: '$30T', year: '2022', days: '1,825' },
+  { amount: '$35T', year: '2024', days: '730' },
 ];
 
-// Colors for pie chart
-const PIE_COLORS = ['#ef4444', '#f97316', '#eab308', '#22c55e', '#0ea5e9', '#8b5cf6'];
-
-// Chart skeleton component
-// Using ChartSkeleton from @/components/ui/ChartSkeleton
-
-// Table row skeleton for historical debt table
 function TableRowSkeleton() {
   return (
     <tr>
@@ -70,11 +54,8 @@ function TableRowSkeleton() {
   );
 }
 
-// Convert API data to yearly format for the table
 function aggregateByYear(data: DebtDataPoint[]): Array<{ year: string; debt: number; gdpRatio: number }> {
   const yearlyData: Map<string, { total: number; count: number }> = new Map();
-  
-  // Group by year and average
   data.forEach((point) => {
     const year = point.date.substring(0, 4);
     const existing = yearlyData.get(year) || { total: 0, count: 0 };
@@ -82,263 +63,134 @@ function aggregateByYear(data: DebtDataPoint[]): Array<{ year: string; debt: num
     existing.count += 1;
     yearlyData.set(year, existing);
   });
-  
-  // Convert to array and calculate averages
-  const result = Array.from(yearlyData.entries())
+  return Array.from(yearlyData.entries())
     .map(([year, { total, count }]) => {
       const avgDebt = total / count;
-      // Rough GDP estimate based on year (simplified)
       const gdpEstimate = 28_000_000_000_000 * (1 + (parseInt(year) - 2024) * 0.025);
-      return {
-        year,
-        debt: avgDebt / 1_000_000_000_000, // Convert to trillions
-        gdpRatio: (avgDebt / gdpEstimate) * 100,
-      };
+      return { year, debt: avgDebt / 1_000_000_000_000, gdpRatio: (avgDebt / gdpEstimate) * 100 };
     })
     .sort((a, b) => parseInt(b.year) - parseInt(a.year))
     .slice(0, 10);
-  
-  return result;
 }
 
 function DebtPageContent() {
-  // Fetch 3 years of data (1095 days)
   const { data: debtData, loading, error, refetch } = useDebtHistory(1095);
-  
   const stats = debtData ? calculateDebtStats(debtData.data) : null;
   const historicalDebt = debtData ? aggregateByYear(debtData.data) : [];
-  
-  // Estimated daily interest (rough calculation based on average interest rate)
   const interestDaily = stats ? (parseFloat(stats.totalDebtTrillions) * 0.03 / 365).toFixed(1) : '3.0';
 
   return (
-    <div className="min-h-screen bg-gray-50">
-      {/* Hero Section - Federal Brutalism Style */}
-      <div className="bg-federal-gradient text-white relative overflow-hidden">
-        {/* Geometric background */}
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-1/4 right-1/4 w-64 h-64 border-4 border-federal-red-400 transform rotate-12"></div>
-          <div className="absolute bottom-0 left-0 w-96 h-32 border-4 border-federal-gold-400 transform -skew-x-12"></div>
+    <div className="min-h-screen">
+      {/* Hero */}
+      <div className="px-4 sm:px-6 lg:px-8 pt-16 pb-12">
+        <div className="mx-auto max-w-7xl">
+          <p className="text-xs font-mono text-surface-600 mb-4 uppercase tracking-wider">Federal Debt Analysis</p>
+          <h1 className="text-4xl sm:text-5xl font-semibold text-white mb-4">National Debt</h1>
+          <p className="text-lg text-surface-500 max-w-2xl">
+            Real-time tracking of U.S. federal debt from Treasury Department data. 
+            Analysis of debt holders, growth patterns, and GDP ratios.
+          </p>
         </div>
-        
-        <div className="relative mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
-          <div className="max-w-4xl">
-            {/* Category badge */}
-            <div className="inline-flex items-center gap-2 bg-federal-red-600 text-white px-4 py-2 text-sm font-bold uppercase tracking-wider mb-6 shadow-brutal-red">
-              <Building2 className="h-4 w-4" />
-              Federal Debt Analysis
-            </div>
-            
-            {/* Main heading */}
-            <h1 className="heading-display mb-8 text-white">
-              NATIONAL
-              <br />
-              <span className="text-federal-gold-400">DEBT</span>
-            </h1>
-            
-            {/* Description */}
-            <div className="relative mb-8">
-              <div className="absolute -inset-4 bg-federal-charcoal-800 transform -skew-x-6 -z-10"></div>
-              <p className="relative text-lg text-white px-4 py-6 font-medium leading-relaxed">
-                Real-time tracking of U.S. federal debt obligations. Direct data feed from 
-                Treasury Department. Analysis of debt holders, growth patterns, and GDP ratios.
-              </p>
-            </div>
-            
-            <p className="text-federal-navy-100 max-w-2xl">
-              Complete transparency into America's financial obligations, updated daily 
-              from official Bureau of Fiscal Service records.
-            </p>
-          </div>
-        </div>
-        
-        {/* Bottom accent */}
-        <div className="absolute bottom-0 left-0 right-0 h-6 bg-federal-gold-500 transform -skew-y-1 origin-bottom-left"></div>
       </div>
 
-      {/* Live Counter Section - Federal Dashboard Style */}
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 -mt-12">
+      {/* Live Counter */}
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mb-8">
         {loading ? (
           <HeroCounterSkeleton />
         ) : error ? (
-          <div className="card-federal-accent p-8 text-center">
-            <ErrorStateCompact 
-              message="Failed to load live data" 
-              onRetry={refetch} 
-            />
+          <div className="card p-8 text-center">
+            <ErrorStateCompact message="Failed to load live data" onRetry={refetch} />
           </div>
         ) : stats ? (
-          <div className="card-federal-accent bg-white p-8 relative overflow-hidden">
-            {/* Background pattern */}
-            <div className="absolute top-0 right-0 w-32 h-32 border border-federal-red-200 transform rotate-45 translate-x-16 -translate-y-16 opacity-20"></div>
-            
-            <div className="relative">
-              {/* Header */}
-              <div className="text-center mb-6">
-                <div className="inline-block bg-federal-navy-900 text-white px-4 py-2 text-sm font-bold uppercase tracking-wider mb-2">
-                  Current Federal Debt
-                </div>
-                <div className="w-24 h-1 bg-federal-red-600 mx-auto"></div>
+          <div className="card p-8">
+            <div className="text-center mb-6">
+              <p className="text-xs font-mono text-surface-600 uppercase tracking-wider mb-2">Current Federal Debt</p>
+            </div>
+            <div className="text-center mb-8">
+              <p className="data-value text-5xl md:text-6xl text-red-400 mb-2">${stats.totalDebtTrillions}T</p>
+              <p className="data-label">As of {stats.lastUpdated}</p>
+            </div>
+            <div className="grid md:grid-cols-2 gap-4 mb-6">
+              <div className="text-center p-4 bg-surface-800 rounded-lg border border-border">
+                <div className="data-value text-2xl text-red-400">+${stats.dailyIncreaseBillions}B</div>
+                <div className="data-label mt-1">Daily Increase (Avg)</div>
               </div>
-              
-              {/* Main counter */}
-              <div className="text-center mb-8">
-                <p className="data-value text-6xl md:text-7xl text-federal-red-600 mb-2">
-                  ${stats.totalDebtTrillions}T
-                </p>
-                <p className="data-label">As of {stats.lastUpdated}</p>
+              <div className="text-center p-4 bg-surface-800 rounded-lg border border-border">
+                <div className="data-value text-2xl text-amber-400">${interestDaily}B</div>
+                <div className="data-label mt-1">Daily Interest (Est.)</div>
               </div>
-              
-              {/* Daily statistics */}
-              <div className="grid md:grid-cols-2 gap-6 mb-6">
-                <div className="text-center p-4 bg-federal-red-50 border border-federal-red-200">
-                  <div className="data-value text-2xl text-federal-red-600">
-                    +${stats.dailyIncreaseBillions}B
-                  </div>
-                  <div className="data-label mt-1">Daily Increase (Average)</div>
-                </div>
-                
-                <div className="text-center p-4 bg-federal-gold-50 border border-federal-gold-300">
-                  <div className="data-value text-2xl text-federal-gold-600">
-                    ${interestDaily}B
-                  </div>
-                  <div className="data-label mt-1">Daily Interest (Estimated)</div>
-                </div>
-              </div>
-              
-              {/* Source verification */}
-              <div className="text-center">
-                <div className="inline-flex items-center gap-2 bg-federal-navy-900 text-white px-3 py-2 text-xs font-mono uppercase tracking-wide">
-                  <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
-                  Live Treasury Fiscal Data API
-                </div>
-              </div>
+            </div>
+            <div className="text-center">
+              <span className="inline-flex items-center gap-2 text-xs font-mono text-surface-600">
+                <span className="w-1.5 h-1.5 bg-green-400 rounded-full"></span>
+                Live Treasury Fiscal Data API
+              </span>
             </div>
           </div>
         ) : null}
       </div>
 
       {/* Disclaimer */}
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mt-6">
-        <div className="bg-amber-50 border border-amber-200 rounded-lg p-4 flex items-start gap-3">
-          <AlertTriangle className="h-5 w-5 text-amber-600 flex-shrink-0 mt-0.5" />
-          <div className="text-sm text-amber-800">
-            <strong>Data Source:</strong> U.S. Treasury Department - Bureau of the Fiscal Service. 
-            "Total Public Debt Outstanding" includes both debt held by the public and intragovernmental holdings.
-            {debtData && (
-              <span className="ml-1 text-green-700">
-                Last fetched: {new Date(debtData.fetched_at).toLocaleString()}
-              </span>
-            )}
-          </div>
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mb-8">
+        <div className="bg-surface-900 border border-amber-500/20 rounded-lg p-4 flex items-start gap-3">
+          <AlertTriangle className="h-4 w-4 text-amber-400 flex-shrink-0 mt-0.5" />
+          <p className="text-sm text-surface-500">
+            <strong className="text-surface-300">Source:</strong> U.S. Treasury — Bureau of the Fiscal Service. 
+            Includes debt held by public and intragovernmental holdings.
+          </p>
         </div>
       </div>
 
-      {/* Per Person Stats */}
-      <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+      {/* Stats Cards */}
+      <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
           {loading ? (
-            <>
-              <StatCardSkeleton />
-              <StatCardSkeleton />
-              <StatCardSkeleton />
-              <StatCardSkeleton />
-            </>
+            <><StatCardSkeleton /><StatCardSkeleton /><StatCardSkeleton /><StatCardSkeleton /></>
           ) : (
             <>
-              <div className="bg-white rounded-xl shadow-sm p-6">
-                <div className="flex items-center gap-2 text-gray-500 text-sm mb-1">
-                  <Users className="h-4 w-4" />
-                  Debt Per Citizen
-                </div>
-                <p className="text-2xl font-bold text-red-600">
-                  ${stats?.debtPerCitizen.toLocaleString() || '---'}
-                </p>
-                <p className="text-xs text-gray-500">Every man, woman, child</p>
+              <div className="card p-6">
+                <div className="flex items-center gap-2 text-surface-500 text-sm mb-1"><Users className="h-4 w-4" />Per Citizen</div>
+                <p className="text-2xl font-semibold text-red-400">${stats?.debtPerCitizen.toLocaleString() || '—'}</p>
+                <p className="text-xs text-surface-600">Every man, woman, child</p>
               </div>
-              
-              <div className="bg-white rounded-xl shadow-sm p-6">
-                <div className="flex items-center gap-2 text-gray-500 text-sm mb-1">
-                  <DollarSign className="h-4 w-4" />
-                  Debt Per Taxpayer
-                </div>
-                <p className="text-2xl font-bold text-red-600">
-                  ${stats?.debtPerTaxpayer.toLocaleString() || '---'}
-                </p>
-                <p className="text-xs text-gray-500">Per tax-filing household</p>
+              <div className="card p-6">
+                <div className="flex items-center gap-2 text-surface-500 text-sm mb-1"><DollarSign className="h-4 w-4" />Per Taxpayer</div>
+                <p className="text-2xl font-semibold text-red-400">${stats?.debtPerTaxpayer.toLocaleString() || '—'}</p>
+                <p className="text-xs text-surface-600">Per tax-filing household</p>
               </div>
-              
-              <div className="bg-white rounded-xl shadow-sm p-6">
-                <div className="flex items-center gap-2 text-gray-500 text-sm mb-1">
-                  <TrendingUp className="h-4 w-4" />
-                  Debt-to-GDP Ratio
-                </div>
-                <p className="text-2xl font-bold text-gray-900">
-                  {stats?.gdpRatio || '---'}%
-                </p>
-                <p className="text-xs text-gray-500">Debt exceeds annual GDP</p>
+              <div className="card p-6">
+                <div className="flex items-center gap-2 text-surface-500 text-sm mb-1"><TrendingUp className="h-4 w-4" />Debt-to-GDP</div>
+                <p className="text-2xl font-semibold text-white">{stats?.gdpRatio || '—'}%</p>
+                <p className="text-xs text-surface-600">Exceeds annual GDP</p>
               </div>
-              
-              <div className="bg-white rounded-xl shadow-sm p-6">
-                <div className="flex items-center gap-2 text-gray-500 text-sm mb-1">
-                  <Clock className="h-4 w-4" />
-                  Interest Paid (FY24)
-                </div>
-                <p className="text-2xl font-bold text-red-600">$1.13T</p>
-                <p className="text-xs text-gray-500">Just to service the debt</p>
+              <div className="card p-6">
+                <div className="flex items-center gap-2 text-surface-500 text-sm mb-1"><Clock className="h-4 w-4" />Interest (FY24)</div>
+                <p className="text-2xl font-semibold text-red-400">$1.13T</p>
+                <p className="text-xs text-surface-600">Just to service the debt</p>
               </div>
             </>
           )}
         </div>
       </div>
 
-      {/* Debt Growth Chart */}
+      {/* Chart */}
       <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
-        <div className="bg-white rounded-xl shadow-sm p-6">
-          <h2 className="text-lg font-semibold text-gray-900 mb-4">Debt Growth Over Time</h2>
+        <div className="card p-6">
+          <h2 className="text-lg font-medium text-white mb-4">Debt Growth Over Time</h2>
           {loading ? (
             <ChartSkeleton height={350} />
           ) : error ? (
             <ErrorStateCompact message="Failed to load chart data" onRetry={refetch} />
           ) : historicalDebt.length > 0 ? (
-            <LazyLineChart
-              data={[...historicalDebt].reverse()}
-              height={350}
-              margin={{ top: 5, right: 30, left: 20, bottom: 5 }}
-            >
-              <LazyCartesianGrid strokeDasharray="3 3" stroke="#e5e7eb" />
-              <LazyXAxis 
-                dataKey="year" 
-                stroke="#6b7280"
-                fontSize={12}
-              />
-              <LazyYAxis 
-                stroke="#6b7280"
-                fontSize={12}
-                tickFormatter={(value) => `$${value}T`}
-              />
-              <LazyTooltip
-                contentStyle={{
-                  backgroundColor: '#fff',
-                  border: '1px solid #e5e7eb',
-                  borderRadius: '8px',
-                  boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)',
-                }}
-                formatter={(value: number) => [`$${value.toFixed(2)}T`, 'Total Debt']}
-              />
-              <LazyLine
-                type="monotone"
-                dataKey="debt"
-                stroke="#ef4444"
-                strokeWidth={3}
-                dot={{ fill: '#ef4444', strokeWidth: 2, r: 4 }}
-                activeDot={{ r: 6, fill: '#dc2626' }}
-              />
+            <LazyLineChart data={[...historicalDebt].reverse()} height={350} margin={{ top: 5, right: 30, left: 20, bottom: 5 }}>
+              <LazyCartesianGrid {...chartGridStyle} />
+              <LazyXAxis dataKey="year" {...chartAxisStyle} />
+              <LazyYAxis {...chartAxisStyle} tickFormatter={(v) => `$${v}T`} />
+              <LazyTooltip contentStyle={chartTooltipStyle} formatter={(v: number) => [`$${v.toFixed(2)}T`, 'Total Debt']} />
+              <LazyLine type="monotone" dataKey="debt" stroke="#f87171" strokeWidth={2} dot={{ fill: '#f87171', strokeWidth: 0, r: 3 }} activeDot={{ r: 5, fill: '#ef4444' }} />
             </LazyLineChart>
           ) : (
-            <div className="h-[350px] flex items-center justify-center text-gray-500">
-              No data available for chart
-            </div>
+            <div className="h-[350px] flex items-center justify-center text-surface-600">No data available</div>
           )}
         </div>
       </div>
@@ -346,59 +198,39 @@ function DebtPageContent() {
       {/* Main Content */}
       <div className="mx-auto max-w-7xl px-4 pb-16 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-3 gap-8">
-          {/* Historical Data */}
           <div className="lg:col-span-2">
-            <div className="bg-white rounded-xl shadow-sm">
-              <div className="px-6 py-4 border-b border-gray-200 flex justify-between items-center">
-                <h2 className="text-lg font-semibold text-gray-900">Historical National Debt</h2>
-                <Link href="/debt/historical" className="text-sm text-primary-600 hover:text-primary-700">
-                  Full history →
-                </Link>
+            {/* Historical Table */}
+            <div className="card">
+              <div className="px-6 py-4 border-b border-border flex justify-between items-center">
+                <h2 className="text-base font-medium text-white">Historical National Debt</h2>
               </div>
               <div className="overflow-x-auto">
                 <table className="w-full">
-                  <thead className="bg-gray-50">
+                  <thead className="bg-surface-800">
                     <tr>
-                      <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Year</th>
-                      <th className="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase">Total Debt</th>
-                      <th className="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase">Debt/GDP</th>
-                      <th className="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase">Growth</th>
+                      <th className="px-6 py-3 text-left text-xs font-medium text-surface-500 uppercase">Year</th>
+                      <th className="px-6 py-3 text-right text-xs font-medium text-surface-500 uppercase">Total Debt</th>
+                      <th className="px-6 py-3 text-right text-xs font-medium text-surface-500 uppercase">Debt/GDP</th>
+                      <th className="px-6 py-3 text-right text-xs font-medium text-surface-500 uppercase">Growth</th>
                     </tr>
                   </thead>
-                  <tbody className="divide-y divide-gray-200">
+                  <tbody className="divide-y divide-border">
                     {loading ? (
-                      <>
-                        <TableRowSkeleton />
-                        <TableRowSkeleton />
-                        <TableRowSkeleton />
-                        <TableRowSkeleton />
-                        <TableRowSkeleton />
-                        <TableRowSkeleton />
-                        <TableRowSkeleton />
-                        <TableRowSkeleton />
-                      </>
+                      Array.from({ length: 8 }).map((_, i) => <TableRowSkeleton key={i} />)
                     ) : error ? (
-                      <ErrorStateTableRow 
-                        colSpan={4} 
-                        message="Failed to load historical data" 
-                        onRetry={refetch} 
-                      />
+                      <ErrorStateTableRow colSpan={4} message="Failed to load data" onRetry={refetch} />
                     ) : historicalDebt.length > 0 ? (
                       historicalDebt.map((row, idx) => {
                         const prevDebt = historicalDebt[idx + 1]?.debt || row.debt;
                         const growth = ((row.debt - prevDebt) / prevDebt * 100).toFixed(1);
                         return (
-                          <tr key={idx} className="hover:bg-gray-50">
-                            <td className="px-6 py-4 text-sm font-medium text-gray-900">{row.year}</td>
-                            <td className="px-6 py-4 text-sm text-right font-medium text-red-600">
-                              ${row.debt.toFixed(2)}T
-                            </td>
-                            <td className="px-6 py-4 text-sm text-right text-gray-500">
-                              {row.gdpRatio.toFixed(1)}%
-                            </td>
+                          <tr key={idx} className="hover:bg-surface-800/50">
+                            <td className="px-6 py-4 text-sm font-medium text-white">{row.year}</td>
+                            <td className="px-6 py-4 text-sm text-right font-mono text-red-400">${row.debt.toFixed(2)}T</td>
+                            <td className="px-6 py-4 text-sm text-right text-surface-500">{row.gdpRatio.toFixed(1)}%</td>
                             <td className="px-6 py-4 text-sm text-right">
                               {idx < historicalDebt.length - 1 && parseFloat(growth) !== 0 && (
-                                <span className={parseFloat(growth) > 0 ? 'text-red-600' : 'text-green-600'}>
+                                <span className={parseFloat(growth) > 0 ? 'text-red-400' : 'text-green-400'}>
                                   {parseFloat(growth) > 0 ? '+' : ''}{growth}%
                                 </span>
                               )}
@@ -407,11 +239,7 @@ function DebtPageContent() {
                         );
                       })
                     ) : (
-                      <tr>
-                        <td colSpan={4} className="px-6 py-8 text-center text-gray-500">
-                          No data available
-                        </td>
-                      </tr>
+                      <tr><td colSpan={4} className="px-6 py-8 text-center text-surface-600">No data available</td></tr>
                     )}
                   </tbody>
                 </table>
@@ -419,125 +247,86 @@ function DebtPageContent() {
             </div>
 
             {/* Milestones */}
-            <div className="mt-8 bg-white rounded-xl shadow-sm">
-              <div className="px-6 py-4 border-b border-gray-200">
-                <h2 className="text-lg font-semibold text-gray-900">Debt Milestones</h2>
-                <p className="text-sm text-gray-500">How long it took to add each trillion</p>
+            <div className="mt-8 card">
+              <div className="px-6 py-4 border-b border-border">
+                <h2 className="text-base font-medium text-white">Debt Milestones</h2>
+                <p className="text-sm text-surface-600">Days between each trillion-dollar milestone</p>
               </div>
               <div className="p-6">
-                <div className="relative">
-                  {milestones.map((milestone, idx) => (
-                    <div key={idx} className="flex items-center mb-4 last:mb-0">
-                      <div className="w-28 text-right pr-4">
-                        <p className="text-sm font-bold text-gray-900">{milestone.amount}</p>
-                        <p className="text-xs text-gray-500">{milestone.year}</p>
-                      </div>
-                      <div className="w-4 h-4 bg-red-500 rounded-full border-4 border-red-200 z-10" />
-                      <div className="ml-4 text-sm text-gray-600">
-                        {milestone.daysTo !== '-' && <span>+{milestone.daysTo}</span>}
-                      </div>
+                {milestones.map((m, idx) => (
+                  <div key={idx} className="flex items-center mb-3 last:mb-0">
+                    <div className="w-20 text-right pr-4">
+                      <p className="text-sm font-mono font-medium text-white">{m.amount}</p>
+                      <p className="text-xs text-surface-600">{m.year}</p>
                     </div>
-                  ))}
-                </div>
+                    <div className="w-2 h-2 bg-red-400 rounded-full" />
+                    <div className="ml-4 text-sm text-surface-500">
+                      {m.days !== '—' && <span>+{m.days} days</span>}
+                    </div>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
 
           {/* Sidebar */}
           <div>
-            {/* Who Holds the Debt */}
-            <div className="bg-white rounded-xl shadow-sm">
-              <div className="px-6 py-4 border-b border-gray-200">
-                <h2 className="text-lg font-semibold text-gray-900">Who Holds Our Debt?</h2>
+            <div className="card">
+              <div className="px-6 py-4 border-b border-border">
+                <h2 className="text-base font-medium text-white">Who Holds Our Debt?</h2>
               </div>
               <div className="p-6">
-                {/* Pie Chart */}
                 <LazyPieChart height={250}>
-                  <LazyPie
-                    data={debtHolders.map(h => ({ name: h.holder, value: h.amount }))}
-                    cx="50%"
-                    cy="50%"
-                    innerRadius={50}
-                    outerRadius={80}
-                    paddingAngle={2}
-                    dataKey="value"
-                  >
-                    {debtHolders.map((_, idx) => (
-                      <LazyCell key={`cell-${idx}`} fill={PIE_COLORS[idx % PIE_COLORS.length]} />
-                    ))}
+                  <LazyPie data={debtHolders.map(h => ({ name: h.holder, value: h.amount }))} cx="50%" cy="50%" innerRadius={50} outerRadius={80} paddingAngle={2} dataKey="value">
+                    {debtHolders.map((_, idx) => <LazyCell key={idx} fill={PIE_COLORS[idx % PIE_COLORS.length]} />)}
                   </LazyPie>
-                  <LazyTooltip
-                    contentStyle={{
-                      backgroundColor: '#fff',
-                      border: '1px solid #e5e7eb',
-                      borderRadius: '8px',
-                    }}
-                    formatter={(value: number) => [`$${value}T`, 'Amount']}
-                  />
+                  <LazyTooltip contentStyle={chartTooltipStyle} formatter={(v: number) => [`$${v}T`, 'Amount']} />
                 </LazyPieChart>
-                {/* Legend as list */}
                 <div className="mt-4 space-y-2">
-                  {debtHolders.map((holder, idx) => (
+                  {debtHolders.map((h, idx) => (
                     <div key={idx} className="flex items-center justify-between text-sm">
                       <div className="flex items-center gap-2">
-                        <div 
-                          className="w-3 h-3 rounded-full" 
-                          style={{ backgroundColor: PIE_COLORS[idx % PIE_COLORS.length] }} 
-                        />
-                        <span className="text-gray-700">{holder.holder}</span>
+                        <div className="w-2.5 h-2.5 rounded-full" style={{ backgroundColor: PIE_COLORS[idx % PIE_COLORS.length] }} />
+                        <span className="text-surface-400">{h.holder}</span>
                       </div>
-                      <span className="text-gray-900 font-medium">${holder.amount}T ({holder.percent}%)</span>
+                      <span className="font-mono text-surface-300">${h.amount}T</span>
                     </div>
                   ))}
                 </div>
               </div>
             </div>
 
-            {/* Top Foreign Holders */}
-            <div className="mt-6 bg-white rounded-xl shadow-sm">
-              <div className="px-6 py-4 border-b border-gray-200">
-                <h2 className="text-lg font-semibold text-gray-900">Top Foreign Holders</h2>
+            <div className="mt-6 card">
+              <div className="px-6 py-4 border-b border-border">
+                <h2 className="text-base font-medium text-white">Top Foreign Holders</h2>
               </div>
-              <div className="divide-y divide-gray-200">
-                {topForeignHolders.map((country, idx) => (
+              <div className="divide-y divide-border">
+                {topForeignHolders.map((c, idx) => (
                   <div key={idx} className="px-6 py-3 flex items-center justify-between">
                     <div className="flex items-center">
-                      <span className="text-sm font-bold text-gray-300 w-6">#{idx + 1}</span>
-                      <span className="text-sm text-gray-700">{country.country}</span>
+                      <span className="text-sm text-surface-600 w-6">#{idx + 1}</span>
+                      <span className="text-sm text-surface-300">{c.country}</span>
                     </div>
-                    <span className="text-sm font-medium text-gray-900">${country.amount}T</span>
+                    <span className="text-sm font-mono text-surface-400">${c.amount}T</span>
                   </div>
                 ))}
               </div>
             </div>
 
-            {/* Data Sources */}
-            <div className="mt-6 bg-white rounded-xl shadow-sm p-6">
-              <h3 className="text-lg font-semibold text-gray-900 mb-3">Data Sources</h3>
-              <ul className="text-sm text-gray-600 space-y-2">
-                <li>• <a href="https://fiscaldata.treasury.gov/" target="_blank" rel="noopener noreferrer" className="text-primary-600 hover:underline">Treasury Fiscal Data API</a> (Live)</li>
+            <div className="mt-6 card p-6">
+              <h3 className="text-base font-medium text-white mb-3">Data Sources</h3>
+              <ul className="text-sm text-surface-500 space-y-2">
+                <li>• <a href="https://fiscaldata.treasury.gov/" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">Treasury Fiscal Data API</a></li>
                 <li>• TreasuryDirect.gov</li>
                 <li>• Bureau of the Fiscal Service</li>
-                <li>• Treasury International Capital (TIC)</li>
               </ul>
             </div>
 
-            {/* Download Raw Data */}
             <div className="mt-6">
-              <DownloadRawData
-                endpoints={[
-                  {
-                    label: 'Debt History (3 years)',
-                    url: `${API_URL}/debt/?days=1095`,
-                    filename: 'debt_history.json'
-                  },
-                  {
-                    label: 'Latest Debt Figure',
-                    url: `${API_URL}/debt/latest`,
-                    filename: 'debt_latest.json'
-                  }
-                ]}
-              />
+              <DownloadRawData endpoints={[
+                { label: 'Debt History (3 years)', url: `${API_URL}/debt/?days=1095`, filename: 'debt_history.json' },
+                { label: 'Latest Debt Figure', url: `${API_URL}/debt/latest`, filename: 'debt_latest.json' },
+              ]} />
             </div>
           </div>
         </div>
@@ -547,9 +336,5 @@ function DebtPageContent() {
 }
 
 export default function DebtPage() {
-  return (
-    <ErrorBoundary>
-      <DebtPageContent />
-    </ErrorBoundary>
-  );
+  return <ErrorBoundary><DebtPageContent /></ErrorBoundary>;
 }
