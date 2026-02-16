@@ -5,16 +5,17 @@ import Link from 'next/link';
 import { 
   Menu, X, ChevronDown, TrendingUp, Users, DollarSign, 
   Briefcase, Building2, Vote, Database, BarChart3, Calendar,
-  Heart, GraduationCap
+  Heart, GraduationCap, Radio, Satellite, Monitor
 } from 'lucide-react';
 
-const dataCategories = [
+const missionModules = [
   {
-    name: 'Congressional Trading',
+    name: 'Congressional Trading Protocol',
     href: '/congress',
     icon: TrendingUp,
-    description: 'Real-time stock transactions by members of Congress',
-    source: 'STOCK Act',
+    description: 'Real-time political entity transaction monitoring',
+    source: 'STOCK-NET',
+    status: 'CRITICAL',
     subItems: [
       { name: 'Overview', href: '/congress' },
       { name: 'Politicians', href: '/congress/politicians' },
@@ -22,161 +23,184 @@ const dataCategories = [
     ],
   },
   {
-    name: 'Immigration Data',
+    name: 'Immigration Data Matrix',
     href: '/immigration',
     icon: Users,
-    description: 'DHS migration statistics and border data',
-    source: 'DHS',
+    description: 'DHS migration analysis and border intelligence',
+    source: 'DHS-NET',
+    status: 'OPERATIONAL',
     subItems: [
       { name: 'Overview', href: '/immigration' },
       { name: 'Trends', href: '/immigration/trends' },
     ],
   },
   {
-    name: 'Federal Budget',
+    name: 'Federal Budget Grid',
     href: '/budget',
     icon: DollarSign,
-    description: 'Government spending and fiscal analysis',
-    source: 'Treasury',
+    description: 'Government expenditure and fiscal monitoring',
+    source: 'TREASURY-LINK',
+    status: 'OPERATIONAL',
   },
   {
-    name: 'Employment Data',
+    name: 'Employment Statistics',
     href: '/employment',
     icon: Briefcase,
-    description: 'Labor statistics and unemployment rates',
-    source: 'BLS',
+    description: 'Labor data analysis and unemployment tracking',
+    source: 'BLS-CORE',
+    status: 'OPERATIONAL',
   },
   {
-    name: 'National Debt',
+    name: 'National Debt Monitor',
     href: '/debt',
     icon: Building2,
     description: 'Federal debt tracking and creditor analysis',
-    source: 'Treasury',
+    source: 'TREASURY-MAIN',
+    status: 'WARNING',
   },
   {
-    name: 'Election Finance',
+    name: 'Electoral Finance Tracker',
     href: '/elections',
     icon: Vote,
-    description: 'Campaign finance and public funding data',
-    source: 'FEC',
+    description: 'Campaign finance and funding analysis protocols',
+    source: 'FEC-MAIN',
+    status: 'OPERATIONAL',
   },
   {
-    name: 'Healthcare',
+    name: 'Healthcare Grid',
     href: '/healthcare',
     icon: Heart,
-    description: 'Healthcare spending, coverage, and outcomes',
-    source: 'CMS',
+    description: 'Medical expenditure, coverage and outcomes data',
+    source: 'CMS-NET',
+    status: 'OPERATIONAL',
   },
   {
-    name: 'Education',
+    name: 'Education Matrix',
     href: '/education',
     icon: GraduationCap,
-    description: 'Education spending, enrollment, and performance',
-    source: 'DOE',
+    description: 'Educational spending, enrollment and performance',
+    source: 'DOE-CORE',
+    status: 'OPERATIONAL',
   },
 ];
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [categoriesOpen, setCategoriesOpen] = useState(false);
+  const [modulesOpen, setModulesOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
 
   // Close dropdown when clicking outside
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
       if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
-        setCategoriesOpen(false);
+        setModulesOpen(false);
       }
     }
     document.addEventListener('mousedown', handleClickOutside);
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
 
+  const getStatusColor = (status: string) => {
+    switch (status) {
+      case 'CRITICAL':
+        return 'status-critical';
+      case 'WARNING':
+        return 'status-warning';
+      case 'OPERATIONAL':
+      default:
+        return 'status-online';
+    }
+  };
+
   return (
-    <header className="nav-editorial sticky top-0 z-50">
-      <nav className="container-editorial" aria-label="Main navigation">
-        <div className="flex w-full items-center justify-between py-6">
-          {/* Logo */}
+    <header className="nav-mission-control sticky top-0 z-50">
+      <nav className="container-command" aria-label="Mission Control Navigation">
+        <div className="flex w-full items-center justify-between py-4">
+          {/* Mission Control Logo */}
           <div className="flex items-center">
-            <Link href="/" className="flex items-center space-x-4 group">
-              <div className="w-10 h-10 bg-editorial-accent flex items-center justify-center group-hover:bg-editorial-dark transition-colors duration-200">
-                <Database className="h-6 w-6 text-white" />
+            <Link href="/" className="flex items-center space-x-4 group hover-lift-tech">
+              <div className="w-12 h-12 bg-electric-green/20 border-2 border-electric-green flex items-center justify-center relative overflow-hidden group-hover:bg-electric-green/30 transition-all duration-300">
+                <Database className="h-7 w-7 text-electric-green animate-pulse-glow" />
+                <div className="absolute inset-0 bg-electric-green/10 animate-scanner-sweep opacity-0 group-hover:opacity-100 transition-opacity"></div>
               </div>
               <div>
-                <div className="font-display text-2xl font-bold text-editorial-dark">
-                  Let's Talk Statistics
+                <div className="font-orbitron text-2xl font-bold text-star-white group-hover:text-electric-green transition-colors">
+                  MISSION CONTROL
                 </div>
-                <div className="text-byline text-editorial-accent">
-                  Government Data • Unfiltered
+                <div className="text-mission-control text-xs">
+                  DATA SYSTEMS • REAL-TIME
                 </div>
               </div>
             </Link>
           </div>
 
-          {/* Desktop Navigation */}
+          {/* Desktop Mission Interface */}
           <div className="hidden lg:flex lg:items-center lg:space-x-8">
-            <Link href="/" className="nav-link">
-              Home
+            <Link href="/" className="nav-link-tech">
+              HOME BASE
             </Link>
 
-            {/* Data Categories Dropdown */}
+            {/* System Modules Dropdown */}
             <div className="relative" ref={dropdownRef}>
               <button
-                onClick={() => setCategoriesOpen(!categoriesOpen)}
-                className="nav-link flex items-center gap-1"
+                onClick={() => setModulesOpen(!modulesOpen)}
+                className="nav-link-tech flex items-center gap-1"
               >
-                Data Categories
-                <ChevronDown className={`h-4 w-4 transition-transform duration-200 ${categoriesOpen ? 'rotate-180' : ''}`} />
+                SYSTEM MODULES
+                <ChevronDown className={`h-4 w-4 transition-transform duration-200 ${modulesOpen ? 'rotate-180' : ''}`} />
               </button>
 
-              {categoriesOpen && (
-                <div className="absolute right-0 mt-2 w-96 card-editorial p-0 shadow-editorial-xl z-50">
+              {modulesOpen && (
+                <div className="absolute right-0 mt-2 w-[32rem] card-hologram p-0 shadow-xl z-50 border border-electric-green/30">
                   {/* Header */}
-                  <div className="bg-editorial-dark text-white p-4 border-b border-border-light">
+                  <div className="bg-panel-dark border-b border-electric-green/20 p-4">
                     <div className="flex items-center gap-3">
-                      <BarChart3 className="h-5 w-5" />
+                      <Monitor className="h-5 w-5 text-electric-green animate-pulse-glow" />
                       <div>
-                        <h3 className="font-serif text-lg font-semibold">Data Categories</h3>
-                        <p className="text-sm opacity-90">Direct government sources</p>
+                        <h3 className="font-orbitron text-lg font-bold text-star-white">System Modules</h3>
+                        <p className="text-sm text-steel-gray font-exo">Federal data network interfaces</p>
                       </div>
                     </div>
                   </div>
                   
-                  {/* Categories list */}
+                  {/* Modules list */}
                   <div className="max-h-80 overflow-y-auto">
-                    {dataCategories.map((category) => {
-                      const Icon = category.icon;
+                    {missionModules.map((module) => {
+                      const Icon = module.icon;
                       
                       return (
                         <Link
-                          key={category.name}
-                          href={category.href}
-                          className="flex items-start p-4 border-b border-border-light last:border-b-0 hover:bg-paper-cream transition-colors group"
-                          onClick={() => setCategoriesOpen(false)}
+                          key={module.name}
+                          href={module.href}
+                          className="flex items-start p-4 border-b border-electric-green/10 last:border-b-0 hover:bg-electric-green/5 transition-colors group"
+                          onClick={() => setModulesOpen(false)}
                         >
                           <div className="flex-shrink-0 mr-4">
-                            <div className="w-10 h-10 bg-editorial-navy/10 flex items-center justify-center">
-                              <Icon className="h-5 w-5 text-editorial-navy" />
+                            <div className="w-10 h-10 bg-electric-green/10 border border-electric-green/30 flex items-center justify-center">
+                              <Icon className="h-5 w-5 text-electric-green" />
                             </div>
                           </div>
                           
                           <div className="flex-1 min-w-0">
                             <div className="flex items-center gap-2 mb-1">
-                              <h4 className="font-serif font-semibold text-editorial-dark group-hover:text-editorial-accent transition-colors">
-                                {category.name}
+                              <h4 className="font-exo font-semibold text-star-white group-hover:text-electric-green transition-colors">
+                                {module.name}
                               </h4>
-                              <span className="text-xs px-2 py-0.5 bg-editorial-gold/10 text-editorial-gold font-medium">
-                                {category.source}
+                              <span className="text-xs px-2 py-0.5 bg-electric-green/10 text-electric-green font-jetbrains">
+                                {module.source}
+                              </span>
+                              <span className={`text-xs font-jetbrains ${getStatusColor(module.status)}`}>
+                                {module.status}
                               </span>
                             </div>
-                            <p className="text-sm text-editorial-gray mb-2">{category.description}</p>
+                            <p className="text-sm text-gunmetal mb-2 font-space-mono">{module.description}</p>
                             
-                            {category.subItems && (
+                            {module.subItems && (
                               <div className="flex flex-wrap gap-2">
-                                {category.subItems.map((subItem, index) => (
-                                  <span key={index} className="text-xs text-editorial-accent">
+                                {module.subItems.map((subItem, index) => (
+                                  <span key={index} className="text-xs text-electric-green font-jetbrains">
                                     {subItem.name}
-                                    {index < category.subItems!.length - 1 && ' •'}
+                                    {index < module.subItems!.length - 1 && ' •'}
                                   </span>
                                 ))}
                               </div>
@@ -188,40 +212,43 @@ export default function Header() {
                   </div>
                   
                   {/* Footer */}
-                  <div className="bg-paper-cream p-3 border-t border-border-light">
-                    <p className="text-xs text-editorial-gray text-center">
-                      All data verified against official sources
+                  <div className="bg-electric-green/5 p-3 border-t border-electric-green/20">
+                    <p className="text-xs text-steel-gray text-center font-jetbrains">
+                      ALL DATA VERIFIED • FEDERAL NETWORK CONNECTIONS
                     </p>
                   </div>
                 </div>
               )}
             </div>
 
-            <Link href="/about" className="nav-link">
-              About
+            <Link href="/about" className="nav-link-tech">
+              MISSION INFO
             </Link>
 
-            {/* Date display */}
-            <div className="flex items-center gap-2 text-sm text-editorial-gray border-l border-border-light pl-8">
-              <Calendar className="h-4 w-4" />
-              <span>
-                {new Date().toLocaleDateString('en-US', { 
-                  month: 'short', 
-                  day: 'numeric',
-                  year: 'numeric'
-                })}
-              </span>
+            {/* System Status Display */}
+            <div className="flex items-center gap-2 text-sm border-l border-electric-green/20 pl-6">
+              <Radio className="h-4 w-4 text-electric-green animate-pulse-glow" />
+              <div className="font-jetbrains">
+                <div className="status-online text-xs">ALL SYSTEMS</div>
+                <div className="text-xs text-gunmetal">
+                  {new Date().toLocaleDateString('en-US', { 
+                    month: 'short', 
+                    day: 'numeric',
+                    year: 'numeric'
+                  }).toUpperCase()}
+                </div>
+              </div>
             </div>
           </div>
 
-          {/* Mobile menu button */}
+          {/* Mobile Interface Control */}
           <div className="flex lg:hidden">
             <button
               type="button"
-              className="w-10 h-10 bg-editorial-accent hover:bg-editorial-dark transition-colors duration-200 flex items-center justify-center text-white"
+              className="w-10 h-10 bg-electric-green/20 border border-electric-green/50 hover:bg-electric-green/30 transition-all duration-200 flex items-center justify-center text-electric-green"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             >
-              <span className="sr-only">Toggle menu</span>
+              <span className="sr-only">Toggle mission interface</span>
               {mobileMenuOpen ? (
                 <X className="h-5 w-5" />
               ) : (
@@ -231,44 +258,49 @@ export default function Header() {
           </div>
         </div>
 
-        {/* Mobile Menu */}
+        {/* Mobile Mission Interface */}
         {mobileMenuOpen && (
-          <div className="lg:hidden border-t border-border-light bg-white">
+          <div className="lg:hidden border-t border-electric-green/20 bg-panel-dark">
             <div className="py-4 space-y-1">
               {/* Home */}
               <Link
                 href="/"
-                className="block px-4 py-3 text-editorial-gray hover:text-editorial-dark hover:bg-paper-cream transition-colors"
+                className="block px-4 py-3 text-steel-gray hover:text-electric-green hover:bg-electric-green/5 transition-colors font-exo"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                Home
+                HOME BASE
               </Link>
 
-              {/* Categories header */}
-              <div className="px-4 py-2 bg-paper-cream border-y border-border-light">
+              {/* Modules header */}
+              <div className="px-4 py-2 bg-electric-green/5 border-y border-electric-green/20">
                 <div className="flex items-center gap-2">
-                  <BarChart3 className="h-4 w-4 text-editorial-accent" />
-                  <span className="text-byline text-editorial-accent">Data Categories</span>
+                  <Monitor className="h-4 w-4 text-electric-green" />
+                  <span className="text-mission-control">SYSTEM MODULES</span>
                 </div>
               </div>
 
-              {/* Categories */}
-              {dataCategories.map((category) => {
-                const Icon = category.icon;
+              {/* Modules */}
+              {missionModules.map((module) => {
+                const Icon = module.icon;
                 
                 return (
                   <Link
-                    key={category.name}
-                    href={category.href}
-                    className="flex items-center gap-3 px-4 py-3 text-editorial-gray hover:text-editorial-dark hover:bg-paper-cream transition-colors group"
+                    key={module.name}
+                    href={module.href}
+                    className="flex items-center gap-3 px-4 py-3 text-steel-gray hover:text-electric-green hover:bg-electric-green/5 transition-colors group"
                     onClick={() => setMobileMenuOpen(false)}
                   >
-                    <div className="w-8 h-8 bg-editorial-navy/10 flex items-center justify-center flex-shrink-0">
-                      <Icon className="h-4 w-4 text-editorial-navy" />
+                    <div className="w-8 h-8 bg-electric-green/10 border border-electric-green/30 flex items-center justify-center flex-shrink-0">
+                      <Icon className="h-4 w-4 text-electric-green" />
                     </div>
                     <div className="flex-1">
-                      <div className="font-medium">{category.name}</div>
-                      <div className="text-sm text-editorial-accent">{category.source}</div>
+                      <div className="font-medium font-exo">{module.name}</div>
+                      <div className="text-sm font-jetbrains flex items-center gap-2">
+                        <span className="text-electric-green">{module.source}</span>
+                        <span className={`text-xs ${getStatusColor(module.status)}`}>
+                          {module.status}
+                        </span>
+                      </div>
                     </div>
                   </Link>
                 );
@@ -277,22 +309,22 @@ export default function Header() {
               {/* About */}
               <Link
                 href="/about"
-                className="block px-4 py-3 text-editorial-gray hover:text-editorial-dark hover:bg-paper-cream transition-colors border-t border-border-light"
+                className="block px-4 py-3 text-steel-gray hover:text-electric-green hover:bg-electric-green/5 transition-colors border-t border-electric-green/20 font-exo"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                About
+                MISSION INFO
               </Link>
             </div>
             
             {/* Status footer */}
-            <div className="border-t border-border-light bg-paper-cream px-4 py-3">
-              <div className="flex items-center justify-between text-xs text-editorial-gray">
+            <div className="border-t border-electric-green/20 bg-electric-green/5 px-4 py-3">
+              <div className="flex items-center justify-between text-xs font-jetbrains">
                 <div className="flex items-center gap-2">
-                  <div className="w-2 h-2 bg-editorial-forest rounded-full"></div>
-                  <span>Data feeds active</span>
+                  <div className="w-2 h-2 bg-electric-green rounded-full animate-pulse-glow"></div>
+                  <span className="text-electric-green">NETWORK ACTIVE</span>
                 </div>
-                <span>
-                  {new Date().toLocaleDateString()}
+                <span className="text-steel-gray">
+                  {new Date().toLocaleDateString().toUpperCase()}
                 </span>
               </div>
             </div>
