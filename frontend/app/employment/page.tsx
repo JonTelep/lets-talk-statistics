@@ -144,7 +144,7 @@ function EmploymentPageContent() {
               <LazyCartesianGrid {...chartGridStyle} />
               <LazyXAxis dataKey="month" {...chartAxisStyle} interval="preserveStartEnd" tickFormatter={(v) => { const p = v.split(' '); return p[0].substring(0, 3) + ' ' + p[1]?.substring(2); }} />
               <LazyYAxis {...chartAxisStyle} domain={['dataMin - 0.5', 'dataMax + 0.5']} tickFormatter={(v) => `${v}%`} />
-              <LazyTooltip contentStyle={chartTooltipStyle} formatter={(v: number) => [`${v}%`, 'Unemployment Rate']} />
+              <LazyTooltip contentStyle={chartTooltipStyle} formatter={(v: any) => [`${v}%`, 'Unemployment Rate']} />
               <LazyLine type="monotone" dataKey="rate" stroke="#60a5fa" strokeWidth={2} dot={{ fill: '#60a5fa', strokeWidth: 0, r: 3 }} activeDot={{ r: 5, fill: '#3b82f6' }} />
             </LazyLineChart>
           ) : (
@@ -207,7 +207,7 @@ function EmploymentPageContent() {
                   <LazyCartesianGrid {...chartGridStyle} />
                   <LazyXAxis type="number" {...chartAxisStyle} tickFormatter={(v) => `+${(v / 1000).toFixed(0)}k`} />
                   <LazyYAxis dataKey="name" type="category" {...chartAxisStyle} width={80} />
-                  <LazyTooltip contentStyle={chartTooltipStyle} formatter={(v: number, n: string, p: any) => [`+${v.toLocaleString()} jobs`, p.payload.fullName]} />
+                  <LazyTooltip contentStyle={chartTooltipStyle} formatter={(v: any, n: any, p: any) => [`+${v.toLocaleString()} jobs`, p.payload.fullName]} />
                   <LazyBar dataKey="jobs" fill="#34d399" radius={[0, 4, 4, 0]} />
                 </LazyBarChart>
                 <p className="text-xs text-surface-600 mt-4">* Sector data is illustrative</p>

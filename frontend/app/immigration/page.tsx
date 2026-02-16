@@ -183,7 +183,7 @@ function ImmigrationPageContent() {
                       borderRadius: '8px',
                       boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)',
                     }}
-                    formatter={(value: number, name: string) => [
+                    formatter={(value: any, name: any) => [
                       value.toLocaleString(),
                       name === 'admissions' ? 'Legal Admissions' : 
                       name === 'removals' ? 'Deportations' : 'Border Encounters'

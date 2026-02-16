@@ -186,7 +186,7 @@ function DebtPageContent() {
               <LazyCartesianGrid {...chartGridStyle} />
               <LazyXAxis dataKey="year" {...chartAxisStyle} />
               <LazyYAxis {...chartAxisStyle} tickFormatter={(v) => `$${v}T`} />
-              <LazyTooltip contentStyle={chartTooltipStyle} formatter={(v: number) => [`$${v.toFixed(2)}T`, 'Total Debt']} />
+              <LazyTooltip contentStyle={chartTooltipStyle} formatter={(v: any) => [`$${v.toFixed(2)}T`, 'Total Debt']} />
               <LazyLine type="monotone" dataKey="debt" stroke="#f87171" strokeWidth={2} dot={{ fill: '#f87171', strokeWidth: 0, r: 3 }} activeDot={{ r: 5, fill: '#ef4444' }} />
             </LazyLineChart>
           ) : (
@@ -280,7 +280,7 @@ function DebtPageContent() {
                   <LazyPie data={debtHolders.map(h => ({ name: h.holder, value: h.amount }))} cx="50%" cy="50%" innerRadius={50} outerRadius={80} paddingAngle={2} dataKey="value">
                     {debtHolders.map((_, idx) => <LazyCell key={idx} fill={PIE_COLORS[idx % PIE_COLORS.length]} />)}
                   </LazyPie>
-                  <LazyTooltip contentStyle={chartTooltipStyle} formatter={(v: number) => [`$${v}T`, 'Amount']} />
+                  <LazyTooltip contentStyle={chartTooltipStyle} formatter={(v: any) => [`$${v}T`, 'Amount']} />
                 </LazyPieChart>
                 <div className="mt-4 space-y-2">
                   {debtHolders.map((h, idx) => (

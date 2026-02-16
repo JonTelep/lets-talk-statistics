@@ -491,7 +491,7 @@ function CongressPageContent() {
                       border: '1px solid #e5e7eb',
                       borderRadius: '8px',
                     }}
-                    formatter={(value: number) => [value.toLocaleString(), 'Trades']}
+                    formatter={(value: any) => [String(value).replace(/\B(?=(\d{3})+(?!\d))/g, ","), 'Trades']}
                   />
                 </LazyPieChart>
                 <div className="flex flex-wrap justify-center gap-4 mt-2">

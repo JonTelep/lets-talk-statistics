@@ -242,7 +242,7 @@ function ElectionsPageContent() {
               <LazyCartesianGrid {...chartGridStyle} />
               <LazyXAxis dataKey="year" {...chartAxisStyle} />
               <LazyYAxis {...chartAxisStyle} tickFormatter={(v) => `${v}%`} domain={[0, 20]} />
-              <LazyTooltip contentStyle={chartTooltipStyle} formatter={(v: number, n: string, p: any) => [`${v}%`, `${p.payload.candidate} (${p.payload.party})`]} />
+              <LazyTooltip contentStyle={chartTooltipStyle} formatter={(v: any, n: any, p: any) => [`${v}%`, `${p.payload.candidate} (${p.payload.party})`]} />
               <LazyBar dataKey="percent" fill="#a78bfa" radius={[4, 4, 0, 0]} />
             </LazyBarChart>
           </div>
