@@ -1,6 +1,6 @@
 'use client';
 
-import { Building2, TrendingUp, DollarSign, Users, Clock, AlertTriangle, Warning } from 'lucide-react';
+import { Building2, TrendingUp, DollarSign, Users, Clock, AlertTriangle, AlertCircle } from 'lucide-react';
 import Link from 'next/link';
 import {
   LazyLineChart, LazyLine, LazyXAxis, LazyYAxis, LazyCartesianGrid, LazyTooltip,
@@ -103,7 +103,7 @@ function DebtPageContent() {
       <div className="border-b-4 border-red-500 bg-surface-950 px-4 sm:px-6 lg:px-8 py-4">
         <div className="mx-auto max-w-7xl flex items-center justify-between">
           <div className="flex items-center gap-4">
-            <Warning className="h-6 w-6 text-red-500 animate-pulse" />
+            <AlertCircle className="h-6 w-6 text-red-500 animate-pulse" />
             <div className="font-mono text-sm">
               <span className="text-red-500 font-bold">THREAT LEVEL: </span>
               <span className="text-text-primary">CRITICAL</span>
@@ -151,9 +151,8 @@ function DebtPageContent() {
             <AlertTriangle className="h-12 w-12 text-red-500 mx-auto mb-4" />
             <div className="text-brutal text-lg mb-4 text-red-500">DATA FEED ERROR</div>
             <ErrorStateCompact 
-              error={error} 
+              message="Failed to load debt data" 
               onRetry={refetch} 
-              context="debt data"
             />
           </div>
         ) : (
@@ -189,7 +188,7 @@ function DebtPageContent() {
                 <div>
                   <div className="text-xs font-mono text-surface-400 mb-1">PER_CITIZEN</div>
                   <div className="text-data text-xl text-text-primary">
-                    ${stats?.perCitizen ? Math.round(parseFloat(stats.perCitizen.replace(/,/g, ''))).toLocaleString() : '106,000'}
+                    ${stats?.debtPerCitizen ? Math.round(stats.debtPerCitizen).toLocaleString() : '106,000'}
                   </div>
                 </div>
               </div>
@@ -325,9 +324,11 @@ function DebtPageContent() {
               </div>
             </div>
             <DownloadRawData 
-              endpoint={`${API_URL}/debt/history`} 
-              filename="debt_data.json"
-              className="btn-accent"
+              endpoints={[{
+                label: 'Debt History',
+                url: `${API_URL}/debt/history`,
+                filename: 'debt_data.json'
+              }]}
             />
           </div>
         </div>
