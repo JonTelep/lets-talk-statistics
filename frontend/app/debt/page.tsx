@@ -1,6 +1,6 @@
 'use client';
 
-import { Building2, TrendingUp, DollarSign, Users, Clock, AlertTriangle } from 'lucide-react';
+import { Building2, TrendingUp, DollarSign, Users, Clock, AlertTriangle, Warning } from 'lucide-react';
 import Link from 'next/link';
 import {
   LazyLineChart, LazyLine, LazyXAxis, LazyYAxis, LazyCartesianGrid, LazyTooltip,
@@ -17,31 +17,49 @@ const API_HOST = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
 const API_URL = `${API_HOST.replace(/\/$/, '')}/api/v1`;
 
 const debtHolders = [
-  { holder: 'Federal Reserve', amount: 5.02, percent: 13.9 },
-  { holder: 'Foreign Governments', amount: 7.94, percent: 21.9 },
-  { holder: 'Mutual Funds', amount: 3.28, percent: 9.1 },
-  { holder: 'State & Local Govts', amount: 1.45, percent: 4.0 },
-  { holder: 'Private Pensions', amount: 0.97, percent: 2.7 },
-  { holder: 'Other', amount: 17.56, percent: 48.4 },
+  { holder: 'FEDERAL RESERVE', amount: 5.02, percent: 13.9, threat: 'MEDIUM' },
+  { holder: 'FOREIGN GOVERNMENTS', amount: 7.94, percent: 21.9, threat: 'HIGH' },
+  { holder: 'MUTUAL FUNDS', amount: 3.28, percent: 9.1, threat: 'LOW' },
+  { holder: 'STATE & LOCAL GOVTS', amount: 1.45, percent: 4.0, threat: 'LOW' },
+  { holder: 'PRIVATE PENSIONS', amount: 0.97, percent: 2.7, threat: 'LOW' },
+  { holder: 'OTHER', amount: 17.56, percent: 48.4, threat: 'UNKNOWN' },
 ];
 
 const topForeignHolders = [
-  { country: 'Japan', amount: 1.08 },
-  { country: 'China', amount: 0.77 },
-  { country: 'United Kingdom', amount: 0.72 },
-  { country: 'Luxembourg', amount: 0.39 },
-  { country: 'Canada', amount: 0.35 },
-  { country: 'Belgium', amount: 0.33 },
+  { country: 'JAPAN', amount: 1.08, status: 'ALLY' },
+  { country: 'CHINA', amount: 0.77, status: 'RIVAL' },
+  { country: 'UNITED KINGDOM', amount: 0.72, status: 'ALLY' },
+  { country: 'LUXEMBOURG', amount: 0.39, status: 'ALLY' },
+  { country: 'CANADA', amount: 0.35, status: 'ALLY' },
+  { country: 'BELGIUM', amount: 0.33, status: 'ALLY' },
 ];
 
 const milestones = [
-  { amount: '$1T', year: '1982', days: '—' },
-  { amount: '$5T', year: '1996', days: '5,110' },
-  { amount: '$10T', year: '2008', days: '4,380' },
-  { amount: '$20T', year: '2017', days: '3,285' },
-  { amount: '$30T', year: '2022', days: '1,825' },
-  { amount: '$35T', year: '2024', days: '730' },
+  { amount: '$1T', year: '1982', days: '—', era: 'REAGAN' },
+  { amount: '$5T', year: '1996', days: '5,110', era: 'CLINTON' },
+  { amount: '$10T', year: '2008', days: '4,380', era: 'BUSH' },
+  { amount: '$20T', year: '2017', days: '3,285', era: 'TRUMP' },
+  { amount: '$30T', year: '2022', days: '1,825', era: 'BIDEN' },
+  { amount: '$35T', year: '2024', days: '730', era: 'BIDEN' },
 ];
+
+const getThreatColor = (threat: string) => {
+  switch (threat) {
+    case 'HIGH': return 'text-red-500';
+    case 'MEDIUM': return 'text-orange-500';
+    case 'LOW': return 'text-green-500';
+    case 'UNKNOWN': return 'text-yellow-500';
+    default: return 'text-surface-400';
+  }
+};
+
+const getStatusColor = (status: string) => {
+  switch (status) {
+    case 'RIVAL': return 'text-red-500';
+    case 'ALLY': return 'text-green-500';
+    default: return 'text-surface-400';
+  }
+};
 
 function TableRowSkeleton() {
   return (
@@ -80,254 +98,237 @@ function DebtPageContent() {
   const interestDaily = stats ? (parseFloat(stats.totalDebtTrillions) * 0.03 / 365).toFixed(1) : '3.0';
 
   return (
-    <div className="min-h-screen">
-      {/* Hero */}
-      <div className="px-4 sm:px-6 lg:px-8 pt-16 pb-12">
-        <div className="mx-auto max-w-7xl">
-          <p className="text-xs font-mono text-surface-600 mb-4 uppercase tracking-wider">Federal Debt Analysis</p>
-          <h1 className="text-4xl sm:text-5xl font-semibold text-foreground mb-4">National Debt</h1>
-          <p className="text-lg text-surface-500 max-w-2xl">
-            Real-time tracking of U.S. federal debt from Treasury Department data. 
-            Analysis of debt holders, growth patterns, and GDP ratios.
+    <div className="min-h-screen bg-surface">
+      {/* THREAT LEVEL HEADER */}
+      <div className="border-b-4 border-red-500 bg-surface-950 px-4 sm:px-6 lg:px-8 py-4">
+        <div className="mx-auto max-w-7xl flex items-center justify-between">
+          <div className="flex items-center gap-4">
+            <Warning className="h-6 w-6 text-red-500 animate-pulse" />
+            <div className="font-mono text-sm">
+              <span className="text-red-500 font-bold">THREAT LEVEL: </span>
+              <span className="text-text-primary">CRITICAL</span>
+            </div>
+          </div>
+          <div className="font-mono text-xs text-surface-400">
+            LAST_UPDATE: REAL-TIME | SOURCE: US_TREASURY
+          </div>
+        </div>
+      </div>
+
+      {/* BRUTALIST HERO */}
+      <div className="px-4 sm:px-6 lg:px-8 pt-20 pb-16 bg-grid relative">
+        <div className="absolute inset-0 bg-surface/95"></div>
+        <div className="relative mx-auto max-w-7xl">
+          <div className="mb-8">
+            <div className="inline-flex items-center gap-3 mb-6">
+              <Building2 className="h-8 w-8 text-accent" />
+              <span className="text-brutal text-accent text-sm">NATIONAL DEBT MONITORING</span>
+            </div>
+          </div>
+          
+          <h1 className="text-brutal mb-8 leading-none">
+            DEBT STATUS:
+            <br />
+            <span className="text-red-500">$35+ TRILLION</span>
+          </h1>
+          
+          <div className="divider-brutal mb-8"></div>
+          
+          <p className="text-lg text-secondary max-w-3xl mb-12 leading-tight font-mono">
+            REAL-TIME TRACKING OF U.S. FEDERAL DEBT FROM TREASURY DEPARTMENT DATA.
+            <br />
+            ANALYSIS OF DEBT HOLDERS, GROWTH PATTERNS, AND GDP RATIOS.
           </p>
         </div>
       </div>
 
-      {/* Live Counter */}
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mb-8">
+      {/* LIVE DATA FEED */}
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16">
         {loading ? (
           <HeroCounterSkeleton />
         ) : error ? (
-          <div className="card p-8 text-center">
-            <ErrorStateCompact message="Failed to load live data" onRetry={refetch} />
+          <div className="card-brutal p-8 text-center">
+            <AlertTriangle className="h-12 w-12 text-red-500 mx-auto mb-4" />
+            <div className="text-brutal text-lg mb-4 text-red-500">DATA FEED ERROR</div>
+            <ErrorStateCompact 
+              error={error} 
+              onRetry={refetch} 
+              context="debt data"
+            />
           </div>
-        ) : stats ? (
-          <div className="card p-8">
-            <div className="text-center mb-6">
-              <p className="text-xs font-mono text-surface-600 uppercase tracking-wider mb-2">Current Federal Debt</p>
-            </div>
-            <div className="text-center mb-8">
-              <p className="data-value text-5xl md:text-6xl text-red-400 mb-2">${stats.totalDebtTrillions}T</p>
-              <p className="data-label">As of {stats.lastUpdated}</p>
-            </div>
-            <div className="grid md:grid-cols-2 gap-4 mb-6">
-              <div className="text-center p-4 bg-surface-800 rounded-lg border border-border">
-                <div className="data-value text-2xl text-red-400">+${stats.dailyIncreaseBillions}B</div>
-                <div className="data-label mt-1">Daily Increase (Avg)</div>
-              </div>
-              <div className="text-center p-4 bg-surface-800 rounded-lg border border-border">
-                <div className="data-value text-2xl text-amber-400">${interestDaily}B</div>
-                <div className="data-label mt-1">Daily Interest (Est.)</div>
-              </div>
-            </div>
-            <div className="text-center">
-              <span className="inline-flex items-center gap-2 text-xs font-mono text-surface-600">
-                <span className="w-1.5 h-1.5 bg-green-400 rounded-full"></span>
-                Live Treasury Fiscal Data API
-              </span>
-            </div>
-          </div>
-        ) : null}
-      </div>
-
-      {/* Disclaimer */}
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mb-8">
-        <div className="bg-surface-900 border border-amber-500/20 rounded-lg p-4 flex items-start gap-3">
-          <AlertTriangle className="h-4 w-4 text-amber-400 flex-shrink-0 mt-0.5" />
-          <p className="text-sm text-surface-500">
-            <strong className="text-surface-300">Source:</strong> U.S. Treasury — Bureau of the Fiscal Service. 
-            Includes debt held by public and intragovernmental holdings.
-          </p>
-        </div>
-      </div>
-
-      {/* Stats Cards */}
-      <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
-          {loading ? (
-            <><StatCardSkeleton /><StatCardSkeleton /><StatCardSkeleton /><StatCardSkeleton /></>
-          ) : (
-            <>
-              <div className="card p-6">
-                <div className="flex items-center gap-2 text-surface-500 text-sm mb-1"><Users className="h-4 w-4" />Per Citizen</div>
-                <p className="text-2xl font-semibold text-red-400">${stats?.debtPerCitizen.toLocaleString() || '—'}</p>
-                <p className="text-xs text-surface-600">Every man, woman, child</p>
-              </div>
-              <div className="card p-6">
-                <div className="flex items-center gap-2 text-surface-500 text-sm mb-1"><DollarSign className="h-4 w-4" />Per Taxpayer</div>
-                <p className="text-2xl font-semibold text-red-400">${stats?.debtPerTaxpayer.toLocaleString() || '—'}</p>
-                <p className="text-xs text-surface-600">Per tax-filing household</p>
-              </div>
-              <div className="card p-6">
-                <div className="flex items-center gap-2 text-surface-500 text-sm mb-1"><TrendingUp className="h-4 w-4" />Debt-to-GDP</div>
-                <p className="text-2xl font-semibold text-foreground">{stats?.gdpRatio || '—'}%</p>
-                <p className="text-xs text-surface-600">Exceeds annual GDP</p>
-              </div>
-              <div className="card p-6">
-                <div className="flex items-center gap-2 text-surface-500 text-sm mb-1"><Clock className="h-4 w-4" />Interest (FY24)</div>
-                <p className="text-2xl font-semibold text-red-400">$1.13T</p>
-                <p className="text-xs text-surface-600">Just to service the debt</p>
-              </div>
-            </>
-          )}
-        </div>
-      </div>
-
-      {/* Chart */}
-      <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
-        <div className="card p-6">
-          <h2 className="text-lg font-medium text-foreground mb-4">Debt Growth Over Time</h2>
-          {loading ? (
-            <ChartSkeleton height={350} />
-          ) : error ? (
-            <ErrorStateCompact message="Failed to load chart data" onRetry={refetch} />
-          ) : historicalDebt.length > 0 ? (
-            <LazyLineChart data={[...historicalDebt].reverse()} height={350} margin={{ top: 5, right: 30, left: 20, bottom: 5 }}>
-              <LazyCartesianGrid {...chartGridStyle} />
-              <LazyXAxis dataKey="year" {...chartAxisStyle} />
-              <LazyYAxis {...chartAxisStyle} tickFormatter={(v) => `$${v}T`} />
-              <LazyTooltip contentStyle={chartTooltipStyle} formatter={(v: any) => [`$${v.toFixed(2)}T`, 'Total Debt']} />
-              <LazyLine type="monotone" dataKey="debt" stroke="#f87171" strokeWidth={2} dot={{ fill: '#f87171', strokeWidth: 0, r: 3 }} activeDot={{ r: 5, fill: '#ef4444' }} />
-            </LazyLineChart>
-          ) : (
-            <div className="h-[350px] flex items-center justify-center text-surface-600">No data available</div>
-          )}
-        </div>
-      </div>
-
-      {/* Main Content */}
-      <div className="mx-auto max-w-7xl px-4 pb-16 sm:px-6 lg:px-8">
-        <div className="grid lg:grid-cols-3 gap-8">
-          <div className="lg:col-span-2">
-            {/* Historical Table */}
-            <div className="card">
-              <div className="px-6 py-4 border-b border-border flex justify-between items-center">
-                <h2 className="text-base font-medium text-foreground">Historical National Debt</h2>
-              </div>
-              <div className="overflow-x-auto">
-                <table className="w-full">
-                  <thead className="bg-surface-800">
-                    <tr>
-                      <th className="px-6 py-3 text-left text-xs font-medium text-surface-500 uppercase">Year</th>
-                      <th className="px-6 py-3 text-right text-xs font-medium text-surface-500 uppercase">Total Debt</th>
-                      <th className="px-6 py-3 text-right text-xs font-medium text-surface-500 uppercase">Debt/GDP</th>
-                      <th className="px-6 py-3 text-right text-xs font-medium text-surface-500 uppercase">Growth</th>
-                    </tr>
-                  </thead>
-                  <tbody className="divide-y divide-border">
-                    {loading ? (
-                      Array.from({ length: 8 }).map((_, i) => <TableRowSkeleton key={i} />)
-                    ) : error ? (
-                      <ErrorStateTableRow colSpan={4} message="Failed to load data" onRetry={refetch} />
-                    ) : historicalDebt.length > 0 ? (
-                      historicalDebt.map((row, idx) => {
-                        const prevDebt = historicalDebt[idx + 1]?.debt || row.debt;
-                        const growth = ((row.debt - prevDebt) / prevDebt * 100).toFixed(1);
-                        return (
-                          <tr key={idx} className="hover:bg-surface-800/50">
-                            <td className="px-6 py-4 text-sm font-medium text-foreground">{row.year}</td>
-                            <td className="px-6 py-4 text-sm text-right font-mono text-red-400">${row.debt.toFixed(2)}T</td>
-                            <td className="px-6 py-4 text-sm text-right text-surface-500">{row.gdpRatio.toFixed(1)}%</td>
-                            <td className="px-6 py-4 text-sm text-right">
-                              {idx < historicalDebt.length - 1 && parseFloat(growth) !== 0 && (
-                                <span className={parseFloat(growth) > 0 ? 'text-red-400' : 'text-green-400'}>
-                                  {parseFloat(growth) > 0 ? '+' : ''}{growth}%
-                                </span>
-                              )}
-                            </td>
-                          </tr>
-                        );
-                      })
-                    ) : (
-                      <tr><td colSpan={4} className="px-6 py-8 text-center text-surface-600">No data available</td></tr>
-                    )}
-                  </tbody>
-                </table>
-              </div>
-            </div>
-
-            {/* Milestones */}
-            <div className="mt-8 card">
-              <div className="px-6 py-4 border-b border-border">
-                <h2 className="text-base font-medium text-foreground">Debt Milestones</h2>
-                <p className="text-sm text-surface-600">Days between each trillion-dollar milestone</p>
-              </div>
-              <div className="p-6">
-                {milestones.map((m, idx) => (
-                  <div key={idx} className="flex items-center mb-3 last:mb-0">
-                    <div className="w-20 text-right pr-4">
-                      <p className="text-sm font-mono font-medium text-foreground">{m.amount}</p>
-                      <p className="text-xs text-surface-600">{m.year}</p>
-                    </div>
-                    <div className="w-2 h-2 bg-red-400 rounded-full" />
-                    <div className="ml-4 text-sm text-surface-500">
-                      {m.days !== '—' && <span>+{m.days} days</span>}
-                    </div>
+        ) : (
+          <div className="grid lg:grid-cols-3 gap-8 mb-16">
+            {/* MAIN DEBT COUNTER */}
+            <div className="lg:col-span-2 card-brutal p-8">
+              <div className="flex items-start justify-between mb-8">
+                <div>
+                  <div className="text-brutal text-sm text-surface-400 mb-2">CURRENT_DEBT</div>
+                  <div className="text-brutal text-4xl text-text-primary">
+                    ${stats?.totalDebtTrillions}T
                   </div>
-                ))}
+                </div>
+                <div className="text-right">
+                  <div className="text-brutal text-xs text-surface-400 mb-2">STATUS</div>
+                  <div className="text-red-500 font-mono font-bold text-sm animate-pulse">
+                    INCREASING
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-
-          {/* Sidebar */}
-          <div>
-            <div className="card">
-              <div className="px-6 py-4 border-b border-border">
-                <h2 className="text-base font-medium text-foreground">Who Holds Our Debt?</h2>
-              </div>
-              <div className="p-6">
-                <LazyPieChart height={250}>
-                  <LazyPie data={debtHolders.map(h => ({ name: h.holder, value: h.amount }))} cx="50%" cy="50%" innerRadius={50} outerRadius={80} paddingAngle={2} dataKey="value">
-                    {debtHolders.map((_, idx) => <LazyCell key={idx} fill={PIE_COLORS[idx % PIE_COLORS.length]} />)}
-                  </LazyPie>
-                  <LazyTooltip contentStyle={chartTooltipStyle} formatter={(v: any) => [`$${v}T`, 'Amount']} />
-                </LazyPieChart>
-                <div className="mt-4 space-y-2">
-                  {debtHolders.map((h, idx) => (
-                    <div key={idx} className="flex items-center justify-between text-sm">
-                      <div className="flex items-center gap-2">
-                        <div className="w-2.5 h-2.5 rounded-full" style={{ backgroundColor: PIE_COLORS[idx % PIE_COLORS.length] }} />
-                        <span className="text-surface-400">{h.holder}</span>
-                      </div>
-                      <span className="font-mono text-surface-300">${h.amount}T</span>
-                    </div>
-                  ))}
+              
+              <div className="grid grid-cols-3 gap-6 border-t-2 border-surface-700 pt-6">
+                <div>
+                  <div className="text-xs font-mono text-surface-400 mb-1">DAILY_INTEREST</div>
+                  <div className="text-data text-xl text-red-400">${interestDaily}B</div>
+                </div>
+                <div>
+                  <div className="text-xs font-mono text-surface-400 mb-1">VS_GDP</div>
+                  <div className="text-data text-xl text-orange-500">
+                    {stats?.gdpRatio}%
+                  </div>
+                </div>
+                <div>
+                  <div className="text-xs font-mono text-surface-400 mb-1">PER_CITIZEN</div>
+                  <div className="text-data text-xl text-text-primary">
+                    ${stats?.perCitizen ? Math.round(parseFloat(stats.perCitizen.replace(/,/g, ''))).toLocaleString() : '106,000'}
+                  </div>
                 </div>
               </div>
             </div>
 
-            <div className="mt-6 card">
-              <div className="px-6 py-4 border-b border-border">
-                <h2 className="text-base font-medium text-foreground">Top Foreign Holders</h2>
+            {/* SYSTEM ALERTS */}
+            <div className="space-y-4">
+              <div className="card border-red-500 p-6">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-3 h-3 bg-red-500 animate-pulse"></div>
+                  <span className="text-brutal text-xs text-red-500">HIGH_PRIORITY</span>
+                </div>
+                <div className="text-sm text-text-primary font-mono mb-2">
+                  Debt ceiling suspended until January 2025
+                </div>
+                <div className="text-xs text-surface-400 font-mono">
+                  Congressional action required
+                </div>
               </div>
-              <div className="divide-y divide-border">
-                {topForeignHolders.map((c, idx) => (
-                  <div key={idx} className="px-6 py-3 flex items-center justify-between">
-                    <div className="flex items-center">
-                      <span className="text-sm text-surface-600 w-6">#{idx + 1}</span>
-                      <span className="text-sm text-surface-300">{c.country}</span>
-                    </div>
-                    <span className="text-sm font-mono text-surface-400">${c.amount}T</span>
-                  </div>
+              
+              <div className="card border-orange-500 p-6">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-3 h-3 bg-orange-500"></div>
+                  <span className="text-brutal text-xs text-orange-500">MEDIUM</span>
+                </div>
+                <div className="text-sm text-text-primary font-mono mb-2">
+                  Interest payments exceed $1T annually
+                </div>
+                <div className="text-xs text-surface-400 font-mono">
+                  Largest federal expense
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* DEBT HOLDERS - TERMINAL TABLE */}
+        <div className="mb-16">
+          <div className="flex items-center justify-between mb-8">
+            <div>
+              <h2 className="text-brutal text-xl mb-2">DEBT_HOLDERS</h2>
+              <div className="text-xs font-mono text-surface-400">WHO OWNS AMERICA'S DEBT</div>
+            </div>
+            <div className="text-xs font-mono text-surface-500">
+              $ debt_analysis --holders --live
+            </div>
+          </div>
+          
+          <div className="table-brutal">
+            <table className="w-full">
+              <thead>
+                <tr>
+                  <th className="text-left">HOLDER</th>
+                  <th className="text-right">AMOUNT_T</th>
+                  <th className="text-right">PERCENT</th>
+                  <th className="text-right">THREAT</th>
+                </tr>
+              </thead>
+              <tbody>
+                {debtHolders.map((holder) => (
+                  <tr key={holder.holder} className="hover:bg-surface-800">
+                    <td className="font-mono font-medium">{holder.holder}</td>
+                    <td className="text-right font-mono">${holder.amount.toFixed(2)}T</td>
+                    <td className="text-right font-mono">{holder.percent}%</td>
+                    <td className={`text-right font-mono font-bold ${getThreatColor(holder.threat)}`}>
+                      {holder.threat}
+                    </td>
+                  </tr>
                 ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        {/* FOREIGN HOLDERS - SECURITY ANALYSIS */}
+        <div className="mb-16">
+          <div className="border-l-4 border-red-500 pl-6 mb-8">
+            <h2 className="text-brutal text-xl mb-2 text-red-400">FOREIGN_DEBT_HOLDERS</h2>
+            <div className="text-xs font-mono text-surface-400">GEOPOLITICAL RISK ASSESSMENT</div>
+          </div>
+          
+          <div className="grid md:grid-cols-2 gap-6">
+            {topForeignHolders.map((holder) => (
+              <div key={holder.country} className="card border-surface-600 p-6 hover:border-accent">
+                <div className="flex items-center justify-between mb-4">
+                  <div className="text-brutal text-sm">{holder.country}</div>
+                  <div className={`text-xs font-mono font-bold ${getStatusColor(holder.status)}`}>
+                    [{holder.status}]
+                  </div>
+                </div>
+                <div className="text-2xl font-mono font-bold text-text-primary mb-2">
+                  ${holder.amount}T
+                </div>
+                <div className="text-xs font-mono text-surface-400">
+                  DEBT_HOLDING
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* HISTORICAL MILESTONES */}
+        <div className="mb-16">
+          <div className="mb-8">
+            <h2 className="text-brutal text-xl mb-2">DEBT_MILESTONES</h2>
+            <div className="text-xs font-mono text-surface-400">ACCELERATION ANALYSIS</div>
+          </div>
+          
+          <div className="space-y-2">
+            {milestones.map((milestone, index) => (
+              <div key={milestone.amount} className="flex items-center gap-6 py-4 border-b border-surface-800 hover:bg-surface-900 px-4">
+                <div className="text-brutal text-lg w-20">{milestone.amount}</div>
+                <div className="text-data text-surface-300 w-16">{milestone.year}</div>
+                <div className="text-xs font-mono text-surface-400 w-20">{milestone.days} DAYS</div>
+                <div className="text-xs font-mono text-surface-500">{milestone.era}</div>
+                <div className="flex-1 text-right">
+                  {index === 0 && (
+                    <span className="text-xs font-mono text-red-500 animate-pulse">← CURRENT</span>
+                  )}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* DATA DOWNLOAD */}
+        <div className="border-t-4 border-accent pt-8">
+          <div className="flex items-center justify-between">
+            <div>
+              <div className="text-brutal text-sm mb-2">RAW_DATA_ACCESS</div>
+              <div className="text-xs font-mono text-surface-400">
+                DOWNLOAD COMPLETE DATASET FOR INDEPENDENT ANALYSIS
               </div>
             </div>
-
-            <div className="mt-6 card p-6">
-              <h3 className="text-base font-medium text-foreground mb-3">Data Sources</h3>
-              <ul className="text-sm text-surface-500 space-y-2">
-                <li>• <a href="https://fiscaldata.treasury.gov/" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">Treasury Fiscal Data API</a></li>
-                <li>• TreasuryDirect.gov</li>
-                <li>• Bureau of the Fiscal Service</li>
-              </ul>
-            </div>
-
-            <div className="mt-6">
-              <DownloadRawData endpoints={[
-                { label: 'Debt History (3 years)', url: `${API_URL}/debt/?days=1095`, filename: 'debt_history.json' },
-                { label: 'Latest Debt Figure', url: `${API_URL}/debt/latest`, filename: 'debt_latest.json' },
-              ]} />
-            </div>
+            <DownloadRawData 
+              endpoint={`${API_URL}/debt/history`} 
+              filename="debt_data.json"
+              className="btn-accent"
+            />
           </div>
         </div>
       </div>
@@ -336,5 +337,9 @@ function DebtPageContent() {
 }
 
 export default function DebtPage() {
-  return <ErrorBoundary><DebtPageContent /></ErrorBoundary>;
+  return (
+    <ErrorBoundary>
+      <DebtPageContent />
+    </ErrorBoundary>
+  );
 }
