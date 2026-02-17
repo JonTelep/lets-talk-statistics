@@ -2,122 +2,145 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  :root {
-    --background: 0 0% 100%;
-    --foreground: 210 40% 8%;
-    
-    /* Federal Design System Variables */
-    --federal-navy: 221 39% 11%;
-    --federal-red: 0 84% 60%;
-    --federal-gold: 32 95% 44%;
-    --federal-charcoal: 220 13% 18%;
-  }
+/* ── Theme Variables ─────────────────────────────────────────────── */
+:root,
+[data-theme="dark"] {
+  --surface: #0a0a0a;
+  --surface-50: #fafafa;
+  --surface-100: #f5f5f5;
+  --surface-200: #e5e5e5;
+  --surface-300: #d4d4d4;
+  --surface-400: #a3a3a3;
+  --surface-500: #737373;
+  --surface-600: #525252;
+  --surface-700: #404040;
+  --surface-800: #262626;
+  --surface-900: #171717;
+  --surface-950: #0a0a0a;
+  --border: #222;
+  --border-subtle: #1a1a1a;
+  --border-medium: #333;
+  --text-primary: #ffffff;
+  --text-secondary: #a3a3a3;
+  --text-muted: #737373;
+  --text-dim: #525252;
+  --shimmer-from: #171717;
+  --shimmer-via: #262626;
+  --selection-bg: rgba(59, 130, 246, 0.3);
+}
 
+[data-theme="light"] {
+  --surface: #ffffff;
+  --surface-50: #fafafa;
+  --surface-100: #f5f5f5;
+  --surface-200: #e5e5e5;
+  --surface-300: #d4d4d4;
+  --surface-400: #a3a3a3;
+  --surface-500: #737373;
+  --surface-600: #525252;
+  --surface-700: #404040;
+  --surface-800: #f0f0f0;
+  --surface-900: #f7f7f7;
+  --surface-950: #ffffff;
+  --border: #e5e5e5;
+  --border-subtle: #f0f0f0;
+  --border-medium: #d4d4d4;
+  --text-primary: #111111;
+  --text-secondary: #555555;
+  --text-muted: #777777;
+  --text-dim: #999999;
+  --shimmer-from: #f0f0f0;
+  --shimmer-via: #e5e5e5;
+  --selection-bg: rgba(59, 130, 246, 0.2);
+}
+
+@layer base {
   html,
   body {
     overflow-x: hidden;
     scroll-behavior: smooth;
   }
 
+  * {
+    transition: background-color 0.2s ease, color 0.15s ease, border-color 0.2s ease;
+  }
+
   body {
-    @apply bg-gray-50 text-federal-charcoal-900 antialiased;
+    background-color: var(--surface);
+    color: var(--text-primary);
+    @apply antialiased;
   }
 
   * {
-    @apply border-federal-charcoal-200;
+    border-color: var(--border);
   }
 
-  /* Typography Hierarchy */
-  h1, .heading-display {
-    @apply font-serif text-display text-federal-navy-900 tracking-tight;
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--text-primary);
+    @apply font-sans font-semibold tracking-tight;
   }
 
-  h2, .heading-hero {
-    @apply font-serif text-hero text-federal-navy-900 tracking-tight;
-  }
-
-  h3, .heading-section {
-    @apply font-serif text-section text-federal-navy-900 tracking-tight;
-  }
-
-  h4, h5, h6 {
-    @apply font-serif text-xl font-semibold text-federal-navy-800;
-  }
+  h1 { @apply text-4xl sm:text-5xl; }
+  h2 { @apply text-2xl sm:text-3xl; }
+  h3 { @apply text-xl; }
 
   p {
-    @apply text-federal-charcoal-700 leading-relaxed;
+    color: var(--text-secondary);
+    @apply leading-relaxed;
   }
-  
+
   /* Data Typography */
   .data-value {
     @apply font-mono font-bold tracking-tight;
   }
-  
+
   .data-label {
-    @apply font-sans text-sm font-medium text-federal-charcoal-600 uppercase tracking-wide;
+    color: var(--text-muted);
+    @apply font-sans text-sm tracking-wide;
   }
 }
 
 @layer components {
-  /* Federal Design System Components */
-  .card-federal {
-    @apply bg-white border border-federal-charcoal-200 shadow-brutal transition-all duration-200 hover:shadow-brutal-lg hover:translate-x-1 hover:-translate-y-1;
+  /* Card */
+  .card {
+    background-color: var(--surface-900);
+    border: 1px solid var(--border);
+    @apply rounded-lg transition-colors duration-200;
   }
-  
-  .card-federal-accent {
-    @apply bg-white border-2 border-federal-red-600 shadow-brutal-red transition-all duration-200 hover:shadow-brutal-red hover:translate-x-1 hover:-translate-y-1;
+
+  .card-hover:hover {
+    border-color: var(--border-medium);
   }
-  
-  .btn-federal {
-    @apply inline-flex items-center justify-center px-6 py-3 font-sans font-semibold text-sm uppercase tracking-wide border-2 shadow-brutal transition-all duration-200 hover:translate-x-1 hover:-translate-y-1 active:translate-x-0 active:translate-y-0 active:shadow-none;
+
+  /* Buttons */
+  .btn {
+    @apply inline-flex items-center justify-center px-5 py-2.5 font-sans font-medium text-sm rounded-md transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-accent/40 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed;
+    --tw-ring-offset-color: var(--surface);
   }
-  
-  .btn-federal-primary {
-    @apply btn-federal bg-federal-navy-900 border-federal-navy-900 text-white hover:bg-federal-navy-800 hover:border-federal-navy-800;
+
+  .btn-primary {
+    @apply btn;
+    background-color: var(--text-primary);
+    color: var(--surface);
   }
-  
-  .btn-federal-accent {
-    @apply btn-federal bg-federal-red-600 border-federal-red-600 text-white hover:bg-federal-red-700 hover:border-federal-red-700;
+  .btn-primary:hover {
+    background-color: var(--surface-200);
+    color: var(--surface);
   }
-  
-  .btn-federal-outline {
-    @apply btn-federal bg-white border-federal-navy-900 text-federal-navy-900 hover:bg-federal-navy-50;
+
+  .btn-secondary {
+    @apply btn;
+    background-color: var(--surface-800);
+    color: var(--text-primary);
+    border: 1px solid var(--border);
   }
-  
-  /* Geometric Elements */
-  .geometric-border {
-    @apply relative;
+  .btn-secondary:hover {
+    border-color: var(--border-medium);
+    background-color: var(--surface-700);
   }
-  
-  .geometric-border::before {
-    content: '';
-    @apply absolute -inset-1 bg-federal-gold-400 -z-10 transform rotate-1;
-  }
-  
-  /* Animation Classes */
-  .stagger-children > * {
-    animation: slide-in-up 0.4s ease-out;
-  }
-  
-  .stagger-children > *:nth-child(2) {
-    animation-delay: 0.1s;
-  }
-  
-  .stagger-children > *:nth-child(3) {
-    animation-delay: 0.2s;
-  }
-  
-  .stagger-children > *:nth-child(4) {
-    animation-delay: 0.3s;
-  }
-  
-  .stagger-children > *:nth-child(5) {
-    animation-delay: 0.4s;
-  }
-  
-  .stagger-children > *:nth-child(6) {
-    animation-delay: 0.5s;
+
+  .btn-accent {
+    @apply btn bg-accent text-white hover:bg-accent-muted;
   }
 }
 
@@ -129,68 +152,46 @@
   .font-feature-numeric {
     font-feature-settings: 'tnum' on, 'lnum' on;
   }
-  
-  /* Federal spacing system */
-  .space-federal-xs { @apply space-y-2; }
-  .space-federal-sm { @apply space-y-4; }
-  .space-federal-md { @apply space-y-6; }
-  .space-federal-lg { @apply space-y-8; }
-  .space-federal-xl { @apply space-y-12; }
-  
-  /* Grid utilities for brutalist layouts */
-  .grid-brutal {
-    @apply grid gap-0;
-  }
-  
-  .border-brutal {
-    @apply border-4 border-federal-navy-900;
-  }
 }
 
-/* Skeleton loading shimmer animation */
+/* Skeleton loading shimmer */
 @keyframes shimmer {
-  0% {
-    background-position: 200% 0;
-  }
-  100% {
-    background-position: -200% 0;
-  }
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
 }
 
 .animate-shimmer {
   animation: shimmer 1.5s ease-in-out infinite;
-  background: linear-gradient(
-    90deg,
-    #e5e7eb 0%,
-    #f3f4f6 50%,
-    #e5e7eb 100%
-  );
+  background: linear-gradient(90deg, var(--shimmer-from) 0%, var(--shimmer-via) 50%, var(--shimmer-from) 100%);
   background-size: 200% 100%;
 }
 
-/* Custom scrollbar */
+/* Scrollbar */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 6px;
 }
 
 ::-webkit-scrollbar-track {
-  @apply bg-federal-charcoal-100;
+  background-color: var(--surface);
 }
 
 ::-webkit-scrollbar-thumb {
-  @apply bg-federal-charcoal-400 rounded-sm;
+  background-color: var(--surface-700);
+  @apply rounded-full;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  @apply bg-federal-charcoal-500;
+  background-color: var(--surface-600);
 }
 
 /* Selection */
 ::selection {
-  @apply bg-federal-gold-200 text-federal-navy-900;
+  background: var(--selection-bg);
+  color: var(--text-primary);
 }
 
-/* Focus styles */
+/* Focus */
 :focus-visible {
-  @apply outline-none ring-2 ring-federal-red-500 ring-offset-2 ring-offset-white;
+  --tw-ring-offset-color: var(--surface);
+  @apply outline-none ring-2 ring-accent/50 ring-offset-2;
 }

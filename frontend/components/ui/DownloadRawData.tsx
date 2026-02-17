@@ -32,9 +32,7 @@ export function DownloadRawData({
 
     try {
       const response = await fetch(endpoint.url);
-      if (!response.ok) {
-        throw new Error(`Failed to fetch: ${response.status}`);
-      }
+      if (!response.ok) throw new Error(`Failed to fetch: ${response.status}`);
 
       const data = await response.json();
       const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
@@ -60,12 +58,12 @@ export function DownloadRawData({
   };
 
   return (
-    <div className="bg-white rounded-xl shadow-sm p-6">
+    <div className="card p-6">
       <div className="flex items-center gap-2 mb-2">
-        <Download className="h-5 w-5 text-gray-600" />
-        <h3 className="text-lg font-semibold text-gray-900">{title}</h3>
+        <Download className="h-5 w-5 text-surface-500" />
+        <h3 className="text-base font-medium text-foreground">{title}</h3>
       </div>
-      <p className="text-sm text-gray-500 mb-4">{description}</p>
+      <p className="text-sm text-surface-500 mb-4">{description}</p>
       
       <div className="space-y-2">
         {endpoints.map((endpoint) => {
@@ -78,12 +76,12 @@ export function DownloadRawData({
               key={endpoint.url}
               onClick={() => handleDownload(endpoint)}
               disabled={isDownloading}
-              className={`w-full flex items-center justify-between px-4 py-3 rounded-lg border transition-all ${
+              className={`w-full flex items-center justify-between px-4 py-3 rounded-md border transition-all ${
                 isSuccess 
-                  ? 'bg-green-50 border-green-200 text-green-700'
+                  ? 'bg-green-500/10 border-green-500/30 text-green-400'
                   : isError
-                  ? 'bg-red-50 border-red-200 text-red-700'
-                  : 'bg-gray-50 border-gray-200 hover:bg-gray-100 hover:border-gray-300 text-gray-700'
+                  ? 'bg-red-500/10 border-red-500/30 text-red-400'
+                  : 'bg-surface-800 border-border hover:border-border-medium text-surface-300'
               } ${isDownloading ? 'opacity-75 cursor-wait' : 'cursor-pointer'}`}
             >
               <span className="text-sm font-medium">{endpoint.label}</span>
@@ -91,20 +89,20 @@ export function DownloadRawData({
                 {isDownloading ? (
                   <Loader2 className="h-4 w-4 animate-spin" />
                 ) : isSuccess ? (
-                  <Check className="h-4 w-4 text-green-600" />
+                  <Check className="h-4 w-4 text-green-400" />
                 ) : isError ? (
-                  <AlertCircle className="h-4 w-4 text-red-600" />
+                  <AlertCircle className="h-4 w-4 text-red-400" />
                 ) : (
                   <Download className="h-4 w-4" />
                 )}
-                <span className="text-xs text-gray-500">JSON</span>
+                <span className="text-xs text-surface-600">JSON</span>
               </span>
             </button>
           );
         })}
       </div>
 
-      <p className="text-xs text-gray-400 mt-4">
+      <p className="text-xs text-surface-600 mt-4">
         Data is fetched live from government APIs. No account required.
       </p>
     </div>

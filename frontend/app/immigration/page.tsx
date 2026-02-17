@@ -1,18 +1,9 @@
 'use client';
 
-import { Users, TrendingUp, TrendingDown, ArrowRight, ArrowLeft, AlertTriangle, Calendar, RefreshCw } from 'lucide-react';
+import { Users, ArrowRight, ArrowLeft, AlertTriangle, Calendar, RefreshCw } from 'lucide-react';
 import Link from 'next/link';
 import {
-  LazyLineChart,
-  LazyLine,
-  LazyXAxis,
-  LazyYAxis,
-  LazyCartesianGrid,
-  LazyTooltip,
-  LazyResponsiveContainer,
-  LazyLegend,
-  LazyBarChart,
-  LazyBar,
+  LazyLineChart, LazyLine, LazyXAxis, LazyYAxis, LazyCartesianGrid, LazyTooltip, LazyLegend,
 } from '@/components/charts';
 import {
   useImmigrationSummary,
@@ -22,319 +13,236 @@ import {
 } from '@/services/hooks/useImmigrationData';
 import { DownloadRawData } from '@/components/ui/DownloadRawData';
 import { ErrorBoundary } from '@/components/ui/ErrorBoundary';
-import { ErrorStateCompact, ErrorStateTableRow } from '@/components/ui/ErrorState';
+import { ErrorStateCompact } from '@/components/ui/ErrorState';
 import { Skeleton, StatCardSkeleton, ChartSkeleton } from '@/components/ui/Skeleton';
+import { useChartTheme } from '@/hooks/useChartTheme';
 
 const API_HOST = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
 const API_URL = `${API_HOST.replace(/\/$/, '')}/api/v1`;
 
 function ImmigrationPageContent() {
-  // Fetch all immigration data
   const { data: summaryData, loading: summaryLoading, error: summaryError, refetch: refetchSummary } = useImmigrationSummary();
   const { data: historicalData, loading: historicalLoading } = useImmigrationHistorical();
   const { data: categoriesData, loading: categoriesLoading } = useImmigrationCategories();
   const { data: countriesData, loading: countriesLoading } = useImmigrationCountries(10);
+  const { tooltipStyle, axisStyle, gridStyle } = useChartTheme();
 
-  // Derived values from summary
   const summary = summaryData?.summary;
   const fiscalYear = summaryData?.fiscal_year;
   const ratio = summary?.admission_to_removal_ratio || '—';
   const netMigration = summary?.net_legal_migration || 0;
 
-  // Loading state for main content
-  const isLoading = summaryLoading || historicalLoading;
-
   return (
-    <div className="min-h-screen bg-gray-50">
-      {/* Hero Section */}
-      <div className="bg-gradient-to-r from-emerald-600 to-teal-700 text-white">
-        <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
-          <div className="flex items-center gap-3 mb-4">
-            <Users className="h-10 w-10" />
-            <h1 className="text-4xl font-bold">Immigration Statistics</h1>
-          </div>
-          <p className="text-xl text-emerald-100 max-w-3xl">
-            Comprehensive data on legal immigration, deportations, and border encounters 
-            from official U.S. government sources. Understanding the full picture of 
-            who&apos;s coming in and who&apos;s going out.
+    <div className="min-h-screen">
+      {/* Hero */}
+      <div className="px-4 sm:px-6 lg:px-8 pt-16 pb-12">
+        <div className="mx-auto max-w-7xl">
+          <p className="text-xs font-mono text-surface-600 mb-4 uppercase tracking-wider">Immigration Analysis</p>
+          <h1 className="text-4xl sm:text-5xl font-semibold mb-4" style={{ color: 'var(--text-primary)' }}>Immigration Statistics</h1>
+          <p className="text-lg text-surface-500 max-w-2xl">
+            Comprehensive data on legal immigration, deportations, and border encounters
+            from official U.S. government sources.
           </p>
         </div>
       </div>
 
       {/* Disclaimer */}
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 -mt-6">
-        <div className="bg-amber-50 border border-amber-200 rounded-lg p-4 flex items-start gap-3">
-          <AlertTriangle className="h-5 w-5 text-amber-600 flex-shrink-0 mt-0.5" />
-          <div className="text-sm text-amber-800">
-            <strong>Data Sources:</strong> Department of Homeland Security (DHS) Immigration Statistics, 
-            Customs and Border Protection (CBP), and Immigration and Customs Enforcement (ICE). 
-            Data reflects fiscal years. &quot;Encounters&quot; includes apprehensions and inadmissibles at borders.
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mb-8">
+        <div className="bg-surface-900 border border-amber-500/20 rounded-lg p-4 flex items-start gap-3">
+          <AlertTriangle className="h-4 w-4 text-amber-400 flex-shrink-0 mt-0.5" />
+          <p className="text-sm text-surface-500">
+            <strong className="text-surface-300">Sources:</strong> DHS Immigration Statistics, CBP, ICE ERO.
+            Data reflects fiscal years. &quot;Encounters&quot; includes apprehensions and inadmissibles.
             {summaryData && (
-              <span className="ml-1 text-green-700">
-                Fetched: {new Date(summaryData.fetched_at).toLocaleString()}
-              </span>
+              <span className="ml-1 text-green-400"> Fetched: {new Date(summaryData.fetched_at).toLocaleString()}</span>
             )}
-          </div>
+          </p>
         </div>
       </div>
 
       {/* Key Metrics */}
-      <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
-        <h2 className="text-2xl font-bold text-gray-900 mb-6">
-          Key Metrics {fiscalYear ? `(FY ${fiscalYear})` : ''}
-          {summaryLoading && <RefreshCw className="inline ml-2 h-5 w-5 animate-spin text-emerald-600" />}
-        </h2>
-        
+      <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
+        <div className="flex items-center gap-3 mb-6">
+          <h2 className="text-xl font-medium" style={{ color: 'var(--text-primary)' }}>
+            Key Metrics {fiscalYear ? `(FY ${fiscalYear})` : ''}
+          </h2>
+          {summaryLoading && <RefreshCw className="h-4 w-4 animate-spin text-surface-500" />}
+        </div>
+
         {summaryError ? (
-          <ErrorStateCompact 
-            message="Failed to load summary data" 
-            onRetry={refetchSummary}
-            className="mb-8" 
-          />
+          <ErrorStateCompact message="Failed to load summary data" onRetry={refetchSummary} className="mb-8" />
         ) : (
-          <>
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
-              {summaryLoading ? (
-                <>
-                  <StatCardSkeleton />
-                  <StatCardSkeleton />
-                  <StatCardSkeleton />
-                  <StatCardSkeleton />
-                </>
-              ) : (
-                <>
-                  <div className="bg-white rounded-xl shadow-sm p-6">
-                    <div className="flex items-center gap-2 text-gray-500 text-sm mb-1">
-                      <ArrowRight className="h-4 w-4 text-green-500" />
-                      Legal Admissions
-                    </div>
-                    <p className="text-2xl font-bold text-gray-900">
-                      {summary?.legal_admissions?.toLocaleString() || '—'}
-                    </p>
-                    <p className="text-xs text-gray-500">Lawful Permanent Residents</p>
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+            {summaryLoading ? (
+              <><StatCardSkeleton /><StatCardSkeleton /><StatCardSkeleton /><StatCardSkeleton /></>
+            ) : (
+              <>
+                <div className="card p-6">
+                  <div className="flex items-center gap-2 text-surface-500 text-sm mb-1">
+                    <ArrowRight className="h-4 w-4 text-green-400" />Legal Admissions
                   </div>
-                  
-                  <div className="bg-white rounded-xl shadow-sm p-6">
-                    <div className="flex items-center gap-2 text-gray-500 text-sm mb-1">
-                      <ArrowLeft className="h-4 w-4 text-red-500" />
-                      Deportations
-                    </div>
-                    <p className="text-2xl font-bold text-gray-900">
-                      {summary?.removals?.toLocaleString() || '—'}
-                    </p>
-                    <p className="text-xs text-gray-500">Removals by ICE ERO</p>
-                  </div>
-                  
-                  <div className="bg-white rounded-xl shadow-sm p-6">
-                    <div className="flex items-center gap-2 text-gray-500 text-sm mb-1">
-                      <AlertTriangle className="h-4 w-4 text-amber-500" />
-                      Border Encounters
-                    </div>
-                    <p className="text-2xl font-bold text-gray-900">
-                      {summary?.border_encounters?.toLocaleString() || '—'}
-                    </p>
-                    <p className="text-xs text-gray-500">CBP Southwest Border</p>
-                  </div>
-                  
-                  <div className="bg-white rounded-xl shadow-sm p-6">
-                    <div className="flex items-center gap-2 text-gray-500 text-sm mb-1">
-                      <Calendar className="h-4 w-4 text-blue-500" />
-                      Data Year
-                    </div>
-                    <p className="text-2xl font-bold text-gray-900">FY {fiscalYear || '—'}</p>
-                    <p className="text-xs text-green-600">✓ Live from API</p>
-                  </div>
-                </>
-              )}
-            </div>
-
-            {/* Immigration Trends Chart */}
-            <div className="bg-white rounded-xl shadow-sm p-6 mb-8">
-              <h3 className="text-lg font-semibold text-gray-900 mb-4">Immigration Trends by Year</h3>
-              {historicalLoading ? (
-                <ChartSkeleton height={300} />
-              ) : historicalData?.data && historicalData.data.length > 0 ? (
-                <LazyLineChart
-                  data={[...historicalData.data].reverse().map(d => ({
-                    year: `FY ${d.fiscal_year}`,
-                    admissions: d.legal_admissions,
-                    removals: d.removals,
-                    encounters: d.border_encounters,
-                  }))}
-                  height={300}
-                  margin={{ top: 5, right: 30, left: 20, bottom: 5 }}
-                >
-                  <LazyCartesianGrid strokeDasharray="3 3" stroke="#e5e7eb" />
-                  <LazyXAxis 
-                    dataKey="year" 
-                    stroke="#6b7280"
-                    fontSize={12}
-                    tickFormatter={(value) => value.replace('FY ', "'")}
-                  />
-                  <LazyYAxis 
-                    stroke="#6b7280"
-                    fontSize={12}
-                    tickFormatter={(value) => `${(value / 1000000).toFixed(1)}M`}
-                  />
-                  <LazyTooltip
-                    contentStyle={{
-                      backgroundColor: '#fff',
-                      border: '1px solid #e5e7eb',
-                      borderRadius: '8px',
-                      boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)',
-                    }}
-                    formatter={(value: number, name: string) => [
-                      value.toLocaleString(),
-                      name === 'admissions' ? 'Legal Admissions' : 
-                      name === 'removals' ? 'Deportations' : 'Border Encounters'
-                    ]}
-                  />
-                  <LazyLegend 
-                    formatter={(value) => 
-                      value === 'admissions' ? 'Legal Admissions' : 
-                      value === 'removals' ? 'Deportations' : 'Border Encounters'
-                    }
-                  />
-                  <LazyLine
-                    type="monotone"
-                    dataKey="admissions"
-                    stroke="#22c55e"
-                    strokeWidth={2}
-                    dot={{ fill: '#22c55e', strokeWidth: 2, r: 3 }}
-                  />
-                  <LazyLine
-                    type="monotone"
-                    dataKey="removals"
-                    stroke="#ef4444"
-                    strokeWidth={2}
-                    dot={{ fill: '#ef4444', strokeWidth: 2, r: 3 }}
-                  />
-                  <LazyLine
-                    type="monotone"
-                    dataKey="encounters"
-                    stroke="#f59e0b"
-                    strokeWidth={2}
-                    dot={{ fill: '#f59e0b', strokeWidth: 2, r: 3 }}
-                  />
-                </LazyLineChart>
-              ) : (
-                <div className="h-[300px] flex items-center justify-center text-gray-500">
-                  No historical data available for chart
+                  <p className="text-2xl font-semibold text-green-400">{summary?.legal_admissions?.toLocaleString() || '—'}</p>
+                  <p className="text-xs text-surface-600">Lawful Permanent Residents</p>
                 </div>
-              )}
-            </div>
-
-            {/* Ratio Highlight */}
-            <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl p-6 mb-8">
-              <div className="flex flex-col md:flex-row md:items-center md:justify-between">
-                <div>
-                  <h3 className="text-lg font-semibold text-gray-900">Immigration to Deportation Ratio</h3>
-                  <p className="text-sm text-gray-600">
-                    For every 1 person deported, approximately {ratio.replace(':1', '')} people are legally admitted
-                  </p>
+                <div className="card p-6">
+                  <div className="flex items-center gap-2 text-surface-500 text-sm mb-1">
+                    <ArrowLeft className="h-4 w-4 text-red-400" />Deportations
+                  </div>
+                  <p className="text-2xl font-semibold text-red-400">{summary?.removals?.toLocaleString() || '—'}</p>
+                  <p className="text-xs text-surface-600">Removals by ICE ERO</p>
                 </div>
-                <div className="mt-4 md:mt-0 flex items-center gap-8">
-                  <div className="text-center">
-                    {summaryLoading ? (
-                      <Skeleton className="h-9 w-16 mx-auto" />
-                    ) : (
-                      <p className="text-3xl font-bold text-blue-600">{ratio}</p>
-                    )}
-                    <p className="text-xs text-gray-500">Ratio</p>
+                <div className="card p-6">
+                  <div className="flex items-center gap-2 text-surface-500 text-sm mb-1">
+                    <AlertTriangle className="h-4 w-4 text-amber-400" />Border Encounters
                   </div>
-                  <div className="text-center">
-                    {summaryLoading ? (
-                      <Skeleton className="h-9 w-24 mx-auto" />
-                    ) : (
-                      <p className="text-3xl font-bold text-green-600">
-                        +{netMigration.toLocaleString()}
-                      </p>
-                    )}
-                    <p className="text-xs text-gray-500">Net Legal Migration</p>
+                  <p className="text-2xl font-semibold text-amber-400">{summary?.border_encounters?.toLocaleString() || '—'}</p>
+                  <p className="text-xs text-surface-600">CBP Southwest Border</p>
+                </div>
+                <div className="card p-6">
+                  <div className="flex items-center gap-2 text-surface-500 text-sm mb-1">
+                    <Calendar className="h-4 w-4 text-blue-400" />Data Year
                   </div>
+                  <p className="text-2xl font-semibold" style={{ color: 'var(--text-primary)' }}>FY {fiscalYear || '—'}</p>
+                  <p className="text-xs text-green-400">✓ Live from API</p>
+                </div>
+              </>
+            )}
+          </div>
+        )}
+      </div>
+
+      {/* Chart */}
+      <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
+        <div className="card p-6">
+          <h2 className="text-base font-medium mb-4" style={{ color: 'var(--text-primary)' }}>Immigration Trends by Year</h2>
+          {historicalLoading ? (
+            <ChartSkeleton height={300} />
+          ) : historicalData?.data && historicalData.data.length > 0 ? (
+            <LazyLineChart
+              data={[...historicalData.data].reverse().map(d => ({
+                year: `FY ${d.fiscal_year}`,
+                admissions: d.legal_admissions,
+                removals: d.removals,
+                encounters: d.border_encounters,
+              }))}
+              height={300}
+              margin={{ top: 5, right: 30, left: 20, bottom: 5 }}
+            >
+              <LazyCartesianGrid {...gridStyle} />
+              <LazyXAxis dataKey="year" {...axisStyle} tickFormatter={(v) => v.replace('FY ', "'")} />
+              <LazyYAxis {...axisStyle} tickFormatter={(v) => `${(v / 1000000).toFixed(1)}M`} />
+              <LazyTooltip
+                contentStyle={tooltipStyle}
+                formatter={(value: any, name: any) => [
+                  value.toLocaleString(),
+                  name === 'admissions' ? 'Legal Admissions' :
+                  name === 'removals' ? 'Deportations' : 'Border Encounters'
+                ]}
+              />
+              <LazyLegend
+                formatter={(value) =>
+                  value === 'admissions' ? 'Legal Admissions' :
+                  value === 'removals' ? 'Deportations' : 'Border Encounters'
+                }
+              />
+              <LazyLine type="monotone" dataKey="admissions" stroke="#10b981" strokeWidth={2} dot={{ fill: '#10b981', strokeWidth: 0, r: 3 }} />
+              <LazyLine type="monotone" dataKey="removals" stroke="#ef4444" strokeWidth={2} dot={{ fill: '#ef4444', strokeWidth: 0, r: 3 }} />
+              <LazyLine type="monotone" dataKey="encounters" stroke="#f59e0b" strokeWidth={2} dot={{ fill: '#f59e0b', strokeWidth: 0, r: 3 }} />
+            </LazyLineChart>
+          ) : (
+            <div className="h-[300px] flex items-center justify-center text-surface-600">No historical data available</div>
+          )}
+        </div>
+      </div>
+
+      {/* Ratio Highlight */}
+      {!summaryLoading && summary && (
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mb-8">
+          <div className="card p-6">
+            <div className="flex flex-col md:flex-row md:items-center md:justify-between">
+              <div>
+                <h3 className="text-base font-medium" style={{ color: 'var(--text-primary)' }}>Immigration to Deportation Ratio</h3>
+                <p className="text-sm text-surface-500">
+                  For every 1 person deported, approximately {ratio.replace(':1', '')} people are legally admitted
+                </p>
+              </div>
+              <div className="mt-4 md:mt-0 flex items-center gap-8">
+                <div className="text-center">
+                  <p className="text-3xl font-bold text-blue-400 font-mono">{ratio}</p>
+                  <p className="text-xs text-surface-600">Ratio</p>
+                </div>
+                <div className="text-center">
+                  <p className="text-3xl font-bold text-green-400 font-mono">+{netMigration.toLocaleString()}</p>
+                  <p className="text-xs text-surface-600">Net Legal Migration</p>
                 </div>
               </div>
             </div>
-          </>
-        )}
-      </div>
+          </div>
+        </div>
+      )}
 
       {/* Main Content */}
       <div className="mx-auto max-w-7xl px-4 pb-16 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-3 gap-8">
-          {/* Historical Data */}
           <div className="lg:col-span-2">
-            <div className="bg-white rounded-xl shadow-sm">
-              <div className="px-6 py-4 border-b border-gray-200 flex justify-between items-center">
-                <h2 className="text-lg font-semibold text-gray-900">Historical Data (by Fiscal Year)</h2>
-                <Link href="/immigration/trends" className="text-sm text-primary-600 hover:text-primary-700">
-                  View trends →
-                </Link>
+            {/* Historical Table */}
+            <div className="card">
+              <div className="px-6 py-4 border-b border-border flex justify-between items-center">
+                <h2 className="text-base font-medium" style={{ color: 'var(--text-primary)' }}>Historical Data (by Fiscal Year)</h2>
+                <Link href="/immigration/trends" className="text-sm text-accent hover:underline">View trends →</Link>
               </div>
               <div className="overflow-x-auto">
                 <table className="w-full">
-                  <thead className="bg-gray-50">
+                  <thead className="bg-surface-800">
                     <tr>
-                      <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Year</th>
-                      <th className="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase">Legal Immigration</th>
-                      <th className="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase">Removals</th>
-                      <th className="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase">Border Encounters</th>
-                      <th className="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase">Ratio</th>
+                      <th className="px-6 py-3 text-left text-xs font-medium text-surface-500 uppercase">Year</th>
+                      <th className="px-6 py-3 text-right text-xs font-medium text-surface-500 uppercase">Legal Immigration</th>
+                      <th className="px-6 py-3 text-right text-xs font-medium text-surface-500 uppercase">Removals</th>
+                      <th className="px-6 py-3 text-right text-xs font-medium text-surface-500 uppercase">Encounters</th>
+                      <th className="px-6 py-3 text-right text-xs font-medium text-surface-500 uppercase">Ratio</th>
                     </tr>
                   </thead>
-                  <tbody className="divide-y divide-gray-200">
+                  <tbody className="divide-y divide-border">
                     {historicalLoading ? (
-                      <>
-                        {[1, 2, 3, 4, 5, 6].map((i) => (
-                          <tr key={i}>
-                            <td className="px-6 py-4"><Skeleton className="h-4 w-16" /></td>
-                            <td className="px-6 py-4 text-right"><Skeleton className="h-4 w-20 ml-auto" /></td>
-                            <td className="px-6 py-4 text-right"><Skeleton className="h-4 w-16 ml-auto" /></td>
-                            <td className="px-6 py-4 text-right"><Skeleton className="h-4 w-20 ml-auto" /></td>
-                            <td className="px-6 py-4 text-right"><Skeleton className="h-4 w-12 ml-auto" /></td>
-                          </tr>
-                        ))}
-                      </>
+                      Array.from({ length: 6 }).map((_, i) => (
+                        <tr key={i}>
+                          <td className="px-6 py-4"><Skeleton className="h-4 w-16" /></td>
+                          <td className="px-6 py-4 text-right"><Skeleton className="h-4 w-20 ml-auto" /></td>
+                          <td className="px-6 py-4 text-right"><Skeleton className="h-4 w-16 ml-auto" /></td>
+                          <td className="px-6 py-4 text-right"><Skeleton className="h-4 w-20 ml-auto" /></td>
+                          <td className="px-6 py-4 text-right"><Skeleton className="h-4 w-12 ml-auto" /></td>
+                        </tr>
+                      ))
                     ) : historicalData?.data && historicalData.data.length > 0 ? (
                       historicalData.data.map((row, idx) => {
                         const rowRatio = (row.legal_admissions / row.removals).toFixed(1);
                         return (
-                          <tr key={idx} className="hover:bg-gray-50">
-                            <td className="px-6 py-4 text-sm font-medium text-gray-900">FY {row.fiscal_year}</td>
-                            <td className="px-6 py-4 text-sm text-right text-green-600 font-medium">
-                              {row.legal_admissions.toLocaleString()}
-                            </td>
-                            <td className="px-6 py-4 text-sm text-right text-red-600">
-                              {row.removals.toLocaleString()}
-                            </td>
-                            <td className="px-6 py-4 text-sm text-right text-amber-600">
-                              {row.border_encounters.toLocaleString()}
-                            </td>
-                            <td className="px-6 py-4 text-sm text-right font-medium">{rowRatio}:1</td>
+                          <tr key={idx} className="hover:bg-surface-800/50">
+                            <td className="px-6 py-4 text-sm font-medium" style={{ color: 'var(--text-primary)' }}>FY {row.fiscal_year}</td>
+                            <td className="px-6 py-4 text-sm text-right font-mono text-green-400">{row.legal_admissions.toLocaleString()}</td>
+                            <td className="px-6 py-4 text-sm text-right font-mono text-red-400">{row.removals.toLocaleString()}</td>
+                            <td className="px-6 py-4 text-sm text-right font-mono text-amber-400">{row.border_encounters.toLocaleString()}</td>
+                            <td className="px-6 py-4 text-sm text-right font-mono text-surface-300">{rowRatio}:1</td>
                           </tr>
                         );
                       })
                     ) : (
-                      <tr>
-                        <td colSpan={5} className="px-6 py-8 text-center text-gray-500">
-                          No historical data available
-                        </td>
-                      </tr>
+                      <tr><td colSpan={5} className="px-6 py-8 text-center text-surface-600">No historical data available</td></tr>
                     )}
                   </tbody>
                 </table>
               </div>
               {historicalData && (
-                <div className="px-6 py-3 bg-gray-50 text-xs text-gray-500 border-t">
+                <div className="px-6 py-3 bg-surface-800 text-xs text-surface-600 border-t border-border">
                   Source: {historicalData.source}
                 </div>
               )}
             </div>
 
             {/* Category Breakdown */}
-            <div className="mt-8 bg-white rounded-xl shadow-sm">
-              <div className="px-6 py-4 border-b border-gray-200">
-                <h2 className="text-lg font-semibold text-gray-900">
+            <div className="mt-8 card">
+              <div className="px-6 py-4 border-b border-border">
+                <h2 className="text-base font-medium" style={{ color: 'var(--text-primary)' }}>
                   Legal Immigration by Category
                   {categoriesData && ` (FY ${categoriesData.fiscal_year})`}
                 </h2>
@@ -357,26 +265,21 @@ function ImmigrationPageContent() {
                     {categoriesData.categories.map((cat, idx) => (
                       <div key={idx}>
                         <div className="flex justify-between text-sm mb-1">
-                          <span className="font-medium text-gray-700">{cat.category}</span>
-                          <span className="text-gray-500">
-                            {cat.count.toLocaleString()} ({cat.percent}%)
-                          </span>
+                          <span className="text-surface-300">{cat.category}</span>
+                          <span className="font-mono text-surface-500">{cat.count.toLocaleString()} ({cat.percent}%)</span>
                         </div>
-                        <div className="w-full bg-gray-200 rounded-full h-2">
-                          <div
-                            className="bg-emerald-500 h-2 rounded-full"
-                            style={{ width: `${cat.percent}%` }}
-                          />
+                        <div className="w-full bg-surface-800 rounded-full h-2">
+                          <div className="bg-green-400 h-2 rounded-full" style={{ width: `${cat.percent}%` }} />
                         </div>
                       </div>
                     ))}
                   </div>
                 ) : (
-                  <p className="text-gray-500">No category data available</p>
+                  <p className="text-surface-600">No category data available</p>
                 )}
               </div>
               {categoriesData && (
-                <div className="px-6 py-3 bg-gray-50 text-xs text-gray-500 border-t">
+                <div className="px-6 py-3 bg-surface-800 text-xs text-surface-600 border-t border-border">
                   Total: {categoriesData.total.toLocaleString()} | Source: {categoriesData.source}
                 </div>
               )}
@@ -386,9 +289,9 @@ function ImmigrationPageContent() {
           {/* Sidebar */}
           <div>
             {/* Top Source Countries */}
-            <div className="bg-white rounded-xl shadow-sm">
-              <div className="px-6 py-4 border-b border-gray-200">
-                <h2 className="text-lg font-semibold text-gray-900">
+            <div className="card">
+              <div className="px-6 py-4 border-b border-border">
+                <h2 className="text-base font-medium" style={{ color: 'var(--text-primary)' }}>
                   Top Source Countries
                   {countriesData && ` (FY ${countriesData.fiscal_year})`}
                 </h2>
@@ -403,103 +306,68 @@ function ImmigrationPageContent() {
                   ))}
                 </div>
               ) : countriesData?.countries && countriesData.countries.length > 0 ? (
-                <div className="divide-y divide-gray-200">
+                <div className="divide-y divide-border">
                   {countriesData.countries.map((country, idx) => (
-                    <div key={idx} className="px-6 py-4 flex items-center justify-between">
+                    <div key={idx} className="px-6 py-3 flex items-center justify-between">
                       <div className="flex items-center">
-                        <span className="text-lg font-bold text-gray-300 mr-3">#{idx + 1}</span>
-                        <span className="text-sm font-medium text-gray-900">{country.country}</span>
+                        <span className="text-sm text-surface-600 w-6">#{idx + 1}</span>
+                        <span className="text-sm text-surface-300">{country.country}</span>
                       </div>
                       <div className="text-right">
-                        <p className="text-sm font-medium text-gray-900">
-                          {country.admissions.toLocaleString()}
-                        </p>
-                        <p className="text-xs text-gray-500">{country.percentage}%</p>
+                        <span className="text-sm font-mono text-surface-300">{country.admissions.toLocaleString()}</span>
+                        <span className="text-xs text-surface-600 ml-2">({country.percentage}%)</span>
                       </div>
                     </div>
                   ))}
                 </div>
               ) : (
-                <div className="p-6 text-gray-500">No country data available</div>
+                <div className="p-6 text-surface-600">No country data available</div>
               )}
               {countriesData && (
-                <div className="px-6 py-3 bg-gray-50 text-xs text-gray-500 border-t">
+                <div className="px-6 py-3 bg-surface-800 text-xs text-surface-600 border-t border-border">
                   Source: {countriesData.source}
                 </div>
               )}
             </div>
 
             {/* Definitions */}
-            <div className="mt-6 bg-white rounded-xl shadow-sm p-6">
-              <h3 className="text-lg font-semibold text-gray-900 mb-4">Key Definitions</h3>
+            <div className="mt-6 card p-6">
+              <h3 className="text-base font-medium mb-4" style={{ color: 'var(--text-primary)' }}>Key Definitions</h3>
               <dl className="space-y-4 text-sm">
                 <div>
-                  <dt className="font-medium text-gray-900">Lawful Permanent Resident (LPR)</dt>
-                  <dd className="text-gray-600">
-                    Also known as a &quot;Green Card&quot; holder. Authorized to live and work permanently in the U.S.
-                  </dd>
+                  <dt className="font-medium text-surface-300">Lawful Permanent Resident (LPR)</dt>
+                  <dd className="text-surface-500">Also known as a &quot;Green Card&quot; holder. Authorized to live and work permanently in the U.S.</dd>
                 </div>
                 <div>
-                  <dt className="font-medium text-gray-900">Removal (Deportation)</dt>
-                  <dd className="text-gray-600">
-                    Formal removal from the U.S. based on immigration law violations.
-                  </dd>
+                  <dt className="font-medium text-surface-300">Removal (Deportation)</dt>
+                  <dd className="text-surface-500">Formal removal from the U.S. based on immigration law violations.</dd>
                 </div>
                 <div>
-                  <dt className="font-medium text-gray-900">Encounter</dt>
-                  <dd className="text-gray-600">
-                    Apprehension or contact by CBP at borders. Not all encounters result in admission or removal.
-                  </dd>
+                  <dt className="font-medium text-surface-300">Encounter</dt>
+                  <dd className="text-surface-500">Apprehension or contact by CBP at borders. Not all encounters result in admission or removal.</dd>
                 </div>
               </dl>
             </div>
 
             {/* Data Sources */}
-            <div className="mt-6 bg-white rounded-xl shadow-sm p-6">
-              <h3 className="text-lg font-semibold text-gray-900 mb-3">Data Sources</h3>
-              <ul className="text-sm text-gray-600 space-y-2">
-                <li>
-                  • <a href="https://ohss.dhs.gov/topics/immigration/yearbook" target="_blank" rel="noopener noreferrer" className="text-primary-600 hover:underline">
-                    DHS Immigration Statistics Yearbook
-                  </a>
-                </li>
-                <li>
-                  • <a href="https://www.cbp.gov/newsroom/stats" target="_blank" rel="noopener noreferrer" className="text-primary-600 hover:underline">
-                    CBP Monthly Operational Update
-                  </a>
-                </li>
+            <div className="mt-6 card p-6">
+              <h3 className="text-base font-medium mb-3" style={{ color: 'var(--text-primary)' }}>Data Sources</h3>
+              <ul className="text-sm text-surface-500 space-y-2">
+                <li>• <a href="https://ohss.dhs.gov/topics/immigration/yearbook" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">DHS Immigration Statistics Yearbook</a></li>
+                <li>• <a href="https://www.cbp.gov/newsroom/stats" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">CBP Monthly Operational Update</a></li>
                 <li>• ICE ERO Annual Report</li>
                 <li>• USCIS Immigration Data</li>
               </ul>
-              <p className="mt-3 text-xs text-green-600">✓ Data fetched from live API</p>
+              <p className="mt-3 text-xs text-green-400">✓ Data fetched from live API</p>
             </div>
 
-            {/* Download Raw Data */}
             <div className="mt-6">
-              <DownloadRawData
-                endpoints={[
-                  {
-                    label: 'Immigration Summary',
-                    url: `${API_URL}/immigration/summary`,
-                    filename: 'immigration_summary.json'
-                  },
-                  {
-                    label: 'Historical Data',
-                    url: `${API_URL}/immigration/historical`,
-                    filename: 'immigration_historical.json'
-                  },
-                  {
-                    label: 'By Category',
-                    url: `${API_URL}/immigration/categories`,
-                    filename: 'immigration_categories.json'
-                  },
-                  {
-                    label: 'Top Countries',
-                    url: `${API_URL}/immigration/countries`,
-                    filename: 'immigration_countries.json'
-                  }
-                ]}
-              />
+              <DownloadRawData endpoints={[
+                { label: 'Immigration Summary', url: `${API_URL}/immigration/summary`, filename: 'immigration_summary.json' },
+                { label: 'Historical Data', url: `${API_URL}/immigration/historical`, filename: 'immigration_historical.json' },
+                { label: 'By Category', url: `${API_URL}/immigration/categories`, filename: 'immigration_categories.json' },
+                { label: 'Top Countries', url: `${API_URL}/immigration/countries`, filename: 'immigration_countries.json' },
+              ]} />
             </div>
           </div>
         </div>
@@ -509,9 +377,5 @@ function ImmigrationPageContent() {
 }
 
 export default function ImmigrationPage() {
-  return (
-    <ErrorBoundary>
-      <ImmigrationPageContent />
-    </ErrorBoundary>
-  );
+  return <ErrorBoundary><ImmigrationPageContent /></ErrorBoundary>;
 }

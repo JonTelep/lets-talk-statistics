@@ -1,7 +1,6 @@
-import { TrendingUp, TrendingDown, ArrowRight, ArrowLeft, AlertTriangle } from 'lucide-react';
+import { TrendingUp, TrendingDown } from 'lucide-react';
 import Link from 'next/link';
 
-// Extended historical data
 const historicalData = [
   { year: 'FY 2024', legalImmigration: 1016000, removals: 142580, encounters: 2475669, ratio: 7.1 },
   { year: 'FY 2023', legalImmigration: 1100000, removals: 142580, encounters: 2045838, ratio: 7.7 },
@@ -25,176 +24,142 @@ const maxRemovals = Math.max(...historicalData.map(d => d.removals));
 const maxEncounters = Math.max(...historicalData.map(d => d.encounters));
 
 export default function ImmigrationTrendsPage() {
-  // Calculate decade changes
   const current = historicalData[0];
   const decade = historicalData[historicalData.length - 1];
   const legalChange = ((current.legalImmigration - decade.legalImmigration) / decade.legalImmigration * 100).toFixed(1);
   const removalChange = ((current.removals - decade.removals) / decade.removals * 100).toFixed(1);
 
   return (
-    <div className="min-h-screen bg-gray-50">
-      {/* Header */}
-      <div className="bg-gradient-to-r from-emerald-600 to-teal-700 text-white">
-        <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
-          <div className="flex items-center gap-2 text-emerald-200 mb-2">
-            <Link href="/immigration" className="hover:text-white">Immigration</Link>
+    <div className="min-h-screen">
+      {/* Hero */}
+      <div className="px-4 sm:px-6 lg:px-8 pt-16 pb-12">
+        <div className="mx-auto max-w-7xl">
+          <div className="flex items-center gap-2 text-surface-600 text-sm mb-4">
+            <Link href="/immigration" className="hover:text-surface-300 transition-colors">Immigration</Link>
             <span>/</span>
-            <span>Trends</span>
+            <span className="text-surface-400">Trends</span>
           </div>
-          <h1 className="text-3xl font-bold">Immigration Trends</h1>
-          <p className="text-emerald-100 mt-2">15 years of immigration data (FY 2010 - FY 2024)</p>
+          <p className="text-xs font-mono text-surface-600 mb-4 uppercase tracking-wider">15-Year Analysis</p>
+          <h1 className="text-4xl sm:text-5xl font-semibold mb-4" style={{ color: 'var(--text-primary)' }}>Immigration Trends</h1>
+          <p className="text-lg text-surface-500 max-w-2xl">
+            15 years of immigration data (FY 2010 – FY 2024)
+          </p>
         </div>
       </div>
 
       {/* Summary Cards */}
       <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-3 gap-4">
-          <div className="bg-white rounded-xl shadow-sm p-6">
-            <h3 className="text-sm font-medium text-gray-500 mb-2">Legal Immigration Change (2010→2024)</h3>
+          <div className="card p-6">
+            <p className="text-sm text-surface-500 mb-2">Legal Immigration Change (2010→2024)</p>
             <div className="flex items-baseline gap-2">
-              <span className={`text-3xl font-bold ${parseFloat(legalChange) > 0 ? 'text-green-600' : 'text-red-600'}`}>
+              <span className={`text-3xl font-bold font-mono ${parseFloat(legalChange) > 0 ? 'text-green-400' : 'text-red-400'}`}>
                 {parseFloat(legalChange) > 0 ? '+' : ''}{legalChange}%
               </span>
-              {parseFloat(legalChange) > 0 ? 
-                <TrendingUp className="h-5 w-5 text-green-500" /> : 
-                <TrendingDown className="h-5 w-5 text-red-500" />
+              {parseFloat(legalChange) > 0 ?
+                <TrendingUp className="h-5 w-5 text-green-400" /> :
+                <TrendingDown className="h-5 w-5 text-red-400" />
               }
             </div>
           </div>
-          
-          <div className="bg-white rounded-xl shadow-sm p-6">
-            <h3 className="text-sm font-medium text-gray-500 mb-2">Deportations Change (2010→2024)</h3>
+          <div className="card p-6">
+            <p className="text-sm text-surface-500 mb-2">Deportations Change (2010→2024)</p>
             <div className="flex items-baseline gap-2">
-              <span className={`text-3xl font-bold ${parseFloat(removalChange) > 0 ? 'text-red-600' : 'text-green-600'}`}>
+              <span className={`text-3xl font-bold font-mono ${parseFloat(removalChange) < 0 ? 'text-green-400' : 'text-red-400'}`}>
                 {parseFloat(removalChange) > 0 ? '+' : ''}{removalChange}%
               </span>
-              {parseFloat(removalChange) > 0 ? 
-                <TrendingUp className="h-5 w-5 text-red-500" /> : 
-                <TrendingDown className="h-5 w-5 text-green-500" />
+              {parseFloat(removalChange) > 0 ?
+                <TrendingUp className="h-5 w-5 text-red-400" /> :
+                <TrendingDown className="h-5 w-5 text-green-400" />
               }
             </div>
           </div>
-          
-          <div className="bg-white rounded-xl shadow-sm p-6">
-            <h3 className="text-sm font-medium text-gray-500 mb-2">Current Ratio (Legal:Deportation)</h3>
+          <div className="card p-6">
+            <p className="text-sm text-surface-500 mb-2">Current Ratio (Legal:Deportation)</p>
             <div className="flex items-baseline gap-2">
-              <span className="text-3xl font-bold text-blue-600">{current.ratio}:1</span>
+              <span className="text-3xl font-bold text-blue-400 font-mono">{current.ratio}:1</span>
             </div>
-            <p className="text-xs text-gray-500 mt-1">For every deportation, {current.ratio} people admitted legally</p>
+            <p className="text-xs text-surface-600 mt-1">For every deportation, {current.ratio} people admitted legally</p>
           </div>
         </div>
       </div>
 
-      {/* Main Content */}
-      <div className="mx-auto max-w-7xl px-4 pb-12 sm:px-6 lg:px-8">
-        {/* Legal Immigration Chart */}
-        <div className="bg-white rounded-xl shadow-sm p-6 mb-6">
-          <h2 className="text-lg font-semibold text-gray-900 mb-6">Legal Immigration (Lawful Permanent Residents)</h2>
-          <div className="space-y-3">
-            {historicalData.map((row, idx) => (
-              <div key={idx} className="flex items-center gap-4">
-                <span className="w-20 text-sm font-medium text-gray-600">{row.year}</span>
-                <div className="flex-1">
-                  <div className="w-full bg-gray-100 rounded-full h-6 relative">
-                    <div
-                      className="bg-green-500 h-6 rounded-full flex items-center justify-end pr-2"
-                      style={{ width: `${(row.legalImmigration / maxLegal) * 100}%` }}
-                    >
-                      <span className="text-xs font-medium text-white">{(row.legalImmigration / 1000000).toFixed(2)}M</span>
+      {/* Bar Charts */}
+      <div className="mx-auto max-w-7xl px-4 pb-8 sm:px-6 lg:px-8 space-y-6">
+        {[
+          { title: 'Legal Immigration (Lawful Permanent Residents)', data: historicalData, key: 'legalImmigration' as const, max: maxLegal, color: 'bg-green-400', format: (v: number) => `${(v / 1000000).toFixed(2)}M` },
+          { title: 'Deportations (Removals)', data: historicalData, key: 'removals' as const, max: maxRemovals, color: 'bg-red-400', format: (v: number) => `${(v / 1000).toFixed(0)}K` },
+          { title: 'Border Encounters (CBP)', data: historicalData, key: 'encounters' as const, max: maxEncounters, color: 'bg-amber-400', format: (v: number) => `${(v / 1000000).toFixed(2)}M` },
+        ].map((chart) => (
+          <div key={chart.title} className="card p-6">
+            <h2 className="text-base font-medium mb-6" style={{ color: 'var(--text-primary)' }}>{chart.title}</h2>
+            <div className="space-y-3">
+              {chart.data.map((row, idx) => (
+                <div key={idx} className="flex items-center gap-4">
+                  <span className="w-20 text-sm font-mono text-surface-500 text-right">{row.year.replace('FY ', "'")}</span>
+                  <div className="flex-1">
+                    <div className="w-full bg-surface-800 rounded-full h-5 relative">
+                      <div
+                        className={`${chart.color} h-5 rounded-full flex items-center justify-end pr-2`}
+                        style={{ width: `${(row[chart.key] / chart.max) * 100}%` }}
+                      >
+                        <span className="text-xs font-mono font-medium text-surface-950">{chart.format(row[chart.key])}</span>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
-        </div>
+        ))}
+      </div>
 
-        {/* Removals Chart */}
-        <div className="bg-white rounded-xl shadow-sm p-6 mb-6">
-          <h2 className="text-lg font-semibold text-gray-900 mb-6">Deportations (Removals)</h2>
-          <div className="space-y-3">
-            {historicalData.map((row, idx) => (
-              <div key={idx} className="flex items-center gap-4">
-                <span className="w-20 text-sm font-medium text-gray-600">{row.year}</span>
-                <div className="flex-1">
-                  <div className="w-full bg-gray-100 rounded-full h-6 relative">
-                    <div
-                      className="bg-red-500 h-6 rounded-full flex items-center justify-end pr-2"
-                      style={{ width: `${(row.removals / maxRemovals) * 100}%` }}
-                    >
-                      <span className="text-xs font-medium text-white">{(row.removals / 1000).toFixed(0)}K</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            ))}
+      {/* Full Data Table */}
+      <div className="mx-auto max-w-7xl px-4 pb-8 sm:px-6 lg:px-8">
+        <div className="card">
+          <div className="px-6 py-4 border-b border-border">
+            <h2 className="text-base font-medium" style={{ color: 'var(--text-primary)' }}>Immigration-to-Deportation Ratio Over Time</h2>
           </div>
-        </div>
-
-        {/* Border Encounters Chart */}
-        <div className="bg-white rounded-xl shadow-sm p-6 mb-6">
-          <h2 className="text-lg font-semibold text-gray-900 mb-6">Border Encounters (CBP)</h2>
-          <div className="space-y-3">
-            {historicalData.map((row, idx) => (
-              <div key={idx} className="flex items-center gap-4">
-                <span className="w-20 text-sm font-medium text-gray-600">{row.year}</span>
-                <div className="flex-1">
-                  <div className="w-full bg-gray-100 rounded-full h-6 relative">
-                    <div
-                      className="bg-amber-500 h-6 rounded-full flex items-center justify-end pr-2"
-                      style={{ width: `${(row.encounters / maxEncounters) * 100}%` }}
-                    >
-                      <span className="text-xs font-medium text-white">{(row.encounters / 1000000).toFixed(2)}M</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Ratio Over Time */}
-        <div className="bg-white rounded-xl shadow-sm p-6">
-          <h2 className="text-lg font-semibold text-gray-900 mb-6">Immigration-to-Deportation Ratio Over Time</h2>
           <div className="overflow-x-auto">
             <table className="w-full">
-              <thead className="bg-gray-50">
+              <thead className="bg-surface-800">
                 <tr>
-                  <th className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase">Year</th>
-                  <th className="px-4 py-3 text-right text-xs font-medium text-gray-500 uppercase">Legal Immigration</th>
-                  <th className="px-4 py-3 text-right text-xs font-medium text-gray-500 uppercase">Deportations</th>
-                  <th className="px-4 py-3 text-right text-xs font-medium text-gray-500 uppercase">Encounters</th>
-                  <th className="px-4 py-3 text-right text-xs font-medium text-gray-500 uppercase">Ratio</th>
+                  <th className="px-4 py-3 text-left text-xs font-medium text-surface-500 uppercase">Year</th>
+                  <th className="px-4 py-3 text-right text-xs font-medium text-surface-500 uppercase">Legal Immigration</th>
+                  <th className="px-4 py-3 text-right text-xs font-medium text-surface-500 uppercase">Deportations</th>
+                  <th className="px-4 py-3 text-right text-xs font-medium text-surface-500 uppercase">Encounters</th>
+                  <th className="px-4 py-3 text-right text-xs font-medium text-surface-500 uppercase">Ratio</th>
                 </tr>
               </thead>
-              <tbody className="divide-y divide-gray-200">
+              <tbody className="divide-y divide-border">
                 {historicalData.map((row, idx) => (
-                  <tr key={idx} className="hover:bg-gray-50">
-                    <td className="px-4 py-3 text-sm font-medium text-gray-900">{row.year}</td>
-                    <td className="px-4 py-3 text-sm text-right text-green-600 font-medium">{row.legalImmigration.toLocaleString()}</td>
-                    <td className="px-4 py-3 text-sm text-right text-red-600">{row.removals.toLocaleString()}</td>
-                    <td className="px-4 py-3 text-sm text-right text-amber-600">{row.encounters.toLocaleString()}</td>
-                    <td className="px-4 py-3 text-sm text-right font-bold">{row.ratio}:1</td>
+                  <tr key={idx} className="hover:bg-surface-800/50">
+                    <td className="px-4 py-3 text-sm font-medium" style={{ color: 'var(--text-primary)' }}>{row.year}</td>
+                    <td className="px-4 py-3 text-sm text-right font-mono text-green-400">{row.legalImmigration.toLocaleString()}</td>
+                    <td className="px-4 py-3 text-sm text-right font-mono text-red-400">{row.removals.toLocaleString()}</td>
+                    <td className="px-4 py-3 text-sm text-right font-mono text-amber-400">{row.encounters.toLocaleString()}</td>
+                    <td className="px-4 py-3 text-sm text-right font-mono font-bold text-surface-300">{row.ratio}:1</td>
                   </tr>
                 ))}
               </tbody>
             </table>
           </div>
         </div>
+      </div>
 
-        {/* Context Note */}
-        <div className="mt-6 bg-blue-50 border border-blue-200 rounded-lg p-4">
-          <h3 className="font-semibold text-blue-900 mb-2">Important Context</h3>
-          <ul className="text-sm text-blue-800 space-y-1">
-            <li>• <strong>FY 2020-2021:</strong> COVID-19 significantly impacted immigration processing and enforcement</li>
-            <li>• <strong>FY 2021-2024:</strong> Record border encounters, but many processed through alternative pathways</li>
-            <li>• <strong>Encounters ≠ Entries:</strong> Many encounters result in expulsions, returns, or asylum processing</li>
-            <li>• <strong>Ratio interpretation:</strong> Higher ratio means more legal admissions per deportation</li>
+      {/* Context */}
+      <div className="mx-auto max-w-7xl px-4 pb-16 sm:px-6 lg:px-8">
+        <div className="card p-6 border-blue-500/20">
+          <h3 className="text-base font-medium mb-3" style={{ color: 'var(--text-primary)' }}>Important Context</h3>
+          <ul className="text-sm text-surface-500 space-y-1">
+            <li>• <strong className="text-surface-300">FY 2020-2021:</strong> COVID-19 significantly impacted immigration processing and enforcement</li>
+            <li>• <strong className="text-surface-300">FY 2021-2024:</strong> Record border encounters, but many processed through alternative pathways</li>
+            <li>• <strong className="text-surface-300">Encounters ≠ Entries:</strong> Many encounters result in expulsions, returns, or asylum processing</li>
+            <li>• <strong className="text-surface-300">Ratio interpretation:</strong> Higher ratio means more legal admissions per deportation</li>
           </ul>
         </div>
 
-        {/* Data Source */}
-        <p className="mt-4 text-sm text-gray-500 text-center">
+        <p className="mt-6 text-sm text-surface-600 text-center">
           Data: DHS Immigration Statistics, CBP Operational Statistics, ICE ERO Annual Reports
         </p>
       </div>

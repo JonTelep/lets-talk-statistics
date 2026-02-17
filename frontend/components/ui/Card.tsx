@@ -21,9 +21,9 @@ export default function Card({
   };
 
   const variantClasses = {
-    default: 'card-federal',
-    accent: 'card-federal-accent',
-    'border-only': 'bg-white border border-federal-charcoal-300',
+    default: 'card',
+    accent: 'card border-accent/30',
+    'border-only': 'bg-transparent border border-border',
   };
 
   return (
