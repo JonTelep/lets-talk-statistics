@@ -10,18 +10,18 @@ const config: Config = {
     extend: {
       colors: {
         surface: {
-          DEFAULT: '#0a0a0a',
-          50: '#fafafa',
-          100: '#f5f5f5',
-          200: '#e5e5e5',
-          300: '#d4d4d4',
-          400: '#a3a3a3',
-          500: '#737373',
-          600: '#525252',
-          700: '#404040',
-          800: '#262626',
-          900: '#171717',
-          950: '#0a0a0a',
+          DEFAULT: 'var(--surface)',
+          50: 'var(--surface-50)',
+          100: 'var(--surface-100)',
+          200: 'var(--surface-200)',
+          300: 'var(--surface-300)',
+          400: 'var(--surface-400)',
+          500: 'var(--surface-500)',
+          600: 'var(--surface-600)',
+          700: 'var(--surface-700)',
+          800: 'var(--surface-800)',
+          900: 'var(--surface-900)',
+          950: 'var(--surface-950)',
         },
         accent: {
           DEFAULT: '#3b82f6',
@@ -29,9 +29,9 @@ const config: Config = {
           dim: '#1d4ed8',
         },
         border: {
-          DEFAULT: '#222',
-          subtle: '#1a1a1a',
-          medium: '#333',
+          DEFAULT: 'var(--border)',
+          subtle: 'var(--border-subtle)',
+          medium: 'var(--border-medium)',
         },
       },
       fontFamily: {

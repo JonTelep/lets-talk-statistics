@@ -2,7 +2,8 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Sun, Moon } from 'lucide-react';
+import { useTheme } from '@/components/providers/ThemeProvider';
 
 const navLinks = [
   { name: 'Congress', href: '/congress' },
@@ -16,13 +17,14 @@ const navLinks = [
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const { theme, toggleTheme } = useTheme();
 
   return (
     <header className="bg-surface/80 backdrop-blur-md border-b border-border sticky top-0 z-50">
       <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8" aria-label="Top">
         <div className="flex w-full items-center justify-between h-16">
           <Link href="/" className="flex items-center gap-2 group">
-            <span className="text-lg font-semibold text-white tracking-tight">
+            <span className="text-lg font-semibold tracking-tight" style={{ color: 'var(--text-primary)' }}>
               Let&apos;s Talk Statistics
             </span>
           </Link>
@@ -33,26 +35,42 @@ export default function Header() {
               <Link
                 key={link.name}
                 href={link.href}
-                className="px-3 py-2 text-sm text-surface-400 hover:text-white transition-colors duration-200"
+                className="px-3 py-2 text-sm text-surface-400 hover:text-surface-100 transition-colors duration-200"
               >
                 {link.name}
               </Link>
             ))}
+            <button
+              onClick={toggleTheme}
+              className="ml-3 p-2 rounded-md text-surface-400 hover:text-surface-100 hover:bg-surface-800 transition-colors duration-200"
+              aria-label={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`}
+            >
+              {theme === 'dark' ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
+            </button>
           </div>
 
-          {/* Mobile menu button */}
-          <button
-            type="button"
-            className="lg:hidden p-2 text-surface-400 hover:text-white transition-colors"
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          >
-            <span className="sr-only">Open main menu</span>
-            {mobileMenuOpen ? (
-              <X className="h-5 w-5" aria-hidden="true" />
-            ) : (
-              <Menu className="h-5 w-5" aria-hidden="true" />
-            )}
-          </button>
+          {/* Mobile menu buttons */}
+          <div className="flex items-center gap-2 lg:hidden">
+            <button
+              onClick={toggleTheme}
+              className="p-2 text-surface-400 hover:text-surface-100 transition-colors"
+              aria-label={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`}
+            >
+              {theme === 'dark' ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
+            </button>
+            <button
+              type="button"
+              className="p-2 text-surface-400 hover:text-surface-100 transition-colors"
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            >
+              <span className="sr-only">Open main menu</span>
+              {mobileMenuOpen ? (
+                <X className="h-5 w-5" aria-hidden="true" />
+              ) : (
+                <Menu className="h-5 w-5" aria-hidden="true" />
+              )}
+            </button>
+          </div>
         </div>
 
         {/* Mobile menu */}
@@ -63,7 +81,7 @@ export default function Header() {
                 <Link
                   key={link.name}
                   href={link.href}
-                  className="px-3 py-2 text-sm text-surface-400 hover:text-white transition-colors"
+                  className="px-3 py-2 text-sm text-surface-400 hover:text-surface-100 transition-colors"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   {link.name}
