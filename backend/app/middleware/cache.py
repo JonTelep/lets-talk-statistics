@@ -27,6 +27,7 @@ class CacheControlMiddleware(BaseHTTPMiddleware):
         "/api/v1/elections",
         "/api/v1/immigration",
         "/api/v1/congress",
+        "/api/v1/housing",
     ]
     
     # Cache durations in seconds

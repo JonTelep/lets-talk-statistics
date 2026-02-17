@@ -24,6 +24,14 @@ class Settings(BaseSettings):
     census_api_key: Optional[str] = None
     bls_api_key: Optional[str] = None
     fec_api_key: Optional[str] = None
+    fred_api_key: Optional[str] = None
+
+    # Housing Postgres database
+    housing_db_host: str = "localhost"
+    housing_db_port: int = 5432
+    housing_db_user: str = "admin"
+    housing_db_password: str = ""
+    housing_db_name: str = "housing_db"
 
     # Data cache settings
     data_dir: Path = Path("/app/data")

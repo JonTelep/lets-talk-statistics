@@ -7,6 +7,7 @@ Simplified architecture:
 - Direct government API calls with smart caching
 """
 
+import logging
 from contextlib import asynccontextmanager
 
 from fastapi import FastAPI
@@ -14,18 +15,28 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from app.api.v1.router import router as api_router
 from app.config import get_settings
+from app.db.pool import init_pool, close_pool
 from app.services.gov_data import get_gov_data_service
 from app.middleware.cache import CacheControlMiddleware
 
 settings = get_settings()
+logger = logging.getLogger(__name__)
 
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     """Application lifespan handler."""
-    # Startup: nothing special needed
+    # Startup: initialise housing DB pool (optional — app works without it)
+    if settings.fred_api_key:
+        try:
+            await init_pool()
+        except Exception as e:
+            logger.warning("Housing DB pool init failed: %s", e)
+
     yield
-    # Shutdown: close HTTP client
+
+    # Shutdown
+    await close_pool()
     service = get_gov_data_service()
     await service.close()
 

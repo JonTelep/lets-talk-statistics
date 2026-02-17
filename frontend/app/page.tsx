@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { ArrowRight, TrendingUp, Users, DollarSign, Briefcase, Building2, Vote } from 'lucide-react';
+import { ArrowRight, TrendingUp, Users, DollarSign, Briefcase, Building2, Vote, Home as HomeIcon } from 'lucide-react';
 
 const categories = [
   {
@@ -8,6 +8,13 @@ const categories = [
     href: '/congress',
     icon: TrendingUp,
     stat: '435+ Members tracked',
+  },
+  {
+    name: 'Housing',
+    description: 'Homeownership, construction, prices, vacancies, and mortgage rates.',
+    href: '/housing',
+    icon: HomeIcon,
+    stat: 'FRED data (60+ series)',
   },
   {
     name: 'Immigration',

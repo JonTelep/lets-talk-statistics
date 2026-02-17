@@ -185,6 +185,37 @@ export const debtApi = {
    * Get latest debt figure
    */
   getLatest: () => apiFetch<{ date: string; total_debt: number }>('/debt/latest'),
+
+  /**
+   * Get debt holders composition snapshot
+   */
+  getHolders: () => apiFetch('/debt/holders'),
+
+  /**
+   * Get debt holders composition over time
+   */
+  getHoldersHistory: () => apiFetch('/debt/holders/history'),
+
+  /**
+   * Get interest expense data
+   */
+  getInterest: (fiscalYear?: number) =>
+    apiFetch('/debt/interest', { params: { fiscal_year: fiscalYear } }),
+
+  /**
+   * Get average interest rates by security type
+   */
+  getRates: () => apiFetch('/debt/rates'),
+
+  /**
+   * Get top foreign holders of U.S. Treasury securities
+   */
+  getForeignHolders: () => apiFetch('/debt/foreign-holders'),
+
+  /**
+   * Get debt-to-GDP ratio
+   */
+  getGdpRatio: () => apiFetch('/debt/gdp-ratio'),
 };
 
 // ============================================================================
@@ -270,6 +301,65 @@ export const budgetApi = {
    */
   getBudget: (fiscalYear?: number) =>
     apiFetch<BudgetData>('/budget/', { params: { fiscal_year: fiscalYear } }),
+};
+
+// ============================================================================
+// HOUSING API
+// ============================================================================
+
+export interface HousingDashboardItem {
+  series_id: string;
+  title: string;
+  category: string;
+  units: string;
+  latest_date: string | null;
+  latest_value: number | null;
+}
+
+export interface HousingDashboardResponse {
+  source: string;
+  indicators: HousingDashboardItem[];
+}
+
+export interface HousingObservation {
+  date: string;
+  value: number;
+}
+
+export interface HousingCompareSeries {
+  series_id: string;
+  title: string;
+  units: string;
+  observations: HousingObservation[];
+}
+
+export interface HousingCompareResponse {
+  source: string;
+  series: HousingCompareSeries[];
+}
+
+export interface HousingSyncStatusResponse {
+  id?: number;
+  run_started_at?: string;
+  run_finished_at?: string;
+  series_synced?: number;
+  observations_upserted?: number;
+  errors?: string[];
+  status: string;
+  message?: string;
+}
+
+export const housingApi = {
+  getDashboard: () =>
+    apiFetch<HousingDashboardResponse>('/housing/dashboard'),
+
+  getCompare: (seriesIds: string, startDate?: string, endDate?: string) =>
+    apiFetch<HousingCompareResponse>('/housing/compare', {
+      params: { series_ids: seriesIds, start_date: startDate, end_date: endDate },
+    }),
+
+  getSyncStatus: () =>
+    apiFetch<HousingSyncStatusResponse>('/housing/sync/status'),
 };
 
 // ============================================================================

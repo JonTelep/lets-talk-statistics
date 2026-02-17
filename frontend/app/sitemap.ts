@@ -45,6 +45,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     },
     {
+      url: 'https://letstalkstatistics.com/housing',
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
       url: 'https://letstalkstatistics.com/healthcare',
       lastModified: new Date(),
       changeFrequency: 'monthly',

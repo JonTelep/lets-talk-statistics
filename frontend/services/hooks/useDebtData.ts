@@ -103,4 +103,132 @@ export function calculateDebtStats(data: DebtDataPoint[]) {
   };
 }
 
-export type { DebtDataPoint, DebtResponse, LatestDebtResponse };
+// ============================================================================
+// Deep Dive hooks
+// ============================================================================
+
+interface DebtHolder {
+  name: string;
+  amount_billions: number;
+  percent: number;
+}
+
+interface HoldersResponse {
+  holders: DebtHolder[];
+  total_billions: number;
+  as_of_date: string | null;
+  source: string;
+}
+
+interface HoldersHistoryResponse {
+  series: Record<string, Array<{ date: string; value: number }>>;
+  units: string;
+  source: string;
+}
+
+interface InterestAnnual {
+  fiscal_year: number;
+  total: number;
+}
+
+interface InterestMonthly {
+  date: string;
+  month: string;
+  expense_type: string;
+  amount: number;
+}
+
+interface InterestResponse {
+  current_fy: number;
+  annual: InterestAnnual[];
+  monthly_current_fy: InterestMonthly[];
+  source: string;
+}
+
+interface RateEntry {
+  security_type: string;
+  rate: number;
+}
+
+interface RatesResponse {
+  rates: RateEntry[];
+  as_of_date: string | null;
+  source: string;
+}
+
+interface ForeignHolder {
+  country: string;
+  holdings_billions: number;
+}
+
+interface ForeignHoldersResponse {
+  countries: ForeignHolder[];
+  total_countries: number;
+  source: string;
+}
+
+interface GdpRatioPoint {
+  date: string;
+  percent: number;
+}
+
+interface GdpRatioResponse {
+  latest: { date: string | null; percent: number | null };
+  history: GdpRatioPoint[];
+  source: string;
+}
+
+export function useDebtHolders(): UseDataResult<HoldersResponse> {
+  const { data, error, isLoading, mutate } = useSWR<HoldersResponse>(
+    `${API_URL}/debt/holders`,
+    fetcher
+  );
+  return { data: data ?? null, loading: isLoading, error: error ?? null, refetch: () => mutate() };
+}
+
+export function useDebtHoldersHistory(): UseDataResult<HoldersHistoryResponse> {
+  const { data, error, isLoading, mutate } = useSWR<HoldersHistoryResponse>(
+    `${API_URL}/debt/holders/history`,
+    fetcher
+  );
+  return { data: data ?? null, loading: isLoading, error: error ?? null, refetch: () => mutate() };
+}
+
+export function useDebtInterest(fy?: number): UseDataResult<InterestResponse> {
+  const url = fy ? `${API_URL}/debt/interest?fiscal_year=${fy}` : `${API_URL}/debt/interest`;
+  const { data, error, isLoading, mutate } = useSWR<InterestResponse>(url, fetcher);
+  return { data: data ?? null, loading: isLoading, error: error ?? null, refetch: () => mutate() };
+}
+
+export function useDebtRates(): UseDataResult<RatesResponse> {
+  const { data, error, isLoading, mutate } = useSWR<RatesResponse>(
+    `${API_URL}/debt/rates`,
+    fetcher
+  );
+  return { data: data ?? null, loading: isLoading, error: error ?? null, refetch: () => mutate() };
+}
+
+export function useForeignHolders(): UseDataResult<ForeignHoldersResponse> {
+  const { data, error, isLoading, mutate } = useSWR<ForeignHoldersResponse>(
+    `${API_URL}/debt/foreign-holders`,
+    fetcher
+  );
+  return { data: data ?? null, loading: isLoading, error: error ?? null, refetch: () => mutate() };
+}
+
+export function useDebtGdpRatio(): UseDataResult<GdpRatioResponse> {
+  const { data, error, isLoading, mutate } = useSWR<GdpRatioResponse>(
+    `${API_URL}/debt/gdp-ratio`,
+    fetcher
+  );
+  return { data: data ?? null, loading: isLoading, error: error ?? null, refetch: () => mutate() };
+}
+
+export type {
+  DebtDataPoint, DebtResponse, LatestDebtResponse,
+  DebtHolder, HoldersResponse, HoldersHistoryResponse,
+  InterestAnnual, InterestMonthly, InterestResponse,
+  RateEntry, RatesResponse,
+  ForeignHolder, ForeignHoldersResponse,
+  GdpRatioPoint, GdpRatioResponse,
+};

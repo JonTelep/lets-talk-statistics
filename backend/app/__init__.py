@@ -1,3 +1,3 @@
-"""Crime Statistics Backend Application."""
+"""Let's Talk Statistics - Backend Application."""
 
-__version__ = "1.0.0"
+__version__ = "2.0.0"
