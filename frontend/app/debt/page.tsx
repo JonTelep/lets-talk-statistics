@@ -85,7 +85,7 @@ function DebtPageContent() {
       <div className="px-4 sm:px-6 lg:px-8 pt-16 pb-12">
         <div className="mx-auto max-w-7xl">
           <p className="text-xs font-mono text-surface-600 mb-4 uppercase tracking-wider">Federal Debt Analysis</p>
-          <h1 className="text-4xl sm:text-5xl font-semibold text-white mb-4">National Debt</h1>
+          <h1 className="text-4xl sm:text-5xl font-semibold text-foreground mb-4">National Debt</h1>
           <p className="text-lg text-surface-500 max-w-2xl">
             Real-time tracking of U.S. federal debt from Treasury Department data. 
             Analysis of debt holders, growth patterns, and GDP ratios.
@@ -160,7 +160,7 @@ function DebtPageContent() {
               </div>
               <div className="card p-6">
                 <div className="flex items-center gap-2 text-surface-500 text-sm mb-1"><TrendingUp className="h-4 w-4" />Debt-to-GDP</div>
-                <p className="text-2xl font-semibold text-white">{stats?.gdpRatio || '—'}%</p>
+                <p className="text-2xl font-semibold text-foreground">{stats?.gdpRatio || '—'}%</p>
                 <p className="text-xs text-surface-600">Exceeds annual GDP</p>
               </div>
               <div className="card p-6">
@@ -176,7 +176,7 @@ function DebtPageContent() {
       {/* Chart */}
       <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
         <div className="card p-6">
-          <h2 className="text-lg font-medium text-white mb-4">Debt Growth Over Time</h2>
+          <h2 className="text-lg font-medium text-foreground mb-4">Debt Growth Over Time</h2>
           {loading ? (
             <ChartSkeleton height={350} />
           ) : error ? (
@@ -202,7 +202,7 @@ function DebtPageContent() {
             {/* Historical Table */}
             <div className="card">
               <div className="px-6 py-4 border-b border-border flex justify-between items-center">
-                <h2 className="text-base font-medium text-white">Historical National Debt</h2>
+                <h2 className="text-base font-medium text-foreground">Historical National Debt</h2>
               </div>
               <div className="overflow-x-auto">
                 <table className="w-full">
@@ -225,7 +225,7 @@ function DebtPageContent() {
                         const growth = ((row.debt - prevDebt) / prevDebt * 100).toFixed(1);
                         return (
                           <tr key={idx} className="hover:bg-surface-800/50">
-                            <td className="px-6 py-4 text-sm font-medium text-white">{row.year}</td>
+                            <td className="px-6 py-4 text-sm font-medium text-foreground">{row.year}</td>
                             <td className="px-6 py-4 text-sm text-right font-mono text-red-400">${row.debt.toFixed(2)}T</td>
                             <td className="px-6 py-4 text-sm text-right text-surface-500">{row.gdpRatio.toFixed(1)}%</td>
                             <td className="px-6 py-4 text-sm text-right">
@@ -249,14 +249,14 @@ function DebtPageContent() {
             {/* Milestones */}
             <div className="mt-8 card">
               <div className="px-6 py-4 border-b border-border">
-                <h2 className="text-base font-medium text-white">Debt Milestones</h2>
+                <h2 className="text-base font-medium text-foreground">Debt Milestones</h2>
                 <p className="text-sm text-surface-600">Days between each trillion-dollar milestone</p>
               </div>
               <div className="p-6">
                 {milestones.map((m, idx) => (
                   <div key={idx} className="flex items-center mb-3 last:mb-0">
                     <div className="w-20 text-right pr-4">
-                      <p className="text-sm font-mono font-medium text-white">{m.amount}</p>
+                      <p className="text-sm font-mono font-medium text-foreground">{m.amount}</p>
                       <p className="text-xs text-surface-600">{m.year}</p>
                     </div>
                     <div className="w-2 h-2 bg-red-400 rounded-full" />
@@ -273,7 +273,7 @@ function DebtPageContent() {
           <div>
             <div className="card">
               <div className="px-6 py-4 border-b border-border">
-                <h2 className="text-base font-medium text-white">Who Holds Our Debt?</h2>
+                <h2 className="text-base font-medium text-foreground">Who Holds Our Debt?</h2>
               </div>
               <div className="p-6">
                 <LazyPieChart height={250}>
@@ -298,7 +298,7 @@ function DebtPageContent() {
 
             <div className="mt-6 card">
               <div className="px-6 py-4 border-b border-border">
-                <h2 className="text-base font-medium text-white">Top Foreign Holders</h2>
+                <h2 className="text-base font-medium text-foreground">Top Foreign Holders</h2>
               </div>
               <div className="divide-y divide-border">
                 {topForeignHolders.map((c, idx) => (
@@ -314,7 +314,7 @@ function DebtPageContent() {
             </div>
 
             <div className="mt-6 card p-6">
-              <h3 className="text-base font-medium text-white mb-3">Data Sources</h3>
+              <h3 className="text-base font-medium text-foreground mb-3">Data Sources</h3>
               <ul className="text-sm text-surface-500 space-y-2">
                 <li>• <a href="https://fiscaldata.treasury.gov/" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">Treasury Fiscal Data API</a></li>
                 <li>• TreasuryDirect.gov</li>

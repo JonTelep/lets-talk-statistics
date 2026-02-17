@@ -32,7 +32,7 @@ export default function Select({
       <select
         className={`
           ${widthClass}
-          block rounded-md bg-surface-900 border-border text-white
+          block rounded-md bg-surface-900 border-border text-foreground
           focus:border-accent focus:ring-accent
           disabled:bg-surface-800 disabled:cursor-not-allowed
           ${error ? 'border-red-500' : 'border-border'}

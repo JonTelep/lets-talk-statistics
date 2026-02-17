@@ -20,10 +20,10 @@ export default function Button({
 
   const variantClasses = {
     primary: 'bg-white text-surface-950 hover:bg-surface-100',
-    accent: 'bg-accent text-white hover:bg-accent-muted',
-    outline: 'bg-transparent border border-border text-white hover:border-border-medium hover:bg-surface-900',
-    gold: 'bg-amber-600 text-white hover:bg-amber-700',
-    danger: 'bg-red-600 text-white hover:bg-red-700',
+    accent: 'bg-accent text-foreground hover:bg-accent-muted',
+    outline: 'bg-transparent border border-border text-foreground hover:border-border-medium hover:bg-surface-900',
+    gold: 'bg-amber-600 text-foreground hover:bg-amber-700',
+    danger: 'bg-red-600 text-foreground hover:bg-red-700',
   };
 
   const sizeClasses = {

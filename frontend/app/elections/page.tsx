@@ -62,7 +62,7 @@ function ElectionsPageContent() {
       <div className="px-4 sm:px-6 lg:px-8 pt-16 pb-12">
         <div className="mx-auto max-w-7xl">
           <p className="text-xs font-mono text-surface-600 mb-4 uppercase tracking-wider">Election Analysis</p>
-          <h1 className="text-4xl sm:text-5xl font-semibold text-white mb-4">Election Funding</h1>
+          <h1 className="text-4xl sm:text-5xl font-semibold text-foreground mb-4">Election Funding</h1>
           <p className="text-lg text-surface-500 max-w-3xl mb-6">
             The American two-party system isn&apos;t natural — it&apos;s engineered through laws, rules, and barriers.
           </p>
@@ -79,7 +79,7 @@ function ElectionsPageContent() {
       <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
         <div className="card p-6">
           <div className="flex items-center justify-between mb-6">
-            <h2 className="text-lg font-medium text-white flex items-center gap-2">
+            <h2 className="text-lg font-medium text-foreground flex items-center gap-2">
               <DollarSign className="h-5 w-5 text-surface-500" />
               Live Campaign Finance
               {candidatesData && <span className="text-sm font-normal text-surface-600 ml-2">({candidatesData.cycle} Cycle)</span>}
@@ -111,7 +111,7 @@ function ElectionsPageContent() {
                 <tbody className="divide-y divide-border">
                   {topFundraisers.map((c, idx) => (
                     <tr key={idx} className="hover:bg-surface-800/50">
-                      <td className="px-4 py-3 text-sm text-white">{c.name}</td>
+                      <td className="px-4 py-3 text-sm text-foreground">{c.name}</td>
                       <td className="px-4 py-3"><span className={`px-2 py-0.5 rounded text-xs font-medium ${getPartyColor(c.party)}`}>{c.party || 'N/A'}</span></td>
                       <td className="px-4 py-3 text-right font-mono text-green-400">{formatCurrency(c.receipts)}</td>
                       <td className="px-4 py-3 text-right font-mono text-surface-400">{formatCurrency(c.disbursements)}</td>
@@ -134,12 +134,12 @@ function ElectionsPageContent() {
       <div className="border-y border-border">
         <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
           <div className="text-center mb-8">
-            <h2 className="text-xl font-medium text-white">The Founders Warned Us</h2>
+            <h2 className="text-xl font-medium text-foreground">The Founders Warned Us</h2>
           </div>
           <div className="grid md:grid-cols-3 gap-6">
             {foundingFathersQuotes.map((f, idx) => (
               <div key={idx} className="card p-6 border-l-2 border-amber-500/30">
-                <h3 className="text-sm font-medium text-white">{f.name}</h3>
+                <h3 className="text-sm font-medium text-foreground">{f.name}</h3>
                 <p className="text-xs text-surface-600 mb-3">{f.title}</p>
                 <blockquote className="text-sm text-surface-400 italic leading-relaxed mb-3">&quot;{f.quote}&quot;</blockquote>
                 <a href={f.sourceUrl} target="_blank" rel="noopener noreferrer" className="text-xs text-accent hover:underline">{f.source}</a>
@@ -151,7 +151,7 @@ function ElectionsPageContent() {
 
       {/* Systemic Barriers */}
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
-        <h2 className="text-xl font-medium text-white mb-8">Systemic Barriers to Third Parties</h2>
+        <h2 className="text-xl font-medium text-foreground mb-8">Systemic Barriers to Third Parties</h2>
         <div className="grid md:grid-cols-2 gap-4">
           {systemicBarriers.map((b, idx) => {
             const Icon = b.icon;
@@ -159,7 +159,7 @@ function ElectionsPageContent() {
               <div key={idx} className="card p-6 border-l-2 border-red-500/30">
                 <div className="flex items-center gap-3 mb-3">
                   <Icon className="h-5 w-5 text-red-400" />
-                  <h3 className="text-sm font-medium text-white">{b.title}</h3>
+                  <h3 className="text-sm font-medium text-foreground">{b.title}</h3>
                 </div>
                 <p className="text-sm text-surface-400">{b.description}</p>
               </div>
@@ -171,10 +171,10 @@ function ElectionsPageContent() {
       {/* Two-Party Advantage */}
       <div className="border-y border-border py-12">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <h2 className="text-xl font-medium text-white mb-8">The Two-Party Advantage</h2>
+          <h2 className="text-xl font-medium text-foreground mb-8">The Two-Party Advantage</h2>
           <div className="grid md:grid-cols-2 gap-6">
             <div className="card p-6 border-l-2 border-green-500/30">
-              <div className="flex items-center gap-2 mb-4"><CheckCircle className="h-5 w-5 text-green-400" /><h3 className="text-sm font-medium text-white">Democrats &amp; Republicans</h3></div>
+              <div className="flex items-center gap-2 mb-4"><CheckCircle className="h-5 w-5 text-green-400" /><h3 className="text-sm font-medium text-foreground">Democrats &amp; Republicans</h3></div>
               <ul className="space-y-2 text-sm text-surface-400">
                 <li>✓ ${(fundingComparison.majorPartyGrant / 1_000_000).toFixed(1)}M public funding upfront</li>
                 <li>✓ Automatic ballot access in all 50 states</li>
@@ -183,7 +183,7 @@ function ElectionsPageContent() {
               </ul>
             </div>
             <div className="card p-6 border-l-2 border-red-500/30">
-              <div className="flex items-center gap-2 mb-4"><XCircle className="h-5 w-5 text-red-400" /><h3 className="text-sm font-medium text-white">Everyone Else</h3></div>
+              <div className="flex items-center gap-2 mb-4"><XCircle className="h-5 w-5 text-red-400" /><h3 className="text-sm font-medium text-foreground">Everyone Else</h3></div>
               <ul className="space-y-2 text-sm text-surface-400">
                 <li>✗ $0 until you get 5% in previous election</li>
                 <li>✗ Must collect signatures in each state</li>
@@ -197,7 +197,7 @@ function ElectionsPageContent() {
 
       {/* Ballot Access */}
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
-        <h2 className="text-xl font-medium text-white mb-8">Ballot Access: The Hidden Tax</h2>
+        <h2 className="text-xl font-medium text-foreground mb-8">Ballot Access: The Hidden Tax</h2>
         <div className="card overflow-hidden">
           <div className="px-6 py-4 border-b border-border">
             <p className="text-sm text-surface-500">Major parties have automatic access. Third parties must collect signatures.</p>
@@ -214,7 +214,7 @@ function ElectionsPageContent() {
             <tbody className="divide-y divide-border">
               {ballotAccessExamples.map((s, idx) => (
                 <tr key={idx} className="hover:bg-surface-800/50">
-                  <td className="px-6 py-4 text-sm text-white">{s.state}</td>
+                  <td className="px-6 py-4 text-sm text-foreground">{s.state}</td>
                   <td className="px-6 py-4 text-right font-mono text-red-400">{s.signatures.toLocaleString()}</td>
                   <td className="px-6 py-4 text-right text-surface-500">{s.deadline}</td>
                   <td className="px-6 py-4 text-center text-green-400">Automatic ✓</td>
@@ -223,7 +223,7 @@ function ElectionsPageContent() {
             </tbody>
             <tfoot className="bg-surface-800">
               <tr>
-                <td className="px-6 py-4 font-medium text-white">Just these 8 states</td>
+                <td className="px-6 py-4 font-medium text-foreground">Just these 8 states</td>
                 <td className="px-6 py-4 text-right font-mono font-medium text-red-400">{totalSignatures.toLocaleString()}</td>
                 <td colSpan={2} className="px-6 py-4 text-right text-surface-600">+ 42 more states</td>
               </tr>
@@ -235,9 +235,9 @@ function ElectionsPageContent() {
       {/* Third Party History */}
       <div className="border-t border-border py-12">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <h2 className="text-xl font-medium text-white mb-8">Third Party History</h2>
+          <h2 className="text-xl font-medium text-foreground mb-8">Third Party History</h2>
           <div className="card p-6 mb-8">
-            <h3 className="text-base font-medium text-white mb-4">Third Party Vote Share</h3>
+            <h3 className="text-base font-medium text-foreground mb-4">Third Party Vote Share</h3>
             <LazyBarChart data={thirdPartyHistory.map(h => ({ year: h.year.toString(), percent: h.percent, candidate: h.candidate, party: h.party }))} height={300} margin={{ top: 5, right: 30, left: 20, bottom: 5 }}>
               <LazyCartesianGrid {...chartGridStyle} />
               <LazyXAxis dataKey="year" {...chartAxisStyle} />
@@ -261,7 +261,7 @@ function ElectionsPageContent() {
               <tbody className="divide-y divide-border">
                 {thirdPartyHistory.map((row, idx) => (
                   <tr key={idx} className="hover:bg-surface-800/50">
-                    <td className="px-6 py-4 text-sm text-white">{row.year}</td>
+                    <td className="px-6 py-4 text-sm text-foreground">{row.year}</td>
                     <td className="px-6 py-4 text-sm text-surface-300">{row.candidate}</td>
                     <td className="px-6 py-4 text-sm text-surface-500">{row.party}</td>
                     <td className="px-6 py-4 text-sm text-right font-mono"><span className={row.percent >= 5 ? 'text-green-400' : 'text-red-400'}>{row.percent.toFixed(1)}%</span></td>
@@ -278,7 +278,7 @@ function ElectionsPageContent() {
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-6">
           <div className="card p-6">
-            <h3 className="text-base font-medium text-white mb-4">Data Sources</h3>
+            <h3 className="text-base font-medium text-foreground mb-4">Data Sources</h3>
             <ul className="text-sm text-surface-500 space-y-2">
               <li>• <a href="https://www.fec.gov/" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">Federal Election Commission</a> (Live API)</li>
               <li>• Commission on Presidential Debates</li>

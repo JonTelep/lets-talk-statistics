@@ -7,7 +7,7 @@ export default function AboutPage() {
       <div className="mx-auto max-w-4xl">
         {/* Header */}
         <div className="mb-12 text-center">
-          <h1 className="text-4xl font-semibold text-white mb-4">About This Project</h1>
+          <h1 className="text-4xl font-semibold text-foreground mb-4">About This Project</h1>
           <p className="text-lg text-surface-400">
             Government data, clearly presented. No spin, no agenda — just the numbers.
           </p>
@@ -17,11 +17,11 @@ export default function AboutPage() {
         <Card className="mb-8">
           <div className="flex items-start mb-4">
             <BookOpen className="h-8 w-8 text-surface-500 mr-3 flex-shrink-0" />
-            <h2 className="text-2xl font-semibold text-white mb-4">Our Mission</h2>
+            <h2 className="text-2xl font-semibold text-foreground mb-4">Our Mission</h2>
           </div>
           <div className="text-surface-400 space-y-4">
             <p>
-              <strong className="text-white">Let&apos;s Talk Statistics</strong> is an objective data platform that presents
+              <strong className="text-foreground">Let&apos;s Talk Statistics</strong> is an objective data platform that presents
               government statistics across multiple domains. No opinions, no narratives, just data from official sources.
             </p>
             <ul className="list-disc list-inside space-y-2">
@@ -31,13 +31,13 @@ export default function AboutPage() {
               <li>Access source citations for every statistic</li>
               <li>Draw your own conclusions</li>
             </ul>
-            <p><strong className="text-white">No accounts. No paywalls. No spin. Just data.</strong></p>
+            <p><strong className="text-foreground">No accounts. No paywalls. No spin. Just data.</strong></p>
           </div>
         </Card>
 
         {/* Data Categories */}
         <Card className="mb-8">
-          <h2 className="text-2xl font-semibold text-white mb-6">Data Categories</h2>
+          <h2 className="text-2xl font-semibold text-foreground mb-6">Data Categories</h2>
           <div className="grid md:grid-cols-2 gap-4">
             {[
               { icon: Scale, color: 'text-surface-400', name: 'Crime Statistics', desc: 'FBI crime data by state, year, and demographics' },
@@ -50,7 +50,7 @@ export default function AboutPage() {
               <div key={name} className="p-4 bg-surface-800 rounded-lg border border-border">
                 <div className="flex items-center gap-2 mb-2">
                   <Icon className={`h-5 w-5 ${color}`} />
-                  <h3 className="font-medium text-white">{name}</h3>
+                  <h3 className="font-medium text-foreground">{name}</h3>
                 </div>
                 <p className="text-sm text-surface-500">{desc}</p>
               </div>
@@ -62,7 +62,7 @@ export default function AboutPage() {
         <Card className="mb-8">
           <div className="flex items-start mb-4">
             <Database className="h-8 w-8 text-surface-500 mr-3 flex-shrink-0" />
-            <h2 className="text-2xl font-semibold text-white mb-4">Data Sources</h2>
+            <h2 className="text-2xl font-semibold text-foreground mb-4">Data Sources</h2>
           </div>
           <div className="space-y-4">
             {[
@@ -94,7 +94,7 @@ export default function AboutPage() {
               ]},
             ].map(({ label, color, links }) => (
               <div key={label} className={`border-l-2 ${color} pl-4`}>
-                <h3 className="font-medium text-white mb-1">{label}</h3>
+                <h3 className="font-medium text-foreground mb-1">{label}</h3>
                 <ul className="text-sm text-surface-500 space-y-1">
                   {links.map(l => (
                     <li key={l.url}>• <a href={l.url} target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">{l.name}</a></li>
@@ -109,11 +109,11 @@ export default function AboutPage() {
         <Card className="mb-8">
           <div className="flex items-start mb-4">
             <Calculator className="h-8 w-8 text-surface-500 mr-3 flex-shrink-0" />
-            <h2 className="text-2xl font-semibold text-white mb-4">Methodology</h2>
+            <h2 className="text-2xl font-semibold text-foreground mb-4">Methodology</h2>
           </div>
           <div className="space-y-6">
             <div>
-              <h3 className="font-medium text-white mb-2">Per Capita Rates</h3>
+              <h3 className="font-medium text-foreground mb-2">Per Capita Rates</h3>
               <p className="text-sm text-surface-400 mb-2">
                 For fair comparisons across different population sizes, we calculate per capita rates:
               </p>
@@ -122,7 +122,7 @@ export default function AboutPage() {
               </div>
             </div>
             <div>
-              <h3 className="font-medium text-white mb-2">Data Presentation Principles</h3>
+              <h3 className="font-medium text-foreground mb-2">Data Presentation Principles</h3>
               <ul className="list-disc list-inside space-y-2 text-sm text-surface-400">
                 <li>Raw data presented without adjustment or correction</li>
                 <li>Missing data noted, never estimated</li>
@@ -138,7 +138,7 @@ export default function AboutPage() {
         <Card className="mb-8 border-amber-500/20">
           <div className="flex items-start mb-4">
             <AlertCircle className="h-8 w-8 text-amber-400 mr-3 flex-shrink-0" />
-            <h2 className="text-2xl font-semibold text-white mb-4">Important Limitations</h2>
+            <h2 className="text-2xl font-semibold text-foreground mb-4">Important Limitations</h2>
           </div>
           <div className="space-y-3 text-sm text-surface-400">
             <p><strong className="text-surface-300">Crime Data:</strong> Only includes reported crimes. Reporting rates vary.</p>
@@ -153,7 +153,7 @@ export default function AboutPage() {
 
         {/* Built By */}
         <Card className="mb-8">
-          <h2 className="text-2xl font-semibold text-white mb-4">Built By</h2>
+          <h2 className="text-2xl font-semibold text-foreground mb-4">Built By</h2>
           <p className="text-surface-400 mb-4">
             Let&apos;s Talk Statistics is a project by <a href="https://telep.io" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">Telep IO</a>.
           </p>

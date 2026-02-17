@@ -73,7 +73,7 @@ function EmploymentPageContent() {
       <div className="px-4 sm:px-6 lg:px-8 pt-16 pb-12">
         <div className="mx-auto max-w-7xl">
           <p className="text-xs font-mono text-surface-600 mb-4 uppercase tracking-wider">Employment Analysis</p>
-          <h1 className="text-4xl sm:text-5xl font-semibold text-white mb-4">Labor Statistics</h1>
+          <h1 className="text-4xl sm:text-5xl font-semibold text-foreground mb-4">Labor Statistics</h1>
           <p className="text-lg text-surface-500 max-w-2xl">
             Comprehensive employment data from Bureau of Labor Statistics. Real-time unemployment rates, 
             job growth analysis, and demographic breakdowns.
@@ -106,14 +106,14 @@ function EmploymentPageContent() {
               <div className="card p-6">
                 <div className="flex items-center gap-2 text-surface-500 text-sm mb-1"><Users className="h-4 w-4" />Unemployment</div>
                 <div className="flex items-center gap-2">
-                  <p className="text-2xl font-semibold text-white">{stats?.unemploymentRate}%</p>
+                  <p className="text-2xl font-semibold text-foreground">{stats?.unemploymentRate}%</p>
                   {stats && <TrendIcon direction={stats.trendDirection} />}
                 </div>
                 <p className="text-xs text-green-400 mt-1">✓ Live from BLS</p>
               </div>
               <div className="card p-6">
                 <div className="flex items-center gap-2 text-surface-500 text-sm mb-1"><Building2 className="h-4 w-4" />Labor Force</div>
-                <p className="text-2xl font-semibold text-white">{stats?.laborForceMillions || '—'}M</p>
+                <p className="text-2xl font-semibold text-foreground">{stats?.laborForceMillions || '—'}M</p>
                 <p className="text-xs text-surface-600">Civilian labor force</p>
               </div>
               <div className="card p-6">
@@ -134,7 +134,7 @@ function EmploymentPageContent() {
       {/* Chart */}
       <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
         <div className="card p-6">
-          <h2 className="text-base font-medium text-white mb-4">Unemployment Rate Trend</h2>
+          <h2 className="text-base font-medium text-foreground mb-4">Unemployment Rate Trend</h2>
           {loading ? (
             <ChartSkeleton height={300} />
           ) : error ? (
@@ -159,7 +159,7 @@ function EmploymentPageContent() {
           <div className="lg:col-span-2">
             {/* Monthly Table */}
             <div className="card">
-              <div className="px-6 py-4 border-b border-border"><h2 className="text-base font-medium text-white">Monthly Unemployment Rate</h2></div>
+              <div className="px-6 py-4 border-b border-border"><h2 className="text-base font-medium text-foreground">Monthly Unemployment Rate</h2></div>
               <div className="overflow-x-auto">
                 <table className="w-full">
                   <thead className="bg-surface-800">
@@ -181,9 +181,9 @@ function EmploymentPageContent() {
                         const changeNum = change ? parseFloat(change) : 0;
                         return (
                           <tr key={idx} className="hover:bg-surface-800/50">
-                            <td className="px-6 py-4 text-sm text-white">{row.month}</td>
+                            <td className="px-6 py-4 text-sm text-foreground">{row.month}</td>
                             <td className="px-6 py-4 text-sm text-right">
-                              <span className={`font-mono ${row.rate > 5 ? 'text-red-400' : row.rate < 4 ? 'text-green-400' : 'text-white'}`}>{row.rate}%</span>
+                              <span className={`font-mono ${row.rate > 5 ? 'text-red-400' : row.rate < 4 ? 'text-green-400' : 'text-foreground'}`}>{row.rate}%</span>
                             </td>
                             <td className="px-6 py-4 text-sm text-right">
                               {change !== null && <span className={changeNum > 0 ? 'text-red-400' : changeNum < 0 ? 'text-green-400' : 'text-surface-600'}>{changeNum > 0 ? '+' : ''}{change}%</span>}
@@ -201,7 +201,7 @@ function EmploymentPageContent() {
 
             {/* Jobs by Sector */}
             <div className="mt-8 card">
-              <div className="px-6 py-4 border-b border-border"><h2 className="text-base font-medium text-white">Jobs Added by Sector</h2></div>
+              <div className="px-6 py-4 border-b border-border"><h2 className="text-base font-medium text-foreground">Jobs Added by Sector</h2></div>
               <div className="p-6">
                 <LazyBarChart data={sectorJobs.map(s => ({ name: s.sector, fullName: s.fullName, jobs: s.jobs }))} height={250} layout="vertical" margin={{ top: 5, right: 30, left: 20, bottom: 5 }}>
                   <LazyCartesianGrid {...chartGridStyle} />
@@ -218,7 +218,7 @@ function EmploymentPageContent() {
           <div>
             {/* By State */}
             <div className="card">
-              <div className="px-6 py-4 border-b border-border"><h2 className="text-base font-medium text-white">By State</h2></div>
+              <div className="px-6 py-4 border-b border-border"><h2 className="text-base font-medium text-foreground">By State</h2></div>
               <div className="divide-y divide-border">
                 <div className="px-6 py-2 bg-surface-800"><p className="text-xs text-surface-600 uppercase">Lowest</p></div>
                 {stateData.slice(0, 5).map((s, idx) => (
@@ -239,7 +239,7 @@ function EmploymentPageContent() {
 
             {/* Demographics */}
             <div className="mt-6 card">
-              <div className="px-6 py-4 border-b border-border"><h2 className="text-base font-medium text-white">By Demographics</h2></div>
+              <div className="px-6 py-4 border-b border-border"><h2 className="text-base font-medium text-foreground">By Demographics</h2></div>
               <div className="p-6 space-y-3">
                 {demographics.map((d, idx) => (
                   <div key={idx} className="flex justify-between items-center">
@@ -251,7 +251,7 @@ function EmploymentPageContent() {
             </div>
 
             <div className="mt-6 card p-6">
-              <h3 className="text-base font-medium text-white mb-3">Data Sources</h3>
+              <h3 className="text-base font-medium text-foreground mb-3">Data Sources</h3>
               <ul className="text-sm text-surface-500 space-y-2">
                 <li>• <a href="https://www.bls.gov/cps/" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">BLS Current Population Survey</a></li>
                 <li>• BLS Employment Situation Report</li>

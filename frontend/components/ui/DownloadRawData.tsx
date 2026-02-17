@@ -61,7 +61,7 @@ export function DownloadRawData({
     <div className="card p-6">
       <div className="flex items-center gap-2 mb-2">
         <Download className="h-5 w-5 text-surface-500" />
-        <h3 className="text-base font-medium text-white">{title}</h3>
+        <h3 className="text-base font-medium text-foreground">{title}</h3>
       </div>
       <p className="text-sm text-surface-500 mb-4">{description}</p>
       

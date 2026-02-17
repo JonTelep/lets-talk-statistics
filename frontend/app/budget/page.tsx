@@ -51,7 +51,7 @@ function BudgetPageContent() {
       <div className="px-4 sm:px-6 lg:px-8 pt-16 pb-12">
         <div className="mx-auto max-w-7xl">
           <p className="text-xs font-mono text-surface-600 mb-4 uppercase tracking-wider">Government Spending</p>
-          <h1 className="text-4xl sm:text-5xl font-semibold text-white mb-4">Federal Budget</h1>
+          <h1 className="text-4xl sm:text-5xl font-semibold text-foreground mb-4">Federal Budget</h1>
           <p className="text-lg text-surface-500 max-w-2xl">
             Track how the U.S. government spends taxpayer money. All data from official Treasury and OMB reports.
           </p>
@@ -72,7 +72,7 @@ function BudgetPageContent() {
       {/* Key Metrics */}
       <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
         <div className="flex items-center gap-3 mb-6">
-          <h2 className="text-xl font-medium text-white">
+          <h2 className="text-xl font-medium text-foreground">
             {fiscalYear ? `FY ${fiscalYear}` : 'Federal Budget'} Overview
           </h2>
           {loading && <RefreshCw className="h-4 w-4 animate-spin text-surface-500" />}
@@ -104,7 +104,7 @@ function BudgetPageContent() {
                 <div className="card p-6">
                   <div className="flex items-center gap-2 text-surface-500 text-sm mb-1"><Calendar className="h-4 w-4 text-blue-400" />Data Status</div>
                   {budgetData ? (
-                    <><p className="text-2xl font-semibold text-white">FY {fiscalYear}</p><p className="text-xs text-green-400">✓ Live from Treasury</p></>
+                    <><p className="text-2xl font-semibold text-foreground">FY {fiscalYear}</p><p className="text-xs text-green-400">✓ Live from Treasury</p></>
                   ) : <p className="text-2xl font-semibold text-surface-600">—</p>}
                 </div>
               </>
@@ -115,7 +115,7 @@ function BudgetPageContent() {
         {/* Charts */}
         <div className="grid lg:grid-cols-2 gap-6 mb-8">
           <div className="card p-6">
-            <h3 className="text-base font-medium text-white mb-4">Historical Budget Deficit</h3>
+            <h3 className="text-base font-medium text-foreground mb-4">Historical Budget Deficit</h3>
             <LazyBarChart data={[...historicalDeficit].reverse()} height={280} margin={{ top: 5, right: 30, left: 20, bottom: 5 }}>
               <LazyCartesianGrid {...chartGridStyle} />
               <LazyXAxis dataKey="year" {...chartAxisStyle} tickFormatter={(v) => v.replace('FY ', "'")} />
@@ -126,7 +126,7 @@ function BudgetPageContent() {
           </div>
 
           <div className="card p-6">
-            <h3 className="text-base font-medium text-white mb-4">Federal Spending Breakdown</h3>
+            <h3 className="text-base font-medium text-foreground mb-4">Federal Spending Breakdown</h3>
             <LazyPieChart height={280}>
               <LazyPie data={spendingCategories.map(c => ({ name: c.category.split(' ')[0], fullName: c.category, value: c.amount }))} cx="50%" cy="50%" innerRadius={60} outerRadius={90} paddingAngle={2} dataKey="value" label={({ name, percent }: any) => `${name} ${(percent * 100).toFixed(0)}%`} labelLine={false}>
                 {spendingCategories.map((_, idx) => <LazyCell key={idx} fill={PIE_COLORS[idx % PIE_COLORS.length]} />)}
@@ -141,7 +141,7 @@ function BudgetPageContent() {
           <div className="card mb-8"><div className="px-6 py-4 border-b border-border"><Skeleton className="h-5 w-56" /></div><TableSkeleton rows={5} columns={3} /></div>
         ) : budgetData?.byClassification && budgetData.byClassification.length > 0 && (
           <div className="card p-6 mb-8">
-            <h3 className="text-base font-medium text-white mb-4 flex items-center gap-2">
+            <h3 className="text-base font-medium text-foreground mb-4 flex items-center gap-2">
               <Building2 className="h-4 w-4 text-surface-500" />Spending by Classification (Live)
             </h3>
             <div className="overflow-x-auto">
@@ -156,7 +156,7 @@ function BudgetPageContent() {
                 <tbody className="divide-y divide-border">
                   {budgetData.byClassification.map((item, idx) => (
                     <tr key={idx} className="hover:bg-surface-800/50">
-                      <td className="px-4 py-3 text-sm text-white">{item.classification}</td>
+                      <td className="px-4 py-3 text-sm text-foreground">{item.classification}</td>
                       <td className="px-4 py-3 text-sm text-right font-mono text-red-400">{formatBudgetNumber(item.outlays)}</td>
                       <td className="px-4 py-3 text-sm text-right font-mono text-green-400">{formatBudgetNumber(item.receipts)}</td>
                     </tr>
@@ -175,7 +175,7 @@ function BudgetPageContent() {
             {/* Spending Categories */}
             <div className="card">
               <div className="px-6 py-4 border-b border-border">
-                <h2 className="text-base font-medium text-white">Spending by Category</h2>
+                <h2 className="text-base font-medium text-foreground">Spending by Category</h2>
               </div>
               <div className="p-6 space-y-4">
                 {spendingCategories.map((cat, idx) => (
@@ -195,7 +195,7 @@ function BudgetPageContent() {
             {/* Historical Deficit Table */}
             <div className="mt-8 card">
               <div className="px-6 py-4 border-b border-border">
-                <h2 className="text-base font-medium text-white">Historical Deficit</h2>
+                <h2 className="text-base font-medium text-foreground">Historical Deficit</h2>
               </div>
               <div className="overflow-x-auto">
                 <table className="w-full">
@@ -212,7 +212,7 @@ function BudgetPageContent() {
                       const change = prev ? ((row.deficit - prev) / prev * 100).toFixed(1) : null;
                       return (
                         <tr key={idx} className="hover:bg-surface-800/50">
-                          <td className="px-6 py-4 text-sm text-white">{row.year}</td>
+                          <td className="px-6 py-4 text-sm text-foreground">{row.year}</td>
                           <td className="px-6 py-4 text-sm text-right font-mono text-red-400">${row.deficit.toFixed(2)}T</td>
                           <td className="px-6 py-4 text-sm text-right">
                             {change && <span className={parseFloat(change) < 0 ? 'text-green-400' : 'text-red-400'}>{parseFloat(change) > 0 ? '+' : ''}{change}%</span>}
@@ -228,7 +228,7 @@ function BudgetPageContent() {
 
           <div>
             <div className="card">
-              <div className="px-6 py-4 border-b border-border"><h2 className="text-base font-medium text-white">Revenue Sources</h2></div>
+              <div className="px-6 py-4 border-b border-border"><h2 className="text-base font-medium text-foreground">Revenue Sources</h2></div>
               <div className="p-6 space-y-4">
                 {revenueCategories.map((cat, idx) => (
                   <div key={idx} className="flex justify-between items-center">
@@ -243,7 +243,7 @@ function BudgetPageContent() {
             </div>
 
             <div className="mt-6 card p-6">
-              <h3 className="text-base font-medium text-white mb-3">Data Sources</h3>
+              <h3 className="text-base font-medium text-foreground mb-3">Data Sources</h3>
               <ul className="text-sm text-surface-500 space-y-2">
                 <li>• <a href="https://fiscaldata.treasury.gov/" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">Treasury Fiscal Data API</a></li>
                 <li>• USASpending.gov</li>

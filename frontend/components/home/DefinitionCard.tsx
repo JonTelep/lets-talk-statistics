@@ -21,7 +21,7 @@ export default function DefinitionCard({
     <div className="card p-8">
       <div className="flex items-center mb-4">
         <div className="mr-4 text-surface-400">{icon}</div>
-        <h3 className="text-xl font-semibold text-white">{term}</h3>
+        <h3 className="text-xl font-semibold text-foreground">{term}</h3>
       </div>
 
       <div className="space-y-4 text-surface-400">

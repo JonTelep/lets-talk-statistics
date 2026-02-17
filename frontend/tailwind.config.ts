@@ -33,6 +33,10 @@ const config: Config = {
           subtle: 'var(--border-subtle)',
           medium: 'var(--border-medium)',
         },
+        foreground: 'var(--text-primary)',
+        'fg-secondary': 'var(--text-secondary)',
+        'fg-muted': 'var(--text-muted)',
+        'fg-dim': 'var(--text-dim)',
       },
       fontFamily: {
         sans: [

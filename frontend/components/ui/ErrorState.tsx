@@ -50,7 +50,7 @@ export function ErrorState({
       <div className={`inline-flex items-center justify-center w-12 h-12 rounded-full bg-surface-800 mb-4`}>
         <Icon className={`h-6 w-6 ${config.iconColor}`} />
       </div>
-      <h3 className="text-lg font-semibold text-white mb-1">{displayTitle}</h3>
+      <h3 className="text-lg font-semibold text-foreground mb-1">{displayTitle}</h3>
       <p className="text-surface-400 text-center max-w-sm mb-4">{displayMessage}</p>
       {showRetry && onRetry && (
         <button

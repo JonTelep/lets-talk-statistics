@@ -44,7 +44,7 @@ export class ErrorBoundary extends Component<Props, State> {
             <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-surface-800 mb-6">
               <AlertOctagon className="h-8 w-8 text-red-400" />
             </div>
-            <h2 className="text-xl font-semibold text-white mb-2">Something went wrong</h2>
+            <h2 className="text-xl font-semibold text-foreground mb-2">Something went wrong</h2>
             <p className="text-surface-400 mb-6">
               An unexpected error occurred. Please try again or return to the home page.
             </p>

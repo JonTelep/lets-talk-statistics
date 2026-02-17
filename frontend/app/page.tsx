@@ -52,7 +52,7 @@ export default function Home() {
       {/* Hero */}
       <section className="px-4 sm:px-6 lg:px-8 pt-24 pb-20">
         <div className="mx-auto max-w-4xl">
-          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-semibold tracking-tight text-white mb-6">
+          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-semibold tracking-tight text-foreground mb-6">
             Government data,
             <br />
             <span className="text-surface-400">without the spin.</span>
@@ -77,7 +77,7 @@ export default function Home() {
       <section className="px-4 sm:px-6 lg:px-8 pb-24">
         <div className="mx-auto max-w-7xl">
           <div className="mb-12">
-            <h2 className="text-2xl font-semibold text-white mb-2">Data categories</h2>
+            <h2 className="text-2xl font-semibold text-foreground mb-2">Data categories</h2>
             <p className="text-surface-500">
               Each category pulls directly from official U.S. government data sources.
             </p>
@@ -90,10 +90,10 @@ export default function Home() {
                 <Link key={category.name} href={category.href} className="group">
                   <div className="card card-hover h-full p-6">
                     <div className="flex items-start justify-between mb-4">
-                      <Icon className="h-5 w-5 text-surface-500 group-hover:text-white transition-colors" />
+                      <Icon className="h-5 w-5 text-surface-500 group-hover:text-foreground transition-colors" />
                       <ArrowRight className="h-4 w-4 text-surface-600 group-hover:text-surface-400 group-hover:translate-x-0.5 transition-all" />
                     </div>
-                    <h3 className="text-base font-medium text-white mb-2 group-hover:text-white">
+                    <h3 className="text-base font-medium text-foreground mb-2 group-hover:text-foreground">
                       {category.name}
                     </h3>
                     <p className="text-sm text-surface-500 mb-4 leading-relaxed">
@@ -116,21 +116,21 @@ export default function Home() {
           <div className="grid md:grid-cols-3 gap-12">
             <div>
               <p className="text-xs font-mono text-surface-600 mb-3">01</p>
-              <h3 className="text-base font-medium text-white mb-2">Data first</h3>
+              <h3 className="text-base font-medium text-foreground mb-2">Data first</h3>
               <p className="text-sm text-surface-500 leading-relaxed">
                 Raw numbers from official government sources. No cherry-picking, no selective framing.
               </p>
             </div>
             <div>
               <p className="text-xs font-mono text-surface-600 mb-3">02</p>
-              <h3 className="text-base font-medium text-white mb-2">Unbiased</h3>
+              <h3 className="text-base font-medium text-foreground mb-2">Unbiased</h3>
               <p className="text-sm text-surface-500 leading-relaxed">
                 Zero editorializing. We present findings and let you form your own conclusions.
               </p>
             </div>
             <div>
               <p className="text-xs font-mono text-surface-600 mb-3">03</p>
-              <h3 className="text-base font-medium text-white mb-2">Transparent</h3>
+              <h3 className="text-base font-medium text-foreground mb-2">Transparent</h3>
               <p className="text-sm text-surface-500 leading-relaxed">
                 Every statistic links to its source. Full methodology disclosed. Verify everything.
               </p>
@@ -144,7 +144,7 @@ export default function Home() {
         <div className="mx-auto max-w-4xl text-center">
           <p className="text-xs text-surface-600">
             All data sourced from U.S. Treasury, DHS, BLS, OMB, and FEC.
-            Built by <a href="https://telep.io" className="text-surface-500 hover:text-white transition-colors">Telep IO</a>.
+            Built by <a href="https://telep.io" className="text-surface-500 hover:text-foreground transition-colors">Telep IO</a>.
           </p>
         </div>
       </section>

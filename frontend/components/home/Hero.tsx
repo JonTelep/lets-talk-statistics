@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <div className="px-4 sm:px-6 lg:px-8 pt-24 pb-20">
       <div className="mx-auto max-w-4xl text-center">
-        <h1 className="text-5xl sm:text-6xl font-semibold tracking-tight text-white mb-6">
+        <h1 className="text-5xl sm:text-6xl font-semibold tracking-tight text-foreground mb-6">
           Government data,
           <br />
           <span className="text-surface-400">without the spin.</span>
