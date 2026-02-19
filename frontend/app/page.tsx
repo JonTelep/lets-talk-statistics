@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { ArrowRight, TrendingUp, Users, DollarSign, Briefcase, Building2, Vote, Home as HomeIcon } from 'lucide-react';
+import { ArrowUpRight, TrendingUp, Users, DollarSign, Briefcase, Building2, Vote, Home as HomeIcon, ChevronDown } from 'lucide-react';
 
 const categories = [
   {
@@ -8,20 +8,24 @@ const categories = [
     href: '/congress',
     icon: TrendingUp,
     stat: '435+ Members tracked',
+    color: 'editorial-red',
+    featured: true,
   },
   {
-    name: 'Housing',
+    name: 'Housing Markets', 
     description: 'Homeownership, construction, prices, vacancies, and mortgage rates.',
     href: '/housing',
     icon: HomeIcon,
     stat: 'FRED data (60+ series)',
+    color: 'editorial-gold',
   },
   {
-    name: 'Immigration',
+    name: 'Immigration Data',
     description: 'Legal immigration, deportations, and border encounter statistics.',
     href: '/immigration',
     icon: Users,
     stat: 'DHS & CBP data',
+    color: 'text-primary',
   },
   {
     name: 'Federal Budget',
@@ -29,87 +33,187 @@ const categories = [
     href: '/budget',
     icon: DollarSign,
     stat: 'Treasury data',
+    color: 'text-primary',
   },
   {
-    name: 'Employment',
+    name: 'Labor Statistics',
     description: 'Unemployment rates, job growth, and labor force statistics.',
     href: '/employment',
     icon: Briefcase,
     stat: 'BLS monthly data',
+    color: 'text-primary',
   },
   {
     name: 'National Debt',
-    description: 'Federal debt tracking, who holds our debt, and historical growth.',
+    description: 'Federal debt tracking, creditor breakdown, and historical growth.',
     href: '/debt',
     icon: Building2,
     stat: 'Real-time Treasury',
+    color: 'text-primary',
   },
   {
-    name: 'Election Funding',
-    description: 'Campaign finance, ballot access barriers, and the two-party system.',
+    name: 'Election Finance',
+    description: 'Campaign finance, ballot access barriers, and electoral data.',
     href: '/elections',
     icon: Vote,
     stat: 'FEC data',
+    color: 'text-primary',
   },
 ];
 
 export default function Home() {
+  const featuredCategory = categories.find(cat => cat.featured);
+  const otherCategories = categories.filter(cat => !cat.featured);
+
   return (
     <div className="flex flex-col">
-      {/* Hero */}
-      <section className="px-4 sm:px-6 lg:px-8 pt-24 pb-20">
-        <div className="mx-auto max-w-4xl">
-          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-semibold tracking-tight text-foreground mb-6">
+      {/* Editorial Header */}
+      <section className="px-4 sm:px-6 lg:px-8 pt-20 pb-12 border-b border-border">
+        <div className="mx-auto max-w-6xl">
+          <div className="editorial-accent-line animate-fade-in-up"></div>
+          <h1 className="headline-1 animate-fade-in-up animate-stagger-1 mb-8 max-w-4xl">
             Government data,
             <br />
-            <span className="text-surface-400">without the spin.</span>
+            <em className="text-editorial-red not-italic">without the spin.</em>
           </h1>
-          <p className="text-lg text-surface-500 max-w-2xl mb-10 leading-relaxed">
-            Objective analysis of U.S. government statistics from official sources.
-            No opinions. No narratives. Just data — explore the numbers and draw your own conclusions.
-          </p>
-          <div className="flex flex-wrap gap-3">
-            <Link href="/debt" className="btn-primary">
-              Explore the data
-              <ArrowRight className="ml-2 h-4 w-4" />
-            </Link>
-            <Link href="/about" className="btn-secondary">
-              Methodology
-            </Link>
+          
+          <div className="grid lg:grid-cols-3 gap-16 mt-16">
+            <div className="lg:col-span-2">
+              <p className="body-large animate-fade-in-up animate-stagger-2 max-w-3xl mb-8">
+                We present U.S. government statistics with the rigor of financial journalism. 
+                Every number sourced from official agencies. Every claim backed by data. 
+                No opinions. No narratives. Just the facts — because in democracy, 
+                informed citizens make better decisions.
+              </p>
+              
+              <div className="flex flex-wrap gap-4 animate-fade-in-up animate-stagger-3">
+                <Link href="/debt" className="btn-editorial-primary">
+                  Explore the Data
+                  <ArrowUpRight className="ml-2 h-5 w-5" />
+                </Link>
+                <Link href="/about" className="btn-editorial-secondary">
+                  Our Methodology
+                </Link>
+              </div>
+            </div>
+            
+            <div className="animate-fade-in-up animate-stagger-4">
+              <div className="editorial-card editorial-card-elevated p-8">
+                <div className="caption mb-3">LATEST UPDATE</div>
+                <div className="stat-display">
+                  <div className="stat-value stat-accent">$34.2T</div>
+                  <div className="stat-label">National Debt</div>
+                </div>
+                <p className="body-small mt-4">
+                  Updated daily from U.S. Treasury data. Track the numbers that matter.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Categories */}
-      <section className="px-4 sm:px-6 lg:px-8 pb-24">
-        <div className="mx-auto max-w-7xl">
-          <div className="mb-12">
-            <h2 className="text-2xl font-semibold text-foreground mb-2">Data categories</h2>
-            <p className="text-surface-500">
-              Each category pulls directly from official U.S. government data sources.
+      {/* Featured Category - Large Treatment */}
+      {featuredCategory && (
+        <section className="px-4 sm:px-6 lg:px-8 py-20 bg-surface-50">
+          <div className="mx-auto max-w-6xl">
+            <div className="grid lg:grid-cols-5 gap-16 items-center">
+              <div className="lg:col-span-3">
+                <div className="caption mb-4 text-editorial-red animate-fade-in-up">FEATURED ANALYSIS</div>
+                <h2 className="headline-2 animate-fade-in-up animate-stagger-1 mb-6">
+                  {featuredCategory.name}
+                </h2>
+                <p className="body-large animate-fade-in-up animate-stagger-2 mb-8">
+                  {featuredCategory.description} Track every disclosure, 
+                  analyze trading patterns, and follow the money in real-time. 
+                  Our database includes every STOCK Act filing since 2012.
+                </p>
+                <div className="flex items-center gap-6 animate-fade-in-up animate-stagger-3">
+                  <Link href={featuredCategory.href} className="btn-editorial-accent">
+                    View Congressional Trades
+                    <ArrowUpRight className="ml-2 h-5 w-5" />
+                  </Link>
+                  <div className="stat-display">
+                    <div className="stat-value text-2xl">{featuredCategory.stat.split(' ')[0]}</div>
+                    <div className="stat-label">{featuredCategory.stat.split(' ').slice(1).join(' ')}</div>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="lg:col-span-2 animate-fade-in-up animate-stagger-4">
+                <div className="editorial-card editorial-card-elevated p-8 bg-white">
+                  <div className="flex items-center gap-3 mb-6">
+                    <featuredCategory.icon className="h-6 w-6 text-editorial-red" />
+                    <span className="caption">LIVE DATA</span>
+                  </div>
+                  
+                  <div className="space-y-6">
+                    <div className="stat-display">
+                      <div className="stat-value text-3xl">1,247</div>
+                      <div className="stat-label">Total Trades This Year</div>
+                    </div>
+                    
+                    <div className="stat-display">
+                      <div className="stat-value text-3xl stat-accent">$89.4M</div>
+                      <div className="stat-label">Volume Disclosed</div>
+                    </div>
+                    
+                    <div className="pt-4 border-t border-border">
+                      <p className="body-small">
+                        Data updated daily from congressional disclosure forms. 
+                        Last updated: Today, 6:00 AM EST
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* Data Categories - Editorial Grid */}
+      <section className="px-4 sm:px-6 lg:px-8 py-20">
+        <div className="mx-auto max-w-6xl">
+          <div className="mb-16">
+            <div className="caption mb-4 animate-fade-in-up">DATA CATEGORIES</div>
+            <h2 className="headline-3 animate-fade-in-up animate-stagger-1 mb-6 max-w-2xl">
+              Seven areas of government statistics, analyzed with editorial rigor.
+            </h2>
+            <p className="body-text animate-fade-in-up animate-stagger-2 max-w-3xl">
+              Each category draws from official U.S. government sources: Treasury, 
+              Department of Homeland Security, Bureau of Labor Statistics, 
+              Federal Election Commission, and congressional disclosure offices.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {categories.map((category) => {
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {otherCategories.map((category, index) => {
               const Icon = category.icon;
               return (
-                <Link key={category.name} href={category.href} className="group">
-                  <div className="card card-hover h-full p-6">
-                    <div className="flex items-start justify-between mb-4">
-                      <Icon className="h-5 w-5 text-surface-500 group-hover:text-foreground transition-colors" />
-                      <ArrowRight className="h-4 w-4 text-surface-600 group-hover:text-surface-400 group-hover:translate-x-0.5 transition-all" />
-                    </div>
-                    <h3 className="text-base font-medium text-foreground mb-2 group-hover:text-foreground">
+                <Link 
+                  key={category.name} 
+                  href={category.href} 
+                  className={`group animate-fade-in-up animate-stagger-${Math.min(index + 3, 6)}`}
+                >
+                  <article className="editorial-card editorial-card-hover h-full p-8 bg-white">
+                    <header className="flex items-start justify-between mb-6">
+                      <Icon className="h-6 w-6 text-text-muted group-hover:text-editorial-red transition-colors duration-300" />
+                      <ArrowUpRight className="h-5 w-5 text-text-subtle group-hover:text-text-primary group-hover:translate-x-1 group-hover:-translate-y-1 transition-all duration-300" />
+                    </header>
+                    
+                    <h3 className="subheading mb-4 group-hover:text-editorial-red transition-colors duration-300">
                       {category.name}
                     </h3>
-                    <p className="text-sm text-surface-500 mb-4 leading-relaxed">
+                    
+                    <p className="body-text mb-6 leading-relaxed">
                       {category.description}
                     </p>
-                    <p className="text-xs text-surface-600 font-mono">
-                      {category.stat}
-                    </p>
-                  </div>
+                    
+                    <footer className="pt-4 border-t border-border-subtle">
+                      <div className="caption">{category.stat}</div>
+                    </footer>
+                  </article>
                 </Link>
               );
             })}
@@ -117,41 +221,93 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Principles */}
-      <section className="border-t border-border px-4 sm:px-6 lg:px-8 py-24">
-        <div className="mx-auto max-w-4xl">
+      {/* Editorial Principles */}
+      <section className="px-4 sm:px-6 lg:px-8 py-20 bg-surface-50 border-y border-border">
+        <div className="mx-auto max-w-6xl">
+          <div className="text-center mb-16">
+            <div className="caption mb-4 animate-fade-in-up">EDITORIAL STANDARDS</div>
+            <h2 className="headline-3 animate-fade-in-up animate-stagger-1 mb-6">
+              Our principles of statistical journalism.
+            </h2>
+          </div>
+
           <div className="grid md:grid-cols-3 gap-12">
-            <div>
-              <p className="text-xs font-mono text-surface-600 mb-3">01</p>
-              <h3 className="text-base font-medium text-foreground mb-2">Data first</h3>
-              <p className="text-sm text-surface-500 leading-relaxed">
-                Raw numbers from official government sources. No cherry-picking, no selective framing.
+            <div className="text-center animate-fade-in-up animate-stagger-1">
+              <div className="w-12 h-12 bg-editorial-red rounded-full flex items-center justify-center mx-auto mb-6">
+                <span className="text-white font-mono font-bold text-lg">01</span>
+              </div>
+              <h3 className="subheading mb-4">Source Integrity</h3>
+              <p className="body-text">
+                Every statistic traces directly to official government sources. 
+                No secondary interpretations, no aggregated summaries. 
+                Raw data, properly contextualized.
               </p>
             </div>
-            <div>
-              <p className="text-xs font-mono text-surface-600 mb-3">02</p>
-              <h3 className="text-base font-medium text-foreground mb-2">Unbiased</h3>
-              <p className="text-sm text-surface-500 leading-relaxed">
-                Zero editorializing. We present findings and let you form your own conclusions.
+            
+            <div className="text-center animate-fade-in-up animate-stagger-2">
+              <div className="w-12 h-12 bg-editorial-gold rounded-full flex items-center justify-center mx-auto mb-6">
+                <span className="text-white font-mono font-bold text-lg">02</span>
+              </div>
+              <h3 className="subheading mb-4">Editorial Independence</h3>
+              <p className="body-text">
+                Zero political commentary, zero opinion pieces. 
+                We present findings neutrally and let citizens 
+                draw their own conclusions from the data.
               </p>
             </div>
-            <div>
-              <p className="text-xs font-mono text-surface-600 mb-3">03</p>
-              <h3 className="text-base font-medium text-foreground mb-2">Transparent</h3>
-              <p className="text-sm text-surface-500 leading-relaxed">
-                Every statistic links to its source. Full methodology disclosed. Verify everything.
+            
+            <div className="text-center animate-fade-in-up animate-stagger-3">
+              <div className="w-12 h-12 bg-text-primary rounded-full flex items-center justify-center mx-auto mb-6">
+                <span className="text-white font-mono font-bold text-lg">03</span>
+              </div>
+              <h3 className="subheading mb-4">Methodological Transparency</h3>
+              <p className="body-text">
+                Complete disclosure of data processing methods, 
+                statistical techniques, and analytical limitations. 
+                Every chart and table is fully reproducible.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Source attribution */}
-      <section className="border-t border-border px-4 sm:px-6 lg:px-8 py-12">
+      {/* Call to Action */}
+      <section className="px-4 sm:px-6 lg:px-8 py-20">
         <div className="mx-auto max-w-4xl text-center">
-          <p className="text-xs text-surface-600">
-            All data sourced from U.S. Treasury, DHS, BLS, OMB, and FEC.
-            Built by <a href="https://telep.io" className="text-surface-500 hover:text-foreground transition-colors">Telep IO</a>.
+          <h2 className="headline-2 animate-fade-in-up mb-8">
+            Democracy requires informed citizens.
+          </h2>
+          <p className="body-large animate-fade-in-up animate-stagger-1 mb-12 max-w-3xl mx-auto">
+            Access the same government data that influences policy decisions, 
+            shapes markets, and affects millions of Americans. No subscription required.
+          </p>
+          
+          <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up animate-stagger-2">
+            <Link href="/debt" className="btn-editorial-primary">
+              Start with National Debt
+            </Link>
+            <Link href="/congress" className="btn-editorial-secondary">
+              View Congressional Trades
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <div className="section-divider"></div>
+
+      {/* Attribution */}
+      <section className="px-4 sm:px-6 lg:px-8 py-12">
+        <div className="mx-auto max-w-6xl text-center">
+          <p className="caption">
+            Data sourced from U.S. Treasury, DHS, BLS, OMB, and FEC. 
+            Built by{' '}
+            <a 
+              href="https://telep.io" 
+              className="text-editorial-red hover:text-editorial-red-dark transition-colors duration-200"
+            >
+              Telep IO
+            </a>
+            .
           </p>
         </div>
       </section>

@@ -1,18 +1,12 @@
 import type { Metadata } from 'next';
-import { Inter, JetBrains_Mono } from 'next/font/google';
+import { JetBrains_Mono } from 'next/font/google';
 import '../styles/globals.css';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import { SWRProvider } from '@/components/providers/SWRProvider';
 import { ThemeProvider } from '@/components/providers/ThemeProvider';
 
-const inter = Inter({
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-sans',
-  weight: ['300', '400', '500', '600', '700'],
-});
-
+// Editorial fonts loaded via CSS @import for better control
 const jetbrainsMono = JetBrains_Mono({
   subsets: ['latin'],
   display: 'swap',
@@ -23,11 +17,21 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL('https://letstalkstatistics.com'),
   title: {
-    default: "Let's Talk Statistics | Government Data Without Spin",
-    template: "%s | Let's Talk Statistics",
+    default: "Let's Talk Statistics — Government Data Without Spin",
+    template: "%s — Let's Talk Statistics",
   },
-  description: 'Objective analysis of US government statistics. Explore federal spending, national debt, employment data, and more from official sources.',
-  keywords: ['government statistics', 'federal data', 'national debt', 'public spending', 'objective analysis', 'congressional trades'],
+  description: 'Authoritative analysis of U.S. government statistics. Explore federal spending, national debt, employment data, and congressional trades from official sources with editorial rigor.',
+  keywords: [
+    'government statistics', 
+    'federal data', 
+    'national debt', 
+    'public spending', 
+    'congressional trades',
+    'economic analysis',
+    'political data',
+    'treasury data',
+    'objective journalism'
+  ],
   authors: [{ name: "Let's Talk Statistics", url: 'https://letstalkstatistics.com' }],
   creator: 'Telep IO',
   publisher: 'Telep IO',
@@ -37,8 +41,8 @@ export const metadata: Metadata = {
     apple: '/favicon.svg',
   },
   openGraph: {
-    title: "Let's Talk Statistics",
-    description: 'Government data without spin - objective statistical analysis from official sources',
+    title: "Let's Talk Statistics — Government Data Without Spin",
+    description: 'Authoritative statistical analysis from official U.S. government sources',
     url: 'https://letstalkstatistics.com',
     siteName: "Let's Talk Statistics",
     locale: 'en_US',
@@ -48,20 +52,23 @@ export const metadata: Metadata = {
         url: '/og-image.png',
         width: 1200,
         height: 630,
-        alt: "Let's Talk Statistics - Government Data Without Spin",
+        alt: "Let's Talk Statistics — Government Data Without Spin",
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Let's Talk Statistics",
-    description: 'Government data without spin - objective statistical analysis',
+    title: "Let's Talk Statistics — Government Data Without Spin",
+    description: 'Authoritative statistical analysis from official sources',
     creator: '@telep_io',
     images: ['/og-image.png'],
   },
   robots: {
     index: true,
     follow: true,
+  },
+  other: {
+    'theme-color': '#dc2626',
   },
 };
 
@@ -71,8 +78,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" data-theme="dark" className={`${inter.variable} ${jetbrainsMono.variable}`}>
-      <body className="font-sans flex min-h-screen flex-col antialiased">
+    <html lang="en" data-theme="light" className={jetbrainsMono.variable}>
+      <body className="flex min-h-screen flex-col antialiased">
         <ThemeProvider>
           <SWRProvider>
             <Header />
