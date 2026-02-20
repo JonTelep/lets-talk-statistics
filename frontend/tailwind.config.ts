@@ -24,39 +24,39 @@ const config: Config = {
           950: 'var(--surface-950)',
         },
         accent: {
-          DEFAULT: '#3b82f6',
-          muted: '#2563eb',
-          dim: '#1d4ed8',
+          DEFAULT: 'var(--accent)',
+          light: 'var(--accent-light)',
+          muted: 'var(--accent-muted)',
         },
         border: {
           DEFAULT: 'var(--border)',
           subtle: 'var(--border-subtle)',
           medium: 'var(--border-medium)',
+          strong: 'var(--border-strong)',
         },
+        text: {
+          primary: 'var(--text-primary)',
+          secondary: 'var(--text-secondary)',
+          muted: 'var(--text-muted)',
+          dim: 'var(--text-dim)',
+        },
+        // Legacy aliases for existing components
         foreground: 'var(--text-primary)',
         'fg-secondary': 'var(--text-secondary)',
         'fg-muted': 'var(--text-muted)',
         'fg-dim': 'var(--text-dim)',
       },
       fontFamily: {
-        sans: [
-          'Inter',
-          'system-ui',
-          '-apple-system',
-          'BlinkMacSystemFont',
-          'Segoe UI',
-          'sans-serif',
-        ],
-        mono: [
-          'JetBrains Mono',
-          'Fira Code',
-          'Consolas',
-          'monospace',
-        ],
+        serif: ['var(--font-serif)', 'Crimson Text', 'Georgia', 'serif'],
+        display: ['var(--font-display)', 'Playfair Display', 'Georgia', 'serif'],
+        mono: ['var(--font-mono)', 'Source Code Pro', 'Consolas', 'monospace'],
+        // Legacy support
+        sans: ['var(--font-serif)', 'Crimson Text', 'Georgia', 'serif'],
       },
       animation: {
-        shimmer: 'shimmer 1.5s ease-in-out infinite',
-        'fade-in': 'fade-in 0.4s ease-out',
+        shimmer: 'shimmer 2s ease-in-out infinite',
+        'fade-in': 'fade-in 0.6s ease-out',
+        'fade-in-up': 'fadeInUp 0.6s ease-out forwards',
       },
       keyframes: {
         shimmer: {
@@ -67,6 +67,19 @@ const config: Config = {
           '0%': { opacity: '0', transform: 'translateY(8px)' },
           '100%': { opacity: '1', transform: 'translateY(0)' },
         },
+        fadeInUp: {
+          '0%': { opacity: '0', transform: 'translateY(30px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+      },
+      letterSpacing: {
+        'editorial': '0.01em',
+        'display': '-0.02em',
+        'wide': '0.05em',
+      },
+      lineHeight: {
+        'editorial': '1.7',
+        'display': '1.2',
       },
     },
   },

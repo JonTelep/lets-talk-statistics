@@ -1,23 +1,33 @@
 import type { Metadata } from 'next';
-import { Inter, JetBrains_Mono } from 'next/font/google';
+import { Crimson_Text, Source_Code_Pro, Playfair_Display } from 'next/font/google';
 import '../styles/globals.css';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import { SWRProvider } from '@/components/providers/SWRProvider';
 import { ThemeProvider } from '@/components/providers/ThemeProvider';
 
-const inter = Inter({
+// Editorial serif for body text and readability
+const crimsonText = Crimson_Text({
   subsets: ['latin'],
   display: 'swap',
-  variable: '--font-sans',
-  weight: ['300', '400', '500', '600', '700'],
+  variable: '--font-serif',
+  weight: ['400', '600', '700'],
 });
 
-const jetbrainsMono = JetBrains_Mono({
+// Distinctive display font for headlines
+const playfairDisplay = Playfair_Display({
+  subsets: ['latin'],
+  display: 'swap', 
+  variable: '--font-display',
+  weight: ['400', '500', '600', '700', '800', '900'],
+});
+
+// Clean monospace for data and technical content
+const sourceCodePro = Source_Code_Pro({
   subsets: ['latin'],
   display: 'swap',
   variable: '--font-mono',
-  weight: ['400', '500', '600', '700'],
+  weight: ['300', '400', '500', '600', '700'],
 });
 
 export const metadata: Metadata = {
@@ -71,8 +81,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" data-theme="dark" className={`${inter.variable} ${jetbrainsMono.variable}`}>
-      <body className="font-sans flex min-h-screen flex-col antialiased">
+    <html lang="en" data-theme="editorial" className={`${crimsonText.variable} ${playfairDisplay.variable} ${sourceCodePro.variable}`}>
+      <body className="font-serif flex min-h-screen flex-col antialiased">
         <ThemeProvider>
           <SWRProvider>
             <Header />
