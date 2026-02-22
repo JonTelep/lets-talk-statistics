@@ -7,12 +7,11 @@ import { useTheme } from '@/components/providers/ThemeProvider';
 
 const navLinks = [
   { name: 'Congress', href: '/congress' },
-  { name: 'Housing', href: '/housing' },
   { name: 'Immigration', href: '/immigration' },
-  { name: 'Budget', href: '/budget' },
   { name: 'Employment', href: '/employment' },
   { name: 'Debt', href: '/debt' },
   { name: 'Elections', href: '/elections' },
+  { name: 'Budget', href: '/budget' },
   { name: 'About', href: '/about' },
 ];
 

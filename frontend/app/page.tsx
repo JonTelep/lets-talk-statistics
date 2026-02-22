@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { ArrowRight, TrendingUp, Users, DollarSign, Briefcase, Building2, Vote, Home as HomeIcon } from 'lucide-react';
+import { ArrowRight, TrendingUp, Users, DollarSign, Briefcase, Building2, Vote } from 'lucide-react';
 
 const categories = [
   {
@@ -10,25 +10,11 @@ const categories = [
     stat: '435+ Members tracked',
   },
   {
-    name: 'Housing',
-    description: 'Homeownership, construction, prices, vacancies, and mortgage rates.',
-    href: '/housing',
-    icon: HomeIcon,
-    stat: 'FRED data (60+ series)',
-  },
-  {
     name: 'Immigration',
     description: 'Legal immigration, deportations, and border encounter statistics.',
     href: '/immigration',
     icon: Users,
     stat: 'DHS & CBP data',
-  },
-  {
-    name: 'Federal Budget',
-    description: 'Government spending, revenue, and deficit tracking by agency.',
-    href: '/budget',
-    icon: DollarSign,
-    stat: 'Treasury data',
   },
   {
     name: 'Employment',
@@ -50,6 +36,13 @@ const categories = [
     href: '/elections',
     icon: Vote,
     stat: 'FEC data',
+  },
+  {
+    name: 'Federal Budget',
+    description: 'Government spending, revenue, and deficit tracking by agency.',
+    href: '/budget',
+    icon: DollarSign,
+    stat: 'Treasury data',
   },
 ];
 
