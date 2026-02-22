@@ -2,6 +2,11 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+## ⛔ HARD RULES
+- **NO REDESIGNS** — never change visual design, color schemes, typography, fonts, or layout aesthetics
+- Overnight/automated runs: optimization, features, SEO, and bug fixes ONLY
+- Design changes require explicit approval from Jon
+
 ## Project Overview
 
 **Let's Talk Statistics** is a platform for exploring US government statistics from official sources. It presents data without spin - no opinions, no narratives, just data.
