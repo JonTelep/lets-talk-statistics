@@ -132,6 +132,48 @@ function CongressPageContent() {
         </div>
       </div>
 
+      {/* Capitol Trades API Promotion */}
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mb-8">
+        <div className="bg-gradient-to-r from-purple-500/10 to-blue-500/10 border border-purple-500/20 rounded-lg p-6">
+          <div className="flex items-start gap-4">
+            <div className="flex-shrink-0">
+              <div className="w-12 h-12 bg-purple-500/20 rounded-lg flex items-center justify-center">
+                <ExternalLink className="h-6 w-6 text-purple-400" />
+              </div>
+            </div>
+            <div className="flex-1">
+              <h3 className="text-lg font-semibold mb-2" style={{ color: 'var(--text-primary)' }}>
+                This data is powered by the Capitol Trades API — free to use!
+              </h3>
+              <p className="text-sm text-surface-400 mb-4 leading-relaxed">
+                Access the same Congressional trading data that powers this site. REST API with real-time updates, 
+                filterable by politician, ticker, party, chamber, and date range. Perfect for research, analysis, or building your own tools.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-3">
+                <a 
+                  href="https://telep.io/pricing" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-4 py-2.5 bg-purple-600 hover:bg-purple-700 text-white text-sm font-medium rounded-lg transition-colors"
+                >
+                  Get API Access
+                  <ExternalLink className="h-4 w-4" />
+                </a>
+                <a 
+                  href="https://trades.telep.io" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-4 py-2.5 bg-surface-800 hover:bg-surface-700 text-surface-300 text-sm font-medium rounded-lg border border-surface-600 transition-colors"
+                >
+                  View API Documentation
+                  <FileText className="h-4 w-4" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* Stats Grid */}
       <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
