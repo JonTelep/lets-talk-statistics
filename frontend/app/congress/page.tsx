@@ -13,6 +13,7 @@ import { DownloadRawData } from '@/components/ui/DownloadRawData';
 import { ErrorBoundary } from '@/components/ui/ErrorBoundary';
 import { ErrorState } from '@/components/ui/ErrorState';
 import { Skeleton, StatCardSkeleton, TradesTableSkeleton, ListSkeleton, ChartSkeleton } from '@/components/ui/Skeleton';
+import { PageSEO } from '@/components/seo/PageSEO';
 
 const API_HOST = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
 const API_URL = `${API_HOST.replace(/\/$/, '')}/api/v1`;
@@ -98,7 +99,32 @@ function CongressPageContent() {
   }
 
   return (
-    <div className="min-h-screen">
+    <>
+      <PageSEO
+        title="Congressional Stock Trading"
+        description="Track stock trades made by members of Congress. Under the STOCK Act, members must disclose trades within 45 days. View real-time data on congressional stock trades, trading volumes, and politician portfolios."
+        canonicalUrl="https://letstalkstatistics.com/congress"
+        keywords={[
+          'congressional stock trading',
+          'STOCK Act',
+          'politician trades',
+          'congress stocks',
+          'congressional portfolio',
+          'political trading',
+          'stock disclosures',
+          'congress finances',
+          'elected officials trading',
+          'government transparency'
+        ]}
+        ogImage="/og-congress.png"
+        structured={{
+          type: 'Dataset',
+          keywords: ['Congressional Trading', 'STOCK Act', 'Government Data', 'Political Finance'],
+          about: ['Stock trading by members of Congress', 'Congressional financial disclosures', 'STOCK Act compliance'],
+          dateModified: stats?.last_updated || new Date().toISOString()
+        }}
+      />
+      <div className="min-h-screen">
       {/* Hero */}
       <div className="px-4 sm:px-6 lg:px-8 pt-16 pb-12">
         <div className="mx-auto max-w-7xl">
@@ -159,6 +185,35 @@ function CongressPageContent() {
               </div>
             </>
           )}
+        </div>
+
+        {/* Capitol Trades API Callout */}
+        <div className="mt-8 card p-6 bg-gradient-to-r from-blue-900/20 to-purple-900/20 border border-blue-500/30">
+          <div className="flex items-center justify-between flex-wrap gap-4">
+            <div>
+              <h3 className="text-lg font-semibold mb-2 flex items-center gap-2" style={{ color: 'var(--text-primary)' }}>
+                <ExternalLink className="h-5 w-5 text-blue-400" />
+                Powered by Capitol Trades API
+              </h3>
+              <p className="text-surface-300 mb-2">
+                This data is powered by the Capitol Trades API - a free, open API for congressional stock trading data.
+              </p>
+              <p className="text-sm text-surface-500">
+                Access the same data programmatically via REST API with real-time updates, filtering, and JSON responses.
+              </p>
+            </div>
+            <div className="flex flex-col gap-2">
+              <Link 
+                href="https://telep.io/pricing" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-accent px-6 py-3 text-center whitespace-nowrap"
+              >
+                Get API Access
+              </Link>
+              <div className="text-xs text-center text-surface-600">Free tier available</div>
+            </div>
+          </div>
         </div>
 
         {/* Party Breakdown */}
@@ -424,6 +479,7 @@ function CongressPageContent() {
         </div>
       </div>
     </div>
+    </>
   );
 }
 
