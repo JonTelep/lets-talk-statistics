@@ -16,6 +16,11 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 **Architecture**: 2 containers (FastAPI backend + Next.js frontend), file-based JSON caching, no database. Uses Podman for containers.
 
+### Recent Changes (Feb 24, 2026)
+- **Congress Page**: Added Capitol Trades API callout with "Get API Access" CTA linking to telep.io/pricing
+- **SEO**: Fixed PageSEO component to render actual HTML meta tags, added structured data for government datasets
+- **Conversion Funnel**: Free data visualization → API access → Premium subscriptions
+
 ## Quick Start
 
 ```bash
