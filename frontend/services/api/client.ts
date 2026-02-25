@@ -363,6 +363,28 @@ export const housingApi = {
 };
 
 // ============================================================================
+// HEALTHCARE
+// ============================================================================
+
+export const healthcareApi = {
+  getSummary: (year?: number) =>
+    apiFetch<any>('/healthcare/', {
+      params: year ? { year } : undefined,
+    }),
+
+  getProviders: (filters?: { state?: string; year?: number; limit?: number; offset?: number }) =>
+    apiFetch<any>('/healthcare/providers', {
+      params: filters,
+    }),
+
+  getStates: () =>
+    apiFetch<any>('/healthcare/states'),
+
+  getProviderTypes: () =>
+    apiFetch<any>('/healthcare/provider-types'),
+};
+
+// ============================================================================
 // HEALTH CHECK
 // ============================================================================
 
