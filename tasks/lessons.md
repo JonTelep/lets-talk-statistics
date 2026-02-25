@@ -35,3 +35,11 @@
 - **OpenGraph optimization** - Social sharing drives traffic, needs good meta tags
 - **Government data schema** - Dataset-specific schema markup improves search ranking
 - **Build verification essential** - Always test container builds after SEO/metadata changes
+
+## Healthcare Page Implementation (Feb 25, 2026)
+- **TypeScript tooltip formatters** - Use `any` types for Recharts tooltip formatters to avoid ValueType conflicts
+- **DownloadRawData component** - Requires `endpoints` array with `{label, url, filename}` objects
+- **Healthcare data structure** - DSH payments provide rich provider and utilization data
+- **Container build validation** - Always run full `make build` to catch TypeScript errors before deployment
+- **Healthcare visualization patterns** - Line charts for trends, pie charts for breakdowns, tables for rankings work well
+- **SEO for healthcare data** - CMS/Medicaid.gov schema markup improves discoverability
