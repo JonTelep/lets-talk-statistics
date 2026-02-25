@@ -132,6 +132,42 @@ function CongressPageContent() {
         </div>
       </div>
 
+      {/* Capitol Trades API Promotion */}
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mb-8">
+        <div className="bg-gradient-to-r from-purple-900/50 to-blue-900/50 border border-purple-500/20 rounded-lg p-6">
+          <div className="flex items-start gap-4">
+            <div className="flex-shrink-0">
+              <div className="w-10 h-10 bg-purple-500/20 rounded-lg flex items-center justify-center">
+                <ExternalLink className="h-5 w-5 text-purple-400" />
+              </div>
+            </div>
+            <div className="flex-grow">
+              <h3 className="text-lg font-medium text-white mb-2">This data is powered by the Capitol Trades API</h3>
+              <p className="text-purple-200 mb-4">
+                Access this congressional trading data programmatically with our free API. 
+                Get real-time updates, historical data, and detailed filtering options.
+              </p>
+              <div className="flex gap-3">
+                <Link 
+                  href="https://telep.io/pricing" 
+                  className="btn-primary px-4 py-2 rounded-lg font-medium transition-colors"
+                >
+                  Get API Access
+                </Link>
+                <Link 
+                  href="https://trades.telep.io" 
+                  className="btn-secondary px-4 py-2 rounded-lg font-medium transition-colors"
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                >
+                  API Documentation
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* Stats Grid */}
       <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">

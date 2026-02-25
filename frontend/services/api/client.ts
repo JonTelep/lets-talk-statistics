@@ -385,6 +385,26 @@ export const healthcareApi = {
 };
 
 // ============================================================================
+// EDUCATION
+// ============================================================================
+
+export const educationApi = {
+  getOverview: () =>
+    apiFetch<any>('/education/'),
+
+  getEnrollment: (years?: number) =>
+    apiFetch<any>('/education/enrollment', {
+      params: years ? { years } : undefined,
+    }),
+
+  getSpending: () =>
+    apiFetch<any>('/education/spending'),
+
+  getOutcomes: () =>
+    apiFetch<any>('/education/outcomes'),
+};
+
+// ============================================================================
 // HEALTH CHECK
 // ============================================================================
 

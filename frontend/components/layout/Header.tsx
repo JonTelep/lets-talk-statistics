@@ -9,6 +9,7 @@ const navLinks = [
   { name: 'Congress', href: '/congress' },
   { name: 'Immigration', href: '/immigration' },
   { name: 'Employment', href: '/employment' },
+  { name: 'Education', href: '/education' },
   { name: 'Debt', href: '/debt' },
   { name: 'Elections', href: '/elections' },
   { name: 'Budget', href: '/budget' },
