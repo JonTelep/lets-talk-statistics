@@ -27,3 +27,11 @@
 - **Small, focused PRs** - Much easier to review and merge
 - **Standard repo structure** - Consistent across all Telep IO projects
 - **Document architectural decisions** - Future maintainers will thank you
+
+## SEO & Marketing (Feb 24, 2026)
+- **SEO layouts per page** - Next.js App Router metadata API is powerful for per-page SEO
+- **JSON-LD structured data** - Essential for government data visibility in search
+- **API promotion callouts** - Converting free users to API customers requires prominent CTAs
+- **OpenGraph optimization** - Social sharing drives traffic, needs good meta tags
+- **Government data schema** - Dataset-specific schema markup improves search ranking
+- **Build verification essential** - Always test container builds after SEO/metadata changes

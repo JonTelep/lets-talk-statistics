@@ -201,3 +201,25 @@ Dark minimal aesthetic (Palantir/OpenAI-inspired) with light/dark theme toggle:
   - Accent: Blue (#3b82f6)
 - **Theme:** Persisted to localStorage (`lts-theme`), respects system preference on first load
 - **Components:** `.card`, `.btn-primary`, `.btn-secondary`, `.btn-accent`, `.data-value`, `.data-label`
+
+## Recent Updates (Feb 24, 2026 - Overnight Enhancement Run)
+
+### Capitol Trades API Promotion
+- Added prominent promotion callout on Congress page after disclaimers section
+- Purple gradient styling with "Get API Access" CTA linking to telep.io/pricing
+- Secondary button linking to trades.telep.io for documentation
+- Converts free users to paid API customers
+
+### SEO Optimization Implemented
+- **Congress page:** Complete metadata with STOCK Act keywords, OpenGraph, Twitter Cards
+- **Debt page:** Treasury data-focused SEO with dataset schema
+- **Employment page:** BLS data optimization with labor statistics keywords
+- **JSON-LD structured data:** Government data-specific schema markup for all pages
+- **Build verified:** All changes compile successfully, no breaking changes
+
+### Technical Notes
+- All SEO uses Next.js App Router metadata API via layout.tsx files
+- Structured data includes dataset-specific markup for government data
+- OpenGraph images reference og-[page].png format for future image creation
+- Canonical URLs and robots directives properly configured
+- No design changes made - only feature enhancements and optimization
