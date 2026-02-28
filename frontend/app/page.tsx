@@ -1,5 +1,32 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import { ArrowRight, TrendingUp, Users, DollarSign, Briefcase, Building2, Vote } from 'lucide-react';
+import { WebsiteStructuredData } from '@/components/seo/StructuredData';
+
+export const metadata: Metadata = {
+  title: "Let's Talk Statistics | Government Data Without Spin",
+  description: 'Explore objective analysis of US government data. Congressional stock trades, immigration statistics, employment data, national debt, and federal spending from official sources.',
+  keywords: ['government statistics', 'congressional trades', 'immigration data', 'federal spending', 'national debt', 'employment statistics', 'objective analysis', 'government transparency'],
+  openGraph: {
+    title: "Let's Talk Statistics | Government Data Without Spin",
+    description: 'Your source for objective government statistical analysis. Explore congressional trades, immigration, employment, debt, and spending data.',
+    url: 'https://letstalkstatistics.com',
+    images: [
+      {
+        url: '/og-home.png',
+        width: 1200,
+        height: 630,
+        alt: "Let's Talk Statistics - Government Data Dashboard",
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "Let's Talk Statistics | Government Data",
+    description: 'Objective analysis of US government statistics and data from official sources.',
+    images: ['/og-home.png'],
+  },
+};
 
 const categories = [
   {
@@ -49,6 +76,7 @@ const categories = [
 export default function Home() {
   return (
     <div className="flex flex-col">
+      <WebsiteStructuredData />
       {/* Hero */}
       <section className="px-4 sm:px-6 lg:px-8 pt-24 pb-20">
         <div className="mx-auto max-w-4xl">

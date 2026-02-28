@@ -1,72 +1,87 @@
-import { MetadataRoute } from 'next'
- 
+import { MetadataRoute } from 'next';
+
 export default function sitemap(): MetadataRoute.Sitemap {
+  const baseUrl = 'https://letstalkstatistics.com';
+  const lastModified = new Date('2026-02-27');
+
   return [
     {
-      url: 'https://letstalkstatistics.com',
-      lastModified: new Date(),
+      url: baseUrl,
+      lastModified,
       changeFrequency: 'weekly',
-      priority: 1,
+      priority: 1.0,
     },
     {
-      url: 'https://letstalkstatistics.com/congress',
-      lastModified: new Date(),
+      url: `${baseUrl}/congress`,
+      lastModified,
       changeFrequency: 'daily',
       priority: 0.9,
     },
     {
-      url: 'https://letstalkstatistics.com/budget',
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
+      url: `${baseUrl}/congress/trades`,
+      lastModified,
+      changeFrequency: 'daily',
       priority: 0.8,
     },
     {
-      url: 'https://letstalkstatistics.com/debt',
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
+      url: `${baseUrl}/congress/politicians`,
+      lastModified,
+      changeFrequency: 'daily',
       priority: 0.8,
     },
     {
-      url: 'https://letstalkstatistics.com/employment',
-      lastModified: new Date(),
+      url: `${baseUrl}/healthcare`,
+      lastModified,
       changeFrequency: 'monthly',
-      priority: 0.8,
+      priority: 0.7,
     },
     {
-      url: 'https://letstalkstatistics.com/elections',
-      lastModified: new Date(),
+      url: `${baseUrl}/education`,
+      lastModified,
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/immigration`,
+      lastModified,
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/immigration/trends`,
+      lastModified,
+      changeFrequency: 'monthly',
+      priority: 0.6,
+    },
+    {
+      url: `${baseUrl}/employment`,
+      lastModified,
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/debt`,
+      lastModified,
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/budget`,
+      lastModified,
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/elections`,
+      lastModified,
       changeFrequency: 'yearly',
-      priority: 0.7,
+      priority: 0.6,
     },
     {
-      url: 'https://letstalkstatistics.com/immigration',
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.7,
-    },
-    {
-      url: 'https://letstalkstatistics.com/housing',
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
-      url: 'https://letstalkstatistics.com/healthcare',
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
-      url: 'https://letstalkstatistics.com/education',
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
-      url: 'https://letstalkstatistics.com/about',
-      lastModified: new Date(),
+      url: `${baseUrl}/about`,
+      lastModified,
       changeFrequency: 'monthly',
       priority: 0.5,
     },
-  ]
+  ];
 }
