@@ -43,3 +43,12 @@
 - **Container build validation** - Always run full `make build` to catch TypeScript errors before deployment
 - **Healthcare visualization patterns** - Line charts for trends, pie charts for breakdowns, tables for rankings work well
 - **SEO for healthcare data** - CMS/Medicaid.gov schema markup improves discoverability
+
+## Advanced SEO Implementation (Feb 28, 2026)
+- **Server-side metadata** - Converting client components to server components with metadata dramatically improves SEO
+- **Component architecture for SEO** - Split pages: server component (metadata) + client component (interactivity)
+- **GovernmentDataStructuredData** - Reusable component for JSON-LD schema markup on government datasets
+- **Page-specific OpenGraph** - Each page needs unique og:image and tailored descriptions for social sharing
+- **Education & Immigration optimization** - Department of Education and DHS-specific schema markup
+- **Zero breaking changes** - SEO improvements should maintain all existing functionality
+- **Sitemap completeness** - Ensure all pages are included with appropriate priority and changeFrequency
