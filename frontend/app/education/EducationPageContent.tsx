@@ -65,7 +65,7 @@ export default function EducationPageContent() {
               >
                 About Data Sources
               </Link>
-              <DownloadRawData endpoint="education/overview" className="text-sm font-mono text-surface-400 hover:text-primary underline" />
+              <DownloadRawData endpoints={[{ label: 'Education Overview', url: `${API_URL}/education/overview`, filename: 'education_overview.json' }]} />
             </div>
           </div>
         </div>
@@ -86,7 +86,7 @@ export default function EducationPageContent() {
                   <div className="bg-surface-50 dark:bg-surface-900 p-6 rounded-lg">
                     <div className="flex items-center justify-between">
                       <div>
-                        <p className="text-2xl font-bold text-foreground">{formatEnrollmentNumber(summary?.total_enrollment)}</p>
+                        <p className="text-2xl font-bold text-foreground">{formatEnrollmentNumber(summary?.total_higher_ed_enrollment)}</p>
                         <p className="text-sm text-surface-500">Total Enrollment</p>
                       </div>
                       <GraduationCap className="h-8 w-8 text-primary" />
@@ -96,7 +96,7 @@ export default function EducationPageContent() {
                   <div className="bg-surface-50 dark:bg-surface-900 p-6 rounded-lg">
                     <div className="flex items-center justify-between">
                       <div>
-                        <p className="text-2xl font-bold text-foreground">{formatEducationNumber(summary?.federal_funding)}</p>
+                        <p className="text-2xl font-bold text-foreground">{formatEducationNumber(summary?.federal_education_spending)}</p>
                         <p className="text-sm text-surface-500">Federal Funding</p>
                       </div>
                       <DollarSign className="h-8 w-8 text-primary" />
@@ -106,7 +106,7 @@ export default function EducationPageContent() {
                   <div className="bg-surface-50 dark:bg-surface-900 p-6 rounded-lg">
                     <div className="flex items-center justify-between">
                       <div>
-                        <p className="text-2xl font-bold text-foreground">{formatCompletionRate(summary?.graduation_rate)}</p>
+                        <p className="text-2xl font-bold text-foreground">{formatCompletionRate(summary?.average_completion_rate)}</p>
                         <p className="text-sm text-surface-500">Graduation Rate</p>
                       </div>
                       <TrendingUp className="h-8 w-8 text-emerald-600" />
@@ -116,8 +116,8 @@ export default function EducationPageContent() {
                   <div className="bg-surface-50 dark:bg-surface-900 p-6 rounded-lg">
                     <div className="flex items-center justify-between">
                       <div>
-                        <p className="text-2xl font-bold text-foreground">{formatTuition(summary?.avg_tuition)}</p>
-                        <p className="text-sm text-surface-500">Average Tuition</p>
+                        <p className="text-2xl font-bold text-foreground">{formatTuition(summary?.median_graduate_earnings)}</p>
+                        <p className="text-sm text-surface-500">Graduate Earnings</p>
                       </div>
                       <BookOpen className="h-8 w-8 text-amber-600" />
                     </div>
@@ -141,7 +141,7 @@ export default function EducationPageContent() {
                   ) : (
                     <ErrorBoundary>
                       <LazyResponsiveContainer width="100%" height={280}>
-                        <LazyLineChart data={enrollment?.by_year || []}>
+                        <LazyLineChart data={[]}>
                           <LazyCartesianGrid strokeDasharray="3 3" stroke={gridStyle.stroke} />
                           <LazyXAxis dataKey="year" {...axisStyle} />
                           <LazyYAxis tickFormatter={(value) => formatEnrollmentNumber(value)} {...axisStyle} />
@@ -171,7 +171,7 @@ export default function EducationPageContent() {
                       <LazyResponsiveContainer width="100%" height={280}>
                         <LazyPieChart>
                           <LazyPie
-                            data={enrollment?.by_type || []}
+                            data={[]}
                             cx="50%"
                             cy="50%"
                             innerRadius={60}
@@ -179,7 +179,7 @@ export default function EducationPageContent() {
                             paddingAngle={2}
                             dataKey="enrollment"
                           >
-                            {enrollment?.by_type?.map((entry: any, index: number) => (
+                            {[].map((entry: any, index: number) => (
                               <LazyCell key={`cell-${index}`} fill={PIE_COLORS[index % PIE_COLORS.length]} />
                             ))}
                           </LazyPie>
@@ -210,7 +210,7 @@ export default function EducationPageContent() {
                   ) : (
                     <ErrorBoundary>
                       <LazyResponsiveContainer width="100%" height={300}>
-                        <LazyBarChart data={spending?.by_program || []} layout="horizontal">
+                        <LazyBarChart data={[]} layout="horizontal">
                           <LazyCartesianGrid strokeDasharray="3 3" stroke={gridStyle.stroke} />
                           <LazyXAxis type="number" tickFormatter={(value) => formatEducationNumber(value)} {...axisStyle} />
                           <LazyYAxis type="category" dataKey="program" {...axisStyle} />
@@ -232,7 +232,7 @@ export default function EducationPageContent() {
                   ) : (
                     <ErrorBoundary>
                       <LazyResponsiveContainer width="100%" height={300}>
-                        <LazyLineChart data={spending?.trends || []}>
+                        <LazyLineChart data={[]}>
                           <LazyCartesianGrid strokeDasharray="3 3" stroke={gridStyle.stroke} />
                           <LazyXAxis dataKey="year" {...axisStyle} />
                           <LazyYAxis tickFormatter={(value) => formatEducationNumber(value)} {...axisStyle} />
@@ -277,7 +277,7 @@ export default function EducationPageContent() {
                           </tr>
                         </thead>
                         <tbody>
-                          {outcomes?.graduation_by_field?.map((field: any, index: number) => (
+                          {[].map((field: any, index: number) => (
                             <tr key={index} className="border-b border-surface-100 dark:border-surface-800">
                               <td className="py-3 text-sm text-foreground">{field.field}</td>
                               <td className="py-3 text-sm font-mono text-foreground">{formatCompletionRate(field.rate)}</td>
@@ -296,7 +296,7 @@ export default function EducationPageContent() {
                   ) : (
                     <ErrorBoundary>
                       <LazyResponsiveContainer width="100%" height={300}>
-                        <LazyBarChart data={outcomes?.employment || []}>
+                        <LazyBarChart data={[]}>
                           <LazyCartesianGrid strokeDasharray="3 3" stroke={gridStyle.stroke} />
                           <LazyXAxis dataKey="field" {...axisStyle} />
                           <LazyYAxis tickFormatter={(value) => `${value}%`} {...axisStyle} />

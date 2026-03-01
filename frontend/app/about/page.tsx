@@ -1,5 +1,45 @@
+import type { Metadata } from 'next';
 import { ExternalLink, Database, Calculator, BookOpen, AlertCircle, Scale, TrendingUp, Users, DollarSign, Briefcase, Building2 } from 'lucide-react';
 import Card from '@/components/ui/Card';
+
+export const metadata: Metadata = {
+  title: 'About Let\'s Talk Statistics | Government Data Without Spin',
+  description: 'Learn about our mission to present U.S. government statistics objectively. Explore data from Treasury, BLS, FEC, DHS, and more — no opinions, no narratives, just verified data from official sources.',
+  keywords: [
+    'government statistics',
+    'objective data analysis',
+    'federal data sources',
+    'government transparency',
+    'statistical data platform',
+    'official government data',
+    'data without bias',
+    'treasury data',
+    'BLS statistics',
+    'congressional data',
+    'immigration statistics',
+    'federal budget data',
+    'debt statistics'
+  ],
+  openGraph: {
+    title: 'About Let\'s Talk Statistics | Objective Government Data',
+    description: 'Government statistics presented objectively — no spin, no agenda, just data from official federal sources.',
+    url: 'https://letstalkstatistics.com/about',
+    images: [
+      {
+        url: '/og-about.png',
+        width: 1200,
+        height: 630,
+        alt: 'About Let\'s Talk Statistics - Government Data Platform',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'About Let\'s Talk Statistics | Government Data Without Spin',
+    description: 'Learn about our mission to present objective U.S. government statistics from official federal sources.',
+    images: ['/og-about.png'],
+  },
+};
 
 export default function AboutPage() {
   return (
