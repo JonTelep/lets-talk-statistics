@@ -55,46 +55,46 @@ export default function HealthcarePageContent() {
                     <span className="text-xs text-surface-600 font-mono">TOTAL SPENDING</span>
                   </div>
                   <div className="text-2xl font-semibold text-foreground">
-                    ${formatHealthcareNumber(healthcareData.total_spending_billions)}B
+                    ${formatHealthcareNumber(healthcareData.totalSpending)}B
                   </div>
                   <div className="text-xs text-surface-500 mt-1">
-                    {formatPercentage(healthcareData.gdp_percentage)}% of GDP
+                    Medicaid DSH Payments
                   </div>
                 </div>
 
                 <div className="card p-6">
                   <div className="flex items-center justify-between mb-2">
-                    <Users className="h-5 w-5 text-blue-500" />
-                    <span className="text-xs text-surface-600 font-mono">INSURED</span>
+                    <Building2 className="h-5 w-5 text-blue-500" />
+                    <span className="text-xs text-surface-600 font-mono">PROVIDERS</span>
                   </div>
                   <div className="text-2xl font-semibold text-foreground">
-                    {formatPercentage(healthcareData.insured_percentage)}%
+                    {formatHealthcareNumber(healthcareData.providerCount)}
                   </div>
                   <div className="text-xs text-surface-500 mt-1">
-                    {formatHealthcareNumber(healthcareData.insured_count_millions)}M people
+                    Healthcare Providers
                   </div>
                 </div>
 
                 <div className="card p-6">
                   <div className="flex items-center justify-between mb-2">
-                    <Building2 className="h-5 w-5 text-purple-500" />
-                    <span className="text-xs text-surface-600 font-mono">MEDICARE</span>
+                    <DollarSign className="h-5 w-5 text-purple-500" />
+                    <span className="text-xs text-surface-600 font-mono">AVG SPENDING</span>
                   </div>
                   <div className="text-2xl font-semibold text-foreground">
-                    {formatHealthcareNumber(healthcareData.medicare_enrollees_millions)}M
+                    ${formatHealthcareNumber(healthcareData.avgSpendingPerProvider)}
                   </div>
-                  <div className="text-xs text-surface-500 mt-1">Enrollees</div>
+                  <div className="text-xs text-surface-500 mt-1">Per Provider</div>
                 </div>
 
                 <div className="card p-6">
                   <div className="flex items-center justify-between mb-2">
-                    <Heart className="h-5 w-5 text-red-500" />
-                    <span className="text-xs text-surface-600 font-mono">MEDICAID</span>
+                    <Calendar className="h-5 w-5 text-red-500" />
+                    <span className="text-xs text-surface-600 font-mono">DATA YEAR</span>
                   </div>
                   <div className="text-2xl font-semibold text-foreground">
-                    {formatHealthcareNumber(healthcareData.medicaid_enrollees_millions)}M
+                    {healthcareData.year}
                   </div>
-                  <div className="text-xs text-surface-500 mt-1">Enrollees</div>
+                  <div className="text-xs text-surface-500 mt-1">Report Year</div>
                 </div>
               </>
             ) : null}
@@ -105,7 +105,7 @@ export default function HealthcarePageContent() {
             <div className="flex items-center gap-2">
               <Calendar className="h-4 w-4 text-surface-600" />
               <span className="text-sm text-surface-500">
-                Last updated: {healthcareData?.last_updated || 'Loading...'}
+                Last updated: {healthcareData?.fetchedAt || 'Loading...'}
               </span>
             </div>
             <div className="flex items-center gap-3">
@@ -119,8 +119,11 @@ export default function HealthcarePageContent() {
               </button>
               {healthcareData && (
                 <DownloadRawData
-                  endpoint="/api/v1/healthcare/summary"
-                  filename="healthcare_summary.json"
+                  endpoints={[{
+                    label: "Healthcare Summary",
+                    url: "/api/v1/healthcare/summary",
+                    filename: "healthcare_summary.json"
+                  }]}
                 />
               )}
             </div>

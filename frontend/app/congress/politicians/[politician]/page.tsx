@@ -269,7 +269,7 @@ export default function PoliticianDetailPage() {
                   cy={125}
                   outerRadius={80}
                   fill="#8884d8"
-                  label={({ name, value }) => `${name}: ${value}`}
+                  label={({ name, value }: { name: string; value: number }) => `${name}: ${value}`}
                 >
                   {tradeTypeData.map((entry, index) => (
                     <LazyCell key={`cell-${index}`} fill={entry.color} />
@@ -277,10 +277,8 @@ export default function PoliticianDetailPage() {
                 </LazyPie>
                 <LazyTooltip 
                   contentStyle={{
-                    backgroundColor: chartTheme.tooltip.backgroundColor,
-                    border: chartTheme.tooltip.border,
+                    ...chartTheme.tooltipStyle,
                     borderRadius: '8px',
-                    color: chartTheme.tooltip.textColor,
                   }}
                 />
               </LazyPieChart>
@@ -295,22 +293,20 @@ export default function PoliticianDetailPage() {
               </h3>
               <div className="h-64">
                 <LazyBarChart width={400} height={250} data={monthlyData}>
-                  <LazyCartesianGrid strokeDasharray="3 3" stroke={chartTheme.grid.stroke} />
+                  <LazyCartesianGrid strokeDasharray="3 3" stroke={chartTheme.gridStyle.stroke} />
                   <LazyXAxis 
                     dataKey="month" 
-                    tick={{ fontSize: 12, fill: chartTheme.axis.textColor }}
-                    axisLine={{ stroke: chartTheme.axis.lineColor }}
+                    tick={{ fontSize: 12, fill: chartTheme.axisStyle.stroke }}
+                    axisLine={{ stroke: chartTheme.axisStyle.stroke }}
                   />
                   <LazyYAxis 
-                    tick={{ fontSize: 12, fill: chartTheme.axis.textColor }}
-                    axisLine={{ stroke: chartTheme.axis.lineColor }}
+                    tick={{ fontSize: 12, fill: chartTheme.axisStyle.stroke }}
+                    axisLine={{ stroke: chartTheme.axisStyle.stroke }}
                   />
                   <LazyTooltip 
                     contentStyle={{
-                      backgroundColor: chartTheme.tooltip.backgroundColor,
-                      border: chartTheme.tooltip.border,
+                      ...chartTheme.tooltipStyle,
                       borderRadius: '8px',
-                      color: chartTheme.tooltip.textColor,
                     }}
                   />
                   <LazyBar dataKey="trades" fill={PIE_COLORS[2]} />

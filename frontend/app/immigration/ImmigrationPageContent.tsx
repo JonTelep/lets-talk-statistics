@@ -73,7 +73,11 @@ export default function ImmigrationPageContent() {
               >
                 About Data Sources
               </Link>
-              <DownloadRawData endpoint="immigration/summary" className="text-sm font-mono text-surface-400 hover:text-primary underline" />
+              <DownloadRawData endpoints={[{
+                label: "Immigration Summary",
+                url: "/api/v1/immigration/summary",
+                filename: "immigration_summary.json"
+              }]} />
             </div>
           </div>
         </div>
@@ -92,7 +96,7 @@ export default function ImmigrationPageContent() {
               ) : summaryError ? (
                 <div className="col-span-full">
                   <ErrorStateCompact 
-                    title="Immigration Data Unavailable" 
+                    message="Immigration Data Unavailable" 
                     onRetry={refetchSummary} 
                   />
                 </div>
@@ -101,7 +105,7 @@ export default function ImmigrationPageContent() {
                   <div className="bg-surface-50 dark:bg-surface-900 p-6 rounded-lg">
                     <div className="flex items-center justify-between">
                       <div>
-                        <p className="text-2xl font-bold text-foreground">{formatLargeNumber(summary?.total_admissions)}</p>
+                        <p className="text-2xl font-bold text-foreground">{formatLargeNumber(summary?.legal_admissions)}</p>
                         <p className="text-sm text-surface-500">Legal Admissions (Annual)</p>
                       </div>
                       <Users className="h-8 w-8 text-emerald-600" />
@@ -111,7 +115,7 @@ export default function ImmigrationPageContent() {
                   <div className="bg-surface-50 dark:bg-surface-900 p-6 rounded-lg">
                     <div className="flex items-center justify-between">
                       <div>
-                        <p className="text-2xl font-bold text-foreground">{formatLargeNumber(summary?.deportations)}</p>
+                        <p className="text-2xl font-bold text-foreground">{formatLargeNumber(summary?.removals)}</p>
                         <p className="text-sm text-surface-500">Removals (Annual)</p>
                       </div>
                       <ArrowLeft className="h-8 w-8 text-red-600" />
@@ -121,8 +125,8 @@ export default function ImmigrationPageContent() {
                   <div className="bg-surface-50 dark:bg-surface-900 p-6 rounded-lg">
                     <div className="flex items-center justify-between">
                       <div>
-                        <p className="text-2xl font-bold text-foreground">{formatLargeNumber(summary?.asylum_applications)}</p>
-                        <p className="text-sm text-surface-500">Asylum Cases</p>
+                        <p className="text-2xl font-bold text-foreground">{formatLargeNumber(summary?.border_encounters)}</p>
+                        <p className="text-sm text-surface-500">Border Encounters</p>
                       </div>
                       <Users className="h-8 w-8 text-amber-600" />
                     </div>
@@ -131,8 +135,8 @@ export default function ImmigrationPageContent() {
                   <div className="bg-surface-50 dark:bg-surface-900 p-6 rounded-lg">
                     <div className="flex items-center justify-between">
                       <div>
-                        <p className="text-2xl font-bold text-foreground">{formatPercentage(summary?.naturalization_rate)}</p>
-                        <p className="text-sm text-surface-500">Naturalization Rate</p>
+                        <p className="text-2xl font-bold text-foreground">{summary?.admission_to_removal_ratio || '—'}</p>
+                        <p className="text-sm text-surface-500">Admission to Removal Ratio</p>
                       </div>
                       <ArrowRight className="h-8 w-8 text-blue-600" />
                     </div>
@@ -156,8 +160,8 @@ export default function ImmigrationPageContent() {
                     <div className="h-96">
                       <LazyLineChart 
                         width="100%" 
-                        height="100%" 
-                        data={historicalData?.admissions_by_year || []}
+                        height={360} 
+                        data={historicalData?.historical || []}
                         margin={{ top: 5, right: 30, left: 20, bottom: 5 }}
                       >
                         <LazyCartesianGrid strokeDasharray="3 3" stroke={gridStyle.stroke} />

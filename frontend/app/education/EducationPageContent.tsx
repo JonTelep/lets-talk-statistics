@@ -326,7 +326,7 @@ export default function EducationPageContent() {
                   <div className="flex items-center gap-4 text-xs font-mono text-surface-500">
                     <div className="flex items-center gap-1">
                       <Calendar className="h-4 w-4" />
-                      <span>Updated: {educationData?.lastUpdated || 'Loading...'}</span>
+                      <span>Updated: Recent</span>
                     </div>
                     <div className="flex items-center gap-1">
                       <Building2 className="h-4 w-4" />
