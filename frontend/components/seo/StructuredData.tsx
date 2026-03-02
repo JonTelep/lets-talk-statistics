@@ -1,5 +1,3 @@
-import { JsonLd } from 'next/dist/lib/metadata/types/json-ld';
-
 interface WebsiteStructuredDataProps {
   url?: string;
   name?: string;

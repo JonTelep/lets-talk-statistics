@@ -1,6 +1,6 @@
 'use client';
 
-import { StructuredData } from './StructuredData';
+import { WebsiteStructuredData } from './StructuredData';
 
 interface PageSEOProps {
   title: string;
@@ -38,16 +38,10 @@ export function PageSEO({
   return (
     <>
       {/* Structured Data */}
-      <StructuredData
-        type={structured.type || 'WebPage'}
+      <WebsiteStructuredData
         name={title}
         description={description}
         url={fullUrl}
-        image={ogImage}
-        datePublished={structured.datePublished}
-        dateModified={structured.dateModified}
-        keywords={structured.keywords || keywords}
-        about={structured.about}
       />
     </>
   );

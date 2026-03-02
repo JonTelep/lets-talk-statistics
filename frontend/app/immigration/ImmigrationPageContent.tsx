@@ -161,7 +161,7 @@ export default function ImmigrationPageContent() {
                       <LazyLineChart 
                         width="100%" 
                         height={360} 
-                        data={historicalData?.historical || []}
+                        data={historicalData?.data || []}
                         margin={{ top: 5, right: 30, left: 20, bottom: 5 }}
                       >
                         <LazyCartesianGrid strokeDasharray="3 3" stroke={gridStyle.stroke} />
@@ -175,9 +175,9 @@ export default function ImmigrationPageContent() {
                         />
                         <LazyTooltip 
                           {...tooltipStyle}
-                          formatter={(value: number, name: string) => [
-                            formatLargeNumber(value),
-                            name.replace('_', ' ').replace(/\b\w/g, l => l.toUpperCase())
+                          formatter={(value: any, name: any) => [
+                            formatLargeNumber(Number(value) || 0),
+                            String(name).replace('_', ' ').replace(/\b\w/g, l => l.toUpperCase())
                           ]}
                           labelFormatter={(year) => `Year: ${year}`}
                         />
@@ -291,7 +291,7 @@ export default function ImmigrationPageContent() {
                   <div className="flex items-center gap-4 text-xs font-mono text-surface-500">
                     <div className="flex items-center gap-1">
                       <Calendar className="h-4 w-4" />
-                      <span>Updated: {summaryData?.lastUpdated || 'Loading...'}</span>
+                      <span>Updated: {summaryData?.fetched_at || 'Loading...'}</span>
                     </div>
                     <div className="flex items-center gap-1">
                       <Users className="h-4 w-4" />
