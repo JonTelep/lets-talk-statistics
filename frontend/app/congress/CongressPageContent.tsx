@@ -1,9 +1,11 @@
 'use client';
 
-import { useState, useEffect, useCallback } from 'react';
-import { TrendingUp, TrendingDown, Users, Calendar, DollarSign, AlertTriangle, ExternalLink, Filter, Building2, FileText, CheckCircle, RefreshCw } from 'lucide-react';
+import { useState, useEffect, useCallback, useMemo } from 'react';
+import { TrendingUp, TrendingDown, Users, Calendar, DollarSign, AlertTriangle, ExternalLink, Filter, Building2, FileText, CheckCircle, RefreshCw, ArrowLeft, BarChart3 } from 'lucide-react';
 import { GovernmentDataStructuredData } from '@/components/seo/StructuredData';
 import Link from 'next/link';
+import CongressFiltersComponent, { CongressFilters } from '@/components/congress/CongressFilters';
+import CongressTradesTable from '@/components/congress/CongressTradesTable';
 import {
   LazyBarChart, LazyBar, LazyXAxis, LazyYAxis, LazyCartesianGrid, LazyTooltip,
   LazyPieChart, LazyPie, LazyCell,
@@ -25,97 +27,163 @@ interface Trader { name: string; trades: number; chamber: string; party: string;
 interface Ticker { ticker: string; name: string; trades: number; }
 type SortField = 'trades' | 'buys' | 'sells' | 'volume';
 
+// Pagination
+interface PaginatedResponse<T> {
+  data: T[];
+  total: number;
+  page: number;
+  limit: number;
+  pages: number;
+}
+
 export default function CongressPageContent() {
+  // State management
   const [stats, setStats] = useState<CongressStats | null>(null);
-  const [recentTrades, setRecentTrades] = useState<Trade[]>([]);
+  const [filteredTrades, setFilteredTrades] = useState<PaginatedResponse<Trade> | null>(null);
   const [topTraders, setTopTraders] = useState<Trader[]>([]);
   const [topTickers, setTopTickers] = useState<Ticker[]>([]);
   const [loading, setLoading] = useState(true);
+  const [tradesLoading, setTradesLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  
+  // Filtering & Pagination
+  const [filters, setFilters] = useState<CongressFilters>({});
+  const [currentPage, setCurrentPage] = useState(1);
   const [sortField, setSortField] = useState<SortField>('trades');
   const [sortAsc, setSortAsc] = useState(false);
+  
+  // View state
+  const [selectedPolitician, setSelectedPolitician] = useState<string | null>(null);
+  const [view, setView] = useState<'overview' | 'filtered' | 'politician'>('overview');
+  
+  const pageSize = 25;
   const chartTheme = useChartTheme();
 
-  const fetchData = useCallback(async () => {
+  // Fetch general stats and overview data
+  const fetchOverviewData = useCallback(async () => {
     setLoading(true);
     setError(null);
     
     try {
-      const [statsResponse, tradesResponse, tradersResponse, tickersResponse] = await Promise.all([
+      const [statsResponse, tradersResponse, tickersResponse] = await Promise.all([
         fetch(`${API_URL}/congress/stats`),
-        fetch(`${API_URL}/congress/trades/recent?limit=15`),
-        fetch(`${API_URL}/congress/politicians?sort_by=${sortField}&ascending=${sortAsc}&limit=20`),
+        fetch(`${API_URL}/congress/traders?limit=20`),
         fetch(`${API_URL}/congress/tickers?limit=15`)
       ]);
 
-      if (!statsResponse.ok || !tradesResponse.ok || !tradersResponse.ok || !tickersResponse.ok) {
-        throw new Error('Failed to fetch data');
+      if (!statsResponse.ok || !tradersResponse.ok || !tickersResponse.ok) {
+        throw new Error('Failed to fetch overview data');
       }
 
-      const [statsData, tradesData, tradersData, tickersData] = await Promise.all([
+      const [statsData, tradersData, tickersData] = await Promise.all([
         statsResponse.json(),
-        tradesResponse.json(),
         tradersResponse.json(),
         tickersResponse.json()
       ]);
 
       setStats(statsData);
-      setRecentTrades(tradesData.trades || []);
-      setTopTraders(tradersData.politicians || []);
-      setTopTickers(tickersData.tickers || []);
+      setTopTraders(tradersData.politicians || tradersData);
+      setTopTickers(tickersData.tickers || tickersData);
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Unknown error occurred');
     } finally {
       setLoading(false);
     }
-  }, [sortField, sortAsc]);
+  }, []);
+
+  // Fetch filtered trades
+  const fetchFilteredTrades = useCallback(async () => {
+    setTradesLoading(true);
+    
+    try {
+      const params = new URLSearchParams();
+      params.append('limit', pageSize.toString());
+      params.append('offset', ((currentPage - 1) * pageSize).toString());
+      
+      if (filters.politician) params.append('politician', filters.politician);
+      if (filters.ticker) params.append('ticker', filters.ticker);
+      if (filters.type) params.append('type', filters.type);
+      if (filters.chamber) params.append('chamber', filters.chamber);
+      if (filters.party) params.append('party', filters.party);
+
+      const response = await fetch(`${API_URL}/congress/trades?${params.toString()}`);
+      
+      if (!response.ok) {
+        throw new Error('Failed to fetch filtered trades');
+      }
+
+      const data = await response.json();
+      setFilteredTrades(data);
+    } catch (err) {
+      console.error('Error fetching filtered trades:', err);
+    } finally {
+      setTradesLoading(false);
+    }
+  }, [filters, currentPage]);
+
+  // Effects
+  useEffect(() => {
+    fetchOverviewData();
+  }, [fetchOverviewData]);
 
   useEffect(() => {
-    fetchData();
-  }, [fetchData]);
+    if (view === 'filtered' || view === 'politician') {
+      fetchFilteredTrades();
+    }
+  }, [view, fetchFilteredTrades]);
+
+  // Handlers
+  const handleFiltersChange = useCallback((newFilters: CongressFilters) => {
+    setFilters(newFilters);
+    setCurrentPage(1);
+    setView('filtered');
+  }, []);
+
+  const handleClearFilters = useCallback(() => {
+    setFilters({});
+    setCurrentPage(1);
+    setSelectedPolitician(null);
+    setView('overview');
+  }, []);
+
+  const handlePoliticianClick = useCallback((politician: string) => {
+    setSelectedPolitician(politician);
+    setFilters({ politician });
+    setCurrentPage(1);
+    setView('politician');
+  }, []);
+
+  const handlePageChange = useCallback((page: number) => {
+    setCurrentPage(page);
+  }, []);
 
   const getPartyBadge = (party: string) => {
     switch (party?.toUpperCase()) {
-      case 'R': return 'bg-red-600 text-white';
-      case 'D': return 'bg-blue-600 text-white';
-      case 'I': return 'bg-purple-600 text-white';
-      default: return 'bg-surface-700 text-surface-300';
+      case 'R': return 'bg-red-100 text-red-800 border border-red-200';
+      case 'D': return 'bg-blue-100 text-blue-800 border border-blue-200';
+      case 'I': return 'bg-purple-100 text-purple-800 border border-purple-200';
+      default: return 'bg-gray-100 text-gray-800 border border-gray-200';
     }
   };
 
   const getChamberBadge = (chamber: string) => {
     switch (chamber?.toLowerCase()) {
-      case 'senate': return 'bg-emerald-600 text-white';
-      case 'house': return 'bg-orange-600 text-white';
-      default: return 'bg-surface-700 text-surface-300';
+      case 'senate': return 'bg-emerald-100 text-emerald-800 border border-emerald-200';
+      case 'house': return 'bg-orange-100 text-orange-800 border border-orange-200';
+      default: return 'bg-gray-100 text-gray-800 border border-gray-200';
     }
-  };
-
-  const formatAmount = (amount: string) => {
-    // Parse amount ranges like "$1,001 - $15,000"
-    if (amount.includes(' - ')) {
-      const [min, max] = amount.split(' - ').map(a => a.replace(/[$,]/g, ''));
-      const minNum = parseInt(min);
-      const maxNum = parseInt(max);
-      const avg = (minNum + maxNum) / 2;
-      
-      if (avg >= 1000000) return `$${(avg / 1000000).toFixed(1)}M`;
-      if (avg >= 1000) return `$${(avg / 1000).toFixed(0)}K`;
-      return `$${avg.toFixed(0)}`;
-    }
-    return amount;
   };
 
   if (error) {
     return (
       <div className="min-h-screen flex items-center justify-center">
-        <ErrorState title="Data Unavailable" message={error} onRetry={fetchData} />
+        <ErrorState title="Data Unavailable" message={error} onRetry={fetchOverviewData} />
       </div>
     );
   }
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-surface-25">
       <GovernmentDataStructuredData
         title="Congressional Stock Trading Disclosures"
         description="Real-time congressional stock trading data from STOCK Act disclosures filed by senators and representatives"
@@ -124,21 +192,236 @@ export default function CongressPageContent() {
         lastUpdated={stats?.last_updated}
       />
       
-      {/* Rest of the component content - I'll add this next */}
       <div className="px-4 sm:px-6 lg:px-8 pt-16 pb-12">
         <div className="mx-auto max-w-7xl">
-          <p className="text-xs font-mono text-surface-600 mb-4 uppercase tracking-wider">STOCK Act Disclosures</p>
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-semibold tracking-tight text-foreground mb-4">
-            Congressional Stock Trades
-          </h1>
-          <p className="text-lg text-surface-500 max-w-3xl mb-8 leading-relaxed">
-            Live tracking of stock trading disclosures from members of Congress under the STOCK Act.
-            Data sourced directly from House and Senate ethics disclosures.
-          </p>
-          
-          {/* Stats cards and other content would go here */}
-          {loading && <div>Loading...</div>}
-          {!loading && stats && <div>Data loaded successfully!</div>}
+          {/* Header */}
+          <div className="mb-8">
+            <p className="text-xs font-mono text-surface-600 mb-4 uppercase tracking-wider">STOCK Act Disclosures</p>
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-semibold tracking-tight text-foreground mb-4">
+              Congressional Stock Trades
+            </h1>
+            <p className="text-lg text-surface-500 max-w-3xl mb-6 leading-relaxed">
+              Live tracking of stock trading disclosures from members of Congress under the STOCK Act.
+              Data sourced directly from House and Senate ethics disclosures.
+            </p>
+            
+            {/* Capitol Trades API Callout */}
+            <div className="bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-200 rounded-xl p-4 mb-8">
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-3">
+                  <div className="flex-shrink-0">
+                    <BarChart3 className="h-8 w-8 text-blue-600" />
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-semibold text-blue-900 mb-1">
+                      Powered by Capitol Trades API
+                    </h3>
+                    <p className="text-blue-700 text-sm">
+                      This data is available via our free congressional trading API. Perfect for developers and researchers.
+                    </p>
+                  </div>
+                </div>
+                <Link
+                  href="/pricing"
+                  className="flex-shrink-0 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-medium transition-colors inline-flex items-center gap-2"
+                >
+                  Get API Access
+                  <ExternalLink className="h-4 w-4" />
+                </Link>
+              </div>
+            </div>
+          </div>
+
+          {/* Navigation */}
+          {view !== 'overview' && (
+            <div className="mb-6">
+              <button
+                onClick={handleClearFilters}
+                className="flex items-center gap-2 text-primary-600 hover:text-primary-800 transition-colors"
+              >
+                <ArrowLeft className="h-4 w-4" />
+                Back to Overview
+              </button>
+              
+              {view === 'politician' && selectedPolitician && (
+                <h2 className="text-2xl font-semibold text-foreground mt-2">
+                  Trades by {selectedPolitician}
+                </h2>
+              )}
+            </div>
+          )}
+
+          {/* Stats Cards - Show on overview or when loading */}
+          {(view === 'overview' || loading) && (
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+              {loading ? (
+                [...Array(4)].map((_, i) => <StatCardSkeleton key={i} />)
+              ) : stats ? (
+                <>
+                  <div className="bg-white rounded-xl p-6 border border-surface-200">
+                    <div className="flex items-center justify-between mb-2">
+                      <span className="text-surface-500 text-sm font-medium">Total Trades</span>
+                      <TrendingUp className="h-5 w-5 text-green-500" />
+                    </div>
+                    <div className="text-3xl font-bold text-foreground mb-1">
+                      {stats.total_trades.toLocaleString()}
+                    </div>
+                    <div className="text-xs text-surface-500">
+                      Since {new Date(stats.date_range.earliest).getFullYear()}
+                    </div>
+                  </div>
+
+                  <div className="bg-white rounded-xl p-6 border border-surface-200">
+                    <div className="flex items-center justify-between mb-2">
+                      <span className="text-surface-500 text-sm font-medium">Total Volume</span>
+                      <DollarSign className="h-5 w-5 text-blue-500" />
+                    </div>
+                    <div className="text-3xl font-bold text-foreground mb-1">
+                      {stats.total_volume}
+                    </div>
+                    <div className="text-xs text-surface-500">
+                      Estimated value
+                    </div>
+                  </div>
+
+                  <div className="bg-white rounded-xl p-6 border border-surface-200">
+                    <div className="flex items-center justify-between mb-2">
+                      <span className="text-surface-500 text-sm font-medium">Active Traders</span>
+                      <Users className="h-5 w-5 text-purple-500" />
+                    </div>
+                    <div className="text-3xl font-bold text-foreground mb-1">
+                      {stats.traders_count}
+                    </div>
+                    <div className="text-xs text-surface-500">
+                      Members of Congress
+                    </div>
+                  </div>
+
+                  <div className="bg-white rounded-xl p-6 border border-surface-200">
+                    <div className="flex items-center justify-between mb-2">
+                      <span className="text-surface-500 text-sm font-medium">Last Updated</span>
+                      <Calendar className="h-5 w-5 text-orange-500" />
+                    </div>
+                    <div className="text-3xl font-bold text-foreground mb-1">
+                      {new Date(stats.last_updated).toLocaleDateString('en-US', { 
+                        month: 'short', 
+                        day: 'numeric' 
+                      })}
+                    </div>
+                    <div className="text-xs text-surface-500">
+                      {new Date(stats.last_updated).toLocaleDateString('en-US', { 
+                        year: 'numeric' 
+                      })}
+                    </div>
+                  </div>
+                </>
+              ) : null}
+            </div>
+          )}
+
+          {/* Filters */}
+          <CongressFiltersComponent
+            filters={filters}
+            onFiltersChange={handleFiltersChange}
+            onClear={handleClearFilters}
+          />
+
+          {/* Main Content */}
+          {view === 'overview' ? (
+            /* Overview Content - Top Traders and Top Tickers */
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+              {/* Top Traders */}
+              <div className="bg-white rounded-xl border border-surface-200 overflow-hidden">
+                <div className="p-6 border-b border-surface-200">
+                  <h3 className="text-xl font-semibold text-foreground">Most Active Traders</h3>
+                  <p className="text-surface-500 text-sm mt-1">Ranked by number of trades</p>
+                </div>
+                <div className="p-6">
+                  {loading ? (
+                    <ListSkeleton />
+                  ) : (
+                    <div className="space-y-4">
+                      {topTraders.slice(0, 10).map((trader, index) => (
+                        <div key={index} className="flex items-center justify-between p-3 bg-surface-25 rounded-lg hover:bg-surface-50 transition-colors">
+                          <div className="flex items-center gap-3">
+                            <span className="text-lg font-semibold text-surface-500 w-6">
+                              #{index + 1}
+                            </span>
+                            <div>
+                              <button
+                                onClick={() => handlePoliticianClick(trader.name)}
+                                className="font-semibold text-primary-700 hover:text-primary-900 transition-colors text-left"
+                              >
+                                {trader.name}
+                              </button>
+                              <div className="flex items-center gap-2 mt-1">
+                                <span className={`px-2 py-1 rounded-full text-xs font-medium ${getPartyBadge(trader.party)}`}>
+                                  {trader.party}
+                                </span>
+                                <span className={`px-2 py-1 rounded-full text-xs font-medium ${getChamberBadge(trader.chamber)}`}>
+                                  {trader.chamber === 'house' ? 'House' : 'Senate'}
+                                </span>
+                                <span className="text-xs text-surface-500">{trader.state}</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div className="text-right">
+                            <div className="font-semibold text-foreground">{trader.trades} trades</div>
+                            <div className="text-sm text-surface-500">
+                              {trader.buys}B / {trader.sells}S
+                            </div>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              </div>
+
+              {/* Top Tickers */}
+              <div className="bg-white rounded-xl border border-surface-200 overflow-hidden">
+                <div className="p-6 border-b border-surface-200">
+                  <h3 className="text-xl font-semibold text-foreground">Most Traded Stocks</h3>
+                  <p className="text-surface-500 text-sm mt-1">Popular among Congress members</p>
+                </div>
+                <div className="p-6">
+                  {loading ? (
+                    <ListSkeleton />
+                  ) : (
+                    <div className="space-y-4">
+                      {topTickers.map((ticker, index) => (
+                        <div key={index} className="flex items-center justify-between p-3 bg-surface-25 rounded-lg">
+                          <div className="flex items-center gap-3">
+                            <span className="text-lg font-semibold text-surface-500 w-6">
+                              #{index + 1}
+                            </span>
+                            <div>
+                              <div className="font-mono font-semibold text-foreground">{ticker.ticker}</div>
+                              <div className="text-sm text-surface-500 line-clamp-1">{ticker.name}</div>
+                            </div>
+                          </div>
+                          <div className="text-right">
+                            <div className="font-semibold text-foreground">{ticker.trades} trades</div>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              </div>
+            </div>
+          ) : (
+            /* Filtered Results */
+            <CongressTradesTable
+              trades={filteredTrades?.data || []}
+              loading={tradesLoading}
+              totalTrades={filteredTrades?.total}
+              currentPage={currentPage}
+              pageSize={pageSize}
+              onPageChange={handlePageChange}
+              onPoliticianClick={handlePoliticianClick}
+            />
+          )}
         </div>
       </div>
     </div>
