@@ -60,3 +60,19 @@
 - **Build verification critical** - TypeScript errors in production containers block deployment, requires thorough testing
 - **SEO layout coverage** - Added comprehensive SEO layouts for 4 major government data categories
 - **Capitol Trades integration** - Congress page SEO now promotes Capitol Trades API as data source with proper attribution
+
+## TypeScript Build Error Resolution (Mar 2, 2026)
+- **Interface property alignment** - API response types must exactly match component usage patterns
+  - `historicalData?.historical` vs `historicalData?.data` - check actual API response structure
+  - `summaryData?.lastUpdated` vs `summaryData?.fetched_at` - verify property names with backend
+- **Recharts type compatibility** - Tooltip formatter functions need flexible types for value/name parameters
+  - Use `any` types for `value` and `name` parameters to avoid ValueType/NameType conflicts
+  - Convert values with `Number(value) || 0` and `String(name)` for type safety
+- **Component import patterns** - SEO component imports must match actual exports
+  - `StructuredData` import should be `WebsiteStructuredData` (specific component)
+  - Unused imports like `JsonLd` from non-existent Next.js paths cause build failures
+- **Build process validation** - Always run full TypeScript build before deployment
+  - `npm run build` reveals production-only type errors missed in development
+  - Static generation success indicates all components compile correctly
+- **Frontend/backend separation** - Project structure with separate frontend/ directory requires proper paths
+- **Zero tolerance for build errors** - TypeScript errors in production completely block deployment

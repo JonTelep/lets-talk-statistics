@@ -18,7 +18,12 @@
 - [x] Add structured data (JSON-LD) for search engines ✅ COMPLETED
 - [x] Sitemap.xml already exists and is comprehensive ✅ COMPLETED
 - [x] Optimize page titles ✅ COMPLETED
-- [ ] 🚨 **CRITICAL: Fix TypeScript build errors** - Immigration component property mismatches
+- [x] 🚨 **CRITICAL: Fix TypeScript build errors** - Immigration component property mismatches ✅ FIXED
+  - Fixed historicalData.historical -> historicalData.data
+  - Fixed summaryData.lastUpdated -> summaryData.fetched_at  
+  - Fixed tooltip formatter type compatibility
+  - Fixed PageSEO StructuredData import issue
+  - Build now completes successfully with all 17 pages static
 - [ ] Add SEO layouts for remaining pages (about, elections, immigration)
 
 ## 📈 Medium Priority
