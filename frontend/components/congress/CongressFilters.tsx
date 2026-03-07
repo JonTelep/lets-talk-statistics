@@ -9,6 +9,7 @@ export interface CongressFilters {
   type?: 'Buy' | 'Sell' | '';
   chamber?: 'house' | 'senate' | '';
   party?: 'R' | 'D' | 'I' | '';
+  state?: string;
   dateFrom?: string;
   dateTo?: string;
 }
@@ -146,6 +147,22 @@ export default function CongressFiltersComponent({ filters, onFiltersChange, onC
             </select>
           </div>
 
+          {/* State */}
+          <div className="space-y-2">
+            <label className="flex items-center gap-1 text-sm font-medium text-surface-700">
+              <Building className="h-4 w-4" />
+              State
+            </label>
+            <input
+              type="text"
+              placeholder="e.g. CA, TX, NY"
+              value={filters.state || ''}
+              onChange={(e) => updateFilter('state', e.target.value.toUpperCase())}
+              className="w-full px-3 py-2 border border-surface-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 text-sm"
+              maxLength={2}
+            />
+          </div>
+
           {/* Date From */}
           <div className="space-y-2">
             <label className="flex items-center gap-1 text-sm font-medium text-surface-700">
@@ -203,6 +220,11 @@ export default function CongressFiltersComponent({ filters, onFiltersChange, onC
             {filters.party && (
               <span className="bg-red-100 text-red-800 px-2 py-1 rounded-full text-xs font-medium">
                 Party: {filters.party === 'R' ? 'Republican' : filters.party === 'D' ? 'Democratic' : 'Independent'}
+              </span>
+            )}
+            {filters.state && (
+              <span className="bg-indigo-100 text-indigo-800 px-2 py-1 rounded-full text-xs font-medium">
+                State: {filters.state}
               </span>
             )}
             {(filters.dateFrom || filters.dateTo) && (

@@ -20,6 +20,19 @@ import { Skeleton, StatCardSkeleton, TradesTableSkeleton, ListSkeleton, ChartSke
 const API_HOST = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
 const API_URL = `${API_HOST.replace(/\/$/, '')}/api/v1`;
 
+// Cache for overview data (5 minutes TTL)
+const CACHE_TTL = 5 * 60 * 1000; // 5 minutes
+interface CacheEntry<T> {
+  data: T;
+  timestamp: number;
+}
+
+let overviewCache: {
+  stats?: CacheEntry<CongressStats>;
+  traders?: CacheEntry<Trader[]>;
+  tickers?: CacheEntry<Ticker[]>;
+} = {};
+
 interface PartyStats { trades: number; volume: number; volume_formatted: string; buys: number; sells: number; }
 interface CongressStats { total_trades: number; total_volume: string; traders_count: number; date_range: { earliest: string; latest: string }; last_updated: string; by_type: Record<string, number>; by_chamber: Record<string, number>; by_party: Record<string, PartyStats>; }
 interface Trade { politician: string; party?: string; chamber: string; state?: string; ticker: string; asset_name: string; type: string; amount: string; date: string; disclosure_date: string; filing_url: string; }
@@ -59,8 +72,40 @@ export default function CongressPageContent() {
   const pageSize = 25;
   const chartTheme = useChartTheme();
 
+  // Cache helper functions
+  function isCacheValid(entry: CacheEntry<any> | undefined): boolean {
+    return entry ? (Date.now() - entry.timestamp) < CACHE_TTL : false;
+  }
+
+  function getCachedData<T>(key: keyof typeof overviewCache): T | null {
+    const entry = overviewCache[key] as CacheEntry<T> | undefined;
+    return isCacheValid(entry) && entry ? entry.data : null;
+  }
+
+  function setCachedData<T>(key: keyof typeof overviewCache, data: T): void {
+    (overviewCache[key] as CacheEntry<T>) = {
+      data,
+      timestamp: Date.now()
+    };
+  }
+
   // Fetch general stats and overview data
-  const fetchOverviewData = useCallback(async () => {
+  const fetchOverviewData = useCallback(async (forceRefresh = false) => {
+    // Check cache first
+    if (!forceRefresh) {
+      const cachedStats = getCachedData<CongressStats>('stats');
+      const cachedTraders = getCachedData<Trader[]>('traders');
+      const cachedTickers = getCachedData<Ticker[]>('tickers');
+
+      if (cachedStats && cachedTraders && cachedTickers) {
+        setStats(cachedStats);
+        setTopTraders(cachedTraders);
+        setTopTickers(cachedTickers);
+        setLoading(false);
+        return;
+      }
+    }
+
     setLoading(true);
     setError(null);
     
@@ -80,6 +125,11 @@ export default function CongressPageContent() {
         tradersResponse.json(),
         tickersResponse.json()
       ]);
+
+      // Cache the data
+      setCachedData('stats', statsData);
+      setCachedData('traders', tradersData.politicians || tradersData);
+      setCachedData('tickers', tickersData.tickers || tickersData);
 
       setStats(statsData);
       setTopTraders(tradersData.politicians || tradersData);
@@ -105,6 +155,9 @@ export default function CongressPageContent() {
       if (filters.type) params.append('type', filters.type);
       if (filters.chamber) params.append('chamber', filters.chamber);
       if (filters.party) params.append('party', filters.party);
+      if (filters.state) params.append('state', filters.state);
+      if (filters.dateFrom) params.append('date_from', filters.dateFrom);
+      if (filters.dateTo) params.append('date_to', filters.dateTo);
 
       const response = await fetch(`${API_URL}/congress/trades?${params.toString()}`);
       
@@ -313,6 +366,14 @@ export default function CongressPageContent() {
                         year: 'numeric' 
                       })}
                     </div>
+                    <button
+                      onClick={() => fetchOverviewData(true)}
+                      className="mt-2 flex items-center gap-1 text-xs text-primary-600 hover:text-primary-800 transition-colors"
+                      disabled={loading}
+                    >
+                      <RefreshCw className={`h-3 w-3 ${loading ? 'animate-spin' : ''}`} />
+                      Refresh
+                    </button>
                   </div>
                 </>
               ) : null}
