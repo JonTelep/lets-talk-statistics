@@ -90,3 +90,12 @@
 - **Security headers in next.config** - X-Content-Type-Options, X-Frame-Options, XSS-Protection should be default
 - **Static asset caching** - `/_next/static/*` should always be `immutable, max-age=31536000`
 - **Disable production source maps** - Reduces bundle size and prevents source code exposure
+
+## Social Sharing Implementation (Mar 12, 2026)
+- **Existing component was ready** - SocialShare component already existed with full functionality (Twitter, Facebook, LinkedIn, copy link)
+- **Strategic placement matters** - Adding after disclaimers but before main content gets good visibility
+- **Page-specific messaging** - Custom titles, descriptions, and hashtags per page improve social engagement
+- **Compact mode for tight layouts** - Congress page used compact=true to save vertical space
+- **Build verification essential** - Social sharing components must not break Next.js static generation (all 18 pages built successfully)
+- **Zero design impact** - Enhancement adds functionality without changing existing visual design
+- **Lucide icons integration** - Share2, Twitter, Facebook, LinkedIn, Link2, Check icons work seamlessly
