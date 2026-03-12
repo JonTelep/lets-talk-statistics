@@ -11,6 +11,7 @@ import { DownloadRawData } from '@/components/ui/DownloadRawData';
 import { ErrorBoundary } from '@/components/ui/ErrorBoundary';
 import { ErrorStateCompact, ErrorStateTableRow } from '@/components/ui/ErrorState';
 import { Skeleton, StatCardSkeleton, ChartSkeleton } from '@/components/ui/Skeleton';
+import { SocialShare } from '@/components/social/SocialShare';
 
 const API_HOST = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
 const API_URL = `${API_HOST.replace(/\/$/, '')}/api/v1`;
@@ -90,6 +91,15 @@ function EmploymentPageContent() {
             {stats && <span className="ml-1">Last: {stats.period}.</span>}
           </p>
         </div>
+      </div>
+
+      {/* Social Share */}
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mb-8">
+        <SocialShare 
+          title="Labor Statistics - Employment & Unemployment Data"
+          description="Real-time employment data from Bureau of Labor Statistics. Unemployment rates, job growth, and demographic breakdowns."
+          hashtags={['employment', 'unemployment', 'laborstatistics', 'jobs', 'bls']}
+        />
       </div>
 
       {/* Key Stats */}

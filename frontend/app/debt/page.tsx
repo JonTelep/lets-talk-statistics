@@ -12,6 +12,7 @@ import { ErrorBoundary } from '@/components/ui/ErrorBoundary';
 import { ErrorStateCompact, ErrorStateTableRow } from '@/components/ui/ErrorState';
 import { Skeleton, StatCardSkeleton, HeroCounterSkeleton, ChartSkeleton } from '@/components/ui/Skeleton';
 import { useChartTheme } from '@/hooks/useChartTheme';
+import { SocialShare } from '@/components/social/SocialShare';
 
 const API_HOST = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
 const API_URL = `${API_HOST.replace(/\/$/, '')}/api/v1`;
@@ -181,6 +182,15 @@ function DebtPageContent() {
             FRED (Federal Reserve Economic Data), Treasury International Capital (TIC) System.
           </p>
         </div>
+      </div>
+
+      {/* Social Share */}
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mb-8">
+        <SocialShare 
+          title="National Debt - Real-time Federal Debt Analysis"
+          description="Track the U.S. national debt with real-time Treasury data. Current debt, growth patterns, and debt holder analysis."
+          hashtags={['nationaldebt', 'federaldebt', 'treasury', 'statistics', 'government']}
+        />
       </div>
 
       {/* Stats Cards */}

@@ -16,6 +16,7 @@ import { DownloadRawData } from '@/components/ui/DownloadRawData';
 import { ErrorBoundary } from '@/components/ui/ErrorBoundary';
 import { ErrorState } from '@/components/ui/ErrorState';
 import { Skeleton, StatCardSkeleton, TradesTableSkeleton, ListSkeleton, ChartSkeleton } from '@/components/ui/Skeleton';
+import { SocialShare } from '@/components/social/SocialShare';
 
 const API_HOST = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
 const API_URL = `${API_HOST.replace(/\/$/, '')}/api/v1`;
@@ -282,6 +283,16 @@ export default function CongressPageContent() {
                   <ExternalLink className="h-4 w-4" />
                 </Link>
               </div>
+            </div>
+
+            {/* Social Share */}
+            <div className="mt-6">
+              <SocialShare 
+                title="Congressional Stock Trades - Live Trading Activity"
+                description="Track real-time congressional stock trading disclosures from House and Senate ethics committees. STOCK Act transparency data."
+                hashtags={['congress', 'stocktrading', 'transparency', 'politics', 'stockact']}
+                compact
+              />
             </div>
           </div>
 
