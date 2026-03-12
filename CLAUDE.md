@@ -14,234 +14,219 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 **Live site:** https://letstalkstatistics.com
 **GitHub:** https://github.com/JonTelep/lets-talk-statistics
 
-**Architecture**: 2 containers (FastAPI backend + Next.js frontend), file-based JSON caching, no database. Uses Podman for containers.
+## Architecture (v3.0.0)
+
+**Single Container Architecture**: Next.js 16.1.6 with TypeScript, using Bun for package management and file-based caching.
+
+```
+Frontend & Backend (Next.js:3000) → Government APIs
+                ↓
+    File Cache (/tmp/lts-cache/*.json)
+```
+
+### Key Changes from v2.x
+- **Removed**: Python/FastAPI backend (6,875 lines) and separate container
+- **Added**: 35+ Next.js Route Handlers serving all API endpoints
+- **Changed**: From 2-container to single-container architecture
+- **Changed**: Package manager from npm to Bun
+- **Changed**: Housing data from Postgres to direct FRED API calls
+- **Improved**: File-based cache with stale-on-error fallback for reliability
 
 ## Quick Start
 
 ```bash
-make build          # Build container images (podman-compose)
-make dev            # Start containers with logs
-# Frontend: http://localhost:3003
-# Backend: http://localhost:6003
+npm run dev           # Development (Next.js with Turbopack)
+make build           # Build container image
+make dev             # Start container with logs
+# App: http://localhost:3000
 ```
 
 ## Development Commands
 
-### Containers (Recommended - uses Podman)
+### Container (Recommended - uses Podman)
 
 ```bash
-make build          # Build all container images
-make up             # Start containers (detached)
-make dev            # Start containers with logs
-make down           # Stop containers
-make clean          # Stop containers and remove images
-make logs           # View all container logs
-make ps             # Show container status
+make build           # Build container image
+make up              # Start container (detached)
+make dev             # Start container with logs
+make down            # Stop container
+make clean           # Stop container and remove image
+make logs            # View container logs
+make ps              # Show container status
 ```
-
-Individual services: `make build-backend`, `make dev-backend`, `make build-frontend`, `make dev-frontend`
 
 ### Local Development
 
 ```bash
-# Backend
-cd backend
-pip install -r requirements.txt
-uvicorn app.main:app --reload --port 6003
-
-# Frontend
-cd frontend
-npm install
-npm run dev
+npm run dev          # Next.js development server
+npm run build        # Production build
+npm run start        # Start production server
+npm run lint         # ESLint check
 ```
 
-## Architecture
+## API Architecture
 
-```
-Frontend (Next.js:3003) → Backend (FastAPI:6003) → Government APIs
-                                    ↓
-                          File Cache (data/cache/*.json)
-```
+All government data APIs are now served as **Next.js Route Handlers** in `app/api/v1/`:
 
-### Performance
+### Core APIs (35+ endpoints)
 
-- **Backend caching**: 48h file-based JSON cache (MD5 hash filenames) + Cache-Control headers (1h public, 24h stale-while-revalidate)
-- **Frontend caching**: SWR with stale-while-revalidate (60s dedup, 3 retries)
-- **Startup warming**: Cache pre-warmed on container start via `scripts/warm_cache.py`
-- **Lazy loading**: Charts loaded via React Suspense with skeleton placeholders
+#### Health
+- `GET /api/v1/health` — Health check
 
-### Backend (`backend/app/`)
+#### Debt (8 routes)
+- `GET /api/v1/debt` — Treasury debt history
+- `GET /api/v1/debt/latest` — Current debt figure
+- `GET /api/v1/debt/holders` — FRED debt holders composition
+- `GET /api/v1/debt/holders/history` — FRED holders over time
+- `GET /api/v1/debt/interest` — Treasury interest expense
+- `GET /api/v1/debt/rates` — Treasury avg interest rates
+- `GET /api/v1/debt/foreign-holders` — TIC foreign holders data
+- `GET /api/v1/debt/gdp-ratio` — FRED debt-to-GDP
 
-- **main.py** - FastAPI v2.0.0 application setup with CORS and cache middleware
-- **config.py** - Pydantic settings via environment variables
-- **middleware/cache.py** - Cache-Control headers for CDN/browser caching
-- **services/gov_data.py** - Unified `GovDataService` (singleton) for core data fetching with file cache
-- **services/** - Dedicated service files per domain:
-  - `debt_service.py` - Treasury debt data
-  - `employment_service.py` - BLS employment data
-  - `budget_service.py` - Federal budget data
-  - `elections_service.py` - FEC campaign finance
-  - `immigration_service.py` - BTS border crossings + DHS historical data
-  - `congress_service.py` - Capitol Trades congressional stock trading
-  - `population_service.py` - Census population data
-- **api/v1/endpoints/** - REST endpoints (6 active routers: debt, employment, budget, elections, immigration, congress)
-- **scripts/warm_cache.py** - Cache warming script (runs on startup)
+#### Employment (2 routes)
+- `GET /api/v1/employment/unemployment` — BLS unemployment history
+- `GET /api/v1/employment/unemployment/latest` — Current unemployment
 
-**Note:** `database.py`, `tasks/`, and some endpoint files (admin, analytics, statistics, trends, comparisons, rankings, exports) exist but are **not active** - they are legacy/future code not wired into the router.
+#### Budget (1 route)
+- `GET /api/v1/budget` — Treasury Monthly Statement
 
-### Frontend (`frontend/`)
+#### Elections (2 routes)
+- `GET /api/v1/elections/candidates` — FEC candidate fundraising
+- `GET /api/v1/elections/population` — Census state populations
 
-- **Tech:** Next.js 16.1.6, React 18.3.1, TypeScript 5.7.2, Tailwind 3.4.17
-- **app/** - Next.js App Router pages (home, debt, employment, budget, elections, immigration, congress, about)
-  - `congress/` has sub-pages: `politicians/`, `trades/`
-  - `immigration/` has sub-page: `trends/`
-- **components/**
-  - `layout/` - Header (with theme toggle, mobile menu), Footer
-  - `charts/` - Lazy-loaded Recharts wrappers (LazyBarChart, LazyLineChart, LazyPieChart) + theme config
-  - `ui/` - Button, Card, Skeleton, ChartSkeleton, Spinner, Select, ErrorBoundary, ErrorState, DownloadRawData
-  - `providers/` - ThemeProvider (dark/light), SWRProvider
-  - `seo/` - PageSEO, StructuredData (JSON-LD)
-  - `home/` - Hero, DefinitionCard
-- **hooks/useChartTheme.ts** - Theme-aware chart styling hook
-- **services/hooks/** - Data fetching hooks (useDebtData, useEmploymentData, useImmigrationData, useBudgetData, useElectionsData)
-- **services/api/client.ts** - Typed API client with endpoints per domain
-- **utils/swr.ts** - SWR configuration and fetcher
+#### Immigration (7 routes)
+- `GET /api/v1/immigration` — Overview with historical data
+- `GET /api/v1/immigration/summary` — Summary statistics
+- `GET /api/v1/immigration/historical` — Historical enforcement data
+- `GET /api/v1/immigration/categories` — Admission categories
+- `GET /api/v1/immigration/countries` — Top source countries
+- `GET /api/v1/immigration/border-crossings` — BTS border crossing data
+- `GET /api/v1/immigration/border-crossings/monthly` — Monthly summary
 
-## API Endpoints
+#### Congress (6 routes)
+- `GET /api/v1/congress/stats` — Trading statistics summary
+- `GET /api/v1/congress/trades` — All trades (filterable)
+- `GET /api/v1/congress/trades/recent` — Recent trades
+- `GET /api/v1/congress/traders` — Top traders ranked
+- `GET /api/v1/congress/tickers` — Popular stocks
+- `GET /api/v1/congress/tickers/[ticker]` — Trades by ticker
 
-```
-GET /api/v1/health                          # Health check
+#### Education (6 routes)
+- `GET /api/v1/education` — College Scorecard overview
+- `GET /api/v1/education/enrollment` — Enrollment statistics
+- `GET /api/v1/education/spending` — Education spending (placeholder)
+- `GET /api/v1/education/outcomes` — Student outcomes (placeholder)
+- `GET /api/v1/education/state-funding` — State funding (placeholder)
+- `GET /api/v1/education/performance` — Performance metrics (placeholder)
 
-# Debt
-GET /api/v1/debt/                           # National debt history (days param)
-GET /api/v1/debt/latest                     # Current debt figure
+#### Housing (6 routes)
+- `GET /api/v1/housing/categories` — Housing data categories
+- `GET /api/v1/housing/series` — Available FRED series
+- `GET /api/v1/housing/observations/[seriesId]` — Time series data
+- `GET /api/v1/housing/compare` — Series comparison (placeholder)
+- `GET /api/v1/housing/dashboard` — Key metrics (placeholder)
+- `GET /api/v1/housing/sync/status` — Sync status (not applicable for FRED direct)
 
-# Employment
-GET /api/v1/employment/unemployment         # Unemployment history (years param)
-GET /api/v1/employment/unemployment/latest  # Current unemployment rate
+## Caching Strategy
 
-# Budget
-GET /api/v1/budget/                         # Federal budget (fiscal_year param)
+**File-Based Cache with Resilience**:
+- **Location**: `/tmp/lts-cache/` (created on demand)
+- **TTL**: 24 hours default (configurable per endpoint)
+- **Stale-on-error**: Serves stale cache if API calls fail
+- **Retry logic**: 2 retries with exponential backoff
+- **Cache keys**: MD5 hash of request URL
 
-# Elections
-GET /api/v1/elections/candidates            # Campaign finance (cycle param)
-GET /api/v1/elections/population            # State population data
+### Cache Implementation (`lib/gov-api.ts`)
+```typescript
+import { fetchWithCache } from '@/lib/gov-api';
 
-# Immigration
-GET /api/v1/immigration/                    # Overview (summary + top countries)
-GET /api/v1/immigration/summary             # Summary statistics
-GET /api/v1/immigration/historical          # Historical enforcement (year range)
-GET /api/v1/immigration/categories          # Admission category breakdown
-GET /api/v1/immigration/countries           # Top source countries
-GET /api/v1/immigration/border-crossings    # BTS border crossing data (filtered)
-GET /api/v1/immigration/border-crossings/monthly  # Monthly border summary
-
-# Congress
-GET /api/v1/congress/stats                  # Trading statistics summary
-GET /api/v1/congress/trades/recent          # Recent trades (paginated)
-GET /api/v1/congress/trades                 # All trades (filterable: politician, ticker, type, chamber, party)
-GET /api/v1/congress/traders                # Top traders ranked
-GET /api/v1/congress/tickers                # Popular stocks
-GET /api/v1/congress/tickers/{ticker}       # Trades by ticker
+// Uses file-based cache with stale fallback
+const data = await fetchWithCache(url, { ttlHours: 6 });
 ```
 
-API docs: http://localhost:6003/docs
+## Data Sources
 
-## Data Pages
+- **Treasury**: Fiscal Data API (debt, interest, budget)
+- **FRED**: Federal Reserve Economic Data (debt composition, housing, GDP)
+- **BLS**: Bureau of Labor Statistics (unemployment)
+- **FEC**: Federal Election Commission (campaign finance)
+- **Census**: Population estimates
+- **BTS**: Border transportation data
+- **Capitol Trades**: Congressional stock trading (trades.telep.io)
+- **College Scorecard**: Department of Education
 
-| Page | Route | Data Source |
-|------|-------|-------------|
-| National Debt | /debt | Treasury Fiscal Data API |
-| Employment | /employment | BLS API |
-| Federal Budget | /budget | Treasury Fiscal Data |
-| Congressional Trading | /congress | Capitol Trades (STOCK Act disclosures) |
-| Immigration | /immigration | BTS + DHS Immigration Yearbook |
-| Elections | /elections | FEC OpenFEC API |
+## Performance Features
 
-## Configuration
-
-Backend environment (`backend/.env`):
-
-```bash
-CACHE_TTL_HOURS=48
-CENSUS_API_KEY=       # Optional (higher rate limits)
-BLS_API_KEY=          # Optional
-FEC_API_KEY=          # Optional
-CORS_ORIGINS=["http://localhost:3000","https://letstalkstatistics.com"]
-```
-
-Frontend environment (`frontend/.env`):
-
-```bash
-NEXT_PUBLIC_API_URL=http://localhost:8000
-```
+- **Next.js 16.1.6** with Turbopack for fast development
+- **File-based caching** with stale-while-revalidate
+- **Container optimization** with multi-stage builds
+- **Static generation** for pages where possible
+- **TypeScript** for type safety
 
 ## Deployment
 
-- **Hosted on:** Coolify (Podman containers)
-- **DNS/SSL:** Cloudflare (proxied)
-- **Ports:** Frontend 3003, Backend 6003
-- **Network:** Bridge network `lts_network` (docker-compose)
+- **Container**: Single Podman/Docker container
+- **Port**: 3000
+- **Healthcheck**: `/api/v1/health` endpoint
+- **Environment**: Production-optimized with `output: 'standalone'`
+- **Cache volume**: `/tmp/lts-cache` for persistent caching
 
-## Documentation
+```bash
+# Container deployment
+podman build --network=host -t lets-talk-statistics .
+podman run -d -p 3000:3000 --name lts-app lets-talk-statistics
 
-Additional docs in `/docs`:
-- CONTAINER_SETUP.md, DOCKER_GUIDE.md, MAKEFILE_GUIDE.md
-- QUICK_START.md, QUICK_REFERENCE.md
-- DEVELOPMENT_PLAN.md, SIMPLIFICATION.md
-- decisions/ - Architecture Decision Records
+# Docker Compose
+docker-compose up -d
+```
 
 ## Design System
 
 Dark minimal aesthetic (Palantir/OpenAI-inspired) with light/dark theme toggle:
 - **Fonts:** Inter (headings + body), JetBrains Mono (data/code)
-- **Colors:** CSS variable-based theme system (`--surface`, `--text-primary`, `--border`, etc.)
-  - Dark (default): #0a0a0a surface, #ffffff text, #222 borders
-  - Light: #ffffff surface, #111111 text, #e5e5e5 borders
-  - Accent: Blue (#3b82f6)
-- **Theme:** Persisted to localStorage (`lts-theme`), respects system preference on first load
-- **Components:** `.card`, `.btn-primary`, `.btn-secondary`, `.btn-accent`, `.data-value`, `.data-label`
+- **Colors:** CSS variable-based theme system
+- **Theme:** Persisted to localStorage, respects system preference
+- **Components:** Shadcn/UI-inspired design system
 
-## Recent Updates (Feb 25, 2026 - Healthcare Page Implementation)
+## Configuration
 
-### New Healthcare Page ✅ COMPLETED
-- **Full Healthcare page implementation** with Medicaid DSH payment data visualization
-- **Complete TypeScript ecosystem:** types, hooks, API client integration
-- **Rich data visualizations:** spending trends, provider breakdowns, state rankings
-- **SEO-optimized layout:** comprehensive metadata, JSON-LD schema for healthcare data
-- **Responsive charts and tables** showing provider utilization and spending patterns
+Environment variables (optional - fallback to demo keys where applicable):
 
-### Technical Implementation Details
-- **Healthcare types:** Complete TypeScript definitions for DSH payments and provider records
-- **Data processing hooks:** useHealthcareSummary, useHealthcareRaw with error handling
-- **API client integration:** Healthcare endpoints added to central API client
-- **Chart components:** Line charts for trends, pie charts for provider types, data tables
-- **Build verification:** Full container build passed with TypeScript validation
+```bash
+# API Keys (optional - demo keys used as fallback)
+FRED_API_KEY=          # FRED API access
+BLS_API_KEY=           # BLS API (higher rate limits)
+FEC_API_KEY=           # FEC API access  
+CENSUS_API_KEY=        # Census API (higher rate limits)
+DOE_API_KEY=           # Department of Education
+CAPITOL_TRADES_API=    # Capitol Trades API endpoint
+```
 
-### SEO & Data Structure
-- **Healthcare-specific SEO:** CMS/Medicaid.gov dataset schema markup
-- **Provider data visualization:** State rankings, top institutions, utilization rates
-- **Data download integration:** Raw healthcare data export functionality
-- **Government data compliance:** HHS/CMS data attribution and sourcing
+## Recent Updates (Mar 12, 2026 - Backend Consolidation)
 
-## Previous Updates (Feb 24, 2026 - Overnight Enhancement Run)
+### Major Architecture Refactor ✅ COMPLETED
+- **Eliminated Python backend** — Removed entire FastAPI application (6,875 lines)
+- **Consolidated to Next.js** — All 35+ API endpoints now Next.js Route Handlers
+- **Single container deployment** — Reduced from 2 containers to 1
+- **Bun package manager** — Faster installs and better performance
+- **Direct API calls** — Removed database layer for housing data, direct FRED integration
+- **Enhanced caching** — File-based cache with stale-on-error fallback for reliability
 
-### Capitol Trades API Promotion
-- Added prominent promotion callout on Congress page after disclaimers section
-- Purple gradient styling with "Get API Access" CTA linking to telep.io/pricing
-- Secondary button linking to trades.telep.io for documentation
-- Converts free users to paid API customers
+### Technical Implementation
+- **Route Handlers**: Complete TypeScript implementation of all government APIs
+- **Cache utility**: `lib/gov-api.ts` with TTL, retries, and stale-on-error
+- **Container optimization**: Multi-stage build with Bun + Node.js runtime
+- **Type safety**: Full TypeScript coverage with proper error handling
 
-### SEO Optimization Implemented
-- **Congress page:** Complete metadata with STOCK Act keywords, OpenGraph, Twitter Cards
-- **Debt page:** Treasury data-focused SEO with dataset schema
-- **Employment page:** BLS data optimization with labor statistics keywords
-- **JSON-LD structured data:** Government data-specific schema markup for all pages
-- **Build verified:** All changes compile successfully, no breaking changes
+### Benefits
+- **Simplified deployment**: One container instead of two
+- **Improved reliability**: Stale cache fallback prevents total failures
+- **Better performance**: Next.js with Turbopack, Bun package management
+- **Easier maintenance**: Single codebase, unified technology stack
+- **Enhanced monitoring**: One service to monitor instead of two
 
-### Technical Notes
-- All SEO uses Next.js App Router metadata API via layout.tsx files
-- Structured data includes dataset-specific markup for government data
-- OpenGraph images reference og-[page].png format for future image creation
-- Canonical URLs and robots directives properly configured
-- No design changes made - only feature enhancements and optimization
+### Migration Notes
+- Frontend components unchanged — visual compatibility maintained
+- API contracts preserved — same endpoints, same response formats  
+- Docker Compose simplified to single service
+- Makefile updated for single-container operations
