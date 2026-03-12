@@ -83,3 +83,10 @@
   - Static generation success indicates all components compile correctly
 - **Frontend/backend separation** - Project structure with separate frontend/ directory requires proper paths
 - **Zero tolerance for build errors** - TypeScript errors in production completely block deployment
+
+## Performance Optimization (Mar 12, 2026)
+- **loading.tsx files are cheap wins** - Adding Next.js loading.tsx per route shows skeleton UI instantly, huge perceived perf improvement
+- **robots.txt was missing** - Critical SEO gap. Next.js App Router supports dynamic `robots.ts` which is cleaner than static file
+- **Security headers in next.config** - X-Content-Type-Options, X-Frame-Options, XSS-Protection should be default
+- **Static asset caching** - `/_next/static/*` should always be `immutable, max-age=31536000`
+- **Disable production source maps** - Reduces bundle size and prevents source code exposure
