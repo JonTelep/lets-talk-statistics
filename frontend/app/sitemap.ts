@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://letstalkstatistics.com';
-  const lastModified = new Date('2026-02-27');
+  const lastModified = new Date('2026-03-12');
 
   return [
     {
@@ -76,6 +76,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified,
       changeFrequency: 'yearly',
       priority: 0.6,
+    },
+    {
+      url: `${baseUrl}/housing`,
+      lastModified,
+      changeFrequency: 'monthly',
+      priority: 0.7,
     },
     {
       url: `${baseUrl}/about`,
