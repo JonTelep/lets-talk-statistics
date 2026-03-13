@@ -12,6 +12,7 @@ from contextlib import asynccontextmanager
 
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.middleware.gzip import GZipMiddleware
 
 from app.api.v1.router import router as api_router
 from app.config import get_settings
@@ -56,6 +57,9 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+# GZip compression — compress responses > 500 bytes (~60-80% smaller JSON payloads)
+app.add_middleware(GZipMiddleware, minimum_size=500)
 
 # Cache-Control headers middleware (enables CDN/browser caching)
 app.add_middleware(CacheControlMiddleware)
