@@ -12,6 +12,7 @@ import { DownloadRawData } from '@/components/ui/DownloadRawData';
 import { ErrorBoundary } from '@/components/ui/ErrorBoundary';
 import { ErrorState } from '@/components/ui/ErrorState';
 import { Skeleton, StatCardSkeleton, TableSkeleton, ChartSkeleton } from '@/components/ui/Skeleton';
+import { SocialShare } from '@/components/social/SocialShare';
 
 const API_HOST = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
 const API_URL = `${API_HOST.replace(/\/$/, '')}/api/v1`;
@@ -249,6 +250,16 @@ function BudgetPageContent() {
                 <li>• USASpending.gov</li>
                 <li>• Office of Management and Budget</li>
               </ul>
+            </div>
+
+            <div className="mt-6 card p-6">
+              <SocialShare 
+                title={`Federal Budget Data - FY ${fiscalYear || new Date().getFullYear()}`}
+                description={`Track U.S. government spending: $${totalSpending?.toFixed(1)}T outlays, $${totalRevenue?.toFixed(1)}T revenue, ${deficit && deficit > 0 ? `$${deficit.toFixed(1)}T deficit` : 'budget analysis'}`}
+                hashtags={['federalbudget', 'governmentspending', 'fiscaldata', 'statistics']}
+                via="letstalkstats"
+                compact={false}
+              />
             </div>
 
             <div className="mt-6">

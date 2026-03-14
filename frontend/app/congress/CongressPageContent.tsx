@@ -16,6 +16,7 @@ import { DownloadRawData } from '@/components/ui/DownloadRawData';
 import { ErrorBoundary } from '@/components/ui/ErrorBoundary';
 import { ErrorState } from '@/components/ui/ErrorState';
 import { Skeleton, StatCardSkeleton, TradesTableSkeleton, ListSkeleton, ChartSkeleton } from '@/components/ui/Skeleton';
+import { SocialShare } from '@/components/social/SocialShare';
 
 const API_HOST = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
 const API_URL = `${API_HOST.replace(/\/$/, '')}/api/v1`;
@@ -282,6 +283,17 @@ export default function CongressPageContent() {
                   <ExternalLink className="h-4 w-4" />
                 </Link>
               </div>
+            </div>
+
+            {/* Social Share */}
+            <div className="mb-8">
+              <SocialShare 
+                title={`Congressional Trading Data - ${congressData?.total_trades ? `${congressData.total_trades.toLocaleString()} trades tracked` : 'Stock disclosure tracker'}`}
+                description={`Track congressional stock trades in real-time. ${congressData?.unique_politicians || 'Members of Congress'} politicians, ${congressData?.unique_tickers || 'thousands'} of tickers, all from official STOCK Act disclosures.`}
+                hashtags={['CongressTrades', 'StockAct', 'transparency', 'politics']}
+                via="letstalkstats"
+                compact={false}
+              />
             </div>
           </div>
 
