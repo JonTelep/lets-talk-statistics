@@ -1,5 +1,23 @@
 # tasks/lessons.md - lets-talk-statistics
 
+## 2026-03-15 - SEO, CSV Export, Build Fix (Overnight Session)
+
+### Build Fix 🐛
+- Congress page had a broken reference to `congressData` (should be `stats`) — blocked all container builds
+- Lesson: always verify `make build` passes before marking work complete
+
+### SEO Gaps Filled 🔍
+- Housing page was the only page without full SEO metadata (keywords, OG, Twitter, JSON-LD) — now matches all other pages
+- Dynamic `sitemap.ts` was missing `/housing` entry (static `sitemap.xml` had it)
+- Added `robots.ts` for proper Next.js dynamic robots.txt generation
+- Lesson: audit all pages when adding new ones — easy to miss dynamic route config
+
+### CSV Export Feature 📊
+- Extended DownloadRawData component to offer CSV alongside JSON
+- Auto-flattens nested API responses with recursive `flattenObject()`
+- TypeScript gotcha: `.map(flattenObject)` fails because `.map` passes `(value, index, array)` — wrap in arrow function
+- Lesson: keep utility functions with optional params out of direct `.map()` calls
+
 ## 2026-03-14 - Social Sharing Integration (Overnight Session)
 
 ### Social Media Engagement Features ✅ 📱
