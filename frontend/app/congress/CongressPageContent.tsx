@@ -288,8 +288,8 @@ export default function CongressPageContent() {
             {/* Social Share */}
             <div className="mb-8">
               <SocialShare 
-                title={`Congressional Trading Data - ${congressData?.total_trades ? `${congressData.total_trades.toLocaleString()} trades tracked` : 'Stock disclosure tracker'}`}
-                description={`Track congressional stock trades in real-time. ${congressData?.unique_politicians || 'Members of Congress'} politicians, ${congressData?.unique_tickers || 'thousands'} of tickers, all from official STOCK Act disclosures.`}
+                title={`Congressional Trading Data - ${stats?.total_trades ? `${stats.total_trades.toLocaleString()} trades tracked` : 'Stock disclosure tracker'}`}
+                description={`Track congressional stock trades in real-time. ${stats?.traders_count || 'Members of Congress'} politicians, all from official STOCK Act disclosures.`}
                 hashtags={['CongressTrades', 'StockAct', 'transparency', 'politics']}
                 via="letstalkstats"
                 compact={false}
