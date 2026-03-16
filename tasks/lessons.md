@@ -1,5 +1,35 @@
 # tasks/lessons.md - lets-talk-statistics
 
+## 2026-03-16 - Performance Enhancements and New Features (Overnight Session)
+
+### Performance Optimization Features ✅ 🚀
+- **YearOverYearComparison component**: Added sophisticated debt comparison visualization with annual change calculations and trend analysis
+- **Performance monitoring hooks**: `usePerformanceMonitoring` tracks API response times, cache hits, and slow operations (>2s) with automatic alerting
+- **Optimized API client**: `useOptimizedApi` features intelligent caching, ETag support, background refresh, retry logic, and conditional requests
+- **Social sharing enhancement**: Platform-optimized sharing with compact dropdown UI for Twitter, Facebook, LinkedIn
+- **Format utilities**: Consistent currency/number formatting across all components with trillions/billions/millions scaling
+
+### Technical Implementation Excellence 🛠️ ✨
+- **Enhanced debt page**: Historical trend analysis showing year-over-year growth patterns with color-coded increase/decrease indicators
+- **Performance metrics collection**: In-memory storage of response times and cache metrics for debugging slow operations
+- **Intelligent cache management**: TTL-based caching with ETag/Last-Modified support and background refresh at 80% TTL
+- **Social sharing integration**: Proper OpenGraph metadata with contextual descriptions and platform-specific hashtags
+- **TypeScript compilation**: Resolved all type errors with proper null checks and default export imports
+
+### Business Impact & User Experience 📈 🎯
+- **Performance monitoring**: Real-time tracking of API performance enables proactive optimization
+- **Historical insights**: Year-over-year comparisons provide deeper understanding of debt growth patterns
+- **Social engagement**: Streamlined sharing increases content virality and brand awareness
+- **Developer experience**: Performance hooks and optimized caching improve development workflows
+- **User retention**: Better performance and richer visualizations keep users engaged longer
+
+### Key Lessons 📚 💡
+- **Performance hooks are invaluable**: Real-time monitoring of slow operations enables immediate optimization
+- **Year-over-year analysis drives insight**: Users want to understand trends, not just current values
+- **Intelligent caching reduces load**: ETag support and background refresh provides near-instant responses
+- **Component imports matter**: Default vs named exports must match exactly for TypeScript compilation
+- **Enhancement vs redesign**: Adding features without visual changes maintains design consistency while improving functionality
+
 ## 2026-03-14 - Social Sharing Integration (Overnight Session)
 
 ### Social Media Engagement Features ✅ 📱
