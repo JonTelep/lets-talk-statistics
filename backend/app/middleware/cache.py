@@ -28,6 +28,8 @@ class CacheControlMiddleware(BaseHTTPMiddleware):
         "/api/v1/immigration",
         "/api/v1/congress",
         "/api/v1/housing",
+        "/api/v1/healthcare",
+        "/api/v1/education",
     ]
     
     # Cache durations in seconds
