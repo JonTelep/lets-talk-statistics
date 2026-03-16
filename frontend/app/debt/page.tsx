@@ -12,6 +12,9 @@ import { ErrorBoundary } from '@/components/ui/ErrorBoundary';
 import { ErrorStateCompact, ErrorStateTableRow } from '@/components/ui/ErrorState';
 import { Skeleton, StatCardSkeleton, HeroCounterSkeleton, ChartSkeleton } from '@/components/ui/Skeleton';
 import { useChartTheme } from '@/hooks/useChartTheme';
+import { YearOverYearComparison } from '@/components/charts/YearOverYearComparison';
+import { formatCurrency } from '@/utils/format';
+import { SocialShare, shareConfigs } from '@/components/ui/SocialShare';
 
 const API_HOST = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
 const API_URL = `${API_HOST.replace(/\/$/, '')}/api/v1`;
@@ -128,10 +131,17 @@ function DebtPageContent() {
         <div className="mx-auto max-w-7xl">
           <p className="text-xs font-mono text-surface-600 mb-4 uppercase tracking-wider">Federal Debt Analysis</p>
           <h1 className="text-4xl sm:text-5xl font-semibold text-foreground mb-4">National Debt</h1>
-          <p className="text-lg text-surface-500 max-w-2xl">
+          <p className="text-lg text-surface-500 max-w-2xl mb-6">
             Real-time tracking of U.S. federal debt from Treasury Department data.
             Analysis of debt holders, growth patterns, and GDP ratios.
           </p>
+          <SocialShare
+            title={shareConfigs.debt.title}
+            description={shareConfigs.debt.description}
+            hashtags={shareConfigs.debt.hashtags}
+            layout="compact"
+            size="sm"
+          />
         </div>
       </div>
 
@@ -247,6 +257,36 @@ function DebtPageContent() {
             <div className="h-[350px] flex items-center justify-center text-surface-600">No data available</div>
           )}
         </div>
+      </div>
+
+      {/* Year-over-Year Comparison */}
+      <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
+        {loading ? (
+          <div className="space-y-6">
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
+              <StatCardSkeleton />
+              <StatCardSkeleton />
+              <StatCardSkeleton />
+            </div>
+            <ChartSkeleton height={350} />
+          </div>
+        ) : error ? (
+          <div className="card p-8 text-center">
+            <ErrorStateCompact message="Failed to load comparison data" onRetry={refetch} />
+          </div>
+        ) : debtData ? (
+          <YearOverYearComparison
+            data={debtData.data.map(d => ({
+              period: d.date.substring(5, 10), // MM-DD format for comparison
+              value: d.total_debt,
+              year: parseInt(d.date.substring(0, 4)),
+            }))}
+            title="Debt Growth Comparison by Year"
+            metric="Federal debt"
+            valueFormatter={(value: number) => formatCurrency(value / 1_000_000_000_000) + 'T'}
+            selectedYears={[2024, 2023, 2022]} // Last 3 years
+          />
+        ) : null}
       </div>
 
       {/* Main Content Grid */}
