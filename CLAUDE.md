@@ -224,6 +224,22 @@ Dark minimal aesthetic (Palantir/OpenAI-inspired) with light/dark theme toggle:
 - **Data download integration:** Raw healthcare data export functionality
 - **Government data compliance:** HHS/CMS data attribution and sourcing
 
+## Previous Updates (Mar 16, 2026 - SEO & Performance)
+
+### SEO Improvements
+- **robots.ts** — Added Next.js robots.txt generation (allows crawlers, blocks /api/ and /_next/, sitemap reference)
+- **Sitemap fix** — Added missing housing and education pages, switched from hardcoded date to dynamic `new Date()`
+
+### Performance
+- **Security headers** — X-Content-Type-Options, X-Frame-Options, X-XSS-Protection, Referrer-Policy
+- **Static asset caching** — 1 year immutable cache for `_next/static` assets
+- **Compression** — Enabled gzip/brotli via `compress: true`
+- **Removed X-Powered-By** — Security best practice
+- **Backend cache middleware** — Added healthcare and education endpoints to cacheable prefixes
+
+### Bug Fix
+- Fixed TypeScript build error in CongressPageContent.tsx — `congressData` → `stats` reference fix in SocialShare
+
 ## Previous Updates (Feb 24, 2026 - Overnight Enhancement Run)
 
 ### Capitol Trades API Promotion
