@@ -10,6 +10,7 @@ import { PIE_COLORS } from '@/components/charts/theme';
 import { useChartTheme } from '@/hooks/useChartTheme';
 import { useEducationOverview, formatEducationNumber, formatEnrollmentNumber, formatCompletionRate, formatTuition } from '@/services/hooks/useEducationData';
 import { DownloadRawData } from '@/components/ui/DownloadRawData';
+import { SocialShare } from '@/components/social/SocialShare';
 import { ErrorBoundary } from '@/components/ui/ErrorBoundary';
 import { ErrorState } from '@/components/ui/ErrorState';
 import { Skeleton, StatCardSkeleton, TableSkeleton, ChartSkeleton } from '@/components/ui/Skeleton';
@@ -342,6 +343,16 @@ export default function EducationPageContent() {
                   </div>
                 </div>
               </div>
+            </div>
+
+            <div className="mt-6 card p-6">
+              <SocialShare
+                title="U.S. Education Statistics"
+                description="Track education spending, enrollment, graduation rates, and tuition trends from official government data."
+                hashtags={['education', 'highered', 'studentdebt', 'statistics']}
+                via="letstalkstats"
+                compact={false}
+              />
             </div>
           </div>
         </div>

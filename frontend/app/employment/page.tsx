@@ -8,6 +8,7 @@ import {
 import { chartTooltipStyle, chartAxisStyle, chartGridStyle } from '@/components/charts/theme';
 import { useUnemploymentHistory, calculateEmploymentStats, formatMonthlyData } from '@/services/hooks/useEmploymentData';
 import { DownloadRawData } from '@/components/ui/DownloadRawData';
+import { SocialShare } from '@/components/social/SocialShare';
 import { ErrorBoundary } from '@/components/ui/ErrorBoundary';
 import { ErrorStateCompact, ErrorStateTableRow } from '@/components/ui/ErrorState';
 import { Skeleton, StatCardSkeleton, ChartSkeleton } from '@/components/ui/Skeleton';
@@ -264,6 +265,16 @@ function EmploymentPageContent() {
                 { label: 'Unemployment History (2yr)', url: `${API_URL}/employment/unemployment?years=2`, filename: 'unemployment_history.json' },
                 { label: 'Latest Rate', url: `${API_URL}/employment/unemployment/latest`, filename: 'unemployment_latest.json' },
               ]} />
+            </div>
+
+            <div className="mt-6 card p-6">
+              <SocialShare
+                title="U.S. Employment & Unemployment Data"
+                description="Track unemployment rates, job growth, and labor market trends from official BLS data."
+                hashtags={['employment', 'unemployment', 'labormarket', 'statistics']}
+                via="letstalkstats"
+                compact={false}
+              />
             </div>
           </div>
         </div>

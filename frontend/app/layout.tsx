@@ -5,6 +5,7 @@ import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import { SWRProvider } from '@/components/providers/SWRProvider';
 import { ThemeProvider } from '@/components/providers/ThemeProvider';
+import { PreloaderProvider } from '@/components/providers/PreloaderProvider';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -75,9 +76,11 @@ export default function RootLayout({
       <body className="font-sans flex min-h-screen flex-col antialiased">
         <ThemeProvider>
           <SWRProvider>
-            <Header />
-            <main className="flex-1">{children}</main>
-            <Footer />
+            <PreloaderProvider>
+              <Header />
+              <main className="flex-1">{children}</main>
+              <Footer />
+            </PreloaderProvider>
           </SWRProvider>
         </ThemeProvider>
       </body>

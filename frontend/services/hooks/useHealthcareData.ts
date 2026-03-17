@@ -10,6 +10,7 @@ import {
   HealthcareTrendData,
   MedicaidProviderRecord
 } from '../../types/healthcare';
+import { cachedFetch } from '../cache/dataCache';
 
 const API_HOST = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
 const API_BASE_URL = `${API_HOST.replace(/\/$/, '')}/api/v1`;
@@ -61,11 +62,9 @@ async function fetchHealthcare(year?: number): Promise<HealthcareResponse> {
   const url = year
     ? `${API_BASE_URL}/healthcare/?year=${year}`
     : `${API_BASE_URL}/healthcare/`;
-  const response = await fetch(url);
-  if (!response.ok) {
-    throw new Error(`Failed to fetch healthcare data: ${response.status}`);
-  }
-  return response.json();
+  
+  // Use cached fetch with 10 minute TTL for healthcare data
+  return cachedFetch<HealthcareResponse>(url, undefined, 10 * 60 * 1000);
 }
 
 /**

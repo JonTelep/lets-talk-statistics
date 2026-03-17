@@ -9,6 +9,7 @@ import {
 import { chartTooltipStyle, chartAxisStyle, chartGridStyle, PIE_COLORS } from '@/components/charts/theme';
 import { useHealthcareSummary, formatHealthcareNumber, formatPercentage } from '@/services/hooks/useHealthcareData';
 import { DownloadRawData } from '@/components/ui/DownloadRawData';
+import { SocialShare } from '@/components/social/SocialShare';
 import { ErrorBoundary } from '@/components/ui/ErrorBoundary';
 import { ErrorState } from '@/components/ui/ErrorState';
 import { Skeleton, StatCardSkeleton, TableSkeleton, ChartSkeleton } from '@/components/ui/Skeleton';
@@ -126,6 +127,16 @@ export default function HealthcarePageContent() {
                   }]}
                 />
               )}
+            </div>
+
+            <div className="mt-6 card p-6">
+              <SocialShare
+                title="U.S. Healthcare Statistics"
+                description="Track healthcare spending, insurance coverage, and health outcomes from official CMS and CDC data."
+                hashtags={['healthcare', 'healthdata', 'Medicare', 'statistics']}
+                via="letstalkstats"
+                compact={false}
+              />
             </div>
           </div>
         </div>

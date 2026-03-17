@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import { RefreshCw } from 'lucide-react';
 import { useHousingDashboard, useHousingCompare, useHousingSyncStatus } from '@/services/hooks/useHousingData';
 import { DownloadRawData } from '@/components/ui/DownloadRawData';
+import { SocialShare } from '@/components/social/SocialShare';
 import { ErrorBoundary } from '@/components/ui/ErrorBoundary';
 import { ErrorStateCompact } from '@/components/ui/ErrorState';
 import { StatCardSkeleton, ChartSkeleton } from '@/components/ui/Skeleton';
@@ -372,6 +373,16 @@ function HousingPageContent() {
               { label: 'Mortgage Rates', url: `${API_URL}/housing/compare?series_ids=MORTGAGE30US,MORTGAGE15US`, filename: 'housing_mortgage.json' },
               { label: 'Sync Status', url: `${API_URL}/housing/sync/status`, filename: 'housing_sync_status.json' },
             ]} />
+
+            <div className="mt-6 card p-6">
+              <SocialShare
+                title="U.S. Housing Market Statistics"
+                description="Track home prices, mortgage rates, construction data, and housing affordability from official FRED and Census data."
+                hashtags={['housing', 'realestate', 'mortgagerates', 'housingmarket']}
+                via="letstalkstats"
+                compact={false}
+              />
+            </div>
           </div>
         </div>
       </div>

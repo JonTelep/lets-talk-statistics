@@ -7,6 +7,7 @@ import {
 import { chartTooltipStyle, chartAxisStyle, chartGridStyle } from '@/components/charts/theme';
 import { useCandidates, formatCurrency, getPartyColor } from '@/services/hooks/useElectionsData';
 import { DownloadRawData } from '@/components/ui/DownloadRawData';
+import { SocialShare } from '@/components/social/SocialShare';
 import { ErrorBoundary } from '@/components/ui/ErrorBoundary';
 import { ErrorStateCompact } from '@/components/ui/ErrorState';
 import { Skeleton } from '@/components/ui/Skeleton';
@@ -287,6 +288,15 @@ function ElectionsPageContent() {
             </ul>
           </div>
           <DownloadRawData endpoints={[{ label: 'Campaign Finance Data', url: `${API_URL}/elections/candidates`, filename: 'election_candidates.json' }]} />
+        </div>
+        <div className="mt-6 card p-6">
+          <SocialShare
+            title="U.S. Election & Campaign Finance Data"
+            description="Track campaign funding, ballot access barriers, and election finance from live FEC data."
+            hashtags={['elections', 'campaignfinance', 'FEC', 'votingrights']}
+            via="letstalkstats"
+            compact={false}
+          />
         </div>
       </div>
     </div>

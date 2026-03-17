@@ -12,6 +12,7 @@ import {
   useImmigrationCountries,
 } from '@/services/hooks/useImmigrationData';
 import { DownloadRawData } from '@/components/ui/DownloadRawData';
+import { SocialShare } from '@/components/social/SocialShare';
 import { ErrorBoundary } from '@/components/ui/ErrorBoundary';
 import { ErrorStateCompact } from '@/components/ui/ErrorState';
 import { Skeleton, StatCardSkeleton, ChartSkeleton } from '@/components/ui/Skeleton';
@@ -307,6 +308,16 @@ export default function ImmigrationPageContent() {
                   </div>
                 </div>
               </div>
+            </div>
+
+            <div className="mt-6 card p-6">
+              <SocialShare
+                title="U.S. Immigration Statistics"
+                description="Track immigration admissions, deportations, asylum cases, and naturalization from official DHS data."
+                hashtags={['immigration', 'statistics', 'DHSdata', 'borderdata']}
+                via="letstalkstats"
+                compact={false}
+              />
             </div>
           </div>
         </div>
