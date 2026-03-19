@@ -1,5 +1,14 @@
 # tasks/lessons.md - lets-talk-statistics
 
+## 2026-03-19 - CSV Export Feature (Overnight Session)
+- **CSV export added**: DownloadRawData component now offers JSON + CSV side-by-side
+- **Smart array detection**: Automatically finds the data array in API responses by checking common keys (data, trades, records, results)
+- **Nested object handling**: One-level flattening with dot notation (e.g., `amount.low`, `amount.high`)
+- **csvArrayPath prop**: Optional override for endpoints where the data lives at a non-standard path
+- **CSV escaping**: Properly handles commas, double quotes, and newlines in cell values
+- **lucide-react icons**: FileJson and FileSpreadsheet available in v0.469+, no extra deps needed
+
+
 ## 2026-03-19 - Security Headers & Caching (Overnight Session)
 - **Security headers via next.config**: HSTS, X-Frame-Options, CSP Permissions-Policy, Referrer-Policy, X-Content-Type-Options applied to all routes
 - **Tiered cache headers**: Static assets get immutable/1yr cache, API proxied responses get 5min with stale-while-revalidate
