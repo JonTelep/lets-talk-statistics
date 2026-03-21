@@ -12,6 +12,8 @@ import { ErrorBoundary } from '@/components/ui/ErrorBoundary';
 import { ErrorStateCompact, ErrorStateTableRow } from '@/components/ui/ErrorState';
 import { Skeleton, StatCardSkeleton, HeroCounterSkeleton, ChartSkeleton } from '@/components/ui/Skeleton';
 import { useChartTheme } from '@/hooks/useChartTheme';
+import { SocialShare } from '@/components/social/SocialShare';
+import { YearOverYearComparison } from '@/components/debt/YearOverYearComparison';
 
 const API_HOST = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
 const API_URL = `${API_HOST.replace(/\/$/, '')}/api/v1`;
@@ -128,10 +130,21 @@ function DebtPageContent() {
         <div className="mx-auto max-w-7xl">
           <p className="text-xs font-mono text-surface-600 mb-4 uppercase tracking-wider">Federal Debt Analysis</p>
           <h1 className="text-4xl sm:text-5xl font-semibold text-foreground mb-4">National Debt</h1>
-          <p className="text-lg text-surface-500 max-w-2xl">
+          <p className="text-lg text-surface-500 max-w-2xl mb-6">
             Real-time tracking of U.S. federal debt from Treasury Department data.
             Analysis of debt holders, growth patterns, and GDP ratios.
           </p>
+          
+          {/* Social Share */}
+          <div className="mb-8">
+            <SocialShare 
+              title={`National Debt Tracker - ${stats ? `$${stats.totalDebtTrillions} trillion` : 'Real-time federal debt data'}`}
+              description={`Track the U.S. national debt in real-time. ${stats ? `Currently at $${stats.totalDebtTrillions} trillion` : 'Federal debt analysis'} with detailed breakdowns of holders, growth patterns, and GDP ratios from Treasury data.`}
+              hashtags={['nationaldebt', 'treasury', 'fiscaldata', 'government']}
+              via="letstalkstats"
+              compact={false}
+            />
+          </div>
         </div>
       </div>
 
@@ -296,6 +309,11 @@ function DebtPageContent() {
                   </tbody>
                 </table>
               </div>
+            </div>
+
+            {/* Year-over-Year Comparison */}
+            <div className="mt-8">
+              <YearOverYearComparison />
             </div>
 
             {/* Milestones */}

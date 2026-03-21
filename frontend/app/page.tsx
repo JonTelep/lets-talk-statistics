@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { ArrowRight, TrendingUp, Users, DollarSign, Briefcase, Building2, Vote } from 'lucide-react';
 import { WebsiteStructuredData } from '@/components/seo/StructuredData';
+import { SocialShare } from '@/components/social/SocialShare';
 
 export const metadata: Metadata = {
   title: "Let's Talk Statistics | Government Data Without Spin",
@@ -89,7 +90,7 @@ export default function Home() {
             Objective analysis of U.S. government statistics from official sources.
             No opinions. No narratives. Just data — explore the numbers and draw your own conclusions.
           </p>
-          <div className="flex flex-wrap gap-3">
+          <div className="flex flex-wrap gap-3 mb-8">
             <Link href="/debt" className="btn-primary">
               Explore the data
               <ArrowRight className="ml-2 h-4 w-4" />
@@ -97,6 +98,17 @@ export default function Home() {
             <Link href="/about" className="btn-secondary">
               Methodology
             </Link>
+          </div>
+          
+          {/* Social Share */}
+          <div className="mb-8">
+            <SocialShare 
+              title="Let's Talk Statistics - Government Data Without Spin"
+              description="Explore objective U.S. government statistics from official sources. Congressional trades, national debt, immigration data, employment statistics and more - no opinions, just verified data."
+              hashtags={['govdata', 'statistics', 'transparency', 'congress']}
+              via="letstalkstats"
+              compact={false}
+            />
           </div>
         </div>
       </section>

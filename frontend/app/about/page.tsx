@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { ExternalLink, Database, Calculator, BookOpen, AlertCircle, Scale, TrendingUp, Users, DollarSign, Briefcase, Building2 } from 'lucide-react';
 import Card from '@/components/ui/Card';
+import { SocialShare } from '@/components/social/SocialShare';
 
 export const metadata: Metadata = {
   title: 'About Let\'s Talk Statistics | Government Data Without Spin',
@@ -48,9 +49,20 @@ export default function AboutPage() {
         {/* Header */}
         <div className="mb-12 text-center">
           <h1 className="text-4xl font-semibold text-foreground mb-4">About This Project</h1>
-          <p className="text-lg text-surface-400">
+          <p className="text-lg text-surface-400 mb-6">
             Government data, clearly presented. No spin, no agenda — just the numbers.
           </p>
+          
+          {/* Social Share */}
+          <div className="mb-8">
+            <SocialShare 
+              title="Let's Talk Statistics - Government Data Without Spin"
+              description="Explore objective U.S. government statistics from official sources. No opinions, no narratives, just verified data from Treasury, BLS, FEC, DHS and more federal agencies."
+              hashtags={['govdata', 'statistics', 'transparency', 'federaldata']}
+              via="letstalkstats"
+              compact={false}
+            />
+          </div>
         </div>
 
         {/* Purpose */}
