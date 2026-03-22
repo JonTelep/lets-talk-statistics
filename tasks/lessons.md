@@ -1,5 +1,20 @@
 # tasks/lessons.md - lets-talk-statistics
 
+## 2026-03-22 - Performance Optimization (Overnight Session)
+
+### Performance Infrastructure ✅ 🚀
+- **next.config.ts hardening**: Added compression, security headers (X-Content-Type-Options, X-Frame-Options, X-XSS-Protection), immutable caching for static assets and favicons
+- **Bundle optimization**: `optimizePackageImports` for recharts and lucide-react reduces JS bundle size
+- **Web Vitals monitoring**: CLS, INP, FCP, LCP, TTFB tracking via `web-vitals` package
+- **Service worker**: Offline caching with stale-while-revalidate for API responses — government data rarely changes, so cached responses are nearly always valid
+- **Resource preloading**: Component for preloading critical API endpoints
+
+### Key Lessons 📚
+- **web-vitals v4 API changes**: `getCLS`/`getFID` renamed to `onCLS`/`onINP` — FID replaced by INP (Interaction to Next Paint) as a Core Web Vital
+- **optimizePackageImports is experimental**: Next.js flags it but it works well for tree-shaking heavy libraries like recharts
+- **Service workers need careful cache versioning**: Always version cache names to enable clean cache busting on deploy
+- **Security headers are free performance**: `poweredByHeader: false` removes X-Powered-By, small security win
+
 ## 2026-03-21 - Social Sharing Completion & Historical Data Analysis (Overnight Enhancement)
 
 ### Complete Social Sharing Integration ✅ 📱
