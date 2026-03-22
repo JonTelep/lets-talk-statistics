@@ -140,3 +140,21 @@
   - Static generation success indicates all components compile correctly
 - **Frontend/backend separation** - Project structure with separate frontend/ directory requires proper paths
 - **Zero tolerance for build errors** - TypeScript errors in production completely block deployment
+## 2026-03-22 - PWA & Performance Enhancement Session
+
+### PWA Support Added ✅
+- **Service worker** (`public/sw.js`): network-first for APIs, cache-first for static assets, offline fallback
+- **Web manifest** (`public/manifest.json`): installable PWA with shortcuts to key data pages
+- **Offline page** (`/offline`): graceful degradation with cached data availability info
+- **Route prefetching**: critical pages prefetched on load for faster navigation
+
+### Data Export Component ✅
+- `DataExport.tsx`: reusable component for CSV/JSON/TXT export from any data page
+- Includes metadata headers, proper CSV escaping, and usage guidelines
+- Ready to integrate on debt, employment, congress, etc. pages
+
+### Key Lessons
+- Keep PWA registration simple — module-level flag beats window property hacks for TS
+- Server components can't have onClick handlers — split into layout.tsx (metadata) + client page.tsx
+- Next.js already has great image optimization — don't wrap `<Image>` unnecessarily (KISS)
+- PerformantChart wrapper was over-engineering — existing LazyLineChart etc. already sufficient
