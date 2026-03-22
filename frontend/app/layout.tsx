@@ -6,6 +6,7 @@ import Footer from '@/components/layout/Footer';
 import { SWRProvider } from '@/components/providers/SWRProvider';
 import { ThemeProvider } from '@/components/providers/ThemeProvider';
 import { PreloaderProvider } from '@/components/providers/PreloaderProvider';
+import { PWA } from '@/components/PWA';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -64,6 +65,19 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
+  manifest: '/manifest.json',
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: 'black-translucent',
+    title: "Let's Talk Statistics",
+  },
+  formatDetection: {
+    telephone: false,
+  },
+  other: {
+    'msapplication-TileColor': '#0a0a0a',
+    'msapplication-config': '/browserconfig.xml',
+  },
 };
 
 export default function RootLayout({
@@ -74,6 +88,7 @@ export default function RootLayout({
   return (
     <html lang="en" data-theme="dark" className={`${inter.variable} ${jetbrainsMono.variable}`}>
       <body className="font-sans flex min-h-screen flex-col antialiased">
+        <PWA />
         <ThemeProvider>
           <SWRProvider>
             <PreloaderProvider>
