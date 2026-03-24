@@ -8,6 +8,9 @@ const nextConfig: NextConfig = {
   // Enable gzip/brotli compression for static assets
   compress: true,
 
+  // Turbopack config (Next.js 16 default bundler)
+  turbopack: {},
+
   // API configuration
   async rewrites() {
     return [
@@ -69,6 +72,11 @@ const nextConfig: NextConfig = {
   // Image optimization
   images: {
     remotePatterns: [],
+    formats: ['image/webp', 'image/avif'],
+    minimumCacheTTL: 31536000, // 1 year for optimized images
+    dangerouslyAllowSVG: true,
+    contentDispositionType: 'attachment',
+    contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
   },
 };
 

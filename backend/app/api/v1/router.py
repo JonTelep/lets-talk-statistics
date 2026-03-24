@@ -2,7 +2,7 @@
 
 from fastapi import APIRouter
 
-from app.api.v1.endpoints import debt, employment, budget, elections, immigration, congress, housing, education
+from app.api.v1.endpoints import debt, employment, budget, elections, immigration, congress, housing, education, export
 
 router = APIRouter()
 
@@ -16,6 +16,7 @@ router.include_router(immigration.router)
 router.include_router(congress.router)
 router.include_router(housing.router)
 router.include_router(education.router)
+router.include_router(export.router)
 
 
 @router.get("/health")
@@ -45,5 +46,6 @@ async def health_check():
         "endpoints": [
             "debt", "employment", "budget", "elections",
             "immigration", "congress", "housing", "education",
+            "export",
         ],
     }
