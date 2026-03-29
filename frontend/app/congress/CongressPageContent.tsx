@@ -13,6 +13,7 @@ import {
 import { PIE_COLORS } from '@/components/charts/theme';
 import { useChartTheme } from '@/hooks/useChartTheme';
 import { DownloadRawData } from '@/components/ui/DownloadRawData';
+import ExportData from '@/components/ExportData';
 import { ErrorBoundary } from '@/components/ui/ErrorBoundary';
 import { ErrorState } from '@/components/ui/ErrorState';
 import { Skeleton, StatCardSkeleton, TradesTableSkeleton, ListSkeleton, ChartSkeleton } from '@/components/ui/Skeleton';
@@ -485,15 +486,63 @@ export default function CongressPageContent() {
             </div>
           ) : (
             /* Filtered Results */
-            <CongressTradesTable
-              trades={filteredTrades?.data || []}
-              loading={tradesLoading}
-              totalTrades={filteredTrades?.total}
-              currentPage={currentPage}
-              pageSize={pageSize}
-              onPageChange={handlePageChange}
-              onPoliticianClick={handlePoliticianClick}
-            />
+            <>
+              <CongressTradesTable
+                trades={filteredTrades?.data || []}
+                loading={tradesLoading}
+                totalTrades={filteredTrades?.total}
+                currentPage={currentPage}
+                pageSize={pageSize}
+                onPageChange={handlePageChange}
+                onPoliticianClick={handlePoliticianClick}
+              />
+              
+              {/* Export Filtered Data */}
+              {filteredTrades?.data && filteredTrades.data.length > 0 && (
+                <div className="mt-8">
+                  <ExportData
+                    data={filteredTrades.data}
+                    filename={`congress_trades_${view === 'politician' && selectedPolitician 
+                      ? selectedPolitician.replace(/\s+/g, '_').toLowerCase() 
+                      : 'filtered'}`}
+                    title={`Congressional Trades${view === 'politician' && selectedPolitician 
+                      ? ` - ${selectedPolitician}` 
+                      : ' (Filtered)'}`}
+                    description={`${filteredTrades.total.toLocaleString()} trading records from House and Senate members`}
+                    compact={false}
+                  />
+                </div>
+              )}
+            </>
+          )}
+
+          {/* Export Overview Data */}
+          {view === 'overview' && !loading && (topTraders.length > 0 || topTickers.length > 0) && (
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-8">
+              {/* Export Top Traders */}
+              {topTraders.length > 0 && (
+                <ExportData
+                  data={topTraders}
+                  filename="congress_top_traders"
+                  title="Congressional Trading Leaders"
+                  description="Most active traders in Congress ranked by number of trades"
+                  compact={true}
+                  className="mb-0"
+                />
+              )}
+              
+              {/* Export Top Tickers */}
+              {topTickers.length > 0 && (
+                <ExportData
+                  data={topTickers}
+                  filename="congress_top_stocks"
+                  title="Most Traded Stocks by Congress"
+                  description="Stocks most frequently traded by members of Congress"
+                  compact={true}
+                  className="mb-0"
+                />
+              )}
+            </div>
           )}
         </div>
       </div>
