@@ -14,7 +14,10 @@ Data includes:
 """
 
 import asyncio
+import hashlib
+import json as json_module
 from datetime import datetime, timedelta
+from pathlib import Path
 from typing import Any, Dict, List, Optional
 
 import httpx
@@ -39,13 +42,40 @@ class EducationDataService:
     - College Scorecard API: https://api.data.gov/ed/collegescorecard/
     - NCES IPEDS Data: https://nces.ed.gov/ipeds/datacenter/
     - Data.gov Education: https://api.data.gov/
+    
+    Uses file-based caching (48h TTL) to survive rate limits and restarts.
     """
 
     def __init__(self):
         self.base_url = "https://api.data.gov/ed/collegescorecard/v1"
         self.timeout = 30.0
         self.max_retries = 3
-        self.api_key = settings.DOE_API_KEY if hasattr(settings, 'DOE_API_KEY') else None
+        self.api_key = (settings.DOE_API_KEY if hasattr(settings, 'DOE_API_KEY') and settings.DOE_API_KEY else None) or 'DEMO_KEY'
+        self.cache_dir = settings.data_dir / "cache"
+        self.cache_dir.mkdir(parents=True, exist_ok=True)
+        self._cache_ttl_hours = 48  # Education data doesn't change often
+
+    def _read_cache(self, key: str) -> Optional[Dict]:
+        """Read cached data if still fresh."""
+        safe_key = hashlib.md5(key.encode()).hexdigest()
+        path = self.cache_dir / f"edu_{safe_key}.json"
+        if path.exists():
+            mtime = datetime.fromtimestamp(path.stat().st_mtime)
+            if datetime.now() - mtime < timedelta(hours=self._cache_ttl_hours):
+                try:
+                    return json_module.loads(path.read_text())
+                except Exception:
+                    pass
+        return None
+
+    def _write_cache(self, key: str, data: Dict) -> None:
+        """Write data to file cache."""
+        safe_key = hashlib.md5(key.encode()).hexdigest()
+        path = self.cache_dir / f"edu_{safe_key}.json"
+        try:
+            path.write_text(json_module.dumps(data, indent=2, default=str))
+        except Exception as e:
+            logger.warning(f"Failed to write education cache: {e}")
 
     async def get_enrollment_statistics(self, years: int = 5) -> Dict[str, Any]:
         """
@@ -53,6 +83,11 @@ class EducationDataService:
         
         Returns enrollment trends, demographics, and state breakdowns.
         """
+        cache_key = f"enrollment_{years}"
+        if cached := self._read_cache(cache_key):
+            logger.info("Using cached enrollment data")
+            return cached
+
         try:
             logger.info(f"Fetching education enrollment data for last {years} years")
             
@@ -76,7 +111,7 @@ class EducationDataService:
             processed_data = self._process_enrollment_data(schools)
             
             logger.info(f"Successfully fetched enrollment data for {len(schools)} institutions")
-            return {
+            result = {
                 'success': True,
                 'data': processed_data,
                 'metadata': {
@@ -86,6 +121,8 @@ class EducationDataService:
                     'api_version': 'v1'
                 }
             }
+            self._write_cache(cache_key, result)
+            return result
             
         except httpx.RequestError as e:
             logger.error(f"Network error fetching enrollment data: {e}")
@@ -151,14 +188,20 @@ class EducationDataService:
         
         Returns graduation rates, test scores, and achievement data.
         """
+        cache_key = "outcomes"
+        if cached := self._read_cache(cache_key):
+            logger.info("Using cached outcomes data")
+            return cached
+
         try:
             logger.info("Fetching education outcomes data")
             
             # Fetch graduation rate data from College Scorecard
+            # Note: field names updated — completion_rate_4yr_150nt replaced by rate_suppressed.overall
             params = {
-                'fields': 'school.name,school.state,latest.completion.completion_rate_4yr_150nt,latest.completion.completion_rate_less_than_4yr_150nt,latest.earnings.10_yrs_after_entry.median',
+                'fields': 'school.name,school.state,latest.completion.rate_suppressed.overall,latest.earnings.10_yrs_after_entry.median',
                 'per_page': 2000,
-                'latest.completion.completion_rate_4yr_150nt__range': '0.01..1'
+                'latest.completion.rate_suppressed.overall__range': '0.01..1'
             }
             
             if self.api_key:
@@ -174,7 +217,7 @@ class EducationDataService:
             processed_data = self._process_outcomes_data(schools)
             
             logger.info(f"Successfully fetched outcomes data for {len(schools)} institutions")
-            return {
+            result = {
                 'success': True,
                 'data': processed_data,
                 'metadata': {
@@ -184,6 +227,8 @@ class EducationDataService:
                     'note': 'Higher education completion rates and earnings data'
                 }
             }
+            self._write_cache(cache_key, result)
+            return result
             
         except Exception as e:
             logger.error(f"Error fetching outcomes data: {e}")
@@ -197,24 +242,23 @@ class EducationDataService:
         
         for school in schools:
             try:
-                # Get enrollment
-                size = school.get('latest', {}).get('student', {}).get('size')
+                # Handle flat dot-notation keys from College Scorecard API
+                size = school.get('latest.student.size')
                 if size and isinstance(size, (int, float)) and size > 0:
                     total_enrollment += size
                     
                     # Group by state
-                    state = school.get('school', {}).get('state')
+                    state = school.get('school.state')
                     if state:
                         enrollment_by_state[state] = enrollment_by_state.get(state, 0) + size
                     
                     # Collect tuition data
-                    cost = school.get('latest', {}).get('cost', {}).get('tuition', {})
-                    in_state = cost.get('in_state')
-                    out_state = cost.get('out_of_state')
+                    in_state = school.get('latest.cost.tuition.in_state')
+                    out_state = school.get('latest.cost.tuition.out_of_state')
                     
                     if in_state and isinstance(in_state, (int, float)) and in_state > 0:
                         tuition_data.append({
-                            'name': school.get('school', {}).get('name', ''),
+                            'name': school.get('school.name', ''),
                             'state': state,
                             'in_state': in_state,
                             'out_of_state': out_state,
@@ -247,22 +291,26 @@ class EducationDataService:
         }
 
     def _process_outcomes_data(self, schools: List[Dict]) -> Dict[str, Any]:
-        """Process raw outcomes data into structured format."""
+        """Process raw outcomes data into structured format.
+        
+        Note: College Scorecard API returns flat dot-notation keys like
+        'latest.completion.rate_suppressed.overall' rather than nested dicts.
+        """
         completion_rates = []
         earnings_data = []
         state_averages = {}
         
         for school in schools:
             try:
-                completion = school.get('latest', {}).get('completion', {})
-                earnings = school.get('latest', {}).get('earnings', {}).get('10_yrs_after_entry', {})
+                # Handle flat dot-notation keys from College Scorecard API
+                completion_rate = school.get('latest.completion.rate_suppressed.overall')
+                median_earnings = school.get('latest.earnings.10_yrs_after_entry.median')
+                state = school.get('school.state')
+                name = school.get('school.name', '')
                 
-                # Get completion rate (4-year institutions)
-                completion_rate = completion.get('completion_rate_4yr_150nt')
                 if completion_rate and isinstance(completion_rate, (int, float)):
-                    state = school.get('school', {}).get('state')
                     completion_rates.append({
-                        'name': school.get('school', {}).get('name', ''),
+                        'name': name,
                         'state': state,
                         'completion_rate': completion_rate
                     })
@@ -274,16 +322,17 @@ class EducationDataService:
                         state_averages[state]['rates'].append(completion_rate)
                 
                 # Get earnings data
-                median_earnings = earnings.get('median')
                 if median_earnings and isinstance(median_earnings, (int, float)) and median_earnings > 0:
                     earnings_data.append({
-                        'name': school.get('school', {}).get('name', ''),
-                        'state': school.get('school', {}).get('state'),
+                        'name': name,
+                        'state': state,
                         'median_earnings': median_earnings,
                         'completion_rate': completion_rate
                     })
                     
                     if state and median_earnings:
+                        if state not in state_averages:
+                            state_averages[state] = {'rates': [], 'earnings': []}
                         state_averages[state]['earnings'].append(median_earnings)
                         
             except (KeyError, TypeError, ValueError):
@@ -320,30 +369,34 @@ class EducationDataService:
         
         Combines enrollment, spending, and outcomes data.
         """
+        cache_key = "overview"
+        if cached := self._read_cache(cache_key):
+            logger.info("Using cached education overview")
+            return cached
+
         try:
             logger.info("Fetching comprehensive education overview")
             
-            # Run all data collection concurrently
-            enrollment_task = self.get_enrollment_statistics()
-            spending_task = self.get_spending_statistics()
-            outcomes_task = self.get_outcomes_statistics()
+            # Run sequentially to avoid DEMO_KEY rate limits (1 req/sec)
+            # Spending is local/static so run it first (no API call)
+            spending_data = await self.get_spending_statistics()
             
-            enrollment_data, spending_data, outcomes_data = await asyncio.gather(
-                enrollment_task, spending_task, outcomes_task, return_exceptions=True
-            )
-            
-            # Handle any errors
-            if isinstance(enrollment_data, Exception):
-                logger.warning(f"Enrollment data failed: {enrollment_data}")
+            try:
+                enrollment_data = await self.get_enrollment_statistics()
+            except Exception as e:
+                logger.warning(f"Enrollment data failed: {e}")
                 enrollment_data = {'success': False, 'data': {}}
             
-            if isinstance(spending_data, Exception):
-                logger.warning(f"Spending data failed: {spending_data}")
-                spending_data = {'success': False, 'data': {}}
+            # Brief pause to respect rate limits
+            await asyncio.sleep(1.5)
             
-            if isinstance(outcomes_data, Exception):
-                logger.warning(f"Outcomes data failed: {outcomes_data}")
+            try:
+                outcomes_data = await self.get_outcomes_statistics()
+            except Exception as e:
+                logger.warning(f"Outcomes data failed: {e}")
                 outcomes_data = {'success': False, 'data': {}}
+            
+            # Ensure all data is dict-like (fallback already handled above)
             
             # Combine all data
             overview = {
@@ -359,7 +412,7 @@ class EducationDataService:
             }
             
             logger.info("Successfully compiled education overview")
-            return {
+            result = {
                 'success': True,
                 'data': overview,
                 'metadata': {
@@ -372,6 +425,10 @@ class EducationDataService:
                     'coverage': 'Higher education focus - K-12 data limited'
                 }
             }
+            # Only cache if we got real data (not empty fallbacks)
+            if overview.get('enrollment') or overview.get('outcomes'):
+                self._write_cache(cache_key, result)
+            return result
             
         except Exception as e:
             logger.error(f"Error compiling education overview: {e}")

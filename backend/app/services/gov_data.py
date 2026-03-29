@@ -173,21 +173,23 @@ class GovDataService:
     
     async def get_state_populations(self, year: int = None) -> dict:
         """
-        Get state population estimates from Census Bureau.
+        Get state population estimates from Census Bureau ACS 1-Year Estimates.
         
         Source: https://www.census.gov/
-        Updates: Annually
+        Updates: Annually (ACS 1-year typically available ~Sep of following year)
         """
-        year = year or datetime.now().year - 1  # Previous year usually has data
-        cache_key = f"census_population_{year}"
+        # ACS 1-year data: latest reliably available is 2023
+        year = year or 2023
+        cache_key = f"census_population_acs_{year}"
         
         if cached := self._read_cache(cache_key):
             return cached
         
-        # Census Population Estimates API
-        url = f"https://api.census.gov/data/{year}/pep/population"
+        # Use ACS 1-Year Estimates (B01001_001E = total population)
+        # PEP /population endpoint was restructured by Census Bureau
+        url = f"https://api.census.gov/data/{year}/acs/acs1"
         params = {
-            "get": "NAME,POP",
+            "get": "NAME,B01001_001E",
             "for": "state:*"
         }
         
@@ -201,7 +203,7 @@ class GovDataService:
         rows = data[1:]
         
         result = {
-            "source": "U.S. Census Bureau",
+            "source": "U.S. Census Bureau (ACS 1-Year Estimates)",
             "year": year,
             "fetched_at": datetime.now().isoformat(),
             "data": [
