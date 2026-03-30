@@ -19,8 +19,8 @@ import { Skeleton, StatCardSkeleton, ChartSkeleton } from '@/components/ui/Skele
 import { useChartTheme } from '@/hooks/useChartTheme';
 import { GovernmentDataStructuredData } from '@/components/seo/StructuredData';
 
-const API_HOST = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
-const API_URL = `${API_HOST.replace(/\/$/, '')}/api/v1`;
+// API is same-origin (Next.js API routes)
+const API_URL = '/api/v1';
 
 export default function ImmigrationPageContent() {
   const { data: summaryData, loading: summaryLoading, error: summaryError, refetch: refetchSummary } = useImmigrationSummary();

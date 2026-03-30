@@ -6,7 +6,7 @@
  * The /api/v1 prefix is always appended automatically.
  */
 
-const API_HOST = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
+const API_HOST = '';
 const API_BASE_URL = `${API_HOST.replace(/\/$/, '')}/api/v1`;
 
 interface FetchOptions extends RequestInit {

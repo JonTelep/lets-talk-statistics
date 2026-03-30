@@ -19,8 +19,8 @@ import { ErrorState } from '@/components/ui/ErrorState';
 import { Skeleton, StatCardSkeleton, TradesTableSkeleton, ListSkeleton, ChartSkeleton } from '@/components/ui/Skeleton';
 import { SocialShare } from '@/components/social/SocialShare';
 
-const API_HOST = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
-const API_URL = `${API_HOST.replace(/\/$/, '')}/api/v1`;
+// API is same-origin (Next.js API routes)
+const API_URL = '/api/v1';
 
 // Cache for overview data (5 minutes TTL)
 const CACHE_TTL = 5 * 60 * 1000; // 5 minutes

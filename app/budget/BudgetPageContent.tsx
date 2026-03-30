@@ -14,8 +14,8 @@ import { ErrorState } from '@/components/ui/ErrorState';
 import { Skeleton, StatCardSkeleton, TableSkeleton, ChartSkeleton } from '@/components/ui/Skeleton';
 import { SocialShare } from '@/components/social/SocialShare';
 
-const API_HOST = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
-const API_URL = `${API_HOST.replace(/\/$/, '')}/api/v1`;
+// API is same-origin (Next.js API routes)
+const API_URL = '/api/v1';
 
 const spendingCategories = [
   { category: 'Mandatory (Entitlements)', amount: 4.09, percent: 66.7 },

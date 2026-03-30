@@ -15,8 +15,8 @@ import { useChartTheme } from '@/hooks/useChartTheme';
 import { SocialShare } from '@/components/social/SocialShare';
 import { YearOverYearComparison } from '@/components/debt/YearOverYearComparison';
 
-const API_HOST = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
-const API_URL = `${API_HOST.replace(/\/$/, '')}/api/v1`;
+// API is same-origin (Next.js API routes)
+const API_URL = '/api/v1';
 
 const PIE_COLORS = ['#3b82f6', '#10b981', '#ef4444', '#f59e0b', '#8b5cf6', '#ec4899', '#06b6d4'];
 const LINE_COLORS = ['#3b82f6', '#10b981', '#f59e0b', '#ef4444', '#8b5cf6'];

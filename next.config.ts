@@ -1,25 +1,16 @@
 import type { NextConfig } from 'next';
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
-
 const nextConfig: NextConfig = {
   reactStrictMode: true,
-  
+
   // Enable gzip/brotli compression for static assets
   compress: true,
 
   // Turbopack config (Next.js 16 default bundler)
   turbopack: {},
 
-  // API configuration
-  async rewrites() {
-    return [
-      {
-        source: '/api/:path*',
-        destination: `${API_URL}/:path*`,
-      },
-    ];
-  },
+  // Standalone output for single-container deployment
+  output: 'standalone',
 
   // Security and caching headers
   async headers() {
@@ -41,6 +32,16 @@ const nextConfig: NextConfig = {
           {
             key: 'Cache-Control',
             value: 'public, max-age=31536000, immutable',
+          },
+        ],
+      },
+      {
+        // Cache API responses (1 hour, stale-while-revalidate 24 hours)
+        source: '/api/v1/:path*',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=3600, stale-while-revalidate=86400',
           },
         ],
       },
@@ -73,7 +74,7 @@ const nextConfig: NextConfig = {
   images: {
     remotePatterns: [],
     formats: ['image/webp', 'image/avif'],
-    minimumCacheTTL: 31536000, // 1 year for optimized images
+    minimumCacheTTL: 31536000,
     dangerouslyAllowSVG: true,
     contentDispositionType: 'attachment',
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",

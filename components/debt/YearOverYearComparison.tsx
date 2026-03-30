@@ -6,7 +6,7 @@ import { useChartTheme } from '@/hooks/useChartTheme';
 import { ChartSkeleton } from '@/components/ui/Skeleton';
 import { ErrorStateCompact } from '@/components/ui/ErrorState';
 
-const API_HOST = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
+const API_HOST = '';
 const API_URL = `${API_HOST.replace(/\/$/, '')}/api/v1`;
 
 interface DebtDataPoint {

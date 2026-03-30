@@ -6,8 +6,8 @@ import Link from 'next/link';
 import Spinner from '@/components/ui/Spinner';
 import { ErrorState } from '@/components/ui/ErrorState';
 
-const API_HOST = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
-const API_URL = `${API_HOST.replace(/\/$/, '')}/api/v1`;
+// API is same-origin (Next.js API routes)
+const API_URL = '/api/v1';
 
 interface Trade { politician: string; chamber: string; party?: string; state?: string; ticker: string; asset_name: string; type: string; amount: string; date: string; disclosure_date: string; filing_url: string; }
 interface TradesResponse { total: number; limit: number; offset: number; transactions: Trade[]; }

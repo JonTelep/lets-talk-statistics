@@ -1,45 +1,31 @@
-# Frontend Dockerfile - Multi-stage build
+# Single-container Next.js standalone build
+# No Python backend required — all API routes are Next.js API routes
 FROM docker.io/library/node:20-alpine AS builder
 
 WORKDIR /app
 
-# Build-time arguments for Next.js public env vars (inlined at build)
-ARG NEXT_PUBLIC_API_URL=http://localhost:8000
 ARG NEXT_PUBLIC_SITE_NAME="Let's Talk Statistics"
-
-# Set as env vars for the build process
-ENV NEXT_PUBLIC_API_URL=$NEXT_PUBLIC_API_URL
 ENV NEXT_PUBLIC_SITE_NAME=$NEXT_PUBLIC_SITE_NAME
 
-# Copy package files
 COPY package*.json ./
-
-# Install dependencies
 RUN npm ci
 
-# Copy application code
 COPY . .
-
-# Build the application
 RUN npm run build
 
-# Production stage
+# Production stage — standalone output
 FROM docker.io/library/node:20-alpine AS runner
 
 WORKDIR /app
 
-# Copy necessary files from builder
-COPY --from=builder /app/package*.json ./
-COPY --from=builder /app/.next ./.next
-COPY --from=builder /app/public ./public
-COPY --from=builder /app/node_modules ./node_modules
-
-# Expose port
-EXPOSE 3003
-
-# Set environment to production
 ENV NODE_ENV=production
 ENV PORT=3003
 
-# Start the application
-CMD ["npm", "start"]
+# Copy standalone build + static assets
+COPY --from=builder /app/.next/standalone ./
+COPY --from=builder /app/.next/static ./.next/static
+COPY --from=builder /app/public ./public
+
+EXPOSE 3003
+
+CMD ["node", "server.js"]

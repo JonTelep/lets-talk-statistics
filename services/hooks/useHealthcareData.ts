@@ -12,7 +12,7 @@ import {
 } from '../../types/healthcare';
 import { cachedFetch } from '../cache/dataCache';
 
-const API_HOST = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
+const API_HOST = '';
 const API_BASE_URL = `${API_HOST.replace(/\/$/, '')}/api/v1`;
 
 interface UseDataResult<T> {

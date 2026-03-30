@@ -10,8 +10,8 @@ import { LazyBarChart, LazyBar, LazyXAxis, LazyYAxis, LazyCartesianGrid, LazyToo
 import { PIE_COLORS } from '@/components/charts/theme';
 import { useChartTheme } from '@/hooks/useChartTheme';
 
-const API_HOST = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
-const API_URL = `${API_HOST.replace(/\/$/, '')}/api/v1`;
+// API is same-origin (Next.js API routes)
+const API_URL = '/api/v1';
 
 interface Trade {
   politician: string;

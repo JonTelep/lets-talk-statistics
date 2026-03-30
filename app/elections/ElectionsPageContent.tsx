@@ -12,8 +12,8 @@ import { ErrorBoundary } from '@/components/ui/ErrorBoundary';
 import { ErrorStateCompact } from '@/components/ui/ErrorState';
 import { Skeleton } from '@/components/ui/Skeleton';
 
-const API_HOST = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
-const API_URL = `${API_HOST.replace(/\/$/, '')}/api/v1`;
+// API is same-origin (Next.js API routes)
+const API_URL = '/api/v1';
 
 const fundingComparison = { majorPartyGrant: 123_500_000 };
 

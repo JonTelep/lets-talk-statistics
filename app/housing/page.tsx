@@ -11,8 +11,8 @@ import { StatCardSkeleton, ChartSkeleton } from '@/components/ui/Skeleton';
 import { useChartTheme } from '@/hooks/useChartTheme';
 import type { ComponentType } from 'react';
 
-const API_HOST = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
-const API_URL = `${API_HOST.replace(/\/$/, '')}/api/v1`;
+// API is same-origin (Next.js API routes)
+const API_URL = '/api/v1';
 
 // Date range presets
 const DATE_RANGES: Record<string, string> = {
