@@ -1,193 +1,102 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { ArrowRight, TrendingUp, Users, DollarSign, Briefcase, Building2, Vote } from 'lucide-react';
-import { WebsiteStructuredData } from '@/components/seo/StructuredData';
-import { SocialShare } from '@/components/social/SocialShare';
+import HeadlineCard from '@/components/home/HeadlineCard';
+import { latestPoint, site, sourceFor } from '@/lib/site';
+
+const description = 'Latest official figures for prices, the federal debt, unemployment, and household income, each with its government source.';
 
 export const metadata: Metadata = {
-  title: "Let's Talk Statistics | Government Data Without Spin",
-  description: 'Explore objective analysis of US government data. Congressional stock trades, immigration statistics, employment data, national debt, and federal spending from official sources.',
-  keywords: ['government statistics', 'congressional trades', 'immigration data', 'federal spending', 'national debt', 'employment statistics', 'objective analysis', 'government transparency'],
+  title: "Let's Talk Statistics",
+  description,
+  alternates: { canonical: 'https://letstalkstatistics.com' },
   openGraph: {
-    title: "Let's Talk Statistics | Government Data Without Spin",
-    description: 'Your source for objective government statistical analysis. Explore congressional trades, immigration, employment, debt, and spending data.',
+    title: "Let's Talk Statistics",
+    description,
     url: 'https://letstalkstatistics.com',
-    images: [
-      {
-        url: '/og-home.png',
-        width: 1200,
-        height: 630,
-        alt: "Let's Talk Statistics - Government Data Dashboard",
-      },
-    ],
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: "Let's Talk Statistics" }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Let's Talk Statistics | Government Data",
-    description: 'Objective analysis of US government statistics and data from official sources.',
-    images: ['/og-home.png'],
+    title: "Let's Talk Statistics",
+    description,
+    images: ['/og-image.png'],
   },
 };
 
-const categories = [
+const HEADLINES = [
   {
-    name: 'Congressional Trading',
-    description: 'Stock trades by members of Congress under STOCK Act disclosures.',
-    href: '/congress',
-    icon: TrendingUp,
-    stat: '435+ Members tracked',
+    seriesId: 'cpi_u_all_items_12_month_change',
+    href: '/prices#cpi-u-12-month-change',
   },
   {
-    name: 'Immigration',
-    description: 'Legal immigration, deportations, and border encounter statistics.',
-    href: '/immigration',
-    icon: Users,
-    stat: 'DHS & CBP data',
+    seriesId: 'treasury_debt_total_monthly',
+    href: '/budget#debt-to-the-penny',
   },
   {
-    name: 'Employment',
-    description: 'Unemployment rates, job growth, and labor force statistics.',
-    href: '/employment',
-    icon: Briefcase,
-    stat: 'BLS monthly data',
+    seriesId: 'bls_lns14000000_monthly',
+    href: '/economy#unemployment-rate',
   },
   {
-    name: 'National Debt',
-    description: 'Federal debt tracking, who holds our debt, and historical growth.',
-    href: '/debt',
-    icon: Building2,
-    stat: 'Real-time Treasury',
-  },
-  {
-    name: 'Election Funding',
-    description: 'Campaign finance, ballot access barriers, and the two-party system.',
-    href: '/elections',
-    icon: Vote,
-    stat: 'FEC data',
-  },
-  {
-    name: 'Federal Budget',
-    description: 'Government spending, revenue, and deficit tracking by agency.',
-    href: '/budget',
-    icon: DollarSign,
-    stat: 'Treasury data',
+    seriesId: 'census_median_income_adjusted',
+    href: '/economy#median-household-income',
   },
 ];
 
-export default function Home() {
+const PAGES = [
+  { href: '/prices', name: 'Prices and inflation', page: 'prices' },
+  { href: '/budget', name: 'Federal budget and debt', page: 'budget' },
+  { href: '/economy', name: 'Economy and wages', page: 'economy' },
+  { href: '/crime', name: 'Crime', page: 'crime' },
+  { href: '/immigration', name: 'Immigration', page: 'immigration' },
+  { href: '/sources', name: 'Sources and methodology', page: 'sources' },
+];
+
+export default function HomePage() {
+  const headlines = HEADLINES.flatMap((item) => {
+    const series = site.series[item.seriesId];
+    const latest = latestPoint(item.seriesId);
+    if (!series || !latest) return [];
+    return [{ ...item, series, source: sourceFor(series) }];
+  });
+  const website = {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: "Let's Talk Statistics",
+    url: 'https://letstalkstatistics.com',
+    description,
+  };
+
   return (
-    <div className="flex flex-col">
-      <WebsiteStructuredData />
-      {/* Hero */}
-      <section className="px-4 sm:px-6 lg:px-8 pt-24 pb-20">
-        <div className="mx-auto max-w-4xl">
-          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-semibold tracking-tight text-foreground mb-6">
-            Government data,
-            <br />
-            <span className="text-surface-400">without the spin.</span>
-          </h1>
-          <p className="text-lg text-surface-500 max-w-2xl mb-10 leading-relaxed">
-            Objective analysis of U.S. government statistics from official sources.
-            No opinions. No narratives. Just data — explore the numbers and draw your own conclusions.
-          </p>
-          <div className="flex flex-wrap gap-3 mb-8">
-            <Link href="/debt" className="btn-primary">
-              Explore the data
-              <ArrowRight className="ml-2 h-4 w-4" />
+    <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(website) }} />
+      <h1>Let&apos;s Talk Statistics</h1>
+      <p className="mt-4 max-w-3xl text-base sm:text-lg">
+        Charts of official U.S. government statistics. Retrieved {site.generated_at.slice(0, 10)}.
+      </p>
+
+      <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2">
+        {headlines.map((item) => (
+          <HeadlineCard
+            key={item.seriesId}
+            href={item.href}
+            series={item.series}
+            source={item.source}
+            points={item.series.points}
+          />
+        ))}
+      </div>
+
+      <div className="mt-10 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
+        {PAGES.map((page) => {
+          const count = site.charts.filter((chart) => chart.page === page.page).length;
+          return (
+            <Link key={page.href} href={page.href} className="card card-hover p-4">
+              <h2 className="text-lg">{page.name}</h2>
+              <p className="mt-2 text-sm">{count === 0 ? 'No chart in this build.' : `${count} charts`}</p>
             </Link>
-            <Link href="/about" className="btn-secondary">
-              Methodology
-            </Link>
-          </div>
-          
-          {/* Social Share */}
-          <div className="mb-8">
-            <SocialShare 
-              title="Let's Talk Statistics - Government Data Without Spin"
-              description="Explore objective U.S. government statistics from official sources. Congressional trades, national debt, immigration data, employment statistics and more - no opinions, just verified data."
-              hashtags={['govdata', 'statistics', 'transparency', 'congress']}
-              via="letstalkstats"
-              compact={false}
-            />
-          </div>
-        </div>
-      </section>
-
-      {/* Categories */}
-      <section className="px-4 sm:px-6 lg:px-8 pb-24">
-        <div className="mx-auto max-w-7xl">
-          <div className="mb-12">
-            <h2 className="text-2xl font-semibold text-foreground mb-2">Data categories</h2>
-            <p className="text-surface-500">
-              Each category pulls directly from official U.S. government data sources.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {categories.map((category) => {
-              const Icon = category.icon;
-              return (
-                <Link key={category.name} href={category.href} className="group">
-                  <div className="card card-hover h-full p-6">
-                    <div className="flex items-start justify-between mb-4">
-                      <Icon className="h-5 w-5 text-surface-500 group-hover:text-foreground transition-colors" />
-                      <ArrowRight className="h-4 w-4 text-surface-600 group-hover:text-surface-400 group-hover:translate-x-0.5 transition-all" />
-                    </div>
-                    <h3 className="text-base font-medium text-foreground mb-2 group-hover:text-foreground">
-                      {category.name}
-                    </h3>
-                    <p className="text-sm text-surface-500 mb-4 leading-relaxed">
-                      {category.description}
-                    </p>
-                    <p className="text-xs text-surface-600 font-mono">
-                      {category.stat}
-                    </p>
-                  </div>
-                </Link>
-              );
-            })}
-          </div>
-        </div>
-      </section>
-
-      {/* Principles */}
-      <section className="border-t border-border px-4 sm:px-6 lg:px-8 py-24">
-        <div className="mx-auto max-w-4xl">
-          <div className="grid md:grid-cols-3 gap-12">
-            <div>
-              <p className="text-xs font-mono text-surface-600 mb-3">01</p>
-              <h3 className="text-base font-medium text-foreground mb-2">Data first</h3>
-              <p className="text-sm text-surface-500 leading-relaxed">
-                Raw numbers from official government sources. No cherry-picking, no selective framing.
-              </p>
-            </div>
-            <div>
-              <p className="text-xs font-mono text-surface-600 mb-3">02</p>
-              <h3 className="text-base font-medium text-foreground mb-2">Unbiased</h3>
-              <p className="text-sm text-surface-500 leading-relaxed">
-                Zero editorializing. We present findings and let you form your own conclusions.
-              </p>
-            </div>
-            <div>
-              <p className="text-xs font-mono text-surface-600 mb-3">03</p>
-              <h3 className="text-base font-medium text-foreground mb-2">Transparent</h3>
-              <p className="text-sm text-surface-500 leading-relaxed">
-                Every statistic links to its source. Full methodology disclosed. Verify everything.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Source attribution */}
-      <section className="border-t border-border px-4 sm:px-6 lg:px-8 py-12">
-        <div className="mx-auto max-w-4xl text-center">
-          <p className="text-xs text-surface-600">
-            All data sourced from U.S. Treasury, DHS, BLS, OMB, and FEC.
-            Built by <a href="https://telep.io" className="text-surface-500 hover:text-foreground transition-colors">Telep IO</a>.
-          </p>
-        </div>
-      </section>
+          );
+        })}
+      </div>
     </div>
   );
 }

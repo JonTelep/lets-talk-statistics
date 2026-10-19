@@ -6,14 +6,12 @@ import { Menu, X, Sun, Moon } from 'lucide-react';
 import { useTheme } from '@/components/providers/ThemeProvider';
 
 const navLinks = [
-  { name: 'Congress', href: '/congress' },
-  { name: 'Immigration', href: '/immigration' },
-  { name: 'Employment', href: '/employment' },
-  { name: 'Education', href: '/education' },
-  { name: 'Debt', href: '/debt' },
-  { name: 'Elections', href: '/elections' },
+  { name: 'Prices', href: '/prices' },
   { name: 'Budget', href: '/budget' },
-  { name: 'About', href: '/about' },
+  { name: 'Economy', href: '/economy' },
+  { name: 'Crime', href: '/crime' },
+  { name: 'Immigration', href: '/immigration' },
+  { name: 'Sources', href: '/sources' },
 ];
 
 export default function Header() {
@@ -31,7 +29,7 @@ export default function Header() {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex lg:items-center lg:gap-1">
+          <div className="hidden md:flex md:items-center md:gap-1">
             {navLinks.map((link) => (
               <Link
                 key={link.name}
@@ -51,7 +49,7 @@ export default function Header() {
           </div>
 
           {/* Mobile menu buttons */}
-          <div className="flex items-center gap-2 lg:hidden">
+          <div className="flex items-center gap-2 md:hidden">
             <button
               onClick={toggleTheme}
               className="p-2 text-surface-400 hover:text-surface-100 transition-colors"
@@ -76,7 +74,7 @@ export default function Header() {
 
         {/* Mobile menu */}
         {mobileMenuOpen && (
-          <div className="lg:hidden border-t border-border py-4">
+          <div className="md:hidden border-t border-border py-4">
             <div className="flex flex-col gap-1">
               {navLinks.map((link) => (
                 <Link

@@ -1,0 +1,302 @@
+{
+  "generated_at": "2026-10-19T01:03:46Z",
+  "sources": [
+    {
+      "id": "bls_cu_series",
+      "publisher": "U.S. Bureau of Labor Statistics",
+      "title": "CPI series file (cu.series), selected CPI-U series",
+      "url": "https://download.bls.gov/pub/time.series/cu/cu.series",
+      "retrieved_at": "2026-10-19T01:03:25Z",
+      "sha256": "95c5cee06cb1f6bae0bc6c9ef59dcae4f8861ce1de9dc569f51b7dbc7e0c7c4a",
+      "bytes": 1007,
+      "path": "data/raw/bls/cu.series.selected.tsv",
+      "format": "bls_series_tsv"
+    },
+    {
+      "id": "bls_cuur0000sa0",
+      "publisher": "U.S. Bureau of Labor Statistics",
+      "title": "All items in U.S. city average, all urban consumers, not seasonally adjusted",
+      "url": "https://download.bls.gov/pub/time.series/cu/cu.data.1.AllItems",
+      "retrieved_at": "2026-10-19T01:03:25Z",
+      "sha256": "39d259017b72d0511835417750b0605669b3d0de90799d8510800c93e9103dd2",
+      "bytes": 60657,
+      "path": "data/raw/bls/CUUR0000SA0.tsv",
+      "format": "bls_tsv",
+      "series_url": "https://data.bls.gov/timeseries/CUUR0000SA0",
+      "bls_series_id": "CUUR0000SA0"
+    },
+    {
+      "id": "bls_cuur0000saf1",
+      "publisher": "U.S. Bureau of Labor Statistics",
+      "title": "Food in U.S. city average, all urban consumers, not seasonally adjusted",
+      "url": "https://download.bls.gov/pub/time.series/cu/cu.data.11.USFoodBeverage",
+      "retrieved_at": "2026-10-19T01:03:25Z",
+      "sha256": "5096d345b77655d5236ac1903bf683dfdb8f924df5bd0495e1a38a0ba66382b5",
+      "bytes": 60657,
+      "path": "data/raw/bls/CUUR0000SAF1.tsv",
+      "format": "bls_tsv",
+      "series_url": "https://data.bls.gov/timeseries/CUUR0000SAF1",
+      "bls_series_id": "CUUR0000SAF1"
+    },
+    {
+      "id": "bls_cuur0000sah1",
+      "publisher": "U.S. Bureau of Labor Statistics",
+      "title": "Shelter in U.S. city average, all urban consumers, not seasonally adjusted",
+      "url": "https://download.bls.gov/pub/time.series/cu/cu.data.12.USHousing",
+      "retrieved_at": "2026-10-19T01:03:25Z",
+      "sha256": "905c8a9e74a36c2a79b2cfb6411be6ca96db63e4a1e2808572bbcb00fded9c26",
+      "bytes": 39378,
+      "path": "data/raw/bls/CUUR0000SAH1.tsv",
+      "format": "bls_tsv",
+      "series_url": "https://data.bls.gov/timeseries/CUUR0000SAH1",
+      "bls_series_id": "CUUR0000SAH1"
+    },
+    {
+      "id": "bls_cuur0000sa0e",
+      "publisher": "U.S. Bureau of Labor Statistics",
+      "title": "Energy in U.S. city average, all urban consumers, not seasonally adjusted",
+      "url": "https://download.bls.gov/pub/time.series/cu/cu.data.20.USCommoditiesServicesSpecial",
+      "retrieved_at": "2026-10-19T01:03:25Z",
+      "sha256": "57b4c319e7090b466eb089fdcb50f8539c9ebb947e6c1d41b4464c574ebff5dd",
+      "bytes": 37205,
+      "path": "data/raw/bls/CUUR0000SA0E.tsv",
+      "format": "bls_tsv",
+      "series_url": "https://data.bls.gov/timeseries/CUUR0000SA0E",
+      "bls_series_id": "CUUR0000SA0E"
+    },
+    {
+      "id": "bls_cuur0000sam",
+      "publisher": "U.S. Bureau of Labor Statistics",
+      "title": "Medical care in U.S. city average, all urban consumers, not seasonally adjusted",
+      "url": "https://download.bls.gov/pub/time.series/cu/cu.data.15.USMedical",
+      "retrieved_at": "2026-10-19T01:03:25Z",
+      "sha256": "5aa5d9a6f4ed65818900cc905d8d4f8152a144edaace8cf57ce1141be372ab29",
+      "bytes": 44995,
+      "path": "data/raw/bls/CUUR0000SAM.tsv",
+      "format": "bls_tsv",
+      "series_url": "https://data.bls.gov/timeseries/CUUR0000SAM",
+      "bls_series_id": "CUUR0000SAM"
+    },
+    {
+      "id": "bls_cuur0000sae1",
+      "publisher": "U.S. Bureau of Labor Statistics",
+      "title": "Education in U.S. city average, all urban consumers, not seasonally adjusted",
+      "url": "https://download.bls.gov/pub/time.series/cu/cu.data.17.USEducationAndCommunication",
+      "retrieved_at": "2026-10-19T01:03:25Z",
+      "sha256": "fe92a65b5e735bfdc544ee17594c932bfaed199adf90e6a63f3c201c459f3e50",
+      "bytes": 18017,
+      "path": "data/raw/bls/CUUR0000SAE1.tsv",
+      "format": "bls_tsv",
+      "series_url": "https://data.bls.gov/timeseries/CUUR0000SAE1",
+      "bls_series_id": "CUUR0000SAE1"
+    },
+    {
+      "id": "bls_ce_series",
+      "publisher": "U.S. Bureau of Labor Statistics",
+      "title": "CES series file (ce.series), selected earnings series",
+      "url": "https://download.bls.gov/pub/time.series/ce/ce.series",
+      "retrieved_at": "2026-10-19T01:03:25Z",
+      "sha256": "4c391f06bfdd6d9c472e98c9dd3cdc5ea5ed27d3bd2e486554a302460c6784cf",
+      "bytes": 773,
+      "path": "data/raw/bls/ce.series.selected.tsv",
+      "format": "bls_series_tsv"
+    },
+    {
+      "id": "bls_ce_data_05b_totalprivate_allemployeehoursandearnings",
+      "publisher": "U.S. Bureau of Labor Statistics",
+      "title": "Average hourly earnings of all employees, total private, not seasonally adjusted; Average hourly earnings of all employees, 1982-1984 dollars, total private, not seasonally adjusted",
+      "url": "https://download.bls.gov/pub/time.series/ce/ce.data.05b.TotalPrivate.AllEmployeeHoursAndEarnings",
+      "retrieved_at": "2026-10-19T01:03:25Z",
+      "sha256": "6412e37aee86e1f5fcaf6c57582cc34c3ace1082312b4b5b94603c290a33cd6a",
+      "bytes": 21876,
+      "path": "data/raw/bls/ce.data.05b.TotalPrivate.AllEmployeeHoursAndEarnings.selected.tsv",
+      "format": "bls_tsv",
+      "bls_series_ids": [
+        "CEU0500000003",
+        "CEU0500000013"
+      ]
+    },
+    {
+      "id": "bls_ce_data_05c_totalprivate_productionemployeehoursandearnings",
+      "publisher": "U.S. Bureau of Labor Statistics",
+      "title": "Average hourly earnings of production and nonsupervisory employees, total private, not seasonally adjusted; Average hourly earnings of production and nonsupervisory employees, 1982-84 dollars, total private, not seasonally adjusted",
+      "url": "https://download.bls.gov/pub/time.series/ce/ce.data.05c.TotalPrivate.ProductionEmployeeHoursAndEarnings",
+      "retrieved_at": "2026-10-19T01:03:25Z",
+      "sha256": "80c5eddd7c0c4a02ad90f402c901593411faba6f06a38aca06e7803f00c03e58",
+      "bytes": 66894,
+      "path": "data/raw/bls/ce.data.05c.TotalPrivate.ProductionEmployeeHoursAndEarnings.selected.tsv",
+      "format": "bls_tsv",
+      "bls_series_ids": [
+        "CEU0500000008",
+        "CEU0500000032"
+      ]
+    },
+    {
+      "id": "bls_ln_series",
+      "publisher": "U.S. Bureau of Labor Statistics",
+      "title": "Labor force series file (ln.series), unemployment rate",
+      "url": "https://download.bls.gov/pub/time.series/ln/ln.series",
+      "retrieved_at": "2026-10-19T01:03:25Z",
+      "sha256": "b776b613e3a3077e504e5e04a1fe4e300c08cabee843a016a345e127c95d9c39",
+      "bytes": 633,
+      "path": "data/raw/bls/ln.series.unemployment.tsv",
+      "format": "bls_series_tsv"
+    },
+    {
+      "id": "bls_lns14000000",
+      "publisher": "U.S. Bureau of Labor Statistics",
+      "title": "(Seas) Unemployment Rate",
+      "url": "https://download.bls.gov/pub/time.series/ln/ln.data.1.AllData",
+      "retrieved_at": "2026-10-19T01:03:25Z",
+      "sha256": "dce940e2328f4d5a8a64368ceee8431f38b15edadf39a01db86ae0904d6ec13f",
+      "bytes": 38806,
+      "path": "data/raw/bls/LNS14000000.tsv",
+      "format": "bls_tsv",
+      "series_url": "https://data.bls.gov/timeseries/LNS14000000",
+      "bls_series_id": "LNS14000000"
+    },
+    {
+      "id": "treasury_debt_to_penny",
+      "publisher": "U.S. Department of the Treasury, Bureau of the Fiscal Service",
+      "title": "Debt to the Penny",
+      "url": "https://fiscaldata.treasury.gov/datasets/debt-to-the-penny/debt-to-the-penny",
+      "retrieved_at": "2026-10-19T01:03:37Z",
+      "sha256": "6b6ad28997b6d0a0428b3e0c85d586bb747e3a775eec95379694caaadf41dd29",
+      "bytes": 3008455,
+      "path": "data/raw/treasury/debt_to_penny.json",
+      "format": "treasury_json",
+      "api_url": "https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v2/accounting/od/debt_to_penny",
+      "fields": {
+        "tot_pub_debt_out_amt": "Total Public Debt Outstanding",
+        "debt_held_public_amt": "Debt Held by the Public",
+        "intragov_hold_amt": "Intragovernmental Holdings"
+      }
+    },
+    {
+      "id": "treasury_interest_expense",
+      "publisher": "U.S. Department of the Treasury, Bureau of the Fiscal Service",
+      "title": "Interest Expense on the Debt Outstanding",
+      "url": "https://fiscaldata.treasury.gov/datasets/interest-expense-debt-outstanding/interest-expense-on-the-debt-outstanding",
+      "retrieved_at": "2026-10-19T01:03:37Z",
+      "sha256": "661b72ee94edce21b6ebc2b20fc2a0efbdcee11f70e83472cbcddd20a101bc19",
+      "bytes": 3405578,
+      "path": "data/raw/treasury/interest_expense.json",
+      "format": "treasury_json",
+      "api_url": "https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v2/accounting/od/interest_expense"
+    },
+    {
+      "id": "treasury_mts_table_1",
+      "publisher": "U.S. Department of the Treasury, Bureau of the Fiscal Service",
+      "title": "Monthly Treasury Statement, Table 1, Summary of Receipts, Outlays, and the Deficit/Surplus of the U.S. Government",
+      "url": "https://fiscaldata.treasury.gov/datasets/monthly-treasury-statement/summary-of-receipts-outlays-and-the-deficit-surplus-of-the-u-s-government",
+      "retrieved_at": "2026-10-19T01:03:37Z",
+      "sha256": "19e96fa1b8fe5b7f1a36dfd0bbfa369fa42bc3b02f03c5ec06b13632f76e74d2",
+      "bytes": 2029425,
+      "path": "data/raw/treasury/mts_table_1.json",
+      "format": "treasury_json",
+      "api_url": "https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v1/accounting/mts/mts_table_1"
+    },
+    {
+      "id": "hist01z1",
+      "publisher": "Office of Management and Budget",
+      "title": "Table 1.1 - SUMMARY OF RECEIPTS, OUTLAYS, AND SURPLUSES OR DEFICITS ( - ): 1789 - 2025",
+      "url": "https://www.whitehouse.gov/wp-content/uploads/2026/04/hist01z1_fy2027.xlsx",
+      "retrieved_at": "2026-10-19T01:05:58Z",
+      "sha256": "7e345100f4d057c895dfe6a3d69e52c77f90d5e052c36f27981601a353eb14b5",
+      "bytes": 19517,
+      "path": "data/raw/omb/hist01z1_fy2027.xlsx",
+      "format": "xlsx",
+      "page_url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+    },
+    {
+      "id": "hist01z2",
+      "publisher": "Office of Management and Budget",
+      "title": "Table 1.2 - SUMMARY OF RECEIPTS, OUTLAYS, AND SURPLUSES OR DEFICITS ( - ) AS PERCENTAGES OF GDP: 1930 - 2025",
+      "url": "https://www.whitehouse.gov/wp-content/uploads/2026/04/hist01z2_fy2027.xlsx",
+      "retrieved_at": "2026-10-19T01:05:58Z",
+      "sha256": "c03b39ff14f203587c498231e375bc9448055a44a9dab8d35cbaf70ccea82b43",
+      "bytes": 16491,
+      "path": "data/raw/omb/hist01z2_fy2027.xlsx",
+      "format": "xlsx",
+      "page_url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+    },
+    {
+      "id": "hist01z3",
+      "publisher": "Office of Management and Budget",
+      "title": "Table 1.3 - SUMMARY OF RECEIPTS, OUTLAYS, AND SURPLUSES OR DEFICITS ( - ) IN CURRENT DOLLARS, CONSTANT (FY 2017) DOLLARS, AND AS PERCENTAGES OF GDP: 1940 - 2025",
+      "url": "https://www.whitehouse.gov/wp-content/uploads/2026/04/hist01z3_fy2027.xlsx",
+      "retrieved_at": "2026-10-19T01:05:58Z",
+      "sha256": "5662ec2df0921e76a28663a97f232527156611debc22f5fe28c959e2ff53e281",
+      "bytes": 17001,
+      "path": "data/raw/omb/hist01z3_fy2027.xlsx",
+      "format": "xlsx",
+      "page_url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+    },
+    {
+      "id": "hist03z1",
+      "publisher": "Office of Management and Budget",
+      "title": "Table 3.1 - OUTLAYS BY SUPERFUNCTION AND FUNCTION: 1940 - 2031",
+      "url": "https://www.whitehouse.gov/wp-content/uploads/2026/04/hist03z1_fy2027.xlsx",
+      "retrieved_at": "2026-10-19T01:05:58Z",
+      "sha256": "47864b5078698919c3237038ad7296fb7aeb62f6942c3d8acccf98ad0a7122f7",
+      "bytes": 40892,
+      "path": "data/raw/omb/hist03z1_fy2027.xlsx",
+      "format": "xlsx",
+      "page_url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+    },
+    {
+      "id": "hist07z1",
+      "publisher": "Office of Management and Budget",
+      "title": "Table 7.1 - FEDERAL DEBT AT THE END OF YEAR: 1940 - 2025",
+      "url": "https://www.whitehouse.gov/wp-content/uploads/2026/04/hist07z1_fy2027.xlsx",
+      "retrieved_at": "2026-10-19T01:05:58Z",
+      "sha256": "c3cfce645fe7e4eb9beeb46a970e2b0b30301f02f03f3e5461e9950538641ff9",
+      "bytes": 17295,
+      "path": "data/raw/omb/hist07z1_fy2027.xlsx",
+      "format": "xlsx",
+      "page_url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+    },
+    {
+      "id": "bea_nipa_section1",
+      "publisher": "U.S. Bureau of Economic Analysis",
+      "title": "NIPA Section 1, All tables. Table 1.1.5 and Table 1.1.6, annual.",
+      "url": "https://apps.bea.gov/national/Release/XLS/Survey/Section1All_xls.xlsx",
+      "retrieved_at": "2026-10-19T01:05:58Z",
+      "sha256": "28689cdede2e4936b16de46a802e9308fba75c39e14b3ddc4752aa3102f8ebc8",
+      "bytes": 4056804,
+      "path": "data/raw/bea/Section1All_xls.xlsx",
+      "format": "xlsx",
+      "page_url": "https://www.bea.gov/data/gdp/gross-domestic-product",
+      "sheets": {
+        "T10105-A": "Table 1.1.5. Gross Domestic Product",
+        "T10106-A": "Table 1.1.6. Real Gross Domestic Product, Chained Dollars"
+      }
+    },
+    {
+      "id": "census_h05",
+      "publisher": "U.S. Census Bureau",
+      "title": "Table H-5. Median and Mean Household Income by Race and Hispanic Origin of Householder: 1967 to 2025",
+      "url": "https://www2.census.gov/programs-surveys/cps/tables/time-series/historical-income-households/h05.xlsx",
+      "retrieved_at": "2026-10-19T01:05:59Z",
+      "sha256": "aa2d2fda0e75ce1fae39ce2e95b7890279c3301b2ae602ef064695a9b3b2624e",
+      "bytes": 23093,
+      "path": "data/raw/census/h05.xlsx",
+      "format": "xlsx",
+      "page_url": "https://www.census.gov/data/tables/time-series/demo/income-poverty/historical-income-households.html",
+      "adjustment_note": "(Households as of March of the following year. Income in current and 2025 C-CPI-U (2000-2025) and R-CPI-U-RS (pre-2000) adjusted dollars (28))"
+    },
+    {
+      "id": "census_new_home_prices",
+      "publisher": "U.S. Census Bureau",
+      "title": "Sales Price of New Privately-Owned Houses Sold",
+      "url": "https://www.census.gov/construction/nrs/xls/price_cust.xlsx",
+      "retrieved_at": "2026-10-19T01:05:59Z",
+      "sha256": "9b740f65dc3acd42de9ea2b49a562b322f108a05861ced13d5eb7350788cae6c",
+      "bytes": 36681,
+      "path": "data/raw/census/price_cust.xlsx",
+      "format": "xlsx",
+      "page_url": "https://www.census.gov/construction/nrs/data/series.html",
+      "note": "Note: The sales price includes the land."
+    }
+  ]
+}

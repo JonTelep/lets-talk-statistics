@@ -1,0 +1,1417 @@
+{
+  "id": "treasury_mts_deficit_surplus_monthly",
+  "name": "Current Month Deficit Surplus Amount",
+  "units": "Dollars, nominal",
+  "adjustment": "not applicable",
+  "nominal_or_real": "nominal",
+  "frequency": "monthly",
+  "source_id": "treasury_mts_table_1",
+  "series_url": "https://fiscaldata.treasury.gov/datasets/monthly-treasury-statement/summary-of-receipts-outlays-and-the-deficit-surplus-of-the-u-s-government",
+  "notes": "When a calendar month appears on more than one statement, the row from the latest record_date is kept. Current Month Deficit Surplus Amount equals outlays minus receipts on the published rows.",
+  "points": [
+    {
+      "date": "2013-10",
+      "value": "90586195000.53",
+      "locator": {
+        "record_date": "2015-09-30",
+        "sequence_number_cd": "1.1",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2013-11",
+      "value": "135226334085.45",
+      "locator": {
+        "record_date": "2015-09-30",
+        "sequence_number_cd": "1.2",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2013-12",
+      "value": "-53220390998.72",
+      "locator": {
+        "record_date": "2015-09-30",
+        "sequence_number_cd": "1.3",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2014-01",
+      "value": "10249775420.21",
+      "locator": {
+        "record_date": "2015-09-30",
+        "sequence_number_cd": "1.4",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2014-02",
+      "value": "193531518638.31",
+      "locator": {
+        "record_date": "2015-09-30",
+        "sequence_number_cd": "1.5",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2014-03",
+      "value": "36894795281.69",
+      "locator": {
+        "record_date": "2015-09-30",
+        "sequence_number_cd": "1.6",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2014-04",
+      "value": "-106853326725.30",
+      "locator": {
+        "record_date": "2015-09-30",
+        "sequence_number_cd": "1.7",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2014-05",
+      "value": "129970895247.11",
+      "locator": {
+        "record_date": "2015-09-30",
+        "sequence_number_cd": "1.8",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2014-06",
+      "value": "-70518724037.50",
+      "locator": {
+        "record_date": "2015-09-30",
+        "sequence_number_cd": "1.9",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2014-07",
+      "value": "94620551296.74",
+      "locator": {
+        "record_date": "2015-09-30",
+        "sequence_number_cd": "1.10",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2014-08",
+      "value": "128676751421.62",
+      "locator": {
+        "record_date": "2015-09-30",
+        "sequence_number_cd": "1.11",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2014-09",
+      "value": "-105803436473.16",
+      "locator": {
+        "record_date": "2015-09-30",
+        "sequence_number_cd": "1.12",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2014-10",
+      "value": "121712917089.19",
+      "locator": {
+        "record_date": "2016-09-30",
+        "sequence_number_cd": "1.1",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2014-11",
+      "value": "56817998085.05",
+      "locator": {
+        "record_date": "2016-09-30",
+        "sequence_number_cd": "1.2",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2014-12",
+      "value": "-1864365261.13",
+      "locator": {
+        "record_date": "2016-09-30",
+        "sequence_number_cd": "1.3",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2015-01",
+      "value": "17546249745.47",
+      "locator": {
+        "record_date": "2016-09-30",
+        "sequence_number_cd": "1.4",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2015-02",
+      "value": "192358382287.30",
+      "locator": {
+        "record_date": "2016-09-30",
+        "sequence_number_cd": "1.5",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2015-03",
+      "value": "52917836010.19",
+      "locator": {
+        "record_date": "2016-09-30",
+        "sequence_number_cd": "1.6",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2015-04",
+      "value": "-156709215353.11",
+      "locator": {
+        "record_date": "2016-09-30",
+        "sequence_number_cd": "1.7",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2015-05",
+      "value": "84067820211.32",
+      "locator": {
+        "record_date": "2016-09-30",
+        "sequence_number_cd": "1.8",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2015-06",
+      "value": "-50486503789.26",
+      "locator": {
+        "record_date": "2016-09-30",
+        "sequence_number_cd": "1.9",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2015-07",
+      "value": "149186766112.85",
+      "locator": {
+        "record_date": "2016-09-30",
+        "sequence_number_cd": "1.10",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2015-08",
+      "value": "64411505225.20",
+      "locator": {
+        "record_date": "2016-09-30",
+        "sequence_number_cd": "1.11",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2015-09",
+      "value": "-90870598649.70",
+      "locator": {
+        "record_date": "2016-09-30",
+        "sequence_number_cd": "1.12",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2015-10",
+      "value": "136558036669.27",
+      "locator": {
+        "record_date": "2017-09-30",
+        "sequence_number_cd": "1.1",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2015-11",
+      "value": "62869459029.47",
+      "locator": {
+        "record_date": "2017-09-30",
+        "sequence_number_cd": "1.2",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2015-12",
+      "value": "14443943853.50",
+      "locator": {
+        "record_date": "2017-09-30",
+        "sequence_number_cd": "1.3",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2016-01",
+      "value": "-55163282790.04",
+      "locator": {
+        "record_date": "2017-09-30",
+        "sequence_number_cd": "1.4",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2016-02",
+      "value": "192610001706.36",
+      "locator": {
+        "record_date": "2017-09-30",
+        "sequence_number_cd": "1.5",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2016-03",
+      "value": "108042730738.78",
+      "locator": {
+        "record_date": "2017-09-30",
+        "sequence_number_cd": "1.6",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2016-04",
+      "value": "-106455327471.60",
+      "locator": {
+        "record_date": "2017-09-30",
+        "sequence_number_cd": "1.7",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2016-05",
+      "value": "52507411657.99",
+      "locator": {
+        "record_date": "2017-09-30",
+        "sequence_number_cd": "1.8",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2016-06",
+      "value": "-6251989522.86",
+      "locator": {
+        "record_date": "2017-09-30",
+        "sequence_number_cd": "1.9",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2016-07",
+      "value": "112819022904.50",
+      "locator": {
+        "record_date": "2017-09-30",
+        "sequence_number_cd": "1.10",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2016-08",
+      "value": "107111575680.04",
+      "locator": {
+        "record_date": "2017-09-30",
+        "sequence_number_cd": "1.11",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2016-09",
+      "value": "-33445253933.96",
+      "locator": {
+        "record_date": "2017-09-30",
+        "sequence_number_cd": "1.12",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2016-10",
+      "value": "45830538629.56",
+      "locator": {
+        "record_date": "2018-09-30",
+        "sequence_number_cd": "1.1",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2016-11",
+      "value": "136668573515.62",
+      "locator": {
+        "record_date": "2018-09-30",
+        "sequence_number_cd": "1.2",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2016-12",
+      "value": "27336623518.82",
+      "locator": {
+        "record_date": "2018-09-30",
+        "sequence_number_cd": "1.3",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2017-01",
+      "value": "-51257134643.00",
+      "locator": {
+        "record_date": "2018-09-30",
+        "sequence_number_cd": "1.4",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2017-02",
+      "value": "192044438439.46",
+      "locator": {
+        "record_date": "2018-09-30",
+        "sequence_number_cd": "1.5",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2017-03",
+      "value": "176232539732.29",
+      "locator": {
+        "record_date": "2018-09-30",
+        "sequence_number_cd": "1.6",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2017-04",
+      "value": "-182428036474.96",
+      "locator": {
+        "record_date": "2018-09-30",
+        "sequence_number_cd": "1.7",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2017-05",
+      "value": "88422707828.18",
+      "locator": {
+        "record_date": "2018-09-30",
+        "sequence_number_cd": "1.8",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2017-06",
+      "value": "90233191070.67",
+      "locator": {
+        "record_date": "2018-09-30",
+        "sequence_number_cd": "1.9",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2017-07",
+      "value": "42939377600.97",
+      "locator": {
+        "record_date": "2018-09-30",
+        "sequence_number_cd": "1.10",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2017-08",
+      "value": "107688776779.88",
+      "locator": {
+        "record_date": "2018-09-30",
+        "sequence_number_cd": "1.11",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2017-09",
+      "value": "-7885535560.15",
+      "locator": {
+        "record_date": "2018-09-30",
+        "sequence_number_cd": "1.12",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2017-10",
+      "value": "63214017966.95",
+      "locator": {
+        "record_date": "2019-09-30",
+        "sequence_number_cd": "1.1",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2017-11",
+      "value": "138547437817.59",
+      "locator": {
+        "record_date": "2019-09-30",
+        "sequence_number_cd": "1.2",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2017-12",
+      "value": "23192356530.93",
+      "locator": {
+        "record_date": "2019-09-30",
+        "sequence_number_cd": "1.3",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2018-01",
+      "value": "-49236838792.62",
+      "locator": {
+        "record_date": "2019-09-30",
+        "sequence_number_cd": "1.4",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2018-02",
+      "value": "215239383618.40",
+      "locator": {
+        "record_date": "2019-09-30",
+        "sequence_number_cd": "1.5",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2018-03",
+      "value": "208743828033.73",
+      "locator": {
+        "record_date": "2019-09-30",
+        "sequence_number_cd": "1.6",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2018-04",
+      "value": "-214255113667.31",
+      "locator": {
+        "record_date": "2019-09-30",
+        "sequence_number_cd": "1.7",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2018-05",
+      "value": "146796443365.56",
+      "locator": {
+        "record_date": "2019-09-30",
+        "sequence_number_cd": "1.8",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2018-06",
+      "value": "74857990463.56",
+      "locator": {
+        "record_date": "2019-09-30",
+        "sequence_number_cd": "1.9",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2018-07",
+      "value": "76865229661.62",
+      "locator": {
+        "record_date": "2019-09-30",
+        "sequence_number_cd": "1.10",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2018-08",
+      "value": "214147525739.02",
+      "locator": {
+        "record_date": "2019-09-30",
+        "sequence_number_cd": "1.11",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2018-09",
+      "value": "-119116141692.03",
+      "locator": {
+        "record_date": "2019-09-30",
+        "sequence_number_cd": "1.12",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2018-10",
+      "value": "100491142544.73",
+      "locator": {
+        "record_date": "2020-09-30",
+        "sequence_number_cd": "1.1",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2018-11",
+      "value": "204902597142.64",
+      "locator": {
+        "record_date": "2020-09-30",
+        "sequence_number_cd": "1.2",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2018-12",
+      "value": "13539358629.05",
+      "locator": {
+        "record_date": "2020-09-30",
+        "sequence_number_cd": "1.3",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2019-01",
+      "value": "-8680906186.30",
+      "locator": {
+        "record_date": "2020-09-30",
+        "sequence_number_cd": "1.4",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2019-02",
+      "value": "233977275492.19",
+      "locator": {
+        "record_date": "2020-09-30",
+        "sequence_number_cd": "1.5",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2019-03",
+      "value": "146944765653.86",
+      "locator": {
+        "record_date": "2020-09-30",
+        "sequence_number_cd": "1.6",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2019-04",
+      "value": "-160304155535.94",
+      "locator": {
+        "record_date": "2020-09-30",
+        "sequence_number_cd": "1.7",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2019-05",
+      "value": "207768392346.83",
+      "locator": {
+        "record_date": "2020-09-30",
+        "sequence_number_cd": "1.8",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2019-06",
+      "value": "8477396886.01",
+      "locator": {
+        "record_date": "2020-09-30",
+        "sequence_number_cd": "1.9",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2019-07",
+      "value": "119695468888.82",
+      "locator": {
+        "record_date": "2020-09-30",
+        "sequence_number_cd": "1.10",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2019-08",
+      "value": "200344348934.27",
+      "locator": {
+        "record_date": "2020-09-30",
+        "sequence_number_cd": "1.11",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2019-09",
+      "value": "-82768095240.64",
+      "locator": {
+        "record_date": "2020-09-30",
+        "sequence_number_cd": "1.12",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2019-10",
+      "value": "134467379009.81",
+      "locator": {
+        "record_date": "2021-09-30",
+        "sequence_number_cd": "1.1",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2019-11",
+      "value": "208838294456.74",
+      "locator": {
+        "record_date": "2021-09-30",
+        "sequence_number_cd": "1.2",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2019-12",
+      "value": "13285876488.79",
+      "locator": {
+        "record_date": "2021-09-30",
+        "sequence_number_cd": "1.3",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2020-01",
+      "value": "32594957020.41",
+      "locator": {
+        "record_date": "2021-09-30",
+        "sequence_number_cd": "1.4",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2020-02",
+      "value": "235278365573.44",
+      "locator": {
+        "record_date": "2021-09-30",
+        "sequence_number_cd": "1.5",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2020-03",
+      "value": "118987831705.71",
+      "locator": {
+        "record_date": "2021-09-30",
+        "sequence_number_cd": "1.6",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2020-04",
+      "value": "738022180413.67",
+      "locator": {
+        "record_date": "2021-09-30",
+        "sequence_number_cd": "1.7",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2020-05",
+      "value": "398753867789.68",
+      "locator": {
+        "record_date": "2021-09-30",
+        "sequence_number_cd": "1.8",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2020-06",
+      "value": "864074068491.71",
+      "locator": {
+        "record_date": "2021-09-30",
+        "sequence_number_cd": "1.9",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2020-07",
+      "value": "62991726394.54",
+      "locator": {
+        "record_date": "2021-09-30",
+        "sequence_number_cd": "1.10",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2020-08",
+      "value": "200012143124.61",
+      "locator": {
+        "record_date": "2021-09-30",
+        "sequence_number_cd": "1.11",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2020-09",
+      "value": "124610555174.19",
+      "locator": {
+        "record_date": "2021-09-30",
+        "sequence_number_cd": "1.12",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2020-10",
+      "value": "284070537172.84",
+      "locator": {
+        "record_date": "2022-09-30",
+        "sequence_number_cd": "1.1",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2020-11",
+      "value": "145266263529.85",
+      "locator": {
+        "record_date": "2022-09-30",
+        "sequence_number_cd": "1.2",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2020-12",
+      "value": "143562284436.78",
+      "locator": {
+        "record_date": "2022-09-30",
+        "sequence_number_cd": "1.3",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2021-01",
+      "value": "162832489467.54",
+      "locator": {
+        "record_date": "2022-09-30",
+        "sequence_number_cd": "1.4",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2021-02",
+      "value": "310921941448.67",
+      "locator": {
+        "record_date": "2022-09-30",
+        "sequence_number_cd": "1.5",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2021-03",
+      "value": "659602711157.45",
+      "locator": {
+        "record_date": "2022-09-30",
+        "sequence_number_cd": "1.6",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2021-04",
+      "value": "225579468130.06",
+      "locator": {
+        "record_date": "2022-09-30",
+        "sequence_number_cd": "1.7",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2021-05",
+      "value": "131953219319.85",
+      "locator": {
+        "record_date": "2022-09-30",
+        "sequence_number_cd": "1.8",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2021-06",
+      "value": "174160550262.16",
+      "locator": {
+        "record_date": "2022-09-30",
+        "sequence_number_cd": "1.9",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2021-07",
+      "value": "302050488343.50",
+      "locator": {
+        "record_date": "2022-09-30",
+        "sequence_number_cd": "1.10",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2021-08",
+      "value": "170634583808.04",
+      "locator": {
+        "record_date": "2022-09-30",
+        "sequence_number_cd": "1.11",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2021-09",
+      "value": "64940344233.28",
+      "locator": {
+        "record_date": "2022-09-30",
+        "sequence_number_cd": "1.12",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2021-10",
+      "value": "165055322933.25",
+      "locator": {
+        "record_date": "2023-09-30",
+        "sequence_number_cd": "1.1",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2021-11",
+      "value": "191335004284.96",
+      "locator": {
+        "record_date": "2023-09-30",
+        "sequence_number_cd": "1.2",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2021-12",
+      "value": "21302988593.44",
+      "locator": {
+        "record_date": "2023-09-30",
+        "sequence_number_cd": "1.3",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2022-01",
+      "value": "-118698858241.66",
+      "locator": {
+        "record_date": "2023-09-30",
+        "sequence_number_cd": "1.4",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2022-02",
+      "value": "216589752056.05",
+      "locator": {
+        "record_date": "2023-09-30",
+        "sequence_number_cd": "1.5",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2022-03",
+      "value": "192633669610.52",
+      "locator": {
+        "record_date": "2023-09-30",
+        "sequence_number_cd": "1.6",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2022-04",
+      "value": "-308215060526.79",
+      "locator": {
+        "record_date": "2023-09-30",
+        "sequence_number_cd": "1.7",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2022-05",
+      "value": "66222513681.58",
+      "locator": {
+        "record_date": "2023-09-30",
+        "sequence_number_cd": "1.8",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2022-06",
+      "value": "88841513216.92",
+      "locator": {
+        "record_date": "2023-09-30",
+        "sequence_number_cd": "1.9",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2022-07",
+      "value": "211051760050.26",
+      "locator": {
+        "record_date": "2023-09-30",
+        "sequence_number_cd": "1.10",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2022-08",
+      "value": "219596240949.64",
+      "locator": {
+        "record_date": "2023-09-30",
+        "sequence_number_cd": "1.11",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2022-09",
+      "value": "429766184167.80",
+      "locator": {
+        "record_date": "2023-09-30",
+        "sequence_number_cd": "1.12",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2022-10",
+      "value": "87874164113.17",
+      "locator": {
+        "record_date": "2024-09-30",
+        "sequence_number_cd": "1.1",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2022-11",
+      "value": "248534880652.58",
+      "locator": {
+        "record_date": "2024-09-30",
+        "sequence_number_cd": "1.2",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2022-12",
+      "value": "85000736577.88",
+      "locator": {
+        "record_date": "2024-09-30",
+        "sequence_number_cd": "1.3",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2023-01",
+      "value": "38783772139.22",
+      "locator": {
+        "record_date": "2024-09-30",
+        "sequence_number_cd": "1.4",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2023-02",
+      "value": "262433843194.23",
+      "locator": {
+        "record_date": "2024-09-30",
+        "sequence_number_cd": "1.5",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2023-03",
+      "value": "378435015173.86",
+      "locator": {
+        "record_date": "2024-09-30",
+        "sequence_number_cd": "1.6",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2023-04",
+      "value": "-176180790349.12",
+      "locator": {
+        "record_date": "2024-09-30",
+        "sequence_number_cd": "1.7",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2023-05",
+      "value": "240348239658.37",
+      "locator": {
+        "record_date": "2024-09-30",
+        "sequence_number_cd": "1.8",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2023-06",
+      "value": "227768412538.05",
+      "locator": {
+        "record_date": "2024-09-30",
+        "sequence_number_cd": "1.9",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2023-07",
+      "value": "220782097353.60",
+      "locator": {
+        "record_date": "2024-09-30",
+        "sequence_number_cd": "1.10",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2023-08",
+      "value": "-89255572693.73",
+      "locator": {
+        "record_date": "2024-09-30",
+        "sequence_number_cd": "1.11",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2023-09",
+      "value": "170714937660.56",
+      "locator": {
+        "record_date": "2024-09-30",
+        "sequence_number_cd": "1.12",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2023-10",
+      "value": "66563551129.73",
+      "locator": {
+        "record_date": "2025-09-30",
+        "sequence_number_cd": "1.1",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2023-11",
+      "value": "314012002287.09",
+      "locator": {
+        "record_date": "2025-09-30",
+        "sequence_number_cd": "1.2",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2023-12",
+      "value": "129354114564.24",
+      "locator": {
+        "record_date": "2025-09-30",
+        "sequence_number_cd": "1.3",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2024-01",
+      "value": "21930352569.72",
+      "locator": {
+        "record_date": "2025-09-30",
+        "sequence_number_cd": "1.4",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2024-02",
+      "value": "296274651841.19",
+      "locator": {
+        "record_date": "2025-09-30",
+        "sequence_number_cd": "1.5",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2024-03",
+      "value": "236555953275.22",
+      "locator": {
+        "record_date": "2025-09-30",
+        "sequence_number_cd": "1.6",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2024-04",
+      "value": "-209529306625.33",
+      "locator": {
+        "record_date": "2025-09-30",
+        "sequence_number_cd": "1.7",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2024-05",
+      "value": "347130893691.65",
+      "locator": {
+        "record_date": "2025-09-30",
+        "sequence_number_cd": "1.8",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2024-06",
+      "value": "70965292476.34",
+      "locator": {
+        "record_date": "2025-09-30",
+        "sequence_number_cd": "1.9",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2024-07",
+      "value": "243741087297.43",
+      "locator": {
+        "record_date": "2025-09-30",
+        "sequence_number_cd": "1.10",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2024-08",
+      "value": "380080405434.50",
+      "locator": {
+        "record_date": "2025-09-30",
+        "sequence_number_cd": "1.11",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2024-09",
+      "value": "-80288798313.57",
+      "locator": {
+        "record_date": "2025-09-30",
+        "sequence_number_cd": "1.12",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2024-10",
+      "value": "257450036967.21",
+      "locator": {
+        "record_date": "2026-09-30",
+        "sequence_number_cd": "1.1",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2024-11",
+      "value": "366762835247.68",
+      "locator": {
+        "record_date": "2026-09-30",
+        "sequence_number_cd": "1.2",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2024-12",
+      "value": "86731619013.29",
+      "locator": {
+        "record_date": "2026-09-30",
+        "sequence_number_cd": "1.3",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2025-01",
+      "value": "128640206673.49",
+      "locator": {
+        "record_date": "2026-09-30",
+        "sequence_number_cd": "1.4",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2025-02",
+      "value": "307017197292.27",
+      "locator": {
+        "record_date": "2026-09-30",
+        "sequence_number_cd": "1.5",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2025-03",
+      "value": "160528321499.36",
+      "locator": {
+        "record_date": "2026-09-30",
+        "sequence_number_cd": "1.6",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2025-04",
+      "value": "-258399949114.96",
+      "locator": {
+        "record_date": "2026-09-30",
+        "sequence_number_cd": "1.7",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2025-05",
+      "value": "315651741381.91",
+      "locator": {
+        "record_date": "2026-09-30",
+        "sequence_number_cd": "1.8",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2025-06",
+      "value": "-27009650010.01",
+      "locator": {
+        "record_date": "2026-09-30",
+        "sequence_number_cd": "1.9",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2025-07",
+      "value": "291142660287.67",
+      "locator": {
+        "record_date": "2026-09-30",
+        "sequence_number_cd": "1.10",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2025-08",
+      "value": "344791891858.12",
+      "locator": {
+        "record_date": "2026-09-30",
+        "sequence_number_cd": "1.11",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2025-09",
+      "value": "-197937721277.68",
+      "locator": {
+        "record_date": "2026-09-30",
+        "sequence_number_cd": "1.12",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2025-10",
+      "value": "284332743998.37",
+      "locator": {
+        "record_date": "2026-09-30",
+        "sequence_number_cd": "2.1",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2025-11",
+      "value": "173277175122.92",
+      "locator": {
+        "record_date": "2026-09-30",
+        "sequence_number_cd": "2.2",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2025-12",
+      "value": "144752110766.43",
+      "locator": {
+        "record_date": "2026-09-30",
+        "sequence_number_cd": "2.3",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2026-01",
+      "value": "94615162369.21",
+      "locator": {
+        "record_date": "2026-09-30",
+        "sequence_number_cd": "2.4",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2026-02",
+      "value": "307501433426.17",
+      "locator": {
+        "record_date": "2026-09-30",
+        "sequence_number_cd": "2.5",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2026-03",
+      "value": "164100313817.86",
+      "locator": {
+        "record_date": "2026-09-30",
+        "sequence_number_cd": "2.6",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2026-04",
+      "value": "-215024135197.77",
+      "locator": {
+        "record_date": "2026-09-30",
+        "sequence_number_cd": "2.7",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2026-05",
+      "value": "292648257341.99",
+      "locator": {
+        "record_date": "2026-09-30",
+        "sequence_number_cd": "2.8",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2026-06",
+      "value": "120305275586.37",
+      "locator": {
+        "record_date": "2026-09-30",
+        "sequence_number_cd": "2.9",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2026-07",
+      "value": "432285727964.60",
+      "locator": {
+        "record_date": "2026-09-30",
+        "sequence_number_cd": "2.10",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2026-08",
+      "value": "166778812054.25",
+      "locator": {
+        "record_date": "2026-09-30",
+        "sequence_number_cd": "2.11",
+        "field": "current_month_dfct_sur_amt"
+      }
+    },
+    {
+      "date": "2026-09",
+      "value": "26900347102.02",
+      "locator": {
+        "record_date": "2026-09-30",
+        "sequence_number_cd": "2.12",
+        "field": "current_month_dfct_sur_amt"
+      }
+    }
+  ]
+}

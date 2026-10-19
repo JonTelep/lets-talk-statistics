@@ -1,0 +1,1786 @@
+{
+  "id": "treasury_interest_expense_monthly",
+  "name": "Interest Expense on the Debt Outstanding",
+  "units": "Dollars, nominal",
+  "adjustment": "not applicable",
+  "nominal_or_real": "nominal",
+  "frequency": "monthly",
+  "source_id": "treasury_interest_expense",
+  "series_url": "https://fiscaldata.treasury.gov/datasets/interest-expense-debt-outstanding/interest-expense-on-the-debt-outstanding",
+  "notes": "Sum of month_expense_amt across every line on that record date. Lines are the published components. No total line is published in the file.",
+  "points": [
+    {
+      "date": "2010-05",
+      "value": "23787106572.94",
+      "locator": {
+        "record_date": "2010-05-31",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2010-06",
+      "value": "106661088328.82",
+      "locator": {
+        "record_date": "2010-06-30",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2010-07",
+      "value": "20386125152.13",
+      "locator": {
+        "record_date": "2010-07-31",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2010-08",
+      "value": "20520786705.82",
+      "locator": {
+        "record_date": "2010-08-31",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2010-09",
+      "value": "18186175433.65",
+      "locator": {
+        "record_date": "2010-09-30",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2010-10",
+      "value": "24142491931.22",
+      "locator": {
+        "record_date": "2010-10-31",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2010-11",
+      "value": "19396316137.56",
+      "locator": {
+        "record_date": "2010-11-30",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2010-12",
+      "value": "104700174845.03",
+      "locator": {
+        "record_date": "2010-12-31",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2011-01",
+      "value": "21122729715.18",
+      "locator": {
+        "record_date": "2011-01-31",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2011-02",
+      "value": "21759253957.26",
+      "locator": {
+        "record_date": "2011-02-28",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2011-03",
+      "value": "24460282823.69",
+      "locator": {
+        "record_date": "2011-03-31",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2011-04",
+      "value": "28895123159.28",
+      "locator": {
+        "record_date": "2011-04-30",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2011-05",
+      "value": "30858726707.77",
+      "locator": {
+        "record_date": "2011-05-31",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2011-06",
+      "value": "110536850221.63",
+      "locator": {
+        "record_date": "2011-06-30",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2011-07",
+      "value": "26645554967.44",
+      "locator": {
+        "record_date": "2011-07-31",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2011-08",
+      "value": "21613820400.21",
+      "locator": {
+        "record_date": "2011-08-31",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2011-09",
+      "value": "20261955550.76",
+      "locator": {
+        "record_date": "2011-09-30",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2011-10",
+      "value": "27771392426.03",
+      "locator": {
+        "record_date": "2011-10-31",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2011-11",
+      "value": "21709460451.61",
+      "locator": {
+        "record_date": "2011-11-30",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2011-12",
+      "value": "98652091319.29",
+      "locator": {
+        "record_date": "2011-12-31",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2012-01",
+      "value": "21122865703.96",
+      "locator": {
+        "record_date": "2012-01-31",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2012-02",
+      "value": "17414482614.98",
+      "locator": {
+        "record_date": "2012-02-29",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2012-03",
+      "value": "24682649179.83",
+      "locator": {
+        "record_date": "2012-03-31",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2012-04",
+      "value": "30121029367.43",
+      "locator": {
+        "record_date": "2012-04-30",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2012-05",
+      "value": "30506664352.19",
+      "locator": {
+        "record_date": "2012-05-31",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2012-06",
+      "value": "103886876062.52",
+      "locator": {
+        "record_date": "2012-06-30",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2012-07",
+      "value": "-52816864500.41",
+      "locator": {
+        "record_date": "2012-07-31",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2012-08",
+      "value": "20045169656.99",
+      "locator": {
+        "record_date": "2012-08-31",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2012-09",
+      "value": "16700192285.07",
+      "locator": {
+        "record_date": "2012-09-30",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2012-10",
+      "value": "12922741407.27",
+      "locator": {
+        "record_date": "2012-10-31",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2012-11",
+      "value": "25068968472.99",
+      "locator": {
+        "record_date": "2012-11-30",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2012-12",
+      "value": "95736594801.52",
+      "locator": {
+        "record_date": "2012-12-31",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2013-01",
+      "value": "17816590831.57",
+      "locator": {
+        "record_date": "2013-01-31",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2013-02",
+      "value": "16901310565.17",
+      "locator": {
+        "record_date": "2013-02-28",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2013-03",
+      "value": "23472400737.30",
+      "locator": {
+        "record_date": "2013-03-31",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2013-04",
+      "value": "35951751963.63",
+      "locator": {
+        "record_date": "2013-04-30",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2013-05",
+      "value": "24378480861.09",
+      "locator": {
+        "record_date": "2013-05-31",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2013-06",
+      "value": "93031790187.97",
+      "locator": {
+        "record_date": "2013-06-30",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2013-07",
+      "value": "25076777459.95",
+      "locator": {
+        "record_date": "2013-07-31",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2013-08",
+      "value": "25487831947.93",
+      "locator": {
+        "record_date": "2013-08-31",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2013-09",
+      "value": "19843542012.01",
+      "locator": {
+        "record_date": "2013-09-30",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2013-10",
+      "value": "16451313332.09",
+      "locator": {
+        "record_date": "2013-10-31",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2013-11",
+      "value": "22327099682.97",
+      "locator": {
+        "record_date": "2013-11-30",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2013-12",
+      "value": "88275817263.03",
+      "locator": {
+        "record_date": "2013-12-31",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2014-01",
+      "value": "19498592676.78",
+      "locator": {
+        "record_date": "2014-01-31",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2014-02",
+      "value": "21293863450.50",
+      "locator": {
+        "record_date": "2014-02-28",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2014-03",
+      "value": "26269559883.36",
+      "locator": {
+        "record_date": "2014-03-31",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2014-04",
+      "value": "31099852014.96",
+      "locator": {
+        "record_date": "2014-04-30",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2014-05",
+      "value": "32081384628.40",
+      "locator": {
+        "record_date": "2014-05-31",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2014-06",
+      "value": "97566324880.63",
+      "locator": {
+        "record_date": "2014-06-30",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2014-07",
+      "value": "29260530745.98",
+      "locator": {
+        "record_date": "2014-07-31",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2014-08",
+      "value": "27093517258.24",
+      "locator": {
+        "record_date": "2014-08-31",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2014-09",
+      "value": "19594265555.11",
+      "locator": {
+        "record_date": "2014-09-30",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2014-10",
+      "value": "8702166816.21",
+      "locator": {
+        "record_date": "2014-10-31",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2014-11",
+      "value": "23427024656.86",
+      "locator": {
+        "record_date": "2014-11-30",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2014-12",
+      "value": "86460237565.98",
+      "locator": {
+        "record_date": "2014-12-31",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2015-01",
+      "value": "15104681505.17",
+      "locator": {
+        "record_date": "2015-01-31",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2015-02",
+      "value": "13153330688.79",
+      "locator": {
+        "record_date": "2015-02-28",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2015-03",
+      "value": "14139980828.36",
+      "locator": {
+        "record_date": "2015-03-31",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2015-04",
+      "value": "31782109819.31",
+      "locator": {
+        "record_date": "2015-04-30",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2015-05",
+      "value": "32692847170.84",
+      "locator": {
+        "record_date": "2015-05-31",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2015-06",
+      "value": "93014300735.21",
+      "locator": {
+        "record_date": "2015-06-30",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2015-07",
+      "value": "32394069518.20",
+      "locator": {
+        "record_date": "2015-07-31",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2015-08",
+      "value": "30726423238.94",
+      "locator": {
+        "record_date": "2015-08-31",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2015-09",
+      "value": "20838183531.62",
+      "locator": {
+        "record_date": "2015-09-30",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2015-10",
+      "value": "16789489434.74",
+      "locator": {
+        "record_date": "2015-10-31",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2015-11",
+      "value": "23107464608.89",
+      "locator": {
+        "record_date": "2015-11-30",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2015-12",
+      "value": "86649956614.54",
+      "locator": {
+        "record_date": "2015-12-31",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2016-01",
+      "value": "21310629685.82",
+      "locator": {
+        "record_date": "2016-01-31",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2016-02",
+      "value": "18785288294.36",
+      "locator": {
+        "record_date": "2016-02-29",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2016-03",
+      "value": "25134528014.75",
+      "locator": {
+        "record_date": "2016-03-31",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2016-04",
+      "value": "28210691997.28",
+      "locator": {
+        "record_date": "2016-04-30",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2016-05",
+      "value": "32817872592.91",
+      "locator": {
+        "record_date": "2016-05-31",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2016-06",
+      "value": "95661619825.71",
+      "locator": {
+        "record_date": "2016-06-30",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2016-07",
+      "value": "32457887142.67",
+      "locator": {
+        "record_date": "2016-07-31",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2016-08",
+      "value": "32614780296.65",
+      "locator": {
+        "record_date": "2016-08-31",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2016-09",
+      "value": "19109444392.80",
+      "locator": {
+        "record_date": "2016-09-30",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2016-10",
+      "value": "23043294709.73",
+      "locator": {
+        "record_date": "2016-10-31",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2016-11",
+      "value": "28653503936.00",
+      "locator": {
+        "record_date": "2016-11-30",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2016-12",
+      "value": "87429358218.60",
+      "locator": {
+        "record_date": "2016-12-31",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2017-01",
+      "value": "23338913013.07",
+      "locator": {
+        "record_date": "2017-01-31",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2017-02",
+      "value": "25711352044.37",
+      "locator": {
+        "record_date": "2017-02-28",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2017-03",
+      "value": "34785052636.90",
+      "locator": {
+        "record_date": "2017-03-31",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2017-04",
+      "value": "34427219754.16",
+      "locator": {
+        "record_date": "2017-04-30",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2017-05",
+      "value": "27813382528.89",
+      "locator": {
+        "record_date": "2017-05-31",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2017-06",
+      "value": "90430128133.93",
+      "locator": {
+        "record_date": "2017-06-30",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2017-07",
+      "value": "28671601995.56",
+      "locator": {
+        "record_date": "2017-07-31",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2017-08",
+      "value": "30324233164.14",
+      "locator": {
+        "record_date": "2017-08-31",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2017-09",
+      "value": "23914247176.45",
+      "locator": {
+        "record_date": "2017-09-30",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2017-10",
+      "value": "24411569716.36",
+      "locator": {
+        "record_date": "2017-10-31",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2017-11",
+      "value": "38014414561.75",
+      "locator": {
+        "record_date": "2017-11-30",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2017-12",
+      "value": "84559272909.62",
+      "locator": {
+        "record_date": "2017-12-31",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2018-01",
+      "value": "27814982228.45",
+      "locator": {
+        "record_date": "2018-01-31",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2018-02",
+      "value": "28434208619.08",
+      "locator": {
+        "record_date": "2018-02-28",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2018-03",
+      "value": "38504166996.29",
+      "locator": {
+        "record_date": "2018-03-31",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2018-04",
+      "value": "41940836111.17",
+      "locator": {
+        "record_date": "2018-04-30",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2018-05",
+      "value": "35599408856.32",
+      "locator": {
+        "record_date": "2018-05-31",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2018-06",
+      "value": "95841040916.14",
+      "locator": {
+        "record_date": "2018-06-30",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2018-07",
+      "value": "40559408610.94",
+      "locator": {
+        "record_date": "2018-07-31",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2018-08",
+      "value": "38356638083.18",
+      "locator": {
+        "record_date": "2018-08-31",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2018-09",
+      "value": "28981353836.82",
+      "locator": {
+        "record_date": "2018-09-30",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2018-10",
+      "value": "31647532106.45",
+      "locator": {
+        "record_date": "2018-10-31",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2018-11",
+      "value": "35371318649.95",
+      "locator": {
+        "record_date": "2018-11-30",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2018-12",
+      "value": "97202544981.57",
+      "locator": {
+        "record_date": "2018-12-31",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2019-01",
+      "value": "27810825237.43",
+      "locator": {
+        "record_date": "2019-01-31",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2019-02",
+      "value": "28716710992.06",
+      "locator": {
+        "record_date": "2019-02-28",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2019-03",
+      "value": "38938312951.37",
+      "locator": {
+        "record_date": "2019-03-31",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2019-04",
+      "value": "46552489671.20",
+      "locator": {
+        "record_date": "2019-04-30",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2019-05",
+      "value": "47828676369.37",
+      "locator": {
+        "record_date": "2019-05-31",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2019-06",
+      "value": "102799522635.63",
+      "locator": {
+        "record_date": "2019-06-30",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2019-07",
+      "value": "40341726814.69",
+      "locator": {
+        "record_date": "2019-07-31",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2019-08",
+      "value": "41403083314.80",
+      "locator": {
+        "record_date": "2019-08-31",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2019-09",
+      "value": "35975039739.11",
+      "locator": {
+        "record_date": "2019-09-30",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2019-10",
+      "value": "30318680639.42",
+      "locator": {
+        "record_date": "2019-10-31",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2019-11",
+      "value": "35643341059.37",
+      "locator": {
+        "record_date": "2019-11-30",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2019-12",
+      "value": "94340667955.91",
+      "locator": {
+        "record_date": "2019-12-31",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2020-01",
+      "value": "33903420244.74",
+      "locator": {
+        "record_date": "2020-01-31",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2020-02",
+      "value": "34890998557.13",
+      "locator": {
+        "record_date": "2020-02-29",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2020-03",
+      "value": "40470878104.94",
+      "locator": {
+        "record_date": "2020-03-31",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2020-04",
+      "value": "41004027662.41",
+      "locator": {
+        "record_date": "2020-04-30",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2020-05",
+      "value": "26503040410.30",
+      "locator": {
+        "record_date": "2020-05-31",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2020-06",
+      "value": "68463136507.73",
+      "locator": {
+        "record_date": "2020-06-30",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2020-07",
+      "value": "31302742794.03",
+      "locator": {
+        "record_date": "2020-07-31",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2020-08",
+      "value": "47167143724.23",
+      "locator": {
+        "record_date": "2020-08-31",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2020-09",
+      "value": "38759221605.13",
+      "locator": {
+        "record_date": "2020-09-30",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2020-10",
+      "value": "20075658453.93",
+      "locator": {
+        "record_date": "2020-10-31",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2020-11",
+      "value": "32743751593.03",
+      "locator": {
+        "record_date": "2020-11-30",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2020-12",
+      "value": "79625002154.42",
+      "locator": {
+        "record_date": "2020-12-31",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2021-01",
+      "value": "27265863758.68",
+      "locator": {
+        "record_date": "2021-01-31",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2021-02",
+      "value": "32282366545.36",
+      "locator": {
+        "record_date": "2021-02-28",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2021-03",
+      "value": "36639451155.48",
+      "locator": {
+        "record_date": "2021-03-31",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2021-04",
+      "value": "45537476232.37",
+      "locator": {
+        "record_date": "2021-04-30",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2021-05",
+      "value": "45713674667.12",
+      "locator": {
+        "record_date": "2021-05-31",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2021-06",
+      "value": "99289765532.86",
+      "locator": {
+        "record_date": "2021-06-30",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2021-07",
+      "value": "47815052504.07",
+      "locator": {
+        "record_date": "2021-07-31",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2021-08",
+      "value": "57718583454.58",
+      "locator": {
+        "record_date": "2021-08-31",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2021-09",
+      "value": "37681586630.27",
+      "locator": {
+        "record_date": "2021-09-30",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2021-10",
+      "value": "18938963388.80",
+      "locator": {
+        "record_date": "2021-10-31",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2021-11",
+      "value": "36029498135.89",
+      "locator": {
+        "record_date": "2021-11-30",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2021-12",
+      "value": "99103331258.38",
+      "locator": {
+        "record_date": "2021-12-31",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2022-01",
+      "value": "43201925014.17",
+      "locator": {
+        "record_date": "2022-01-31",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2022-02",
+      "value": "41377098072.72",
+      "locator": {
+        "record_date": "2022-02-28",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2022-03",
+      "value": "52772616799.48",
+      "locator": {
+        "record_date": "2022-03-31",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2022-04",
+      "value": "60051521581.72",
+      "locator": {
+        "record_date": "2022-04-30",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2022-05",
+      "value": "72759529650.64",
+      "locator": {
+        "record_date": "2022-05-31",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2022-06",
+      "value": "97855383652.51",
+      "locator": {
+        "record_date": "2022-06-30",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2022-07",
+      "value": "68524604177.71",
+      "locator": {
+        "record_date": "2022-07-31",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2022-08",
+      "value": "88132063085.54",
+      "locator": {
+        "record_date": "2022-08-31",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2022-09",
+      "value": "39999275279.37",
+      "locator": {
+        "record_date": "2022-09-30",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2022-10",
+      "value": "47574370567.74",
+      "locator": {
+        "record_date": "2022-10-31",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2022-11",
+      "value": "55018531839.28",
+      "locator": {
+        "record_date": "2022-11-30",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2022-12",
+      "value": "107412423898.33",
+      "locator": {
+        "record_date": "2022-12-31",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2023-01",
+      "value": "51078356675.57",
+      "locator": {
+        "record_date": "2023-01-31",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2023-02",
+      "value": "45564787385.63",
+      "locator": {
+        "record_date": "2023-02-28",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2023-03",
+      "value": "77578464805.65",
+      "locator": {
+        "record_date": "2023-03-31",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2023-04",
+      "value": "76029437966.54",
+      "locator": {
+        "record_date": "2023-04-30",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2023-05",
+      "value": "69649952377.51",
+      "locator": {
+        "record_date": "2023-05-31",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2023-06",
+      "value": "125788677829.97",
+      "locator": {
+        "record_date": "2023-06-30",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2023-07",
+      "value": "73296708131.74",
+      "locator": {
+        "record_date": "2023-07-31",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2023-08",
+      "value": "82136207416.29",
+      "locator": {
+        "record_date": "2023-08-31",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2023-09",
+      "value": "71470349639.23",
+      "locator": {
+        "record_date": "2023-09-30",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2023-10",
+      "value": "88926108067.50",
+      "locator": {
+        "record_date": "2023-10-31",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2023-11",
+      "value": "79923179590.85",
+      "locator": {
+        "record_date": "2023-11-30",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2023-12",
+      "value": "119161435057.86",
+      "locator": {
+        "record_date": "2023-12-31",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2024-01",
+      "value": "69196125995.10",
+      "locator": {
+        "record_date": "2024-01-31",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2024-02",
+      "value": "76161871822.42",
+      "locator": {
+        "record_date": "2024-02-29",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2024-03",
+      "value": "88653867155.80",
+      "locator": {
+        "record_date": "2024-03-31",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2024-04",
+      "value": "102439811617.65",
+      "locator": {
+        "record_date": "2024-04-30",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2024-05",
+      "value": "103045207077.65",
+      "locator": {
+        "record_date": "2024-05-31",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2024-06",
+      "value": "140238040126.15",
+      "locator": {
+        "record_date": "2024-06-30",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2024-07",
+      "value": "88549466362.80",
+      "locator": {
+        "record_date": "2024-07-31",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2024-08",
+      "value": "92293475443.58",
+      "locator": {
+        "record_date": "2024-08-31",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2024-09",
+      "value": "84448301831.80",
+      "locator": {
+        "record_date": "2024-09-30",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2024-10",
+      "value": "81998049980.73",
+      "locator": {
+        "record_date": "2024-10-31",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2024-11",
+      "value": "86592751811.83",
+      "locator": {
+        "record_date": "2024-11-30",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2024-12",
+      "value": "139762147207.35",
+      "locator": {
+        "record_date": "2024-12-31",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2025-01",
+      "value": "83820977500.98",
+      "locator": {
+        "record_date": "2025-01-31",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2025-02",
+      "value": "85872233209.64",
+      "locator": {
+        "record_date": "2025-02-28",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2025-03",
+      "value": "104413430717.98",
+      "locator": {
+        "record_date": "2025-03-31",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2025-04",
+      "value": "101650357567.69",
+      "locator": {
+        "record_date": "2025-04-30",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2025-05",
+      "value": "92230405249.51",
+      "locator": {
+        "record_date": "2025-05-31",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2025-06",
+      "value": "144624683640.20",
+      "locator": {
+        "record_date": "2025-06-30",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2025-07",
+      "value": "96324370525.97",
+      "locator": {
+        "record_date": "2025-07-31",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2025-08",
+      "value": "111466218972.52",
+      "locator": {
+        "record_date": "2025-08-31",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2025-09",
+      "value": "91269656245.91",
+      "locator": {
+        "record_date": "2025-09-30",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2025-10",
+      "value": "104403610089.63",
+      "locator": {
+        "record_date": "2025-10-31",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2025-11",
+      "value": "96254652133.43",
+      "locator": {
+        "record_date": "2025-11-30",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2025-12",
+      "value": "154365883740.84",
+      "locator": {
+        "record_date": "2025-12-31",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2026-01",
+      "value": "71888162603.19",
+      "locator": {
+        "record_date": "2026-01-31",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2026-02",
+      "value": "93483359631.20",
+      "locator": {
+        "record_date": "2026-02-28",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2026-03",
+      "value": "102644421072.91",
+      "locator": {
+        "record_date": "2026-03-31",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2026-04",
+      "value": "111600572508.53",
+      "locator": {
+        "record_date": "2026-04-30",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2026-05",
+      "value": "132622551433.83",
+      "locator": {
+        "record_date": "2026-05-31",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2026-06",
+      "value": "185199785714.46",
+      "locator": {
+        "record_date": "2026-06-30",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2026-07",
+      "value": "117573576107.24",
+      "locator": {
+        "record_date": "2026-07-31",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2026-08",
+      "value": "97768569546.00",
+      "locator": {
+        "record_date": "2026-08-31",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    },
+    {
+      "date": "2026-09",
+      "value": "92591721784.75",
+      "locator": {
+        "record_date": "2026-09-30",
+        "field": "month_expense_amt",
+        "aggregate": "sum"
+      }
+    }
+  ]
+}

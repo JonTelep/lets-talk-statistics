@@ -1,31 +1,27 @@
 import type { Metadata } from 'next';
-import ImmigrationPageContent from './ImmigrationPageContent';
+import TodoList from '@/components/status/TodoList';
+import { site } from '@/lib/site';
+
+const title = 'Immigration';
+const description = 'DHS Yearbook and CBP encounter charts are omitted until a workbook can be fetched and parsed without guessing.';
 
 export const metadata: Metadata = {
-  title: 'US Immigration Statistics | Admissions, Deportations & Asylum Data',
-  description: 'Comprehensive US immigration data analysis. Track legal admissions, deportations, asylum cases, naturalization rates, and historical immigration trends from DHS data.',
-  keywords: ['immigration statistics', 'visa admissions', 'deportation data', 'asylum cases', 'naturalization rates', 'immigration trends', 'DHS immigration data', 'legal immigration'],
-  openGraph: {
-    title: 'US Immigration Statistics | DHS Immigration Data',
-    description: 'Track US legal admissions, deportations, asylum cases, and immigration trends. Data from the Department of Homeland Security.',
-    url: 'https://letstalkstatistics.com/immigration',
-    images: [
-      {
-        url: '/og-immigration.png',
-        width: 1200,
-        height: 630,
-        alt: 'US Immigration Statistics Dashboard',
-      },
-    ],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'US Immigration Statistics | Admissions & Trends',
-    description: 'Comprehensive analysis of US immigration admissions, deportations, and asylum data.',
-    images: ['/og-immigration.png'],
-  },
+  title,
+  description,
+  alternates: { canonical: 'https://letstalkstatistics.com/immigration' },
 };
 
 export default function ImmigrationPage() {
-  return <ImmigrationPageContent />;
+  const items = site.todos.filter((item) => item.id === 'dhs' || item.id === 'cbp');
+  return (
+    <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
+      <h1>{title}</h1>
+      <p className="mt-4 max-w-3xl">
+        No immigration count is shown on this page. The fetch records below are the reason. Labels will match the source table when a file is parsed.
+      </p>
+      <div className="mt-8">
+        <TodoList items={items} />
+      </div>
+    </div>
+  );
 }

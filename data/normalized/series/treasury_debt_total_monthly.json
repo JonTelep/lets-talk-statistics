@@ -1,0 +1,3237 @@
+{
+  "id": "treasury_debt_total_monthly",
+  "name": "Total Public Debt Outstanding",
+  "units": "Dollars, nominal",
+  "adjustment": "not applicable",
+  "nominal_or_real": "nominal",
+  "frequency": "monthly",
+  "source_id": "treasury_debt_to_penny",
+  "series_url": "https://fiscaldata.treasury.gov/datasets/debt-to-the-penny/debt-to-the-penny",
+  "notes": "Month value is the last Debt to the Penny record in that calendar month.",
+  "points": [
+    {
+      "date": "1993-04",
+      "value": "4254084170636.01",
+      "locator": {
+        "record_date": "1993-04-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "1993-05",
+      "value": "4296278014612.43",
+      "locator": {
+        "record_date": "1993-05-28",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "1993-06",
+      "value": "4351950333834.76",
+      "locator": {
+        "record_date": "1993-06-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "1993-07",
+      "value": "4350260845100.30",
+      "locator": {
+        "record_date": "1993-07-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "1993-08",
+      "value": "4403247046170.58",
+      "locator": {
+        "record_date": "1993-08-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "1993-09",
+      "value": "4411488883139.38",
+      "locator": {
+        "record_date": "1993-09-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "1993-10",
+      "value": "4422511446437.79",
+      "locator": {
+        "record_date": "1993-10-29",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "1993-11",
+      "value": "4493535023468.35",
+      "locator": {
+        "record_date": "1993-11-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "1993-12",
+      "value": "4535687054406.14",
+      "locator": {
+        "record_date": "1993-12-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "1994-01",
+      "value": "4526307553267.04",
+      "locator": {
+        "record_date": "1994-01-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "1994-02",
+      "value": "4559540702805.73",
+      "locator": {
+        "record_date": "1994-02-28",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "1994-03",
+      "value": "4575869228916.28",
+      "locator": {
+        "record_date": "1994-03-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "1994-04",
+      "value": "4568703508047.36",
+      "locator": {
+        "record_date": "1994-04-29",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "1994-05",
+      "value": "4609296212021.38",
+      "locator": {
+        "record_date": "1994-05-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "1994-06",
+      "value": "4645801898177.58",
+      "locator": {
+        "record_date": "1994-06-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "1994-07",
+      "value": "4636361778400.62",
+      "locator": {
+        "record_date": "1994-07-29",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "1994-08",
+      "value": "4691991360873.49",
+      "locator": {
+        "record_date": "1994-08-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "1994-09",
+      "value": "4692749910013.32",
+      "locator": {
+        "record_date": "1994-09-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "1994-10",
+      "value": "4734167494604.92",
+      "locator": {
+        "record_date": "1994-10-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "1994-11",
+      "value": "4778520357397.26",
+      "locator": {
+        "record_date": "1994-11-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "1994-12",
+      "value": "4800149946143.75",
+      "locator": {
+        "record_date": "1994-12-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "1995-01",
+      "value": "4815826745802.15",
+      "locator": {
+        "record_date": "1995-01-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "1995-02",
+      "value": "4854297850590.37",
+      "locator": {
+        "record_date": "1995-02-28",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "1995-03",
+      "value": "4864115841256.92",
+      "locator": {
+        "record_date": "1995-03-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "1995-04",
+      "value": "4852327350096.60",
+      "locator": {
+        "record_date": "1995-04-28",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "1995-05",
+      "value": "4903925978763.93",
+      "locator": {
+        "record_date": "1995-05-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "1995-06",
+      "value": "4951372092079.13",
+      "locator": {
+        "record_date": "1995-06-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "1995-07",
+      "value": "4960151653142.55",
+      "locator": {
+        "record_date": "1995-07-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "1995-08",
+      "value": "4970755679060.21",
+      "locator": {
+        "record_date": "1995-08-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "1995-09",
+      "value": "4973982900709.39",
+      "locator": {
+        "record_date": "1995-09-29",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "1995-10",
+      "value": "4985262110021.06",
+      "locator": {
+        "record_date": "1995-10-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "1995-11",
+      "value": "4989329926644.31",
+      "locator": {
+        "record_date": "1995-11-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "1995-12",
+      "value": "4988664979014.54",
+      "locator": {
+        "record_date": "1995-12-29",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "1996-01",
+      "value": "4987436358165.20",
+      "locator": {
+        "record_date": "1996-01-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "1996-02",
+      "value": "5016040703255.02",
+      "locator": {
+        "record_date": "1996-02-29",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "1996-03",
+      "value": "5117786366014.56",
+      "locator": {
+        "record_date": "1996-03-29",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "1996-04",
+      "value": "5102048827234.22",
+      "locator": {
+        "record_date": "1996-04-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "1996-05",
+      "value": "5128508504892.80",
+      "locator": {
+        "record_date": "1996-05-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "1996-06",
+      "value": "5161075688140.93",
+      "locator": {
+        "record_date": "1996-06-28",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "1996-07",
+      "value": "5188888625925.87",
+      "locator": {
+        "record_date": "1996-07-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "1996-08",
+      "value": "5208303439417.93",
+      "locator": {
+        "record_date": "1996-08-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "1996-09",
+      "value": "5224810939135.73",
+      "locator": {
+        "record_date": "1996-09-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "1996-10",
+      "value": "5247319617599.91",
+      "locator": {
+        "record_date": "1996-10-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "1996-11",
+      "value": "5296548923143.63",
+      "locator": {
+        "record_date": "1996-11-29",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "1996-12",
+      "value": "5323171750783.19",
+      "locator": {
+        "record_date": "1996-12-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "1997-01",
+      "value": "5315795971480.01",
+      "locator": {
+        "record_date": "1997-01-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "1997-02",
+      "value": "5349937360942.68",
+      "locator": {
+        "record_date": "1997-02-28",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "1997-03",
+      "value": "5380889857391.59",
+      "locator": {
+        "record_date": "1997-03-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "1997-04",
+      "value": "5353971314439.39",
+      "locator": {
+        "record_date": "1997-04-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "1997-05",
+      "value": "5344961362266.83",
+      "locator": {
+        "record_date": "1997-05-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "1997-06",
+      "value": "5376151252876.02",
+      "locator": {
+        "record_date": "1997-06-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "1997-07",
+      "value": "5373228560474.27",
+      "locator": {
+        "record_date": "1997-07-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "1997-08",
+      "value": "5404420294885.51",
+      "locator": {
+        "record_date": "1997-08-29",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "1997-09",
+      "value": "5413146011397.34",
+      "locator": {
+        "record_date": "1997-09-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "1997-10",
+      "value": "5427225185059.66",
+      "locator": {
+        "record_date": "1997-10-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "1997-11",
+      "value": "5462621557837.57",
+      "locator": {
+        "record_date": "1997-11-28",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "1997-12",
+      "value": "5502388012375.95",
+      "locator": {
+        "record_date": "1997-12-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "1998-01",
+      "value": "5490064235079.64",
+      "locator": {
+        "record_date": "1998-01-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "1998-02",
+      "value": "5520668318465.51",
+      "locator": {
+        "record_date": "1998-02-27",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "1998-03",
+      "value": "5542425768605.91",
+      "locator": {
+        "record_date": "1998-03-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "1998-04",
+      "value": "5499894559513.94",
+      "locator": {
+        "record_date": "1998-04-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "1998-05",
+      "value": "5506355797435.19",
+      "locator": {
+        "record_date": "1998-05-29",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "1998-06",
+      "value": "5547934743559.81",
+      "locator": {
+        "record_date": "1998-06-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "1998-07",
+      "value": "5527738221101.41",
+      "locator": {
+        "record_date": "1998-07-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "1998-08",
+      "value": "5564553479478.04",
+      "locator": {
+        "record_date": "1998-08-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "1998-09",
+      "value": "5526193008897.62",
+      "locator": {
+        "record_date": "1998-09-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "1998-10",
+      "value": "5559254634398.44",
+      "locator": {
+        "record_date": "1998-10-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "1998-11",
+      "value": "5591979348249.72",
+      "locator": {
+        "record_date": "1998-11-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "1998-12",
+      "value": "5614217021195.87",
+      "locator": {
+        "record_date": "1998-12-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "1999-01",
+      "value": "5610117097678.95",
+      "locator": {
+        "record_date": "1999-01-29",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "1999-02",
+      "value": "5621945513528.00",
+      "locator": {
+        "record_date": "1999-02-26",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "1999-03",
+      "value": "5651615289284.87",
+      "locator": {
+        "record_date": "1999-03-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "1999-04",
+      "value": "5585839850171.61",
+      "locator": {
+        "record_date": "1999-04-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "1999-05",
+      "value": "5604198055526.11",
+      "locator": {
+        "record_date": "1999-05-28",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "1999-06",
+      "value": "5638780248334.54",
+      "locator": {
+        "record_date": "1999-06-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "1999-07",
+      "value": "5638655711931.60",
+      "locator": {
+        "record_date": "1999-07-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "1999-08",
+      "value": "5672386167530.41",
+      "locator": {
+        "record_date": "1999-08-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "1999-09",
+      "value": "5656270901633.43",
+      "locator": {
+        "record_date": "1999-09-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "1999-10",
+      "value": "5679726662904.06",
+      "locator": {
+        "record_date": "1999-10-29",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "1999-11",
+      "value": "5702010056766.20",
+      "locator": {
+        "record_date": "1999-11-29",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "1999-12",
+      "value": "5776091314225.33",
+      "locator": {
+        "record_date": "1999-12-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2000-01",
+      "value": "5711285168951.46",
+      "locator": {
+        "record_date": "2000-01-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2000-02",
+      "value": "5735333348132.58",
+      "locator": {
+        "record_date": "2000-02-29",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2000-03",
+      "value": "5773391634682.91",
+      "locator": {
+        "record_date": "2000-03-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2000-04",
+      "value": "5685108228594.76",
+      "locator": {
+        "record_date": "2000-04-28",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2000-05",
+      "value": "5647169888532.25",
+      "locator": {
+        "record_date": "2000-05-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2000-06",
+      "value": "5685938087296.66",
+      "locator": {
+        "record_date": "2000-06-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2000-07",
+      "value": "5658807449906.68",
+      "locator": {
+        "record_date": "2000-07-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2000-08",
+      "value": "5677822307077.83",
+      "locator": {
+        "record_date": "2000-08-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2000-09",
+      "value": "5674178209886.86",
+      "locator": {
+        "record_date": "2000-09-29",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2000-10",
+      "value": "5657327531667.14",
+      "locator": {
+        "record_date": "2000-10-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2000-11",
+      "value": "5709699281427.00",
+      "locator": {
+        "record_date": "2000-11-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2000-12",
+      "value": "5662216013697.37",
+      "locator": {
+        "record_date": "2000-12-29",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2001-01",
+      "value": "5716070587057.36",
+      "locator": {
+        "record_date": "2001-01-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2001-02",
+      "value": "5735859380573.98",
+      "locator": {
+        "record_date": "2001-02-28",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2001-03",
+      "value": "5773739949951.53",
+      "locator": {
+        "record_date": "2001-03-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2001-04",
+      "value": "5661347798002.65",
+      "locator": {
+        "record_date": "2001-04-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2001-05",
+      "value": "5656181958605.26",
+      "locator": {
+        "record_date": "2001-05-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2001-06",
+      "value": "5726814835287.17",
+      "locator": {
+        "record_date": "2001-06-29",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2001-07",
+      "value": "5718303095621.12",
+      "locator": {
+        "record_date": "2001-07-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2001-08",
+      "value": "5769875781034.48",
+      "locator": {
+        "record_date": "2001-08-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2001-09",
+      "value": "5807463412200.06",
+      "locator": {
+        "record_date": "2001-09-28",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2001-10",
+      "value": "5815983290402.24",
+      "locator": {
+        "record_date": "2001-10-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2001-11",
+      "value": "5888896887571.34",
+      "locator": {
+        "record_date": "2001-11-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2001-12",
+      "value": "5943438563436.13",
+      "locator": {
+        "record_date": "2001-12-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2002-01",
+      "value": "5937228743476.27",
+      "locator": {
+        "record_date": "2002-01-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2002-02",
+      "value": "6003453016583.85",
+      "locator": {
+        "record_date": "2002-02-28",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2002-03",
+      "value": "6006031606265.38",
+      "locator": {
+        "record_date": "2002-03-29",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2002-04",
+      "value": "5984677357213.86",
+      "locator": {
+        "record_date": "2002-04-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2002-05",
+      "value": "6019332312247.55",
+      "locator": {
+        "record_date": "2002-05-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2002-06",
+      "value": "6126468760400.48",
+      "locator": {
+        "record_date": "2002-06-28",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2002-07",
+      "value": "6159740790009.39",
+      "locator": {
+        "record_date": "2002-07-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2002-08",
+      "value": "6210481675956.26",
+      "locator": {
+        "record_date": "2002-08-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2002-09",
+      "value": "6228235965597.16",
+      "locator": {
+        "record_date": "2002-09-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2002-10",
+      "value": "6282527974378.50",
+      "locator": {
+        "record_date": "2002-10-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2002-11",
+      "value": "6343460146781.79",
+      "locator": {
+        "record_date": "2002-11-29",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2002-12",
+      "value": "6405707456847.53",
+      "locator": {
+        "record_date": "2002-12-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2003-01",
+      "value": "6401376662047.32",
+      "locator": {
+        "record_date": "2003-01-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2003-02",
+      "value": "6445790102794.08",
+      "locator": {
+        "record_date": "2003-02-28",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2003-03",
+      "value": "6460776256578.16",
+      "locator": {
+        "record_date": "2003-03-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2003-04",
+      "value": "6460380745789.28",
+      "locator": {
+        "record_date": "2003-04-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2003-05",
+      "value": "6558143157335.55",
+      "locator": {
+        "record_date": "2003-05-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2003-06",
+      "value": "6670121155027.26",
+      "locator": {
+        "record_date": "2003-06-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2003-07",
+      "value": "6751195107063.07",
+      "locator": {
+        "record_date": "2003-07-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2003-08",
+      "value": "6790040713975.50",
+      "locator": {
+        "record_date": "2003-08-29",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2003-09",
+      "value": "6783231062743.62",
+      "locator": {
+        "record_date": "2003-09-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2003-10",
+      "value": "6872675839106.67",
+      "locator": {
+        "record_date": "2003-10-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2003-11",
+      "value": "6925065499881.34",
+      "locator": {
+        "record_date": "2003-11-28",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2003-12",
+      "value": "6997964247818.28",
+      "locator": {
+        "record_date": "2003-12-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2004-01",
+      "value": "7009234605728.06",
+      "locator": {
+        "record_date": "2004-01-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2004-02",
+      "value": "7091943110094.84",
+      "locator": {
+        "record_date": "2004-02-27",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2004-03",
+      "value": "7131067950647.32",
+      "locator": {
+        "record_date": "2004-03-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2004-04",
+      "value": "7133789490581.43",
+      "locator": {
+        "record_date": "2004-04-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2004-05",
+      "value": "7196382805621.99",
+      "locator": {
+        "record_date": "2004-05-28",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2004-06",
+      "value": "7274334972199.15",
+      "locator": {
+        "record_date": "2004-06-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2004-07",
+      "value": "7316567571232.89",
+      "locator": {
+        "record_date": "2004-07-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2004-08",
+      "value": "7350950234630.15",
+      "locator": {
+        "record_date": "2004-08-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2004-09",
+      "value": "7379052696330.32",
+      "locator": {
+        "record_date": "2004-09-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2004-10",
+      "value": "7429677448545.04",
+      "locator": {
+        "record_date": "2004-10-29",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2004-11",
+      "value": "7525209508979.45",
+      "locator": {
+        "record_date": "2004-11-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2004-12",
+      "value": "7596142802424.14",
+      "locator": {
+        "record_date": "2004-12-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2005-01",
+      "value": "7627742597775.41",
+      "locator": {
+        "record_date": "2005-01-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2005-02",
+      "value": "7713137673664.71",
+      "locator": {
+        "record_date": "2005-02-28",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2005-03",
+      "value": "7776939047670.14",
+      "locator": {
+        "record_date": "2005-03-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2005-04",
+      "value": "7764537337364.14",
+      "locator": {
+        "record_date": "2005-04-29",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2005-05",
+      "value": "7777880152594.89",
+      "locator": {
+        "record_date": "2005-05-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2005-06",
+      "value": "7836495788085.86",
+      "locator": {
+        "record_date": "2005-06-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2005-07",
+      "value": "7887617581195.58",
+      "locator": {
+        "record_date": "2005-07-29",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2005-08",
+      "value": "7926933374544.81",
+      "locator": {
+        "record_date": "2005-08-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2005-09",
+      "value": "7932709661723.50",
+      "locator": {
+        "record_date": "2005-09-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2005-10",
+      "value": "8027123404214.36",
+      "locator": {
+        "record_date": "2005-10-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2005-11",
+      "value": "8092322205720.65",
+      "locator": {
+        "record_date": "2005-11-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2005-12",
+      "value": "8170424541313.62",
+      "locator": {
+        "record_date": "2005-12-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2006-01",
+      "value": "8196070437599.52",
+      "locator": {
+        "record_date": "2006-01-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2006-02",
+      "value": "8269885515386.04",
+      "locator": {
+        "record_date": "2006-02-28",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2006-03",
+      "value": "8371156293376.33",
+      "locator": {
+        "record_date": "2006-03-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2006-04",
+      "value": "8355718074718.49",
+      "locator": {
+        "record_date": "2006-04-28",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2006-05",
+      "value": "8356776604649.14",
+      "locator": {
+        "record_date": "2006-05-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2006-06",
+      "value": "8420041947892.19",
+      "locator": {
+        "record_date": "2006-06-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2006-07",
+      "value": "8444346806853.08",
+      "locator": {
+        "record_date": "2006-07-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2006-08",
+      "value": "8515033652079.62",
+      "locator": {
+        "record_date": "2006-08-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2006-09",
+      "value": "8506973899215.23",
+      "locator": {
+        "record_date": "2006-09-29",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2006-10",
+      "value": "8584329355565.37",
+      "locator": {
+        "record_date": "2006-10-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2006-11",
+      "value": "8633245608345.17",
+      "locator": {
+        "record_date": "2006-11-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2006-12",
+      "value": "8680224380086.18",
+      "locator": {
+        "record_date": "2006-12-29",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2007-01",
+      "value": "8707561063967.12",
+      "locator": {
+        "record_date": "2007-01-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2007-02",
+      "value": "8778110896597.94",
+      "locator": {
+        "record_date": "2007-02-28",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2007-03",
+      "value": "8849665208495.43",
+      "locator": {
+        "record_date": "2007-03-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2007-04",
+      "value": "8840168384430.83",
+      "locator": {
+        "record_date": "2007-04-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2007-05",
+      "value": "8828992459660.72",
+      "locator": {
+        "record_date": "2007-05-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2007-06",
+      "value": "8867675276751.65",
+      "locator": {
+        "record_date": "2007-06-29",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2007-07",
+      "value": "8932438299899.54",
+      "locator": {
+        "record_date": "2007-07-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2007-08",
+      "value": "9005648561262.70",
+      "locator": {
+        "record_date": "2007-08-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2007-09",
+      "value": "9007653372262.48",
+      "locator": {
+        "record_date": "2007-09-28",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2007-10",
+      "value": "9079086185866.28",
+      "locator": {
+        "record_date": "2007-10-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2007-11",
+      "value": "9149341364936.71",
+      "locator": {
+        "record_date": "2007-11-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2007-12",
+      "value": "9229172659218.31",
+      "locator": {
+        "record_date": "2007-12-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2008-01",
+      "value": "9238008288942.11",
+      "locator": {
+        "record_date": "2008-01-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2008-02",
+      "value": "9358051423747.64",
+      "locator": {
+        "record_date": "2008-02-29",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2008-03",
+      "value": "9437594138091.39",
+      "locator": {
+        "record_date": "2008-03-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2008-04",
+      "value": "9377557217133.44",
+      "locator": {
+        "record_date": "2008-04-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2008-05",
+      "value": "9388666879582.79",
+      "locator": {
+        "record_date": "2008-05-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2008-06",
+      "value": "9492006123003.80",
+      "locator": {
+        "record_date": "2008-06-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2008-07",
+      "value": "9585479639200.33",
+      "locator": {
+        "record_date": "2008-07-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2008-08",
+      "value": "9645725555640.02",
+      "locator": {
+        "record_date": "2008-08-29",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2008-09",
+      "value": "10024724896912.49",
+      "locator": {
+        "record_date": "2008-09-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2008-10",
+      "value": "10574094462968.23",
+      "locator": {
+        "record_date": "2008-10-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2008-11",
+      "value": "10661174903807.68",
+      "locator": {
+        "record_date": "2008-11-28",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2008-12",
+      "value": "10699804864612.13",
+      "locator": {
+        "record_date": "2008-12-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2009-01",
+      "value": "10632005246736.97",
+      "locator": {
+        "record_date": "2009-01-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2009-02",
+      "value": "10877144501237.52",
+      "locator": {
+        "record_date": "2009-02-27",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2009-03",
+      "value": "11126941485713.37",
+      "locator": {
+        "record_date": "2009-03-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2009-04",
+      "value": "11238592141958.64",
+      "locator": {
+        "record_date": "2009-04-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2009-05",
+      "value": "11321599905356.40",
+      "locator": {
+        "record_date": "2009-05-29",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2009-06",
+      "value": "11545275346431.39",
+      "locator": {
+        "record_date": "2009-06-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2009-07",
+      "value": "11669251349504.65",
+      "locator": {
+        "record_date": "2009-07-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2009-08",
+      "value": "11812870150873.53",
+      "locator": {
+        "record_date": "2009-08-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2009-09",
+      "value": "11909829003511.75",
+      "locator": {
+        "record_date": "2009-09-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2009-10",
+      "value": "11893091028361.01",
+      "locator": {
+        "record_date": "2009-10-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2009-11",
+      "value": "12113047538115.42",
+      "locator": {
+        "record_date": "2009-11-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2009-12",
+      "value": "12311349677512.03",
+      "locator": {
+        "record_date": "2009-12-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2010-01",
+      "value": "12278635997966.88",
+      "locator": {
+        "record_date": "2010-01-29",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2010-02",
+      "value": "12440068020714.47",
+      "locator": {
+        "record_date": "2010-02-26",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2010-03",
+      "value": "12773123096139.43",
+      "locator": {
+        "record_date": "2010-03-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2010-04",
+      "value": "12948738915856.86",
+      "locator": {
+        "record_date": "2010-04-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2010-05",
+      "value": "12992539130957.22",
+      "locator": {
+        "record_date": "2010-05-28",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2010-06",
+      "value": "13203473753968.10",
+      "locator": {
+        "record_date": "2010-06-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2010-07",
+      "value": "13237726976890.03",
+      "locator": {
+        "record_date": "2010-07-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2010-08",
+      "value": "13449652537035.05",
+      "locator": {
+        "record_date": "2010-08-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2010-09",
+      "value": "13561623030891.79",
+      "locator": {
+        "record_date": "2010-09-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2010-10",
+      "value": "13668825497341.36",
+      "locator": {
+        "record_date": "2010-10-29",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2010-11",
+      "value": "13860773759018.43",
+      "locator": {
+        "record_date": "2010-11-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2010-12",
+      "value": "14025215218708.52",
+      "locator": {
+        "record_date": "2010-12-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2011-01",
+      "value": "14131051056010.84",
+      "locator": {
+        "record_date": "2011-01-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2011-02",
+      "value": "14194764339462.64",
+      "locator": {
+        "record_date": "2011-02-28",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2011-03",
+      "value": "14270114530800.38",
+      "locator": {
+        "record_date": "2011-03-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2011-04",
+      "value": "14287630052323.12",
+      "locator": {
+        "record_date": "2011-04-29",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2011-05",
+      "value": "14344668281211.01",
+      "locator": {
+        "record_date": "2011-05-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2011-06",
+      "value": "14343087640008.40",
+      "locator": {
+        "record_date": "2011-06-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2011-07",
+      "value": "14342369286195.61",
+      "locator": {
+        "record_date": "2011-07-29",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2011-08",
+      "value": "14684292994743.93",
+      "locator": {
+        "record_date": "2011-08-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2011-09",
+      "value": "14790340328557.15",
+      "locator": {
+        "record_date": "2011-09-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2011-10",
+      "value": "14993709044140.78",
+      "locator": {
+        "record_date": "2011-10-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2011-11",
+      "value": "15110498560876.77",
+      "locator": {
+        "record_date": "2011-11-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2011-12",
+      "value": "15222940045451.09",
+      "locator": {
+        "record_date": "2011-12-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2012-01",
+      "value": "15356140493616.06",
+      "locator": {
+        "record_date": "2012-01-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2012-02",
+      "value": "15488891296248.02",
+      "locator": {
+        "record_date": "2012-02-29",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2012-03",
+      "value": "15582078681188.69",
+      "locator": {
+        "record_date": "2012-03-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2012-04",
+      "value": "15692368067305.23",
+      "locator": {
+        "record_date": "2012-04-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2012-05",
+      "value": "15770685085364.14",
+      "locator": {
+        "record_date": "2012-05-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2012-06",
+      "value": "15856367214324.44",
+      "locator": {
+        "record_date": "2012-06-29",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2012-07",
+      "value": "15933234637493.55",
+      "locator": {
+        "record_date": "2012-07-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2012-08",
+      "value": "16015769788215.80",
+      "locator": {
+        "record_date": "2012-08-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2012-09",
+      "value": "16066241407385.89",
+      "locator": {
+        "record_date": "2012-09-28",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2012-10",
+      "value": "16261470510720.74",
+      "locator": {
+        "record_date": "2012-10-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2012-11",
+      "value": "16369548799604.93",
+      "locator": {
+        "record_date": "2012-11-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2012-12",
+      "value": "16432730050569.12",
+      "locator": {
+        "record_date": "2012-12-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2013-01",
+      "value": "16433791850294.04",
+      "locator": {
+        "record_date": "2013-01-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2013-02",
+      "value": "16687289180215.37",
+      "locator": {
+        "record_date": "2013-02-28",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2013-03",
+      "value": "16771379006760.38",
+      "locator": {
+        "record_date": "2013-03-29",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2013-04",
+      "value": "16828845497183.90",
+      "locator": {
+        "record_date": "2013-04-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2013-05",
+      "value": "16738821943986.12",
+      "locator": {
+        "record_date": "2013-05-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2013-06",
+      "value": "16738320054489.27",
+      "locator": {
+        "record_date": "2013-06-28",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2013-07",
+      "value": "16738599194294.87",
+      "locator": {
+        "record_date": "2013-07-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2013-08",
+      "value": "16738649841392.70",
+      "locator": {
+        "record_date": "2013-08-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2013-09",
+      "value": "16738183526697.32",
+      "locator": {
+        "record_date": "2013-09-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2013-10",
+      "value": "17156117102204.49",
+      "locator": {
+        "record_date": "2013-10-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2013-11",
+      "value": "17217151645105.86",
+      "locator": {
+        "record_date": "2013-11-29",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2013-12",
+      "value": "17351970784950.15",
+      "locator": {
+        "record_date": "2013-12-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2014-01",
+      "value": "17293019654983.61",
+      "locator": {
+        "record_date": "2014-01-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2014-02",
+      "value": "17463228562652.94",
+      "locator": {
+        "record_date": "2014-02-28",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2014-03",
+      "value": "17601227291213.89",
+      "locator": {
+        "record_date": "2014-03-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2014-04",
+      "value": "17508437127661.62",
+      "locator": {
+        "record_date": "2014-04-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2014-05",
+      "value": "17516958495107.78",
+      "locator": {
+        "record_date": "2014-05-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2014-06",
+      "value": "17632606234365.92",
+      "locator": {
+        "record_date": "2014-06-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2014-07",
+      "value": "17687136723410.59",
+      "locator": {
+        "record_date": "2014-07-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2014-08",
+      "value": "17749172392528.10",
+      "locator": {
+        "record_date": "2014-08-29",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2014-09",
+      "value": "17824071380733.82",
+      "locator": {
+        "record_date": "2014-09-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2014-10",
+      "value": "17937160394872.60",
+      "locator": {
+        "record_date": "2014-10-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2014-11",
+      "value": "18005549328561.45",
+      "locator": {
+        "record_date": "2014-11-28",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2014-12",
+      "value": "18141444135563.30",
+      "locator": {
+        "record_date": "2014-12-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2015-01",
+      "value": "18082294157510.20",
+      "locator": {
+        "record_date": "2015-01-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2015-02",
+      "value": "18155853840783.67",
+      "locator": {
+        "record_date": "2015-02-27",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2015-03",
+      "value": "18152056197489.27",
+      "locator": {
+        "record_date": "2015-03-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2015-04",
+      "value": "18152560126787.71",
+      "locator": {
+        "record_date": "2015-04-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2015-05",
+      "value": "18152851678150.27",
+      "locator": {
+        "record_date": "2015-05-29",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2015-06",
+      "value": "18151997510872.44",
+      "locator": {
+        "record_date": "2015-06-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2015-07",
+      "value": "18151322549156.91",
+      "locator": {
+        "record_date": "2015-07-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2015-08",
+      "value": "18151150179588.05",
+      "locator": {
+        "record_date": "2015-08-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2015-09",
+      "value": "18150617666484.33",
+      "locator": {
+        "record_date": "2015-09-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2015-10",
+      "value": "18152981685747.52",
+      "locator": {
+        "record_date": "2015-10-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2015-11",
+      "value": "18827322966908.80",
+      "locator": {
+        "record_date": "2015-11-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2015-12",
+      "value": "18922179009420.89",
+      "locator": {
+        "record_date": "2015-12-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2016-01",
+      "value": "19012827698417.93",
+      "locator": {
+        "record_date": "2016-01-29",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2016-02",
+      "value": "19125455057425.80",
+      "locator": {
+        "record_date": "2016-02-29",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2016-03",
+      "value": "19264938619643.07",
+      "locator": {
+        "record_date": "2016-03-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2016-04",
+      "value": "19187387483983.37",
+      "locator": {
+        "record_date": "2016-04-29",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2016-05",
+      "value": "19265451572330.71",
+      "locator": {
+        "record_date": "2016-05-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2016-06",
+      "value": "19381591140792.22",
+      "locator": {
+        "record_date": "2016-06-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2016-07",
+      "value": "19427694579786.64",
+      "locator": {
+        "record_date": "2016-07-29",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2016-08",
+      "value": "19510296242765.66",
+      "locator": {
+        "record_date": "2016-08-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2016-09",
+      "value": "19573444713936.79",
+      "locator": {
+        "record_date": "2016-09-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2016-10",
+      "value": "19805715214641.75",
+      "locator": {
+        "record_date": "2016-10-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2016-11",
+      "value": "19948064697245.75",
+      "locator": {
+        "record_date": "2016-11-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2016-12",
+      "value": "19976826951047.80",
+      "locator": {
+        "record_date": "2016-12-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2017-01",
+      "value": "19937261314503.29",
+      "locator": {
+        "record_date": "2017-01-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2017-02",
+      "value": "19959593604841.58",
+      "locator": {
+        "record_date": "2017-02-28",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2017-03",
+      "value": "19846420062676.87",
+      "locator": {
+        "record_date": "2017-03-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2017-04",
+      "value": "19846129308635.72",
+      "locator": {
+        "record_date": "2017-04-28",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2017-05",
+      "value": "19845941916894.67",
+      "locator": {
+        "record_date": "2017-05-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2017-06",
+      "value": "19844554182651.33",
+      "locator": {
+        "record_date": "2017-06-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2017-07",
+      "value": "19844908989217.09",
+      "locator": {
+        "record_date": "2017-07-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2017-08",
+      "value": "19844533441924.39",
+      "locator": {
+        "record_date": "2017-08-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2017-09",
+      "value": "20244900016053.51",
+      "locator": {
+        "record_date": "2017-09-29",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2017-10",
+      "value": "20442473549889.39",
+      "locator": {
+        "record_date": "2017-10-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2017-11",
+      "value": "20590391942312.26",
+      "locator": {
+        "record_date": "2017-11-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2017-12",
+      "value": "20492746546193.75",
+      "locator": {
+        "record_date": "2017-12-29",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2018-01",
+      "value": "20493729921939.72",
+      "locator": {
+        "record_date": "2018-01-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2018-02",
+      "value": "20855671542905.95",
+      "locator": {
+        "record_date": "2018-02-28",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2018-03",
+      "value": "21089642954195.85",
+      "locator": {
+        "record_date": "2018-03-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2018-04",
+      "value": "21068200197433.39",
+      "locator": {
+        "record_date": "2018-04-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2018-05",
+      "value": "21145215185726.27",
+      "locator": {
+        "record_date": "2018-05-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2018-06",
+      "value": "21195069635322.81",
+      "locator": {
+        "record_date": "2018-06-29",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2018-07",
+      "value": "21313061060202.36",
+      "locator": {
+        "record_date": "2018-07-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2018-08",
+      "value": "21458849674105.03",
+      "locator": {
+        "record_date": "2018-08-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2018-09",
+      "value": "21516058183180.23",
+      "locator": {
+        "record_date": "2018-09-28",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2018-10",
+      "value": "21702369768174.47",
+      "locator": {
+        "record_date": "2018-10-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2018-11",
+      "value": "21850093880675.80",
+      "locator": {
+        "record_date": "2018-11-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2018-12",
+      "value": "21974095705790.55",
+      "locator": {
+        "record_date": "2018-12-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2019-01",
+      "value": "21982423036475.23",
+      "locator": {
+        "record_date": "2019-01-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2019-02",
+      "value": "22115526445599.07",
+      "locator": {
+        "record_date": "2019-02-28",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2019-03",
+      "value": "22027880157027.99",
+      "locator": {
+        "record_date": "2019-03-29",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2019-04",
+      "value": "22027668200019.47",
+      "locator": {
+        "record_date": "2019-04-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2019-05",
+      "value": "22026423883026.38",
+      "locator": {
+        "record_date": "2019-05-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2019-06",
+      "value": "22023282617075.45",
+      "locator": {
+        "record_date": "2019-06-28",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2019-07",
+      "value": "22022368854863.19",
+      "locator": {
+        "record_date": "2019-07-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2019-08",
+      "value": "22460466625952.37",
+      "locator": {
+        "record_date": "2019-08-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2019-09",
+      "value": "22719401753433.78",
+      "locator": {
+        "record_date": "2019-09-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2019-10",
+      "value": "23008409564494.99",
+      "locator": {
+        "record_date": "2019-10-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2019-11",
+      "value": "23076198934547.70",
+      "locator": {
+        "record_date": "2019-11-29",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2019-12",
+      "value": "23201380134806.73",
+      "locator": {
+        "record_date": "2019-12-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2020-01",
+      "value": "23223812882713.14",
+      "locator": {
+        "record_date": "2020-01-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2020-02",
+      "value": "23409959150243.63",
+      "locator": {
+        "record_date": "2020-02-28",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2020-03",
+      "value": "23686870812640.08",
+      "locator": {
+        "record_date": "2020-03-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2020-04",
+      "value": "24974171868164.35",
+      "locator": {
+        "record_date": "2020-04-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2020-05",
+      "value": "25746260186742.66",
+      "locator": {
+        "record_date": "2020-05-29",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2020-06",
+      "value": "26477240853124.76",
+      "locator": {
+        "record_date": "2020-06-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2020-07",
+      "value": "26524953451577.60",
+      "locator": {
+        "record_date": "2020-07-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2020-08",
+      "value": "26728835852386.44",
+      "locator": {
+        "record_date": "2020-08-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2020-09",
+      "value": "26945391194615.15",
+      "locator": {
+        "record_date": "2020-09-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2020-10",
+      "value": "27135476803126.20",
+      "locator": {
+        "record_date": "2020-10-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2020-11",
+      "value": "27446288188250.17",
+      "locator": {
+        "record_date": "2020-11-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2020-12",
+      "value": "27747797947667.77",
+      "locator": {
+        "record_date": "2020-12-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2021-01",
+      "value": "27784553033005.01",
+      "locator": {
+        "record_date": "2021-01-29",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2021-02",
+      "value": "27902363734475.70",
+      "locator": {
+        "record_date": "2021-02-26",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2021-03",
+      "value": "28132570303600.16",
+      "locator": {
+        "record_date": "2021-03-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2021-04",
+      "value": "28174714484167.37",
+      "locator": {
+        "record_date": "2021-04-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2021-05",
+      "value": "28199008338520.65",
+      "locator": {
+        "record_date": "2021-05-28",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2021-06",
+      "value": "28529435873139.77",
+      "locator": {
+        "record_date": "2021-06-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2021-07",
+      "value": "28427721872418.70",
+      "locator": {
+        "record_date": "2021-07-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2021-08",
+      "value": "28427317184527.64",
+      "locator": {
+        "record_date": "2021-08-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2021-09",
+      "value": "28428918570048.68",
+      "locator": {
+        "record_date": "2021-09-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2021-10",
+      "value": "28908765340554.33",
+      "locator": {
+        "record_date": "2021-10-29",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2021-11",
+      "value": "28907986914620.48",
+      "locator": {
+        "record_date": "2021-11-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2021-12",
+      "value": "29617214856051.75",
+      "locator": {
+        "record_date": "2021-12-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2022-01",
+      "value": "30012386059238.29",
+      "locator": {
+        "record_date": "2022-01-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2022-02",
+      "value": "30290352672788.26",
+      "locator": {
+        "record_date": "2022-02-28",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2022-03",
+      "value": "30400959928180.97",
+      "locator": {
+        "record_date": "2022-03-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2022-04",
+      "value": "30374154511898.01",
+      "locator": {
+        "record_date": "2022-04-29",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2022-05",
+      "value": "30499618521246.79",
+      "locator": {
+        "record_date": "2022-05-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2022-06",
+      "value": "30568582029058.95",
+      "locator": {
+        "record_date": "2022-06-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2022-07",
+      "value": "30595108567190.06",
+      "locator": {
+        "record_date": "2022-07-29",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2022-08",
+      "value": "30936075214882.41",
+      "locator": {
+        "record_date": "2022-08-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2022-09",
+      "value": "30928911613306.73",
+      "locator": {
+        "record_date": "2022-09-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2022-10",
+      "value": "31238301149359.52",
+      "locator": {
+        "record_date": "2022-10-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2022-11",
+      "value": "31413322465316.30",
+      "locator": {
+        "record_date": "2022-11-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2022-12",
+      "value": "31419689421557.90",
+      "locator": {
+        "record_date": "2022-12-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2023-01",
+      "value": "31454982227739.16",
+      "locator": {
+        "record_date": "2023-01-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2023-02",
+      "value": "31459291458579.46",
+      "locator": {
+        "record_date": "2023-02-28",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2023-03",
+      "value": "31458437575028.18",
+      "locator": {
+        "record_date": "2023-03-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2023-04",
+      "value": "31457814648415.87",
+      "locator": {
+        "record_date": "2023-04-28",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2023-05",
+      "value": "31464457465522.98",
+      "locator": {
+        "record_date": "2023-05-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2023-06",
+      "value": "32332274184762.99",
+      "locator": {
+        "record_date": "2023-06-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2023-07",
+      "value": "32608585072666.14",
+      "locator": {
+        "record_date": "2023-07-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2023-08",
+      "value": "32914149363760.95",
+      "locator": {
+        "record_date": "2023-08-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2023-09",
+      "value": "33167334044723.16",
+      "locator": {
+        "record_date": "2023-09-29",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2023-10",
+      "value": "33699580339128.49",
+      "locator": {
+        "record_date": "2023-10-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2023-11",
+      "value": "33878679367501.20",
+      "locator": {
+        "record_date": "2023-11-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2023-12",
+      "value": "34001493655565.48",
+      "locator": {
+        "record_date": "2023-12-29",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2024-01",
+      "value": "34191150402393.64",
+      "locator": {
+        "record_date": "2024-01-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2024-02",
+      "value": "34471083238111.75",
+      "locator": {
+        "record_date": "2024-02-29",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2024-03",
+      "value": "34586533479349.88",
+      "locator": {
+        "record_date": "2024-03-29",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2024-04",
+      "value": "34616994016250.88",
+      "locator": {
+        "record_date": "2024-04-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2024-05",
+      "value": "34667115142400.83",
+      "locator": {
+        "record_date": "2024-05-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2024-06",
+      "value": "34831634431393.47",
+      "locator": {
+        "record_date": "2024-06-28",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2024-07",
+      "value": "35104770649301.03",
+      "locator": {
+        "record_date": "2024-07-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2024-08",
+      "value": "35256056842790.06",
+      "locator": {
+        "record_date": "2024-08-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2024-09",
+      "value": "35464673929171.69",
+      "locator": {
+        "record_date": "2024-09-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2024-10",
+      "value": "35951601173936.02",
+      "locator": {
+        "record_date": "2024-10-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2024-11",
+      "value": "36087362960612.00",
+      "locator": {
+        "record_date": "2024-11-29",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2024-12",
+      "value": "36218605311689.91",
+      "locator": {
+        "record_date": "2024-12-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2025-01",
+      "value": "36220206738047.96",
+      "locator": {
+        "record_date": "2025-01-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2025-02",
+      "value": "36218923369370.10",
+      "locator": {
+        "record_date": "2025-02-28",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2025-03",
+      "value": "36214310420174.13",
+      "locator": {
+        "record_date": "2025-03-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2025-04",
+      "value": "36213557195810.65",
+      "locator": {
+        "record_date": "2025-04-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2025-05",
+      "value": "36215818399936.85",
+      "locator": {
+        "record_date": "2025-05-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2025-06",
+      "value": "36211469351821.31",
+      "locator": {
+        "record_date": "2025-06-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2025-07",
+      "value": "36916987311998.03",
+      "locator": {
+        "record_date": "2025-07-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2025-08",
+      "value": "37274265917907.03",
+      "locator": {
+        "record_date": "2025-08-29",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2025-09",
+      "value": "37637553494935.61",
+      "locator": {
+        "record_date": "2025-09-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2025-10",
+      "value": "38040093786521.02",
+      "locator": {
+        "record_date": "2025-10-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2025-11",
+      "value": "38396211497613.65",
+      "locator": {
+        "record_date": "2025-11-28",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2025-12",
+      "value": "38514009184232.72",
+      "locator": {
+        "record_date": "2025-12-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2026-01",
+      "value": "38521368112341.66",
+      "locator": {
+        "record_date": "2026-01-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2026-02",
+      "value": "38769805982273.81",
+      "locator": {
+        "record_date": "2026-02-27",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2026-03",
+      "value": "39065421393640.82",
+      "locator": {
+        "record_date": "2026-03-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2026-04",
+      "value": "38967833861543.11",
+      "locator": {
+        "record_date": "2026-04-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2026-05",
+      "value": "39207759598302.62",
+      "locator": {
+        "record_date": "2026-05-29",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2026-06",
+      "value": "39462398380774.37",
+      "locator": {
+        "record_date": "2026-06-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2026-07",
+      "value": "39771617162466.97",
+      "locator": {
+        "record_date": "2026-07-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2026-08",
+      "value": "40175641071634.14",
+      "locator": {
+        "record_date": "2026-08-31",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2026-09",
+      "value": "40171825101340.31",
+      "locator": {
+        "record_date": "2026-09-30",
+        "field": "tot_pub_debt_out_amt"
+      }
+    },
+    {
+      "date": "2026-10",
+      "value": "40388317675071.91",
+      "locator": {
+        "record_date": "2026-10-15",
+        "field": "tot_pub_debt_out_amt"
+      }
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+/debt /budget 301
+/employment /economy 301
+/about /sources 301
+/congress /sources 301
+/congress/* /sources 301
+/healthcare /sources 301
+/education /sources 301
+/elections /sources 301
+/housing /prices 301
+/immigration/trends /immigration 301
+/offline / 301

@@ -1,0 +1,485 @@
+{
+  "id": "census_median_income_adjusted",
+  "name": "Median income, 2025 dollars",
+  "units": "2025 dollars",
+  "adjustment": "(Households as of March of the following year. Income in current and 2025 C-CPI-U (2000-2025) and R-CPI-U-RS (pre-2000) adjusted dollars (28))",
+  "nominal_or_real": "inflation-adjusted",
+  "frequency": "annual",
+  "source_id": "census_h05",
+  "series_url": "https://www.census.gov/data/tables/time-series/demo/income-poverty/historical-income-households.html",
+  "notes": "Inflation adjustment is the one Census publishes in this column, not a CPI-U adjustment computed by this site. (Households as of March of the following year. Income in current and 2025 C-CPI-U (2000-2025) and R-CPI-U-RS (pre-2000) adjusted dollars (28))",
+  "points": [
+    {
+      "date": "1967",
+      "value": "56230",
+      "locator": {
+        "row_label": "1967 (12)",
+        "column": "2025 dollars"
+      }
+    },
+    {
+      "date": "1968",
+      "value": "58630",
+      "locator": {
+        "row_label": "1968",
+        "column": "2025 dollars"
+      }
+    },
+    {
+      "date": "1969",
+      "value": "60940",
+      "locator": {
+        "row_label": "1969",
+        "column": "2025 dollars"
+      }
+    },
+    {
+      "date": "1970",
+      "value": "60490",
+      "locator": {
+        "row_label": "1970",
+        "column": "2025 dollars"
+      }
+    },
+    {
+      "date": "1971",
+      "value": "59970",
+      "locator": {
+        "row_label": "1971 (13)",
+        "column": "2025 dollars"
+      }
+    },
+    {
+      "date": "1972",
+      "value": "62330",
+      "locator": {
+        "row_label": "1972 (14)",
+        "column": "2025 dollars"
+      }
+    },
+    {
+      "date": "1973",
+      "value": "63680",
+      "locator": {
+        "row_label": "1973",
+        "column": "2025 dollars"
+      }
+    },
+    {
+      "date": "1974",
+      "value": "61760",
+      "locator": {
+        "row_label": "1974 (16)(15)",
+        "column": "2025 dollars"
+      }
+    },
+    {
+      "date": "1975",
+      "value": "60080",
+      "locator": {
+        "row_label": "1975 (16)",
+        "column": "2025 dollars"
+      }
+    },
+    {
+      "date": "1976",
+      "value": "61100",
+      "locator": {
+        "row_label": "1976 (17)",
+        "column": "2025 dollars"
+      }
+    },
+    {
+      "date": "1977",
+      "value": "61400",
+      "locator": {
+        "row_label": "1977",
+        "column": "2025 dollars"
+      }
+    },
+    {
+      "date": "1978",
+      "value": "63790",
+      "locator": {
+        "row_label": "1978",
+        "column": "2025 dollars"
+      }
+    },
+    {
+      "date": "1979",
+      "value": "63670",
+      "locator": {
+        "row_label": "1979 (18)",
+        "column": "2025 dollars"
+      }
+    },
+    {
+      "date": "1980",
+      "value": "61690",
+      "locator": {
+        "row_label": "1980",
+        "column": "2025 dollars"
+      }
+    },
+    {
+      "date": "1981",
+      "value": "60650",
+      "locator": {
+        "row_label": "1981",
+        "column": "2025 dollars"
+      }
+    },
+    {
+      "date": "1982",
+      "value": "60480",
+      "locator": {
+        "row_label": "1982",
+        "column": "2025 dollars"
+      }
+    },
+    {
+      "date": "1983",
+      "value": "60100",
+      "locator": {
+        "row_label": "1983",
+        "column": "2025 dollars"
+      }
+    },
+    {
+      "date": "1984",
+      "value": "61910",
+      "locator": {
+        "row_label": "1984 (19)",
+        "column": "2025 dollars"
+      }
+    },
+    {
+      "date": "1985",
+      "value": "63090",
+      "locator": {
+        "row_label": "1985 (20)",
+        "column": "2025 dollars"
+      }
+    },
+    {
+      "date": "1986",
+      "value": "65430",
+      "locator": {
+        "row_label": "1986",
+        "column": "2025 dollars"
+      }
+    },
+    {
+      "date": "1987",
+      "value": "66250",
+      "locator": {
+        "row_label": "1987 (21)",
+        "column": "2025 dollars"
+      }
+    },
+    {
+      "date": "1988",
+      "value": "66740",
+      "locator": {
+        "row_label": "1988",
+        "column": "2025 dollars"
+      }
+    },
+    {
+      "date": "1989",
+      "value": "67880",
+      "locator": {
+        "row_label": "1989",
+        "column": "2025 dollars"
+      }
+    },
+    {
+      "date": "1990",
+      "value": "67050",
+      "locator": {
+        "row_label": "1990",
+        "column": "2025 dollars"
+      }
+    },
+    {
+      "date": "1991",
+      "value": "65100",
+      "locator": {
+        "row_label": "1991",
+        "column": "2025 dollars"
+      }
+    },
+    {
+      "date": "1992",
+      "value": "64560",
+      "locator": {
+        "row_label": "1992 (22)",
+        "column": "2025 dollars"
+      }
+    },
+    {
+      "date": "1993",
+      "value": "64240",
+      "locator": {
+        "row_label": "1993 (23)",
+        "column": "2025 dollars"
+      }
+    },
+    {
+      "date": "1994",
+      "value": "64930",
+      "locator": {
+        "row_label": "1994 (24)",
+        "column": "2025 dollars"
+      }
+    },
+    {
+      "date": "1995",
+      "value": "66990",
+      "locator": {
+        "row_label": "1995 (25)",
+        "column": "2025 dollars"
+      }
+    },
+    {
+      "date": "1996",
+      "value": "67980",
+      "locator": {
+        "row_label": "1996",
+        "column": "2025 dollars"
+      }
+    },
+    {
+      "date": "1997",
+      "value": "69390",
+      "locator": {
+        "row_label": "1997",
+        "column": "2025 dollars"
+      }
+    },
+    {
+      "date": "1998",
+      "value": "71930",
+      "locator": {
+        "row_label": "1998",
+        "column": "2025 dollars"
+      }
+    },
+    {
+      "date": "1999",
+      "value": "73760",
+      "locator": {
+        "row_label": "1999 (29)",
+        "column": "2025 dollars"
+      }
+    },
+    {
+      "date": "2000",
+      "value": "73560",
+      "locator": {
+        "row_label": "2000 (30)",
+        "column": "2025 dollars"
+      }
+    },
+    {
+      "date": "2001",
+      "value": "72350",
+      "locator": {
+        "row_label": "2001",
+        "column": "2025 dollars"
+      }
+    },
+    {
+      "date": "2002",
+      "value": "71770",
+      "locator": {
+        "row_label": "2002",
+        "column": "2025 dollars"
+      }
+    },
+    {
+      "date": "2003",
+      "value": "71810",
+      "locator": {
+        "row_label": "2003",
+        "column": "2025 dollars"
+      }
+    },
+    {
+      "date": "2004",
+      "value": "71700",
+      "locator": {
+        "row_label": "2004 (35)",
+        "column": "2025 dollars"
+      }
+    },
+    {
+      "date": "2005",
+      "value": "72810",
+      "locator": {
+        "row_label": "2005",
+        "column": "2025 dollars"
+      }
+    },
+    {
+      "date": "2006",
+      "value": "73620",
+      "locator": {
+        "row_label": "2006",
+        "column": "2025 dollars"
+      }
+    },
+    {
+      "date": "2007",
+      "value": "74810",
+      "locator": {
+        "row_label": "2007",
+        "column": "2025 dollars"
+      }
+    },
+    {
+      "date": "2008",
+      "value": "72260",
+      "locator": {
+        "row_label": "2008",
+        "column": "2025 dollars"
+      }
+    },
+    {
+      "date": "2009",
+      "value": "71790",
+      "locator": {
+        "row_label": "2009 (36)",
+        "column": "2025 dollars"
+      }
+    },
+    {
+      "date": "2010",
+      "value": "70110",
+      "locator": {
+        "row_label": "2010 (37)",
+        "column": "2025 dollars"
+      }
+    },
+    {
+      "date": "2011",
+      "value": "69070",
+      "locator": {
+        "row_label": "2011",
+        "column": "2025 dollars"
+      }
+    },
+    {
+      "date": "2012",
+      "value": "69070",
+      "locator": {
+        "row_label": "2012",
+        "column": "2025 dollars"
+      }
+    },
+    {
+      "date": "2013",
+      "value": "71670",
+      "locator": {
+        "row_label": "2013 (39)",
+        "column": "2025 dollars"
+      }
+    },
+    {
+      "date": "2014",
+      "value": "70760",
+      "locator": {
+        "row_label": "2014",
+        "column": "2025 dollars"
+      }
+    },
+    {
+      "date": "2015",
+      "value": "74590",
+      "locator": {
+        "row_label": "2015",
+        "column": "2025 dollars"
+      }
+    },
+    {
+      "date": "2016",
+      "value": "77230",
+      "locator": {
+        "row_label": "2016",
+        "column": "2025 dollars"
+      }
+    },
+    {
+      "date": "2017",
+      "value": "78600",
+      "locator": {
+        "row_label": "2017 (40)",
+        "column": "2025 dollars"
+      }
+    },
+    {
+      "date": "2018",
+      "value": "79620",
+      "locator": {
+        "row_label": "2018",
+        "column": "2025 dollars"
+      }
+    },
+    {
+      "date": "2019",
+      "value": "85320",
+      "locator": {
+        "row_label": "2019",
+        "column": "2025 dollars"
+      }
+    },
+    {
+      "date": "2020",
+      "value": "83590",
+      "locator": {
+        "row_label": "2020 (41)",
+        "column": "2025 dollars"
+      }
+    },
+    {
+      "date": "2021",
+      "value": "83270",
+      "locator": {
+        "row_label": "2021",
+        "column": "2025 dollars"
+      }
+    },
+    {
+      "date": "2022",
+      "value": "81460",
+      "locator": {
+        "row_label": "2022",
+        "column": "2025 dollars"
+      }
+    },
+    {
+      "date": "2023",
+      "value": "84730",
+      "locator": {
+        "row_label": "2023",
+        "column": "2025 dollars"
+      }
+    },
+    {
+      "date": "2024",
+      "value": "85210",
+      "locator": {
+        "row_label": "2024 (42)",
+        "column": "2025 dollars"
+      }
+    },
+    {
+      "date": "2025",
+      "value": "87460",
+      "locator": {
+        "row_label": "2025",
+        "column": "2025 dollars"
+      }
+    }
+  ]
+}

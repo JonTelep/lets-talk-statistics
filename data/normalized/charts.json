@@ -1,0 +1,242 @@
+{
+  "charts": [
+    {
+      "id": "cpi-u-all-items",
+      "title": "CPI-U, All items",
+      "page": "prices",
+      "frequency": "annual",
+      "shade": "calendar",
+      "series": [
+        "bls_cuur0000sa0_annual"
+      ],
+      "notes": "Annual average (period M13). U.S. city average, all urban consumers, not seasonally adjusted."
+    },
+    {
+      "id": "cpi-u-12-month-change",
+      "title": "CPI-U, All items, 12-month percent change",
+      "page": "prices",
+      "frequency": "monthly",
+      "shade": "month",
+      "series": [
+        "cpi_u_all_items_12_month_change"
+      ],
+      "notes": "Computed from the CPI-U all-items index. Not seasonally adjusted."
+    },
+    {
+      "id": "cpi-u-components",
+      "title": "CPI-U food, shelter, energy, medical care, and education",
+      "page": "prices",
+      "frequency": "annual",
+      "shade": "calendar",
+      "series": [
+        "bls_cuur0000saf1_annual_rebased",
+        "bls_cuur0000sah1_annual_rebased",
+        "bls_cuur0000sa0e_annual_rebased",
+        "bls_cuur0000sam_annual_rebased",
+        "bls_cuur0000sae1_annual_rebased"
+      ],
+      "notes": "Each line is rebased to 100 in the first year shared by all five series. Published bases differ. Education is December 1997=100. The others shown here are 1982-84=100."
+    },
+    {
+      "id": "new-home-median-price",
+      "title": "Median sales price of new privately owned houses sold",
+      "page": "prices",
+      "frequency": "annual",
+      "shade": "calendar",
+      "series": [
+        "census_new_home_median",
+        "census_new_home_median_cpi_u"
+      ],
+      "notes": "United States. New houses only. The sales price includes the land. The inflation-adjusted line uses CPI-U, base 1982-84=100."
+    },
+    {
+      "id": "hourly-earnings-all-employees",
+      "title": "Average hourly earnings of all employees, total private",
+      "page": "economy",
+      "frequency": "annual",
+      "shade": "calendar",
+      "series": [
+        "bls_ceu0500000003_annual",
+        "bls_ceu0500000013_annual"
+      ],
+      "notes": "Not seasonally adjusted. Annual average (period M13). The inflation-adjusted series is the BLS series in 1982-1984 dollars."
+    },
+    {
+      "id": "hourly-earnings-production",
+      "title": "Average hourly earnings of production and nonsupervisory employees, total private",
+      "page": "economy",
+      "frequency": "annual",
+      "shade": "calendar",
+      "series": [
+        "bls_ceu0500000008_annual",
+        "bls_ceu0500000032_annual"
+      ],
+      "notes": "Not seasonally adjusted. Annual average (period M13). The inflation-adjusted series is the BLS series in 1982-84 dollars."
+    },
+    {
+      "id": "unemployment-rate",
+      "title": "Unemployment rate",
+      "page": "economy",
+      "frequency": "monthly",
+      "shade": "month",
+      "series": [
+        "bls_lns14000000_monthly"
+      ],
+      "notes": "Seasonally adjusted, as published by BLS."
+    },
+    {
+      "id": "median-household-income",
+      "title": "Median household income",
+      "page": "economy",
+      "frequency": "annual",
+      "shade": "calendar",
+      "series": [
+        "census_median_income_current",
+        "census_median_income_adjusted"
+      ],
+      "notes": "All races. Current dollars and the Census 2025-dollar column. That column uses 2025 C-CPI-U for 2000 to 2025 and R-CPI-U-RS before 2000."
+    },
+    {
+      "id": "gdp",
+      "title": "Gross domestic product",
+      "page": "economy",
+      "frequency": "annual",
+      "shade": "calendar",
+      "series": [
+        "bea_gdp_nominal",
+        "bea_gdp_real"
+      ],
+      "notes": "BEA NIPA annual data. Nominal GDP is current dollars. Real GDP is chained 2017 dollars."
+    },
+    {
+      "id": "debt-to-the-penny",
+      "title": "Debt to the Penny",
+      "page": "budget",
+      "frequency": "monthly",
+      "shade": "month",
+      "series": [
+        "treasury_debt_total_monthly",
+        "treasury_debt_public_monthly",
+        "treasury_debt_intragov_monthly"
+      ],
+      "notes": "Last Debt to the Penny record in each calendar month. Nominal dollars."
+    },
+    {
+      "id": "mts-receipts-outlays",
+      "title": "Monthly receipts, outlays, and deficit or surplus",
+      "page": "budget",
+      "frequency": "monthly",
+      "shade": "month",
+      "series": [
+        "treasury_mts_receipts_monthly",
+        "treasury_mts_outlays_monthly",
+        "treasury_mts_deficit_surplus_monthly"
+      ],
+      "notes": "Monthly Treasury Statement Table 1. The deficit or surplus field equals outlays minus receipts. Nominal dollars."
+    },
+    {
+      "id": "interest-expense",
+      "title": "Interest expense on the debt outstanding",
+      "page": "budget",
+      "frequency": "monthly",
+      "shade": "month",
+      "series": [
+        "treasury_interest_expense_monthly"
+      ],
+      "notes": "Sum of the published monthly component lines. Nominal dollars."
+    },
+    {
+      "id": "omb-receipts-outlays",
+      "title": "Receipts, outlays, and surplus or deficit",
+      "page": "budget",
+      "frequency": "fiscal_year",
+      "shade": "fiscal",
+      "series": [
+        "omb_receipts",
+        "omb_outlays",
+        "omb_deficit"
+      ],
+      "notes": "OMB Historical Table 1.1. Total, in millions of dollars. Single fiscal years only. Budget figures before 1933 use the Administrative Budget."
+    },
+    {
+      "id": "omb-share-of-gdp",
+      "title": "Receipts, outlays, and surplus or deficit as percentages of GDP",
+      "page": "budget",
+      "frequency": "fiscal_year",
+      "shade": "fiscal",
+      "series": [
+        "omb_receipts_pct_gdp",
+        "omb_outlays_pct_gdp",
+        "omb_deficit_pct_gdp"
+      ],
+      "notes": "OMB Historical Table 1.2."
+    },
+    {
+      "id": "omb-constant-dollars",
+      "title": "Receipts, outlays, and surplus or deficit in constant FY 2017 dollars",
+      "page": "budget",
+      "frequency": "fiscal_year",
+      "shade": "fiscal",
+      "series": [
+        "omb_receipts_fy2017",
+        "omb_outlays_fy2017",
+        "omb_deficit_fy2017"
+      ],
+      "notes": "OMB Historical Table 1.3. Billions of constant FY 2017 dollars."
+    },
+    {
+      "id": "omb-outlays-by-function",
+      "title": "Outlays by function",
+      "page": "budget",
+      "frequency": "fiscal_year",
+      "shade": "fiscal",
+      "series": [
+        "omb_fn_defense",
+        "omb_fn_human",
+        "omb_fn_physical",
+        "omb_fn_interest",
+        "omb_fn_other"
+      ],
+      "notes": "OMB Historical Table 3.1, millions of dollars. Estimate columns are omitted. Labels are the table labels."
+    },
+    {
+      "id": "omb-outlays-by-function-gdp",
+      "title": "Outlays by function as percentages of GDP",
+      "page": "budget",
+      "frequency": "fiscal_year",
+      "shade": "fiscal",
+      "series": [
+        "omb_fn_defense_pct_gdp",
+        "omb_fn_human_pct_gdp",
+        "omb_fn_physical_pct_gdp",
+        "omb_fn_interest_pct_gdp",
+        "omb_fn_other_pct_gdp"
+      ],
+      "notes": "OMB Historical Table 3.1, as percentages of GDP. Estimate columns are omitted."
+    },
+    {
+      "id": "omb-debt-dollars",
+      "title": "Federal debt at the end of the year",
+      "page": "budget",
+      "frequency": "fiscal_year",
+      "shade": "fiscal",
+      "series": [
+        "omb_debt_gross",
+        "omb_debt_public"
+      ],
+      "notes": "OMB Historical Table 7.1. Millions of dollars."
+    },
+    {
+      "id": "omb-debt-share",
+      "title": "Federal debt at the end of the year as a percentage of GDP",
+      "page": "budget",
+      "frequency": "fiscal_year",
+      "shade": "fiscal",
+      "series": [
+        "omb_debt_gross_pct_gdp",
+        "omb_debt_public_pct_gdp"
+      ],
+      "notes": "OMB Historical Table 7.1. Percent of GDP."
+    }
+  ]
+}

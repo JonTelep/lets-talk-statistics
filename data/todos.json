@@ -1,0 +1,26 @@
+[
+  {
+    "id": "fred",
+    "dataset": "FRED",
+    "url": "https://fred.stlouisfed.org/",
+    "reason": "FRED_API_KEY is not set, so no FRED series were requested. Gross domestic product on this site comes from BEA NIPA Tables 1.1.5 and 1.1.6 when that file downloads."
+  },
+  {
+    "id": "fbi-ucr",
+    "dataset": "FBI Crime Data Explorer, estimated violent and property crime",
+    "url": "https://cde.ucr.cjis.gov/LATEST/webapp/#/pages/downloads",
+    "reason": "Violent crime and property crime charts are omitted. The FBI Crime Data Explorer estimated-crimes file is issued through a signed download, and the api.data.gov Crime Data API requires a key. Set DATA_GOV_API_KEY or FBI_API_KEY to fetch it on a later run. In 2021 the FBI completed the transition from the Summary Reporting System to the National Incident Based Reporting System (NIBRS). Many agencies did not submit a full year of NIBRS data in 2021. The FBI discusses that break on the Crime Data Explorer. This site does not fill the gap."
+  },
+  {
+    "id": "dhs",
+    "dataset": "DHS Yearbook of Immigration Statistics, Table 1, Persons Obtaining Lawful Permanent Resident Status",
+    "url": "https://ohss.dhs.gov/topics/immigration/yearbook/2024",
+    "reason": "The page downloaded, but this run did not find a workbook link it could parse without guessing. The chart is omitted."
+  },
+  {
+    "id": "cbp",
+    "dataset": "CBP nationwide encounters",
+    "url": "https://www.cbp.gov/document/stats/cbp-data-download-portal-library",
+    "reason": "The page downloaded, but this run did not find a workbook link it could parse without guessing. The chart is omitted."
+  }
+]

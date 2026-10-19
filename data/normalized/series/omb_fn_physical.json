@@ -1,0 +1,701 @@
+{
+  "id": "omb_fn_physical",
+  "name": "Physical resources",
+  "units": "millions of dollars",
+  "adjustment": "fiscal year",
+  "nominal_or_real": "nominal",
+  "frequency": "fiscal_year",
+  "source_id": "hist03z1",
+  "series_url": "https://www.whitehouse.gov/wp-content/uploads/2026/04/hist03z1_fy2027.xlsx",
+  "notes": "Estimate columns in the source table are omitted.",
+  "points": [
+    {
+      "date": "1940",
+      "value": "2312",
+      "locator": {
+        "row_label": "Physical resources",
+        "column": "1940"
+      }
+    },
+    {
+      "date": "1941",
+      "value": "1782",
+      "locator": {
+        "row_label": "Physical resources",
+        "column": "1941"
+      }
+    },
+    {
+      "date": "1942",
+      "value": "3892",
+      "locator": {
+        "row_label": "Physical resources",
+        "column": "1942"
+      }
+    },
+    {
+      "date": "1943",
+      "value": "6433",
+      "locator": {
+        "row_label": "Physical resources",
+        "column": "1943"
+      }
+    },
+    {
+      "date": "1944",
+      "value": "5471",
+      "locator": {
+        "row_label": "Physical resources",
+        "column": "1944"
+      }
+    },
+    {
+      "date": "1945",
+      "value": "1747",
+      "locator": {
+        "row_label": "Physical resources",
+        "column": "1945"
+      }
+    },
+    {
+      "date": "1946",
+      "value": "836",
+      "locator": {
+        "row_label": "Physical resources",
+        "column": "1946"
+      }
+    },
+    {
+      "date": "1947",
+      "value": "1227",
+      "locator": {
+        "row_label": "Physical resources",
+        "column": "1947"
+      }
+    },
+    {
+      "date": "1948",
+      "value": "2243",
+      "locator": {
+        "row_label": "Physical resources",
+        "column": "1948"
+      }
+    },
+    {
+      "date": "1949",
+      "value": "3104",
+      "locator": {
+        "row_label": "Physical resources",
+        "column": "1949"
+      }
+    },
+    {
+      "date": "1950",
+      "value": "3667",
+      "locator": {
+        "row_label": "Physical resources",
+        "column": "1950"
+      }
+    },
+    {
+      "date": "1951",
+      "value": "3924",
+      "locator": {
+        "row_label": "Physical resources",
+        "column": "1951"
+      }
+    },
+    {
+      "date": "1952",
+      "value": "4182",
+      "locator": {
+        "row_label": "Physical resources",
+        "column": "1952"
+      }
+    },
+    {
+      "date": "1953",
+      "value": "4005",
+      "locator": {
+        "row_label": "Physical resources",
+        "column": "1953"
+      }
+    },
+    {
+      "date": "1954",
+      "value": "2584",
+      "locator": {
+        "row_label": "Physical resources",
+        "column": "1954"
+      }
+    },
+    {
+      "date": "1955",
+      "value": "2732",
+      "locator": {
+        "row_label": "Physical resources",
+        "column": "1955"
+      }
+    },
+    {
+      "date": "1956",
+      "value": "3092",
+      "locator": {
+        "row_label": "Physical resources",
+        "column": "1956"
+      }
+    },
+    {
+      "date": "1957",
+      "value": "4559",
+      "locator": {
+        "row_label": "Physical resources",
+        "column": "1957"
+      }
+    },
+    {
+      "date": "1958",
+      "value": "5188",
+      "locator": {
+        "row_label": "Physical resources",
+        "column": "1958"
+      }
+    },
+    {
+      "date": "1959",
+      "value": "7813",
+      "locator": {
+        "row_label": "Physical resources",
+        "column": "1959"
+      }
+    },
+    {
+      "date": "1960",
+      "value": "7991",
+      "locator": {
+        "row_label": "Physical resources",
+        "column": "1960"
+      }
+    },
+    {
+      "date": "1961",
+      "value": "7754",
+      "locator": {
+        "row_label": "Physical resources",
+        "column": "1961"
+      }
+    },
+    {
+      "date": "1962",
+      "value": "8831",
+      "locator": {
+        "row_label": "Physical resources",
+        "column": "1962"
+      }
+    },
+    {
+      "date": "1963",
+      "value": "8013",
+      "locator": {
+        "row_label": "Physical resources",
+        "column": "1963"
+      }
+    },
+    {
+      "date": "1964",
+      "value": "9528",
+      "locator": {
+        "row_label": "Physical resources",
+        "column": "1964"
+      }
+    },
+    {
+      "date": "1965",
+      "value": "11264",
+      "locator": {
+        "row_label": "Physical resources",
+        "column": "1965"
+      }
+    },
+    {
+      "date": "1966",
+      "value": "13410",
+      "locator": {
+        "row_label": "Physical resources",
+        "column": "1966"
+      }
+    },
+    {
+      "date": "1967",
+      "value": "14674",
+      "locator": {
+        "row_label": "Physical resources",
+        "column": "1967"
+      }
+    },
+    {
+      "date": "1968",
+      "value": "16002",
+      "locator": {
+        "row_label": "Physical resources",
+        "column": "1968"
+      }
+    },
+    {
+      "date": "1969",
+      "value": "11869",
+      "locator": {
+        "row_label": "Physical resources",
+        "column": "1969"
+      }
+    },
+    {
+      "date": "1970",
+      "value": "15574",
+      "locator": {
+        "row_label": "Physical resources",
+        "column": "1970"
+      }
+    },
+    {
+      "date": "1971",
+      "value": "18286",
+      "locator": {
+        "row_label": "Physical resources",
+        "column": "1971"
+      }
+    },
+    {
+      "date": "1972",
+      "value": "19574",
+      "locator": {
+        "row_label": "Physical resources",
+        "column": "1972"
+      }
+    },
+    {
+      "date": "1973",
+      "value": "20614",
+      "locator": {
+        "row_label": "Physical resources",
+        "column": "1973"
+      }
+    },
+    {
+      "date": "1974",
+      "value": "25106",
+      "locator": {
+        "row_label": "Physical resources",
+        "column": "1974"
+      }
+    },
+    {
+      "date": "1975",
+      "value": "35449",
+      "locator": {
+        "row_label": "Physical resources",
+        "column": "1975"
+      }
+    },
+    {
+      "date": "1976",
+      "value": "39188",
+      "locator": {
+        "row_label": "Physical resources",
+        "column": "1976"
+      }
+    },
+    {
+      "date": "1977",
+      "value": "40746",
+      "locator": {
+        "row_label": "Physical resources",
+        "column": "1977"
+      }
+    },
+    {
+      "date": "1978",
+      "value": "52590",
+      "locator": {
+        "row_label": "Physical resources",
+        "column": "1978"
+      }
+    },
+    {
+      "date": "1979",
+      "value": "54559",
+      "locator": {
+        "row_label": "Physical resources",
+        "column": "1979"
+      }
+    },
+    {
+      "date": "1980",
+      "value": "65985",
+      "locator": {
+        "row_label": "Physical resources",
+        "column": "1980"
+      }
+    },
+    {
+      "date": "1981",
+      "value": "70886",
+      "locator": {
+        "row_label": "Physical resources",
+        "column": "1981"
+      }
+    },
+    {
+      "date": "1982",
+      "value": "61752",
+      "locator": {
+        "row_label": "Physical resources",
+        "column": "1982"
+      }
+    },
+    {
+      "date": "1983",
+      "value": "57603",
+      "locator": {
+        "row_label": "Physical resources",
+        "column": "1983"
+      }
+    },
+    {
+      "date": "1984",
+      "value": "57960",
+      "locator": {
+        "row_label": "Physical resources",
+        "column": "1984"
+      }
+    },
+    {
+      "date": "1985",
+      "value": "56804",
+      "locator": {
+        "row_label": "Physical resources",
+        "column": "1985"
+      }
+    },
+    {
+      "date": "1986",
+      "value": "58722",
+      "locator": {
+        "row_label": "Physical resources",
+        "column": "1986"
+      }
+    },
+    {
+      "date": "1987",
+      "value": "55132",
+      "locator": {
+        "row_label": "Physical resources",
+        "column": "1987"
+      }
+    },
+    {
+      "date": "1988",
+      "value": "68625",
+      "locator": {
+        "row_label": "Physical resources",
+        "column": "1988"
+      }
+    },
+    {
+      "date": "1989",
+      "value": "81553",
+      "locator": {
+        "row_label": "Physical resources",
+        "column": "1989"
+      }
+    },
+    {
+      "date": "1990",
+      "value": "126011",
+      "locator": {
+        "row_label": "Physical resources",
+        "column": "1990"
+      }
+    },
+    {
+      "date": "1991",
+      "value": "135159",
+      "locator": {
+        "row_label": "Physical resources",
+        "column": "1991"
+      }
+    },
+    {
+      "date": "1992",
+      "value": "75586",
+      "locator": {
+        "row_label": "Physical resources",
+        "column": "1992"
+      }
+    },
+    {
+      "date": "1993",
+      "value": "46841",
+      "locator": {
+        "row_label": "Physical resources",
+        "column": "1993"
+      }
+    },
+    {
+      "date": "1994",
+      "value": "70677",
+      "locator": {
+        "row_label": "Physical resources",
+        "column": "1994"
+      }
+    },
+    {
+      "date": "1995",
+      "value": "59113",
+      "locator": {
+        "row_label": "Physical resources",
+        "column": "1995"
+      }
+    },
+    {
+      "date": "1996",
+      "value": "64170",
+      "locator": {
+        "row_label": "Physical resources",
+        "column": "1996"
+      }
+    },
+    {
+      "date": "1997",
+      "value": "59852",
+      "locator": {
+        "row_label": "Physical resources",
+        "column": "1997"
+      }
+    },
+    {
+      "date": "1998",
+      "value": "74669",
+      "locator": {
+        "row_label": "Physical resources",
+        "column": "1998"
+      }
+    },
+    {
+      "date": "1999",
+      "value": "81892",
+      "locator": {
+        "row_label": "Physical resources",
+        "column": "1999"
+      }
+    },
+    {
+      "date": "2000",
+      "value": "84925",
+      "locator": {
+        "row_label": "Physical resources",
+        "column": "2000"
+      }
+    },
+    {
+      "date": "2001",
+      "value": "97492",
+      "locator": {
+        "row_label": "Physical resources",
+        "column": "2001"
+      }
+    },
+    {
+      "date": "2002",
+      "value": "104308",
+      "locator": {
+        "row_label": "Physical resources",
+        "column": "2002"
+      }
+    },
+    {
+      "date": "2003",
+      "value": "115588",
+      "locator": {
+        "row_label": "Physical resources",
+        "column": "2003"
+      }
+    },
+    {
+      "date": "2004",
+      "value": "116259",
+      "locator": {
+        "row_label": "Physical resources",
+        "column": "2004"
+      }
+    },
+    {
+      "date": "2005",
+      "value": "130145",
+      "locator": {
+        "row_label": "Physical resources",
+        "column": "2005"
+      }
+    },
+    {
+      "date": "2006",
+      "value": "164706",
+      "locator": {
+        "row_label": "Physical resources",
+        "column": "2006"
+      }
+    },
+    {
+      "date": "2007",
+      "value": "133828",
+      "locator": {
+        "row_label": "Physical resources",
+        "column": "2007"
+      }
+    },
+    {
+      "date": "2008",
+      "value": "161889",
+      "locator": {
+        "row_label": "Physical resources",
+        "column": "2008"
+      }
+    },
+    {
+      "date": "2009",
+      "value": "443828",
+      "locator": {
+        "row_label": "Physical resources",
+        "column": "2009"
+      }
+    },
+    {
+      "date": "2010",
+      "value": "88835",
+      "locator": {
+        "row_label": "Physical resources",
+        "column": "2010"
+      }
+    },
+    {
+      "date": "2011",
+      "value": "161932",
+      "locator": {
+        "row_label": "Physical resources",
+        "column": "2011"
+      }
+    },
+    {
+      "date": "2012",
+      "value": "215287",
+      "locator": {
+        "row_label": "Physical resources",
+        "column": "2012"
+      }
+    },
+    {
+      "date": "2013",
+      "value": "89997",
+      "locator": {
+        "row_label": "Physical resources",
+        "column": "2013"
+      }
+    },
+    {
+      "date": "2014",
+      "value": "59165",
+      "locator": {
+        "row_label": "Physical resources",
+        "column": "2014"
+      }
+    },
+    {
+      "date": "2015",
+      "value": "115171",
+      "locator": {
+        "row_label": "Physical resources",
+        "column": "2015"
+      }
+    },
+    {
+      "date": "2016",
+      "value": "121431",
+      "locator": {
+        "row_label": "Physical resources",
+        "column": "2016"
+      }
+    },
+    {
+      "date": "2017",
+      "value": "133526",
+      "locator": {
+        "row_label": "Physical resources",
+        "column": "2017"
+      }
+    },
+    {
+      "date": "2018",
+      "value": "166718",
+      "locator": {
+        "row_label": "Physical resources",
+        "column": "2018"
+      }
+    },
+    {
+      "date": "2019",
+      "value": "139702",
+      "locator": {
+        "row_label": "Physical resources",
+        "column": "2019"
+      }
+    },
+    {
+      "date": "2020",
+      "value": "849100",
+      "locator": {
+        "row_label": "Physical resources",
+        "column": "2020"
+      }
+    },
+    {
+      "date": "2021",
+      "value": "556921",
+      "locator": {
+        "row_label": "Physical resources",
+        "column": "2021"
+      }
+    },
+    {
+      "date": "2022",
+      "value": "213731",
+      "locator": {
+        "row_label": "Physical resources",
+        "column": "2022"
+      }
+    },
+    {
+      "date": "2023",
+      "value": "360716",
+      "locator": {
+        "row_label": "Physical resources",
+        "column": "2023"
+      }
+    },
+    {
+      "date": "2024",
+      "value": "329869",
+      "locator": {
+        "row_label": "Physical resources",
+        "column": "2024"
+      }
+    },
+    {
+      "date": "2025",
+      "value": "310162",
+      "locator": {
+        "row_label": "Physical resources",
+        "column": "2025"
+      }
+    }
+  ]
+}

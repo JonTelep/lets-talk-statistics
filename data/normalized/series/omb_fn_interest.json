@@ -1,0 +1,701 @@
+{
+  "id": "omb_fn_interest",
+  "name": "Net interest",
+  "units": "millions of dollars",
+  "adjustment": "fiscal year",
+  "nominal_or_real": "nominal",
+  "frequency": "fiscal_year",
+  "source_id": "hist03z1",
+  "series_url": "https://www.whitehouse.gov/wp-content/uploads/2026/04/hist03z1_fy2027.xlsx",
+  "notes": "Estimate columns in the source table are omitted.",
+  "points": [
+    {
+      "date": "1940",
+      "value": "899",
+      "locator": {
+        "row_label": "Net interest",
+        "column": "1940"
+      }
+    },
+    {
+      "date": "1941",
+      "value": "943",
+      "locator": {
+        "row_label": "Net interest",
+        "column": "1941"
+      }
+    },
+    {
+      "date": "1942",
+      "value": "1052",
+      "locator": {
+        "row_label": "Net interest",
+        "column": "1942"
+      }
+    },
+    {
+      "date": "1943",
+      "value": "1529",
+      "locator": {
+        "row_label": "Net interest",
+        "column": "1943"
+      }
+    },
+    {
+      "date": "1944",
+      "value": "2219",
+      "locator": {
+        "row_label": "Net interest",
+        "column": "1944"
+      }
+    },
+    {
+      "date": "1945",
+      "value": "3112",
+      "locator": {
+        "row_label": "Net interest",
+        "column": "1945"
+      }
+    },
+    {
+      "date": "1946",
+      "value": "4111",
+      "locator": {
+        "row_label": "Net interest",
+        "column": "1946"
+      }
+    },
+    {
+      "date": "1947",
+      "value": "4204",
+      "locator": {
+        "row_label": "Net interest",
+        "column": "1947"
+      }
+    },
+    {
+      "date": "1948",
+      "value": "4341",
+      "locator": {
+        "row_label": "Net interest",
+        "column": "1948"
+      }
+    },
+    {
+      "date": "1949",
+      "value": "4523",
+      "locator": {
+        "row_label": "Net interest",
+        "column": "1949"
+      }
+    },
+    {
+      "date": "1950",
+      "value": "4812",
+      "locator": {
+        "row_label": "Net interest",
+        "column": "1950"
+      }
+    },
+    {
+      "date": "1951",
+      "value": "4665",
+      "locator": {
+        "row_label": "Net interest",
+        "column": "1951"
+      }
+    },
+    {
+      "date": "1952",
+      "value": "4701",
+      "locator": {
+        "row_label": "Net interest",
+        "column": "1952"
+      }
+    },
+    {
+      "date": "1953",
+      "value": "5156",
+      "locator": {
+        "row_label": "Net interest",
+        "column": "1953"
+      }
+    },
+    {
+      "date": "1954",
+      "value": "4811",
+      "locator": {
+        "row_label": "Net interest",
+        "column": "1954"
+      }
+    },
+    {
+      "date": "1955",
+      "value": "4850",
+      "locator": {
+        "row_label": "Net interest",
+        "column": "1955"
+      }
+    },
+    {
+      "date": "1956",
+      "value": "5079",
+      "locator": {
+        "row_label": "Net interest",
+        "column": "1956"
+      }
+    },
+    {
+      "date": "1957",
+      "value": "5354",
+      "locator": {
+        "row_label": "Net interest",
+        "column": "1957"
+      }
+    },
+    {
+      "date": "1958",
+      "value": "5604",
+      "locator": {
+        "row_label": "Net interest",
+        "column": "1958"
+      }
+    },
+    {
+      "date": "1959",
+      "value": "5762",
+      "locator": {
+        "row_label": "Net interest",
+        "column": "1959"
+      }
+    },
+    {
+      "date": "1960",
+      "value": "6947",
+      "locator": {
+        "row_label": "Net interest",
+        "column": "1960"
+      }
+    },
+    {
+      "date": "1961",
+      "value": "6716",
+      "locator": {
+        "row_label": "Net interest",
+        "column": "1961"
+      }
+    },
+    {
+      "date": "1962",
+      "value": "6889",
+      "locator": {
+        "row_label": "Net interest",
+        "column": "1962"
+      }
+    },
+    {
+      "date": "1963",
+      "value": "7740",
+      "locator": {
+        "row_label": "Net interest",
+        "column": "1963"
+      }
+    },
+    {
+      "date": "1964",
+      "value": "8199",
+      "locator": {
+        "row_label": "Net interest",
+        "column": "1964"
+      }
+    },
+    {
+      "date": "1965",
+      "value": "8591",
+      "locator": {
+        "row_label": "Net interest",
+        "column": "1965"
+      }
+    },
+    {
+      "date": "1966",
+      "value": "9386",
+      "locator": {
+        "row_label": "Net interest",
+        "column": "1966"
+      }
+    },
+    {
+      "date": "1967",
+      "value": "10268",
+      "locator": {
+        "row_label": "Net interest",
+        "column": "1967"
+      }
+    },
+    {
+      "date": "1968",
+      "value": "11090",
+      "locator": {
+        "row_label": "Net interest",
+        "column": "1968"
+      }
+    },
+    {
+      "date": "1969",
+      "value": "12699",
+      "locator": {
+        "row_label": "Net interest",
+        "column": "1969"
+      }
+    },
+    {
+      "date": "1970",
+      "value": "14380",
+      "locator": {
+        "row_label": "Net interest",
+        "column": "1970"
+      }
+    },
+    {
+      "date": "1971",
+      "value": "14841",
+      "locator": {
+        "row_label": "Net interest",
+        "column": "1971"
+      }
+    },
+    {
+      "date": "1972",
+      "value": "15478",
+      "locator": {
+        "row_label": "Net interest",
+        "column": "1972"
+      }
+    },
+    {
+      "date": "1973",
+      "value": "17349",
+      "locator": {
+        "row_label": "Net interest",
+        "column": "1973"
+      }
+    },
+    {
+      "date": "1974",
+      "value": "21449",
+      "locator": {
+        "row_label": "Net interest",
+        "column": "1974"
+      }
+    },
+    {
+      "date": "1975",
+      "value": "23244",
+      "locator": {
+        "row_label": "Net interest",
+        "column": "1975"
+      }
+    },
+    {
+      "date": "1976",
+      "value": "26727",
+      "locator": {
+        "row_label": "Net interest",
+        "column": "1976"
+      }
+    },
+    {
+      "date": "1977",
+      "value": "29901",
+      "locator": {
+        "row_label": "Net interest",
+        "column": "1977"
+      }
+    },
+    {
+      "date": "1978",
+      "value": "35458",
+      "locator": {
+        "row_label": "Net interest",
+        "column": "1978"
+      }
+    },
+    {
+      "date": "1979",
+      "value": "42633",
+      "locator": {
+        "row_label": "Net interest",
+        "column": "1979"
+      }
+    },
+    {
+      "date": "1980",
+      "value": "52533",
+      "locator": {
+        "row_label": "Net interest",
+        "column": "1980"
+      }
+    },
+    {
+      "date": "1981",
+      "value": "68766",
+      "locator": {
+        "row_label": "Net interest",
+        "column": "1981"
+      }
+    },
+    {
+      "date": "1982",
+      "value": "85032",
+      "locator": {
+        "row_label": "Net interest",
+        "column": "1982"
+      }
+    },
+    {
+      "date": "1983",
+      "value": "89808",
+      "locator": {
+        "row_label": "Net interest",
+        "column": "1983"
+      }
+    },
+    {
+      "date": "1984",
+      "value": "111102",
+      "locator": {
+        "row_label": "Net interest",
+        "column": "1984"
+      }
+    },
+    {
+      "date": "1985",
+      "value": "129478",
+      "locator": {
+        "row_label": "Net interest",
+        "column": "1985"
+      }
+    },
+    {
+      "date": "1986",
+      "value": "136017",
+      "locator": {
+        "row_label": "Net interest",
+        "column": "1986"
+      }
+    },
+    {
+      "date": "1987",
+      "value": "138611",
+      "locator": {
+        "row_label": "Net interest",
+        "column": "1987"
+      }
+    },
+    {
+      "date": "1988",
+      "value": "151803",
+      "locator": {
+        "row_label": "Net interest",
+        "column": "1988"
+      }
+    },
+    {
+      "date": "1989",
+      "value": "168981",
+      "locator": {
+        "row_label": "Net interest",
+        "column": "1989"
+      }
+    },
+    {
+      "date": "1990",
+      "value": "184347",
+      "locator": {
+        "row_label": "Net interest",
+        "column": "1990"
+      }
+    },
+    {
+      "date": "1991",
+      "value": "194448",
+      "locator": {
+        "row_label": "Net interest",
+        "column": "1991"
+      }
+    },
+    {
+      "date": "1992",
+      "value": "199344",
+      "locator": {
+        "row_label": "Net interest",
+        "column": "1992"
+      }
+    },
+    {
+      "date": "1993",
+      "value": "198713",
+      "locator": {
+        "row_label": "Net interest",
+        "column": "1993"
+      }
+    },
+    {
+      "date": "1994",
+      "value": "202932",
+      "locator": {
+        "row_label": "Net interest",
+        "column": "1994"
+      }
+    },
+    {
+      "date": "1995",
+      "value": "232134",
+      "locator": {
+        "row_label": "Net interest",
+        "column": "1995"
+      }
+    },
+    {
+      "date": "1996",
+      "value": "241053",
+      "locator": {
+        "row_label": "Net interest",
+        "column": "1996"
+      }
+    },
+    {
+      "date": "1997",
+      "value": "243984",
+      "locator": {
+        "row_label": "Net interest",
+        "column": "1997"
+      }
+    },
+    {
+      "date": "1998",
+      "value": "241118",
+      "locator": {
+        "row_label": "Net interest",
+        "column": "1998"
+      }
+    },
+    {
+      "date": "1999",
+      "value": "229755",
+      "locator": {
+        "row_label": "Net interest",
+        "column": "1999"
+      }
+    },
+    {
+      "date": "2000",
+      "value": "222949",
+      "locator": {
+        "row_label": "Net interest",
+        "column": "2000"
+      }
+    },
+    {
+      "date": "2001",
+      "value": "206167",
+      "locator": {
+        "row_label": "Net interest",
+        "column": "2001"
+      }
+    },
+    {
+      "date": "2002",
+      "value": "170949",
+      "locator": {
+        "row_label": "Net interest",
+        "column": "2002"
+      }
+    },
+    {
+      "date": "2003",
+      "value": "153073",
+      "locator": {
+        "row_label": "Net interest",
+        "column": "2003"
+      }
+    },
+    {
+      "date": "2004",
+      "value": "160245",
+      "locator": {
+        "row_label": "Net interest",
+        "column": "2004"
+      }
+    },
+    {
+      "date": "2005",
+      "value": "183986",
+      "locator": {
+        "row_label": "Net interest",
+        "column": "2005"
+      }
+    },
+    {
+      "date": "2006",
+      "value": "226603",
+      "locator": {
+        "row_label": "Net interest",
+        "column": "2006"
+      }
+    },
+    {
+      "date": "2007",
+      "value": "237109",
+      "locator": {
+        "row_label": "Net interest",
+        "column": "2007"
+      }
+    },
+    {
+      "date": "2008",
+      "value": "252757",
+      "locator": {
+        "row_label": "Net interest",
+        "column": "2008"
+      }
+    },
+    {
+      "date": "2009",
+      "value": "186902",
+      "locator": {
+        "row_label": "Net interest",
+        "column": "2009"
+      }
+    },
+    {
+      "date": "2010",
+      "value": "196194",
+      "locator": {
+        "row_label": "Net interest",
+        "column": "2010"
+      }
+    },
+    {
+      "date": "2011",
+      "value": "229962",
+      "locator": {
+        "row_label": "Net interest",
+        "column": "2011"
+      }
+    },
+    {
+      "date": "2012",
+      "value": "220408",
+      "locator": {
+        "row_label": "Net interest",
+        "column": "2012"
+      }
+    },
+    {
+      "date": "2013",
+      "value": "220885",
+      "locator": {
+        "row_label": "Net interest",
+        "column": "2013"
+      }
+    },
+    {
+      "date": "2014",
+      "value": "228956",
+      "locator": {
+        "row_label": "Net interest",
+        "column": "2014"
+      }
+    },
+    {
+      "date": "2015",
+      "value": "223181",
+      "locator": {
+        "row_label": "Net interest",
+        "column": "2015"
+      }
+    },
+    {
+      "date": "2016",
+      "value": "240033",
+      "locator": {
+        "row_label": "Net interest",
+        "column": "2016"
+      }
+    },
+    {
+      "date": "2017",
+      "value": "262551",
+      "locator": {
+        "row_label": "Net interest",
+        "column": "2017"
+      }
+    },
+    {
+      "date": "2018",
+      "value": "324975",
+      "locator": {
+        "row_label": "Net interest",
+        "column": "2018"
+      }
+    },
+    {
+      "date": "2019",
+      "value": "375158",
+      "locator": {
+        "row_label": "Net interest",
+        "column": "2019"
+      }
+    },
+    {
+      "date": "2020",
+      "value": "345470",
+      "locator": {
+        "row_label": "Net interest",
+        "column": "2020"
+      }
+    },
+    {
+      "date": "2021",
+      "value": "352338",
+      "locator": {
+        "row_label": "Net interest",
+        "column": "2021"
+      }
+    },
+    {
+      "date": "2022",
+      "value": "475887",
+      "locator": {
+        "row_label": "Net interest",
+        "column": "2022"
+      }
+    },
+    {
+      "date": "2023",
+      "value": "658267",
+      "locator": {
+        "row_label": "Net interest",
+        "column": "2023"
+      }
+    },
+    {
+      "date": "2024",
+      "value": "879879",
+      "locator": {
+        "row_label": "Net interest",
+        "column": "2024"
+      }
+    },
+    {
+      "date": "2025",
+      "value": "970065",
+      "locator": {
+        "row_label": "Net interest",
+        "column": "2025"
+      }
+    }
+  ]
+}
