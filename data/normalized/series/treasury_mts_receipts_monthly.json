@@ -1,0 +1,1417 @@
+{
+  "id": "treasury_mts_receipts_monthly",
+  "name": "Current Month Gross Receipts Amount",
+  "units": "Dollars, nominal",
+  "adjustment": "not applicable",
+  "nominal_or_real": "nominal",
+  "frequency": "monthly",
+  "source_id": "treasury_mts_table_1",
+  "series_url": "https://fiscaldata.treasury.gov/datasets/monthly-treasury-statement/summary-of-receipts-outlays-and-the-deficit-surplus-of-the-u-s-government",
+  "notes": "When a calendar month appears on more than one statement, the row from the latest record_date is kept. Current Month Deficit Surplus Amount equals outlays minus receipts on the published rows.",
+  "points": [
+    {
+      "date": "2013-10",
+      "value": "198927420975.74",
+      "locator": {
+        "record_date": "2015-09-30",
+        "sequence_number_cd": "1.1",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2013-11",
+      "value": "182452730681.00",
+      "locator": {
+        "record_date": "2015-09-30",
+        "sequence_number_cd": "1.2",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2013-12",
+      "value": "285041127579.40",
+      "locator": {
+        "record_date": "2015-09-30",
+        "sequence_number_cd": "1.3",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2014-01",
+      "value": "295997143042.01",
+      "locator": {
+        "record_date": "2015-09-30",
+        "sequence_number_cd": "1.4",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2014-02",
+      "value": "144348860861.22",
+      "locator": {
+        "record_date": "2015-09-30",
+        "sequence_number_cd": "1.5",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2014-03",
+      "value": "215845774260.31",
+      "locator": {
+        "record_date": "2015-09-30",
+        "sequence_number_cd": "1.6",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2014-04",
+      "value": "414236584956.40",
+      "locator": {
+        "record_date": "2015-09-30",
+        "sequence_number_cd": "1.7",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2014-05",
+      "value": "199889137642.73",
+      "locator": {
+        "record_date": "2015-09-30",
+        "sequence_number_cd": "1.8",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2014-06",
+      "value": "323646150190.70",
+      "locator": {
+        "record_date": "2015-09-30",
+        "sequence_number_cd": "1.9",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2014-07",
+      "value": "214492940315.16",
+      "locator": {
+        "record_date": "2015-09-30",
+        "sequence_number_cd": "1.10",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2014-08",
+      "value": "194248237302.01",
+      "locator": {
+        "record_date": "2015-09-30",
+        "sequence_number_cd": "1.11",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2014-09",
+      "value": "351244850035.65",
+      "locator": {
+        "record_date": "2015-09-30",
+        "sequence_number_cd": "1.12",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2014-10",
+      "value": "212718687273.12",
+      "locator": {
+        "record_date": "2016-09-30",
+        "sequence_number_cd": "1.1",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2014-11",
+      "value": "191436201539.20",
+      "locator": {
+        "record_date": "2016-09-30",
+        "sequence_number_cd": "1.2",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2014-12",
+      "value": "335326986648.69",
+      "locator": {
+        "record_date": "2016-09-30",
+        "sequence_number_cd": "1.3",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2015-01",
+      "value": "306742437759.99",
+      "locator": {
+        "record_date": "2016-09-30",
+        "sequence_number_cd": "1.4",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2015-02",
+      "value": "139388383802.26",
+      "locator": {
+        "record_date": "2016-09-30",
+        "sequence_number_cd": "1.5",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2015-03",
+      "value": "234187337903.69",
+      "locator": {
+        "record_date": "2016-09-30",
+        "sequence_number_cd": "1.6",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2015-04",
+      "value": "471801240790.52",
+      "locator": {
+        "record_date": "2016-09-30",
+        "sequence_number_cd": "1.7",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2015-05",
+      "value": "212385827417.69",
+      "locator": {
+        "record_date": "2016-09-30",
+        "sequence_number_cd": "1.8",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2015-06",
+      "value": "342933053360.78",
+      "locator": {
+        "record_date": "2016-09-30",
+        "sequence_number_cd": "1.9",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2015-07",
+      "value": "225493367467.68",
+      "locator": {
+        "record_date": "2016-09-30",
+        "sequence_number_cd": "1.10",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2015-08",
+      "value": "210836837205.87",
+      "locator": {
+        "record_date": "2016-09-30",
+        "sequence_number_cd": "1.11",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2015-09",
+      "value": "365451045757.11",
+      "locator": {
+        "record_date": "2016-09-30",
+        "sequence_number_cd": "1.12",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2015-10",
+      "value": "211046245388.74",
+      "locator": {
+        "record_date": "2017-09-30",
+        "sequence_number_cd": "1.1",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2015-11",
+      "value": "204967799934.62",
+      "locator": {
+        "record_date": "2017-09-30",
+        "sequence_number_cd": "1.2",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2015-12",
+      "value": "349630712796.40",
+      "locator": {
+        "record_date": "2017-09-30",
+        "sequence_number_cd": "1.3",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2016-01",
+      "value": "313578981081.18",
+      "locator": {
+        "record_date": "2017-09-30",
+        "sequence_number_cd": "1.4",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2016-02",
+      "value": "169146855515.20",
+      "locator": {
+        "record_date": "2017-09-30",
+        "sequence_number_cd": "1.5",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2016-03",
+      "value": "227847826961.33",
+      "locator": {
+        "record_date": "2017-09-30",
+        "sequence_number_cd": "1.6",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2016-04",
+      "value": "438432341488.71",
+      "locator": {
+        "record_date": "2017-09-30",
+        "sequence_number_cd": "1.7",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2016-05",
+      "value": "224603543529.75",
+      "locator": {
+        "record_date": "2017-09-30",
+        "sequence_number_cd": "1.8",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2016-06",
+      "value": "329572222744.10",
+      "locator": {
+        "record_date": "2017-09-30",
+        "sequence_number_cd": "1.9",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2016-07",
+      "value": "209997664235.95",
+      "locator": {
+        "record_date": "2017-09-30",
+        "sequence_number_cd": "1.10",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2016-08",
+      "value": "231326812093.57",
+      "locator": {
+        "record_date": "2017-09-30",
+        "sequence_number_cd": "1.11",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2016-09",
+      "value": "356623125082.80",
+      "locator": {
+        "record_date": "2017-09-30",
+        "sequence_number_cd": "1.12",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2016-10",
+      "value": "221692068170.95",
+      "locator": {
+        "record_date": "2018-09-30",
+        "sequence_number_cd": "1.1",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2016-11",
+      "value": "199874954200.26",
+      "locator": {
+        "record_date": "2018-09-30",
+        "sequence_number_cd": "1.2",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2016-12",
+      "value": "319204134149.29",
+      "locator": {
+        "record_date": "2018-09-30",
+        "sequence_number_cd": "1.3",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2017-01",
+      "value": "344069285128.22",
+      "locator": {
+        "record_date": "2018-09-30",
+        "sequence_number_cd": "1.4",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2017-02",
+      "value": "171712652492.69",
+      "locator": {
+        "record_date": "2018-09-30",
+        "sequence_number_cd": "1.5",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2017-03",
+      "value": "216583554428.19",
+      "locator": {
+        "record_date": "2018-09-30",
+        "sequence_number_cd": "1.6",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2017-04",
+      "value": "455605376801.89",
+      "locator": {
+        "record_date": "2018-09-30",
+        "sequence_number_cd": "1.7",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2017-05",
+      "value": "240417974932.52",
+      "locator": {
+        "record_date": "2018-09-30",
+        "sequence_number_cd": "1.8",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2017-06",
+      "value": "338660487713.46",
+      "locator": {
+        "record_date": "2018-09-30",
+        "sequence_number_cd": "1.9",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2017-07",
+      "value": "232040148453.61",
+      "locator": {
+        "record_date": "2018-09-30",
+        "sequence_number_cd": "1.10",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2017-08",
+      "value": "226310969292.50",
+      "locator": {
+        "record_date": "2018-09-30",
+        "sequence_number_cd": "1.11",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2017-09",
+      "value": "348722298760.60",
+      "locator": {
+        "record_date": "2018-09-30",
+        "sequence_number_cd": "1.12",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2017-10",
+      "value": "235340650775.70",
+      "locator": {
+        "record_date": "2019-09-30",
+        "sequence_number_cd": "1.1",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2017-11",
+      "value": "208374392918.47",
+      "locator": {
+        "record_date": "2019-09-30",
+        "sequence_number_cd": "1.2",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2017-12",
+      "value": "325796890249.97",
+      "locator": {
+        "record_date": "2019-09-30",
+        "sequence_number_cd": "1.3",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2018-01",
+      "value": "361037590786.62",
+      "locator": {
+        "record_date": "2019-09-30",
+        "sequence_number_cd": "1.4",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2018-02",
+      "value": "155622717049.89",
+      "locator": {
+        "record_date": "2019-09-30",
+        "sequence_number_cd": "1.5",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2018-03",
+      "value": "210832369513.95",
+      "locator": {
+        "record_date": "2019-09-30",
+        "sequence_number_cd": "1.6",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2018-04",
+      "value": "510446668270.94",
+      "locator": {
+        "record_date": "2019-09-30",
+        "sequence_number_cd": "1.7",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2018-05",
+      "value": "217074937894.33",
+      "locator": {
+        "record_date": "2019-09-30",
+        "sequence_number_cd": "1.8",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2018-06",
+      "value": "316278194101.58",
+      "locator": {
+        "record_date": "2019-09-30",
+        "sequence_number_cd": "1.9",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2018-07",
+      "value": "225266222812.10",
+      "locator": {
+        "record_date": "2019-09-30",
+        "sequence_number_cd": "1.10",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2018-08",
+      "value": "219115266127.70",
+      "locator": {
+        "record_date": "2019-09-30",
+        "sequence_number_cd": "1.11",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2018-09",
+      "value": "343561796500.63",
+      "locator": {
+        "record_date": "2019-09-30",
+        "sequence_number_cd": "1.12",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2018-10",
+      "value": "252691526878.81",
+      "locator": {
+        "record_date": "2020-09-30",
+        "sequence_number_cd": "1.1",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2018-11",
+      "value": "205961128574.30",
+      "locator": {
+        "record_date": "2020-09-30",
+        "sequence_number_cd": "1.2",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2018-12",
+      "value": "312584038258.33",
+      "locator": {
+        "record_date": "2020-09-30",
+        "sequence_number_cd": "1.3",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2019-01",
+      "value": "339979933629.29",
+      "locator": {
+        "record_date": "2020-09-30",
+        "sequence_number_cd": "1.4",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2019-02",
+      "value": "167265469326.81",
+      "locator": {
+        "record_date": "2020-09-30",
+        "sequence_number_cd": "1.5",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2019-03",
+      "value": "228811230488.96",
+      "locator": {
+        "record_date": "2020-09-30",
+        "sequence_number_cd": "1.6",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2019-04",
+      "value": "535544530375.59",
+      "locator": {
+        "record_date": "2020-09-30",
+        "sequence_number_cd": "1.7",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2019-05",
+      "value": "232064498023.77",
+      "locator": {
+        "record_date": "2020-09-30",
+        "sequence_number_cd": "1.8",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2019-06",
+      "value": "333952332513.76",
+      "locator": {
+        "record_date": "2020-09-30",
+        "sequence_number_cd": "1.9",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2019-07",
+      "value": "251347787131.94",
+      "locator": {
+        "record_date": "2020-09-30",
+        "sequence_number_cd": "1.10",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2019-08",
+      "value": "227964977585.22",
+      "locator": {
+        "record_date": "2020-09-30",
+        "sequence_number_cd": "1.11",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2019-09",
+      "value": "374055970783.87",
+      "locator": {
+        "record_date": "2020-09-30",
+        "sequence_number_cd": "1.12",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2019-10",
+      "value": "245520982120.90",
+      "locator": {
+        "record_date": "2021-09-30",
+        "sequence_number_cd": "1.1",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2019-11",
+      "value": "225185415497.28",
+      "locator": {
+        "record_date": "2021-09-30",
+        "sequence_number_cd": "1.2",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2019-12",
+      "value": "335805401484.89",
+      "locator": {
+        "record_date": "2021-09-30",
+        "sequence_number_cd": "1.3",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2020-01",
+      "value": "372287913768.70",
+      "locator": {
+        "record_date": "2021-09-30",
+        "sequence_number_cd": "1.4",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2020-02",
+      "value": "187950539650.05",
+      "locator": {
+        "record_date": "2021-09-30",
+        "sequence_number_cd": "1.5",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2020-03",
+      "value": "236766231531.80",
+      "locator": {
+        "record_date": "2021-09-30",
+        "sequence_number_cd": "1.6",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2020-04",
+      "value": "241863008315.92",
+      "locator": {
+        "record_date": "2021-09-30",
+        "sequence_number_cd": "1.7",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2020-05",
+      "value": "173860556938.57",
+      "locator": {
+        "record_date": "2021-09-30",
+        "sequence_number_cd": "1.8",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2020-06",
+      "value": "240828668352.71",
+      "locator": {
+        "record_date": "2021-09-30",
+        "sequence_number_cd": "1.9",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2020-07",
+      "value": "563495663140.69",
+      "locator": {
+        "record_date": "2021-09-30",
+        "sequence_number_cd": "1.10",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2020-08",
+      "value": "223221278151.58",
+      "locator": {
+        "record_date": "2021-09-30",
+        "sequence_number_cd": "1.11",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2020-09",
+      "value": "373171331111.25",
+      "locator": {
+        "record_date": "2021-09-30",
+        "sequence_number_cd": "1.12",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2020-10",
+      "value": "237697420371.31",
+      "locator": {
+        "record_date": "2022-09-30",
+        "sequence_number_cd": "1.1",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2020-11",
+      "value": "219552595588.10",
+      "locator": {
+        "record_date": "2022-09-30",
+        "sequence_number_cd": "1.2",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2020-12",
+      "value": "346119228396.91",
+      "locator": {
+        "record_date": "2022-09-30",
+        "sequence_number_cd": "1.3",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2021-01",
+      "value": "384650593961.37",
+      "locator": {
+        "record_date": "2022-09-30",
+        "sequence_number_cd": "1.4",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2021-02",
+      "value": "248314056776.18",
+      "locator": {
+        "record_date": "2022-09-30",
+        "sequence_number_cd": "1.5",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2021-03",
+      "value": "267614341015.01",
+      "locator": {
+        "record_date": "2022-09-30",
+        "sequence_number_cd": "1.6",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2021-04",
+      "value": "439186195312.48",
+      "locator": {
+        "record_date": "2022-09-30",
+        "sequence_number_cd": "1.7",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2021-05",
+      "value": "463744888353.77",
+      "locator": {
+        "record_date": "2022-09-30",
+        "sequence_number_cd": "1.8",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2021-06",
+      "value": "449198666484.73",
+      "locator": {
+        "record_date": "2022-09-30",
+        "sequence_number_cd": "1.9",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2021-07",
+      "value": "261999699619.61",
+      "locator": {
+        "record_date": "2022-09-30",
+        "sequence_number_cd": "1.10",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2021-08",
+      "value": "268378082897.79",
+      "locator": {
+        "record_date": "2022-09-30",
+        "sequence_number_cd": "1.11",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2021-09",
+      "value": "459523089950.15",
+      "locator": {
+        "record_date": "2022-09-30",
+        "sequence_number_cd": "1.12",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2021-10",
+      "value": "283927343217.40",
+      "locator": {
+        "record_date": "2023-09-30",
+        "sequence_number_cd": "1.1",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2021-11",
+      "value": "281208009810.60",
+      "locator": {
+        "record_date": "2023-09-30",
+        "sequence_number_cd": "1.2",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2021-12",
+      "value": "486723009373.54",
+      "locator": {
+        "record_date": "2023-09-30",
+        "sequence_number_cd": "1.3",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2022-01",
+      "value": "465073727208.42",
+      "locator": {
+        "record_date": "2023-09-30",
+        "sequence_number_cd": "1.4",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2022-02",
+      "value": "289857266549.48",
+      "locator": {
+        "record_date": "2023-09-30",
+        "sequence_number_cd": "1.5",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2022-03",
+      "value": "315165487243.69",
+      "locator": {
+        "record_date": "2023-09-30",
+        "sequence_number_cd": "1.6",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2022-04",
+      "value": "863643681782.76",
+      "locator": {
+        "record_date": "2023-09-30",
+        "sequence_number_cd": "1.7",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2022-05",
+      "value": "388988459588.24",
+      "locator": {
+        "record_date": "2023-09-30",
+        "sequence_number_cd": "1.8",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2022-06",
+      "value": "460756710619.63",
+      "locator": {
+        "record_date": "2023-09-30",
+        "sequence_number_cd": "1.9",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2022-07",
+      "value": "269330957036.50",
+      "locator": {
+        "record_date": "2023-09-30",
+        "sequence_number_cd": "1.10",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2022-08",
+      "value": "303721503258.70",
+      "locator": {
+        "record_date": "2023-09-30",
+        "sequence_number_cd": "1.11",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2022-09",
+      "value": "487723018513.97",
+      "locator": {
+        "record_date": "2023-09-30",
+        "sequence_number_cd": "1.12",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2022-10",
+      "value": "318500079859.09",
+      "locator": {
+        "record_date": "2024-09-30",
+        "sequence_number_cd": "1.1",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2022-11",
+      "value": "252110808982.40",
+      "locator": {
+        "record_date": "2024-09-30",
+        "sequence_number_cd": "1.2",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2022-12",
+      "value": "454942371659.52",
+      "locator": {
+        "record_date": "2024-09-30",
+        "sequence_number_cd": "1.3",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2023-01",
+      "value": "447288317962.29",
+      "locator": {
+        "record_date": "2024-09-30",
+        "sequence_number_cd": "1.4",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2023-02",
+      "value": "262113909495.88",
+      "locator": {
+        "record_date": "2024-09-30",
+        "sequence_number_cd": "1.5",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2023-03",
+      "value": "313240364412.41",
+      "locator": {
+        "record_date": "2024-09-30",
+        "sequence_number_cd": "1.6",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2023-04",
+      "value": "638520361158.51",
+      "locator": {
+        "record_date": "2024-09-30",
+        "sequence_number_cd": "1.7",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2023-05",
+      "value": "307486880350.41",
+      "locator": {
+        "record_date": "2024-09-30",
+        "sequence_number_cd": "1.8",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2023-06",
+      "value": "418316902368.96",
+      "locator": {
+        "record_date": "2024-09-30",
+        "sequence_number_cd": "1.9",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2023-07",
+      "value": "276160854143.85",
+      "locator": {
+        "record_date": "2024-09-30",
+        "sequence_number_cd": "1.10",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2023-08",
+      "value": "283130206157.26",
+      "locator": {
+        "record_date": "2024-09-30",
+        "sequence_number_cd": "1.11",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2023-09",
+      "value": "467474927288.69",
+      "locator": {
+        "record_date": "2024-09-30",
+        "sequence_number_cd": "1.12",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2023-10",
+      "value": "403433540919.80",
+      "locator": {
+        "record_date": "2025-09-30",
+        "sequence_number_cd": "1.1",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2023-11",
+      "value": "274830035781.15",
+      "locator": {
+        "record_date": "2025-09-30",
+        "sequence_number_cd": "1.2",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2023-12",
+      "value": "429310654566.08",
+      "locator": {
+        "record_date": "2025-09-30",
+        "sequence_number_cd": "1.3",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2024-01",
+      "value": "477319655457.16",
+      "locator": {
+        "record_date": "2025-09-30",
+        "sequence_number_cd": "1.4",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2024-02",
+      "value": "271126068759.09",
+      "locator": {
+        "record_date": "2025-09-30",
+        "sequence_number_cd": "1.5",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2024-03",
+      "value": "332078814395.98",
+      "locator": {
+        "record_date": "2025-09-30",
+        "sequence_number_cd": "1.6",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2024-04",
+      "value": "776198093176.94",
+      "locator": {
+        "record_date": "2025-09-30",
+        "sequence_number_cd": "1.7",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2024-05",
+      "value": "323646986978.40",
+      "locator": {
+        "record_date": "2025-09-30",
+        "sequence_number_cd": "1.8",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2024-06",
+      "value": "466254918407.16",
+      "locator": {
+        "record_date": "2025-09-30",
+        "sequence_number_cd": "1.9",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2024-07",
+      "value": "330377428300.09",
+      "locator": {
+        "record_date": "2025-09-30",
+        "sequence_number_cd": "1.10",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2024-08",
+      "value": "306539737019.32",
+      "locator": {
+        "record_date": "2025-09-30",
+        "sequence_number_cd": "1.11",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2024-09",
+      "value": "526989591753.68",
+      "locator": {
+        "record_date": "2025-09-30",
+        "sequence_number_cd": "1.12",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2024-10",
+      "value": "326770236058.10",
+      "locator": {
+        "record_date": "2026-09-30",
+        "sequence_number_cd": "1.1",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2024-11",
+      "value": "301754299812.79",
+      "locator": {
+        "record_date": "2026-09-30",
+        "sequence_number_cd": "1.2",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2024-12",
+      "value": "454414708491.47",
+      "locator": {
+        "record_date": "2026-09-30",
+        "sequence_number_cd": "1.3",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2025-01",
+      "value": "513294342651.93",
+      "locator": {
+        "record_date": "2026-09-30",
+        "sequence_number_cd": "1.4",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2025-02",
+      "value": "296423683822.57",
+      "locator": {
+        "record_date": "2026-09-30",
+        "sequence_number_cd": "1.5",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2025-03",
+      "value": "367645430943.32",
+      "locator": {
+        "record_date": "2026-09-30",
+        "sequence_number_cd": "1.6",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2025-04",
+      "value": "850169317772.81",
+      "locator": {
+        "record_date": "2026-09-30",
+        "sequence_number_cd": "1.7",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2025-05",
+      "value": "371228857110.76",
+      "locator": {
+        "record_date": "2026-09-30",
+        "sequence_number_cd": "1.8",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2025-06",
+      "value": "526445351756.97",
+      "locator": {
+        "record_date": "2026-09-30",
+        "sequence_number_cd": "1.9",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2025-07",
+      "value": "338491848423.17",
+      "locator": {
+        "record_date": "2026-09-30",
+        "sequence_number_cd": "1.10",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2025-08",
+      "value": "344315322010.32",
+      "locator": {
+        "record_date": "2026-09-30",
+        "sequence_number_cd": "1.11",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2025-09",
+      "value": "543663073176.70",
+      "locator": {
+        "record_date": "2026-09-30",
+        "sequence_number_cd": "1.12",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2025-10",
+      "value": "404371348973.70",
+      "locator": {
+        "record_date": "2026-09-30",
+        "sequence_number_cd": "2.1",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2025-11",
+      "value": "336001720156.98",
+      "locator": {
+        "record_date": "2026-09-30",
+        "sequence_number_cd": "2.2",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2025-12",
+      "value": "484384015539.25",
+      "locator": {
+        "record_date": "2026-09-30",
+        "sequence_number_cd": "2.3",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2026-01",
+      "value": "560051900583.17",
+      "locator": {
+        "record_date": "2026-09-30",
+        "sequence_number_cd": "2.4",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2026-02",
+      "value": "313121685246.84",
+      "locator": {
+        "record_date": "2026-09-30",
+        "sequence_number_cd": "2.5",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2026-03",
+      "value": "384862602035.79",
+      "locator": {
+        "record_date": "2026-09-30",
+        "sequence_number_cd": "2.6",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2026-04",
+      "value": "837342690993.51",
+      "locator": {
+        "record_date": "2026-09-30",
+        "sequence_number_cd": "2.7",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2026-05",
+      "value": "335512183227.42",
+      "locator": {
+        "record_date": "2026-09-30",
+        "sequence_number_cd": "2.8",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2026-06",
+      "value": "495761481568.70",
+      "locator": {
+        "record_date": "2026-09-30",
+        "sequence_number_cd": "2.9",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2026-07",
+      "value": "334009875555.79",
+      "locator": {
+        "record_date": "2026-09-30",
+        "sequence_number_cd": "2.10",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2026-08",
+      "value": "360032735841.42",
+      "locator": {
+        "record_date": "2026-09-30",
+        "sequence_number_cd": "2.11",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    },
+    {
+      "date": "2026-09",
+      "value": "557874519238.24",
+      "locator": {
+        "record_date": "2026-09-30",
+        "sequence_number_cd": "2.12",
+        "field": "current_month_gross_rcpt_amt"
+      }
+    }
+  ]
+}

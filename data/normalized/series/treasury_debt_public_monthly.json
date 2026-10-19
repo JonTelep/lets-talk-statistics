@@ -1,0 +1,2453 @@
+{
+  "id": "treasury_debt_public_monthly",
+  "name": "Debt Held by the Public",
+  "units": "Dollars, nominal",
+  "adjustment": "not applicable",
+  "nominal_or_real": "nominal",
+  "frequency": "monthly",
+  "source_id": "treasury_debt_to_penny",
+  "series_url": "https://fiscaldata.treasury.gov/datasets/debt-to-the-penny/debt-to-the-penny",
+  "notes": "Month value is the last Debt to the Penny record in that calendar month.",
+  "points": [
+    {
+      "date": "1997-09",
+      "value": "3789667546849.60",
+      "locator": {
+        "record_date": "1997-09-30",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "1998-09",
+      "value": "3733864472163.53",
+      "locator": {
+        "record_date": "1998-09-30",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "1999-09",
+      "value": "3636104594501.81",
+      "locator": {
+        "record_date": "1999-09-30",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2000-09",
+      "value": "3405303490221.20",
+      "locator": {
+        "record_date": "2000-09-29",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2001-09",
+      "value": "3339310176094.74",
+      "locator": {
+        "record_date": "2001-09-28",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2001-10",
+      "value": "3333039379996.92",
+      "locator": {
+        "record_date": "2001-10-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2001-11",
+      "value": "3404026838038.17",
+      "locator": {
+        "record_date": "2001-11-30",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2001-12",
+      "value": "3394398958213.60",
+      "locator": {
+        "record_date": "2001-12-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2002-01",
+      "value": "3378924426706.66",
+      "locator": {
+        "record_date": "2002-01-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2002-02",
+      "value": "3442243757040.41",
+      "locator": {
+        "record_date": "2002-02-28",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2002-03",
+      "value": "3444137028277.33",
+      "locator": {
+        "record_date": "2002-03-29",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2002-04",
+      "value": "3402336886067.70",
+      "locator": {
+        "record_date": "2002-04-30",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2002-05",
+      "value": "3433836481390.91",
+      "locator": {
+        "record_date": "2002-05-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2002-06",
+      "value": "3464147372780.82",
+      "locator": {
+        "record_date": "2002-06-28",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2002-07",
+      "value": "3500451919732.42",
+      "locator": {
+        "record_date": "2002-07-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2002-08",
+      "value": "3558276735685.63",
+      "locator": {
+        "record_date": "2002-08-30",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2002-09",
+      "value": "3553180247874.74",
+      "locator": {
+        "record_date": "2002-09-30",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2002-10",
+      "value": "3586523556148.57",
+      "locator": {
+        "record_date": "2002-10-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2002-11",
+      "value": "3649352539575.36",
+      "locator": {
+        "record_date": "2002-11-29",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2002-12",
+      "value": "3647939770383.73",
+      "locator": {
+        "record_date": "2002-12-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2003-02",
+      "value": "3683888032284.53",
+      "locator": {
+        "record_date": "2003-02-28",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2003-03",
+      "value": "3711311962399.17",
+      "locator": {
+        "record_date": "2003-03-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2003-04",
+      "value": "3702844997678.07",
+      "locator": {
+        "record_date": "2003-04-30",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2003-05",
+      "value": "3776618318157.35",
+      "locator": {
+        "record_date": "2003-05-30",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2003-06",
+      "value": "3816831315563.84",
+      "locator": {
+        "record_date": "2003-06-30",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2003-07",
+      "value": "3902893862015.02",
+      "locator": {
+        "record_date": "2003-07-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2003-08",
+      "value": "3947859871672.16",
+      "locator": {
+        "record_date": "2003-08-29",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2003-09",
+      "value": "3924090106880.88",
+      "locator": {
+        "record_date": "2003-09-30",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2003-10",
+      "value": "3990508094197.53",
+      "locator": {
+        "record_date": "2003-10-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2003-11",
+      "value": "4032904791048.37",
+      "locator": {
+        "record_date": "2003-11-28",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2003-12",
+      "value": "4044243829239.60",
+      "locator": {
+        "record_date": "2003-12-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2004-01",
+      "value": "4045200977014.69",
+      "locator": {
+        "record_date": "2004-01-30",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2004-02",
+      "value": "4125593309304.13",
+      "locator": {
+        "record_date": "2004-02-27",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2004-03",
+      "value": "4176873639108.95",
+      "locator": {
+        "record_date": "2004-03-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2004-04",
+      "value": "4158978012936.35",
+      "locator": {
+        "record_date": "2004-04-30",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2004-05",
+      "value": "4207088167467.45",
+      "locator": {
+        "record_date": "2004-05-28",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2004-06",
+      "value": "4218910346556.86",
+      "locator": {
+        "record_date": "2004-06-30",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2004-07",
+      "value": "4267913389239.04",
+      "locator": {
+        "record_date": "2004-07-30",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2004-08",
+      "value": "4298491873263.92",
+      "locator": {
+        "record_date": "2004-08-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2004-09",
+      "value": "4307344596908.92",
+      "locator": {
+        "record_date": "2004-09-30",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2004-10",
+      "value": "4318485169426.38",
+      "locator": {
+        "record_date": "2004-10-29",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2004-11",
+      "value": "4407906685920.48",
+      "locator": {
+        "record_date": "2004-11-30",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2004-12",
+      "value": "4408389327642.95",
+      "locator": {
+        "record_date": "2004-12-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2005-01",
+      "value": "4428221052835.58",
+      "locator": {
+        "record_date": "2005-01-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2005-02",
+      "value": "4508287643340.95",
+      "locator": {
+        "record_date": "2005-02-28",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2005-03",
+      "value": "4572715640119.20",
+      "locator": {
+        "record_date": "2005-03-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2005-04",
+      "value": "4551064845424.92",
+      "locator": {
+        "record_date": "2005-04-29",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2005-05",
+      "value": "4542377939314.92",
+      "locator": {
+        "record_date": "2005-05-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2005-06",
+      "value": "4527696944757.64",
+      "locator": {
+        "record_date": "2005-06-30",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2005-07",
+      "value": "4580783743975.33",
+      "locator": {
+        "record_date": "2005-07-29",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2005-08",
+      "value": "4614279354560.18",
+      "locator": {
+        "record_date": "2005-08-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2005-09",
+      "value": "4601238726062.04",
+      "locator": {
+        "record_date": "2005-09-30",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2005-10",
+      "value": "4650516371930.66",
+      "locator": {
+        "record_date": "2005-10-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2005-11",
+      "value": "4709402951558.77",
+      "locator": {
+        "record_date": "2005-11-30",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2005-12",
+      "value": "4714821211003.33",
+      "locator": {
+        "record_date": "2005-12-30",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2006-01",
+      "value": "4724637490626.80",
+      "locator": {
+        "record_date": "2006-01-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2006-02",
+      "value": "4771117050096.00",
+      "locator": {
+        "record_date": "2006-02-28",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2006-03",
+      "value": "4872484731241.19",
+      "locator": {
+        "record_date": "2006-03-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2006-04",
+      "value": "4819948752057.74",
+      "locator": {
+        "record_date": "2006-04-28",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2006-05",
+      "value": "4807516533937.29",
+      "locator": {
+        "record_date": "2006-05-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2006-06",
+      "value": "4797203565138.78",
+      "locator": {
+        "record_date": "2006-06-30",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2006-07",
+      "value": "4819732427280.70",
+      "locator": {
+        "record_date": "2006-07-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2006-08",
+      "value": "4884685325020.02",
+      "locator": {
+        "record_date": "2006-08-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2006-09",
+      "value": "4843120736192.43",
+      "locator": {
+        "record_date": "2006-09-29",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2006-10",
+      "value": "4880611427682.72",
+      "locator": {
+        "record_date": "2006-10-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2006-11",
+      "value": "4929567181031.48",
+      "locator": {
+        "record_date": "2006-11-30",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2006-12",
+      "value": "4901046516367.78",
+      "locator": {
+        "record_date": "2006-12-29",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2007-01",
+      "value": "4913960890707.78",
+      "locator": {
+        "record_date": "2007-01-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2007-02",
+      "value": "4979111025291.64",
+      "locator": {
+        "record_date": "2007-02-28",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2007-03",
+      "value": "5053940043633.51",
+      "locator": {
+        "record_date": "2007-03-30",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2007-04",
+      "value": "5007058051986.64",
+      "locator": {
+        "record_date": "2007-04-30",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2007-05",
+      "value": "4980871453801.81",
+      "locator": {
+        "record_date": "2007-05-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2007-06",
+      "value": "4943089820238.26",
+      "locator": {
+        "record_date": "2007-06-29",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2007-07",
+      "value": "5003716733048.46",
+      "locator": {
+        "record_date": "2007-07-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2007-08",
+      "value": "5096938116500.60",
+      "locator": {
+        "record_date": "2007-08-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2007-09",
+      "value": "5049305502926.48",
+      "locator": {
+        "record_date": "2007-09-28",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2007-10",
+      "value": "5067078546655.56",
+      "locator": {
+        "record_date": "2007-10-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2007-11",
+      "value": "5146579494448.64",
+      "locator": {
+        "record_date": "2007-11-30",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2007-12",
+      "value": "5136302727072.67",
+      "locator": {
+        "record_date": "2007-12-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2008-01",
+      "value": "5132265067831.71",
+      "locator": {
+        "record_date": "2008-01-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2008-02",
+      "value": "5259804376714.62",
+      "locator": {
+        "record_date": "2008-02-29",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2008-03",
+      "value": "5334115575742.88",
+      "locator": {
+        "record_date": "2008-03-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2008-04",
+      "value": "5244194578964.17",
+      "locator": {
+        "record_date": "2008-04-30",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2008-05",
+      "value": "5278567329795.98",
+      "locator": {
+        "record_date": "2008-05-30",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2008-06",
+      "value": "5285063693378.25",
+      "locator": {
+        "record_date": "2008-06-30",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2008-07",
+      "value": "5403381951775.03",
+      "locator": {
+        "record_date": "2008-07-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2008-08",
+      "value": "5479100086662.10",
+      "locator": {
+        "record_date": "2008-08-29",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2008-09",
+      "value": "5808691665403.71",
+      "locator": {
+        "record_date": "2008-09-30",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2008-10",
+      "value": "6302793747598.97",
+      "locator": {
+        "record_date": "2008-10-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2008-11",
+      "value": "6396590860569.49",
+      "locator": {
+        "record_date": "2008-11-28",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2008-12",
+      "value": "6369318869476.54",
+      "locator": {
+        "record_date": "2008-12-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2009-01",
+      "value": "6317224182633.94",
+      "locator": {
+        "record_date": "2009-01-30",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2009-02",
+      "value": "6579162708614.60",
+      "locator": {
+        "record_date": "2009-02-27",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2009-03",
+      "value": "6833543454712.90",
+      "locator": {
+        "record_date": "2009-03-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2009-04",
+      "value": "6930824942975.56",
+      "locator": {
+        "record_date": "2009-04-30",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2009-05",
+      "value": "7019321525525.25",
+      "locator": {
+        "record_date": "2009-05-29",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2009-06",
+      "value": "7174912385059.26",
+      "locator": {
+        "record_date": "2009-06-30",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2009-07",
+      "value": "7335573300422.11",
+      "locator": {
+        "record_date": "2009-07-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2009-08",
+      "value": "7484144701889.34",
+      "locator": {
+        "record_date": "2009-08-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2009-09",
+      "value": "7551861558736.77",
+      "locator": {
+        "record_date": "2009-09-30",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2009-10",
+      "value": "7487886930552.47",
+      "locator": {
+        "record_date": "2009-10-30",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2009-11",
+      "value": "7712387187111.25",
+      "locator": {
+        "record_date": "2009-11-30",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2009-12",
+      "value": "7811008785487.30",
+      "locator": {
+        "record_date": "2009-12-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2010-01",
+      "value": "7759490293035.97",
+      "locator": {
+        "record_date": "2010-01-29",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2010-02",
+      "value": "7936671001094.13",
+      "locator": {
+        "record_date": "2010-02-26",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2010-03",
+      "value": "8290068831046.49",
+      "locator": {
+        "record_date": "2010-03-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2010-04",
+      "value": "8434434625613.16",
+      "locator": {
+        "record_date": "2010-04-30",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2010-05",
+      "value": "8494419432586.19",
+      "locator": {
+        "record_date": "2010-05-28",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2010-06",
+      "value": "8633680393089.93",
+      "locator": {
+        "record_date": "2010-06-30",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2010-07",
+      "value": "8702457766405.64",
+      "locator": {
+        "record_date": "2010-07-30",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2010-08",
+      "value": "8927061238060.48",
+      "locator": {
+        "record_date": "2010-08-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2010-09",
+      "value": "9022808423453.08",
+      "locator": {
+        "record_date": "2010-09-30",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2010-10",
+      "value": "9069879047803.52",
+      "locator": {
+        "record_date": "2010-10-29",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2010-11",
+      "value": "9275024690843.88",
+      "locator": {
+        "record_date": "2010-11-30",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2010-12",
+      "value": "9390476088043.35",
+      "locator": {
+        "record_date": "2010-12-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2011-01",
+      "value": "9485416860164.29",
+      "locator": {
+        "record_date": "2011-01-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2011-02",
+      "value": "9565541417510.14",
+      "locator": {
+        "record_date": "2011-02-28",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2011-03",
+      "value": "9651643154138.73",
+      "locator": {
+        "record_date": "2011-03-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2011-04",
+      "value": "9654950165830.41",
+      "locator": {
+        "record_date": "2011-04-29",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2011-05",
+      "value": "9723456023743.74",
+      "locator": {
+        "record_date": "2011-05-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2011-06",
+      "value": "9742223364846.58",
+      "locator": {
+        "record_date": "2011-06-30",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2011-07",
+      "value": "9755795681448.82",
+      "locator": {
+        "record_date": "2011-07-29",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2011-08",
+      "value": "10024253354407.07",
+      "locator": {
+        "record_date": "2011-08-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2011-09",
+      "value": "10127031384654.10",
+      "locator": {
+        "record_date": "2011-09-30",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2011-10",
+      "value": "10256015431383.46",
+      "locator": {
+        "record_date": "2011-10-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2011-11",
+      "value": "10389957793202.05",
+      "locator": {
+        "record_date": "2011-11-30",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2011-12",
+      "value": "10447662851807.15",
+      "locator": {
+        "record_date": "2011-12-30",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2012-01",
+      "value": "10572374387699.06",
+      "locator": {
+        "record_date": "2012-01-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2012-02",
+      "value": "10722996298868.22",
+      "locator": {
+        "record_date": "2012-02-29",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2012-03",
+      "value": "10846824546943.15",
+      "locator": {
+        "record_date": "2012-03-30",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2012-04",
+      "value": "10916070898102.68",
+      "locator": {
+        "record_date": "2012-04-30",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2012-05",
+      "value": "11006251094374.26",
+      "locator": {
+        "record_date": "2012-05-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2012-06",
+      "value": "11044184844611.66",
+      "locator": {
+        "record_date": "2012-06-29",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2012-07",
+      "value": "11122281549948.22",
+      "locator": {
+        "record_date": "2012-07-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2012-08",
+      "value": "11272625663662.57",
+      "locator": {
+        "record_date": "2012-08-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2012-09",
+      "value": "11269585800039.32",
+      "locator": {
+        "record_date": "2012-09-28",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2012-10",
+      "value": "11411598060978.54",
+      "locator": {
+        "record_date": "2012-10-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2012-11",
+      "value": "11553200614797.95",
+      "locator": {
+        "record_date": "2012-11-30",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2012-12",
+      "value": "11581517550395.07",
+      "locator": {
+        "record_date": "2012-12-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2013-01",
+      "value": "11560175568531.63",
+      "locator": {
+        "record_date": "2013-01-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2013-02",
+      "value": "11822436182671.08",
+      "locator": {
+        "record_date": "2013-02-28",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2013-03",
+      "value": "11916887638498.36",
+      "locator": {
+        "record_date": "2013-03-29",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2013-04",
+      "value": "11943148398205.65",
+      "locator": {
+        "record_date": "2013-04-30",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2013-05",
+      "value": "11897150711173.54",
+      "locator": {
+        "record_date": "2013-05-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2013-06",
+      "value": "11901292256124.39",
+      "locator": {
+        "record_date": "2013-06-28",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2013-07",
+      "value": "11917023270880.15",
+      "locator": {
+        "record_date": "2013-07-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2013-08",
+      "value": "11967014240420.23",
+      "locator": {
+        "record_date": "2013-08-30",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2013-09",
+      "value": "11976279236073.83",
+      "locator": {
+        "record_date": "2013-09-30",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2013-10",
+      "value": "12187369856433.22",
+      "locator": {
+        "record_date": "2013-10-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2013-11",
+      "value": "12281126257987.08",
+      "locator": {
+        "record_date": "2013-11-29",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2013-12",
+      "value": "12355426523284.55",
+      "locator": {
+        "record_date": "2013-12-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2014-01",
+      "value": "12308142849415.81",
+      "locator": {
+        "record_date": "2014-01-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2014-02",
+      "value": "12492549870567.82",
+      "locator": {
+        "record_date": "2014-02-28",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2014-03",
+      "value": "12619319113193.99",
+      "locator": {
+        "record_date": "2014-03-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2014-04",
+      "value": "12503468335518.28",
+      "locator": {
+        "record_date": "2014-04-30",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2014-05",
+      "value": "12538030396095.88",
+      "locator": {
+        "record_date": "2014-05-30",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2014-06",
+      "value": "12572219622017.57",
+      "locator": {
+        "record_date": "2014-06-30",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2014-07",
+      "value": "12651478122995.52",
+      "locator": {
+        "record_date": "2014-07-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2014-08",
+      "value": "12732611644765.48",
+      "locator": {
+        "record_date": "2014-08-29",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2014-09",
+      "value": "12784971238978.02",
+      "locator": {
+        "record_date": "2014-09-30",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2014-10",
+      "value": "12857056287256.22",
+      "locator": {
+        "record_date": "2014-10-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2014-11",
+      "value": "12922681725432.94",
+      "locator": {
+        "record_date": "2014-11-28",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2014-12",
+      "value": "13023951380768.58",
+      "locator": {
+        "record_date": "2014-12-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2015-01",
+      "value": "12984930426312.84",
+      "locator": {
+        "record_date": "2015-01-30",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2015-02",
+      "value": "13074036284486.10",
+      "locator": {
+        "record_date": "2015-02-27",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2015-03",
+      "value": "13090399293659.46",
+      "locator": {
+        "record_date": "2015-03-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2015-04",
+      "value": "13053681247951.16",
+      "locator": {
+        "record_date": "2015-04-30",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2015-05",
+      "value": "13052706400435.71",
+      "locator": {
+        "record_date": "2015-05-29",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2015-06",
+      "value": "13076414145360.92",
+      "locator": {
+        "record_date": "2015-06-30",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2015-07",
+      "value": "13135044925569.77",
+      "locator": {
+        "record_date": "2015-07-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2015-08",
+      "value": "13119752728787.69",
+      "locator": {
+        "record_date": "2015-08-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2015-09",
+      "value": "13123847198347.81",
+      "locator": {
+        "record_date": "2015-09-30",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2015-10",
+      "value": "13060656874967.53",
+      "locator": {
+        "record_date": "2015-10-30",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2015-11",
+      "value": "13588988502149.66",
+      "locator": {
+        "record_date": "2015-11-30",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2015-12",
+      "value": "13672522257291.59",
+      "locator": {
+        "record_date": "2015-12-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2016-01",
+      "value": "13657155197715.49",
+      "locator": {
+        "record_date": "2016-01-29",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2016-02",
+      "value": "13785189234310.03",
+      "locator": {
+        "record_date": "2016-02-29",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2016-03",
+      "value": "13924877638956.82",
+      "locator": {
+        "record_date": "2016-03-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2016-04",
+      "value": "13841194733299.04",
+      "locator": {
+        "record_date": "2016-04-29",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2016-05",
+      "value": "13886302639366.64",
+      "locator": {
+        "record_date": "2016-05-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2016-06",
+      "value": "13932742716540.43",
+      "locator": {
+        "record_date": "2016-06-30",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2016-07",
+      "value": "13998219609725.92",
+      "locator": {
+        "record_date": "2016-07-29",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2016-08",
+      "value": "14104113716888.75",
+      "locator": {
+        "record_date": "2016-08-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2016-09",
+      "value": "14173423516895.82",
+      "locator": {
+        "record_date": "2016-09-30",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2016-10",
+      "value": "14286500538390.57",
+      "locator": {
+        "record_date": "2016-10-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2016-11",
+      "value": "14443700147858.19",
+      "locator": {
+        "record_date": "2016-11-30",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2016-12",
+      "value": "14434841520928.37",
+      "locator": {
+        "record_date": "2016-12-30",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2017-01",
+      "value": "14376138803534.81",
+      "locator": {
+        "record_date": "2017-01-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2017-02",
+      "value": "14411380938688.54",
+      "locator": {
+        "record_date": "2017-02-28",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2017-03",
+      "value": "14369681939302.91",
+      "locator": {
+        "record_date": "2017-03-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2017-04",
+      "value": "14293344777463.61",
+      "locator": {
+        "record_date": "2017-04-28",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2017-05",
+      "value": "14298976496221.59",
+      "locator": {
+        "record_date": "2017-05-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2017-06",
+      "value": "14366186344565.70",
+      "locator": {
+        "record_date": "2017-06-30",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2017-07",
+      "value": "14360944436689.72",
+      "locator": {
+        "record_date": "2017-07-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2017-08",
+      "value": "14381561995497.24",
+      "locator": {
+        "record_date": "2017-08-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2017-09",
+      "value": "14673428663140.94",
+      "locator": {
+        "record_date": "2017-09-29",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2017-10",
+      "value": "14751446096800.09",
+      "locator": {
+        "record_date": "2017-10-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2017-11",
+      "value": "14918713237390.02",
+      "locator": {
+        "record_date": "2017-11-30",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2017-12",
+      "value": "14814721127803.77",
+      "locator": {
+        "record_date": "2017-12-29",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2018-01",
+      "value": "14803169732410.16",
+      "locator": {
+        "record_date": "2018-01-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2018-02",
+      "value": "15150589235512.83",
+      "locator": {
+        "record_date": "2018-02-28",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2018-03",
+      "value": "15428010045518.83",
+      "locator": {
+        "record_date": "2018-03-30",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2018-04",
+      "value": "15335128360141.59",
+      "locator": {
+        "record_date": "2018-04-30",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2018-05",
+      "value": "15426913434471.75",
+      "locator": {
+        "record_date": "2018-05-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2018-06",
+      "value": "15466564313316.59",
+      "locator": {
+        "record_date": "2018-06-29",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2018-07",
+      "value": "15569493125391.06",
+      "locator": {
+        "record_date": "2018-07-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2018-08",
+      "value": "15785389142392.19",
+      "locator": {
+        "record_date": "2018-08-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2018-09",
+      "value": "15761154524132.45",
+      "locator": {
+        "record_date": "2018-09-28",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2018-10",
+      "value": "15843329310589.99",
+      "locator": {
+        "record_date": "2018-10-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2018-11",
+      "value": "16044318195178.80",
+      "locator": {
+        "record_date": "2018-11-30",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2018-12",
+      "value": "16101666500481.68",
+      "locator": {
+        "record_date": "2018-12-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2019-01",
+      "value": "16101226791887.87",
+      "locator": {
+        "record_date": "2019-01-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2019-02",
+      "value": "16250898044728.34",
+      "locator": {
+        "record_date": "2019-02-28",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2019-03",
+      "value": "16204392002372.97",
+      "locator": {
+        "record_date": "2019-03-29",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2019-04",
+      "value": "16192789476576.03",
+      "locator": {
+        "record_date": "2019-04-30",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2019-05",
+      "value": "16202282783139.21",
+      "locator": {
+        "record_date": "2019-05-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2019-06",
+      "value": "16188422046434.70",
+      "locator": {
+        "record_date": "2019-06-28",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2019-07",
+      "value": "16211185016302.46",
+      "locator": {
+        "record_date": "2019-07-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2019-08",
+      "value": "16596815590260.74",
+      "locator": {
+        "record_date": "2019-08-30",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2019-09",
+      "value": "16809092325171.80",
+      "locator": {
+        "record_date": "2019-09-30",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2019-10",
+      "value": "16981310915367.49",
+      "locator": {
+        "record_date": "2019-10-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2019-11",
+      "value": "17105420783631.03",
+      "locator": {
+        "record_date": "2019-11-29",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2019-12",
+      "value": "17170442487631.56",
+      "locator": {
+        "record_date": "2019-12-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2020-01",
+      "value": "17212634807910.27",
+      "locator": {
+        "record_date": "2020-01-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2020-02",
+      "value": "17413049915879.80",
+      "locator": {
+        "record_date": "2020-02-28",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2020-03",
+      "value": "17674771266474.08",
+      "locator": {
+        "record_date": "2020-03-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2020-04",
+      "value": "19053618801919.97",
+      "locator": {
+        "record_date": "2020-04-30",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2020-05",
+      "value": "19812769028672.42",
+      "locator": {
+        "record_date": "2020-05-29",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2020-06",
+      "value": "20530278232389.35",
+      "locator": {
+        "record_date": "2020-06-30",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2020-07",
+      "value": "20634399708136.40",
+      "locator": {
+        "record_date": "2020-07-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2020-08",
+      "value": "20822038395784.06",
+      "locator": {
+        "record_date": "2020-08-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2020-09",
+      "value": "21018952080385.63",
+      "locator": {
+        "record_date": "2020-09-30",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2020-10",
+      "value": "21096955697143.00",
+      "locator": {
+        "record_date": "2020-10-30",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2020-11",
+      "value": "21349471573310.81",
+      "locator": {
+        "record_date": "2020-11-30",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2020-12",
+      "value": "21632418904104.24",
+      "locator": {
+        "record_date": "2020-12-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2021-01",
+      "value": "21643914788373.87",
+      "locator": {
+        "record_date": "2021-01-29",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2021-02",
+      "value": "21755737194886.79",
+      "locator": {
+        "record_date": "2021-02-26",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2021-03",
+      "value": "21986937011551.51",
+      "locator": {
+        "record_date": "2021-03-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2021-04",
+      "value": "22056055138417.67",
+      "locator": {
+        "record_date": "2021-04-30",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2021-05",
+      "value": "22020939013605.78",
+      "locator": {
+        "record_date": "2021-05-28",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2021-06",
+      "value": "22329822962202.00",
+      "locator": {
+        "record_date": "2021-06-30",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2021-07",
+      "value": "22284627647306.26",
+      "locator": {
+        "record_date": "2021-07-30",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2021-08",
+      "value": "22254543554131.93",
+      "locator": {
+        "record_date": "2021-08-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2021-09",
+      "value": "22282900363084.77",
+      "locator": {
+        "record_date": "2021-09-30",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2021-10",
+      "value": "22637089774173.57",
+      "locator": {
+        "record_date": "2021-10-29",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2021-11",
+      "value": "22645911986862.15",
+      "locator": {
+        "record_date": "2021-11-30",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2021-12",
+      "value": "23143747354717.21",
+      "locator": {
+        "record_date": "2021-12-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2022-01",
+      "value": "23487180861724.36",
+      "locator": {
+        "record_date": "2022-01-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2022-02",
+      "value": "23776559880654.69",
+      "locator": {
+        "record_date": "2022-02-28",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2022-03",
+      "value": "23879767750374.44",
+      "locator": {
+        "record_date": "2022-03-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2022-04",
+      "value": "23847245116757.60",
+      "locator": {
+        "record_date": "2022-04-29",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2022-05",
+      "value": "23904391446377.85",
+      "locator": {
+        "record_date": "2022-05-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2022-06",
+      "value": "23912159729664.37",
+      "locator": {
+        "record_date": "2022-06-30",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2022-07",
+      "value": "23952579183056.89",
+      "locator": {
+        "record_date": "2022-07-29",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2022-08",
+      "value": "24267551242280.32",
+      "locator": {
+        "record_date": "2022-08-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2022-09",
+      "value": "24299192620158.51",
+      "locator": {
+        "record_date": "2022-09-30",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2022-10",
+      "value": "24352541663465.59",
+      "locator": {
+        "record_date": "2022-10-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2022-11",
+      "value": "24553456579697.93",
+      "locator": {
+        "record_date": "2022-11-30",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2022-12",
+      "value": "24517593324394.19",
+      "locator": {
+        "record_date": "2022-12-30",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2023-01",
+      "value": "24583993573074.66",
+      "locator": {
+        "record_date": "2023-01-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2023-02",
+      "value": "24609240801721.77",
+      "locator": {
+        "record_date": "2023-02-28",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2023-03",
+      "value": "24693515037758.24",
+      "locator": {
+        "record_date": "2023-03-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2023-04",
+      "value": "24605068022566.94",
+      "locator": {
+        "record_date": "2023-04-28",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2023-05",
+      "value": "24630686283413.55",
+      "locator": {
+        "record_date": "2023-05-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2023-06",
+      "value": "25461998188055.84",
+      "locator": {
+        "record_date": "2023-06-30",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2023-07",
+      "value": "25708799188483.91",
+      "locator": {
+        "record_date": "2023-07-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2023-08",
+      "value": "26044050577584.54",
+      "locator": {
+        "record_date": "2023-08-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2023-09",
+      "value": "26330142473191.94",
+      "locator": {
+        "record_date": "2023-09-29",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2023-10",
+      "value": "26576222054905.35",
+      "locator": {
+        "record_date": "2023-10-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2023-11",
+      "value": "26843822063762.45",
+      "locator": {
+        "record_date": "2023-11-30",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2023-12",
+      "value": "26938517614684.59",
+      "locator": {
+        "record_date": "2023-12-29",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2024-01",
+      "value": "27071861894841.00",
+      "locator": {
+        "record_date": "2024-01-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2024-02",
+      "value": "27380289989183.77",
+      "locator": {
+        "record_date": "2024-02-29",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2024-03",
+      "value": "27511454993243.97",
+      "locator": {
+        "record_date": "2024-03-29",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2024-04",
+      "value": "27480960216618.32",
+      "locator": {
+        "record_date": "2024-04-30",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2024-05",
+      "value": "27606806621699.92",
+      "locator": {
+        "record_date": "2024-05-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2024-06",
+      "value": "27612896549329.17",
+      "locator": {
+        "record_date": "2024-06-28",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2024-07",
+      "value": "27930511528793.83",
+      "locator": {
+        "record_date": "2024-07-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2024-08",
+      "value": "28168005045836.45",
+      "locator": {
+        "record_date": "2024-08-30",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2024-09",
+      "value": "28307312290783.00",
+      "locator": {
+        "record_date": "2024-09-30",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2024-10",
+      "value": "28572149038424.26",
+      "locator": {
+        "record_date": "2024-10-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2024-11",
+      "value": "28791207744535.64",
+      "locator": {
+        "record_date": "2024-11-29",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2024-12",
+      "value": "28836996111881.81",
+      "locator": {
+        "record_date": "2024-12-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2025-01",
+      "value": "28911508658693.08",
+      "locator": {
+        "record_date": "2025-01-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2025-02",
+      "value": "28914410587820.34",
+      "locator": {
+        "record_date": "2025-02-28",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2025-03",
+      "value": "28909508850275.58",
+      "locator": {
+        "record_date": "2025-03-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2025-04",
+      "value": "28852660949319.21",
+      "locator": {
+        "record_date": "2025-04-30",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2025-05",
+      "value": "28952461153000.13",
+      "locator": {
+        "record_date": "2025-05-30",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2025-06",
+      "value": "28953496505343.54",
+      "locator": {
+        "record_date": "2025-06-30",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2025-07",
+      "value": "29531340715980.52",
+      "locator": {
+        "record_date": "2025-07-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2025-08",
+      "value": "29968531307467.56",
+      "locator": {
+        "record_date": "2025-08-29",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2025-09",
+      "value": "30277766440770.58",
+      "locator": {
+        "record_date": "2025-09-30",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2025-10",
+      "value": "30570708483009.12",
+      "locator": {
+        "record_date": "2025-10-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2025-11",
+      "value": "30774117238206.31",
+      "locator": {
+        "record_date": "2025-11-28",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2025-12",
+      "value": "30846716536213.26",
+      "locator": {
+        "record_date": "2025-12-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2026-01",
+      "value": "30919122670062.31",
+      "locator": {
+        "record_date": "2026-01-30",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2026-02",
+      "value": "31186965290815.89",
+      "locator": {
+        "record_date": "2026-02-27",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2026-03",
+      "value": "31431182280136.26",
+      "locator": {
+        "record_date": "2026-03-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2026-04",
+      "value": "31272489865435.88",
+      "locator": {
+        "record_date": "2026-04-30",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2026-05",
+      "value": "31515369798622.98",
+      "locator": {
+        "record_date": "2026-05-29",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2026-06",
+      "value": "31681308373695.03",
+      "locator": {
+        "record_date": "2026-06-30",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2026-07",
+      "value": "32045863694464.30",
+      "locator": {
+        "record_date": "2026-07-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2026-08",
+      "value": "32414988847175.22",
+      "locator": {
+        "record_date": "2026-08-31",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2026-09",
+      "value": "32425012546390.57",
+      "locator": {
+        "record_date": "2026-09-30",
+        "field": "debt_held_public_amt"
+      }
+    },
+    {
+      "date": "2026-10",
+      "value": "32538236547452.08",
+      "locator": {
+        "record_date": "2026-10-15",
+        "field": "debt_held_public_amt"
+      }
+    }
+  ]
+}

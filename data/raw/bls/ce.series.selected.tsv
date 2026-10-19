@@ -1,0 +1,5 @@
+series_id        	supersector_code	industry_code	data_type_code	seasonal	series_title	footnote_codes	begin_year	begin_period	end_year	end_period
+CEU0500000003    	05	05000000	03	U	Average hourly earnings of all employees, total private, not seasonally adjusted		2006	M03	2026	M09
+CEU0500000008    	05	05000000	08	U	Average hourly earnings of production and nonsupervisory employees, total private, not seasonally adjusted		1964	M01	2026	M09
+CEU0500000013    	05	05000000	13	U	Average hourly earnings of all employees, 1982-1984 dollars, total private, not seasonally adjusted		2006	M03	2026	M09
+CEU0500000032    	05	05000000	32	U	Average hourly earnings of production and nonsupervisory employees, 1982-84 dollars, total private, not seasonally adjusted		1964	M01	2026	M09

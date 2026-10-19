@@ -1,0 +1,701 @@
+{
+  "id": "omb_fn_human",
+  "name": "Human resources",
+  "units": "millions of dollars",
+  "adjustment": "fiscal year",
+  "nominal_or_real": "nominal",
+  "frequency": "fiscal_year",
+  "source_id": "hist03z1",
+  "series_url": "https://www.whitehouse.gov/wp-content/uploads/2026/04/hist03z1_fy2027.xlsx",
+  "notes": "Estimate columns in the source table are omitted.",
+  "points": [
+    {
+      "date": "1940",
+      "value": "4139",
+      "locator": {
+        "row_label": "Human resources",
+        "column": "1940"
+      }
+    },
+    {
+      "date": "1941",
+      "value": "4158",
+      "locator": {
+        "row_label": "Human resources",
+        "column": "1941"
+      }
+    },
+    {
+      "date": "1942",
+      "value": "3599",
+      "locator": {
+        "row_label": "Human resources",
+        "column": "1942"
+      }
+    },
+    {
+      "date": "1943",
+      "value": "2659",
+      "locator": {
+        "row_label": "Human resources",
+        "column": "1943"
+      }
+    },
+    {
+      "date": "1944",
+      "value": "1928",
+      "locator": {
+        "row_label": "Human resources",
+        "column": "1944"
+      }
+    },
+    {
+      "date": "1945",
+      "value": "1859",
+      "locator": {
+        "row_label": "Human resources",
+        "column": "1945"
+      }
+    },
+    {
+      "date": "1946",
+      "value": "5493",
+      "locator": {
+        "row_label": "Human resources",
+        "column": "1946"
+      }
+    },
+    {
+      "date": "1947",
+      "value": "9909",
+      "locator": {
+        "row_label": "Human resources",
+        "column": "1947"
+      }
+    },
+    {
+      "date": "1948",
+      "value": "9868",
+      "locator": {
+        "row_label": "Human resources",
+        "column": "1948"
+      }
+    },
+    {
+      "date": "1949",
+      "value": "10805",
+      "locator": {
+        "row_label": "Human resources",
+        "column": "1949"
+      }
+    },
+    {
+      "date": "1950",
+      "value": "14221",
+      "locator": {
+        "row_label": "Human resources",
+        "column": "1950"
+      }
+    },
+    {
+      "date": "1951",
+      "value": "11001",
+      "locator": {
+        "row_label": "Human resources",
+        "column": "1951"
+      }
+    },
+    {
+      "date": "1952",
+      "value": "11745",
+      "locator": {
+        "row_label": "Human resources",
+        "column": "1952"
+      }
+    },
+    {
+      "date": "1953",
+      "value": "11836",
+      "locator": {
+        "row_label": "Human resources",
+        "column": "1953"
+      }
+    },
+    {
+      "date": "1954",
+      "value": "13076",
+      "locator": {
+        "row_label": "Human resources",
+        "column": "1954"
+      }
+    },
+    {
+      "date": "1955",
+      "value": "14908",
+      "locator": {
+        "row_label": "Human resources",
+        "column": "1955"
+      }
+    },
+    {
+      "date": "1956",
+      "value": "16052",
+      "locator": {
+        "row_label": "Human resources",
+        "column": "1956"
+      }
+    },
+    {
+      "date": "1957",
+      "value": "18161",
+      "locator": {
+        "row_label": "Human resources",
+        "column": "1957"
+      }
+    },
+    {
+      "date": "1958",
+      "value": "22288",
+      "locator": {
+        "row_label": "Human resources",
+        "column": "1958"
+      }
+    },
+    {
+      "date": "1959",
+      "value": "24892",
+      "locator": {
+        "row_label": "Human resources",
+        "column": "1959"
+      }
+    },
+    {
+      "date": "1960",
+      "value": "26184",
+      "locator": {
+        "row_label": "Human resources",
+        "column": "1960"
+      }
+    },
+    {
+      "date": "1961",
+      "value": "29838",
+      "locator": {
+        "row_label": "Human resources",
+        "column": "1961"
+      }
+    },
+    {
+      "date": "1962",
+      "value": "31630",
+      "locator": {
+        "row_label": "Human resources",
+        "column": "1962"
+      }
+    },
+    {
+      "date": "1963",
+      "value": "33522",
+      "locator": {
+        "row_label": "Human resources",
+        "column": "1963"
+      }
+    },
+    {
+      "date": "1964",
+      "value": "35294",
+      "locator": {
+        "row_label": "Human resources",
+        "column": "1964"
+      }
+    },
+    {
+      "date": "1965",
+      "value": "36576",
+      "locator": {
+        "row_label": "Human resources",
+        "column": "1965"
+      }
+    },
+    {
+      "date": "1966",
+      "value": "43257",
+      "locator": {
+        "row_label": "Human resources",
+        "column": "1966"
+      }
+    },
+    {
+      "date": "1967",
+      "value": "51272",
+      "locator": {
+        "row_label": "Human resources",
+        "column": "1967"
+      }
+    },
+    {
+      "date": "1968",
+      "value": "59375",
+      "locator": {
+        "row_label": "Human resources",
+        "column": "1968"
+      }
+    },
+    {
+      "date": "1969",
+      "value": "66410",
+      "locator": {
+        "row_label": "Human resources",
+        "column": "1969"
+      }
+    },
+    {
+      "date": "1970",
+      "value": "75349",
+      "locator": {
+        "row_label": "Human resources",
+        "column": "1970"
+      }
+    },
+    {
+      "date": "1971",
+      "value": "91901",
+      "locator": {
+        "row_label": "Human resources",
+        "column": "1971"
+      }
+    },
+    {
+      "date": "1972",
+      "value": "107211",
+      "locator": {
+        "row_label": "Human resources",
+        "column": "1972"
+      }
+    },
+    {
+      "date": "1973",
+      "value": "119522",
+      "locator": {
+        "row_label": "Human resources",
+        "column": "1973"
+      }
+    },
+    {
+      "date": "1974",
+      "value": "135783",
+      "locator": {
+        "row_label": "Human resources",
+        "column": "1974"
+      }
+    },
+    {
+      "date": "1975",
+      "value": "173245",
+      "locator": {
+        "row_label": "Human resources",
+        "column": "1975"
+      }
+    },
+    {
+      "date": "1976",
+      "value": "203594",
+      "locator": {
+        "row_label": "Human resources",
+        "column": "1976"
+      }
+    },
+    {
+      "date": "1977",
+      "value": "221895",
+      "locator": {
+        "row_label": "Human resources",
+        "column": "1977"
+      }
+    },
+    {
+      "date": "1978",
+      "value": "242329",
+      "locator": {
+        "row_label": "Human resources",
+        "column": "1978"
+      }
+    },
+    {
+      "date": "1979",
+      "value": "267574",
+      "locator": {
+        "row_label": "Human resources",
+        "column": "1979"
+      }
+    },
+    {
+      "date": "1980",
+      "value": "313374",
+      "locator": {
+        "row_label": "Human resources",
+        "column": "1980"
+      }
+    },
+    {
+      "date": "1981",
+      "value": "362022",
+      "locator": {
+        "row_label": "Human resources",
+        "column": "1981"
+      }
+    },
+    {
+      "date": "1982",
+      "value": "388681",
+      "locator": {
+        "row_label": "Human resources",
+        "column": "1982"
+      }
+    },
+    {
+      "date": "1983",
+      "value": "426011",
+      "locator": {
+        "row_label": "Human resources",
+        "column": "1983"
+      }
+    },
+    {
+      "date": "1984",
+      "value": "432076",
+      "locator": {
+        "row_label": "Human resources",
+        "column": "1984"
+      }
+    },
+    {
+      "date": "1985",
+      "value": "471859",
+      "locator": {
+        "row_label": "Human resources",
+        "column": "1985"
+      }
+    },
+    {
+      "date": "1986",
+      "value": "481625",
+      "locator": {
+        "row_label": "Human resources",
+        "column": "1986"
+      }
+    },
+    {
+      "date": "1987",
+      "value": "502220",
+      "locator": {
+        "row_label": "Human resources",
+        "column": "1987"
+      }
+    },
+    {
+      "date": "1988",
+      "value": "533426",
+      "locator": {
+        "row_label": "Human resources",
+        "column": "1988"
+      }
+    },
+    {
+      "date": "1989",
+      "value": "568803",
+      "locator": {
+        "row_label": "Human resources",
+        "column": "1989"
+      }
+    },
+    {
+      "date": "1990",
+      "value": "619463",
+      "locator": {
+        "row_label": "Human resources",
+        "column": "1990"
+      }
+    },
+    {
+      "date": "1991",
+      "value": "689810",
+      "locator": {
+        "row_label": "Human resources",
+        "column": "1991"
+      }
+    },
+    {
+      "date": "1992",
+      "value": "772599",
+      "locator": {
+        "row_label": "Human resources",
+        "column": "1992"
+      }
+    },
+    {
+      "date": "1993",
+      "value": "827691",
+      "locator": {
+        "row_label": "Human resources",
+        "column": "1993"
+      }
+    },
+    {
+      "date": "1994",
+      "value": "869550",
+      "locator": {
+        "row_label": "Human resources",
+        "column": "1994"
+      }
+    },
+    {
+      "date": "1995",
+      "value": "923788",
+      "locator": {
+        "row_label": "Human resources",
+        "column": "1995"
+      }
+    },
+    {
+      "date": "1996",
+      "value": "958274",
+      "locator": {
+        "row_label": "Human resources",
+        "column": "1996"
+      }
+    },
+    {
+      "date": "1997",
+      "value": "1002389",
+      "locator": {
+        "row_label": "Human resources",
+        "column": "1997"
+      }
+    },
+    {
+      "date": "1998",
+      "value": "1033465",
+      "locator": {
+        "row_label": "Human resources",
+        "column": "1998"
+      }
+    },
+    {
+      "date": "1999",
+      "value": "1057770",
+      "locator": {
+        "row_label": "Human resources",
+        "column": "1999"
+      }
+    },
+    {
+      "date": "2000",
+      "value": "1115517",
+      "locator": {
+        "row_label": "Human resources",
+        "column": "2000"
+      }
+    },
+    {
+      "date": "2001",
+      "value": "1194417",
+      "locator": {
+        "row_label": "Human resources",
+        "column": "2001"
+      }
+    },
+    {
+      "date": "2002",
+      "value": "1317547",
+      "locator": {
+        "row_label": "Human resources",
+        "column": "2002"
+      }
+    },
+    {
+      "date": "2003",
+      "value": "1417857",
+      "locator": {
+        "row_label": "Human resources",
+        "column": "2003"
+      }
+    },
+    {
+      "date": "2004",
+      "value": "1485809",
+      "locator": {
+        "row_label": "Human resources",
+        "column": "2004"
+      }
+    },
+    {
+      "date": "2005",
+      "value": "1586013",
+      "locator": {
+        "row_label": "Human resources",
+        "column": "2005"
+      }
+    },
+    {
+      "date": "2006",
+      "value": "1671926",
+      "locator": {
+        "row_label": "Human resources",
+        "column": "2006"
+      }
+    },
+    {
+      "date": "2007",
+      "value": "1758391",
+      "locator": {
+        "row_label": "Human resources",
+        "column": "2007"
+      }
+    },
+    {
+      "date": "2008",
+      "value": "1895637",
+      "locator": {
+        "row_label": "Human resources",
+        "column": "2008"
+      }
+    },
+    {
+      "date": "2009",
+      "value": "2155793",
+      "locator": {
+        "row_label": "Human resources",
+        "column": "2009"
+      }
+    },
+    {
+      "date": "2010",
+      "value": "2386633",
+      "locator": {
+        "row_label": "Human resources",
+        "column": "2010"
+      }
+    },
+    {
+      "date": "2011",
+      "value": "2414739",
+      "locator": {
+        "row_label": "Human resources",
+        "column": "2011"
+      }
+    },
+    {
+      "date": "2012",
+      "value": "2348587",
+      "locator": {
+        "row_label": "Human resources",
+        "column": "2012"
+      }
+    },
+    {
+      "date": "2013",
+      "value": "2417950",
+      "locator": {
+        "row_label": "Human resources",
+        "column": "2013"
+      }
+    },
+    {
+      "date": "2014",
+      "value": "2525545",
+      "locator": {
+        "row_label": "Human resources",
+        "column": "2014"
+      }
+    },
+    {
+      "date": "2015",
+      "value": "2706828",
+      "locator": {
+        "row_label": "Human resources",
+        "column": "2015"
+      }
+    },
+    {
+      "date": "2016",
+      "value": "2820292",
+      "locator": {
+        "row_label": "Human resources",
+        "column": "2016"
+      }
+    },
+    {
+      "date": "2017",
+      "value": "2899317",
+      "locator": {
+        "row_label": "Human resources",
+        "column": "2017"
+      }
+    },
+    {
+      "date": "2018",
+      "value": "2897403",
+      "locator": {
+        "row_label": "Human resources",
+        "column": "2018"
+      }
+    },
+    {
+      "date": "2019",
+      "value": "3131551",
+      "locator": {
+        "row_label": "Human resources",
+        "column": "2019"
+      }
+    },
+    {
+      "date": "2020",
+      "value": "4339671",
+      "locator": {
+        "row_label": "Human resources",
+        "column": "2020"
+      }
+    },
+    {
+      "date": "2021",
+      "value": "4807911",
+      "locator": {
+        "row_label": "Human resources",
+        "column": "2021"
+      }
+    },
+    {
+      "date": "2022",
+      "value": "4705644",
+      "locator": {
+        "row_label": "Human resources",
+        "column": "2022"
+      }
+    },
+    {
+      "date": "2023",
+      "value": "4164483",
+      "locator": {
+        "row_label": "Human resources",
+        "column": "2023"
+      }
+    },
+    {
+      "date": "2024",
+      "value": "4548904",
+      "locator": {
+        "row_label": "Human resources",
+        "column": "2024"
+      }
+    },
+    {
+      "date": "2025",
+      "value": "4706716",
+      "locator": {
+        "row_label": "Human resources",
+        "column": "2025"
+      }
+    }
+  ]
+}

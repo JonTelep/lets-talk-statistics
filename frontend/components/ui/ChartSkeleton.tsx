@@ -1,5 +1,5 @@
 /**
- * Chart Skeleton Component — Dark theme
+ * Chart Skeleton Component. Dark theme.
  */
 'use client';
 

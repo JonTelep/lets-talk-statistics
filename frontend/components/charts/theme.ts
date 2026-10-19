@@ -1,4 +1,4 @@
-// Chart theme — uses CSS variable-aware colors
+// Chart theme. Uses CSS variable-aware colors.
 // Note: Recharts uses inline styles so we provide both dark/light helpers
 
 export function getChartTheme(isDark: boolean) {

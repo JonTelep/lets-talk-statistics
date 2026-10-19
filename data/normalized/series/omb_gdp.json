@@ -1,0 +1,781 @@
+{
+  "id": "omb_gdp",
+  "name": "GDP (in billions of dollars)",
+  "units": "billions of dollars",
+  "adjustment": "fiscal year",
+  "nominal_or_real": "nominal",
+  "frequency": "fiscal_year",
+  "source_id": "hist01z2",
+  "series_url": "https://www.whitehouse.gov/wp-content/uploads/2026/04/hist01z2_fy2027.xlsx",
+  "notes": "Table 1.2 - SUMMARY OF RECEIPTS, OUTLAYS, AND SURPLUSES OR DEFICITS ( - ) AS PERCENTAGES OF GDP: 1930 - 2025",
+  "points": [
+    {
+      "date": "1930",
+      "value": "98.4",
+      "locator": {
+        "row_label": "1930",
+        "column": "GDP (in billions of dollars)"
+      }
+    },
+    {
+      "date": "1931",
+      "value": "84.8",
+      "locator": {
+        "row_label": "1931",
+        "column": "GDP (in billions of dollars)"
+      }
+    },
+    {
+      "date": "1932",
+      "value": "68.5",
+      "locator": {
+        "row_label": "1932",
+        "column": "GDP (in billions of dollars)"
+      }
+    },
+    {
+      "date": "1933",
+      "value": "58.3",
+      "locator": {
+        "row_label": "1933",
+        "column": "GDP (in billions of dollars)"
+      }
+    },
+    {
+      "date": "1934",
+      "value": "62",
+      "locator": {
+        "row_label": "1934",
+        "column": "GDP (in billions of dollars)"
+      }
+    },
+    {
+      "date": "1935",
+      "value": "70.5",
+      "locator": {
+        "row_label": "1935",
+        "column": "GDP (in billions of dollars)"
+      }
+    },
+    {
+      "date": "1936",
+      "value": "79.6",
+      "locator": {
+        "row_label": "1936",
+        "column": "GDP (in billions of dollars)"
+      }
+    },
+    {
+      "date": "1937",
+      "value": "88.9",
+      "locator": {
+        "row_label": "1937",
+        "column": "GDP (in billions of dollars)"
+      }
+    },
+    {
+      "date": "1938",
+      "value": "90.2",
+      "locator": {
+        "row_label": "1938",
+        "column": "GDP (in billions of dollars)"
+      }
+    },
+    {
+      "date": "1939",
+      "value": "90.4",
+      "locator": {
+        "row_label": "1939",
+        "column": "GDP (in billions of dollars)"
+      }
+    },
+    {
+      "date": "1940",
+      "value": "98.2",
+      "locator": {
+        "row_label": "1940",
+        "column": "GDP (in billions of dollars)"
+      }
+    },
+    {
+      "date": "1941",
+      "value": "116.2",
+      "locator": {
+        "row_label": "1941",
+        "column": "GDP (in billions of dollars)"
+      }
+    },
+    {
+      "date": "1942",
+      "value": "147.7",
+      "locator": {
+        "row_label": "1942",
+        "column": "GDP (in billions of dollars)"
+      }
+    },
+    {
+      "date": "1943",
+      "value": "184.6",
+      "locator": {
+        "row_label": "1943",
+        "column": "GDP (in billions of dollars)"
+      }
+    },
+    {
+      "date": "1944",
+      "value": "213.8",
+      "locator": {
+        "row_label": "1944",
+        "column": "GDP (in billions of dollars)"
+      }
+    },
+    {
+      "date": "1945",
+      "value": "226.4",
+      "locator": {
+        "row_label": "1945",
+        "column": "GDP (in billions of dollars)"
+      }
+    },
+    {
+      "date": "1946",
+      "value": "228",
+      "locator": {
+        "row_label": "1946",
+        "column": "GDP (in billions of dollars)"
+      }
+    },
+    {
+      "date": "1947",
+      "value": "238.9",
+      "locator": {
+        "row_label": "1947",
+        "column": "GDP (in billions of dollars)"
+      }
+    },
+    {
+      "date": "1948",
+      "value": "261.9",
+      "locator": {
+        "row_label": "1948",
+        "column": "GDP (in billions of dollars)"
+      }
+    },
+    {
+      "date": "1949",
+      "value": "276.5",
+      "locator": {
+        "row_label": "1949",
+        "column": "GDP (in billions of dollars)"
+      }
+    },
+    {
+      "date": "1950",
+      "value": "278.675",
+      "locator": {
+        "row_label": "1950",
+        "column": "GDP (in billions of dollars)"
+      }
+    },
+    {
+      "date": "1951",
+      "value": "327.05",
+      "locator": {
+        "row_label": "1951",
+        "column": "GDP (in billions of dollars)"
+      }
+    },
+    {
+      "date": "1952",
+      "value": "357.1",
+      "locator": {
+        "row_label": "1952",
+        "column": "GDP (in billions of dollars)"
+      }
+    },
+    {
+      "date": "1953",
+      "value": "382.05",
+      "locator": {
+        "row_label": "1953",
+        "column": "GDP (in billions of dollars)"
+      }
+    },
+    {
+      "date": "1954",
+      "value": "387.15",
+      "locator": {
+        "row_label": "1954",
+        "column": "GDP (in billions of dollars)"
+      }
+    },
+    {
+      "date": "1955",
+      "value": "406.325",
+      "locator": {
+        "row_label": "1955",
+        "column": "GDP (in billions of dollars)"
+      }
+    },
+    {
+      "date": "1956",
+      "value": "438.25",
+      "locator": {
+        "row_label": "1956",
+        "column": "GDP (in billions of dollars)"
+      }
+    },
+    {
+      "date": "1957",
+      "value": "463.375",
+      "locator": {
+        "row_label": "1957",
+        "column": "GDP (in billions of dollars)"
+      }
+    },
+    {
+      "date": "1958",
+      "value": "473.475",
+      "locator": {
+        "row_label": "1958",
+        "column": "GDP (in billions of dollars)"
+      }
+    },
+    {
+      "date": "1959",
+      "value": "504.6",
+      "locator": {
+        "row_label": "1959",
+        "column": "GDP (in billions of dollars)"
+      }
+    },
+    {
+      "date": "1960",
+      "value": "534.325",
+      "locator": {
+        "row_label": "1960",
+        "column": "GDP (in billions of dollars)"
+      }
+    },
+    {
+      "date": "1961",
+      "value": "546.575",
+      "locator": {
+        "row_label": "1961",
+        "column": "GDP (in billions of dollars)"
+      }
+    },
+    {
+      "date": "1962",
+      "value": "585.675",
+      "locator": {
+        "row_label": "1962",
+        "column": "GDP (in billions of dollars)"
+      }
+    },
+    {
+      "date": "1963",
+      "value": "618.2",
+      "locator": {
+        "row_label": "1963",
+        "column": "GDP (in billions of dollars)"
+      }
+    },
+    {
+      "date": "1964",
+      "value": "661.7",
+      "locator": {
+        "row_label": "1964",
+        "column": "GDP (in billions of dollars)"
+      }
+    },
+    {
+      "date": "1965",
+      "value": "709.325",
+      "locator": {
+        "row_label": "1965",
+        "column": "GDP (in billions of dollars)"
+      }
+    },
+    {
+      "date": "1966",
+      "value": "780.475",
+      "locator": {
+        "row_label": "1966",
+        "column": "GDP (in billions of dollars)"
+      }
+    },
+    {
+      "date": "1967",
+      "value": "836.525",
+      "locator": {
+        "row_label": "1967",
+        "column": "GDP (in billions of dollars)"
+      }
+    },
+    {
+      "date": "1968",
+      "value": "897.575",
+      "locator": {
+        "row_label": "1968",
+        "column": "GDP (in billions of dollars)"
+      }
+    },
+    {
+      "date": "1969",
+      "value": "980.275",
+      "locator": {
+        "row_label": "1969",
+        "column": "GDP (in billions of dollars)"
+      }
+    },
+    {
+      "date": "1970",
+      "value": "1046.675",
+      "locator": {
+        "row_label": "1970",
+        "column": "GDP (in billions of dollars)"
+      }
+    },
+    {
+      "date": "1971",
+      "value": "1116.55",
+      "locator": {
+        "row_label": "1971",
+        "column": "GDP (in billions of dollars)"
+      }
+    },
+    {
+      "date": "1972",
+      "value": "1216.25",
+      "locator": {
+        "row_label": "1972",
+        "column": "GDP (in billions of dollars)"
+      }
+    },
+    {
+      "date": "1973",
+      "value": "1352.725",
+      "locator": {
+        "row_label": "1973",
+        "column": "GDP (in billions of dollars)"
+      }
+    },
+    {
+      "date": "1974",
+      "value": "1482.85",
+      "locator": {
+        "row_label": "1974",
+        "column": "GDP (in billions of dollars)"
+      }
+    },
+    {
+      "date": "1975",
+      "value": "1606.925",
+      "locator": {
+        "row_label": "1975",
+        "column": "GDP (in billions of dollars)"
+      }
+    },
+    {
+      "date": "1976",
+      "value": "1786.1",
+      "locator": {
+        "row_label": "1976",
+        "column": "GDP (in billions of dollars)"
+      }
+    },
+    {
+      "date": "1977",
+      "value": "2024.325",
+      "locator": {
+        "row_label": "1977",
+        "column": "GDP (in billions of dollars)"
+      }
+    },
+    {
+      "date": "1978",
+      "value": "2273.45",
+      "locator": {
+        "row_label": "1978",
+        "column": "GDP (in billions of dollars)"
+      }
+    },
+    {
+      "date": "1979",
+      "value": "2565.575",
+      "locator": {
+        "row_label": "1979",
+        "column": "GDP (in billions of dollars)"
+      }
+    },
+    {
+      "date": "1980",
+      "value": "2791.9",
+      "locator": {
+        "row_label": "1980",
+        "column": "GDP (in billions of dollars)"
+      }
+    },
+    {
+      "date": "1981",
+      "value": "3133.225",
+      "locator": {
+        "row_label": "1981",
+        "column": "GDP (in billions of dollars)"
+      }
+    },
+    {
+      "date": "1982",
+      "value": "3313.35",
+      "locator": {
+        "row_label": "1982",
+        "column": "GDP (in billions of dollars)"
+      }
+    },
+    {
+      "date": "1983",
+      "value": "3536",
+      "locator": {
+        "row_label": "1983",
+        "column": "GDP (in billions of dollars)"
+      }
+    },
+    {
+      "date": "1984",
+      "value": "3949.175",
+      "locator": {
+        "row_label": "1984",
+        "column": "GDP (in billions of dollars)"
+      }
+    },
+    {
+      "date": "1985",
+      "value": "4265.125",
+      "locator": {
+        "row_label": "1985",
+        "column": "GDP (in billions of dollars)"
+      }
+    },
+    {
+      "date": "1986",
+      "value": "4526.25",
+      "locator": {
+        "row_label": "1986",
+        "column": "GDP (in billions of dollars)"
+      }
+    },
+    {
+      "date": "1987",
+      "value": "4767.65",
+      "locator": {
+        "row_label": "1987",
+        "column": "GDP (in billions of dollars)"
+      }
+    },
+    {
+      "date": "1988",
+      "value": "5138.55",
+      "locator": {
+        "row_label": "1988",
+        "column": "GDP (in billions of dollars)"
+      }
+    },
+    {
+      "date": "1989",
+      "value": "5554.675",
+      "locator": {
+        "row_label": "1989",
+        "column": "GDP (in billions of dollars)"
+      }
+    },
+    {
+      "date": "1990",
+      "value": "5898.75",
+      "locator": {
+        "row_label": "1990",
+        "column": "GDP (in billions of dollars)"
+      }
+    },
+    {
+      "date": "1991",
+      "value": "6093.175",
+      "locator": {
+        "row_label": "1991",
+        "column": "GDP (in billions of dollars)"
+      }
+    },
+    {
+      "date": "1992",
+      "value": "6416.25",
+      "locator": {
+        "row_label": "1992",
+        "column": "GDP (in billions of dollars)"
+      }
+    },
+    {
+      "date": "1993",
+      "value": "6775.325",
+      "locator": {
+        "row_label": "1993",
+        "column": "GDP (in billions of dollars)"
+      }
+    },
+    {
+      "date": "1994",
+      "value": "7176.85",
+      "locator": {
+        "row_label": "1994",
+        "column": "GDP (in billions of dollars)"
+      }
+    },
+    {
+      "date": "1995",
+      "value": "7560.425",
+      "locator": {
+        "row_label": "1995",
+        "column": "GDP (in billions of dollars)"
+      }
+    },
+    {
+      "date": "1996",
+      "value": "7951.325",
+      "locator": {
+        "row_label": "1996",
+        "column": "GDP (in billions of dollars)"
+      }
+    },
+    {
+      "date": "1997",
+      "value": "8451.025",
+      "locator": {
+        "row_label": "1997",
+        "column": "GDP (in billions of dollars)"
+      }
+    },
+    {
+      "date": "1998",
+      "value": "8930.8",
+      "locator": {
+        "row_label": "1998",
+        "column": "GDP (in billions of dollars)"
+      }
+    },
+    {
+      "date": "1999",
+      "value": "9479.625",
+      "locator": {
+        "row_label": "1999",
+        "column": "GDP (in billions of dollars)"
+      }
+    },
+    {
+      "date": "2000",
+      "value": "10117.075",
+      "locator": {
+        "row_label": "2000",
+        "column": "GDP (in billions of dollars)"
+      }
+    },
+    {
+      "date": "2001",
+      "value": "10525.725",
+      "locator": {
+        "row_label": "2001",
+        "column": "GDP (in billions of dollars)"
+      }
+    },
+    {
+      "date": "2002",
+      "value": "10828.875",
+      "locator": {
+        "row_label": "2002",
+        "column": "GDP (in billions of dollars)"
+      }
+    },
+    {
+      "date": "2003",
+      "value": "11278.75",
+      "locator": {
+        "row_label": "2003",
+        "column": "GDP (in billions of dollars)"
+      }
+    },
+    {
+      "date": "2004",
+      "value": "12028.425",
+      "locator": {
+        "row_label": "2004",
+        "column": "GDP (in billions of dollars)"
+      }
+    },
+    {
+      "date": "2005",
+      "value": "12839.95",
+      "locator": {
+        "row_label": "2005",
+        "column": "GDP (in billions of dollars)"
+      }
+    },
+    {
+      "date": "2006",
+      "value": "13636.75",
+      "locator": {
+        "row_label": "2006",
+        "column": "GDP (in billions of dollars)"
+      }
+    },
+    {
+      "date": "2007",
+      "value": "14305.375",
+      "locator": {
+        "row_label": "2007",
+        "column": "GDP (in billions of dollars)"
+      }
+    },
+    {
+      "date": "2008",
+      "value": "14796.575",
+      "locator": {
+        "row_label": "2008",
+        "column": "GDP (in billions of dollars)"
+      }
+    },
+    {
+      "date": "2009",
+      "value": "14467.3",
+      "locator": {
+        "row_label": "2009",
+        "column": "GDP (in billions of dollars)"
+      }
+    },
+    {
+      "date": "2010",
+      "value": "14884.4",
+      "locator": {
+        "row_label": "2010",
+        "column": "GDP (in billions of dollars)"
+      }
+    },
+    {
+      "date": "2011",
+      "value": "15466.525",
+      "locator": {
+        "row_label": "2011",
+        "column": "GDP (in billions of dollars)"
+      }
+    },
+    {
+      "date": "2012",
+      "value": "16109.425",
+      "locator": {
+        "row_label": "2012",
+        "column": "GDP (in billions of dollars)"
+      }
+    },
+    {
+      "date": "2013",
+      "value": "16687.775",
+      "locator": {
+        "row_label": "2013",
+        "column": "GDP (in billions of dollars)"
+      }
+    },
+    {
+      "date": "2014",
+      "value": "17428.1",
+      "locator": {
+        "row_label": "2014",
+        "column": "GDP (in billions of dollars)"
+      }
+    },
+    {
+      "date": "2015",
+      "value": "18164.25",
+      "locator": {
+        "row_label": "2015",
+        "column": "GDP (in billions of dollars)"
+      }
+    },
+    {
+      "date": "2016",
+      "value": "18641.325",
+      "locator": {
+        "row_label": "2016",
+        "column": "GDP (in billions of dollars)"
+      }
+    },
+    {
+      "date": "2017",
+      "value": "19375.175",
+      "locator": {
+        "row_label": "2017",
+        "column": "GDP (in billions of dollars)"
+      }
+    },
+    {
+      "date": "2018",
+      "value": "20436.325",
+      "locator": {
+        "row_label": "2018",
+        "column": "GDP (in billions of dollars)"
+      }
+    },
+    {
+      "date": "2019",
+      "value": "21286.15",
+      "locator": {
+        "row_label": "2019",
+        "column": "GDP (in billions of dollars)"
+      }
+    },
+    {
+      "date": "2020",
+      "value": "21336.775",
+      "locator": {
+        "row_label": "2020",
+        "column": "GDP (in billions of dollars)"
+      }
+    },
+    {
+      "date": "2021",
+      "value": "23044.05",
+      "locator": {
+        "row_label": "2021",
+        "column": "GDP (in billions of dollars)"
+      }
+    },
+    {
+      "date": "2022",
+      "value": "25565.375",
+      "locator": {
+        "row_label": "2022",
+        "column": "GDP (in billions of dollars)"
+      }
+    },
+    {
+      "date": "2023",
+      "value": "27397.95",
+      "locator": {
+        "row_label": "2023",
+        "column": "GDP (in billions of dollars)"
+      }
+    },
+    {
+      "date": "2024",
+      "value": "28947.9",
+      "locator": {
+        "row_label": "2024",
+        "column": "GDP (in billions of dollars)"
+      }
+    },
+    {
+      "date": "2025",
+      "value": "30322.847",
+      "locator": {
+        "row_label": "2025",
+        "column": "GDP (in billions of dollars)"
+      }
+    }
+  ]
+}

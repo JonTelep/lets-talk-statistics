@@ -1,0 +1,1417 @@
+{
+  "id": "treasury_mts_outlays_monthly",
+  "name": "Current Month Gross Outlay Amount",
+  "units": "Dollars, nominal",
+  "adjustment": "not applicable",
+  "nominal_or_real": "nominal",
+  "frequency": "monthly",
+  "source_id": "treasury_mts_table_1",
+  "series_url": "https://fiscaldata.treasury.gov/datasets/monthly-treasury-statement/summary-of-receipts-outlays-and-the-deficit-surplus-of-the-u-s-government",
+  "notes": "When a calendar month appears on more than one statement, the row from the latest record_date is kept. Current Month Deficit Surplus Amount equals outlays minus receipts on the published rows.",
+  "points": [
+    {
+      "date": "2013-10",
+      "value": "289513615976.27",
+      "locator": {
+        "record_date": "2015-09-30",
+        "sequence_number_cd": "1.1",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2013-11",
+      "value": "317679064766.45",
+      "locator": {
+        "record_date": "2015-09-30",
+        "sequence_number_cd": "1.2",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2013-12",
+      "value": "231820736580.68",
+      "locator": {
+        "record_date": "2015-09-30",
+        "sequence_number_cd": "1.3",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2014-01",
+      "value": "306246918462.22",
+      "locator": {
+        "record_date": "2015-09-30",
+        "sequence_number_cd": "1.4",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2014-02",
+      "value": "337880379499.53",
+      "locator": {
+        "record_date": "2015-09-30",
+        "sequence_number_cd": "1.5",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2014-03",
+      "value": "252740569542.00",
+      "locator": {
+        "record_date": "2015-09-30",
+        "sequence_number_cd": "1.6",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2014-04",
+      "value": "307383258231.10",
+      "locator": {
+        "record_date": "2015-09-30",
+        "sequence_number_cd": "1.7",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2014-05",
+      "value": "329860032889.84",
+      "locator": {
+        "record_date": "2015-09-30",
+        "sequence_number_cd": "1.8",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2014-06",
+      "value": "253127426153.20",
+      "locator": {
+        "record_date": "2015-09-30",
+        "sequence_number_cd": "1.9",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2014-07",
+      "value": "309113491611.90",
+      "locator": {
+        "record_date": "2015-09-30",
+        "sequence_number_cd": "1.10",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2014-08",
+      "value": "322924988723.63",
+      "locator": {
+        "record_date": "2015-09-30",
+        "sequence_number_cd": "1.11",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2014-09",
+      "value": "245441413562.49",
+      "locator": {
+        "record_date": "2015-09-30",
+        "sequence_number_cd": "1.12",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2014-10",
+      "value": "334431604362.31",
+      "locator": {
+        "record_date": "2016-09-30",
+        "sequence_number_cd": "1.1",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2014-11",
+      "value": "248254199624.25",
+      "locator": {
+        "record_date": "2016-09-30",
+        "sequence_number_cd": "1.2",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2014-12",
+      "value": "333462621387.56",
+      "locator": {
+        "record_date": "2016-09-30",
+        "sequence_number_cd": "1.3",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2015-01",
+      "value": "324288687505.46",
+      "locator": {
+        "record_date": "2016-09-30",
+        "sequence_number_cd": "1.4",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2015-02",
+      "value": "331746766089.56",
+      "locator": {
+        "record_date": "2016-09-30",
+        "sequence_number_cd": "1.5",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2015-03",
+      "value": "287105173913.88",
+      "locator": {
+        "record_date": "2016-09-30",
+        "sequence_number_cd": "1.6",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2015-04",
+      "value": "315092025437.41",
+      "locator": {
+        "record_date": "2016-09-30",
+        "sequence_number_cd": "1.7",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2015-05",
+      "value": "296453647629.01",
+      "locator": {
+        "record_date": "2016-09-30",
+        "sequence_number_cd": "1.8",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2015-06",
+      "value": "292446549571.52",
+      "locator": {
+        "record_date": "2016-09-30",
+        "sequence_number_cd": "1.9",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2015-07",
+      "value": "374680133580.53",
+      "locator": {
+        "record_date": "2016-09-30",
+        "sequence_number_cd": "1.10",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2015-08",
+      "value": "275248342431.07",
+      "locator": {
+        "record_date": "2016-09-30",
+        "sequence_number_cd": "1.11",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2015-09",
+      "value": "274580447107.41",
+      "locator": {
+        "record_date": "2016-09-30",
+        "sequence_number_cd": "1.12",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2015-10",
+      "value": "347604282058.01",
+      "locator": {
+        "record_date": "2017-09-30",
+        "sequence_number_cd": "1.1",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2015-11",
+      "value": "267837258964.09",
+      "locator": {
+        "record_date": "2017-09-30",
+        "sequence_number_cd": "1.2",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2015-12",
+      "value": "364074656649.90",
+      "locator": {
+        "record_date": "2017-09-30",
+        "sequence_number_cd": "1.3",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2016-01",
+      "value": "258415698291.14",
+      "locator": {
+        "record_date": "2017-09-30",
+        "sequence_number_cd": "1.4",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2016-02",
+      "value": "361756857221.56",
+      "locator": {
+        "record_date": "2017-09-30",
+        "sequence_number_cd": "1.5",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2016-03",
+      "value": "335890557700.11",
+      "locator": {
+        "record_date": "2017-09-30",
+        "sequence_number_cd": "1.6",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2016-04",
+      "value": "331977014017.11",
+      "locator": {
+        "record_date": "2017-09-30",
+        "sequence_number_cd": "1.7",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2016-05",
+      "value": "277110955187.74",
+      "locator": {
+        "record_date": "2017-09-30",
+        "sequence_number_cd": "1.8",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2016-06",
+      "value": "323320233221.24",
+      "locator": {
+        "record_date": "2017-09-30",
+        "sequence_number_cd": "1.9",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2016-07",
+      "value": "322816687140.45",
+      "locator": {
+        "record_date": "2017-09-30",
+        "sequence_number_cd": "1.10",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2016-08",
+      "value": "338438387773.61",
+      "locator": {
+        "record_date": "2017-09-30",
+        "sequence_number_cd": "1.11",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2016-09",
+      "value": "323177871148.84",
+      "locator": {
+        "record_date": "2017-09-30",
+        "sequence_number_cd": "1.12",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2016-10",
+      "value": "267522606800.51",
+      "locator": {
+        "record_date": "2018-09-30",
+        "sequence_number_cd": "1.1",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2016-11",
+      "value": "336543527715.88",
+      "locator": {
+        "record_date": "2018-09-30",
+        "sequence_number_cd": "1.2",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2016-12",
+      "value": "346540757668.11",
+      "locator": {
+        "record_date": "2018-09-30",
+        "sequence_number_cd": "1.3",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2017-01",
+      "value": "292812150485.22",
+      "locator": {
+        "record_date": "2018-09-30",
+        "sequence_number_cd": "1.4",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2017-02",
+      "value": "363757090932.15",
+      "locator": {
+        "record_date": "2018-09-30",
+        "sequence_number_cd": "1.5",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2017-03",
+      "value": "392816094160.48",
+      "locator": {
+        "record_date": "2018-09-30",
+        "sequence_number_cd": "1.6",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2017-04",
+      "value": "273177340326.93",
+      "locator": {
+        "record_date": "2018-09-30",
+        "sequence_number_cd": "1.7",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2017-05",
+      "value": "328840682760.70",
+      "locator": {
+        "record_date": "2018-09-30",
+        "sequence_number_cd": "1.8",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2017-06",
+      "value": "428893678784.13",
+      "locator": {
+        "record_date": "2018-09-30",
+        "sequence_number_cd": "1.9",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2017-07",
+      "value": "274979526054.58",
+      "locator": {
+        "record_date": "2018-09-30",
+        "sequence_number_cd": "1.10",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2017-08",
+      "value": "333999746072.38",
+      "locator": {
+        "record_date": "2018-09-30",
+        "sequence_number_cd": "1.11",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2017-09",
+      "value": "340836763200.45",
+      "locator": {
+        "record_date": "2018-09-30",
+        "sequence_number_cd": "1.12",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2017-10",
+      "value": "298554668742.65",
+      "locator": {
+        "record_date": "2019-09-30",
+        "sequence_number_cd": "1.1",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2017-11",
+      "value": "346921830736.06",
+      "locator": {
+        "record_date": "2019-09-30",
+        "sequence_number_cd": "1.2",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2017-12",
+      "value": "348989246780.90",
+      "locator": {
+        "record_date": "2019-09-30",
+        "sequence_number_cd": "1.3",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2018-01",
+      "value": "311800751994.00",
+      "locator": {
+        "record_date": "2019-09-30",
+        "sequence_number_cd": "1.4",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2018-02",
+      "value": "370862100668.29",
+      "locator": {
+        "record_date": "2019-09-30",
+        "sequence_number_cd": "1.5",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2018-03",
+      "value": "419576197547.68",
+      "locator": {
+        "record_date": "2019-09-30",
+        "sequence_number_cd": "1.6",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2018-04",
+      "value": "296191554603.63",
+      "locator": {
+        "record_date": "2019-09-30",
+        "sequence_number_cd": "1.7",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2018-05",
+      "value": "363871381259.89",
+      "locator": {
+        "record_date": "2019-09-30",
+        "sequence_number_cd": "1.8",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2018-06",
+      "value": "391136184565.14",
+      "locator": {
+        "record_date": "2019-09-30",
+        "sequence_number_cd": "1.9",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2018-07",
+      "value": "302131452473.72",
+      "locator": {
+        "record_date": "2019-09-30",
+        "sequence_number_cd": "1.10",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2018-08",
+      "value": "433262791866.72",
+      "locator": {
+        "record_date": "2019-09-30",
+        "sequence_number_cd": "1.11",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2018-09",
+      "value": "224445654808.60",
+      "locator": {
+        "record_date": "2019-09-30",
+        "sequence_number_cd": "1.12",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2018-10",
+      "value": "353182669423.54",
+      "locator": {
+        "record_date": "2020-09-30",
+        "sequence_number_cd": "1.1",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2018-11",
+      "value": "410863725716.94",
+      "locator": {
+        "record_date": "2020-09-30",
+        "sequence_number_cd": "1.2",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2018-12",
+      "value": "326123396887.38",
+      "locator": {
+        "record_date": "2020-09-30",
+        "sequence_number_cd": "1.3",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2019-01",
+      "value": "331299027442.99",
+      "locator": {
+        "record_date": "2020-09-30",
+        "sequence_number_cd": "1.4",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2019-02",
+      "value": "401242744819.00",
+      "locator": {
+        "record_date": "2020-09-30",
+        "sequence_number_cd": "1.5",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2019-03",
+      "value": "375755996142.82",
+      "locator": {
+        "record_date": "2020-09-30",
+        "sequence_number_cd": "1.6",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2019-04",
+      "value": "375240374839.65",
+      "locator": {
+        "record_date": "2020-09-30",
+        "sequence_number_cd": "1.7",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2019-05",
+      "value": "439832890370.60",
+      "locator": {
+        "record_date": "2020-09-30",
+        "sequence_number_cd": "1.8",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2019-06",
+      "value": "342429729399.77",
+      "locator": {
+        "record_date": "2020-09-30",
+        "sequence_number_cd": "1.9",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2019-07",
+      "value": "371043256020.76",
+      "locator": {
+        "record_date": "2020-09-30",
+        "sequence_number_cd": "1.10",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2019-08",
+      "value": "428309326519.49",
+      "locator": {
+        "record_date": "2020-09-30",
+        "sequence_number_cd": "1.11",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2019-09",
+      "value": "291287875543.23",
+      "locator": {
+        "record_date": "2020-09-30",
+        "sequence_number_cd": "1.12",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2019-10",
+      "value": "379988361130.71",
+      "locator": {
+        "record_date": "2021-09-30",
+        "sequence_number_cd": "1.1",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2019-11",
+      "value": "434023709954.02",
+      "locator": {
+        "record_date": "2021-09-30",
+        "sequence_number_cd": "1.2",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2019-12",
+      "value": "349091277973.68",
+      "locator": {
+        "record_date": "2021-09-30",
+        "sequence_number_cd": "1.3",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2020-01",
+      "value": "404882870789.11",
+      "locator": {
+        "record_date": "2021-09-30",
+        "sequence_number_cd": "1.4",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2020-02",
+      "value": "423228905223.49",
+      "locator": {
+        "record_date": "2021-09-30",
+        "sequence_number_cd": "1.5",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2020-03",
+      "value": "355754063237.51",
+      "locator": {
+        "record_date": "2021-09-30",
+        "sequence_number_cd": "1.6",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2020-04",
+      "value": "979885188729.59",
+      "locator": {
+        "record_date": "2021-09-30",
+        "sequence_number_cd": "1.7",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2020-05",
+      "value": "572614424728.25",
+      "locator": {
+        "record_date": "2021-09-30",
+        "sequence_number_cd": "1.8",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2020-06",
+      "value": "1104902736844.42",
+      "locator": {
+        "record_date": "2021-09-30",
+        "sequence_number_cd": "1.9",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2020-07",
+      "value": "626487389535.23",
+      "locator": {
+        "record_date": "2021-09-30",
+        "sequence_number_cd": "1.10",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2020-08",
+      "value": "423233421276.19",
+      "locator": {
+        "record_date": "2021-09-30",
+        "sequence_number_cd": "1.11",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2020-09",
+      "value": "497781886285.44",
+      "locator": {
+        "record_date": "2021-09-30",
+        "sequence_number_cd": "1.12",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2020-10",
+      "value": "521767957544.15",
+      "locator": {
+        "record_date": "2022-09-30",
+        "sequence_number_cd": "1.1",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2020-11",
+      "value": "364818859117.95",
+      "locator": {
+        "record_date": "2022-09-30",
+        "sequence_number_cd": "1.2",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2020-12",
+      "value": "489681512833.69",
+      "locator": {
+        "record_date": "2022-09-30",
+        "sequence_number_cd": "1.3",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2021-01",
+      "value": "547483083428.91",
+      "locator": {
+        "record_date": "2022-09-30",
+        "sequence_number_cd": "1.4",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2021-02",
+      "value": "559235998224.85",
+      "locator": {
+        "record_date": "2022-09-30",
+        "sequence_number_cd": "1.5",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2021-03",
+      "value": "927217052172.46",
+      "locator": {
+        "record_date": "2022-09-30",
+        "sequence_number_cd": "1.6",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2021-04",
+      "value": "664765663442.54",
+      "locator": {
+        "record_date": "2022-09-30",
+        "sequence_number_cd": "1.7",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2021-05",
+      "value": "595698107673.62",
+      "locator": {
+        "record_date": "2022-09-30",
+        "sequence_number_cd": "1.8",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2021-06",
+      "value": "623359216746.89",
+      "locator": {
+        "record_date": "2022-09-30",
+        "sequence_number_cd": "1.9",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2021-07",
+      "value": "564050187963.11",
+      "locator": {
+        "record_date": "2022-09-30",
+        "sequence_number_cd": "1.10",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2021-08",
+      "value": "439012666705.83",
+      "locator": {
+        "record_date": "2022-09-30",
+        "sequence_number_cd": "1.11",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2021-09",
+      "value": "524463434183.43",
+      "locator": {
+        "record_date": "2022-09-30",
+        "sequence_number_cd": "1.12",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2021-10",
+      "value": "448982666150.65",
+      "locator": {
+        "record_date": "2023-09-30",
+        "sequence_number_cd": "1.1",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2021-11",
+      "value": "472543014095.56",
+      "locator": {
+        "record_date": "2023-09-30",
+        "sequence_number_cd": "1.2",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2021-12",
+      "value": "508025997966.98",
+      "locator": {
+        "record_date": "2023-09-30",
+        "sequence_number_cd": "1.3",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2022-01",
+      "value": "346374868966.76",
+      "locator": {
+        "record_date": "2023-09-30",
+        "sequence_number_cd": "1.4",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2022-02",
+      "value": "506447018605.53",
+      "locator": {
+        "record_date": "2023-09-30",
+        "sequence_number_cd": "1.5",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2022-03",
+      "value": "507799156854.21",
+      "locator": {
+        "record_date": "2023-09-30",
+        "sequence_number_cd": "1.6",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2022-04",
+      "value": "555428621255.97",
+      "locator": {
+        "record_date": "2023-09-30",
+        "sequence_number_cd": "1.7",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2022-05",
+      "value": "455210973269.82",
+      "locator": {
+        "record_date": "2023-09-30",
+        "sequence_number_cd": "1.8",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2022-06",
+      "value": "549598223836.55",
+      "locator": {
+        "record_date": "2023-09-30",
+        "sequence_number_cd": "1.9",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2022-07",
+      "value": "480382717086.76",
+      "locator": {
+        "record_date": "2023-09-30",
+        "sequence_number_cd": "1.10",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2022-08",
+      "value": "523317744208.34",
+      "locator": {
+        "record_date": "2023-09-30",
+        "sequence_number_cd": "1.11",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2022-09",
+      "value": "917489202681.77",
+      "locator": {
+        "record_date": "2023-09-30",
+        "sequence_number_cd": "1.12",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2022-10",
+      "value": "406374243972.26",
+      "locator": {
+        "record_date": "2024-09-30",
+        "sequence_number_cd": "1.1",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2022-11",
+      "value": "500645689634.98",
+      "locator": {
+        "record_date": "2024-09-30",
+        "sequence_number_cd": "1.2",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2022-12",
+      "value": "539943108237.40",
+      "locator": {
+        "record_date": "2024-09-30",
+        "sequence_number_cd": "1.3",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2023-01",
+      "value": "486072090101.51",
+      "locator": {
+        "record_date": "2024-09-30",
+        "sequence_number_cd": "1.4",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2023-02",
+      "value": "524547752690.11",
+      "locator": {
+        "record_date": "2024-09-30",
+        "sequence_number_cd": "1.5",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2023-03",
+      "value": "691675379586.27",
+      "locator": {
+        "record_date": "2024-09-30",
+        "sequence_number_cd": "1.6",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2023-04",
+      "value": "462339570809.39",
+      "locator": {
+        "record_date": "2024-09-30",
+        "sequence_number_cd": "1.7",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2023-05",
+      "value": "547835120008.78",
+      "locator": {
+        "record_date": "2024-09-30",
+        "sequence_number_cd": "1.8",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2023-06",
+      "value": "646085314907.01",
+      "locator": {
+        "record_date": "2024-09-30",
+        "sequence_number_cd": "1.9",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2023-07",
+      "value": "496942951497.45",
+      "locator": {
+        "record_date": "2024-09-30",
+        "sequence_number_cd": "1.10",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2023-08",
+      "value": "193874633463.53",
+      "locator": {
+        "record_date": "2024-09-30",
+        "sequence_number_cd": "1.11",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2023-09",
+      "value": "638189864949.25",
+      "locator": {
+        "record_date": "2024-09-30",
+        "sequence_number_cd": "1.12",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2023-10",
+      "value": "469997092049.53",
+      "locator": {
+        "record_date": "2025-09-30",
+        "sequence_number_cd": "1.1",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2023-11",
+      "value": "588842038068.24",
+      "locator": {
+        "record_date": "2025-09-30",
+        "sequence_number_cd": "1.2",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2023-12",
+      "value": "558664769130.32",
+      "locator": {
+        "record_date": "2025-09-30",
+        "sequence_number_cd": "1.3",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2024-01",
+      "value": "499250008026.88",
+      "locator": {
+        "record_date": "2025-09-30",
+        "sequence_number_cd": "1.4",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2024-02",
+      "value": "567400720600.28",
+      "locator": {
+        "record_date": "2025-09-30",
+        "sequence_number_cd": "1.5",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2024-03",
+      "value": "568634767671.20",
+      "locator": {
+        "record_date": "2025-09-30",
+        "sequence_number_cd": "1.6",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2024-04",
+      "value": "566668786551.61",
+      "locator": {
+        "record_date": "2025-09-30",
+        "sequence_number_cd": "1.7",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2024-05",
+      "value": "670777880670.05",
+      "locator": {
+        "record_date": "2025-09-30",
+        "sequence_number_cd": "1.8",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2024-06",
+      "value": "537220210883.50",
+      "locator": {
+        "record_date": "2025-09-30",
+        "sequence_number_cd": "1.9",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2024-07",
+      "value": "574118515597.52",
+      "locator": {
+        "record_date": "2025-09-30",
+        "sequence_number_cd": "1.10",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2024-08",
+      "value": "686620142453.82",
+      "locator": {
+        "record_date": "2025-09-30",
+        "sequence_number_cd": "1.11",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2024-09",
+      "value": "446700793440.11",
+      "locator": {
+        "record_date": "2025-09-30",
+        "sequence_number_cd": "1.12",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2024-10",
+      "value": "584220273025.31",
+      "locator": {
+        "record_date": "2026-09-30",
+        "sequence_number_cd": "1.1",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2024-11",
+      "value": "668517135060.47",
+      "locator": {
+        "record_date": "2026-09-30",
+        "sequence_number_cd": "1.2",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2024-12",
+      "value": "541146327504.76",
+      "locator": {
+        "record_date": "2026-09-30",
+        "sequence_number_cd": "1.3",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2025-01",
+      "value": "641934549325.42",
+      "locator": {
+        "record_date": "2026-09-30",
+        "sequence_number_cd": "1.4",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2025-02",
+      "value": "603440881114.84",
+      "locator": {
+        "record_date": "2026-09-30",
+        "sequence_number_cd": "1.5",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2025-03",
+      "value": "528173752442.68",
+      "locator": {
+        "record_date": "2026-09-30",
+        "sequence_number_cd": "1.6",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2025-04",
+      "value": "591769368657.85",
+      "locator": {
+        "record_date": "2026-09-30",
+        "sequence_number_cd": "1.7",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2025-05",
+      "value": "686880598492.67",
+      "locator": {
+        "record_date": "2026-09-30",
+        "sequence_number_cd": "1.8",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2025-06",
+      "value": "499435701746.96",
+      "locator": {
+        "record_date": "2026-09-30",
+        "sequence_number_cd": "1.9",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2025-07",
+      "value": "629634508710.84",
+      "locator": {
+        "record_date": "2026-09-30",
+        "sequence_number_cd": "1.10",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2025-08",
+      "value": "689107213868.44",
+      "locator": {
+        "record_date": "2026-09-30",
+        "sequence_number_cd": "1.11",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2025-09",
+      "value": "345725351899.02",
+      "locator": {
+        "record_date": "2026-09-30",
+        "sequence_number_cd": "1.12",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2025-10",
+      "value": "688704092972.07",
+      "locator": {
+        "record_date": "2026-09-30",
+        "sequence_number_cd": "2.1",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2025-11",
+      "value": "509278895279.90",
+      "locator": {
+        "record_date": "2026-09-30",
+        "sequence_number_cd": "2.2",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2025-12",
+      "value": "629136126305.68",
+      "locator": {
+        "record_date": "2026-09-30",
+        "sequence_number_cd": "2.3",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2026-01",
+      "value": "654667062952.38",
+      "locator": {
+        "record_date": "2026-09-30",
+        "sequence_number_cd": "2.4",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2026-02",
+      "value": "620623118673.01",
+      "locator": {
+        "record_date": "2026-09-30",
+        "sequence_number_cd": "2.5",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2026-03",
+      "value": "548962915853.65",
+      "locator": {
+        "record_date": "2026-09-30",
+        "sequence_number_cd": "2.6",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2026-04",
+      "value": "622318555795.74",
+      "locator": {
+        "record_date": "2026-09-30",
+        "sequence_number_cd": "2.7",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2026-05",
+      "value": "628160440569.41",
+      "locator": {
+        "record_date": "2026-09-30",
+        "sequence_number_cd": "2.8",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2026-06",
+      "value": "616066757155.07",
+      "locator": {
+        "record_date": "2026-09-30",
+        "sequence_number_cd": "2.9",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2026-07",
+      "value": "766295603520.39",
+      "locator": {
+        "record_date": "2026-09-30",
+        "sequence_number_cd": "2.10",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2026-08",
+      "value": "526811547895.67",
+      "locator": {
+        "record_date": "2026-09-30",
+        "sequence_number_cd": "2.11",
+        "field": "current_month_gross_outly_amt"
+      }
+    },
+    {
+      "date": "2026-09",
+      "value": "584774866340.26",
+      "locator": {
+        "record_date": "2026-09-30",
+        "sequence_number_cd": "2.12",
+        "field": "current_month_gross_outly_amt"
+      }
+    }
+  ]
+}
