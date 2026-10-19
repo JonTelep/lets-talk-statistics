@@ -237,6 +237,28 @@
         "omb_debt_public_pct_gdp"
       ],
       "notes": "OMB Historical Table 7.1. Percent of GDP."
+    },
+    {
+      "id": "lawful-permanent-residents",
+      "title": "Persons obtaining lawful permanent resident status",
+      "page": "immigration",
+      "frequency": "fiscal_year",
+      "shade": "fiscal",
+      "series": [
+        "dhs_lpr_table1"
+      ],
+      "notes": "DHS Yearbook of Immigration Statistics, Table 1. Fiscal years. OHSS rounds cells to the nearest 10. The 1976 row covers 15 months. Shading uses October 1, the same fiscal year rule as the other charts on this site."
+    },
+    {
+      "id": "cbp-nationwide-encounters",
+      "title": "CBP nationwide encounters",
+      "page": "immigration",
+      "frequency": "monthly",
+      "shade": "month",
+      "series": [
+        "cbp_nationwide_encounters_monthly"
+      ],
+      "notes": "Sum of the Encounter Count column in each CBP nationwide encounters workbook. October of a fiscal year is October of the previous calendar year. Repeated rows in a file stay in the sum."
     }
   ]
 }

@@ -1,4 +1,4 @@
-import { seriesFor, sourceFor, type ChartSpec } from '@/lib/site';
+import { seriesFor, sourcesFor, type ChartSpec } from '@/lib/site';
 
 export default function ChartDatasets({ charts }: { charts: ChartSpec[] }) {
   const graph = charts.map((chart) => {
@@ -7,8 +7,7 @@ export default function ChartDatasets({ charts }: { charts: ChartSpec[] }) {
     const creators = Array.from(
       new Map(
         series
-          .map((item) => sourceFor(item))
-          .filter((source): source is NonNullable<typeof source> => Boolean(source))
+          .flatMap((item) => sourcesFor(item))
           .map((source) => [source.publisher, source])
       ).values()
     );

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-19T01:03:46Z",
+  "generated_at": "2026-10-19T04:18:52Z",
   "sources": [
     {
       "id": "bls_cu_series",
@@ -297,6 +297,84 @@
       "format": "xlsx",
       "page_url": "https://www.census.gov/construction/nrs/data/series.html",
       "note": "Note: The sales price includes the land."
+    },
+    {
+      "id": "dhs_lpr_yearbook",
+      "publisher": "Office of Homeland Security Statistics",
+      "title": "Lawful Permanent Residents 2024 Data Tables (xlsx)",
+      "url": "https://ohss.dhs.gov/system/files/2026-06/2026_0604_ohss_yearbook_lawful_permanent_residents_fy2024.xlsx",
+      "retrieved_at": "2026-10-19T04:18:52Z",
+      "sha256": "19c500a6e6445e73c0a39c5bc382585e2a13fc8f52f6e4d9a3cf6a84bf9bab6a",
+      "bytes": 258559,
+      "path": "data/raw/dhs/2026_0604_ohss_yearbook_lawful_permanent_residents_fy2024.xlsx",
+      "format": "xlsx",
+      "page_url": "https://ohss.dhs.gov/topics/immigration/yearbook/2024",
+      "series_url": "https://ohss.dhs.gov/topics/immigration/yearbook/2024/table1"
+    },
+    {
+      "id": "cbp_nationwide_encounters_fy26_aug_3",
+      "publisher": "U.S. Customs and Border Protection",
+      "title": "Nationwide Encounters - FY26TD August",
+      "url": "https://www.cbp.gov/sites/default/files/2026-09/nationwide-encounters-fy26-aug_3.xlsx",
+      "retrieved_at": "2026-10-19T04:18:52Z",
+      "sha256": "9c219a4d2b40146359105a326b0c375e66463f455f82fe6765cc8146d01862d7",
+      "bytes": 2859303,
+      "path": "data/raw/cbp/nationwide-encounters-fy26-aug_3.xlsx",
+      "format": "xlsx",
+      "page_url": "https://www.cbp.gov/document/stats/cbp-data-download-portal-library",
+      "series_url": "https://www.cbp.gov/document/stats/cbp-data-download-portal-library"
+    },
+    {
+      "id": "cbp_nationwide_encounters_fy25_1",
+      "publisher": "U.S. Customs and Border Protection",
+      "title": "Nationwide Encounters - FY25",
+      "url": "https://www.cbp.gov/sites/default/files/2026-09/nationwide-encounters-fy25_1.xlsx",
+      "retrieved_at": "2026-10-19T04:18:52Z",
+      "sha256": "5e613abec1442059a64f8c80a7e5de424de89a6e52b688aeb6ab5352d9856a36",
+      "bytes": 3176495,
+      "path": "data/raw/cbp/nationwide-encounters-fy25_1.xlsx",
+      "format": "xlsx",
+      "page_url": "https://www.cbp.gov/document/stats/cbp-data-download-portal-library",
+      "series_url": "https://www.cbp.gov/document/stats/cbp-data-download-portal-library"
+    },
+    {
+      "id": "cbp_nationwide_encounters_fy23_fy24_1",
+      "publisher": "U.S. Customs and Border Protection",
+      "title": "Nationwide Encounters - FY23-FY24",
+      "url": "https://www.cbp.gov/sites/default/files/2026-09/nationwide-encounters-fy23-fy24_1.xlsx",
+      "retrieved_at": "2026-10-19T04:18:52Z",
+      "sha256": "731709bc06d838db41a7663161df7e89f7b4babb486dc497f230d0698610fb47",
+      "bytes": 8004088,
+      "path": "data/raw/cbp/nationwide-encounters-fy23-fy24_1.xlsx",
+      "format": "xlsx",
+      "page_url": "https://www.cbp.gov/document/stats/cbp-data-download-portal-library",
+      "series_url": "https://www.cbp.gov/document/stats/cbp-data-download-portal-library"
+    },
+    {
+      "id": "cbp_nationwide_encounters_fy16_fy22",
+      "publisher": "U.S. Customs and Border Protection",
+      "title": "Nationwide Encounters - FY16-FY22",
+      "url": "https://www.cbp.gov/sites/default/files/2026-09/nationwide-encounters-fy16-fy22.xlsx",
+      "retrieved_at": "2026-10-19T04:18:52Z",
+      "sha256": "5bcb93b2fb4c3ea394e4b963976241277ae81a50bb7c9f9f56f0bc90c363cee0",
+      "bytes": 13382446,
+      "path": "data/raw/cbp/nationwide-encounters-fy16-fy22.xlsx",
+      "format": "xlsx",
+      "page_url": "https://www.cbp.gov/document/stats/cbp-data-download-portal-library",
+      "series_url": "https://www.cbp.gov/document/stats/cbp-data-download-portal-library"
+    },
+    {
+      "id": "cbp_nationwide_encounters_fy05_fy15",
+      "publisher": "U.S. Customs and Border Protection",
+      "title": "Nationwide Encounters - FY05-FY15",
+      "url": "https://www.cbp.gov/sites/default/files/2026-09/nationwide-encounters-fy05-fy15.xlsx",
+      "retrieved_at": "2026-10-19T04:18:52Z",
+      "sha256": "1c1c0c66cb2284ab264f5539431f2d99d0530fc6abfc70c7139f3ad829b7863e",
+      "bytes": 40557,
+      "path": "data/raw/cbp/nationwide-encounters-fy05-fy15.xlsx",
+      "format": "xlsx",
+      "page_url": "https://www.cbp.gov/document/stats/cbp-data-download-portal-library",
+      "series_url": "https://www.cbp.gov/document/stats/cbp-data-download-portal-library"
     }
   ]
 }

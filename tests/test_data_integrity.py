@@ -63,7 +63,9 @@ def test_every_chart_series_traces_to_a_source_record():
                     assert _treasury_value(treasury[source["id"]], point) == point["value"], (series_id, point)
             elif fmt == "xlsx":
                 for point in series["points"]:
-                    assert _xlsx_value(workbooks, source, series, point) == point["value"], (series_id, point)
+                    point_source = manifest[point["locator"].get("source_id") or series["source_id"]]
+                    assert point_source["format"] == "xlsx", (series_id, point)
+                    assert _xlsx_value(workbooks, point_source, series, point) == point["value"], (series_id, point)
             else:
                 raise AssertionError(f"unknown source format {fmt}")
 
@@ -202,11 +204,15 @@ XLSX_COLUMNS = {
 
 def _xlsx_value(cache: dict, source: dict, series: dict, point: dict) -> str:
     path = str(ROOT / source["path"])
+    locator = point["locator"]
+    if series["id"] == "dhs_lpr_table1":
+        return _lpr_table_value(cache, path, locator["row_label"])
+    if locator.get("aggregate") == "sum_column":
+        return _sum_column_value(cache, path, locator)
     if path not in cache:
         workbook = openpyxl.load_workbook(path, data_only=True, read_only=True)
         cache[path] = workbook
     workbook = cache[path]
-    locator = point["locator"]
     if "line_code" in locator:
         sheet = workbook[locator["sheet"]]
         rows = list(sheet.iter_rows(values_only=True))
@@ -241,3 +247,48 @@ def _xlsx_value(cache: dict, source: dict, series: dict, point: dict) -> str:
         if row and str(row[0]).strip() == point["date"]:
             return number_text(row[column])
     raise AssertionError(point)
+
+
+def _lpr_table_value(cache: dict, path: str, row_label: str) -> str:
+    key = (path, "lpr_table1")
+    if key not in cache:
+        workbook = openpyxl.load_workbook(path, data_only=True, read_only=True)
+        index: dict[str, str] = {}
+        for row in workbook["Table 1"].iter_rows(values_only=True):
+            for offset in range(0, len(row) - 1, 2):
+                year, number = row[offset], row[offset + 1]
+                if isinstance(year, int) and not isinstance(year, bool):
+                    label = str(year)
+                elif isinstance(year, str):
+                    label = " ".join(year.split())
+                else:
+                    continue
+                if isinstance(number, bool) or not isinstance(number, int):
+                    continue
+                assert label not in index, label
+                index[label] = str(number)
+        workbook.close()
+        cache[key] = index
+    assert row_label in cache[key], row_label
+    return cache[key][row_label]
+
+
+def _sum_column_value(cache: dict, path: str, locator: dict) -> str:
+    key = (path, "sum_column", locator["sheet"], locator["field"])
+    if key not in cache:
+        workbook = openpyxl.load_workbook(path, data_only=True, read_only=True)
+        iterator = workbook[locator["sheet"]].iter_rows(values_only=True)
+        header = [" ".join(str(cell).split()) if cell is not None else "" for cell in next(iterator)]
+        year_index = header.index("Fiscal Year")
+        month_index = header.index("Month (abbv)")
+        count_index = header.index(locator["field"])
+        totals: dict[tuple[str, str], int] = {}
+        for row in iterator:
+            month = row[month_index].strip().upper() if isinstance(row[month_index], str) else str(row[month_index])
+            group = (str(row[year_index]).strip(), month)
+            totals[group] = totals.get(group, 0) + int(row[count_index])
+        workbook.close()
+        cache[key] = totals
+    group = (locator["fiscal_year"], locator["month"])
+    assert group in cache[key], group
+    return str(cache[key][group])

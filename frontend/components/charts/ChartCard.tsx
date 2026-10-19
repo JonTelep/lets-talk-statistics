@@ -5,19 +5,17 @@ import Link from 'next/link';
 import TimeChart from '@/components/charts/TimeChart';
 import { useShade } from '@/components/providers/ShadeProvider';
 import { adjustmentLabel, formatRetrieved, lineLabel } from '@/lib/format';
-import type { ChartSpec, Series, SourceRecord, Term } from '@/lib/site';
+import { sourcesFor, type ChartSpec, type Series, type Term } from '@/lib/site';
 
 export default function ChartCard({
   chart,
   series,
-  sources,
   terms,
   presidentNote,
   permalink = false,
 }: {
   chart: ChartSpec;
   series: Series[];
-  sources: SourceRecord[];
   terms: Term[];
   presidentNote: string;
   permalink?: boolean;
@@ -25,7 +23,6 @@ export default function ChartCard({
   const { enabled, toggle } = useShade();
   const [copied, setCopied] = useState(false);
   const link = `https://letstalkstatistics.com/c/${chart.id}`;
-  const sourceById = new Map(sources.map((source) => [source.id, source]));
 
   const copyLink = async () => {
     try {
@@ -70,7 +67,7 @@ export default function ChartCard({
 
       <dl className="mt-4 space-y-3 text-sm">
         {series.map((item) => {
-          const source = sourceById.get(item.source_id);
+          const itemSources = sourcesFor(item);
           return (
             <div key={item.id} className="border-t border-border pt-3">
               <dt className="text-foreground">{lineLabel(item.name, item.units, series)}</dt>
@@ -79,14 +76,20 @@ export default function ChartCard({
                 {item.published_units ? ` Published units: ${item.published_units}.` : ''}
               </dd>
               {item.notes && <dd className="mt-1 text-fg-muted">{item.notes}</dd>}
-              {source && (
-                <dd className="mt-1 text-fg-muted">
-                  Source: {source.publisher}, {source.title}. Retrieved {formatRetrieved(source.retrieved_at)}. Series:{' '}
-                  <a href={item.series_url} className="text-accent hover:underline" target="_blank" rel="noopener noreferrer">
-                    {item.series_url.replace(/^https?:\/\//, '')}
-                  </a>
+              {itemSources.map((source, index) => (
+                <dd key={source.id} className="mt-1 text-fg-muted">
+                  Source: {source.publisher}, {source.title}. Retrieved {formatRetrieved(source.retrieved_at)}.
+                  {index === 0 && (
+                    <>
+                      {' '}
+                      Series:{' '}
+                      <a href={item.series_url} className="text-accent hover:underline" target="_blank" rel="noopener noreferrer">
+                        {item.series_url.replace(/^https?:\/\//, '')}
+                      </a>
+                    </>
+                  )}
                 </dd>
-              )}
+              ))}
             </div>
           );
         })}

@@ -16,6 +16,8 @@ export default function Footer() {
               <li><a href="https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">Office of Management and Budget</a></li>
               <li><a href="https://www.bea.gov" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">Bureau of Economic Analysis</a></li>
               <li><a href="https://www.census.gov" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">U.S. Census Bureau</a></li>
+              <li><a href="https://ohss.dhs.gov" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">Office of Homeland Security Statistics</a></li>
+              <li><a href="https://www.cbp.gov" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">U.S. Customs and Border Protection</a></li>
             </ul>
           </div>
 

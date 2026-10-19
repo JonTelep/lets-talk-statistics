@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { formatRetrieved } from '@/lib/format';
-import { seriesFor, site, sourceFor } from '@/lib/site';
+import { seriesFor, site, sourcesFor } from '@/lib/site';
 
 const title = 'Sources and methodology';
 const description = 'Publishers, retrieval dates, file hashes, and the datasets this build did not chart.';
@@ -52,10 +52,11 @@ export default function SourcesPage() {
           </thead>
           <tbody>
             {site.charts.map((chart) =>
-              seriesFor(chart).map((series) => {
-                const source = sourceFor(series);
-                return (
-                  <tr key={`${chart.id}-${series.id}`} className="border-t border-border align-top">
+              seriesFor(chart).flatMap((series) => {
+                const sources = sourcesFor(series);
+                const rows = sources.length > 0 ? sources : [undefined];
+                return rows.map((source) => (
+                  <tr key={`${chart.id}-${series.id}-${source?.id ?? 'none'}`} className="border-t border-border align-top">
                     <td className="py-3 pr-4">
                       <a className="text-accent hover:underline" href={`/c/${chart.id}`}>
                         {chart.title}
@@ -69,7 +70,7 @@ export default function SourcesPage() {
                     <td className="py-3 pr-4">{source?.publisher}</td>
                     <td className="py-3">{source ? formatRetrieved(source.retrieved_at) : ''}</td>
                   </tr>
-                );
+                ));
               })
             )}
           </tbody>

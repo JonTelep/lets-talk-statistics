@@ -3,12 +3,13 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import ChartCard from '@/components/charts/ChartCard';
 import ChartDatasets from '@/components/seo/ChartDatasets';
-import { seriesFor, site, sourceFor } from '@/lib/site';
+import { seriesFor, site } from '@/lib/site';
 
 const PAGE_NAME: Record<string, string> = {
   prices: 'Prices and inflation',
   budget: 'Federal budget and debt',
   economy: 'Economy and wages',
+  immigration: 'Immigration',
 };
 
 export function generateStaticParams() {
@@ -45,14 +46,6 @@ export default async function ChartPage({ params }: { params: Promise<{ id: stri
   const chart = site.charts.find((item) => item.id === id);
   if (!chart) notFound();
   const series = seriesFor(chart);
-  const sources = Array.from(
-    new Map(
-      series
-        .map((item) => sourceFor(item))
-        .filter((source): source is NonNullable<typeof source> => Boolean(source))
-        .map((source) => [source.id, source])
-    ).values()
-  );
   const parent = PAGE_NAME[chart.page] ? `/${chart.page}` : '/';
 
   return (
@@ -66,7 +59,6 @@ export default async function ChartPage({ params }: { params: Promise<{ id: stri
       <ChartCard
         chart={chart}
         series={series}
-        sources={sources}
         terms={site.presidents.terms}
         presidentNote={site.presidents.note}
         permalink

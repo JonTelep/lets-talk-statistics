@@ -11,6 +11,7 @@ from .census import fetch as fetch_census
 from .common import DATA, NORMALIZED, SITE_JSON, utc_now, write_json
 from .derive import rebase_to_common_year, real_home_price, twelve_month_change
 from .omb import fetch as fetch_omb
+from .immigration import fetch as fetch_immigration
 from .optional import collect_todos
 from .presidents import payload as presidents_payload
 from .treasury import fetch as fetch_treasury
@@ -49,6 +50,10 @@ def main() -> None:
         if todo:
             todos.append(todo)
 
+    im_sources, im_series, im_todos = fetch_immigration()
+    all_sources.extend(im_sources)
+    all_series.extend(im_series)
+
     by_id = {item["id"]: item for item in all_series}
     if "bls_cuur0000sa0_monthly" in by_id:
         derived = twelve_month_change(by_id["bls_cuur0000sa0_monthly"])
@@ -70,6 +75,7 @@ def main() -> None:
     charts, skipped = build_charts(by_id)
     todos.extend(skipped)
     todos.extend(collect_todos(bea_ok="bea_gdp_nominal" in by_id))
+    todos.extend(im_todos)
 
     generated_at = utc_now()
     manifest = {"generated_at": generated_at, "sources": all_sources}

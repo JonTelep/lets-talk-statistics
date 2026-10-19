@@ -13,7 +13,7 @@ Live site: [letstalkstatistics.com](https://letstalkstatistics.com)
 | Federal budget and debt | Treasury debt, monthly receipts and outlays, interest, and OMB historical tables |
 | Economy and wages | Hourly earnings, unemployment, household income, and GDP |
 | Crime | No chart until an FBI file is fetched |
-| Immigration | No chart until a DHS or CBP workbook is parsed |
+| Immigration | Lawful permanent residents (DHS Yearbook Table 1) and CBP nationwide encounters |
 | Sources and methodology | Publisher, URL, retrieval date, and SHA-256 for each file |
 
 A chart is omitted when its file cannot be fetched. The reason is stored in `data/todos.json` and shown on the page. Missing values are not filled in.
