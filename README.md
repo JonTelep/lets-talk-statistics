@@ -12,6 +12,7 @@ Live site: [letstalkstatistics.com](https://letstalkstatistics.com)
 | Prices and inflation | CPI-U, component indexes, and new-house prices |
 | Federal budget and debt | Treasury debt, monthly receipts and outlays, interest, and OMB historical tables |
 | Economy and wages | Hourly earnings, unemployment, household income, and GDP |
+| Energy | U.S. electricity generation shares by source, and generation by country |
 | Crime | No chart until an FBI file is fetched |
 | Immigration | Lawful permanent residents (DHS Yearbook Table 1) and CBP nationwide encounters |
 | Sources and methodology | Publisher, URL, retrieval date, and SHA-256 for each file |

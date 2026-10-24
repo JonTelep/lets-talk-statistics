@@ -1,0 +1,543 @@
+{
+  "id": "wb_pop_GAB",
+  "name": "Gabon",
+  "units": "people",
+  "adjustment": "midyear",
+  "nominal_or_real": "count",
+  "frequency": "annual",
+  "source_id": "worldbank_sp_pop_totl",
+  "series_url": "https://data.worldbank.org/indicator/SP.POP.TOTL",
+  "country_code": "GAB",
+  "country_name": "Gabon",
+  "notes": "World Bank World Development Indicators, SP.POP.TOTL, country code GAB. Midyear population. Published years in this file run from 1960 to 2025.",
+  "points": [
+    {
+      "date": "1960",
+      "value": "512316",
+      "locator": {
+        "year": "1960",
+        "country_code": "GAB"
+      }
+    },
+    {
+      "date": "1961",
+      "value": "518266",
+      "locator": {
+        "year": "1961",
+        "country_code": "GAB"
+      }
+    },
+    {
+      "date": "1962",
+      "value": "524649",
+      "locator": {
+        "year": "1962",
+        "country_code": "GAB"
+      }
+    },
+    {
+      "date": "1963",
+      "value": "531452",
+      "locator": {
+        "year": "1963",
+        "country_code": "GAB"
+      }
+    },
+    {
+      "date": "1964",
+      "value": "538657",
+      "locator": {
+        "year": "1964",
+        "country_code": "GAB"
+      }
+    },
+    {
+      "date": "1965",
+      "value": "546308",
+      "locator": {
+        "year": "1965",
+        "country_code": "GAB"
+      }
+    },
+    {
+      "date": "1966",
+      "value": "554463",
+      "locator": {
+        "year": "1966",
+        "country_code": "GAB"
+      }
+    },
+    {
+      "date": "1967",
+      "value": "563108",
+      "locator": {
+        "year": "1967",
+        "country_code": "GAB"
+      }
+    },
+    {
+      "date": "1968",
+      "value": "572257",
+      "locator": {
+        "year": "1968",
+        "country_code": "GAB"
+      }
+    },
+    {
+      "date": "1969",
+      "value": "583276",
+      "locator": {
+        "year": "1969",
+        "country_code": "GAB"
+      }
+    },
+    {
+      "date": "1970",
+      "value": "595846",
+      "locator": {
+        "year": "1970",
+        "country_code": "GAB"
+      }
+    },
+    {
+      "date": "1971",
+      "value": "608348",
+      "locator": {
+        "year": "1971",
+        "country_code": "GAB"
+      }
+    },
+    {
+      "date": "1972",
+      "value": "620960",
+      "locator": {
+        "year": "1972",
+        "country_code": "GAB"
+      }
+    },
+    {
+      "date": "1973",
+      "value": "633995",
+      "locator": {
+        "year": "1973",
+        "country_code": "GAB"
+      }
+    },
+    {
+      "date": "1974",
+      "value": "647691",
+      "locator": {
+        "year": "1974",
+        "country_code": "GAB"
+      }
+    },
+    {
+      "date": "1975",
+      "value": "662197",
+      "locator": {
+        "year": "1975",
+        "country_code": "GAB"
+      }
+    },
+    {
+      "date": "1976",
+      "value": "677628",
+      "locator": {
+        "year": "1976",
+        "country_code": "GAB"
+      }
+    },
+    {
+      "date": "1977",
+      "value": "693984",
+      "locator": {
+        "year": "1977",
+        "country_code": "GAB"
+      }
+    },
+    {
+      "date": "1978",
+      "value": "711245",
+      "locator": {
+        "year": "1978",
+        "country_code": "GAB"
+      }
+    },
+    {
+      "date": "1979",
+      "value": "729375",
+      "locator": {
+        "year": "1979",
+        "country_code": "GAB"
+      }
+    },
+    {
+      "date": "1980",
+      "value": "748389",
+      "locator": {
+        "year": "1980",
+        "country_code": "GAB"
+      }
+    },
+    {
+      "date": "1981",
+      "value": "768385",
+      "locator": {
+        "year": "1981",
+        "country_code": "GAB"
+      }
+    },
+    {
+      "date": "1982",
+      "value": "789286",
+      "locator": {
+        "year": "1982",
+        "country_code": "GAB"
+      }
+    },
+    {
+      "date": "1983",
+      "value": "811005",
+      "locator": {
+        "year": "1983",
+        "country_code": "GAB"
+      }
+    },
+    {
+      "date": "1984",
+      "value": "833501",
+      "locator": {
+        "year": "1984",
+        "country_code": "GAB"
+      }
+    },
+    {
+      "date": "1985",
+      "value": "856726",
+      "locator": {
+        "year": "1985",
+        "country_code": "GAB"
+      }
+    },
+    {
+      "date": "1986",
+      "value": "880705",
+      "locator": {
+        "year": "1986",
+        "country_code": "GAB"
+      }
+    },
+    {
+      "date": "1987",
+      "value": "905479",
+      "locator": {
+        "year": "1987",
+        "country_code": "GAB"
+      }
+    },
+    {
+      "date": "1988",
+      "value": "931020",
+      "locator": {
+        "year": "1988",
+        "country_code": "GAB"
+      }
+    },
+    {
+      "date": "1989",
+      "value": "957138",
+      "locator": {
+        "year": "1989",
+        "country_code": "GAB"
+      }
+    },
+    {
+      "date": "1990",
+      "value": "983734",
+      "locator": {
+        "year": "1990",
+        "country_code": "GAB"
+      }
+    },
+    {
+      "date": "1991",
+      "value": "1010818",
+      "locator": {
+        "year": "1991",
+        "country_code": "GAB"
+      }
+    },
+    {
+      "date": "1992",
+      "value": "1038380",
+      "locator": {
+        "year": "1992",
+        "country_code": "GAB"
+      }
+    },
+    {
+      "date": "1993",
+      "value": "1066405",
+      "locator": {
+        "year": "1993",
+        "country_code": "GAB"
+      }
+    },
+    {
+      "date": "1994",
+      "value": "1094720",
+      "locator": {
+        "year": "1994",
+        "country_code": "GAB"
+      }
+    },
+    {
+      "date": "1995",
+      "value": "1123213",
+      "locator": {
+        "year": "1995",
+        "country_code": "GAB"
+      }
+    },
+    {
+      "date": "1996",
+      "value": "1152015",
+      "locator": {
+        "year": "1996",
+        "country_code": "GAB"
+      }
+    },
+    {
+      "date": "1997",
+      "value": "1181439",
+      "locator": {
+        "year": "1997",
+        "country_code": "GAB"
+      }
+    },
+    {
+      "date": "1998",
+      "value": "1211736",
+      "locator": {
+        "year": "1998",
+        "country_code": "GAB"
+      }
+    },
+    {
+      "date": "1999",
+      "value": "1243016",
+      "locator": {
+        "year": "1999",
+        "country_code": "GAB"
+      }
+    },
+    {
+      "date": "2000",
+      "value": "1275572",
+      "locator": {
+        "year": "2000",
+        "country_code": "GAB"
+      }
+    },
+    {
+      "date": "2001",
+      "value": "1309589",
+      "locator": {
+        "year": "2001",
+        "country_code": "GAB"
+      }
+    },
+    {
+      "date": "2002",
+      "value": "1345135",
+      "locator": {
+        "year": "2002",
+        "country_code": "GAB"
+      }
+    },
+    {
+      "date": "2003",
+      "value": "1382350",
+      "locator": {
+        "year": "2003",
+        "country_code": "GAB"
+      }
+    },
+    {
+      "date": "2004",
+      "value": "1421609",
+      "locator": {
+        "year": "2004",
+        "country_code": "GAB"
+      }
+    },
+    {
+      "date": "2005",
+      "value": "1463495",
+      "locator": {
+        "year": "2005",
+        "country_code": "GAB"
+      }
+    },
+    {
+      "date": "2006",
+      "value": "1508337",
+      "locator": {
+        "year": "2006",
+        "country_code": "GAB"
+      }
+    },
+    {
+      "date": "2007",
+      "value": "1556237",
+      "locator": {
+        "year": "2007",
+        "country_code": "GAB"
+      }
+    },
+    {
+      "date": "2008",
+      "value": "1607175",
+      "locator": {
+        "year": "2008",
+        "country_code": "GAB"
+      }
+    },
+    {
+      "date": "2009",
+      "value": "1661556",
+      "locator": {
+        "year": "2009",
+        "country_code": "GAB"
+      }
+    },
+    {
+      "date": "2010",
+      "value": "1719879",
+      "locator": {
+        "year": "2010",
+        "country_code": "GAB"
+      }
+    },
+    {
+      "date": "2011",
+      "value": "1781985",
+      "locator": {
+        "year": "2011",
+        "country_code": "GAB"
+      }
+    },
+    {
+      "date": "2012",
+      "value": "1846889",
+      "locator": {
+        "year": "2012",
+        "country_code": "GAB"
+      }
+    },
+    {
+      "date": "2013",
+      "value": "1913059",
+      "locator": {
+        "year": "2013",
+        "country_code": "GAB"
+      }
+    },
+    {
+      "date": "2014",
+      "value": "1978399",
+      "locator": {
+        "year": "2014",
+        "country_code": "GAB"
+      }
+    },
+    {
+      "date": "2015",
+      "value": "2040989",
+      "locator": {
+        "year": "2015",
+        "country_code": "GAB"
+      }
+    },
+    {
+      "date": "2016",
+      "value": "2100306",
+      "locator": {
+        "year": "2016",
+        "country_code": "GAB"
+      }
+    },
+    {
+      "date": "2017",
+      "value": "2156900",
+      "locator": {
+        "year": "2017",
+        "country_code": "GAB"
+      }
+    },
+    {
+      "date": "2018",
+      "value": "2212318",
+      "locator": {
+        "year": "2018",
+        "country_code": "GAB"
+      }
+    },
+    {
+      "date": "2019",
+      "value": "2267706",
+      "locator": {
+        "year": "2019",
+        "country_code": "GAB"
+      }
+    },
+    {
+      "date": "2020",
+      "value": "2322539",
+      "locator": {
+        "year": "2020",
+        "country_code": "GAB"
+      }
+    },
+    {
+      "date": "2021",
+      "value": "2376722",
+      "locator": {
+        "year": "2021",
+        "country_code": "GAB"
+      }
+    },
+    {
+      "date": "2022",
+      "value": "2430747",
+      "locator": {
+        "year": "2022",
+        "country_code": "GAB"
+      }
+    },
+    {
+      "date": "2023",
+      "value": "2484789",
+      "locator": {
+        "year": "2023",
+        "country_code": "GAB"
+      }
+    },
+    {
+      "date": "2024",
+      "value": "2538952",
+      "locator": {
+        "year": "2024",
+        "country_code": "GAB"
+      }
+    },
+    {
+      "date": "2025",
+      "value": "2593130",
+      "locator": {
+        "year": "2025",
+        "country_code": "GAB"
+      }
+    }
+  ]
+}

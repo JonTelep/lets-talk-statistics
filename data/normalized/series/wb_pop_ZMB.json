@@ -1,0 +1,543 @@
+{
+  "id": "wb_pop_ZMB",
+  "name": "Zambia",
+  "units": "people",
+  "adjustment": "midyear",
+  "nominal_or_real": "count",
+  "frequency": "annual",
+  "source_id": "worldbank_sp_pop_totl",
+  "series_url": "https://data.worldbank.org/indicator/SP.POP.TOTL",
+  "country_code": "ZMB",
+  "country_name": "Zambia",
+  "notes": "World Bank World Development Indicators, SP.POP.TOTL, country code ZMB. Midyear population. Published years in this file run from 1960 to 2025.",
+  "points": [
+    {
+      "date": "1960",
+      "value": "3153729",
+      "locator": {
+        "year": "1960",
+        "country_code": "ZMB"
+      }
+    },
+    {
+      "date": "1961",
+      "value": "3254086",
+      "locator": {
+        "year": "1961",
+        "country_code": "ZMB"
+      }
+    },
+    {
+      "date": "1962",
+      "value": "3358099",
+      "locator": {
+        "year": "1962",
+        "country_code": "ZMB"
+      }
+    },
+    {
+      "date": "1963",
+      "value": "3465907",
+      "locator": {
+        "year": "1963",
+        "country_code": "ZMB"
+      }
+    },
+    {
+      "date": "1964",
+      "value": "3577017",
+      "locator": {
+        "year": "1964",
+        "country_code": "ZMB"
+      }
+    },
+    {
+      "date": "1965",
+      "value": "3692086",
+      "locator": {
+        "year": "1965",
+        "country_code": "ZMB"
+      }
+    },
+    {
+      "date": "1966",
+      "value": "3812003",
+      "locator": {
+        "year": "1966",
+        "country_code": "ZMB"
+      }
+    },
+    {
+      "date": "1967",
+      "value": "3936343",
+      "locator": {
+        "year": "1967",
+        "country_code": "ZMB"
+      }
+    },
+    {
+      "date": "1968",
+      "value": "4065593",
+      "locator": {
+        "year": "1968",
+        "country_code": "ZMB"
+      }
+    },
+    {
+      "date": "1969",
+      "value": "4197116",
+      "locator": {
+        "year": "1969",
+        "country_code": "ZMB"
+      }
+    },
+    {
+      "date": "1970",
+      "value": "4321718",
+      "locator": {
+        "year": "1970",
+        "country_code": "ZMB"
+      }
+    },
+    {
+      "date": "1971",
+      "value": "4442525",
+      "locator": {
+        "year": "1971",
+        "country_code": "ZMB"
+      }
+    },
+    {
+      "date": "1972",
+      "value": "4569309",
+      "locator": {
+        "year": "1972",
+        "country_code": "ZMB"
+      }
+    },
+    {
+      "date": "1973",
+      "value": "4702693",
+      "locator": {
+        "year": "1973",
+        "country_code": "ZMB"
+      }
+    },
+    {
+      "date": "1974",
+      "value": "4842746",
+      "locator": {
+        "year": "1974",
+        "country_code": "ZMB"
+      }
+    },
+    {
+      "date": "1975",
+      "value": "4990086",
+      "locator": {
+        "year": "1975",
+        "country_code": "ZMB"
+      }
+    },
+    {
+      "date": "1976",
+      "value": "5143842",
+      "locator": {
+        "year": "1976",
+        "country_code": "ZMB"
+      }
+    },
+    {
+      "date": "1977",
+      "value": "5302480",
+      "locator": {
+        "year": "1977",
+        "country_code": "ZMB"
+      }
+    },
+    {
+      "date": "1978",
+      "value": "5465374",
+      "locator": {
+        "year": "1978",
+        "country_code": "ZMB"
+      }
+    },
+    {
+      "date": "1979",
+      "value": "5631728",
+      "locator": {
+        "year": "1979",
+        "country_code": "ZMB"
+      }
+    },
+    {
+      "date": "1980",
+      "value": "5802833",
+      "locator": {
+        "year": "1980",
+        "country_code": "ZMB"
+      }
+    },
+    {
+      "date": "1981",
+      "value": "5983289",
+      "locator": {
+        "year": "1981",
+        "country_code": "ZMB"
+      }
+    },
+    {
+      "date": "1982",
+      "value": "6178637",
+      "locator": {
+        "year": "1982",
+        "country_code": "ZMB"
+      }
+    },
+    {
+      "date": "1983",
+      "value": "6381038",
+      "locator": {
+        "year": "1983",
+        "country_code": "ZMB"
+      }
+    },
+    {
+      "date": "1984",
+      "value": "6580490",
+      "locator": {
+        "year": "1984",
+        "country_code": "ZMB"
+      }
+    },
+    {
+      "date": "1985",
+      "value": "6780953",
+      "locator": {
+        "year": "1985",
+        "country_code": "ZMB"
+      }
+    },
+    {
+      "date": "1986",
+      "value": "6986471",
+      "locator": {
+        "year": "1986",
+        "country_code": "ZMB"
+      }
+    },
+    {
+      "date": "1987",
+      "value": "7191282",
+      "locator": {
+        "year": "1987",
+        "country_code": "ZMB"
+      }
+    },
+    {
+      "date": "1988",
+      "value": "7391440",
+      "locator": {
+        "year": "1988",
+        "country_code": "ZMB"
+      }
+    },
+    {
+      "date": "1989",
+      "value": "7589216",
+      "locator": {
+        "year": "1989",
+        "country_code": "ZMB"
+      }
+    },
+    {
+      "date": "1990",
+      "value": "7786169",
+      "locator": {
+        "year": "1990",
+        "country_code": "ZMB"
+      }
+    },
+    {
+      "date": "1991",
+      "value": "7981650",
+      "locator": {
+        "year": "1991",
+        "country_code": "ZMB"
+      }
+    },
+    {
+      "date": "1992",
+      "value": "8176680",
+      "locator": {
+        "year": "1992",
+        "country_code": "ZMB"
+      }
+    },
+    {
+      "date": "1993",
+      "value": "8373921",
+      "locator": {
+        "year": "1993",
+        "country_code": "ZMB"
+      }
+    },
+    {
+      "date": "1994",
+      "value": "8576269",
+      "locator": {
+        "year": "1994",
+        "country_code": "ZMB"
+      }
+    },
+    {
+      "date": "1995",
+      "value": "8785763",
+      "locator": {
+        "year": "1995",
+        "country_code": "ZMB"
+      }
+    },
+    {
+      "date": "1996",
+      "value": "9004053",
+      "locator": {
+        "year": "1996",
+        "country_code": "ZMB"
+      }
+    },
+    {
+      "date": "1997",
+      "value": "9237063",
+      "locator": {
+        "year": "1997",
+        "country_code": "ZMB"
+      }
+    },
+    {
+      "date": "1998",
+      "value": "9482408",
+      "locator": {
+        "year": "1998",
+        "country_code": "ZMB"
+      }
+    },
+    {
+      "date": "1999",
+      "value": "9740005",
+      "locator": {
+        "year": "1999",
+        "country_code": "ZMB"
+      }
+    },
+    {
+      "date": "2000",
+      "value": "10017631",
+      "locator": {
+        "year": "2000",
+        "country_code": "ZMB"
+      }
+    },
+    {
+      "date": "2001",
+      "value": "10325185",
+      "locator": {
+        "year": "2001",
+        "country_code": "ZMB"
+      }
+    },
+    {
+      "date": "2002",
+      "value": "10647949",
+      "locator": {
+        "year": "2002",
+        "country_code": "ZMB"
+      }
+    },
+    {
+      "date": "2003",
+      "value": "10983595",
+      "locator": {
+        "year": "2003",
+        "country_code": "ZMB"
+      }
+    },
+    {
+      "date": "2004",
+      "value": "11338198",
+      "locator": {
+        "year": "2004",
+        "country_code": "ZMB"
+      }
+    },
+    {
+      "date": "2005",
+      "value": "11718819",
+      "locator": {
+        "year": "2005",
+        "country_code": "ZMB"
+      }
+    },
+    {
+      "date": "2006",
+      "value": "12129553",
+      "locator": {
+        "year": "2006",
+        "country_code": "ZMB"
+      }
+    },
+    {
+      "date": "2007",
+      "value": "12565085",
+      "locator": {
+        "year": "2007",
+        "country_code": "ZMB"
+      }
+    },
+    {
+      "date": "2008",
+      "value": "13021324",
+      "locator": {
+        "year": "2008",
+        "country_code": "ZMB"
+      }
+    },
+    {
+      "date": "2009",
+      "value": "13490389",
+      "locator": {
+        "year": "2009",
+        "country_code": "ZMB"
+      }
+    },
+    {
+      "date": "2010",
+      "value": "13965594",
+      "locator": {
+        "year": "2010",
+        "country_code": "ZMB"
+      }
+    },
+    {
+      "date": "2011",
+      "value": "14437796",
+      "locator": {
+        "year": "2011",
+        "country_code": "ZMB"
+      }
+    },
+    {
+      "date": "2012",
+      "value": "14913629",
+      "locator": {
+        "year": "2012",
+        "country_code": "ZMB"
+      }
+    },
+    {
+      "date": "2013",
+      "value": "15398997",
+      "locator": {
+        "year": "2013",
+        "country_code": "ZMB"
+      }
+    },
+    {
+      "date": "2014",
+      "value": "15895315",
+      "locator": {
+        "year": "2014",
+        "country_code": "ZMB"
+      }
+    },
+    {
+      "date": "2015",
+      "value": "16399089",
+      "locator": {
+        "year": "2015",
+        "country_code": "ZMB"
+      }
+    },
+    {
+      "date": "2016",
+      "value": "16914423",
+      "locator": {
+        "year": "2016",
+        "country_code": "ZMB"
+      }
+    },
+    {
+      "date": "2017",
+      "value": "17441320",
+      "locator": {
+        "year": "2017",
+        "country_code": "ZMB"
+      }
+    },
+    {
+      "date": "2018",
+      "value": "17973569",
+      "locator": {
+        "year": "2018",
+        "country_code": "ZMB"
+      }
+    },
+    {
+      "date": "2019",
+      "value": "18513839",
+      "locator": {
+        "year": "2019",
+        "country_code": "ZMB"
+      }
+    },
+    {
+      "date": "2020",
+      "value": "19059395",
+      "locator": {
+        "year": "2020",
+        "country_code": "ZMB"
+      }
+    },
+    {
+      "date": "2021",
+      "value": "19603607",
+      "locator": {
+        "year": "2021",
+        "country_code": "ZMB"
+      }
+    },
+    {
+      "date": "2022",
+      "value": "20152938",
+      "locator": {
+        "year": "2022",
+        "country_code": "ZMB"
+      }
+    },
+    {
+      "date": "2023",
+      "value": "20723965",
+      "locator": {
+        "year": "2023",
+        "country_code": "ZMB"
+      }
+    },
+    {
+      "date": "2024",
+      "value": "21314956",
+      "locator": {
+        "year": "2024",
+        "country_code": "ZMB"
+      }
+    },
+    {
+      "date": "2025",
+      "value": "21913874",
+      "locator": {
+        "year": "2025",
+        "country_code": "ZMB"
+      }
+    }
+  ]
+}

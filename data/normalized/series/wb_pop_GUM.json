@@ -1,0 +1,543 @@
+{
+  "id": "wb_pop_GUM",
+  "name": "Guam",
+  "units": "people",
+  "adjustment": "midyear",
+  "nominal_or_real": "count",
+  "frequency": "annual",
+  "source_id": "worldbank_sp_pop_totl",
+  "series_url": "https://data.worldbank.org/indicator/SP.POP.TOTL",
+  "country_code": "GUM",
+  "country_name": "Guam",
+  "notes": "World Bank World Development Indicators, SP.POP.TOTL, country code GUM. Midyear population. Published years in this file run from 1960 to 2025.",
+  "points": [
+    {
+      "date": "1960",
+      "value": "69525",
+      "locator": {
+        "year": "1960",
+        "country_code": "GUM"
+      }
+    },
+    {
+      "date": "1961",
+      "value": "71311",
+      "locator": {
+        "year": "1961",
+        "country_code": "GUM"
+      }
+    },
+    {
+      "date": "1962",
+      "value": "73192",
+      "locator": {
+        "year": "1962",
+        "country_code": "GUM"
+      }
+    },
+    {
+      "date": "1963",
+      "value": "75095",
+      "locator": {
+        "year": "1963",
+        "country_code": "GUM"
+      }
+    },
+    {
+      "date": "1964",
+      "value": "77008",
+      "locator": {
+        "year": "1964",
+        "country_code": "GUM"
+      }
+    },
+    {
+      "date": "1965",
+      "value": "78932",
+      "locator": {
+        "year": "1965",
+        "country_code": "GUM"
+      }
+    },
+    {
+      "date": "1966",
+      "value": "80844",
+      "locator": {
+        "year": "1966",
+        "country_code": "GUM"
+      }
+    },
+    {
+      "date": "1967",
+      "value": "82719",
+      "locator": {
+        "year": "1967",
+        "country_code": "GUM"
+      }
+    },
+    {
+      "date": "1968",
+      "value": "84563",
+      "locator": {
+        "year": "1968",
+        "country_code": "GUM"
+      }
+    },
+    {
+      "date": "1969",
+      "value": "86404",
+      "locator": {
+        "year": "1969",
+        "country_code": "GUM"
+      }
+    },
+    {
+      "date": "1970",
+      "value": "88365",
+      "locator": {
+        "year": "1970",
+        "country_code": "GUM"
+      }
+    },
+    {
+      "date": "1971",
+      "value": "90466",
+      "locator": {
+        "year": "1971",
+        "country_code": "GUM"
+      }
+    },
+    {
+      "date": "1972",
+      "value": "92619",
+      "locator": {
+        "year": "1972",
+        "country_code": "GUM"
+      }
+    },
+    {
+      "date": "1973",
+      "value": "94781",
+      "locator": {
+        "year": "1973",
+        "country_code": "GUM"
+      }
+    },
+    {
+      "date": "1974",
+      "value": "96939",
+      "locator": {
+        "year": "1974",
+        "country_code": "GUM"
+      }
+    },
+    {
+      "date": "1975",
+      "value": "99057",
+      "locator": {
+        "year": "1975",
+        "country_code": "GUM"
+      }
+    },
+    {
+      "date": "1976",
+      "value": "101166",
+      "locator": {
+        "year": "1976",
+        "country_code": "GUM"
+      }
+    },
+    {
+      "date": "1977",
+      "value": "103298",
+      "locator": {
+        "year": "1977",
+        "country_code": "GUM"
+      }
+    },
+    {
+      "date": "1978",
+      "value": "105424",
+      "locator": {
+        "year": "1978",
+        "country_code": "GUM"
+      }
+    },
+    {
+      "date": "1979",
+      "value": "107636",
+      "locator": {
+        "year": "1979",
+        "country_code": "GUM"
+      }
+    },
+    {
+      "date": "1980",
+      "value": "110141",
+      "locator": {
+        "year": "1980",
+        "country_code": "GUM"
+      }
+    },
+    {
+      "date": "1981",
+      "value": "112902",
+      "locator": {
+        "year": "1981",
+        "country_code": "GUM"
+      }
+    },
+    {
+      "date": "1982",
+      "value": "115711",
+      "locator": {
+        "year": "1982",
+        "country_code": "GUM"
+      }
+    },
+    {
+      "date": "1983",
+      "value": "118508",
+      "locator": {
+        "year": "1983",
+        "country_code": "GUM"
+      }
+    },
+    {
+      "date": "1984",
+      "value": "121302",
+      "locator": {
+        "year": "1984",
+        "country_code": "GUM"
+      }
+    },
+    {
+      "date": "1985",
+      "value": "124117",
+      "locator": {
+        "year": "1985",
+        "country_code": "GUM"
+      }
+    },
+    {
+      "date": "1986",
+      "value": "126965",
+      "locator": {
+        "year": "1986",
+        "country_code": "GUM"
+      }
+    },
+    {
+      "date": "1987",
+      "value": "129858",
+      "locator": {
+        "year": "1987",
+        "country_code": "GUM"
+      }
+    },
+    {
+      "date": "1988",
+      "value": "132799",
+      "locator": {
+        "year": "1988",
+        "country_code": "GUM"
+      }
+    },
+    {
+      "date": "1989",
+      "value": "135799",
+      "locator": {
+        "year": "1989",
+        "country_code": "GUM"
+      }
+    },
+    {
+      "date": "1990",
+      "value": "138610",
+      "locator": {
+        "year": "1990",
+        "country_code": "GUM"
+      }
+    },
+    {
+      "date": "1991",
+      "value": "141073",
+      "locator": {
+        "year": "1991",
+        "country_code": "GUM"
+      }
+    },
+    {
+      "date": "1992",
+      "value": "143393",
+      "locator": {
+        "year": "1992",
+        "country_code": "GUM"
+      }
+    },
+    {
+      "date": "1993",
+      "value": "145654",
+      "locator": {
+        "year": "1993",
+        "country_code": "GUM"
+      }
+    },
+    {
+      "date": "1994",
+      "value": "147868",
+      "locator": {
+        "year": "1994",
+        "country_code": "GUM"
+      }
+    },
+    {
+      "date": "1995",
+      "value": "150054",
+      "locator": {
+        "year": "1995",
+        "country_code": "GUM"
+      }
+    },
+    {
+      "date": "1996",
+      "value": "152169",
+      "locator": {
+        "year": "1996",
+        "country_code": "GUM"
+      }
+    },
+    {
+      "date": "1997",
+      "value": "154215",
+      "locator": {
+        "year": "1997",
+        "country_code": "GUM"
+      }
+    },
+    {
+      "date": "1998",
+      "value": "156237",
+      "locator": {
+        "year": "1998",
+        "country_code": "GUM"
+      }
+    },
+    {
+      "date": "1999",
+      "value": "158289",
+      "locator": {
+        "year": "1999",
+        "country_code": "GUM"
+      }
+    },
+    {
+      "date": "2000",
+      "value": "160065",
+      "locator": {
+        "year": "2000",
+        "country_code": "GUM"
+      }
+    },
+    {
+      "date": "2001",
+      "value": "161329",
+      "locator": {
+        "year": "2001",
+        "country_code": "GUM"
+      }
+    },
+    {
+      "date": "2002",
+      "value": "162315",
+      "locator": {
+        "year": "2002",
+        "country_code": "GUM"
+      }
+    },
+    {
+      "date": "2003",
+      "value": "163137",
+      "locator": {
+        "year": "2003",
+        "country_code": "GUM"
+      }
+    },
+    {
+      "date": "2004",
+      "value": "163810",
+      "locator": {
+        "year": "2004",
+        "country_code": "GUM"
+      }
+    },
+    {
+      "date": "2005",
+      "value": "164365",
+      "locator": {
+        "year": "2005",
+        "country_code": "GUM"
+      }
+    },
+    {
+      "date": "2006",
+      "value": "164839",
+      "locator": {
+        "year": "2006",
+        "country_code": "GUM"
+      }
+    },
+    {
+      "date": "2007",
+      "value": "165267",
+      "locator": {
+        "year": "2007",
+        "country_code": "GUM"
+      }
+    },
+    {
+      "date": "2008",
+      "value": "165693",
+      "locator": {
+        "year": "2008",
+        "country_code": "GUM"
+      }
+    },
+    {
+      "date": "2009",
+      "value": "166173",
+      "locator": {
+        "year": "2009",
+        "country_code": "GUM"
+      }
+    },
+    {
+      "date": "2010",
+      "value": "166522",
+      "locator": {
+        "year": "2010",
+        "country_code": "GUM"
+      }
+    },
+    {
+      "date": "2011",
+      "value": "166543",
+      "locator": {
+        "year": "2011",
+        "country_code": "GUM"
+      }
+    },
+    {
+      "date": "2012",
+      "value": "166331",
+      "locator": {
+        "year": "2012",
+        "country_code": "GUM"
+      }
+    },
+    {
+      "date": "2013",
+      "value": "165966",
+      "locator": {
+        "year": "2013",
+        "country_code": "GUM"
+      }
+    },
+    {
+      "date": "2014",
+      "value": "165486",
+      "locator": {
+        "year": "2014",
+        "country_code": "GUM"
+      }
+    },
+    {
+      "date": "2015",
+      "value": "164905",
+      "locator": {
+        "year": "2015",
+        "country_code": "GUM"
+      }
+    },
+    {
+      "date": "2016",
+      "value": "164233",
+      "locator": {
+        "year": "2016",
+        "country_code": "GUM"
+      }
+    },
+    {
+      "date": "2017",
+      "value": "163490",
+      "locator": {
+        "year": "2017",
+        "country_code": "GUM"
+      }
+    },
+    {
+      "date": "2018",
+      "value": "162679",
+      "locator": {
+        "year": "2018",
+        "country_code": "GUM"
+      }
+    },
+    {
+      "date": "2019",
+      "value": "161808",
+      "locator": {
+        "year": "2019",
+        "country_code": "GUM"
+      }
+    },
+    {
+      "date": "2020",
+      "value": "162158",
+      "locator": {
+        "year": "2020",
+        "country_code": "GUM"
+      }
+    },
+    {
+      "date": "2021",
+      "value": "163730",
+      "locator": {
+        "year": "2021",
+        "country_code": "GUM"
+      }
+    },
+    {
+      "date": "2022",
+      "value": "165180",
+      "locator": {
+        "year": "2022",
+        "country_code": "GUM"
+      }
+    },
+    {
+      "date": "2023",
+      "value": "166506",
+      "locator": {
+        "year": "2023",
+        "country_code": "GUM"
+      }
+    },
+    {
+      "date": "2024",
+      "value": "167777",
+      "locator": {
+        "year": "2024",
+        "country_code": "GUM"
+      }
+    },
+    {
+      "date": "2025",
+      "value": "168999",
+      "locator": {
+        "year": "2025",
+        "country_code": "GUM"
+      }
+    }
+  ]
+}

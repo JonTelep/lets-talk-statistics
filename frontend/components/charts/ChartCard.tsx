@@ -2,27 +2,32 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import StackedShareChart from '@/components/charts/StackedShareChart';
 import TimeChart from '@/components/charts/TimeChart';
 import { useShade } from '@/components/providers/ShadeProvider';
 import { adjustmentLabel, formatRetrieved, lineLabel } from '@/lib/format';
-import { sourcesFor, type ChartSpec, type Series, type Term } from '@/lib/site';
+import { sourcesForSeries } from '@/lib/sources';
+import type { ChartSpec, Series, SourceRecord, Term } from '@/lib/site';
 
 export default function ChartCard({
   chart,
   series,
   terms,
   presidentNote,
+  sources,
   permalink = false,
 }: {
   chart: ChartSpec;
   series: Series[];
   terms: Term[];
   presidentNote: string;
+  sources: SourceRecord[];
   permalink?: boolean;
 }) {
   const { enabled, toggle } = useShade();
   const [copied, setCopied] = useState(false);
   const link = `https://letstalkstatistics.com/c/${chart.id}`;
+  const showShade = chart.shade !== 'none';
 
   const copyLink = async () => {
     try {
@@ -41,12 +46,14 @@ export default function ChartCard({
           <h2>{chart.title}</h2>
           <p className="mt-2 text-sm">{chart.notes}</p>
         </div>
-        <button type="button" onClick={toggle} className="btn-secondary shrink-0 text-xs" aria-pressed={enabled}>
-          {enabled ? 'Hide president shading' : 'Show president shading'}
-        </button>
+        {showShade && (
+          <button type="button" onClick={toggle} className="btn-secondary shrink-0 text-xs" aria-pressed={enabled}>
+            {enabled ? 'Hide president shading' : 'Show president shading'}
+          </button>
+        )}
       </div>
 
-      {enabled && (
+      {showShade && enabled && (
         <div className="mt-4 flex flex-wrap gap-4 text-xs text-fg-muted">
           <span className="inline-flex items-center gap-2">
             <span className="inline-block h-3 w-3 rounded-sm" style={{ background: 'rgba(37, 99, 235, 0.85)' }} />
@@ -60,14 +67,24 @@ export default function ChartCard({
       )}
 
       <div className="mt-4">
-        <TimeChart series={series} shade={chart.shade} frequency={chart.frequency} terms={terms} />
+        {chart.type === 'stacked' ? (
+          <StackedShareChart series={series} shade={chart.shade} frequency={chart.frequency} terms={terms} />
+        ) : (
+          <TimeChart
+            series={series}
+            shade={chart.shade}
+            frequency={chart.frequency}
+            terms={terms}
+            markers={chart.markers}
+          />
+        )}
       </div>
 
-      <p className="mt-4 text-xs text-fg-muted">{presidentNote}</p>
+      {showShade && <p className="mt-4 text-xs text-fg-muted">{presidentNote}</p>}
 
       <dl className="mt-4 space-y-3 text-sm">
         {series.map((item) => {
-          const itemSources = sourcesFor(item);
+          const itemSources = sourcesForSeries(item, sources);
           return (
             <div key={item.id} className="border-t border-border pt-3">
               <dt className="text-foreground">{lineLabel(item.name, item.units, series)}</dt>
@@ -76,18 +93,19 @@ export default function ChartCard({
                 {item.published_units ? ` Published units: ${item.published_units}.` : ''}
               </dd>
               {item.notes && <dd className="mt-1 text-fg-muted">{item.notes}</dd>}
-              {itemSources.map((source, index) => (
+              {itemSources.map((source) => (
                 <dd key={source.id} className="mt-1 text-fg-muted">
                   Source: {source.publisher}, {source.title}. Retrieved {formatRetrieved(source.retrieved_at)}.
-                  {index === 0 && (
-                    <>
-                      {' '}
-                      Series:{' '}
-                      <a href={item.series_url} className="text-accent hover:underline" target="_blank" rel="noopener noreferrer">
-                        {item.series_url.replace(/^https?:\/\//, '')}
-                      </a>
-                    </>
-                  )}
+                  {' '}
+                  Series:{' '}
+                  <a
+                    href={source.series_url || item.series_url}
+                    className="text-accent hover:underline"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {(source.series_url || item.series_url).replace(/^https?:\/\//, '')}
+                  </a>
                 </dd>
               ))}
             </div>

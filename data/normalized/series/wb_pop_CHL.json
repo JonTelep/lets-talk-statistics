@@ -1,0 +1,543 @@
+{
+  "id": "wb_pop_CHL",
+  "name": "Chile",
+  "units": "people",
+  "adjustment": "midyear",
+  "nominal_or_real": "count",
+  "frequency": "annual",
+  "source_id": "worldbank_sp_pop_totl",
+  "series_url": "https://data.worldbank.org/indicator/SP.POP.TOTL",
+  "country_code": "CHL",
+  "country_name": "Chile",
+  "notes": "World Bank World Development Indicators, SP.POP.TOTL, country code CHL. Midyear population. Published years in this file run from 1960 to 2025.",
+  "points": [
+    {
+      "date": "1960",
+      "value": "8153350",
+      "locator": {
+        "year": "1960",
+        "country_code": "CHL"
+      }
+    },
+    {
+      "date": "1961",
+      "value": "8324802",
+      "locator": {
+        "year": "1961",
+        "country_code": "CHL"
+      }
+    },
+    {
+      "date": "1962",
+      "value": "8497059",
+      "locator": {
+        "year": "1962",
+        "country_code": "CHL"
+      }
+    },
+    {
+      "date": "1963",
+      "value": "8670144",
+      "locator": {
+        "year": "1963",
+        "country_code": "CHL"
+      }
+    },
+    {
+      "date": "1964",
+      "value": "8842525",
+      "locator": {
+        "year": "1964",
+        "country_code": "CHL"
+      }
+    },
+    {
+      "date": "1965",
+      "value": "9012938",
+      "locator": {
+        "year": "1965",
+        "country_code": "CHL"
+      }
+    },
+    {
+      "date": "1966",
+      "value": "9181722",
+      "locator": {
+        "year": "1966",
+        "country_code": "CHL"
+      }
+    },
+    {
+      "date": "1967",
+      "value": "9348939",
+      "locator": {
+        "year": "1967",
+        "country_code": "CHL"
+      }
+    },
+    {
+      "date": "1968",
+      "value": "9514716",
+      "locator": {
+        "year": "1968",
+        "country_code": "CHL"
+      }
+    },
+    {
+      "date": "1969",
+      "value": "9680282",
+      "locator": {
+        "year": "1969",
+        "country_code": "CHL"
+      }
+    },
+    {
+      "date": "1970",
+      "value": "9845344",
+      "locator": {
+        "year": "1970",
+        "country_code": "CHL"
+      }
+    },
+    {
+      "date": "1971",
+      "value": "10009701",
+      "locator": {
+        "year": "1971",
+        "country_code": "CHL"
+      }
+    },
+    {
+      "date": "1972",
+      "value": "10174678",
+      "locator": {
+        "year": "1972",
+        "country_code": "CHL"
+      }
+    },
+    {
+      "date": "1973",
+      "value": "10340362",
+      "locator": {
+        "year": "1973",
+        "country_code": "CHL"
+      }
+    },
+    {
+      "date": "1974",
+      "value": "10505817",
+      "locator": {
+        "year": "1974",
+        "country_code": "CHL"
+      }
+    },
+    {
+      "date": "1975",
+      "value": "10671559",
+      "locator": {
+        "year": "1975",
+        "country_code": "CHL"
+      }
+    },
+    {
+      "date": "1976",
+      "value": "10838251",
+      "locator": {
+        "year": "1976",
+        "country_code": "CHL"
+      }
+    },
+    {
+      "date": "1977",
+      "value": "11005519",
+      "locator": {
+        "year": "1977",
+        "country_code": "CHL"
+      }
+    },
+    {
+      "date": "1978",
+      "value": "11172695",
+      "locator": {
+        "year": "1978",
+        "country_code": "CHL"
+      }
+    },
+    {
+      "date": "1979",
+      "value": "11339779",
+      "locator": {
+        "year": "1979",
+        "country_code": "CHL"
+      }
+    },
+    {
+      "date": "1980",
+      "value": "11508550",
+      "locator": {
+        "year": "1980",
+        "country_code": "CHL"
+      }
+    },
+    {
+      "date": "1981",
+      "value": "11678717",
+      "locator": {
+        "year": "1981",
+        "country_code": "CHL"
+      }
+    },
+    {
+      "date": "1982",
+      "value": "11850214",
+      "locator": {
+        "year": "1982",
+        "country_code": "CHL"
+      }
+    },
+    {
+      "date": "1983",
+      "value": "12026138",
+      "locator": {
+        "year": "1983",
+        "country_code": "CHL"
+      }
+    },
+    {
+      "date": "1984",
+      "value": "12207733",
+      "locator": {
+        "year": "1984",
+        "country_code": "CHL"
+      }
+    },
+    {
+      "date": "1985",
+      "value": "12395274",
+      "locator": {
+        "year": "1985",
+        "country_code": "CHL"
+      }
+    },
+    {
+      "date": "1986",
+      "value": "12588914",
+      "locator": {
+        "year": "1986",
+        "country_code": "CHL"
+      }
+    },
+    {
+      "date": "1987",
+      "value": "12790150",
+      "locator": {
+        "year": "1987",
+        "country_code": "CHL"
+      }
+    },
+    {
+      "date": "1988",
+      "value": "12999424",
+      "locator": {
+        "year": "1988",
+        "country_code": "CHL"
+      }
+    },
+    {
+      "date": "1989",
+      "value": "13215005",
+      "locator": {
+        "year": "1989",
+        "country_code": "CHL"
+      }
+    },
+    {
+      "date": "1990",
+      "value": "13437176",
+      "locator": {
+        "year": "1990",
+        "country_code": "CHL"
+      }
+    },
+    {
+      "date": "1991",
+      "value": "13662491",
+      "locator": {
+        "year": "1991",
+        "country_code": "CHL"
+      }
+    },
+    {
+      "date": "1992",
+      "value": "13884577",
+      "locator": {
+        "year": "1992",
+        "country_code": "CHL"
+      }
+    },
+    {
+      "date": "1993",
+      "value": "14102276",
+      "locator": {
+        "year": "1993",
+        "country_code": "CHL"
+      }
+    },
+    {
+      "date": "1994",
+      "value": "14316256",
+      "locator": {
+        "year": "1994",
+        "country_code": "CHL"
+      }
+    },
+    {
+      "date": "1995",
+      "value": "14527381",
+      "locator": {
+        "year": "1995",
+        "country_code": "CHL"
+      }
+    },
+    {
+      "date": "1996",
+      "value": "14734046",
+      "locator": {
+        "year": "1996",
+        "country_code": "CHL"
+      }
+    },
+    {
+      "date": "1997",
+      "value": "14932434",
+      "locator": {
+        "year": "1997",
+        "country_code": "CHL"
+      }
+    },
+    {
+      "date": "1998",
+      "value": "15127799",
+      "locator": {
+        "year": "1998",
+        "country_code": "CHL"
+      }
+    },
+    {
+      "date": "1999",
+      "value": "15319313",
+      "locator": {
+        "year": "1999",
+        "country_code": "CHL"
+      }
+    },
+    {
+      "date": "2000",
+      "value": "15503635",
+      "locator": {
+        "year": "2000",
+        "country_code": "CHL"
+      }
+    },
+    {
+      "date": "2001",
+      "value": "15683849",
+      "locator": {
+        "year": "2001",
+        "country_code": "CHL"
+      }
+    },
+    {
+      "date": "2002",
+      "value": "15857925",
+      "locator": {
+        "year": "2002",
+        "country_code": "CHL"
+      }
+    },
+    {
+      "date": "2003",
+      "value": "16024752",
+      "locator": {
+        "year": "2003",
+        "country_code": "CHL"
+      }
+    },
+    {
+      "date": "2004",
+      "value": "16187322",
+      "locator": {
+        "year": "2004",
+        "country_code": "CHL"
+      }
+    },
+    {
+      "date": "2005",
+      "value": "16348778",
+      "locator": {
+        "year": "2005",
+        "country_code": "CHL"
+      }
+    },
+    {
+      "date": "2006",
+      "value": "16509195",
+      "locator": {
+        "year": "2006",
+        "country_code": "CHL"
+      }
+    },
+    {
+      "date": "2007",
+      "value": "16671581",
+      "locator": {
+        "year": "2007",
+        "country_code": "CHL"
+      }
+    },
+    {
+      "date": "2008",
+      "value": "16838988",
+      "locator": {
+        "year": "2008",
+        "country_code": "CHL"
+      }
+    },
+    {
+      "date": "2009",
+      "value": "17009731",
+      "locator": {
+        "year": "2009",
+        "country_code": "CHL"
+      }
+    },
+    {
+      "date": "2010",
+      "value": "17181464",
+      "locator": {
+        "year": "2010",
+        "country_code": "CHL"
+      }
+    },
+    {
+      "date": "2011",
+      "value": "17351816",
+      "locator": {
+        "year": "2011",
+        "country_code": "CHL"
+      }
+    },
+    {
+      "date": "2012",
+      "value": "17519119",
+      "locator": {
+        "year": "2012",
+        "country_code": "CHL"
+      }
+    },
+    {
+      "date": "2013",
+      "value": "17687006",
+      "locator": {
+        "year": "2013",
+        "country_code": "CHL"
+      }
+    },
+    {
+      "date": "2014",
+      "value": "17864195",
+      "locator": {
+        "year": "2014",
+        "country_code": "CHL"
+      }
+    },
+    {
+      "date": "2015",
+      "value": "18047625",
+      "locator": {
+        "year": "2015",
+        "country_code": "CHL"
+      }
+    },
+    {
+      "date": "2016",
+      "value": "18267221",
+      "locator": {
+        "year": "2016",
+        "country_code": "CHL"
+      }
+    },
+    {
+      "date": "2017",
+      "value": "18558868",
+      "locator": {
+        "year": "2017",
+        "country_code": "CHL"
+      }
+    },
+    {
+      "date": "2018",
+      "value": "18893191",
+      "locator": {
+        "year": "2018",
+        "country_code": "CHL"
+      }
+    },
+    {
+      "date": "2019",
+      "value": "19197744",
+      "locator": {
+        "year": "2019",
+        "country_code": "CHL"
+      }
+    },
+    {
+      "date": "2020",
+      "value": "19370624",
+      "locator": {
+        "year": "2020",
+        "country_code": "CHL"
+      }
+    },
+    {
+      "date": "2021",
+      "value": "19456334",
+      "locator": {
+        "year": "2021",
+        "country_code": "CHL"
+      }
+    },
+    {
+      "date": "2022",
+      "value": "19553036",
+      "locator": {
+        "year": "2022",
+        "country_code": "CHL"
+      }
+    },
+    {
+      "date": "2023",
+      "value": "19658835",
+      "locator": {
+        "year": "2023",
+        "country_code": "CHL"
+      }
+    },
+    {
+      "date": "2024",
+      "value": "19764771",
+      "locator": {
+        "year": "2024",
+        "country_code": "CHL"
+      }
+    },
+    {
+      "date": "2025",
+      "value": "19859921",
+      "locator": {
+        "year": "2025",
+        "country_code": "CHL"
+      }
+    }
+  ]
+}

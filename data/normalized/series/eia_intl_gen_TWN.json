@@ -1,0 +1,377 @@
+{
+  "id": "eia_intl_gen_TWN",
+  "name": "Net generation",
+  "units": "billion kilowatthours",
+  "adjustment": "annual",
+  "nominal_or_real": "generation",
+  "frequency": "annual",
+  "source_id": "eia_intl_bulk",
+  "series_url": "https://www.eia.gov/international/data/world/electricity/electricity-generation",
+  "eia_series_id": "INTL.2-12-TWN-BKWH.A",
+  "country_code": "TWN",
+  "country_name": "Taiwan",
+  "population_status": "no_world_bank_country",
+  "notes": "EIA bulk series INTL.2-12-TWN-BKWH.A, Taiwan. Annual. Billion kilowatthours. 1 billion kilowatthours = 1 terawatthour. Published years in this file run from 1980 to 2024.",
+  "points": [
+    {
+      "date": "1980",
+      "value": "42.013",
+      "locator": {
+        "year": "1980",
+        "series_id": "INTL.2-12-TWN-BKWH.A"
+      }
+    },
+    {
+      "date": "1981",
+      "value": "41.329",
+      "locator": {
+        "year": "1981",
+        "series_id": "INTL.2-12-TWN-BKWH.A"
+      }
+    },
+    {
+      "date": "1982",
+      "value": "43.431463967",
+      "locator": {
+        "year": "1982",
+        "series_id": "INTL.2-12-TWN-BKWH.A"
+      }
+    },
+    {
+      "date": "1983",
+      "value": "48.293030813",
+      "locator": {
+        "year": "1983",
+        "series_id": "INTL.2-12-TWN-BKWH.A"
+      }
+    },
+    {
+      "date": "1984",
+      "value": "52.16095165",
+      "locator": {
+        "year": "1984",
+        "series_id": "INTL.2-12-TWN-BKWH.A"
+      }
+    },
+    {
+      "date": "1985",
+      "value": "54.307897632",
+      "locator": {
+        "year": "1985",
+        "series_id": "INTL.2-12-TWN-BKWH.A"
+      }
+    },
+    {
+      "date": "1986",
+      "value": "60.606132673",
+      "locator": {
+        "year": "1986",
+        "series_id": "INTL.2-12-TWN-BKWH.A"
+      }
+    },
+    {
+      "date": "1987",
+      "value": "67.000425701",
+      "locator": {
+        "year": "1987",
+        "series_id": "INTL.2-12-TWN-BKWH.A"
+      }
+    },
+    {
+      "date": "1988",
+      "value": "74.291041899",
+      "locator": {
+        "year": "1988",
+        "series_id": "INTL.2-12-TWN-BKWH.A"
+      }
+    },
+    {
+      "date": "1989",
+      "value": "81.809411857729",
+      "locator": {
+        "year": "1989",
+        "series_id": "INTL.2-12-TWN-BKWH.A"
+      }
+    },
+    {
+      "date": "1990",
+      "value": "87.994094585929",
+      "locator": {
+        "year": "1990",
+        "series_id": "INTL.2-12-TWN-BKWH.A"
+      }
+    },
+    {
+      "date": "1991",
+      "value": "97.006751456208",
+      "locator": {
+        "year": "1991",
+        "series_id": "INTL.2-12-TWN-BKWH.A"
+      }
+    },
+    {
+      "date": "1992",
+      "value": "103.296641733448",
+      "locator": {
+        "year": "1992",
+        "series_id": "INTL.2-12-TWN-BKWH.A"
+      }
+    },
+    {
+      "date": "1993",
+      "value": "111.943835463307",
+      "locator": {
+        "year": "1993",
+        "series_id": "INTL.2-12-TWN-BKWH.A"
+      }
+    },
+    {
+      "date": "1994",
+      "value": "119.901864057786",
+      "locator": {
+        "year": "1994",
+        "series_id": "INTL.2-12-TWN-BKWH.A"
+      }
+    },
+    {
+      "date": "1995",
+      "value": "128.047465692177",
+      "locator": {
+        "year": "1995",
+        "series_id": "INTL.2-12-TWN-BKWH.A"
+      }
+    },
+    {
+      "date": "1996",
+      "value": "136.413236661315",
+      "locator": {
+        "year": "1996",
+        "series_id": "INTL.2-12-TWN-BKWH.A"
+      }
+    },
+    {
+      "date": "1997",
+      "value": "144.97968173097",
+      "locator": {
+        "year": "1997",
+        "series_id": "INTL.2-12-TWN-BKWH.A"
+      }
+    },
+    {
+      "date": "1998",
+      "value": "157.70940654818",
+      "locator": {
+        "year": "1998",
+        "series_id": "INTL.2-12-TWN-BKWH.A"
+      }
+    },
+    {
+      "date": "1999",
+      "value": "164.30899611971",
+      "locator": {
+        "year": "1999",
+        "series_id": "INTL.2-12-TWN-BKWH.A"
+      }
+    },
+    {
+      "date": "2000",
+      "value": "180.1932",
+      "locator": {
+        "year": "2000",
+        "series_id": "INTL.2-12-TWN-BKWH.A"
+      }
+    },
+    {
+      "date": "2001",
+      "value": "183.5849",
+      "locator": {
+        "year": "2001",
+        "series_id": "INTL.2-12-TWN-BKWH.A"
+      }
+    },
+    {
+      "date": "2002",
+      "value": "194.1778",
+      "locator": {
+        "year": "2002",
+        "series_id": "INTL.2-12-TWN-BKWH.A"
+      }
+    },
+    {
+      "date": "2003",
+      "value": "204.0622",
+      "locator": {
+        "year": "2003",
+        "series_id": "INTL.2-12-TWN-BKWH.A"
+      }
+    },
+    {
+      "date": "2004",
+      "value": "214.3074",
+      "locator": {
+        "year": "2004",
+        "series_id": "INTL.2-12-TWN-BKWH.A"
+      }
+    },
+    {
+      "date": "2005",
+      "value": "222.9136",
+      "locator": {
+        "year": "2005",
+        "series_id": "INTL.2-12-TWN-BKWH.A"
+      }
+    },
+    {
+      "date": "2006",
+      "value": "230.8434",
+      "locator": {
+        "year": "2006",
+        "series_id": "INTL.2-12-TWN-BKWH.A"
+      }
+    },
+    {
+      "date": "2007",
+      "value": "238.6675",
+      "locator": {
+        "year": "2007",
+        "series_id": "INTL.2-12-TWN-BKWH.A"
+      }
+    },
+    {
+      "date": "2008",
+      "value": "234.3654",
+      "locator": {
+        "year": "2008",
+        "series_id": "INTL.2-12-TWN-BKWH.A"
+      }
+    },
+    {
+      "date": "2009",
+      "value": "226.019",
+      "locator": {
+        "year": "2009",
+        "series_id": "INTL.2-12-TWN-BKWH.A"
+      }
+    },
+    {
+      "date": "2010",
+      "value": "243.4542",
+      "locator": {
+        "year": "2010",
+        "series_id": "INTL.2-12-TWN-BKWH.A"
+      }
+    },
+    {
+      "date": "2011",
+      "value": "248.6657",
+      "locator": {
+        "year": "2011",
+        "series_id": "INTL.2-12-TWN-BKWH.A"
+      }
+    },
+    {
+      "date": "2012",
+      "value": "247.1424",
+      "locator": {
+        "year": "2012",
+        "series_id": "INTL.2-12-TWN-BKWH.A"
+      }
+    },
+    {
+      "date": "2013",
+      "value": "248.7627",
+      "locator": {
+        "year": "2013",
+        "series_id": "INTL.2-12-TWN-BKWH.A"
+      }
+    },
+    {
+      "date": "2014",
+      "value": "256.2944",
+      "locator": {
+        "year": "2014",
+        "series_id": "INTL.2-12-TWN-BKWH.A"
+      }
+    },
+    {
+      "date": "2015",
+      "value": "254.4164",
+      "locator": {
+        "year": "2015",
+        "series_id": "INTL.2-12-TWN-BKWH.A"
+      }
+    },
+    {
+      "date": "2016",
+      "value": "260.316",
+      "locator": {
+        "year": "2016",
+        "series_id": "INTL.2-12-TWN-BKWH.A"
+      }
+    },
+    {
+      "date": "2017",
+      "value": "266.0784",
+      "locator": {
+        "year": "2017",
+        "series_id": "INTL.2-12-TWN-BKWH.A"
+      }
+    },
+    {
+      "date": "2018",
+      "value": "271.3839",
+      "locator": {
+        "year": "2018",
+        "series_id": "INTL.2-12-TWN-BKWH.A"
+      }
+    },
+    {
+      "date": "2019",
+      "value": "270.2072",
+      "locator": {
+        "year": "2019",
+        "series_id": "INTL.2-12-TWN-BKWH.A"
+      }
+    },
+    {
+      "date": "2020",
+      "value": "276.0568",
+      "locator": {
+        "year": "2020",
+        "series_id": "INTL.2-12-TWN-BKWH.A"
+      }
+    },
+    {
+      "date": "2021",
+      "value": "287.0462",
+      "locator": {
+        "year": "2021",
+        "series_id": "INTL.2-12-TWN-BKWH.A"
+      }
+    },
+    {
+      "date": "2022",
+      "value": "283.643741173",
+      "locator": {
+        "year": "2022",
+        "series_id": "INTL.2-12-TWN-BKWH.A"
+      }
+    },
+    {
+      "date": "2023",
+      "value": "278.695566283",
+      "locator": {
+        "year": "2023",
+        "series_id": "INTL.2-12-TWN-BKWH.A"
+      }
+    },
+    {
+      "date": "2024",
+      "value": "285.480966849",
+      "locator": {
+        "year": "2024",
+        "series_id": "INTL.2-12-TWN-BKWH.A"
+      }
+    }
+  ]
+}

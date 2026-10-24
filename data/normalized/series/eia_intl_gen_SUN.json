@@ -1,0 +1,113 @@
+{
+  "id": "eia_intl_gen_SUN",
+  "name": "Net generation",
+  "units": "billion kilowatthours",
+  "adjustment": "annual",
+  "nominal_or_real": "generation",
+  "frequency": "annual",
+  "source_id": "eia_intl_bulk",
+  "series_url": "https://www.eia.gov/international/data/world/electricity/electricity-generation",
+  "eia_series_id": "INTL.2-12-SUN-BKWH.A",
+  "country_code": "SUN",
+  "country_name": "Former U.S.S.R.",
+  "population_status": "no_world_bank_country",
+  "notes": "EIA bulk series INTL.2-12-SUN-BKWH.A, Former U.S.S.R.. Annual. Billion kilowatthours. 1 billion kilowatthours = 1 terawatthour. Published years in this file run from 1980 to 1991.",
+  "points": [
+    {
+      "date": "1980",
+      "value": "1294.003644367399",
+      "locator": {
+        "year": "1980",
+        "series_id": "INTL.2-12-SUN-BKWH.A"
+      }
+    },
+    {
+      "date": "1981",
+      "value": "1252.196392164824",
+      "locator": {
+        "year": "1981",
+        "series_id": "INTL.2-12-SUN-BKWH.A"
+      }
+    },
+    {
+      "date": "1982",
+      "value": "1367.782244868588",
+      "locator": {
+        "year": "1982",
+        "series_id": "INTL.2-12-SUN-BKWH.A"
+      }
+    },
+    {
+      "date": "1983",
+      "value": "1416.61174334506",
+      "locator": {
+        "year": "1983",
+        "series_id": "INTL.2-12-SUN-BKWH.A"
+      }
+    },
+    {
+      "date": "1984",
+      "value": "1492.09762158109",
+      "locator": {
+        "year": "1984",
+        "series_id": "INTL.2-12-SUN-BKWH.A"
+      }
+    },
+    {
+      "date": "1985",
+      "value": "1545.00871363208",
+      "locator": {
+        "year": "1985",
+        "series_id": "INTL.2-12-SUN-BKWH.A"
+      }
+    },
+    {
+      "date": "1986",
+      "value": "1509.63679884241",
+      "locator": {
+        "year": "1986",
+        "series_id": "INTL.2-12-SUN-BKWH.A"
+      }
+    },
+    {
+      "date": "1987",
+      "value": "1571.81743051461",
+      "locator": {
+        "year": "1987",
+        "series_id": "INTL.2-12-SUN-BKWH.A"
+      }
+    },
+    {
+      "date": "1988",
+      "value": "1610.2093517715",
+      "locator": {
+        "year": "1988",
+        "series_id": "INTL.2-12-SUN-BKWH.A"
+      }
+    },
+    {
+      "date": "1989",
+      "value": "1642.9257885505",
+      "locator": {
+        "year": "1989",
+        "series_id": "INTL.2-12-SUN-BKWH.A"
+      }
+    },
+    {
+      "date": "1990",
+      "value": "1636.14341000967",
+      "locator": {
+        "year": "1990",
+        "series_id": "INTL.2-12-SUN-BKWH.A"
+      }
+    },
+    {
+      "date": "1991",
+      "value": "1607.174",
+      "locator": {
+        "year": "1991",
+        "series_id": "INTL.2-12-SUN-BKWH.A"
+      }
+    }
+  ]
+}

@@ -1,0 +1,630 @@
+{
+  "id": "eia_us_gen_hydro",
+  "name": "Conventional hydroelectric",
+  "units": "Million Kilowatthours",
+  "adjustment": "annual",
+  "nominal_or_real": "generation",
+  "frequency": "annual",
+  "source_id": "eia_total_bulk",
+  "series_url": "https://www.eia.gov/totalenergy/data/browser/index.php?tbl=T07.02A",
+  "eia_series_id": "TOTAL.HVETPUS.A",
+  "notes": "EIA bulk series TOTAL.HVETPUS.A, Electricity Net Generation From Conventional Hydroelectric Power, All Sectors, Annual. Annual. Published years in this file run from 1949 to 2025.",
+  "points": [
+    {
+      "date": "1949",
+      "value": "94772.992",
+      "locator": {
+        "year": "1949",
+        "series_id": "TOTAL.HVETPUS.A"
+      }
+    },
+    {
+      "date": "1950",
+      "value": "100884.575",
+      "locator": {
+        "year": "1950",
+        "series_id": "TOTAL.HVETPUS.A"
+      }
+    },
+    {
+      "date": "1951",
+      "value": "104376.12",
+      "locator": {
+        "year": "1951",
+        "series_id": "TOTAL.HVETPUS.A"
+      }
+    },
+    {
+      "date": "1952",
+      "value": "109708.251",
+      "locator": {
+        "year": "1952",
+        "series_id": "TOTAL.HVETPUS.A"
+      }
+    },
+    {
+      "date": "1953",
+      "value": "109617.396",
+      "locator": {
+        "year": "1953",
+        "series_id": "TOTAL.HVETPUS.A"
+      }
+    },
+    {
+      "date": "1954",
+      "value": "111639.772",
+      "locator": {
+        "year": "1954",
+        "series_id": "TOTAL.HVETPUS.A"
+      }
+    },
+    {
+      "date": "1955",
+      "value": "116235.946",
+      "locator": {
+        "year": "1955",
+        "series_id": "TOTAL.HVETPUS.A"
+      }
+    },
+    {
+      "date": "1956",
+      "value": "125236.621",
+      "locator": {
+        "year": "1956",
+        "series_id": "TOTAL.HVETPUS.A"
+      }
+    },
+    {
+      "date": "1957",
+      "value": "133357.93",
+      "locator": {
+        "year": "1957",
+        "series_id": "TOTAL.HVETPUS.A"
+      }
+    },
+    {
+      "date": "1958",
+      "value": "143614.545",
+      "locator": {
+        "year": "1958",
+        "series_id": "TOTAL.HVETPUS.A"
+      }
+    },
+    {
+      "date": "1959",
+      "value": "141154.533",
+      "locator": {
+        "year": "1959",
+        "series_id": "TOTAL.HVETPUS.A"
+      }
+    },
+    {
+      "date": "1960",
+      "value": "149440.035",
+      "locator": {
+        "year": "1960",
+        "series_id": "TOTAL.HVETPUS.A"
+      }
+    },
+    {
+      "date": "1961",
+      "value": "155536.444",
+      "locator": {
+        "year": "1961",
+        "series_id": "TOTAL.HVETPUS.A"
+      }
+    },
+    {
+      "date": "1962",
+      "value": "172015.646",
+      "locator": {
+        "year": "1962",
+        "series_id": "TOTAL.HVETPUS.A"
+      }
+    },
+    {
+      "date": "1963",
+      "value": "168990.14",
+      "locator": {
+        "year": "1963",
+        "series_id": "TOTAL.HVETPUS.A"
+      }
+    },
+    {
+      "date": "1964",
+      "value": "180301.506",
+      "locator": {
+        "year": "1964",
+        "series_id": "TOTAL.HVETPUS.A"
+      }
+    },
+    {
+      "date": "1965",
+      "value": "196984.345",
+      "locator": {
+        "year": "1965",
+        "series_id": "TOTAL.HVETPUS.A"
+      }
+    },
+    {
+      "date": "1966",
+      "value": "197937.538",
+      "locator": {
+        "year": "1966",
+        "series_id": "TOTAL.HVETPUS.A"
+      }
+    },
+    {
+      "date": "1967",
+      "value": "224948.605",
+      "locator": {
+        "year": "1967",
+        "series_id": "TOTAL.HVETPUS.A"
+      }
+    },
+    {
+      "date": "1968",
+      "value": "225873.158",
+      "locator": {
+        "year": "1968",
+        "series_id": "TOTAL.HVETPUS.A"
+      }
+    },
+    {
+      "date": "1969",
+      "value": "253468.237",
+      "locator": {
+        "year": "1969",
+        "series_id": "TOTAL.HVETPUS.A"
+      }
+    },
+    {
+      "date": "1970",
+      "value": "250957.442",
+      "locator": {
+        "year": "1970",
+        "series_id": "TOTAL.HVETPUS.A"
+      }
+    },
+    {
+      "date": "1971",
+      "value": "269531.459",
+      "locator": {
+        "year": "1971",
+        "series_id": "TOTAL.HVETPUS.A"
+      }
+    },
+    {
+      "date": "1972",
+      "value": "275928.828",
+      "locator": {
+        "year": "1972",
+        "series_id": "TOTAL.HVETPUS.A"
+      }
+    },
+    {
+      "date": "1973",
+      "value": "275430.574",
+      "locator": {
+        "year": "1973",
+        "series_id": "TOTAL.HVETPUS.A"
+      }
+    },
+    {
+      "date": "1974",
+      "value": "304211.805",
+      "locator": {
+        "year": "1974",
+        "series_id": "TOTAL.HVETPUS.A"
+      }
+    },
+    {
+      "date": "1975",
+      "value": "303152.673",
+      "locator": {
+        "year": "1975",
+        "series_id": "TOTAL.HVETPUS.A"
+      }
+    },
+    {
+      "date": "1976",
+      "value": "286924.238",
+      "locator": {
+        "year": "1976",
+        "series_id": "TOTAL.HVETPUS.A"
+      }
+    },
+    {
+      "date": "1977",
+      "value": "223598.687",
+      "locator": {
+        "year": "1977",
+        "series_id": "TOTAL.HVETPUS.A"
+      }
+    },
+    {
+      "date": "1978",
+      "value": "283465.224",
+      "locator": {
+        "year": "1978",
+        "series_id": "TOTAL.HVETPUS.A"
+      }
+    },
+    {
+      "date": "1979",
+      "value": "283075.976",
+      "locator": {
+        "year": "1979",
+        "series_id": "TOTAL.HVETPUS.A"
+      }
+    },
+    {
+      "date": "1980",
+      "value": "279182.09",
+      "locator": {
+        "year": "1980",
+        "series_id": "TOTAL.HVETPUS.A"
+      }
+    },
+    {
+      "date": "1981",
+      "value": "263844.664",
+      "locator": {
+        "year": "1981",
+        "series_id": "TOTAL.HVETPUS.A"
+      }
+    },
+    {
+      "date": "1982",
+      "value": "312374.013",
+      "locator": {
+        "year": "1982",
+        "series_id": "TOTAL.HVETPUS.A"
+      }
+    },
+    {
+      "date": "1983",
+      "value": "335290.855",
+      "locator": {
+        "year": "1983",
+        "series_id": "TOTAL.HVETPUS.A"
+      }
+    },
+    {
+      "date": "1984",
+      "value": "324311.365",
+      "locator": {
+        "year": "1984",
+        "series_id": "TOTAL.HVETPUS.A"
+      }
+    },
+    {
+      "date": "1985",
+      "value": "284310.538",
+      "locator": {
+        "year": "1985",
+        "series_id": "TOTAL.HVETPUS.A"
+      }
+    },
+    {
+      "date": "1986",
+      "value": "294005.219",
+      "locator": {
+        "year": "1986",
+        "series_id": "TOTAL.HVETPUS.A"
+      }
+    },
+    {
+      "date": "1987",
+      "value": "252856.093",
+      "locator": {
+        "year": "1987",
+        "series_id": "TOTAL.HVETPUS.A"
+      }
+    },
+    {
+      "date": "1988",
+      "value": "226100.803",
+      "locator": {
+        "year": "1988",
+        "series_id": "TOTAL.HVETPUS.A"
+      }
+    },
+    {
+      "date": "1989",
+      "value": "271976.936",
+      "locator": {
+        "year": "1989",
+        "series_id": "TOTAL.HVETPUS.A"
+      }
+    },
+    {
+      "date": "1990",
+      "value": "292865.846",
+      "locator": {
+        "year": "1990",
+        "series_id": "TOTAL.HVETPUS.A"
+      }
+    },
+    {
+      "date": "1991",
+      "value": "288994.189",
+      "locator": {
+        "year": "1991",
+        "series_id": "TOTAL.HVETPUS.A"
+      }
+    },
+    {
+      "date": "1992",
+      "value": "253088.003",
+      "locator": {
+        "year": "1992",
+        "series_id": "TOTAL.HVETPUS.A"
+      }
+    },
+    {
+      "date": "1993",
+      "value": "280494.008",
+      "locator": {
+        "year": "1993",
+        "series_id": "TOTAL.HVETPUS.A"
+      }
+    },
+    {
+      "date": "1994",
+      "value": "260125.733",
+      "locator": {
+        "year": "1994",
+        "series_id": "TOTAL.HVETPUS.A"
+      }
+    },
+    {
+      "date": "1995",
+      "value": "310832.748",
+      "locator": {
+        "year": "1995",
+        "series_id": "TOTAL.HVETPUS.A"
+      }
+    },
+    {
+      "date": "1996",
+      "value": "347162.063",
+      "locator": {
+        "year": "1996",
+        "series_id": "TOTAL.HVETPUS.A"
+      }
+    },
+    {
+      "date": "1997",
+      "value": "356453.295",
+      "locator": {
+        "year": "1997",
+        "series_id": "TOTAL.HVETPUS.A"
+      }
+    },
+    {
+      "date": "1998",
+      "value": "323335.661",
+      "locator": {
+        "year": "1998",
+        "series_id": "TOTAL.HVETPUS.A"
+      }
+    },
+    {
+      "date": "1999",
+      "value": "319536.029",
+      "locator": {
+        "year": "1999",
+        "series_id": "TOTAL.HVETPUS.A"
+      }
+    },
+    {
+      "date": "2000",
+      "value": "275572.597",
+      "locator": {
+        "year": "2000",
+        "series_id": "TOTAL.HVETPUS.A"
+      }
+    },
+    {
+      "date": "2001",
+      "value": "216961.045",
+      "locator": {
+        "year": "2001",
+        "series_id": "TOTAL.HVETPUS.A"
+      }
+    },
+    {
+      "date": "2002",
+      "value": "264328.831",
+      "locator": {
+        "year": "2002",
+        "series_id": "TOTAL.HVETPUS.A"
+      }
+    },
+    {
+      "date": "2003",
+      "value": "275806.323",
+      "locator": {
+        "year": "2003",
+        "series_id": "TOTAL.HVETPUS.A"
+      }
+    },
+    {
+      "date": "2004",
+      "value": "268417.308",
+      "locator": {
+        "year": "2004",
+        "series_id": "TOTAL.HVETPUS.A"
+      }
+    },
+    {
+      "date": "2005",
+      "value": "270321.255",
+      "locator": {
+        "year": "2005",
+        "series_id": "TOTAL.HVETPUS.A"
+      }
+    },
+    {
+      "date": "2006",
+      "value": "289246.416",
+      "locator": {
+        "year": "2006",
+        "series_id": "TOTAL.HVETPUS.A"
+      }
+    },
+    {
+      "date": "2007",
+      "value": "247509.974",
+      "locator": {
+        "year": "2007",
+        "series_id": "TOTAL.HVETPUS.A"
+      }
+    },
+    {
+      "date": "2008",
+      "value": "254831.385",
+      "locator": {
+        "year": "2008",
+        "series_id": "TOTAL.HVETPUS.A"
+      }
+    },
+    {
+      "date": "2009",
+      "value": "273445.094",
+      "locator": {
+        "year": "2009",
+        "series_id": "TOTAL.HVETPUS.A"
+      }
+    },
+    {
+      "date": "2010",
+      "value": "260203.069",
+      "locator": {
+        "year": "2010",
+        "series_id": "TOTAL.HVETPUS.A"
+      }
+    },
+    {
+      "date": "2011",
+      "value": "319354.904",
+      "locator": {
+        "year": "2011",
+        "series_id": "TOTAL.HVETPUS.A"
+      }
+    },
+    {
+      "date": "2012",
+      "value": "276240.219",
+      "locator": {
+        "year": "2012",
+        "series_id": "TOTAL.HVETPUS.A"
+      }
+    },
+    {
+      "date": "2013",
+      "value": "268565.383",
+      "locator": {
+        "year": "2013",
+        "series_id": "TOTAL.HVETPUS.A"
+      }
+    },
+    {
+      "date": "2014",
+      "value": "259366.622",
+      "locator": {
+        "year": "2014",
+        "series_id": "TOTAL.HVETPUS.A"
+      }
+    },
+    {
+      "date": "2015",
+      "value": "249080.085",
+      "locator": {
+        "year": "2015",
+        "series_id": "TOTAL.HVETPUS.A"
+      }
+    },
+    {
+      "date": "2016",
+      "value": "267812.153",
+      "locator": {
+        "year": "2016",
+        "series_id": "TOTAL.HVETPUS.A"
+      }
+    },
+    {
+      "date": "2017",
+      "value": "300332.93",
+      "locator": {
+        "year": "2017",
+        "series_id": "TOTAL.HVETPUS.A"
+      }
+    },
+    {
+      "date": "2018",
+      "value": "292523.989",
+      "locator": {
+        "year": "2018",
+        "series_id": "TOTAL.HVETPUS.A"
+      }
+    },
+    {
+      "date": "2019",
+      "value": "287873.731",
+      "locator": {
+        "year": "2019",
+        "series_id": "TOTAL.HVETPUS.A"
+      }
+    },
+    {
+      "date": "2020",
+      "value": "285273.895",
+      "locator": {
+        "year": "2020",
+        "series_id": "TOTAL.HVETPUS.A"
+      }
+    },
+    {
+      "date": "2021",
+      "value": "251584.842",
+      "locator": {
+        "year": "2021",
+        "series_id": "TOTAL.HVETPUS.A"
+      }
+    },
+    {
+      "date": "2022",
+      "value": "254788.667",
+      "locator": {
+        "year": "2022",
+        "series_id": "TOTAL.HVETPUS.A"
+      }
+    },
+    {
+      "date": "2023",
+      "value": "245002.338",
+      "locator": {
+        "year": "2023",
+        "series_id": "TOTAL.HVETPUS.A"
+      }
+    },
+    {
+      "date": "2024",
+      "value": "242896.054",
+      "locator": {
+        "year": "2024",
+        "series_id": "TOTAL.HVETPUS.A"
+      }
+    },
+    {
+      "date": "2025",
+      "value": "247023.21",
+      "locator": {
+        "year": "2025",
+        "series_id": "TOTAL.HVETPUS.A"
+      }
+    }
+  ]
+}

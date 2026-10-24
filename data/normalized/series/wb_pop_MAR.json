@@ -1,0 +1,543 @@
+{
+  "id": "wb_pop_MAR",
+  "name": "Morocco",
+  "units": "people",
+  "adjustment": "midyear",
+  "nominal_or_real": "count",
+  "frequency": "annual",
+  "source_id": "worldbank_sp_pop_totl",
+  "series_url": "https://data.worldbank.org/indicator/SP.POP.TOTL",
+  "country_code": "MAR",
+  "country_name": "Morocco",
+  "notes": "World Bank World Development Indicators, SP.POP.TOTL, country code MAR. Midyear population. Published years in this file run from 1960 to 2025.",
+  "points": [
+    {
+      "date": "1960",
+      "value": "11624933",
+      "locator": {
+        "year": "1960",
+        "country_code": "MAR"
+      }
+    },
+    {
+      "date": "1961",
+      "value": "11931085",
+      "locator": {
+        "year": "1961",
+        "country_code": "MAR"
+      }
+    },
+    {
+      "date": "1962",
+      "value": "12253092",
+      "locator": {
+        "year": "1962",
+        "country_code": "MAR"
+      }
+    },
+    {
+      "date": "1963",
+      "value": "12577502",
+      "locator": {
+        "year": "1963",
+        "country_code": "MAR"
+      }
+    },
+    {
+      "date": "1964",
+      "value": "12898886",
+      "locator": {
+        "year": "1964",
+        "country_code": "MAR"
+      }
+    },
+    {
+      "date": "1965",
+      "value": "13239171",
+      "locator": {
+        "year": "1965",
+        "country_code": "MAR"
+      }
+    },
+    {
+      "date": "1966",
+      "value": "13597065",
+      "locator": {
+        "year": "1966",
+        "country_code": "MAR"
+      }
+    },
+    {
+      "date": "1967",
+      "value": "13968175",
+      "locator": {
+        "year": "1967",
+        "country_code": "MAR"
+      }
+    },
+    {
+      "date": "1968",
+      "value": "14347899",
+      "locator": {
+        "year": "1968",
+        "country_code": "MAR"
+      }
+    },
+    {
+      "date": "1969",
+      "value": "14734255",
+      "locator": {
+        "year": "1969",
+        "country_code": "MAR"
+      }
+    },
+    {
+      "date": "1970",
+      "value": "15129449",
+      "locator": {
+        "year": "1970",
+        "country_code": "MAR"
+      }
+    },
+    {
+      "date": "1971",
+      "value": "15527225",
+      "locator": {
+        "year": "1971",
+        "country_code": "MAR"
+      }
+    },
+    {
+      "date": "1972",
+      "value": "15924692",
+      "locator": {
+        "year": "1972",
+        "country_code": "MAR"
+      }
+    },
+    {
+      "date": "1973",
+      "value": "16326269",
+      "locator": {
+        "year": "1973",
+        "country_code": "MAR"
+      }
+    },
+    {
+      "date": "1974",
+      "value": "16733842",
+      "locator": {
+        "year": "1974",
+        "country_code": "MAR"
+      }
+    },
+    {
+      "date": "1975",
+      "value": "17150786",
+      "locator": {
+        "year": "1975",
+        "country_code": "MAR"
+      }
+    },
+    {
+      "date": "1976",
+      "value": "17574182",
+      "locator": {
+        "year": "1976",
+        "country_code": "MAR"
+      }
+    },
+    {
+      "date": "1977",
+      "value": "18014756",
+      "locator": {
+        "year": "1977",
+        "country_code": "MAR"
+      }
+    },
+    {
+      "date": "1978",
+      "value": "18477385",
+      "locator": {
+        "year": "1978",
+        "country_code": "MAR"
+      }
+    },
+    {
+      "date": "1979",
+      "value": "18955589",
+      "locator": {
+        "year": "1979",
+        "country_code": "MAR"
+      }
+    },
+    {
+      "date": "1980",
+      "value": "19459943",
+      "locator": {
+        "year": "1980",
+        "country_code": "MAR"
+      }
+    },
+    {
+      "date": "1981",
+      "value": "19985401",
+      "locator": {
+        "year": "1981",
+        "country_code": "MAR"
+      }
+    },
+    {
+      "date": "1982",
+      "value": "20520318",
+      "locator": {
+        "year": "1982",
+        "country_code": "MAR"
+      }
+    },
+    {
+      "date": "1983",
+      "value": "21060696",
+      "locator": {
+        "year": "1983",
+        "country_code": "MAR"
+      }
+    },
+    {
+      "date": "1984",
+      "value": "21593778",
+      "locator": {
+        "year": "1984",
+        "country_code": "MAR"
+      }
+    },
+    {
+      "date": "1985",
+      "value": "22113953",
+      "locator": {
+        "year": "1985",
+        "country_code": "MAR"
+      }
+    },
+    {
+      "date": "1986",
+      "value": "22600803",
+      "locator": {
+        "year": "1986",
+        "country_code": "MAR"
+      }
+    },
+    {
+      "date": "1987",
+      "value": "23054392",
+      "locator": {
+        "year": "1987",
+        "country_code": "MAR"
+      }
+    },
+    {
+      "date": "1988",
+      "value": "23500524",
+      "locator": {
+        "year": "1988",
+        "country_code": "MAR"
+      }
+    },
+    {
+      "date": "1989",
+      "value": "23939414",
+      "locator": {
+        "year": "1989",
+        "country_code": "MAR"
+      }
+    },
+    {
+      "date": "1990",
+      "value": "24375551",
+      "locator": {
+        "year": "1990",
+        "country_code": "MAR"
+      }
+    },
+    {
+      "date": "1991",
+      "value": "24799014",
+      "locator": {
+        "year": "1991",
+        "country_code": "MAR"
+      }
+    },
+    {
+      "date": "1992",
+      "value": "25212468",
+      "locator": {
+        "year": "1992",
+        "country_code": "MAR"
+      }
+    },
+    {
+      "date": "1993",
+      "value": "25614586",
+      "locator": {
+        "year": "1993",
+        "country_code": "MAR"
+      }
+    },
+    {
+      "date": "1994",
+      "value": "26000822",
+      "locator": {
+        "year": "1994",
+        "country_code": "MAR"
+      }
+    },
+    {
+      "date": "1995",
+      "value": "26399429",
+      "locator": {
+        "year": "1995",
+        "country_code": "MAR"
+      }
+    },
+    {
+      "date": "1996",
+      "value": "26808107",
+      "locator": {
+        "year": "1996",
+        "country_code": "MAR"
+      }
+    },
+    {
+      "date": "1997",
+      "value": "27213337",
+      "locator": {
+        "year": "1997",
+        "country_code": "MAR"
+      }
+    },
+    {
+      "date": "1998",
+      "value": "27621648",
+      "locator": {
+        "year": "1998",
+        "country_code": "MAR"
+      }
+    },
+    {
+      "date": "1999",
+      "value": "28027179",
+      "locator": {
+        "year": "1999",
+        "country_code": "MAR"
+      }
+    },
+    {
+      "date": "2000",
+      "value": "28423435",
+      "locator": {
+        "year": "2000",
+        "country_code": "MAR"
+      }
+    },
+    {
+      "date": "2001",
+      "value": "28814643",
+      "locator": {
+        "year": "2001",
+        "country_code": "MAR"
+      }
+    },
+    {
+      "date": "2002",
+      "value": "29198142",
+      "locator": {
+        "year": "2002",
+        "country_code": "MAR"
+      }
+    },
+    {
+      "date": "2003",
+      "value": "29571415",
+      "locator": {
+        "year": "2003",
+        "country_code": "MAR"
+      }
+    },
+    {
+      "date": "2004",
+      "value": "29953018",
+      "locator": {
+        "year": "2004",
+        "country_code": "MAR"
+      }
+    },
+    {
+      "date": "2005",
+      "value": "30358144",
+      "locator": {
+        "year": "2005",
+        "country_code": "MAR"
+      }
+    },
+    {
+      "date": "2006",
+      "value": "30771178",
+      "locator": {
+        "year": "2006",
+        "country_code": "MAR"
+      }
+    },
+    {
+      "date": "2007",
+      "value": "31186468",
+      "locator": {
+        "year": "2007",
+        "country_code": "MAR"
+      }
+    },
+    {
+      "date": "2008",
+      "value": "31606767",
+      "locator": {
+        "year": "2008",
+        "country_code": "MAR"
+      }
+    },
+    {
+      "date": "2009",
+      "value": "32030778",
+      "locator": {
+        "year": "2009",
+        "country_code": "MAR"
+      }
+    },
+    {
+      "date": "2010",
+      "value": "32467016",
+      "locator": {
+        "year": "2010",
+        "country_code": "MAR"
+      }
+    },
+    {
+      "date": "2011",
+      "value": "32912588",
+      "locator": {
+        "year": "2011",
+        "country_code": "MAR"
+      }
+    },
+    {
+      "date": "2012",
+      "value": "33355241",
+      "locator": {
+        "year": "2012",
+        "country_code": "MAR"
+      }
+    },
+    {
+      "date": "2013",
+      "value": "33787571",
+      "locator": {
+        "year": "2013",
+        "country_code": "MAR"
+      }
+    },
+    {
+      "date": "2014",
+      "value": "34204780",
+      "locator": {
+        "year": "2014",
+        "country_code": "MAR"
+      }
+    },
+    {
+      "date": "2015",
+      "value": "34607588",
+      "locator": {
+        "year": "2015",
+        "country_code": "MAR"
+      }
+    },
+    {
+      "date": "2016",
+      "value": "35023457",
+      "locator": {
+        "year": "2016",
+        "country_code": "MAR"
+      }
+    },
+    {
+      "date": "2017",
+      "value": "35446392",
+      "locator": {
+        "year": "2017",
+        "country_code": "MAR"
+      }
+    },
+    {
+      "date": "2018",
+      "value": "35839760",
+      "locator": {
+        "year": "2018",
+        "country_code": "MAR"
+      }
+    },
+    {
+      "date": "2019",
+      "value": "36210898",
+      "locator": {
+        "year": "2019",
+        "country_code": "MAR"
+      }
+    },
+    {
+      "date": "2020",
+      "value": "36584208",
+      "locator": {
+        "year": "2020",
+        "country_code": "MAR"
+      }
+    },
+    {
+      "date": "2021",
+      "value": "36954442",
+      "locator": {
+        "year": "2021",
+        "country_code": "MAR"
+      }
+    },
+    {
+      "date": "2022",
+      "value": "37329064",
+      "locator": {
+        "year": "2022",
+        "country_code": "MAR"
+      }
+    },
+    {
+      "date": "2023",
+      "value": "37712505",
+      "locator": {
+        "year": "2023",
+        "country_code": "MAR"
+      }
+    },
+    {
+      "date": "2024",
+      "value": "38081173",
+      "locator": {
+        "year": "2024",
+        "country_code": "MAR"
+      }
+    },
+    {
+      "date": "2025",
+      "value": "38430770",
+      "locator": {
+        "year": "2025",
+        "country_code": "MAR"
+      }
+    }
+  ]
+}

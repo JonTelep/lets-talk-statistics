@@ -1,0 +1,543 @@
+{
+  "id": "wb_pop_BEN",
+  "name": "Benin",
+  "units": "people",
+  "adjustment": "midyear",
+  "nominal_or_real": "count",
+  "frequency": "annual",
+  "source_id": "worldbank_sp_pop_totl",
+  "series_url": "https://data.worldbank.org/indicator/SP.POP.TOTL",
+  "country_code": "BEN",
+  "country_name": "Benin",
+  "notes": "World Bank World Development Indicators, SP.POP.TOTL, country code BEN. Midyear population. Published years in this file run from 1960 to 2025.",
+  "points": [
+    {
+      "date": "1960",
+      "value": "2517286",
+      "locator": {
+        "year": "1960",
+        "country_code": "BEN"
+      }
+    },
+    {
+      "date": "1961",
+      "value": "2559223",
+      "locator": {
+        "year": "1961",
+        "country_code": "BEN"
+      }
+    },
+    {
+      "date": "1962",
+      "value": "2604659",
+      "locator": {
+        "year": "1962",
+        "country_code": "BEN"
+      }
+    },
+    {
+      "date": "1963",
+      "value": "2652908",
+      "locator": {
+        "year": "1963",
+        "country_code": "BEN"
+      }
+    },
+    {
+      "date": "1964",
+      "value": "2704003",
+      "locator": {
+        "year": "1964",
+        "country_code": "BEN"
+      }
+    },
+    {
+      "date": "1965",
+      "value": "2757936",
+      "locator": {
+        "year": "1965",
+        "country_code": "BEN"
+      }
+    },
+    {
+      "date": "1966",
+      "value": "2814317",
+      "locator": {
+        "year": "1966",
+        "country_code": "BEN"
+      }
+    },
+    {
+      "date": "1967",
+      "value": "2872997",
+      "locator": {
+        "year": "1967",
+        "country_code": "BEN"
+      }
+    },
+    {
+      "date": "1968",
+      "value": "2934257",
+      "locator": {
+        "year": "1968",
+        "country_code": "BEN"
+      }
+    },
+    {
+      "date": "1969",
+      "value": "2998222",
+      "locator": {
+        "year": "1969",
+        "country_code": "BEN"
+      }
+    },
+    {
+      "date": "1970",
+      "value": "3065057",
+      "locator": {
+        "year": "1970",
+        "country_code": "BEN"
+      }
+    },
+    {
+      "date": "1971",
+      "value": "3134767",
+      "locator": {
+        "year": "1971",
+        "country_code": "BEN"
+      }
+    },
+    {
+      "date": "1972",
+      "value": "3207543",
+      "locator": {
+        "year": "1972",
+        "country_code": "BEN"
+      }
+    },
+    {
+      "date": "1973",
+      "value": "3283496",
+      "locator": {
+        "year": "1973",
+        "country_code": "BEN"
+      }
+    },
+    {
+      "date": "1974",
+      "value": "3362633",
+      "locator": {
+        "year": "1974",
+        "country_code": "BEN"
+      }
+    },
+    {
+      "date": "1975",
+      "value": "3445407",
+      "locator": {
+        "year": "1975",
+        "country_code": "BEN"
+      }
+    },
+    {
+      "date": "1976",
+      "value": "3532196",
+      "locator": {
+        "year": "1976",
+        "country_code": "BEN"
+      }
+    },
+    {
+      "date": "1977",
+      "value": "3623202",
+      "locator": {
+        "year": "1977",
+        "country_code": "BEN"
+      }
+    },
+    {
+      "date": "1978",
+      "value": "3718305",
+      "locator": {
+        "year": "1978",
+        "country_code": "BEN"
+      }
+    },
+    {
+      "date": "1979",
+      "value": "3818528",
+      "locator": {
+        "year": "1979",
+        "country_code": "BEN"
+      }
+    },
+    {
+      "date": "1980",
+      "value": "3925251",
+      "locator": {
+        "year": "1980",
+        "country_code": "BEN"
+      }
+    },
+    {
+      "date": "1981",
+      "value": "4038307",
+      "locator": {
+        "year": "1981",
+        "country_code": "BEN"
+      }
+    },
+    {
+      "date": "1982",
+      "value": "4156596",
+      "locator": {
+        "year": "1982",
+        "country_code": "BEN"
+      }
+    },
+    {
+      "date": "1983",
+      "value": "4278978",
+      "locator": {
+        "year": "1983",
+        "country_code": "BEN"
+      }
+    },
+    {
+      "date": "1984",
+      "value": "4405895",
+      "locator": {
+        "year": "1984",
+        "country_code": "BEN"
+      }
+    },
+    {
+      "date": "1985",
+      "value": "4538012",
+      "locator": {
+        "year": "1985",
+        "country_code": "BEN"
+      }
+    },
+    {
+      "date": "1986",
+      "value": "4675420",
+      "locator": {
+        "year": "1986",
+        "country_code": "BEN"
+      }
+    },
+    {
+      "date": "1987",
+      "value": "4818486",
+      "locator": {
+        "year": "1987",
+        "country_code": "BEN"
+      }
+    },
+    {
+      "date": "1988",
+      "value": "4967341",
+      "locator": {
+        "year": "1988",
+        "country_code": "BEN"
+      }
+    },
+    {
+      "date": "1989",
+      "value": "5121657",
+      "locator": {
+        "year": "1989",
+        "country_code": "BEN"
+      }
+    },
+    {
+      "date": "1990",
+      "value": "5281479",
+      "locator": {
+        "year": "1990",
+        "country_code": "BEN"
+      }
+    },
+    {
+      "date": "1991",
+      "value": "5446932",
+      "locator": {
+        "year": "1991",
+        "country_code": "BEN"
+      }
+    },
+    {
+      "date": "1992",
+      "value": "5617844",
+      "locator": {
+        "year": "1992",
+        "country_code": "BEN"
+      }
+    },
+    {
+      "date": "1993",
+      "value": "5872706",
+      "locator": {
+        "year": "1993",
+        "country_code": "BEN"
+      }
+    },
+    {
+      "date": "1994",
+      "value": "6096506",
+      "locator": {
+        "year": "1994",
+        "country_code": "BEN"
+      }
+    },
+    {
+      "date": "1995",
+      "value": "6226773",
+      "locator": {
+        "year": "1995",
+        "country_code": "BEN"
+      }
+    },
+    {
+      "date": "1996",
+      "value": "6391858",
+      "locator": {
+        "year": "1996",
+        "country_code": "BEN"
+      }
+    },
+    {
+      "date": "1997",
+      "value": "6583365",
+      "locator": {
+        "year": "1997",
+        "country_code": "BEN"
+      }
+    },
+    {
+      "date": "1998",
+      "value": "6789489",
+      "locator": {
+        "year": "1998",
+        "country_code": "BEN"
+      }
+    },
+    {
+      "date": "1999",
+      "value": "7002818",
+      "locator": {
+        "year": "1999",
+        "country_code": "BEN"
+      }
+    },
+    {
+      "date": "2000",
+      "value": "7221619",
+      "locator": {
+        "year": "2000",
+        "country_code": "BEN"
+      }
+    },
+    {
+      "date": "2001",
+      "value": "7445596",
+      "locator": {
+        "year": "2001",
+        "country_code": "BEN"
+      }
+    },
+    {
+      "date": "2002",
+      "value": "7675426",
+      "locator": {
+        "year": "2002",
+        "country_code": "BEN"
+      }
+    },
+    {
+      "date": "2003",
+      "value": "7913070",
+      "locator": {
+        "year": "2003",
+        "country_code": "BEN"
+      }
+    },
+    {
+      "date": "2004",
+      "value": "8159094",
+      "locator": {
+        "year": "2004",
+        "country_code": "BEN"
+      }
+    },
+    {
+      "date": "2005",
+      "value": "8426144",
+      "locator": {
+        "year": "2005",
+        "country_code": "BEN"
+      }
+    },
+    {
+      "date": "2006",
+      "value": "8693242",
+      "locator": {
+        "year": "2006",
+        "country_code": "BEN"
+      }
+    },
+    {
+      "date": "2007",
+      "value": "8953969",
+      "locator": {
+        "year": "2007",
+        "country_code": "BEN"
+      }
+    },
+    {
+      "date": "2008",
+      "value": "9228466",
+      "locator": {
+        "year": "2008",
+        "country_code": "BEN"
+      }
+    },
+    {
+      "date": "2009",
+      "value": "9509423",
+      "locator": {
+        "year": "2009",
+        "country_code": "BEN"
+      }
+    },
+    {
+      "date": "2010",
+      "value": "9797484",
+      "locator": {
+        "year": "2010",
+        "country_code": "BEN"
+      }
+    },
+    {
+      "date": "2011",
+      "value": "10093623",
+      "locator": {
+        "year": "2011",
+        "country_code": "BEN"
+      }
+    },
+    {
+      "date": "2012",
+      "value": "10397657",
+      "locator": {
+        "year": "2012",
+        "country_code": "BEN"
+      }
+    },
+    {
+      "date": "2013",
+      "value": "10708834",
+      "locator": {
+        "year": "2013",
+        "country_code": "BEN"
+      }
+    },
+    {
+      "date": "2014",
+      "value": "11030004",
+      "locator": {
+        "year": "2014",
+        "country_code": "BEN"
+      }
+    },
+    {
+      "date": "2015",
+      "value": "11360681",
+      "locator": {
+        "year": "2015",
+        "country_code": "BEN"
+      }
+    },
+    {
+      "date": "2016",
+      "value": "11697842",
+      "locator": {
+        "year": "2016",
+        "country_code": "BEN"
+      }
+    },
+    {
+      "date": "2017",
+      "value": "12039780",
+      "locator": {
+        "year": "2017",
+        "country_code": "BEN"
+      }
+    },
+    {
+      "date": "2018",
+      "value": "12383347",
+      "locator": {
+        "year": "2018",
+        "country_code": "BEN"
+      }
+    },
+    {
+      "date": "2019",
+      "value": "12726755",
+      "locator": {
+        "year": "2019",
+        "country_code": "BEN"
+      }
+    },
+    {
+      "date": "2020",
+      "value": "13070169",
+      "locator": {
+        "year": "2020",
+        "country_code": "BEN"
+      }
+    },
+    {
+      "date": "2021",
+      "value": "13413417",
+      "locator": {
+        "year": "2021",
+        "country_code": "BEN"
+      }
+    },
+    {
+      "date": "2022",
+      "value": "13759501",
+      "locator": {
+        "year": "2022",
+        "country_code": "BEN"
+      }
+    },
+    {
+      "date": "2023",
+      "value": "14111034",
+      "locator": {
+        "year": "2023",
+        "country_code": "BEN"
+      }
+    },
+    {
+      "date": "2024",
+      "value": "14462724",
+      "locator": {
+        "year": "2024",
+        "country_code": "BEN"
+      }
+    },
+    {
+      "date": "2025",
+      "value": "14814460",
+      "locator": {
+        "year": "2025",
+        "country_code": "BEN"
+      }
+    }
+  ]
+}

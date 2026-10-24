@@ -1,0 +1,543 @@
+{
+  "id": "wb_pop_PRI",
+  "name": "Puerto Rico",
+  "units": "people",
+  "adjustment": "midyear",
+  "nominal_or_real": "count",
+  "frequency": "annual",
+  "source_id": "worldbank_sp_pop_totl",
+  "series_url": "https://data.worldbank.org/indicator/SP.POP.TOTL",
+  "country_code": "PRI",
+  "country_name": "Puerto Rico",
+  "notes": "World Bank World Development Indicators, SP.POP.TOTL, country code PRI. Midyear population. Published years in this file run from 1960 to 2025.",
+  "points": [
+    {
+      "date": "1960",
+      "value": "2358000",
+      "locator": {
+        "year": "1960",
+        "country_code": "PRI"
+      }
+    },
+    {
+      "date": "1961",
+      "value": "2399722",
+      "locator": {
+        "year": "1961",
+        "country_code": "PRI"
+      }
+    },
+    {
+      "date": "1962",
+      "value": "2450322",
+      "locator": {
+        "year": "1962",
+        "country_code": "PRI"
+      }
+    },
+    {
+      "date": "1963",
+      "value": "2504530",
+      "locator": {
+        "year": "1963",
+        "country_code": "PRI"
+      }
+    },
+    {
+      "date": "1964",
+      "value": "2554066",
+      "locator": {
+        "year": "1964",
+        "country_code": "PRI"
+      }
+    },
+    {
+      "date": "1965",
+      "value": "2594000",
+      "locator": {
+        "year": "1965",
+        "country_code": "PRI"
+      }
+    },
+    {
+      "date": "1966",
+      "value": "2624995",
+      "locator": {
+        "year": "1966",
+        "country_code": "PRI"
+      }
+    },
+    {
+      "date": "1967",
+      "value": "2645674",
+      "locator": {
+        "year": "1967",
+        "country_code": "PRI"
+      }
+    },
+    {
+      "date": "1968",
+      "value": "2662064",
+      "locator": {
+        "year": "1968",
+        "country_code": "PRI"
+      }
+    },
+    {
+      "date": "1969",
+      "value": "2684150",
+      "locator": {
+        "year": "1969",
+        "country_code": "PRI"
+      }
+    },
+    {
+      "date": "1970",
+      "value": "2718000",
+      "locator": {
+        "year": "1970",
+        "country_code": "PRI"
+      }
+    },
+    {
+      "date": "1971",
+      "value": "2762190",
+      "locator": {
+        "year": "1971",
+        "country_code": "PRI"
+      }
+    },
+    {
+      "date": "1972",
+      "value": "2817256",
+      "locator": {
+        "year": "1972",
+        "country_code": "PRI"
+      }
+    },
+    {
+      "date": "1973",
+      "value": "2878786",
+      "locator": {
+        "year": "1973",
+        "country_code": "PRI"
+      }
+    },
+    {
+      "date": "1974",
+      "value": "2939299",
+      "locator": {
+        "year": "1974",
+        "country_code": "PRI"
+      }
+    },
+    {
+      "date": "1975",
+      "value": "2994000",
+      "locator": {
+        "year": "1975",
+        "country_code": "PRI"
+      }
+    },
+    {
+      "date": "1976",
+      "value": "3043854",
+      "locator": {
+        "year": "1976",
+        "country_code": "PRI"
+      }
+    },
+    {
+      "date": "1977",
+      "value": "3088690",
+      "locator": {
+        "year": "1977",
+        "country_code": "PRI"
+      }
+    },
+    {
+      "date": "1978",
+      "value": "3129421",
+      "locator": {
+        "year": "1978",
+        "country_code": "PRI"
+      }
+    },
+    {
+      "date": "1979",
+      "value": "3168088",
+      "locator": {
+        "year": "1979",
+        "country_code": "PRI"
+      }
+    },
+    {
+      "date": "1980",
+      "value": "3206000",
+      "locator": {
+        "year": "1980",
+        "country_code": "PRI"
+      }
+    },
+    {
+      "date": "1981",
+      "value": "3242552",
+      "locator": {
+        "year": "1981",
+        "country_code": "PRI"
+      }
+    },
+    {
+      "date": "1982",
+      "value": "3277453",
+      "locator": {
+        "year": "1982",
+        "country_code": "PRI"
+      }
+    },
+    {
+      "date": "1983",
+      "value": "3311138",
+      "locator": {
+        "year": "1983",
+        "country_code": "PRI"
+      }
+    },
+    {
+      "date": "1984",
+      "value": "3344190",
+      "locator": {
+        "year": "1984",
+        "country_code": "PRI"
+      }
+    },
+    {
+      "date": "1985",
+      "value": "3377000",
+      "locator": {
+        "year": "1985",
+        "country_code": "PRI"
+      }
+    },
+    {
+      "date": "1986",
+      "value": "3409554",
+      "locator": {
+        "year": "1986",
+        "country_code": "PRI"
+      }
+    },
+    {
+      "date": "1987",
+      "value": "3441850",
+      "locator": {
+        "year": "1987",
+        "country_code": "PRI"
+      }
+    },
+    {
+      "date": "1988",
+      "value": "3473898",
+      "locator": {
+        "year": "1988",
+        "country_code": "PRI"
+      }
+    },
+    {
+      "date": "1989",
+      "value": "3505650",
+      "locator": {
+        "year": "1989",
+        "country_code": "PRI"
+      }
+    },
+    {
+      "date": "1990",
+      "value": "3537000",
+      "locator": {
+        "year": "1990",
+        "country_code": "PRI"
+      }
+    },
+    {
+      "date": "1991",
+      "value": "3562110",
+      "locator": {
+        "year": "1991",
+        "country_code": "PRI"
+      }
+    },
+    {
+      "date": "1992",
+      "value": "3585176",
+      "locator": {
+        "year": "1992",
+        "country_code": "PRI"
+      }
+    },
+    {
+      "date": "1993",
+      "value": "3615497",
+      "locator": {
+        "year": "1993",
+        "country_code": "PRI"
+      }
+    },
+    {
+      "date": "1994",
+      "value": "3649237",
+      "locator": {
+        "year": "1994",
+        "country_code": "PRI"
+      }
+    },
+    {
+      "date": "1995",
+      "value": "3683103",
+      "locator": {
+        "year": "1995",
+        "country_code": "PRI"
+      }
+    },
+    {
+      "date": "1996",
+      "value": "3724655",
+      "locator": {
+        "year": "1996",
+        "country_code": "PRI"
+      }
+    },
+    {
+      "date": "1997",
+      "value": "3759430",
+      "locator": {
+        "year": "1997",
+        "country_code": "PRI"
+      }
+    },
+    {
+      "date": "1998",
+      "value": "3781101",
+      "locator": {
+        "year": "1998",
+        "country_code": "PRI"
+      }
+    },
+    {
+      "date": "1999",
+      "value": "3800081",
+      "locator": {
+        "year": "1999",
+        "country_code": "PRI"
+      }
+    },
+    {
+      "date": "2000",
+      "value": "3810605",
+      "locator": {
+        "year": "2000",
+        "country_code": "PRI"
+      }
+    },
+    {
+      "date": "2001",
+      "value": "3818774",
+      "locator": {
+        "year": "2001",
+        "country_code": "PRI"
+      }
+    },
+    {
+      "date": "2002",
+      "value": "3823701",
+      "locator": {
+        "year": "2002",
+        "country_code": "PRI"
+      }
+    },
+    {
+      "date": "2003",
+      "value": "3826095",
+      "locator": {
+        "year": "2003",
+        "country_code": "PRI"
+      }
+    },
+    {
+      "date": "2004",
+      "value": "3826878",
+      "locator": {
+        "year": "2004",
+        "country_code": "PRI"
+      }
+    },
+    {
+      "date": "2005",
+      "value": "3821362",
+      "locator": {
+        "year": "2005",
+        "country_code": "PRI"
+      }
+    },
+    {
+      "date": "2006",
+      "value": "3805214",
+      "locator": {
+        "year": "2006",
+        "country_code": "PRI"
+      }
+    },
+    {
+      "date": "2007",
+      "value": "3782995",
+      "locator": {
+        "year": "2007",
+        "country_code": "PRI"
+      }
+    },
+    {
+      "date": "2008",
+      "value": "3760866",
+      "locator": {
+        "year": "2008",
+        "country_code": "PRI"
+      }
+    },
+    {
+      "date": "2009",
+      "value": "3740410",
+      "locator": {
+        "year": "2009",
+        "country_code": "PRI"
+      }
+    },
+    {
+      "date": "2010",
+      "value": "3724465",
+      "locator": {
+        "year": "2010",
+        "country_code": "PRI"
+      }
+    },
+    {
+      "date": "2011",
+      "value": "3693464",
+      "locator": {
+        "year": "2011",
+        "country_code": "PRI"
+      }
+    },
+    {
+      "date": "2012",
+      "value": "3661045",
+      "locator": {
+        "year": "2012",
+        "country_code": "PRI"
+      }
+    },
+    {
+      "date": "2013",
+      "value": "3631427",
+      "locator": {
+        "year": "2013",
+        "country_code": "PRI"
+      }
+    },
+    {
+      "date": "2014",
+      "value": "3585017",
+      "locator": {
+        "year": "2014",
+        "country_code": "PRI"
+      }
+    },
+    {
+      "date": "2015",
+      "value": "3535167",
+      "locator": {
+        "year": "2015",
+        "country_code": "PRI"
+      }
+    },
+    {
+      "date": "2016",
+      "value": "3480432",
+      "locator": {
+        "year": "2016",
+        "country_code": "PRI"
+      }
+    },
+    {
+      "date": "2017",
+      "value": "3410837",
+      "locator": {
+        "year": "2017",
+        "country_code": "PRI"
+      }
+    },
+    {
+      "date": "2018",
+      "value": "3290690",
+      "locator": {
+        "year": "2018",
+        "country_code": "PRI"
+      }
+    },
+    {
+      "date": "2019",
+      "value": "3302691",
+      "locator": {
+        "year": "2019",
+        "country_code": "PRI"
+      }
+    },
+    {
+      "date": "2020",
+      "value": "3281591",
+      "locator": {
+        "year": "2020",
+        "country_code": "PRI"
+      }
+    },
+    {
+      "date": "2021",
+      "value": "3262731",
+      "locator": {
+        "year": "2021",
+        "country_code": "PRI"
+      }
+    },
+    {
+      "date": "2022",
+      "value": "3220148",
+      "locator": {
+        "year": "2022",
+        "country_code": "PRI"
+      }
+    },
+    {
+      "date": "2023",
+      "value": "3203794",
+      "locator": {
+        "year": "2023",
+        "country_code": "PRI"
+      }
+    },
+    {
+      "date": "2024",
+      "value": "3202521",
+      "locator": {
+        "year": "2024",
+        "country_code": "PRI"
+      }
+    },
+    {
+      "date": "2025",
+      "value": "3184835",
+      "locator": {
+        "year": "2025",
+        "country_code": "PRI"
+      }
+    }
+  ]
+}

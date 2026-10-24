@@ -1,0 +1,543 @@
+{
+  "id": "wb_pop_NZL",
+  "name": "New Zealand",
+  "units": "people",
+  "adjustment": "midyear",
+  "nominal_or_real": "count",
+  "frequency": "annual",
+  "source_id": "worldbank_sp_pop_totl",
+  "series_url": "https://data.worldbank.org/indicator/SP.POP.TOTL",
+  "country_code": "NZL",
+  "country_name": "New Zealand",
+  "notes": "World Bank World Development Indicators, SP.POP.TOTL, country code NZL. Midyear population. Published years in this file run from 1960 to 2025.",
+  "points": [
+    {
+      "date": "1960",
+      "value": "2371800",
+      "locator": {
+        "year": "1960",
+        "country_code": "NZL"
+      }
+    },
+    {
+      "date": "1961",
+      "value": "2419700",
+      "locator": {
+        "year": "1961",
+        "country_code": "NZL"
+      }
+    },
+    {
+      "date": "1962",
+      "value": "2482000",
+      "locator": {
+        "year": "1962",
+        "country_code": "NZL"
+      }
+    },
+    {
+      "date": "1963",
+      "value": "2531800",
+      "locator": {
+        "year": "1963",
+        "country_code": "NZL"
+      }
+    },
+    {
+      "date": "1964",
+      "value": "2585400",
+      "locator": {
+        "year": "1964",
+        "country_code": "NZL"
+      }
+    },
+    {
+      "date": "1965",
+      "value": "2628400",
+      "locator": {
+        "year": "1965",
+        "country_code": "NZL"
+      }
+    },
+    {
+      "date": "1966",
+      "value": "2675900",
+      "locator": {
+        "year": "1966",
+        "country_code": "NZL"
+      }
+    },
+    {
+      "date": "1967",
+      "value": "2724100",
+      "locator": {
+        "year": "1967",
+        "country_code": "NZL"
+      }
+    },
+    {
+      "date": "1968",
+      "value": "2748100",
+      "locator": {
+        "year": "1968",
+        "country_code": "NZL"
+      }
+    },
+    {
+      "date": "1969",
+      "value": "2772800",
+      "locator": {
+        "year": "1969",
+        "country_code": "NZL"
+      }
+    },
+    {
+      "date": "1970",
+      "value": "2810700",
+      "locator": {
+        "year": "1970",
+        "country_code": "NZL"
+      }
+    },
+    {
+      "date": "1971",
+      "value": "2853000",
+      "locator": {
+        "year": "1971",
+        "country_code": "NZL"
+      }
+    },
+    {
+      "date": "1972",
+      "value": "2903900",
+      "locator": {
+        "year": "1972",
+        "country_code": "NZL"
+      }
+    },
+    {
+      "date": "1973",
+      "value": "2961300",
+      "locator": {
+        "year": "1973",
+        "country_code": "NZL"
+      }
+    },
+    {
+      "date": "1974",
+      "value": "3023700",
+      "locator": {
+        "year": "1974",
+        "country_code": "NZL"
+      }
+    },
+    {
+      "date": "1975",
+      "value": "3083100",
+      "locator": {
+        "year": "1975",
+        "country_code": "NZL"
+      }
+    },
+    {
+      "date": "1976",
+      "value": "3110500",
+      "locator": {
+        "year": "1976",
+        "country_code": "NZL"
+      }
+    },
+    {
+      "date": "1977",
+      "value": "3120200",
+      "locator": {
+        "year": "1977",
+        "country_code": "NZL"
+      }
+    },
+    {
+      "date": "1978",
+      "value": "3121200",
+      "locator": {
+        "year": "1978",
+        "country_code": "NZL"
+      }
+    },
+    {
+      "date": "1979",
+      "value": "3109000",
+      "locator": {
+        "year": "1979",
+        "country_code": "NZL"
+      }
+    },
+    {
+      "date": "1980",
+      "value": "3112900",
+      "locator": {
+        "year": "1980",
+        "country_code": "NZL"
+      }
+    },
+    {
+      "date": "1981",
+      "value": "3124900",
+      "locator": {
+        "year": "1981",
+        "country_code": "NZL"
+      }
+    },
+    {
+      "date": "1982",
+      "value": "3156100",
+      "locator": {
+        "year": "1982",
+        "country_code": "NZL"
+      }
+    },
+    {
+      "date": "1983",
+      "value": "3199300",
+      "locator": {
+        "year": "1983",
+        "country_code": "NZL"
+      }
+    },
+    {
+      "date": "1984",
+      "value": "3227100",
+      "locator": {
+        "year": "1984",
+        "country_code": "NZL"
+      }
+    },
+    {
+      "date": "1985",
+      "value": "3247100",
+      "locator": {
+        "year": "1985",
+        "country_code": "NZL"
+      }
+    },
+    {
+      "date": "1986",
+      "value": "3246300",
+      "locator": {
+        "year": "1986",
+        "country_code": "NZL"
+      }
+    },
+    {
+      "date": "1987",
+      "value": "3274400",
+      "locator": {
+        "year": "1987",
+        "country_code": "NZL"
+      }
+    },
+    {
+      "date": "1988",
+      "value": "3283400",
+      "locator": {
+        "year": "1988",
+        "country_code": "NZL"
+      }
+    },
+    {
+      "date": "1989",
+      "value": "3299200",
+      "locator": {
+        "year": "1989",
+        "country_code": "NZL"
+      }
+    },
+    {
+      "date": "1990",
+      "value": "3329800",
+      "locator": {
+        "year": "1990",
+        "country_code": "NZL"
+      }
+    },
+    {
+      "date": "1991",
+      "value": "3495100",
+      "locator": {
+        "year": "1991",
+        "country_code": "NZL"
+      }
+    },
+    {
+      "date": "1992",
+      "value": "3531700",
+      "locator": {
+        "year": "1992",
+        "country_code": "NZL"
+      }
+    },
+    {
+      "date": "1993",
+      "value": "3572200",
+      "locator": {
+        "year": "1993",
+        "country_code": "NZL"
+      }
+    },
+    {
+      "date": "1994",
+      "value": "3620000",
+      "locator": {
+        "year": "1994",
+        "country_code": "NZL"
+      }
+    },
+    {
+      "date": "1995",
+      "value": "3673400",
+      "locator": {
+        "year": "1995",
+        "country_code": "NZL"
+      }
+    },
+    {
+      "date": "1996",
+      "value": "3732000",
+      "locator": {
+        "year": "1996",
+        "country_code": "NZL"
+      }
+    },
+    {
+      "date": "1997",
+      "value": "3781300",
+      "locator": {
+        "year": "1997",
+        "country_code": "NZL"
+      }
+    },
+    {
+      "date": "1998",
+      "value": "3815000",
+      "locator": {
+        "year": "1998",
+        "country_code": "NZL"
+      }
+    },
+    {
+      "date": "1999",
+      "value": "3835100",
+      "locator": {
+        "year": "1999",
+        "country_code": "NZL"
+      }
+    },
+    {
+      "date": "2000",
+      "value": "3857700",
+      "locator": {
+        "year": "2000",
+        "country_code": "NZL"
+      }
+    },
+    {
+      "date": "2001",
+      "value": "3880500",
+      "locator": {
+        "year": "2001",
+        "country_code": "NZL"
+      }
+    },
+    {
+      "date": "2002",
+      "value": "3948500",
+      "locator": {
+        "year": "2002",
+        "country_code": "NZL"
+      }
+    },
+    {
+      "date": "2003",
+      "value": "4027200",
+      "locator": {
+        "year": "2003",
+        "country_code": "NZL"
+      }
+    },
+    {
+      "date": "2004",
+      "value": "4087500",
+      "locator": {
+        "year": "2004",
+        "country_code": "NZL"
+      }
+    },
+    {
+      "date": "2005",
+      "value": "4133900",
+      "locator": {
+        "year": "2005",
+        "country_code": "NZL"
+      }
+    },
+    {
+      "date": "2006",
+      "value": "4184600",
+      "locator": {
+        "year": "2006",
+        "country_code": "NZL"
+      }
+    },
+    {
+      "date": "2007",
+      "value": "4223800",
+      "locator": {
+        "year": "2007",
+        "country_code": "NZL"
+      }
+    },
+    {
+      "date": "2008",
+      "value": "4259800",
+      "locator": {
+        "year": "2008",
+        "country_code": "NZL"
+      }
+    },
+    {
+      "date": "2009",
+      "value": "4302600",
+      "locator": {
+        "year": "2009",
+        "country_code": "NZL"
+      }
+    },
+    {
+      "date": "2010",
+      "value": "4350700",
+      "locator": {
+        "year": "2010",
+        "country_code": "NZL"
+      }
+    },
+    {
+      "date": "2011",
+      "value": "4384000",
+      "locator": {
+        "year": "2011",
+        "country_code": "NZL"
+      }
+    },
+    {
+      "date": "2012",
+      "value": "4408100",
+      "locator": {
+        "year": "2012",
+        "country_code": "NZL"
+      }
+    },
+    {
+      "date": "2013",
+      "value": "4442100",
+      "locator": {
+        "year": "2013",
+        "country_code": "NZL"
+      }
+    },
+    {
+      "date": "2014",
+      "value": "4516500",
+      "locator": {
+        "year": "2014",
+        "country_code": "NZL"
+      }
+    },
+    {
+      "date": "2015",
+      "value": "4609400",
+      "locator": {
+        "year": "2015",
+        "country_code": "NZL"
+      }
+    },
+    {
+      "date": "2016",
+      "value": "4714100",
+      "locator": {
+        "year": "2016",
+        "country_code": "NZL"
+      }
+    },
+    {
+      "date": "2017",
+      "value": "4813600",
+      "locator": {
+        "year": "2017",
+        "country_code": "NZL"
+      }
+    },
+    {
+      "date": "2018",
+      "value": "4900600",
+      "locator": {
+        "year": "2018",
+        "country_code": "NZL"
+      }
+    },
+    {
+      "date": "2019",
+      "value": "4970300",
+      "locator": {
+        "year": "2019",
+        "country_code": "NZL"
+      }
+    },
+    {
+      "date": "2020",
+      "value": "5072400",
+      "locator": {
+        "year": "2020",
+        "country_code": "NZL"
+      }
+    },
+    {
+      "date": "2021",
+      "value": "5084600",
+      "locator": {
+        "year": "2021",
+        "country_code": "NZL"
+      }
+    },
+    {
+      "date": "2022",
+      "value": "5081700",
+      "locator": {
+        "year": "2022",
+        "country_code": "NZL"
+      }
+    },
+    {
+      "date": "2023",
+      "value": "5200000",
+      "locator": {
+        "year": "2023",
+        "country_code": "NZL"
+      }
+    },
+    {
+      "date": "2024",
+      "value": "5290000",
+      "locator": {
+        "year": "2024",
+        "country_code": "NZL"
+      }
+    },
+    {
+      "date": "2025",
+      "value": "5324700",
+      "locator": {
+        "year": "2025",
+        "country_code": "NZL"
+      }
+    }
+  ]
+}

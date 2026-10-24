@@ -1,0 +1,543 @@
+{
+  "id": "wb_pop_TCA",
+  "name": "Turks and Caicos Islands",
+  "units": "people",
+  "adjustment": "midyear",
+  "nominal_or_real": "count",
+  "frequency": "annual",
+  "source_id": "worldbank_sp_pop_totl",
+  "series_url": "https://data.worldbank.org/indicator/SP.POP.TOTL",
+  "country_code": "TCA",
+  "country_name": "Turks and Caicos Islands",
+  "notes": "World Bank World Development Indicators, SP.POP.TOTL, country code TCA. Midyear population. Published years in this file run from 1960 to 2025.",
+  "points": [
+    {
+      "date": "1960",
+      "value": "5599",
+      "locator": {
+        "year": "1960",
+        "country_code": "TCA"
+      }
+    },
+    {
+      "date": "1961",
+      "value": "5622",
+      "locator": {
+        "year": "1961",
+        "country_code": "TCA"
+      }
+    },
+    {
+      "date": "1962",
+      "value": "5636",
+      "locator": {
+        "year": "1962",
+        "country_code": "TCA"
+      }
+    },
+    {
+      "date": "1963",
+      "value": "5647",
+      "locator": {
+        "year": "1963",
+        "country_code": "TCA"
+      }
+    },
+    {
+      "date": "1964",
+      "value": "5657",
+      "locator": {
+        "year": "1964",
+        "country_code": "TCA"
+      }
+    },
+    {
+      "date": "1965",
+      "value": "5658",
+      "locator": {
+        "year": "1965",
+        "country_code": "TCA"
+      }
+    },
+    {
+      "date": "1966",
+      "value": "5654",
+      "locator": {
+        "year": "1966",
+        "country_code": "TCA"
+      }
+    },
+    {
+      "date": "1967",
+      "value": "5657",
+      "locator": {
+        "year": "1967",
+        "country_code": "TCA"
+      }
+    },
+    {
+      "date": "1968",
+      "value": "5656",
+      "locator": {
+        "year": "1968",
+        "country_code": "TCA"
+      }
+    },
+    {
+      "date": "1969",
+      "value": "5652",
+      "locator": {
+        "year": "1969",
+        "country_code": "TCA"
+      }
+    },
+    {
+      "date": "1970",
+      "value": "5667",
+      "locator": {
+        "year": "1970",
+        "country_code": "TCA"
+      }
+    },
+    {
+      "date": "1971",
+      "value": "5754",
+      "locator": {
+        "year": "1971",
+        "country_code": "TCA"
+      }
+    },
+    {
+      "date": "1972",
+      "value": "5915",
+      "locator": {
+        "year": "1972",
+        "country_code": "TCA"
+      }
+    },
+    {
+      "date": "1973",
+      "value": "6090",
+      "locator": {
+        "year": "1973",
+        "country_code": "TCA"
+      }
+    },
+    {
+      "date": "1974",
+      "value": "6273",
+      "locator": {
+        "year": "1974",
+        "country_code": "TCA"
+      }
+    },
+    {
+      "date": "1975",
+      "value": "6463",
+      "locator": {
+        "year": "1975",
+        "country_code": "TCA"
+      }
+    },
+    {
+      "date": "1976",
+      "value": "6660",
+      "locator": {
+        "year": "1976",
+        "country_code": "TCA"
+      }
+    },
+    {
+      "date": "1977",
+      "value": "6864",
+      "locator": {
+        "year": "1977",
+        "country_code": "TCA"
+      }
+    },
+    {
+      "date": "1978",
+      "value": "7083",
+      "locator": {
+        "year": "1978",
+        "country_code": "TCA"
+      }
+    },
+    {
+      "date": "1979",
+      "value": "7306",
+      "locator": {
+        "year": "1979",
+        "country_code": "TCA"
+      }
+    },
+    {
+      "date": "1980",
+      "value": "7564",
+      "locator": {
+        "year": "1980",
+        "country_code": "TCA"
+      }
+    },
+    {
+      "date": "1981",
+      "value": "7908",
+      "locator": {
+        "year": "1981",
+        "country_code": "TCA"
+      }
+    },
+    {
+      "date": "1982",
+      "value": "8297",
+      "locator": {
+        "year": "1982",
+        "country_code": "TCA"
+      }
+    },
+    {
+      "date": "1983",
+      "value": "8697",
+      "locator": {
+        "year": "1983",
+        "country_code": "TCA"
+      }
+    },
+    {
+      "date": "1984",
+      "value": "9107",
+      "locator": {
+        "year": "1984",
+        "country_code": "TCA"
+      }
+    },
+    {
+      "date": "1985",
+      "value": "9521",
+      "locator": {
+        "year": "1985",
+        "country_code": "TCA"
+      }
+    },
+    {
+      "date": "1986",
+      "value": "9941",
+      "locator": {
+        "year": "1986",
+        "country_code": "TCA"
+      }
+    },
+    {
+      "date": "1987",
+      "value": "10361",
+      "locator": {
+        "year": "1987",
+        "country_code": "TCA"
+      }
+    },
+    {
+      "date": "1988",
+      "value": "10775",
+      "locator": {
+        "year": "1988",
+        "country_code": "TCA"
+      }
+    },
+    {
+      "date": "1989",
+      "value": "11193",
+      "locator": {
+        "year": "1989",
+        "country_code": "TCA"
+      }
+    },
+    {
+      "date": "1990",
+      "value": "11688",
+      "locator": {
+        "year": "1990",
+        "country_code": "TCA"
+      }
+    },
+    {
+      "date": "1991",
+      "value": "12305",
+      "locator": {
+        "year": "1991",
+        "country_code": "TCA"
+      }
+    },
+    {
+      "date": "1992",
+      "value": "12970",
+      "locator": {
+        "year": "1992",
+        "country_code": "TCA"
+      }
+    },
+    {
+      "date": "1993",
+      "value": "13648",
+      "locator": {
+        "year": "1993",
+        "country_code": "TCA"
+      }
+    },
+    {
+      "date": "1994",
+      "value": "14344",
+      "locator": {
+        "year": "1994",
+        "country_code": "TCA"
+      }
+    },
+    {
+      "date": "1995",
+      "value": "15052",
+      "locator": {
+        "year": "1995",
+        "country_code": "TCA"
+      }
+    },
+    {
+      "date": "1996",
+      "value": "15765",
+      "locator": {
+        "year": "1996",
+        "country_code": "TCA"
+      }
+    },
+    {
+      "date": "1997",
+      "value": "16482",
+      "locator": {
+        "year": "1997",
+        "country_code": "TCA"
+      }
+    },
+    {
+      "date": "1998",
+      "value": "17212",
+      "locator": {
+        "year": "1998",
+        "country_code": "TCA"
+      }
+    },
+    {
+      "date": "1999",
+      "value": "17959",
+      "locator": {
+        "year": "1999",
+        "country_code": "TCA"
+      }
+    },
+    {
+      "date": "2000",
+      "value": "18730",
+      "locator": {
+        "year": "2000",
+        "country_code": "TCA"
+      }
+    },
+    {
+      "date": "2001",
+      "value": "19576",
+      "locator": {
+        "year": "2001",
+        "country_code": "TCA"
+      }
+    },
+    {
+      "date": "2002",
+      "value": "20597",
+      "locator": {
+        "year": "2002",
+        "country_code": "TCA"
+      }
+    },
+    {
+      "date": "2003",
+      "value": "21727",
+      "locator": {
+        "year": "2003",
+        "country_code": "TCA"
+      }
+    },
+    {
+      "date": "2004",
+      "value": "22856",
+      "locator": {
+        "year": "2004",
+        "country_code": "TCA"
+      }
+    },
+    {
+      "date": "2005",
+      "value": "23988",
+      "locator": {
+        "year": "2005",
+        "country_code": "TCA"
+      }
+    },
+    {
+      "date": "2006",
+      "value": "25123",
+      "locator": {
+        "year": "2006",
+        "country_code": "TCA"
+      }
+    },
+    {
+      "date": "2007",
+      "value": "26270",
+      "locator": {
+        "year": "2007",
+        "country_code": "TCA"
+      }
+    },
+    {
+      "date": "2008",
+      "value": "27427",
+      "locator": {
+        "year": "2008",
+        "country_code": "TCA"
+      }
+    },
+    {
+      "date": "2009",
+      "value": "28588",
+      "locator": {
+        "year": "2009",
+        "country_code": "TCA"
+      }
+    },
+    {
+      "date": "2010",
+      "value": "29739",
+      "locator": {
+        "year": "2010",
+        "country_code": "TCA"
+      }
+    },
+    {
+      "date": "2011",
+      "value": "30846",
+      "locator": {
+        "year": "2011",
+        "country_code": "TCA"
+      }
+    },
+    {
+      "date": "2012",
+      "value": "32127",
+      "locator": {
+        "year": "2012",
+        "country_code": "TCA"
+      }
+    },
+    {
+      "date": "2013",
+      "value": "33653",
+      "locator": {
+        "year": "2013",
+        "country_code": "TCA"
+      }
+    },
+    {
+      "date": "2014",
+      "value": "35050",
+      "locator": {
+        "year": "2014",
+        "country_code": "TCA"
+      }
+    },
+    {
+      "date": "2015",
+      "value": "36605",
+      "locator": {
+        "year": "2015",
+        "country_code": "TCA"
+      }
+    },
+    {
+      "date": "2016",
+      "value": "38315",
+      "locator": {
+        "year": "2016",
+        "country_code": "TCA"
+      }
+    },
+    {
+      "date": "2017",
+      "value": "39913",
+      "locator": {
+        "year": "2017",
+        "country_code": "TCA"
+      }
+    },
+    {
+      "date": "2018",
+      "value": "41559",
+      "locator": {
+        "year": "2018",
+        "country_code": "TCA"
+      }
+    },
+    {
+      "date": "2019",
+      "value": "43166",
+      "locator": {
+        "year": "2019",
+        "country_code": "TCA"
+      }
+    },
+    {
+      "date": "2020",
+      "value": "44386",
+      "locator": {
+        "year": "2020",
+        "country_code": "TCA"
+      }
+    },
+    {
+      "date": "2021",
+      "value": "45243",
+      "locator": {
+        "year": "2021",
+        "country_code": "TCA"
+      }
+    },
+    {
+      "date": "2022",
+      "value": "45847",
+      "locator": {
+        "year": "2022",
+        "country_code": "TCA"
+      }
+    },
+    {
+      "date": "2023",
+      "value": "46198",
+      "locator": {
+        "year": "2023",
+        "country_code": "TCA"
+      }
+    },
+    {
+      "date": "2024",
+      "value": "46535",
+      "locator": {
+        "year": "2024",
+        "country_code": "TCA"
+      }
+    },
+    {
+      "date": "2025",
+      "value": "46855",
+      "locator": {
+        "year": "2025",
+        "country_code": "TCA"
+      }
+    }
+  ]
+}

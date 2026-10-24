@@ -17,7 +17,7 @@ export default function ChartDatasets({ charts }: { charts: ChartSpec[] }) {
       description: chart.notes,
       url: `https://letstalkstatistics.com/c/${chart.id}`,
       isAccessibleForFree: true,
-      spatialCoverage: { '@type': 'Place', name: 'United States' },
+      spatialCoverage: { '@type': 'Place', name: chart.country_name || 'United States' },
       temporalCoverage: dates.length ? `${dates[0]}/${dates[dates.length - 1]}` : undefined,
       creator: creators.map((source) => ({
         '@type': 'Organization',

@@ -1,0 +1,543 @@
+{
+  "id": "wb_pop_GNB",
+  "name": "Guinea-Bissau",
+  "units": "people",
+  "adjustment": "midyear",
+  "nominal_or_real": "count",
+  "frequency": "annual",
+  "source_id": "worldbank_sp_pop_totl",
+  "series_url": "https://data.worldbank.org/indicator/SP.POP.TOTL",
+  "country_code": "GNB",
+  "country_name": "Guinea-Bissau",
+  "notes": "World Bank World Development Indicators, SP.POP.TOTL, country code GNB. Midyear population. Published years in this file run from 1960 to 2025.",
+  "points": [
+    {
+      "date": "1960",
+      "value": "577633",
+      "locator": {
+        "year": "1960",
+        "country_code": "GNB"
+      }
+    },
+    {
+      "date": "1961",
+      "value": "582532",
+      "locator": {
+        "year": "1961",
+        "country_code": "GNB"
+      }
+    },
+    {
+      "date": "1962",
+      "value": "589474",
+      "locator": {
+        "year": "1962",
+        "country_code": "GNB"
+      }
+    },
+    {
+      "date": "1963",
+      "value": "594418",
+      "locator": {
+        "year": "1963",
+        "country_code": "GNB"
+      }
+    },
+    {
+      "date": "1964",
+      "value": "588543",
+      "locator": {
+        "year": "1964",
+        "country_code": "GNB"
+      }
+    },
+    {
+      "date": "1965",
+      "value": "575005",
+      "locator": {
+        "year": "1965",
+        "country_code": "GNB"
+      }
+    },
+    {
+      "date": "1966",
+      "value": "566908",
+      "locator": {
+        "year": "1966",
+        "country_code": "GNB"
+      }
+    },
+    {
+      "date": "1967",
+      "value": "569011",
+      "locator": {
+        "year": "1967",
+        "country_code": "GNB"
+      }
+    },
+    {
+      "date": "1968",
+      "value": "578170",
+      "locator": {
+        "year": "1968",
+        "country_code": "GNB"
+      }
+    },
+    {
+      "date": "1969",
+      "value": "581610",
+      "locator": {
+        "year": "1969",
+        "country_code": "GNB"
+      }
+    },
+    {
+      "date": "1970",
+      "value": "584403",
+      "locator": {
+        "year": "1970",
+        "country_code": "GNB"
+      }
+    },
+    {
+      "date": "1971",
+      "value": "586221",
+      "locator": {
+        "year": "1971",
+        "country_code": "GNB"
+      }
+    },
+    {
+      "date": "1972",
+      "value": "586620",
+      "locator": {
+        "year": "1972",
+        "country_code": "GNB"
+      }
+    },
+    {
+      "date": "1973",
+      "value": "592808",
+      "locator": {
+        "year": "1973",
+        "country_code": "GNB"
+      }
+    },
+    {
+      "date": "1974",
+      "value": "613338",
+      "locator": {
+        "year": "1974",
+        "country_code": "GNB"
+      }
+    },
+    {
+      "date": "1975",
+      "value": "650966",
+      "locator": {
+        "year": "1975",
+        "country_code": "GNB"
+      }
+    },
+    {
+      "date": "1976",
+      "value": "694191",
+      "locator": {
+        "year": "1976",
+        "country_code": "GNB"
+      }
+    },
+    {
+      "date": "1977",
+      "value": "741789",
+      "locator": {
+        "year": "1977",
+        "country_code": "GNB"
+      }
+    },
+    {
+      "date": "1978",
+      "value": "791694",
+      "locator": {
+        "year": "1978",
+        "country_code": "GNB"
+      }
+    },
+    {
+      "date": "1979",
+      "value": "819867",
+      "locator": {
+        "year": "1979",
+        "country_code": "GNB"
+      }
+    },
+    {
+      "date": "1980",
+      "value": "829303",
+      "locator": {
+        "year": "1980",
+        "country_code": "GNB"
+      }
+    },
+    {
+      "date": "1981",
+      "value": "842432",
+      "locator": {
+        "year": "1981",
+        "country_code": "GNB"
+      }
+    },
+    {
+      "date": "1982",
+      "value": "855891",
+      "locator": {
+        "year": "1982",
+        "country_code": "GNB"
+      }
+    },
+    {
+      "date": "1983",
+      "value": "869592",
+      "locator": {
+        "year": "1983",
+        "country_code": "GNB"
+      }
+    },
+    {
+      "date": "1984",
+      "value": "883519",
+      "locator": {
+        "year": "1984",
+        "country_code": "GNB"
+      }
+    },
+    {
+      "date": "1985",
+      "value": "897697",
+      "locator": {
+        "year": "1985",
+        "country_code": "GNB"
+      }
+    },
+    {
+      "date": "1986",
+      "value": "912126",
+      "locator": {
+        "year": "1986",
+        "country_code": "GNB"
+      }
+    },
+    {
+      "date": "1987",
+      "value": "926862",
+      "locator": {
+        "year": "1987",
+        "country_code": "GNB"
+      }
+    },
+    {
+      "date": "1988",
+      "value": "942061",
+      "locator": {
+        "year": "1988",
+        "country_code": "GNB"
+      }
+    },
+    {
+      "date": "1989",
+      "value": "957789",
+      "locator": {
+        "year": "1989",
+        "country_code": "GNB"
+      }
+    },
+    {
+      "date": "1990",
+      "value": "973669",
+      "locator": {
+        "year": "1990",
+        "country_code": "GNB"
+      }
+    },
+    {
+      "date": "1991",
+      "value": "994639",
+      "locator": {
+        "year": "1991",
+        "country_code": "GNB"
+      }
+    },
+    {
+      "date": "1992",
+      "value": "1024356",
+      "locator": {
+        "year": "1992",
+        "country_code": "GNB"
+      }
+    },
+    {
+      "date": "1993",
+      "value": "1058745",
+      "locator": {
+        "year": "1993",
+        "country_code": "GNB"
+      }
+    },
+    {
+      "date": "1994",
+      "value": "1092031",
+      "locator": {
+        "year": "1994",
+        "country_code": "GNB"
+      }
+    },
+    {
+      "date": "1995",
+      "value": "1119949",
+      "locator": {
+        "year": "1995",
+        "country_code": "GNB"
+      }
+    },
+    {
+      "date": "1996",
+      "value": "1143535",
+      "locator": {
+        "year": "1996",
+        "country_code": "GNB"
+      }
+    },
+    {
+      "date": "1997",
+      "value": "1165545",
+      "locator": {
+        "year": "1997",
+        "country_code": "GNB"
+      }
+    },
+    {
+      "date": "1998",
+      "value": "1187473",
+      "locator": {
+        "year": "1998",
+        "country_code": "GNB"
+      }
+    },
+    {
+      "date": "1999",
+      "value": "1210206",
+      "locator": {
+        "year": "1999",
+        "country_code": "GNB"
+      }
+    },
+    {
+      "date": "2000",
+      "value": "1234741",
+      "locator": {
+        "year": "2000",
+        "country_code": "GNB"
+      }
+    },
+    {
+      "date": "2001",
+      "value": "1261273",
+      "locator": {
+        "year": "2001",
+        "country_code": "GNB"
+      }
+    },
+    {
+      "date": "2002",
+      "value": "1289307",
+      "locator": {
+        "year": "2002",
+        "country_code": "GNB"
+      }
+    },
+    {
+      "date": "2003",
+      "value": "1318806",
+      "locator": {
+        "year": "2003",
+        "country_code": "GNB"
+      }
+    },
+    {
+      "date": "2004",
+      "value": "1349563",
+      "locator": {
+        "year": "2004",
+        "country_code": "GNB"
+      }
+    },
+    {
+      "date": "2005",
+      "value": "1381585",
+      "locator": {
+        "year": "2005",
+        "country_code": "GNB"
+      }
+    },
+    {
+      "date": "2006",
+      "value": "1415303",
+      "locator": {
+        "year": "2006",
+        "country_code": "GNB"
+      }
+    },
+    {
+      "date": "2007",
+      "value": "1450986",
+      "locator": {
+        "year": "2007",
+        "country_code": "GNB"
+      }
+    },
+    {
+      "date": "2008",
+      "value": "1488054",
+      "locator": {
+        "year": "2008",
+        "country_code": "GNB"
+      }
+    },
+    {
+      "date": "2009",
+      "value": "1526377",
+      "locator": {
+        "year": "2009",
+        "country_code": "GNB"
+      }
+    },
+    {
+      "date": "2010",
+      "value": "1566347",
+      "locator": {
+        "year": "2010",
+        "country_code": "GNB"
+      }
+    },
+    {
+      "date": "2011",
+      "value": "1608076",
+      "locator": {
+        "year": "2011",
+        "country_code": "GNB"
+      }
+    },
+    {
+      "date": "2012",
+      "value": "1651417",
+      "locator": {
+        "year": "2012",
+        "country_code": "GNB"
+      }
+    },
+    {
+      "date": "2013",
+      "value": "1695973",
+      "locator": {
+        "year": "2013",
+        "country_code": "GNB"
+      }
+    },
+    {
+      "date": "2014",
+      "value": "1741122",
+      "locator": {
+        "year": "2014",
+        "country_code": "GNB"
+      }
+    },
+    {
+      "date": "2015",
+      "value": "1786457",
+      "locator": {
+        "year": "2015",
+        "country_code": "GNB"
+      }
+    },
+    {
+      "date": "2016",
+      "value": "1831893",
+      "locator": {
+        "year": "2016",
+        "country_code": "GNB"
+      }
+    },
+    {
+      "date": "2017",
+      "value": "1877072",
+      "locator": {
+        "year": "2017",
+        "country_code": "GNB"
+      }
+    },
+    {
+      "date": "2018",
+      "value": "1922168",
+      "locator": {
+        "year": "2018",
+        "country_code": "GNB"
+      }
+    },
+    {
+      "date": "2019",
+      "value": "1967696",
+      "locator": {
+        "year": "2019",
+        "country_code": "GNB"
+      }
+    },
+    {
+      "date": "2020",
+      "value": "2013255",
+      "locator": {
+        "year": "2020",
+        "country_code": "GNB"
+      }
+    },
+    {
+      "date": "2021",
+      "value": "2058841",
+      "locator": {
+        "year": "2021",
+        "country_code": "GNB"
+      }
+    },
+    {
+      "date": "2022",
+      "value": "2105529",
+      "locator": {
+        "year": "2022",
+        "country_code": "GNB"
+      }
+    },
+    {
+      "date": "2023",
+      "value": "2153339",
+      "locator": {
+        "year": "2023",
+        "country_code": "GNB"
+      }
+    },
+    {
+      "date": "2024",
+      "value": "2201352",
+      "locator": {
+        "year": "2024",
+        "country_code": "GNB"
+      }
+    },
+    {
+      "date": "2025",
+      "value": "2249515",
+      "locator": {
+        "year": "2025",
+        "country_code": "GNB"
+      }
+    }
+  ]
+}

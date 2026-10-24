@@ -1,0 +1,543 @@
+{
+  "id": "wb_pop_STP",
+  "name": "Sao Tome and Principe",
+  "units": "people",
+  "adjustment": "midyear",
+  "nominal_or_real": "count",
+  "frequency": "annual",
+  "source_id": "worldbank_sp_pop_totl",
+  "series_url": "https://data.worldbank.org/indicator/SP.POP.TOTL",
+  "country_code": "STP",
+  "country_name": "Sao Tome and Principe",
+  "notes": "World Bank World Development Indicators, SP.POP.TOTL, country code STP. Midyear population. Published years in this file run from 1960 to 2025.",
+  "points": [
+    {
+      "date": "1960",
+      "value": "68012",
+      "locator": {
+        "year": "1960",
+        "country_code": "STP"
+      }
+    },
+    {
+      "date": "1961",
+      "value": "68707",
+      "locator": {
+        "year": "1961",
+        "country_code": "STP"
+      }
+    },
+    {
+      "date": "1962",
+      "value": "69403",
+      "locator": {
+        "year": "1962",
+        "country_code": "STP"
+      }
+    },
+    {
+      "date": "1963",
+      "value": "70112",
+      "locator": {
+        "year": "1963",
+        "country_code": "STP"
+      }
+    },
+    {
+      "date": "1964",
+      "value": "70865",
+      "locator": {
+        "year": "1964",
+        "country_code": "STP"
+      }
+    },
+    {
+      "date": "1965",
+      "value": "71680",
+      "locator": {
+        "year": "1965",
+        "country_code": "STP"
+      }
+    },
+    {
+      "date": "1966",
+      "value": "72576",
+      "locator": {
+        "year": "1966",
+        "country_code": "STP"
+      }
+    },
+    {
+      "date": "1967",
+      "value": "73596",
+      "locator": {
+        "year": "1967",
+        "country_code": "STP"
+      }
+    },
+    {
+      "date": "1968",
+      "value": "74765",
+      "locator": {
+        "year": "1968",
+        "country_code": "STP"
+      }
+    },
+    {
+      "date": "1969",
+      "value": "76083",
+      "locator": {
+        "year": "1969",
+        "country_code": "STP"
+      }
+    },
+    {
+      "date": "1970",
+      "value": "77626",
+      "locator": {
+        "year": "1970",
+        "country_code": "STP"
+      }
+    },
+    {
+      "date": "1971",
+      "value": "79330",
+      "locator": {
+        "year": "1971",
+        "country_code": "STP"
+      }
+    },
+    {
+      "date": "1972",
+      "value": "81041",
+      "locator": {
+        "year": "1972",
+        "country_code": "STP"
+      }
+    },
+    {
+      "date": "1973",
+      "value": "82798",
+      "locator": {
+        "year": "1973",
+        "country_code": "STP"
+      }
+    },
+    {
+      "date": "1974",
+      "value": "84672",
+      "locator": {
+        "year": "1974",
+        "country_code": "STP"
+      }
+    },
+    {
+      "date": "1975",
+      "value": "86708",
+      "locator": {
+        "year": "1975",
+        "country_code": "STP"
+      }
+    },
+    {
+      "date": "1976",
+      "value": "88922",
+      "locator": {
+        "year": "1976",
+        "country_code": "STP"
+      }
+    },
+    {
+      "date": "1977",
+      "value": "91301",
+      "locator": {
+        "year": "1977",
+        "country_code": "STP"
+      }
+    },
+    {
+      "date": "1978",
+      "value": "93794",
+      "locator": {
+        "year": "1978",
+        "country_code": "STP"
+      }
+    },
+    {
+      "date": "1979",
+      "value": "96252",
+      "locator": {
+        "year": "1979",
+        "country_code": "STP"
+      }
+    },
+    {
+      "date": "1980",
+      "value": "98544",
+      "locator": {
+        "year": "1980",
+        "country_code": "STP"
+      }
+    },
+    {
+      "date": "1981",
+      "value": "100615",
+      "locator": {
+        "year": "1981",
+        "country_code": "STP"
+      }
+    },
+    {
+      "date": "1982",
+      "value": "102508",
+      "locator": {
+        "year": "1982",
+        "country_code": "STP"
+      }
+    },
+    {
+      "date": "1983",
+      "value": "104380",
+      "locator": {
+        "year": "1983",
+        "country_code": "STP"
+      }
+    },
+    {
+      "date": "1984",
+      "value": "106394",
+      "locator": {
+        "year": "1984",
+        "country_code": "STP"
+      }
+    },
+    {
+      "date": "1985",
+      "value": "108658",
+      "locator": {
+        "year": "1985",
+        "country_code": "STP"
+      }
+    },
+    {
+      "date": "1986",
+      "value": "111150",
+      "locator": {
+        "year": "1986",
+        "country_code": "STP"
+      }
+    },
+    {
+      "date": "1987",
+      "value": "113919",
+      "locator": {
+        "year": "1987",
+        "country_code": "STP"
+      }
+    },
+    {
+      "date": "1988",
+      "value": "116939",
+      "locator": {
+        "year": "1988",
+        "country_code": "STP"
+      }
+    },
+    {
+      "date": "1989",
+      "value": "119979",
+      "locator": {
+        "year": "1989",
+        "country_code": "STP"
+      }
+    },
+    {
+      "date": "1990",
+      "value": "122980",
+      "locator": {
+        "year": "1990",
+        "country_code": "STP"
+      }
+    },
+    {
+      "date": "1991",
+      "value": "125697",
+      "locator": {
+        "year": "1991",
+        "country_code": "STP"
+      }
+    },
+    {
+      "date": "1992",
+      "value": "128110",
+      "locator": {
+        "year": "1992",
+        "country_code": "STP"
+      }
+    },
+    {
+      "date": "1993",
+      "value": "130467",
+      "locator": {
+        "year": "1993",
+        "country_code": "STP"
+      }
+    },
+    {
+      "date": "1994",
+      "value": "132732",
+      "locator": {
+        "year": "1994",
+        "country_code": "STP"
+      }
+    },
+    {
+      "date": "1995",
+      "value": "134895",
+      "locator": {
+        "year": "1995",
+        "country_code": "STP"
+      }
+    },
+    {
+      "date": "1996",
+      "value": "136962",
+      "locator": {
+        "year": "1996",
+        "country_code": "STP"
+      }
+    },
+    {
+      "date": "1997",
+      "value": "138922",
+      "locator": {
+        "year": "1997",
+        "country_code": "STP"
+      }
+    },
+    {
+      "date": "1998",
+      "value": "140751",
+      "locator": {
+        "year": "1998",
+        "country_code": "STP"
+      }
+    },
+    {
+      "date": "1999",
+      "value": "142442",
+      "locator": {
+        "year": "1999",
+        "country_code": "STP"
+      }
+    },
+    {
+      "date": "2000",
+      "value": "144018",
+      "locator": {
+        "year": "2000",
+        "country_code": "STP"
+      }
+    },
+    {
+      "date": "2001",
+      "value": "146375",
+      "locator": {
+        "year": "2001",
+        "country_code": "STP"
+      }
+    },
+    {
+      "date": "2002",
+      "value": "149922",
+      "locator": {
+        "year": "2002",
+        "country_code": "STP"
+      }
+    },
+    {
+      "date": "2003",
+      "value": "153814",
+      "locator": {
+        "year": "2003",
+        "country_code": "STP"
+      }
+    },
+    {
+      "date": "2004",
+      "value": "157705",
+      "locator": {
+        "year": "2004",
+        "country_code": "STP"
+      }
+    },
+    {
+      "date": "2005",
+      "value": "161639",
+      "locator": {
+        "year": "2005",
+        "country_code": "STP"
+      }
+    },
+    {
+      "date": "2006",
+      "value": "165638",
+      "locator": {
+        "year": "2006",
+        "country_code": "STP"
+      }
+    },
+    {
+      "date": "2007",
+      "value": "169700",
+      "locator": {
+        "year": "2007",
+        "country_code": "STP"
+      }
+    },
+    {
+      "date": "2008",
+      "value": "173793",
+      "locator": {
+        "year": "2008",
+        "country_code": "STP"
+      }
+    },
+    {
+      "date": "2009",
+      "value": "177853",
+      "locator": {
+        "year": "2009",
+        "country_code": "STP"
+      }
+    },
+    {
+      "date": "2010",
+      "value": "181802",
+      "locator": {
+        "year": "2010",
+        "country_code": "STP"
+      }
+    },
+    {
+      "date": "2011",
+      "value": "185649",
+      "locator": {
+        "year": "2011",
+        "country_code": "STP"
+      }
+    },
+    {
+      "date": "2012",
+      "value": "189439",
+      "locator": {
+        "year": "2012",
+        "country_code": "STP"
+      }
+    },
+    {
+      "date": "2013",
+      "value": "193148",
+      "locator": {
+        "year": "2013",
+        "country_code": "STP"
+      }
+    },
+    {
+      "date": "2014",
+      "value": "196767",
+      "locator": {
+        "year": "2014",
+        "country_code": "STP"
+      }
+    },
+    {
+      "date": "2015",
+      "value": "200291",
+      "locator": {
+        "year": "2015",
+        "country_code": "STP"
+      }
+    },
+    {
+      "date": "2016",
+      "value": "203689",
+      "locator": {
+        "year": "2016",
+        "country_code": "STP"
+      }
+    },
+    {
+      "date": "2017",
+      "value": "206970",
+      "locator": {
+        "year": "2017",
+        "country_code": "STP"
+      }
+    },
+    {
+      "date": "2018",
+      "value": "210187",
+      "locator": {
+        "year": "2018",
+        "country_code": "STP"
+      }
+    },
+    {
+      "date": "2019",
+      "value": "213392",
+      "locator": {
+        "year": "2019",
+        "country_code": "STP"
+      }
+    },
+    {
+      "date": "2020",
+      "value": "217435",
+      "locator": {
+        "year": "2020",
+        "country_code": "STP"
+      }
+    },
+    {
+      "date": "2021",
+      "value": "221961",
+      "locator": {
+        "year": "2021",
+        "country_code": "STP"
+      }
+    },
+    {
+      "date": "2022",
+      "value": "226305",
+      "locator": {
+        "year": "2022",
+        "country_code": "STP"
+      }
+    },
+    {
+      "date": "2023",
+      "value": "230871",
+      "locator": {
+        "year": "2023",
+        "country_code": "STP"
+      }
+    },
+    {
+      "date": "2024",
+      "value": "235536",
+      "locator": {
+        "year": "2024",
+        "country_code": "STP"
+      }
+    },
+    {
+      "date": "2025",
+      "value": "240254",
+      "locator": {
+        "year": "2025",
+        "country_code": "STP"
+      }
+    }
+  ]
+}

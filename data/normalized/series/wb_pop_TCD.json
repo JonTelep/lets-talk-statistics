@@ -1,0 +1,543 @@
+{
+  "id": "wb_pop_TCD",
+  "name": "Chad",
+  "units": "people",
+  "adjustment": "midyear",
+  "nominal_or_real": "count",
+  "frequency": "annual",
+  "source_id": "worldbank_sp_pop_totl",
+  "series_url": "https://data.worldbank.org/indicator/SP.POP.TOTL",
+  "country_code": "TCD",
+  "country_name": "Chad",
+  "notes": "World Bank World Development Indicators, SP.POP.TOTL, country code TCD. Midyear population. Published years in this file run from 1960 to 2025.",
+  "points": [
+    {
+      "date": "1960",
+      "value": "3049838",
+      "locator": {
+        "year": "1960",
+        "country_code": "TCD"
+      }
+    },
+    {
+      "date": "1961",
+      "value": "3111947",
+      "locator": {
+        "year": "1961",
+        "country_code": "TCD"
+      }
+    },
+    {
+      "date": "1962",
+      "value": "3175598",
+      "locator": {
+        "year": "1962",
+        "country_code": "TCD"
+      }
+    },
+    {
+      "date": "1963",
+      "value": "3240905",
+      "locator": {
+        "year": "1963",
+        "country_code": "TCD"
+      }
+    },
+    {
+      "date": "1964",
+      "value": "3307479",
+      "locator": {
+        "year": "1964",
+        "country_code": "TCD"
+      }
+    },
+    {
+      "date": "1965",
+      "value": "3374220",
+      "locator": {
+        "year": "1965",
+        "country_code": "TCD"
+      }
+    },
+    {
+      "date": "1966",
+      "value": "3440903",
+      "locator": {
+        "year": "1966",
+        "country_code": "TCD"
+      }
+    },
+    {
+      "date": "1967",
+      "value": "3508512",
+      "locator": {
+        "year": "1967",
+        "country_code": "TCD"
+      }
+    },
+    {
+      "date": "1968",
+      "value": "3578231",
+      "locator": {
+        "year": "1968",
+        "country_code": "TCD"
+      }
+    },
+    {
+      "date": "1969",
+      "value": "3651113",
+      "locator": {
+        "year": "1969",
+        "country_code": "TCD"
+      }
+    },
+    {
+      "date": "1970",
+      "value": "3727828",
+      "locator": {
+        "year": "1970",
+        "country_code": "TCD"
+      }
+    },
+    {
+      "date": "1971",
+      "value": "3807316",
+      "locator": {
+        "year": "1971",
+        "country_code": "TCD"
+      }
+    },
+    {
+      "date": "1972",
+      "value": "3893252",
+      "locator": {
+        "year": "1972",
+        "country_code": "TCD"
+      }
+    },
+    {
+      "date": "1973",
+      "value": "3985909",
+      "locator": {
+        "year": "1973",
+        "country_code": "TCD"
+      }
+    },
+    {
+      "date": "1974",
+      "value": "4078356",
+      "locator": {
+        "year": "1974",
+        "country_code": "TCD"
+      }
+    },
+    {
+      "date": "1975",
+      "value": "4167234",
+      "locator": {
+        "year": "1975",
+        "country_code": "TCD"
+      }
+    },
+    {
+      "date": "1976",
+      "value": "4251297",
+      "locator": {
+        "year": "1976",
+        "country_code": "TCD"
+      }
+    },
+    {
+      "date": "1977",
+      "value": "4331667",
+      "locator": {
+        "year": "1977",
+        "country_code": "TCD"
+      }
+    },
+    {
+      "date": "1978",
+      "value": "4411366",
+      "locator": {
+        "year": "1978",
+        "country_code": "TCD"
+      }
+    },
+    {
+      "date": "1979",
+      "value": "4505384",
+      "locator": {
+        "year": "1979",
+        "country_code": "TCD"
+      }
+    },
+    {
+      "date": "1980",
+      "value": "4515453",
+      "locator": {
+        "year": "1980",
+        "country_code": "TCD"
+      }
+    },
+    {
+      "date": "1981",
+      "value": "4520959",
+      "locator": {
+        "year": "1981",
+        "country_code": "TCD"
+      }
+    },
+    {
+      "date": "1982",
+      "value": "4738483",
+      "locator": {
+        "year": "1982",
+        "country_code": "TCD"
+      }
+    },
+    {
+      "date": "1983",
+      "value": "4979130",
+      "locator": {
+        "year": "1983",
+        "country_code": "TCD"
+      }
+    },
+    {
+      "date": "1984",
+      "value": "5045145",
+      "locator": {
+        "year": "1984",
+        "country_code": "TCD"
+      }
+    },
+    {
+      "date": "1985",
+      "value": "5096269",
+      "locator": {
+        "year": "1985",
+        "country_code": "TCD"
+      }
+    },
+    {
+      "date": "1986",
+      "value": "5251069",
+      "locator": {
+        "year": "1986",
+        "country_code": "TCD"
+      }
+    },
+    {
+      "date": "1987",
+      "value": "5438309",
+      "locator": {
+        "year": "1987",
+        "country_code": "TCD"
+      }
+    },
+    {
+      "date": "1988",
+      "value": "5625602",
+      "locator": {
+        "year": "1988",
+        "country_code": "TCD"
+      }
+    },
+    {
+      "date": "1989",
+      "value": "5819586",
+      "locator": {
+        "year": "1989",
+        "country_code": "TCD"
+      }
+    },
+    {
+      "date": "1990",
+      "value": "5982833",
+      "locator": {
+        "year": "1990",
+        "country_code": "TCD"
+      }
+    },
+    {
+      "date": "1991",
+      "value": "6205676",
+      "locator": {
+        "year": "1991",
+        "country_code": "TCD"
+      }
+    },
+    {
+      "date": "1992",
+      "value": "6474656",
+      "locator": {
+        "year": "1992",
+        "country_code": "TCD"
+      }
+    },
+    {
+      "date": "1993",
+      "value": "6629146",
+      "locator": {
+        "year": "1993",
+        "country_code": "TCD"
+      }
+    },
+    {
+      "date": "1994",
+      "value": "6783450",
+      "locator": {
+        "year": "1994",
+        "country_code": "TCD"
+      }
+    },
+    {
+      "date": "1995",
+      "value": "7089064",
+      "locator": {
+        "year": "1995",
+        "country_code": "TCD"
+      }
+    },
+    {
+      "date": "1996",
+      "value": "7410108",
+      "locator": {
+        "year": "1996",
+        "country_code": "TCD"
+      }
+    },
+    {
+      "date": "1997",
+      "value": "7670366",
+      "locator": {
+        "year": "1997",
+        "country_code": "TCD"
+      }
+    },
+    {
+      "date": "1998",
+      "value": "7938840",
+      "locator": {
+        "year": "1998",
+        "country_code": "TCD"
+      }
+    },
+    {
+      "date": "1999",
+      "value": "8222705",
+      "locator": {
+        "year": "1999",
+        "country_code": "TCD"
+      }
+    },
+    {
+      "date": "2000",
+      "value": "8512093",
+      "locator": {
+        "year": "2000",
+        "country_code": "TCD"
+      }
+    },
+    {
+      "date": "2001",
+      "value": "8804124",
+      "locator": {
+        "year": "2001",
+        "country_code": "TCD"
+      }
+    },
+    {
+      "date": "2002",
+      "value": "9116192",
+      "locator": {
+        "year": "2002",
+        "country_code": "TCD"
+      }
+    },
+    {
+      "date": "2003",
+      "value": "9487833",
+      "locator": {
+        "year": "2003",
+        "country_code": "TCD"
+      }
+    },
+    {
+      "date": "2004",
+      "value": "9920036",
+      "locator": {
+        "year": "2004",
+        "country_code": "TCD"
+      }
+    },
+    {
+      "date": "2005",
+      "value": "10328092",
+      "locator": {
+        "year": "2005",
+        "country_code": "TCD"
+      }
+    },
+    {
+      "date": "2006",
+      "value": "10706424",
+      "locator": {
+        "year": "2006",
+        "country_code": "TCD"
+      }
+    },
+    {
+      "date": "2007",
+      "value": "11081660",
+      "locator": {
+        "year": "2007",
+        "country_code": "TCD"
+      }
+    },
+    {
+      "date": "2008",
+      "value": "11476296",
+      "locator": {
+        "year": "2008",
+        "country_code": "TCD"
+      }
+    },
+    {
+      "date": "2009",
+      "value": "11893754",
+      "locator": {
+        "year": "2009",
+        "country_code": "TCD"
+      }
+    },
+    {
+      "date": "2010",
+      "value": "12312575",
+      "locator": {
+        "year": "2010",
+        "country_code": "TCD"
+      }
+    },
+    {
+      "date": "2011",
+      "value": "12754997",
+      "locator": {
+        "year": "2011",
+        "country_code": "TCD"
+      }
+    },
+    {
+      "date": "2012",
+      "value": "13210998",
+      "locator": {
+        "year": "2012",
+        "country_code": "TCD"
+      }
+    },
+    {
+      "date": "2013",
+      "value": "13691079",
+      "locator": {
+        "year": "2013",
+        "country_code": "TCD"
+      }
+    },
+    {
+      "date": "2014",
+      "value": "14188678",
+      "locator": {
+        "year": "2014",
+        "country_code": "TCD"
+      }
+    },
+    {
+      "date": "2015",
+      "value": "14647621",
+      "locator": {
+        "year": "2015",
+        "country_code": "TCD"
+      }
+    },
+    {
+      "date": "2016",
+      "value": "15114655",
+      "locator": {
+        "year": "2016",
+        "country_code": "TCD"
+      }
+    },
+    {
+      "date": "2017",
+      "value": "15622759",
+      "locator": {
+        "year": "2017",
+        "country_code": "TCD"
+      }
+    },
+    {
+      "date": "2018",
+      "value": "16156531",
+      "locator": {
+        "year": "2018",
+        "country_code": "TCD"
+      }
+    },
+    {
+      "date": "2019",
+      "value": "16685223",
+      "locator": {
+        "year": "2019",
+        "country_code": "TCD"
+      }
+    },
+    {
+      "date": "2020",
+      "value": "17224679",
+      "locator": {
+        "year": "2020",
+        "country_code": "TCD"
+      }
+    },
+    {
+      "date": "2021",
+      "value": "17828273",
+      "locator": {
+        "year": "2021",
+        "country_code": "TCD"
+      }
+    },
+    {
+      "date": "2022",
+      "value": "18455316",
+      "locator": {
+        "year": "2022",
+        "country_code": "TCD"
+      }
+    },
+    {
+      "date": "2023",
+      "value": "19319064",
+      "locator": {
+        "year": "2023",
+        "country_code": "TCD"
+      }
+    },
+    {
+      "date": "2024",
+      "value": "20299123",
+      "locator": {
+        "year": "2024",
+        "country_code": "TCD"
+      }
+    },
+    {
+      "date": "2025",
+      "value": "21003705",
+      "locator": {
+        "year": "2025",
+        "country_code": "TCD"
+      }
+    }
+  ]
+}

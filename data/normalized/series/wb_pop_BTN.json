@@ -1,0 +1,543 @@
+{
+  "id": "wb_pop_BTN",
+  "name": "Bhutan",
+  "units": "people",
+  "adjustment": "midyear",
+  "nominal_or_real": "count",
+  "frequency": "annual",
+  "source_id": "worldbank_sp_pop_totl",
+  "series_url": "https://data.worldbank.org/indicator/SP.POP.TOTL",
+  "country_code": "BTN",
+  "country_name": "Bhutan",
+  "notes": "World Bank World Development Indicators, SP.POP.TOTL, country code BTN. Midyear population. Published years in this file run from 1960 to 2025.",
+  "points": [
+    {
+      "date": "1960",
+      "value": "224084",
+      "locator": {
+        "year": "1960",
+        "country_code": "BTN"
+      }
+    },
+    {
+      "date": "1961",
+      "value": "230602",
+      "locator": {
+        "year": "1961",
+        "country_code": "BTN"
+      }
+    },
+    {
+      "date": "1962",
+      "value": "237636",
+      "locator": {
+        "year": "1962",
+        "country_code": "BTN"
+      }
+    },
+    {
+      "date": "1963",
+      "value": "245156",
+      "locator": {
+        "year": "1963",
+        "country_code": "BTN"
+      }
+    },
+    {
+      "date": "1964",
+      "value": "252987",
+      "locator": {
+        "year": "1964",
+        "country_code": "BTN"
+      }
+    },
+    {
+      "date": "1965",
+      "value": "261200",
+      "locator": {
+        "year": "1965",
+        "country_code": "BTN"
+      }
+    },
+    {
+      "date": "1966",
+      "value": "269820",
+      "locator": {
+        "year": "1966",
+        "country_code": "BTN"
+      }
+    },
+    {
+      "date": "1967",
+      "value": "278852",
+      "locator": {
+        "year": "1967",
+        "country_code": "BTN"
+      }
+    },
+    {
+      "date": "1968",
+      "value": "288311",
+      "locator": {
+        "year": "1968",
+        "country_code": "BTN"
+      }
+    },
+    {
+      "date": "1969",
+      "value": "298214",
+      "locator": {
+        "year": "1969",
+        "country_code": "BTN"
+      }
+    },
+    {
+      "date": "1970",
+      "value": "308528",
+      "locator": {
+        "year": "1970",
+        "country_code": "BTN"
+      }
+    },
+    {
+      "date": "1971",
+      "value": "319211",
+      "locator": {
+        "year": "1971",
+        "country_code": "BTN"
+      }
+    },
+    {
+      "date": "1972",
+      "value": "330264",
+      "locator": {
+        "year": "1972",
+        "country_code": "BTN"
+      }
+    },
+    {
+      "date": "1973",
+      "value": "341705",
+      "locator": {
+        "year": "1973",
+        "country_code": "BTN"
+      }
+    },
+    {
+      "date": "1974",
+      "value": "353538",
+      "locator": {
+        "year": "1974",
+        "country_code": "BTN"
+      }
+    },
+    {
+      "date": "1975",
+      "value": "365791",
+      "locator": {
+        "year": "1975",
+        "country_code": "BTN"
+      }
+    },
+    {
+      "date": "1976",
+      "value": "378490",
+      "locator": {
+        "year": "1976",
+        "country_code": "BTN"
+      }
+    },
+    {
+      "date": "1977",
+      "value": "391639",
+      "locator": {
+        "year": "1977",
+        "country_code": "BTN"
+      }
+    },
+    {
+      "date": "1978",
+      "value": "405243",
+      "locator": {
+        "year": "1978",
+        "country_code": "BTN"
+      }
+    },
+    {
+      "date": "1979",
+      "value": "419200",
+      "locator": {
+        "year": "1979",
+        "country_code": "BTN"
+      }
+    },
+    {
+      "date": "1980",
+      "value": "433404",
+      "locator": {
+        "year": "1980",
+        "country_code": "BTN"
+      }
+    },
+    {
+      "date": "1981",
+      "value": "447836",
+      "locator": {
+        "year": "1981",
+        "country_code": "BTN"
+      }
+    },
+    {
+      "date": "1982",
+      "value": "462485",
+      "locator": {
+        "year": "1982",
+        "country_code": "BTN"
+      }
+    },
+    {
+      "date": "1983",
+      "value": "477460",
+      "locator": {
+        "year": "1983",
+        "country_code": "BTN"
+      }
+    },
+    {
+      "date": "1984",
+      "value": "492784",
+      "locator": {
+        "year": "1984",
+        "country_code": "BTN"
+      }
+    },
+    {
+      "date": "1985",
+      "value": "508392",
+      "locator": {
+        "year": "1985",
+        "country_code": "BTN"
+      }
+    },
+    {
+      "date": "1986",
+      "value": "524324",
+      "locator": {
+        "year": "1986",
+        "country_code": "BTN"
+      }
+    },
+    {
+      "date": "1987",
+      "value": "540557",
+      "locator": {
+        "year": "1987",
+        "country_code": "BTN"
+      }
+    },
+    {
+      "date": "1988",
+      "value": "556986",
+      "locator": {
+        "year": "1988",
+        "country_code": "BTN"
+      }
+    },
+    {
+      "date": "1989",
+      "value": "573586",
+      "locator": {
+        "year": "1989",
+        "country_code": "BTN"
+      }
+    },
+    {
+      "date": "1990",
+      "value": "589287",
+      "locator": {
+        "year": "1990",
+        "country_code": "BTN"
+      }
+    },
+    {
+      "date": "1991",
+      "value": "599784",
+      "locator": {
+        "year": "1991",
+        "country_code": "BTN"
+      }
+    },
+    {
+      "date": "1992",
+      "value": "577774",
+      "locator": {
+        "year": "1992",
+        "country_code": "BTN"
+      }
+    },
+    {
+      "date": "1993",
+      "value": "554673",
+      "locator": {
+        "year": "1993",
+        "country_code": "BTN"
+      }
+    },
+    {
+      "date": "1994",
+      "value": "554497",
+      "locator": {
+        "year": "1994",
+        "country_code": "BTN"
+      }
+    },
+    {
+      "date": "1995",
+      "value": "547989",
+      "locator": {
+        "year": "1995",
+        "country_code": "BTN"
+      }
+    },
+    {
+      "date": "1996",
+      "value": "548784",
+      "locator": {
+        "year": "1996",
+        "country_code": "BTN"
+      }
+    },
+    {
+      "date": "1997",
+      "value": "558697",
+      "locator": {
+        "year": "1997",
+        "country_code": "BTN"
+      }
+    },
+    {
+      "date": "1998",
+      "value": "569435",
+      "locator": {
+        "year": "1998",
+        "country_code": "BTN"
+      }
+    },
+    {
+      "date": "1999",
+      "value": "582579",
+      "locator": {
+        "year": "1999",
+        "country_code": "BTN"
+      }
+    },
+    {
+      "date": "2000",
+      "value": "596863",
+      "locator": {
+        "year": "2000",
+        "country_code": "BTN"
+      }
+    },
+    {
+      "date": "2001",
+      "value": "610794",
+      "locator": {
+        "year": "2001",
+        "country_code": "BTN"
+      }
+    },
+    {
+      "date": "2002",
+      "value": "624409",
+      "locator": {
+        "year": "2002",
+        "country_code": "BTN"
+      }
+    },
+    {
+      "date": "2003",
+      "value": "637663",
+      "locator": {
+        "year": "2003",
+        "country_code": "BTN"
+      }
+    },
+    {
+      "date": "2004",
+      "value": "650544",
+      "locator": {
+        "year": "2004",
+        "country_code": "BTN"
+      }
+    },
+    {
+      "date": "2005",
+      "value": "661865",
+      "locator": {
+        "year": "2005",
+        "country_code": "BTN"
+      }
+    },
+    {
+      "date": "2006",
+      "value": "670799",
+      "locator": {
+        "year": "2006",
+        "country_code": "BTN"
+      }
+    },
+    {
+      "date": "2007",
+      "value": "678641",
+      "locator": {
+        "year": "2007",
+        "country_code": "BTN"
+      }
+    },
+    {
+      "date": "2008",
+      "value": "686351",
+      "locator": {
+        "year": "2008",
+        "country_code": "BTN"
+      }
+    },
+    {
+      "date": "2009",
+      "value": "693988",
+      "locator": {
+        "year": "2009",
+        "country_code": "BTN"
+      }
+    },
+    {
+      "date": "2010",
+      "value": "701632",
+      "locator": {
+        "year": "2010",
+        "country_code": "BTN"
+      }
+    },
+    {
+      "date": "2011",
+      "value": "709377",
+      "locator": {
+        "year": "2011",
+        "country_code": "BTN"
+      }
+    },
+    {
+      "date": "2012",
+      "value": "717279",
+      "locator": {
+        "year": "2012",
+        "country_code": "BTN"
+      }
+    },
+    {
+      "date": "2013",
+      "value": "725273",
+      "locator": {
+        "year": "2013",
+        "country_code": "BTN"
+      }
+    },
+    {
+      "date": "2014",
+      "value": "733139",
+      "locator": {
+        "year": "2014",
+        "country_code": "BTN"
+      }
+    },
+    {
+      "date": "2015",
+      "value": "740618",
+      "locator": {
+        "year": "2015",
+        "country_code": "BTN"
+      }
+    },
+    {
+      "date": "2016",
+      "value": "747866",
+      "locator": {
+        "year": "2016",
+        "country_code": "BTN"
+      }
+    },
+    {
+      "date": "2017",
+      "value": "754335",
+      "locator": {
+        "year": "2017",
+        "country_code": "BTN"
+      }
+    },
+    {
+      "date": "2018",
+      "value": "759759",
+      "locator": {
+        "year": "2018",
+        "country_code": "BTN"
+      }
+    },
+    {
+      "date": "2019",
+      "value": "764824",
+      "locator": {
+        "year": "2019",
+        "country_code": "BTN"
+      }
+    },
+    {
+      "date": "2020",
+      "value": "770006",
+      "locator": {
+        "year": "2020",
+        "country_code": "BTN"
+      }
+    },
+    {
+      "date": "2021",
+      "value": "775442",
+      "locator": {
+        "year": "2021",
+        "country_code": "BTN"
+      }
+    },
+    {
+      "date": "2022",
+      "value": "780914",
+      "locator": {
+        "year": "2022",
+        "country_code": "BTN"
+      }
+    },
+    {
+      "date": "2023",
+      "value": "786385",
+      "locator": {
+        "year": "2023",
+        "country_code": "BTN"
+      }
+    },
+    {
+      "date": "2024",
+      "value": "791524",
+      "locator": {
+        "year": "2024",
+        "country_code": "BTN"
+      }
+    },
+    {
+      "date": "2025",
+      "value": "796682",
+      "locator": {
+        "year": "2025",
+        "country_code": "BTN"
+      }
+    }
+  ]
+}

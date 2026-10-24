@@ -1,0 +1,543 @@
+{
+  "id": "wb_pop_BFA",
+  "name": "Burkina Faso",
+  "units": "people",
+  "adjustment": "midyear",
+  "nominal_or_real": "count",
+  "frequency": "annual",
+  "source_id": "worldbank_sp_pop_totl",
+  "series_url": "https://data.worldbank.org/indicator/SP.POP.TOTL",
+  "country_code": "BFA",
+  "country_name": "Burkina Faso",
+  "notes": "World Bank World Development Indicators, SP.POP.TOTL, country code BFA. Midyear population. Published years in this file run from 1960 to 2025.",
+  "points": [
+    {
+      "date": "1960",
+      "value": "4778621",
+      "locator": {
+        "year": "1960",
+        "country_code": "BFA"
+      }
+    },
+    {
+      "date": "1961",
+      "value": "4848224",
+      "locator": {
+        "year": "1961",
+        "country_code": "BFA"
+      }
+    },
+    {
+      "date": "1962",
+      "value": "4919672",
+      "locator": {
+        "year": "1962",
+        "country_code": "BFA"
+      }
+    },
+    {
+      "date": "1963",
+      "value": "4993623",
+      "locator": {
+        "year": "1963",
+        "country_code": "BFA"
+      }
+    },
+    {
+      "date": "1964",
+      "value": "5071034",
+      "locator": {
+        "year": "1964",
+        "country_code": "BFA"
+      }
+    },
+    {
+      "date": "1965",
+      "value": "5152833",
+      "locator": {
+        "year": "1965",
+        "country_code": "BFA"
+      }
+    },
+    {
+      "date": "1966",
+      "value": "5237933",
+      "locator": {
+        "year": "1966",
+        "country_code": "BFA"
+      }
+    },
+    {
+      "date": "1967",
+      "value": "5326348",
+      "locator": {
+        "year": "1967",
+        "country_code": "BFA"
+      }
+    },
+    {
+      "date": "1968",
+      "value": "5418644",
+      "locator": {
+        "year": "1968",
+        "country_code": "BFA"
+      }
+    },
+    {
+      "date": "1969",
+      "value": "5513177",
+      "locator": {
+        "year": "1969",
+        "country_code": "BFA"
+      }
+    },
+    {
+      "date": "1970",
+      "value": "5610304",
+      "locator": {
+        "year": "1970",
+        "country_code": "BFA"
+      }
+    },
+    {
+      "date": "1971",
+      "value": "5707999",
+      "locator": {
+        "year": "1971",
+        "country_code": "BFA"
+      }
+    },
+    {
+      "date": "1972",
+      "value": "5807234",
+      "locator": {
+        "year": "1972",
+        "country_code": "BFA"
+      }
+    },
+    {
+      "date": "1973",
+      "value": "5911927",
+      "locator": {
+        "year": "1973",
+        "country_code": "BFA"
+      }
+    },
+    {
+      "date": "1974",
+      "value": "6024904",
+      "locator": {
+        "year": "1974",
+        "country_code": "BFA"
+      }
+    },
+    {
+      "date": "1975",
+      "value": "6147569",
+      "locator": {
+        "year": "1975",
+        "country_code": "BFA"
+      }
+    },
+    {
+      "date": "1976",
+      "value": "6280635",
+      "locator": {
+        "year": "1976",
+        "country_code": "BFA"
+      }
+    },
+    {
+      "date": "1977",
+      "value": "6428734",
+      "locator": {
+        "year": "1977",
+        "country_code": "BFA"
+      }
+    },
+    {
+      "date": "1978",
+      "value": "6590984",
+      "locator": {
+        "year": "1978",
+        "country_code": "BFA"
+      }
+    },
+    {
+      "date": "1979",
+      "value": "6763903",
+      "locator": {
+        "year": "1979",
+        "country_code": "BFA"
+      }
+    },
+    {
+      "date": "1980",
+      "value": "6947900",
+      "locator": {
+        "year": "1980",
+        "country_code": "BFA"
+      }
+    },
+    {
+      "date": "1981",
+      "value": "7140271",
+      "locator": {
+        "year": "1981",
+        "country_code": "BFA"
+      }
+    },
+    {
+      "date": "1982",
+      "value": "7340197",
+      "locator": {
+        "year": "1982",
+        "country_code": "BFA"
+      }
+    },
+    {
+      "date": "1983",
+      "value": "7551129",
+      "locator": {
+        "year": "1983",
+        "country_code": "BFA"
+      }
+    },
+    {
+      "date": "1984",
+      "value": "7772256",
+      "locator": {
+        "year": "1984",
+        "country_code": "BFA"
+      }
+    },
+    {
+      "date": "1985",
+      "value": "7999935",
+      "locator": {
+        "year": "1985",
+        "country_code": "BFA"
+      }
+    },
+    {
+      "date": "1986",
+      "value": "8228847",
+      "locator": {
+        "year": "1986",
+        "country_code": "BFA"
+      }
+    },
+    {
+      "date": "1987",
+      "value": "8457109",
+      "locator": {
+        "year": "1987",
+        "country_code": "BFA"
+      }
+    },
+    {
+      "date": "1988",
+      "value": "8687435",
+      "locator": {
+        "year": "1988",
+        "country_code": "BFA"
+      }
+    },
+    {
+      "date": "1989",
+      "value": "8921175",
+      "locator": {
+        "year": "1989",
+        "country_code": "BFA"
+      }
+    },
+    {
+      "date": "1990",
+      "value": "9159356",
+      "locator": {
+        "year": "1990",
+        "country_code": "BFA"
+      }
+    },
+    {
+      "date": "1991",
+      "value": "9394632",
+      "locator": {
+        "year": "1991",
+        "country_code": "BFA"
+      }
+    },
+    {
+      "date": "1992",
+      "value": "9629275",
+      "locator": {
+        "year": "1992",
+        "country_code": "BFA"
+      }
+    },
+    {
+      "date": "1993",
+      "value": "9871713",
+      "locator": {
+        "year": "1993",
+        "country_code": "BFA"
+      }
+    },
+    {
+      "date": "1994",
+      "value": "10123798",
+      "locator": {
+        "year": "1994",
+        "country_code": "BFA"
+      }
+    },
+    {
+      "date": "1995",
+      "value": "10386722",
+      "locator": {
+        "year": "1995",
+        "country_code": "BFA"
+      }
+    },
+    {
+      "date": "1996",
+      "value": "10655942",
+      "locator": {
+        "year": "1996",
+        "country_code": "BFA"
+      }
+    },
+    {
+      "date": "1997",
+      "value": "10934223",
+      "locator": {
+        "year": "1997",
+        "country_code": "BFA"
+      }
+    },
+    {
+      "date": "1998",
+      "value": "11240664",
+      "locator": {
+        "year": "1998",
+        "country_code": "BFA"
+      }
+    },
+    {
+      "date": "1999",
+      "value": "11574928",
+      "locator": {
+        "year": "1999",
+        "country_code": "BFA"
+      }
+    },
+    {
+      "date": "2000",
+      "value": "11925546",
+      "locator": {
+        "year": "2000",
+        "country_code": "BFA"
+      }
+    },
+    {
+      "date": "2001",
+      "value": "12295001",
+      "locator": {
+        "year": "2001",
+        "country_code": "BFA"
+      }
+    },
+    {
+      "date": "2002",
+      "value": "12680897",
+      "locator": {
+        "year": "2002",
+        "country_code": "BFA"
+      }
+    },
+    {
+      "date": "2003",
+      "value": "13082532",
+      "locator": {
+        "year": "2003",
+        "country_code": "BFA"
+      }
+    },
+    {
+      "date": "2004",
+      "value": "13500533",
+      "locator": {
+        "year": "2004",
+        "country_code": "BFA"
+      }
+    },
+    {
+      "date": "2005",
+      "value": "13932123",
+      "locator": {
+        "year": "2005",
+        "country_code": "BFA"
+      }
+    },
+    {
+      "date": "2006",
+      "value": "14373707",
+      "locator": {
+        "year": "2006",
+        "country_code": "BFA"
+      }
+    },
+    {
+      "date": "2007",
+      "value": "14816307",
+      "locator": {
+        "year": "2007",
+        "country_code": "BFA"
+      }
+    },
+    {
+      "date": "2008",
+      "value": "15258093",
+      "locator": {
+        "year": "2008",
+        "country_code": "BFA"
+      }
+    },
+    {
+      "date": "2009",
+      "value": "15710066",
+      "locator": {
+        "year": "2009",
+        "country_code": "BFA"
+      }
+    },
+    {
+      "date": "2010",
+      "value": "16176498",
+      "locator": {
+        "year": "2010",
+        "country_code": "BFA"
+      }
+    },
+    {
+      "date": "2011",
+      "value": "16661908",
+      "locator": {
+        "year": "2011",
+        "country_code": "BFA"
+      }
+    },
+    {
+      "date": "2012",
+      "value": "17172287",
+      "locator": {
+        "year": "2012",
+        "country_code": "BFA"
+      }
+    },
+    {
+      "date": "2013",
+      "value": "17695409",
+      "locator": {
+        "year": "2013",
+        "country_code": "BFA"
+      }
+    },
+    {
+      "date": "2014",
+      "value": "18229461",
+      "locator": {
+        "year": "2014",
+        "country_code": "BFA"
+      }
+    },
+    {
+      "date": "2015",
+      "value": "18777487",
+      "locator": {
+        "year": "2015",
+        "country_code": "BFA"
+      }
+    },
+    {
+      "date": "2016",
+      "value": "19334856",
+      "locator": {
+        "year": "2016",
+        "country_code": "BFA"
+      }
+    },
+    {
+      "date": "2017",
+      "value": "19894407",
+      "locator": {
+        "year": "2017",
+        "country_code": "BFA"
+      }
+    },
+    {
+      "date": "2018",
+      "value": "20438288",
+      "locator": {
+        "year": "2018",
+        "country_code": "BFA"
+      }
+    },
+    {
+      "date": "2019",
+      "value": "20961952",
+      "locator": {
+        "year": "2019",
+        "country_code": "BFA"
+      }
+    },
+    {
+      "date": "2020",
+      "value": "21478690",
+      "locator": {
+        "year": "2020",
+        "country_code": "BFA"
+      }
+    },
+    {
+      "date": "2021",
+      "value": "21995243",
+      "locator": {
+        "year": "2021",
+        "country_code": "BFA"
+      }
+    },
+    {
+      "date": "2022",
+      "value": "22509038",
+      "locator": {
+        "year": "2022",
+        "country_code": "BFA"
+      }
+    },
+    {
+      "date": "2023",
+      "value": "23025776",
+      "locator": {
+        "year": "2023",
+        "country_code": "BFA"
+      }
+    },
+    {
+      "date": "2024",
+      "value": "23548781",
+      "locator": {
+        "year": "2024",
+        "country_code": "BFA"
+      }
+    },
+    {
+      "date": "2025",
+      "value": "24074580",
+      "locator": {
+        "year": "2025",
+        "country_code": "BFA"
+      }
+    }
+  ]
+}

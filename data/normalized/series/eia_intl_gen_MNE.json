@@ -1,0 +1,169 @@
+{
+  "id": "eia_intl_gen_MNE",
+  "name": "Net generation",
+  "units": "billion kilowatthours",
+  "adjustment": "annual",
+  "nominal_or_real": "generation",
+  "frequency": "annual",
+  "source_id": "eia_intl_bulk",
+  "series_url": "https://www.eia.gov/international/data/world/electricity/electricity-generation",
+  "eia_series_id": "INTL.2-12-MNE-BKWH.A",
+  "country_code": "MNE",
+  "country_name": "Montenegro",
+  "population_status": "matched",
+  "notes": "EIA bulk series INTL.2-12-MNE-BKWH.A, Montenegro. Annual. Billion kilowatthours. 1 billion kilowatthours = 1 terawatthour. Published years in this file run from 2006 to 2024.",
+  "points": [
+    {
+      "date": "2006",
+      "value": "2.952",
+      "locator": {
+        "year": "2006",
+        "series_id": "INTL.2-12-MNE-BKWH.A"
+      }
+    },
+    {
+      "date": "2007",
+      "value": "2.144",
+      "locator": {
+        "year": "2007",
+        "series_id": "INTL.2-12-MNE-BKWH.A"
+      }
+    },
+    {
+      "date": "2008",
+      "value": "2.828",
+      "locator": {
+        "year": "2008",
+        "series_id": "INTL.2-12-MNE-BKWH.A"
+      }
+    },
+    {
+      "date": "2009",
+      "value": "2.839",
+      "locator": {
+        "year": "2009",
+        "series_id": "INTL.2-12-MNE-BKWH.A"
+      }
+    },
+    {
+      "date": "2010",
+      "value": "4.163",
+      "locator": {
+        "year": "2010",
+        "series_id": "INTL.2-12-MNE-BKWH.A"
+      }
+    },
+    {
+      "date": "2011",
+      "value": "2.656",
+      "locator": {
+        "year": "2011",
+        "series_id": "INTL.2-12-MNE-BKWH.A"
+      }
+    },
+    {
+      "date": "2012",
+      "value": "2.844",
+      "locator": {
+        "year": "2012",
+        "series_id": "INTL.2-12-MNE-BKWH.A"
+      }
+    },
+    {
+      "date": "2013",
+      "value": "3.945",
+      "locator": {
+        "year": "2013",
+        "series_id": "INTL.2-12-MNE-BKWH.A"
+      }
+    },
+    {
+      "date": "2014",
+      "value": "3.173",
+      "locator": {
+        "year": "2014",
+        "series_id": "INTL.2-12-MNE-BKWH.A"
+      }
+    },
+    {
+      "date": "2015",
+      "value": "3.003",
+      "locator": {
+        "year": "2015",
+        "series_id": "INTL.2-12-MNE-BKWH.A"
+      }
+    },
+    {
+      "date": "2016",
+      "value": "3.141",
+      "locator": {
+        "year": "2016",
+        "series_id": "INTL.2-12-MNE-BKWH.A"
+      }
+    },
+    {
+      "date": "2017",
+      "value": "2.4829",
+      "locator": {
+        "year": "2017",
+        "series_id": "INTL.2-12-MNE-BKWH.A"
+      }
+    },
+    {
+      "date": "2018",
+      "value": "3.8107",
+      "locator": {
+        "year": "2018",
+        "series_id": "INTL.2-12-MNE-BKWH.A"
+      }
+    },
+    {
+      "date": "2019",
+      "value": "3.4334",
+      "locator": {
+        "year": "2019",
+        "series_id": "INTL.2-12-MNE-BKWH.A"
+      }
+    },
+    {
+      "date": "2020",
+      "value": "3.3804",
+      "locator": {
+        "year": "2020",
+        "series_id": "INTL.2-12-MNE-BKWH.A"
+      }
+    },
+    {
+      "date": "2021",
+      "value": "3.7771",
+      "locator": {
+        "year": "2021",
+        "series_id": "INTL.2-12-MNE-BKWH.A"
+      }
+    },
+    {
+      "date": "2022",
+      "value": "3.3294",
+      "locator": {
+        "year": "2022",
+        "series_id": "INTL.2-12-MNE-BKWH.A"
+      }
+    },
+    {
+      "date": "2023",
+      "value": "4.1865",
+      "locator": {
+        "year": "2023",
+        "series_id": "INTL.2-12-MNE-BKWH.A"
+      }
+    },
+    {
+      "date": "2024",
+      "value": "3.787298215",
+      "locator": {
+        "year": "2024",
+        "series_id": "INTL.2-12-MNE-BKWH.A"
+      }
+    }
+  ]
+}

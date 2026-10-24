@@ -1,0 +1,636 @@
+{
+  "id": "eia_us_gen_total",
+  "name": "Total",
+  "units": "Million Kilowatthours",
+  "adjustment": "annual",
+  "nominal_or_real": "generation",
+  "frequency": "annual",
+  "source_id": "eia_total_bulk",
+  "series_url": "https://www.eia.gov/totalenergy/data/browser/index.php?tbl=T07.02A",
+  "derived": true,
+  "formula": "us_total_with_small_scale_solar",
+  "inputs": [
+    "eia_us_gen_all_sectors",
+    "eia_us_gen_solar",
+    "eia_us_gen_solar_all_sectors"
+  ],
+  "notes": "TOTAL.ELETPUS plus TOTAL.SOTEPUS minus TOTAL.SOETPUS when both solar series publish a number for that year. Otherwise TOTAL.ELETPUS. Rounded half up to 3 decimals. The subtraction removes the all-sectors solar already inside TOTAL.ELETPUS so small-scale solar is added once.",
+  "points": [
+    {
+      "date": "1949",
+      "value": "296124.289",
+      "locator": {
+        "formula": "ELETPUS + SOTEPUS - SOETPUS",
+        "year": "1949"
+      }
+    },
+    {
+      "date": "1950",
+      "value": "334087.601",
+      "locator": {
+        "formula": "ELETPUS + SOTEPUS - SOETPUS",
+        "year": "1950"
+      }
+    },
+    {
+      "date": "1951",
+      "value": "375298.355",
+      "locator": {
+        "formula": "ELETPUS + SOTEPUS - SOETPUS",
+        "year": "1951"
+      }
+    },
+    {
+      "date": "1952",
+      "value": "403829.413",
+      "locator": {
+        "formula": "ELETPUS + SOTEPUS - SOETPUS",
+        "year": "1952"
+      }
+    },
+    {
+      "date": "1953",
+      "value": "447048.563",
+      "locator": {
+        "formula": "ELETPUS + SOTEPUS - SOETPUS",
+        "year": "1953"
+      }
+    },
+    {
+      "date": "1954",
+      "value": "476257.618",
+      "locator": {
+        "formula": "ELETPUS + SOTEPUS - SOETPUS",
+        "year": "1954"
+      }
+    },
+    {
+      "date": "1955",
+      "value": "550298.862",
+      "locator": {
+        "formula": "ELETPUS + SOTEPUS - SOETPUS",
+        "year": "1955"
+      }
+    },
+    {
+      "date": "1956",
+      "value": "603875.763",
+      "locator": {
+        "formula": "ELETPUS + SOTEPUS - SOETPUS",
+        "year": "1956"
+      }
+    },
+    {
+      "date": "1957",
+      "value": "634642.367",
+      "locator": {
+        "formula": "ELETPUS + SOTEPUS - SOETPUS",
+        "year": "1957"
+      }
+    },
+    {
+      "date": "1958",
+      "value": "648450.862",
+      "locator": {
+        "formula": "ELETPUS + SOTEPUS - SOETPUS",
+        "year": "1958"
+      }
+    },
+    {
+      "date": "1959",
+      "value": "713378.831",
+      "locator": {
+        "formula": "ELETPUS + SOTEPUS - SOETPUS",
+        "year": "1959"
+      }
+    },
+    {
+      "date": "1960",
+      "value": "759155.788",
+      "locator": {
+        "formula": "ELETPUS + SOTEPUS - SOETPUS",
+        "year": "1960"
+      }
+    },
+    {
+      "date": "1961",
+      "value": "797124.391",
+      "locator": {
+        "formula": "ELETPUS + SOTEPUS - SOETPUS",
+        "year": "1961"
+      }
+    },
+    {
+      "date": "1962",
+      "value": "857943.656",
+      "locator": {
+        "formula": "ELETPUS + SOTEPUS - SOETPUS",
+        "year": "1962"
+      }
+    },
+    {
+      "date": "1963",
+      "value": "920028.271",
+      "locator": {
+        "formula": "ELETPUS + SOTEPUS - SOETPUS",
+        "year": "1963"
+      }
+    },
+    {
+      "date": "1964",
+      "value": "987218.326",
+      "locator": {
+        "formula": "ELETPUS + SOTEPUS - SOETPUS",
+        "year": "1964"
+      }
+    },
+    {
+      "date": "1965",
+      "value": "1058385.671",
+      "locator": {
+        "formula": "ELETPUS + SOTEPUS - SOETPUS",
+        "year": "1965"
+      }
+    },
+    {
+      "date": "1966",
+      "value": "1147531.895",
+      "locator": {
+        "formula": "ELETPUS + SOTEPUS - SOETPUS",
+        "year": "1966"
+      }
+    },
+    {
+      "date": "1967",
+      "value": "1217795.688",
+      "locator": {
+        "formula": "ELETPUS + SOTEPUS - SOETPUS",
+        "year": "1967"
+      }
+    },
+    {
+      "date": "1968",
+      "value": "1332825.601",
+      "locator": {
+        "formula": "ELETPUS + SOTEPUS - SOETPUS",
+        "year": "1968"
+      }
+    },
+    {
+      "date": "1969",
+      "value": "1445458.056",
+      "locator": {
+        "formula": "ELETPUS + SOTEPUS - SOETPUS",
+        "year": "1969"
+      }
+    },
+    {
+      "date": "1970",
+      "value": "1535111.467",
+      "locator": {
+        "formula": "ELETPUS + SOTEPUS - SOETPUS",
+        "year": "1970"
+      }
+    },
+    {
+      "date": "1971",
+      "value": "1615853.616",
+      "locator": {
+        "formula": "ELETPUS + SOTEPUS - SOETPUS",
+        "year": "1971"
+      }
+    },
+    {
+      "date": "1972",
+      "value": "1752978.413",
+      "locator": {
+        "formula": "ELETPUS + SOTEPUS - SOETPUS",
+        "year": "1972"
+      }
+    },
+    {
+      "date": "1973",
+      "value": "1864056.632",
+      "locator": {
+        "formula": "ELETPUS + SOTEPUS - SOETPUS",
+        "year": "1973"
+      }
+    },
+    {
+      "date": "1974",
+      "value": "1870319.404",
+      "locator": {
+        "formula": "ELETPUS + SOTEPUS - SOETPUS",
+        "year": "1974"
+      }
+    },
+    {
+      "date": "1975",
+      "value": "1920754.569",
+      "locator": {
+        "formula": "ELETPUS + SOTEPUS - SOETPUS",
+        "year": "1975"
+      }
+    },
+    {
+      "date": "1976",
+      "value": "2040913.681",
+      "locator": {
+        "formula": "ELETPUS + SOTEPUS - SOETPUS",
+        "year": "1976"
+      }
+    },
+    {
+      "date": "1977",
+      "value": "2127447.488",
+      "locator": {
+        "formula": "ELETPUS + SOTEPUS - SOETPUS",
+        "year": "1977"
+      }
+    },
+    {
+      "date": "1978",
+      "value": "2209376.911",
+      "locator": {
+        "formula": "ELETPUS + SOTEPUS - SOETPUS",
+        "year": "1978"
+      }
+    },
+    {
+      "date": "1979",
+      "value": "2250665.025",
+      "locator": {
+        "formula": "ELETPUS + SOTEPUS - SOETPUS",
+        "year": "1979"
+      }
+    },
+    {
+      "date": "1980",
+      "value": "2289600.364",
+      "locator": {
+        "formula": "ELETPUS + SOTEPUS - SOETPUS",
+        "year": "1980"
+      }
+    },
+    {
+      "date": "1981",
+      "value": "2297973.338",
+      "locator": {
+        "formula": "ELETPUS + SOTEPUS - SOETPUS",
+        "year": "1981"
+      }
+    },
+    {
+      "date": "1982",
+      "value": "2244372.487",
+      "locator": {
+        "formula": "ELETPUS + SOTEPUS - SOETPUS",
+        "year": "1982"
+      }
+    },
+    {
+      "date": "1983",
+      "value": "2313445.686",
+      "locator": {
+        "formula": "ELETPUS + SOTEPUS - SOETPUS",
+        "year": "1983"
+      }
+    },
+    {
+      "date": "1984",
+      "value": "2419465.367",
+      "locator": {
+        "formula": "ELETPUS + SOTEPUS - SOETPUS",
+        "year": "1984"
+      }
+    },
+    {
+      "date": "1985",
+      "value": "2473002.120",
+      "locator": {
+        "formula": "ELETPUS + SOTEPUS - SOETPUS",
+        "year": "1985"
+      }
+    },
+    {
+      "date": "1986",
+      "value": "2490470.952",
+      "locator": {
+        "formula": "ELETPUS + SOTEPUS - SOETPUS",
+        "year": "1986"
+      }
+    },
+    {
+      "date": "1987",
+      "value": "2575287.667",
+      "locator": {
+        "formula": "ELETPUS + SOTEPUS - SOETPUS",
+        "year": "1987"
+      }
+    },
+    {
+      "date": "1988",
+      "value": "2707411.178",
+      "locator": {
+        "formula": "ELETPUS + SOTEPUS - SOETPUS",
+        "year": "1988"
+      }
+    },
+    {
+      "date": "1989",
+      "value": "2967173.769",
+      "locator": {
+        "formula": "ELETPUS + SOTEPUS - SOETPUS",
+        "year": "1989"
+      }
+    },
+    {
+      "date": "1990",
+      "value": "3037858.847",
+      "locator": {
+        "formula": "ELETPUS + SOTEPUS - SOETPUS",
+        "year": "1990"
+      }
+    },
+    {
+      "date": "1991",
+      "value": "3073834.066",
+      "locator": {
+        "formula": "ELETPUS + SOTEPUS - SOETPUS",
+        "year": "1991"
+      }
+    },
+    {
+      "date": "1992",
+      "value": "3083920.889",
+      "locator": {
+        "formula": "ELETPUS + SOTEPUS - SOETPUS",
+        "year": "1992"
+      }
+    },
+    {
+      "date": "1993",
+      "value": "3197233.515",
+      "locator": {
+        "formula": "ELETPUS + SOTEPUS - SOETPUS",
+        "year": "1993"
+      }
+    },
+    {
+      "date": "1994",
+      "value": "3247569.894",
+      "locator": {
+        "formula": "ELETPUS + SOTEPUS - SOETPUS",
+        "year": "1994"
+      }
+    },
+    {
+      "date": "1995",
+      "value": "3353541.674",
+      "locator": {
+        "formula": "ELETPUS + SOTEPUS - SOETPUS",
+        "year": "1995"
+      }
+    },
+    {
+      "date": "1996",
+      "value": "3444250.022",
+      "locator": {
+        "formula": "ELETPUS + SOTEPUS - SOETPUS",
+        "year": "1996"
+      }
+    },
+    {
+      "date": "1997",
+      "value": "3492242.154",
+      "locator": {
+        "formula": "ELETPUS + SOTEPUS - SOETPUS",
+        "year": "1997"
+      }
+    },
+    {
+      "date": "1998",
+      "value": "3620374.536",
+      "locator": {
+        "formula": "ELETPUS + SOTEPUS - SOETPUS",
+        "year": "1998"
+      }
+    },
+    {
+      "date": "1999",
+      "value": "3694901.760",
+      "locator": {
+        "formula": "ELETPUS + SOTEPUS - SOETPUS",
+        "year": "1999"
+      }
+    },
+    {
+      "date": "2000",
+      "value": "3802209.346",
+      "locator": {
+        "formula": "ELETPUS + SOTEPUS - SOETPUS",
+        "year": "2000"
+      }
+    },
+    {
+      "date": "2001",
+      "value": "3736769.756",
+      "locator": {
+        "formula": "ELETPUS + SOTEPUS - SOETPUS",
+        "year": "2001"
+      }
+    },
+    {
+      "date": "2002",
+      "value": "3858601.722",
+      "locator": {
+        "formula": "ELETPUS + SOTEPUS - SOETPUS",
+        "year": "2002"
+      }
+    },
+    {
+      "date": "2003",
+      "value": "3883359.742",
+      "locator": {
+        "formula": "ELETPUS + SOTEPUS - SOETPUS",
+        "year": "2003"
+      }
+    },
+    {
+      "date": "2004",
+      "value": "3970771.484",
+      "locator": {
+        "formula": "ELETPUS + SOTEPUS - SOETPUS",
+        "year": "2004"
+      }
+    },
+    {
+      "date": "2005",
+      "value": "4055747.166",
+      "locator": {
+        "formula": "ELETPUS + SOTEPUS - SOETPUS",
+        "year": "2005"
+      }
+    },
+    {
+      "date": "2006",
+      "value": "4065175.362",
+      "locator": {
+        "formula": "ELETPUS + SOTEPUS - SOETPUS",
+        "year": "2006"
+      }
+    },
+    {
+      "date": "2007",
+      "value": "4157412.726",
+      "locator": {
+        "formula": "ELETPUS + SOTEPUS - SOETPUS",
+        "year": "2007"
+      }
+    },
+    {
+      "date": "2008",
+      "value": "4120461.255",
+      "locator": {
+        "formula": "ELETPUS + SOTEPUS - SOETPUS",
+        "year": "2008"
+      }
+    },
+    {
+      "date": "2009",
+      "value": "3951773.821",
+      "locator": {
+        "formula": "ELETPUS + SOTEPUS - SOETPUS",
+        "year": "2009"
+      }
+    },
+    {
+      "date": "2010",
+      "value": "4127339.832",
+      "locator": {
+        "formula": "ELETPUS + SOTEPUS - SOETPUS",
+        "year": "2010"
+      }
+    },
+    {
+      "date": "2011",
+      "value": "4103752.720",
+      "locator": {
+        "formula": "ELETPUS + SOTEPUS - SOETPUS",
+        "year": "2011"
+      }
+    },
+    {
+      "date": "2012",
+      "value": "4053562.091",
+      "locator": {
+        "formula": "ELETPUS + SOTEPUS - SOETPUS",
+        "year": "2012"
+      }
+    },
+    {
+      "date": "2013",
+      "value": "4074196.419",
+      "locator": {
+        "formula": "ELETPUS + SOTEPUS - SOETPUS",
+        "year": "2013"
+      }
+    },
+    {
+      "date": "2014",
+      "value": "4104796.802",
+      "locator": {
+        "formula": "ELETPUS + SOTEPUS - SOETPUS",
+        "year": "2014"
+      }
+    },
+    {
+      "date": "2015",
+      "value": "4092853.040",
+      "locator": {
+        "formula": "ELETPUS + SOTEPUS - SOETPUS",
+        "year": "2015"
+      }
+    },
+    {
+      "date": "2016",
+      "value": "4096386.172",
+      "locator": {
+        "formula": "ELETPUS + SOTEPUS - SOETPUS",
+        "year": "2016"
+      }
+    },
+    {
+      "date": "2017",
+      "value": "4059433.178",
+      "locator": {
+        "formula": "ELETPUS + SOTEPUS - SOETPUS",
+        "year": "2017"
+      }
+    },
+    {
+      "date": "2018",
+      "value": "4210526.977",
+      "locator": {
+        "formula": "ELETPUS + SOTEPUS - SOETPUS",
+        "year": "2018"
+      }
+    },
+    {
+      "date": "2019",
+      "value": "4165531.328",
+      "locator": {
+        "formula": "ELETPUS + SOTEPUS - SOETPUS",
+        "year": "2019"
+      }
+    },
+    {
+      "date": "2020",
+      "value": "4051289.226",
+      "locator": {
+        "formula": "ELETPUS + SOTEPUS - SOETPUS",
+        "year": "2020"
+      }
+    },
+    {
+      "date": "2021",
+      "value": "4158863.592",
+      "locator": {
+        "formula": "ELETPUS + SOTEPUS - SOETPUS",
+        "year": "2021"
+      }
+    },
+    {
+      "date": "2022",
+      "value": "4291949.812",
+      "locator": {
+        "formula": "ELETPUS + SOTEPUS - SOETPUS",
+        "year": "2022"
+      }
+    },
+    {
+      "date": "2023",
+      "value": "4256676.831",
+      "locator": {
+        "formula": "ELETPUS + SOTEPUS - SOETPUS",
+        "year": "2023"
+      }
+    },
+    {
+      "date": "2024",
+      "value": "4392552.347",
+      "locator": {
+        "formula": "ELETPUS + SOTEPUS - SOETPUS",
+        "year": "2024"
+      }
+    },
+    {
+      "date": "2025",
+      "value": "4522650.081",
+      "locator": {
+        "formula": "ELETPUS + SOTEPUS - SOETPUS",
+        "year": "2025"
+      }
+    }
+  ]
+}

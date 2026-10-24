@@ -1,0 +1,543 @@
+{
+  "id": "wb_pop_AUS",
+  "name": "Australia",
+  "units": "people",
+  "adjustment": "midyear",
+  "nominal_or_real": "count",
+  "frequency": "annual",
+  "source_id": "worldbank_sp_pop_totl",
+  "series_url": "https://data.worldbank.org/indicator/SP.POP.TOTL",
+  "country_code": "AUS",
+  "country_name": "Australia",
+  "notes": "World Bank World Development Indicators, SP.POP.TOTL, country code AUS. Midyear population. Published years in this file run from 1960 to 2025.",
+  "points": [
+    {
+      "date": "1960",
+      "value": "10276477",
+      "locator": {
+        "year": "1960",
+        "country_code": "AUS"
+      }
+    },
+    {
+      "date": "1961",
+      "value": "10483000",
+      "locator": {
+        "year": "1961",
+        "country_code": "AUS"
+      }
+    },
+    {
+      "date": "1962",
+      "value": "10742000",
+      "locator": {
+        "year": "1962",
+        "country_code": "AUS"
+      }
+    },
+    {
+      "date": "1963",
+      "value": "10950000",
+      "locator": {
+        "year": "1963",
+        "country_code": "AUS"
+      }
+    },
+    {
+      "date": "1964",
+      "value": "11167000",
+      "locator": {
+        "year": "1964",
+        "country_code": "AUS"
+      }
+    },
+    {
+      "date": "1965",
+      "value": "11388000",
+      "locator": {
+        "year": "1965",
+        "country_code": "AUS"
+      }
+    },
+    {
+      "date": "1966",
+      "value": "11651000",
+      "locator": {
+        "year": "1966",
+        "country_code": "AUS"
+      }
+    },
+    {
+      "date": "1967",
+      "value": "11799000",
+      "locator": {
+        "year": "1967",
+        "country_code": "AUS"
+      }
+    },
+    {
+      "date": "1968",
+      "value": "12009000",
+      "locator": {
+        "year": "1968",
+        "country_code": "AUS"
+      }
+    },
+    {
+      "date": "1969",
+      "value": "12263000",
+      "locator": {
+        "year": "1969",
+        "country_code": "AUS"
+      }
+    },
+    {
+      "date": "1970",
+      "value": "12507000",
+      "locator": {
+        "year": "1970",
+        "country_code": "AUS"
+      }
+    },
+    {
+      "date": "1971",
+      "value": "12937000",
+      "locator": {
+        "year": "1971",
+        "country_code": "AUS"
+      }
+    },
+    {
+      "date": "1972",
+      "value": "13177000",
+      "locator": {
+        "year": "1972",
+        "country_code": "AUS"
+      }
+    },
+    {
+      "date": "1973",
+      "value": "13380000",
+      "locator": {
+        "year": "1973",
+        "country_code": "AUS"
+      }
+    },
+    {
+      "date": "1974",
+      "value": "13723000",
+      "locator": {
+        "year": "1974",
+        "country_code": "AUS"
+      }
+    },
+    {
+      "date": "1975",
+      "value": "13893000",
+      "locator": {
+        "year": "1975",
+        "country_code": "AUS"
+      }
+    },
+    {
+      "date": "1976",
+      "value": "14033000",
+      "locator": {
+        "year": "1976",
+        "country_code": "AUS"
+      }
+    },
+    {
+      "date": "1977",
+      "value": "14192000",
+      "locator": {
+        "year": "1977",
+        "country_code": "AUS"
+      }
+    },
+    {
+      "date": "1978",
+      "value": "14358000",
+      "locator": {
+        "year": "1978",
+        "country_code": "AUS"
+      }
+    },
+    {
+      "date": "1979",
+      "value": "14514000",
+      "locator": {
+        "year": "1979",
+        "country_code": "AUS"
+      }
+    },
+    {
+      "date": "1980",
+      "value": "14692000",
+      "locator": {
+        "year": "1980",
+        "country_code": "AUS"
+      }
+    },
+    {
+      "date": "1981",
+      "value": "14923260",
+      "locator": {
+        "year": "1981",
+        "country_code": "AUS"
+      }
+    },
+    {
+      "date": "1982",
+      "value": "15184247",
+      "locator": {
+        "year": "1982",
+        "country_code": "AUS"
+      }
+    },
+    {
+      "date": "1983",
+      "value": "15393472",
+      "locator": {
+        "year": "1983",
+        "country_code": "AUS"
+      }
+    },
+    {
+      "date": "1984",
+      "value": "15579391",
+      "locator": {
+        "year": "1984",
+        "country_code": "AUS"
+      }
+    },
+    {
+      "date": "1985",
+      "value": "15788312",
+      "locator": {
+        "year": "1985",
+        "country_code": "AUS"
+      }
+    },
+    {
+      "date": "1986",
+      "value": "16018350",
+      "locator": {
+        "year": "1986",
+        "country_code": "AUS"
+      }
+    },
+    {
+      "date": "1987",
+      "value": "16263874",
+      "locator": {
+        "year": "1987",
+        "country_code": "AUS"
+      }
+    },
+    {
+      "date": "1988",
+      "value": "16532164",
+      "locator": {
+        "year": "1988",
+        "country_code": "AUS"
+      }
+    },
+    {
+      "date": "1989",
+      "value": "16814416",
+      "locator": {
+        "year": "1989",
+        "country_code": "AUS"
+      }
+    },
+    {
+      "date": "1990",
+      "value": "17065128",
+      "locator": {
+        "year": "1990",
+        "country_code": "AUS"
+      }
+    },
+    {
+      "date": "1991",
+      "value": "17284036",
+      "locator": {
+        "year": "1991",
+        "country_code": "AUS"
+      }
+    },
+    {
+      "date": "1992",
+      "value": "17478635",
+      "locator": {
+        "year": "1992",
+        "country_code": "AUS"
+      }
+    },
+    {
+      "date": "1993",
+      "value": "17634808",
+      "locator": {
+        "year": "1993",
+        "country_code": "AUS"
+      }
+    },
+    {
+      "date": "1994",
+      "value": "17805468",
+      "locator": {
+        "year": "1994",
+        "country_code": "AUS"
+      }
+    },
+    {
+      "date": "1995",
+      "value": "18004882",
+      "locator": {
+        "year": "1995",
+        "country_code": "AUS"
+      }
+    },
+    {
+      "date": "1996",
+      "value": "18224767",
+      "locator": {
+        "year": "1996",
+        "country_code": "AUS"
+      }
+    },
+    {
+      "date": "1997",
+      "value": "18423037",
+      "locator": {
+        "year": "1997",
+        "country_code": "AUS"
+      }
+    },
+    {
+      "date": "1998",
+      "value": "18607584",
+      "locator": {
+        "year": "1998",
+        "country_code": "AUS"
+      }
+    },
+    {
+      "date": "1999",
+      "value": "18812264",
+      "locator": {
+        "year": "1999",
+        "country_code": "AUS"
+      }
+    },
+    {
+      "date": "2000",
+      "value": "19028802",
+      "locator": {
+        "year": "2000",
+        "country_code": "AUS"
+      }
+    },
+    {
+      "date": "2001",
+      "value": "19274701",
+      "locator": {
+        "year": "2001",
+        "country_code": "AUS"
+      }
+    },
+    {
+      "date": "2002",
+      "value": "19495210",
+      "locator": {
+        "year": "2002",
+        "country_code": "AUS"
+      }
+    },
+    {
+      "date": "2003",
+      "value": "19720737",
+      "locator": {
+        "year": "2003",
+        "country_code": "AUS"
+      }
+    },
+    {
+      "date": "2004",
+      "value": "19932722",
+      "locator": {
+        "year": "2004",
+        "country_code": "AUS"
+      }
+    },
+    {
+      "date": "2005",
+      "value": "20176844",
+      "locator": {
+        "year": "2005",
+        "country_code": "AUS"
+      }
+    },
+    {
+      "date": "2006",
+      "value": "20450966",
+      "locator": {
+        "year": "2006",
+        "country_code": "AUS"
+      }
+    },
+    {
+      "date": "2007",
+      "value": "20827622",
+      "locator": {
+        "year": "2007",
+        "country_code": "AUS"
+      }
+    },
+    {
+      "date": "2008",
+      "value": "21249199",
+      "locator": {
+        "year": "2008",
+        "country_code": "AUS"
+      }
+    },
+    {
+      "date": "2009",
+      "value": "21691653",
+      "locator": {
+        "year": "2009",
+        "country_code": "AUS"
+      }
+    },
+    {
+      "date": "2010",
+      "value": "22031750",
+      "locator": {
+        "year": "2010",
+        "country_code": "AUS"
+      }
+    },
+    {
+      "date": "2011",
+      "value": "22340024",
+      "locator": {
+        "year": "2011",
+        "country_code": "AUS"
+      }
+    },
+    {
+      "date": "2012",
+      "value": "22733465",
+      "locator": {
+        "year": "2012",
+        "country_code": "AUS"
+      }
+    },
+    {
+      "date": "2013",
+      "value": "23128129",
+      "locator": {
+        "year": "2013",
+        "country_code": "AUS"
+      }
+    },
+    {
+      "date": "2014",
+      "value": "23475686",
+      "locator": {
+        "year": "2014",
+        "country_code": "AUS"
+      }
+    },
+    {
+      "date": "2015",
+      "value": "23815995",
+      "locator": {
+        "year": "2015",
+        "country_code": "AUS"
+      }
+    },
+    {
+      "date": "2016",
+      "value": "24190907",
+      "locator": {
+        "year": "2016",
+        "country_code": "AUS"
+      }
+    },
+    {
+      "date": "2017",
+      "value": "24592588",
+      "locator": {
+        "year": "2017",
+        "country_code": "AUS"
+      }
+    },
+    {
+      "date": "2018",
+      "value": "24963258",
+      "locator": {
+        "year": "2018",
+        "country_code": "AUS"
+      }
+    },
+    {
+      "date": "2019",
+      "value": "25334826",
+      "locator": {
+        "year": "2019",
+        "country_code": "AUS"
+      }
+    },
+    {
+      "date": "2020",
+      "value": "25649248",
+      "locator": {
+        "year": "2020",
+        "country_code": "AUS"
+      }
+    },
+    {
+      "date": "2021",
+      "value": "25685412",
+      "locator": {
+        "year": "2021",
+        "country_code": "AUS"
+      }
+    },
+    {
+      "date": "2022",
+      "value": "26018721",
+      "locator": {
+        "year": "2022",
+        "country_code": "AUS"
+      }
+    },
+    {
+      "date": "2023",
+      "value": "26659922",
+      "locator": {
+        "year": "2023",
+        "country_code": "AUS"
+      }
+    },
+    {
+      "date": "2024",
+      "value": "27194286",
+      "locator": {
+        "year": "2024",
+        "country_code": "AUS"
+      }
+    },
+    {
+      "date": "2025",
+      "value": "27614411",
+      "locator": {
+        "year": "2025",
+        "country_code": "AUS"
+      }
+    }
+  ]
+}

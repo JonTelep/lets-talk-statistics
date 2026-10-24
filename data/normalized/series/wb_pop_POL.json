@@ -1,0 +1,543 @@
+{
+  "id": "wb_pop_POL",
+  "name": "Poland",
+  "units": "people",
+  "adjustment": "midyear",
+  "nominal_or_real": "count",
+  "frequency": "annual",
+  "source_id": "worldbank_sp_pop_totl",
+  "series_url": "https://data.worldbank.org/indicator/SP.POP.TOTL",
+  "country_code": "POL",
+  "country_name": "Poland",
+  "notes": "World Bank World Development Indicators, SP.POP.TOTL, country code POL. Midyear population. Published years in this file run from 1960 to 2025.",
+  "points": [
+    {
+      "date": "1960",
+      "value": "29637450",
+      "locator": {
+        "year": "1960",
+        "country_code": "POL"
+      }
+    },
+    {
+      "date": "1961",
+      "value": "29964000",
+      "locator": {
+        "year": "1961",
+        "country_code": "POL"
+      }
+    },
+    {
+      "date": "1962",
+      "value": "30308500",
+      "locator": {
+        "year": "1962",
+        "country_code": "POL"
+      }
+    },
+    {
+      "date": "1963",
+      "value": "30712000",
+      "locator": {
+        "year": "1963",
+        "country_code": "POL"
+      }
+    },
+    {
+      "date": "1964",
+      "value": "31139450",
+      "locator": {
+        "year": "1964",
+        "country_code": "POL"
+      }
+    },
+    {
+      "date": "1965",
+      "value": "31444950",
+      "locator": {
+        "year": "1965",
+        "country_code": "POL"
+      }
+    },
+    {
+      "date": "1966",
+      "value": "31681000",
+      "locator": {
+        "year": "1966",
+        "country_code": "POL"
+      }
+    },
+    {
+      "date": "1967",
+      "value": "31987155",
+      "locator": {
+        "year": "1967",
+        "country_code": "POL"
+      }
+    },
+    {
+      "date": "1968",
+      "value": "32294655",
+      "locator": {
+        "year": "1968",
+        "country_code": "POL"
+      }
+    },
+    {
+      "date": "1969",
+      "value": "32548300",
+      "locator": {
+        "year": "1969",
+        "country_code": "POL"
+      }
+    },
+    {
+      "date": "1970",
+      "value": "32664300",
+      "locator": {
+        "year": "1970",
+        "country_code": "POL"
+      }
+    },
+    {
+      "date": "1971",
+      "value": "32783500",
+      "locator": {
+        "year": "1971",
+        "country_code": "POL"
+      }
+    },
+    {
+      "date": "1972",
+      "value": "33055650",
+      "locator": {
+        "year": "1972",
+        "country_code": "POL"
+      }
+    },
+    {
+      "date": "1973",
+      "value": "33357200",
+      "locator": {
+        "year": "1973",
+        "country_code": "POL"
+      }
+    },
+    {
+      "date": "1974",
+      "value": "33678899",
+      "locator": {
+        "year": "1974",
+        "country_code": "POL"
+      }
+    },
+    {
+      "date": "1975",
+      "value": "34015199",
+      "locator": {
+        "year": "1975",
+        "country_code": "POL"
+      }
+    },
+    {
+      "date": "1976",
+      "value": "34356300",
+      "locator": {
+        "year": "1976",
+        "country_code": "POL"
+      }
+    },
+    {
+      "date": "1977",
+      "value": "34689050",
+      "locator": {
+        "year": "1977",
+        "country_code": "POL"
+      }
+    },
+    {
+      "date": "1978",
+      "value": "34965600",
+      "locator": {
+        "year": "1978",
+        "country_code": "POL"
+      }
+    },
+    {
+      "date": "1979",
+      "value": "35247217",
+      "locator": {
+        "year": "1979",
+        "country_code": "POL"
+      }
+    },
+    {
+      "date": "1980",
+      "value": "35574150",
+      "locator": {
+        "year": "1980",
+        "country_code": "POL"
+      }
+    },
+    {
+      "date": "1981",
+      "value": "35898587",
+      "locator": {
+        "year": "1981",
+        "country_code": "POL"
+      }
+    },
+    {
+      "date": "1982",
+      "value": "36230481",
+      "locator": {
+        "year": "1982",
+        "country_code": "POL"
+      }
+    },
+    {
+      "date": "1983",
+      "value": "36571808",
+      "locator": {
+        "year": "1983",
+        "country_code": "POL"
+      }
+    },
+    {
+      "date": "1984",
+      "value": "36904134",
+      "locator": {
+        "year": "1984",
+        "country_code": "POL"
+      }
+    },
+    {
+      "date": "1985",
+      "value": "37201885",
+      "locator": {
+        "year": "1985",
+        "country_code": "POL"
+      }
+    },
+    {
+      "date": "1986",
+      "value": "37456119",
+      "locator": {
+        "year": "1986",
+        "country_code": "POL"
+      }
+    },
+    {
+      "date": "1987",
+      "value": "37668045",
+      "locator": {
+        "year": "1987",
+        "country_code": "POL"
+      }
+    },
+    {
+      "date": "1988",
+      "value": "37824487",
+      "locator": {
+        "year": "1988",
+        "country_code": "POL"
+      }
+    },
+    {
+      "date": "1989",
+      "value": "37961529",
+      "locator": {
+        "year": "1989",
+        "country_code": "POL"
+      }
+    },
+    {
+      "date": "1990",
+      "value": "38110782",
+      "locator": {
+        "year": "1990",
+        "country_code": "POL"
+      }
+    },
+    {
+      "date": "1991",
+      "value": "38246193",
+      "locator": {
+        "year": "1991",
+        "country_code": "POL"
+      }
+    },
+    {
+      "date": "1992",
+      "value": "38363667",
+      "locator": {
+        "year": "1992",
+        "country_code": "POL"
+      }
+    },
+    {
+      "date": "1993",
+      "value": "38461408",
+      "locator": {
+        "year": "1993",
+        "country_code": "POL"
+      }
+    },
+    {
+      "date": "1994",
+      "value": "38542652",
+      "locator": {
+        "year": "1994",
+        "country_code": "POL"
+      }
+    },
+    {
+      "date": "1995",
+      "value": "38594998",
+      "locator": {
+        "year": "1995",
+        "country_code": "POL"
+      }
+    },
+    {
+      "date": "1996",
+      "value": "38624370",
+      "locator": {
+        "year": "1996",
+        "country_code": "POL"
+      }
+    },
+    {
+      "date": "1997",
+      "value": "38649660",
+      "locator": {
+        "year": "1997",
+        "country_code": "POL"
+      }
+    },
+    {
+      "date": "1998",
+      "value": "38663481",
+      "locator": {
+        "year": "1998",
+        "country_code": "POL"
+      }
+    },
+    {
+      "date": "1999",
+      "value": "38660271",
+      "locator": {
+        "year": "1999",
+        "country_code": "POL"
+      }
+    },
+    {
+      "date": "2000",
+      "value": "38258629",
+      "locator": {
+        "year": "2000",
+        "country_code": "POL"
+      }
+    },
+    {
+      "date": "2001",
+      "value": "38248076",
+      "locator": {
+        "year": "2001",
+        "country_code": "POL"
+      }
+    },
+    {
+      "date": "2002",
+      "value": "38230364",
+      "locator": {
+        "year": "2002",
+        "country_code": "POL"
+      }
+    },
+    {
+      "date": "2003",
+      "value": "38204570",
+      "locator": {
+        "year": "2003",
+        "country_code": "POL"
+      }
+    },
+    {
+      "date": "2004",
+      "value": "38182222",
+      "locator": {
+        "year": "2004",
+        "country_code": "POL"
+      }
+    },
+    {
+      "date": "2005",
+      "value": "38165445",
+      "locator": {
+        "year": "2005",
+        "country_code": "POL"
+      }
+    },
+    {
+      "date": "2006",
+      "value": "38141267",
+      "locator": {
+        "year": "2006",
+        "country_code": "POL"
+      }
+    },
+    {
+      "date": "2007",
+      "value": "38120560",
+      "locator": {
+        "year": "2007",
+        "country_code": "POL"
+      }
+    },
+    {
+      "date": "2008",
+      "value": "38125759",
+      "locator": {
+        "year": "2008",
+        "country_code": "POL"
+      }
+    },
+    {
+      "date": "2009",
+      "value": "38151603",
+      "locator": {
+        "year": "2009",
+        "country_code": "POL"
+      }
+    },
+    {
+      "date": "2010",
+      "value": "38042794",
+      "locator": {
+        "year": "2010",
+        "country_code": "POL"
+      }
+    },
+    {
+      "date": "2011",
+      "value": "38063255",
+      "locator": {
+        "year": "2011",
+        "country_code": "POL"
+      }
+    },
+    {
+      "date": "2012",
+      "value": "38063164",
+      "locator": {
+        "year": "2012",
+        "country_code": "POL"
+      }
+    },
+    {
+      "date": "2013",
+      "value": "38040196",
+      "locator": {
+        "year": "2013",
+        "country_code": "POL"
+      }
+    },
+    {
+      "date": "2014",
+      "value": "38011735",
+      "locator": {
+        "year": "2014",
+        "country_code": "POL"
+      }
+    },
+    {
+      "date": "2015",
+      "value": "37986412",
+      "locator": {
+        "year": "2015",
+        "country_code": "POL"
+      }
+    },
+    {
+      "date": "2016",
+      "value": "37970087",
+      "locator": {
+        "year": "2016",
+        "country_code": "POL"
+      }
+    },
+    {
+      "date": "2017",
+      "value": "37974826",
+      "locator": {
+        "year": "2017",
+        "country_code": "POL"
+      }
+    },
+    {
+      "date": "2018",
+      "value": "37974750",
+      "locator": {
+        "year": "2018",
+        "country_code": "POL"
+      }
+    },
+    {
+      "date": "2019",
+      "value": "37965475",
+      "locator": {
+        "year": "2019",
+        "country_code": "POL"
+      }
+    },
+    {
+      "date": "2020",
+      "value": "37515748",
+      "locator": {
+        "year": "2020",
+        "country_code": "POL"
+      }
+    },
+    {
+      "date": "2021",
+      "value": "36981559",
+      "locator": {
+        "year": "2021",
+        "country_code": "POL"
+      }
+    },
+    {
+      "date": "2022",
+      "value": "36821749",
+      "locator": {
+        "year": "2022",
+        "country_code": "POL"
+      }
+    },
+    {
+      "date": "2023",
+      "value": "36687353",
+      "locator": {
+        "year": "2023",
+        "country_code": "POL"
+      }
+    },
+    {
+      "date": "2024",
+      "value": "36559233",
+      "locator": {
+        "year": "2024",
+        "country_code": "POL"
+      }
+    },
+    {
+      "date": "2025",
+      "value": "36435861",
+      "locator": {
+        "year": "2025",
+        "country_code": "POL"
+      }
+    }
+  ]
+}

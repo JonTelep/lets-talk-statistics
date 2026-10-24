@@ -1,0 +1,377 @@
+{
+  "id": "eia_intl_gen_TUR",
+  "name": "Net generation",
+  "units": "billion kilowatthours",
+  "adjustment": "annual",
+  "nominal_or_real": "generation",
+  "frequency": "annual",
+  "source_id": "eia_intl_bulk",
+  "series_url": "https://www.eia.gov/international/data/world/electricity/electricity-generation",
+  "eia_series_id": "INTL.2-12-TUR-BKWH.A",
+  "country_code": "TUR",
+  "country_name": "Turkiye",
+  "population_status": "matched",
+  "notes": "EIA bulk series INTL.2-12-TUR-BKWH.A, Turkiye. Annual. Billion kilowatthours. 1 billion kilowatthours = 1 terawatthour. Published years in this file run from 1980 to 2024.",
+  "points": [
+    {
+      "date": "1980",
+      "value": "23.322",
+      "locator": {
+        "year": "1980",
+        "series_id": "INTL.2-12-TUR-BKWH.A"
+      }
+    },
+    {
+      "date": "1981",
+      "value": "23.803",
+      "locator": {
+        "year": "1981",
+        "series_id": "INTL.2-12-TUR-BKWH.A"
+      }
+    },
+    {
+      "date": "1982",
+      "value": "26.44",
+      "locator": {
+        "year": "1982",
+        "series_id": "INTL.2-12-TUR-BKWH.A"
+      }
+    },
+    {
+      "date": "1983",
+      "value": "27.356",
+      "locator": {
+        "year": "1983",
+        "series_id": "INTL.2-12-TUR-BKWH.A"
+      }
+    },
+    {
+      "date": "1984",
+      "value": "30.721",
+      "locator": {
+        "year": "1984",
+        "series_id": "INTL.2-12-TUR-BKWH.A"
+      }
+    },
+    {
+      "date": "1985",
+      "value": "34.369",
+      "locator": {
+        "year": "1985",
+        "series_id": "INTL.2-12-TUR-BKWH.A"
+      }
+    },
+    {
+      "date": "1986",
+      "value": "36.398",
+      "locator": {
+        "year": "1986",
+        "series_id": "INTL.2-12-TUR-BKWH.A"
+      }
+    },
+    {
+      "date": "1987",
+      "value": "39.965",
+      "locator": {
+        "year": "1987",
+        "series_id": "INTL.2-12-TUR-BKWH.A"
+      }
+    },
+    {
+      "date": "1988",
+      "value": "46.3",
+      "locator": {
+        "year": "1988",
+        "series_id": "INTL.2-12-TUR-BKWH.A"
+      }
+    },
+    {
+      "date": "1989",
+      "value": "45.879",
+      "locator": {
+        "year": "1989",
+        "series_id": "INTL.2-12-TUR-BKWH.A"
+      }
+    },
+    {
+      "date": "1990",
+      "value": "55.253",
+      "locator": {
+        "year": "1990",
+        "series_id": "INTL.2-12-TUR-BKWH.A"
+      }
+    },
+    {
+      "date": "1991",
+      "value": "57.772",
+      "locator": {
+        "year": "1991",
+        "series_id": "INTL.2-12-TUR-BKWH.A"
+      }
+    },
+    {
+      "date": "1992",
+      "value": "64.637",
+      "locator": {
+        "year": "1992",
+        "series_id": "INTL.2-12-TUR-BKWH.A"
+      }
+    },
+    {
+      "date": "1993",
+      "value": "71.085",
+      "locator": {
+        "year": "1993",
+        "series_id": "INTL.2-12-TUR-BKWH.A"
+      }
+    },
+    {
+      "date": "1994",
+      "value": "75.159",
+      "locator": {
+        "year": "1994",
+        "series_id": "INTL.2-12-TUR-BKWH.A"
+      }
+    },
+    {
+      "date": "1995",
+      "value": "82.868",
+      "locator": {
+        "year": "1995",
+        "series_id": "INTL.2-12-TUR-BKWH.A"
+      }
+    },
+    {
+      "date": "1996",
+      "value": "91.209",
+      "locator": {
+        "year": "1996",
+        "series_id": "INTL.2-12-TUR-BKWH.A"
+      }
+    },
+    {
+      "date": "1997",
+      "value": "99.11184",
+      "locator": {
+        "year": "1997",
+        "series_id": "INTL.2-12-TUR-BKWH.A"
+      }
+    },
+    {
+      "date": "1998",
+      "value": "106.47971",
+      "locator": {
+        "year": "1998",
+        "series_id": "INTL.2-12-TUR-BKWH.A"
+      }
+    },
+    {
+      "date": "1999",
+      "value": "111.135",
+      "locator": {
+        "year": "1999",
+        "series_id": "INTL.2-12-TUR-BKWH.A"
+      }
+    },
+    {
+      "date": "2000",
+      "value": "124.567",
+      "locator": {
+        "year": "2000",
+        "series_id": "INTL.2-12-TUR-BKWH.A"
+      }
+    },
+    {
+      "date": "2001",
+      "value": "122.443",
+      "locator": {
+        "year": "2001",
+        "series_id": "INTL.2-12-TUR-BKWH.A"
+      }
+    },
+    {
+      "date": "2002",
+      "value": "129.023",
+      "locator": {
+        "year": "2002",
+        "series_id": "INTL.2-12-TUR-BKWH.A"
+      }
+    },
+    {
+      "date": "2003",
+      "value": "140.197",
+      "locator": {
+        "year": "2003",
+        "series_id": "INTL.2-12-TUR-BKWH.A"
+      }
+    },
+    {
+      "date": "2004",
+      "value": "150.216",
+      "locator": {
+        "year": "2004",
+        "series_id": "INTL.2-12-TUR-BKWH.A"
+      }
+    },
+    {
+      "date": "2005",
+      "value": "161.482",
+      "locator": {
+        "year": "2005",
+        "series_id": "INTL.2-12-TUR-BKWH.A"
+      }
+    },
+    {
+      "date": "2006",
+      "value": "175.776",
+      "locator": {
+        "year": "2006",
+        "series_id": "INTL.2-12-TUR-BKWH.A"
+      }
+    },
+    {
+      "date": "2007",
+      "value": "191.094",
+      "locator": {
+        "year": "2007",
+        "series_id": "INTL.2-12-TUR-BKWH.A"
+      }
+    },
+    {
+      "date": "2008",
+      "value": "198.02",
+      "locator": {
+        "year": "2008",
+        "series_id": "INTL.2-12-TUR-BKWH.A"
+      }
+    },
+    {
+      "date": "2009",
+      "value": "194.376",
+      "locator": {
+        "year": "2009",
+        "series_id": "INTL.2-12-TUR-BKWH.A"
+      }
+    },
+    {
+      "date": "2010",
+      "value": "210.615",
+      "locator": {
+        "year": "2010",
+        "series_id": "INTL.2-12-TUR-BKWH.A"
+      }
+    },
+    {
+      "date": "2011",
+      "value": "227.992",
+      "locator": {
+        "year": "2011",
+        "series_id": "INTL.2-12-TUR-BKWH.A"
+      }
+    },
+    {
+      "date": "2012",
+      "value": "238.034",
+      "locator": {
+        "year": "2012",
+        "series_id": "INTL.2-12-TUR-BKWH.A"
+      }
+    },
+    {
+      "date": "2013",
+      "value": "238.462",
+      "locator": {
+        "year": "2013",
+        "series_id": "INTL.2-12-TUR-BKWH.A"
+      }
+    },
+    {
+      "date": "2014",
+      "value": "250.371",
+      "locator": {
+        "year": "2014",
+        "series_id": "INTL.2-12-TUR-BKWH.A"
+      }
+    },
+    {
+      "date": "2015",
+      "value": "259.433",
+      "locator": {
+        "year": "2015",
+        "series_id": "INTL.2-12-TUR-BKWH.A"
+      }
+    },
+    {
+      "date": "2016",
+      "value": "272.1751",
+      "locator": {
+        "year": "2016",
+        "series_id": "INTL.2-12-TUR-BKWH.A"
+      }
+    },
+    {
+      "date": "2017",
+      "value": "294.8266",
+      "locator": {
+        "year": "2017",
+        "series_id": "INTL.2-12-TUR-BKWH.A"
+      }
+    },
+    {
+      "date": "2018",
+      "value": "301.8558",
+      "locator": {
+        "year": "2018",
+        "series_id": "INTL.2-12-TUR-BKWH.A"
+      }
+    },
+    {
+      "date": "2019",
+      "value": "300.1616",
+      "locator": {
+        "year": "2019",
+        "series_id": "INTL.2-12-TUR-BKWH.A"
+      }
+    },
+    {
+      "date": "2020",
+      "value": "303.3885",
+      "locator": {
+        "year": "2020",
+        "series_id": "INTL.2-12-TUR-BKWH.A"
+      }
+    },
+    {
+      "date": "2021",
+      "value": "324.6263405",
+      "locator": {
+        "year": "2021",
+        "series_id": "INTL.2-12-TUR-BKWH.A"
+      }
+    },
+    {
+      "date": "2022",
+      "value": "313.6719109",
+      "locator": {
+        "year": "2022",
+        "series_id": "INTL.2-12-TUR-BKWH.A"
+      }
+    },
+    {
+      "date": "2023",
+      "value": "318.9722023",
+      "locator": {
+        "year": "2023",
+        "series_id": "INTL.2-12-TUR-BKWH.A"
+      }
+    },
+    {
+      "date": "2024",
+      "value": "332.919334345",
+      "locator": {
+        "year": "2024",
+        "series_id": "INTL.2-12-TUR-BKWH.A"
+      }
+    }
+  ]
+}

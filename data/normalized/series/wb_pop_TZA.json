@@ -1,0 +1,543 @@
+{
+  "id": "wb_pop_TZA",
+  "name": "Tanzania",
+  "units": "people",
+  "adjustment": "midyear",
+  "nominal_or_real": "count",
+  "frequency": "annual",
+  "source_id": "worldbank_sp_pop_totl",
+  "series_url": "https://data.worldbank.org/indicator/SP.POP.TOTL",
+  "country_code": "TZA",
+  "country_name": "Tanzania",
+  "notes": "World Bank World Development Indicators, SP.POP.TOTL, country code TZA. Midyear population. Published years in this file run from 1960 to 2025.",
+  "points": [
+    {
+      "date": "1960",
+      "value": "9901419",
+      "locator": {
+        "year": "1960",
+        "country_code": "TZA"
+      }
+    },
+    {
+      "date": "1961",
+      "value": "10187886",
+      "locator": {
+        "year": "1961",
+        "country_code": "TZA"
+      }
+    },
+    {
+      "date": "1962",
+      "value": "10487756",
+      "locator": {
+        "year": "1962",
+        "country_code": "TZA"
+      }
+    },
+    {
+      "date": "1963",
+      "value": "10799528",
+      "locator": {
+        "year": "1963",
+        "country_code": "TZA"
+      }
+    },
+    {
+      "date": "1964",
+      "value": "11127826",
+      "locator": {
+        "year": "1964",
+        "country_code": "TZA"
+      }
+    },
+    {
+      "date": "1965",
+      "value": "11470728",
+      "locator": {
+        "year": "1965",
+        "country_code": "TZA"
+      }
+    },
+    {
+      "date": "1966",
+      "value": "11827459",
+      "locator": {
+        "year": "1966",
+        "country_code": "TZA"
+      }
+    },
+    {
+      "date": "1967",
+      "value": "12200109",
+      "locator": {
+        "year": "1967",
+        "country_code": "TZA"
+      }
+    },
+    {
+      "date": "1968",
+      "value": "12602076",
+      "locator": {
+        "year": "1968",
+        "country_code": "TZA"
+      }
+    },
+    {
+      "date": "1969",
+      "value": "13036700",
+      "locator": {
+        "year": "1969",
+        "country_code": "TZA"
+      }
+    },
+    {
+      "date": "1970",
+      "value": "13492677",
+      "locator": {
+        "year": "1970",
+        "country_code": "TZA"
+      }
+    },
+    {
+      "date": "1971",
+      "value": "13971451",
+      "locator": {
+        "year": "1971",
+        "country_code": "TZA"
+      }
+    },
+    {
+      "date": "1972",
+      "value": "14479308",
+      "locator": {
+        "year": "1972",
+        "country_code": "TZA"
+      }
+    },
+    {
+      "date": "1973",
+      "value": "15010101",
+      "locator": {
+        "year": "1973",
+        "country_code": "TZA"
+      }
+    },
+    {
+      "date": "1974",
+      "value": "15561630",
+      "locator": {
+        "year": "1974",
+        "country_code": "TZA"
+      }
+    },
+    {
+      "date": "1975",
+      "value": "16138361",
+      "locator": {
+        "year": "1975",
+        "country_code": "TZA"
+      }
+    },
+    {
+      "date": "1976",
+      "value": "16736211",
+      "locator": {
+        "year": "1976",
+        "country_code": "TZA"
+      }
+    },
+    {
+      "date": "1977",
+      "value": "17352929",
+      "locator": {
+        "year": "1977",
+        "country_code": "TZA"
+      }
+    },
+    {
+      "date": "1978",
+      "value": "17976566",
+      "locator": {
+        "year": "1978",
+        "country_code": "TZA"
+      }
+    },
+    {
+      "date": "1979",
+      "value": "18592038",
+      "locator": {
+        "year": "1979",
+        "country_code": "TZA"
+      }
+    },
+    {
+      "date": "1980",
+      "value": "19189769",
+      "locator": {
+        "year": "1980",
+        "country_code": "TZA"
+      }
+    },
+    {
+      "date": "1981",
+      "value": "19784703",
+      "locator": {
+        "year": "1981",
+        "country_code": "TZA"
+      }
+    },
+    {
+      "date": "1982",
+      "value": "20398571",
+      "locator": {
+        "year": "1982",
+        "country_code": "TZA"
+      }
+    },
+    {
+      "date": "1983",
+      "value": "21079874",
+      "locator": {
+        "year": "1983",
+        "country_code": "TZA"
+      }
+    },
+    {
+      "date": "1984",
+      "value": "21779066",
+      "locator": {
+        "year": "1984",
+        "country_code": "TZA"
+      }
+    },
+    {
+      "date": "1985",
+      "value": "22501693",
+      "locator": {
+        "year": "1985",
+        "country_code": "TZA"
+      }
+    },
+    {
+      "date": "1986",
+      "value": "23258959",
+      "locator": {
+        "year": "1986",
+        "country_code": "TZA"
+      }
+    },
+    {
+      "date": "1987",
+      "value": "24030378",
+      "locator": {
+        "year": "1987",
+        "country_code": "TZA"
+      }
+    },
+    {
+      "date": "1988",
+      "value": "24769686",
+      "locator": {
+        "year": "1988",
+        "country_code": "TZA"
+      }
+    },
+    {
+      "date": "1989",
+      "value": "25438759",
+      "locator": {
+        "year": "1989",
+        "country_code": "TZA"
+      }
+    },
+    {
+      "date": "1990",
+      "value": "26110207",
+      "locator": {
+        "year": "1990",
+        "country_code": "TZA"
+      }
+    },
+    {
+      "date": "1991",
+      "value": "26780436",
+      "locator": {
+        "year": "1991",
+        "country_code": "TZA"
+      }
+    },
+    {
+      "date": "1992",
+      "value": "27457588",
+      "locator": {
+        "year": "1992",
+        "country_code": "TZA"
+      }
+    },
+    {
+      "date": "1993",
+      "value": "28332692",
+      "locator": {
+        "year": "1993",
+        "country_code": "TZA"
+      }
+    },
+    {
+      "date": "1994",
+      "value": "29442356",
+      "locator": {
+        "year": "1994",
+        "country_code": "TZA"
+      }
+    },
+    {
+      "date": "1995",
+      "value": "30383497",
+      "locator": {
+        "year": "1995",
+        "country_code": "TZA"
+      }
+    },
+    {
+      "date": "1996",
+      "value": "30945762",
+      "locator": {
+        "year": "1996",
+        "country_code": "TZA"
+      }
+    },
+    {
+      "date": "1997",
+      "value": "31578089",
+      "locator": {
+        "year": "1997",
+        "country_code": "TZA"
+      }
+    },
+    {
+      "date": "1998",
+      "value": "32420458",
+      "locator": {
+        "year": "1998",
+        "country_code": "TZA"
+      }
+    },
+    {
+      "date": "1999",
+      "value": "33300330",
+      "locator": {
+        "year": "1999",
+        "country_code": "TZA"
+      }
+    },
+    {
+      "date": "2000",
+      "value": "34260139",
+      "locator": {
+        "year": "2000",
+        "country_code": "TZA"
+      }
+    },
+    {
+      "date": "2001",
+      "value": "35198299",
+      "locator": {
+        "year": "2001",
+        "country_code": "TZA"
+      }
+    },
+    {
+      "date": "2002",
+      "value": "36121304",
+      "locator": {
+        "year": "2002",
+        "country_code": "TZA"
+      }
+    },
+    {
+      "date": "2003",
+      "value": "37089555",
+      "locator": {
+        "year": "2003",
+        "country_code": "TZA"
+      }
+    },
+    {
+      "date": "2004",
+      "value": "38109668",
+      "locator": {
+        "year": "2004",
+        "country_code": "TZA"
+      }
+    },
+    {
+      "date": "2005",
+      "value": "39182076",
+      "locator": {
+        "year": "2005",
+        "country_code": "TZA"
+      }
+    },
+    {
+      "date": "2006",
+      "value": "40294902",
+      "locator": {
+        "year": "2006",
+        "country_code": "TZA"
+      }
+    },
+    {
+      "date": "2007",
+      "value": "41435512",
+      "locator": {
+        "year": "2007",
+        "country_code": "TZA"
+      }
+    },
+    {
+      "date": "2008",
+      "value": "42570728",
+      "locator": {
+        "year": "2008",
+        "country_code": "TZA"
+      }
+    },
+    {
+      "date": "2009",
+      "value": "43633982",
+      "locator": {
+        "year": "2009",
+        "country_code": "TZA"
+      }
+    },
+    {
+      "date": "2010",
+      "value": "44758488",
+      "locator": {
+        "year": "2010",
+        "country_code": "TZA"
+      }
+    },
+    {
+      "date": "2011",
+      "value": "46029367",
+      "locator": {
+        "year": "2011",
+        "country_code": "TZA"
+      }
+    },
+    {
+      "date": "2012",
+      "value": "47374260",
+      "locator": {
+        "year": "2012",
+        "country_code": "TZA"
+      }
+    },
+    {
+      "date": "2013",
+      "value": "48824128",
+      "locator": {
+        "year": "2013",
+        "country_code": "TZA"
+      }
+    },
+    {
+      "date": "2014",
+      "value": "50351512",
+      "locator": {
+        "year": "2014",
+        "country_code": "TZA"
+      }
+    },
+    {
+      "date": "2015",
+      "value": "52020962",
+      "locator": {
+        "year": "2015",
+        "country_code": "TZA"
+      }
+    },
+    {
+      "date": "2016",
+      "value": "53824013",
+      "locator": {
+        "year": "2016",
+        "country_code": "TZA"
+      }
+    },
+    {
+      "date": "2017",
+      "value": "55652890",
+      "locator": {
+        "year": "2017",
+        "country_code": "TZA"
+      }
+    },
+    {
+      "date": "2018",
+      "value": "57437145",
+      "locator": {
+        "year": "2018",
+        "country_code": "TZA"
+      }
+    },
+    {
+      "date": "2019",
+      "value": "59174891",
+      "locator": {
+        "year": "2019",
+        "country_code": "TZA"
+      }
+    },
+    {
+      "date": "2020",
+      "value": "60972798",
+      "locator": {
+        "year": "2020",
+        "country_code": "TZA"
+      }
+    },
+    {
+      "date": "2021",
+      "value": "62830412",
+      "locator": {
+        "year": "2021",
+        "country_code": "TZA"
+      }
+    },
+    {
+      "date": "2022",
+      "value": "64711821",
+      "locator": {
+        "year": "2022",
+        "country_code": "TZA"
+      }
+    },
+    {
+      "date": "2023",
+      "value": "66617606",
+      "locator": {
+        "year": "2023",
+        "country_code": "TZA"
+      }
+    },
+    {
+      "date": "2024",
+      "value": "68560157",
+      "locator": {
+        "year": "2024",
+        "country_code": "TZA"
+      }
+    },
+    {
+      "date": "2025",
+      "value": "70545865",
+      "locator": {
+        "year": "2025",
+        "country_code": "TZA"
+      }
+    }
+  ]
+}

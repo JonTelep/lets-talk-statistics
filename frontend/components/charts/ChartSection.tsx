@@ -11,6 +11,7 @@ export default function ChartSection({ charts }: { charts: ChartSpec[] }) {
           series={seriesFor(chart)}
           terms={site.presidents.terms}
           presidentNote={site.presidents.note}
+          sources={site.sources}
         />
       ))}
     </div>

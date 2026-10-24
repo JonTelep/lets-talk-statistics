@@ -1,0 +1,121 @@
+{
+  "id": "eia_intl_gen_CSK",
+  "name": "Net generation",
+  "units": "billion kilowatthours",
+  "adjustment": "annual",
+  "nominal_or_real": "generation",
+  "frequency": "annual",
+  "source_id": "eia_intl_bulk",
+  "series_url": "https://www.eia.gov/international/data/world/electricity/electricity-generation",
+  "eia_series_id": "INTL.2-12-CSK-BKWH.A",
+  "country_code": "CSK",
+  "country_name": "Former Czechoslovakia",
+  "population_status": "no_world_bank_country",
+  "notes": "EIA bulk series INTL.2-12-CSK-BKWH.A, Former Czechoslovakia. Annual. Billion kilowatthours. 1 billion kilowatthours = 1 terawatthour. Published years in this file run from 1980 to 1992.",
+  "points": [
+    {
+      "date": "1980",
+      "value": "72.148",
+      "locator": {
+        "year": "1980",
+        "series_id": "INTL.2-12-CSK-BKWH.A"
+      }
+    },
+    {
+      "date": "1981",
+      "value": "69.133",
+      "locator": {
+        "year": "1981",
+        "series_id": "INTL.2-12-CSK-BKWH.A"
+      }
+    },
+    {
+      "date": "1982",
+      "value": "70.426",
+      "locator": {
+        "year": "1982",
+        "series_id": "INTL.2-12-CSK-BKWH.A"
+      }
+    },
+    {
+      "date": "1983",
+      "value": "71.853",
+      "locator": {
+        "year": "1983",
+        "series_id": "INTL.2-12-CSK-BKWH.A"
+      }
+    },
+    {
+      "date": "1984",
+      "value": "73.886",
+      "locator": {
+        "year": "1984",
+        "series_id": "INTL.2-12-CSK-BKWH.A"
+      }
+    },
+    {
+      "date": "1985",
+      "value": "76.343",
+      "locator": {
+        "year": "1985",
+        "series_id": "INTL.2-12-CSK-BKWH.A"
+      }
+    },
+    {
+      "date": "1986",
+      "value": "80.517",
+      "locator": {
+        "year": "1986",
+        "series_id": "INTL.2-12-CSK-BKWH.A"
+      }
+    },
+    {
+      "date": "1987",
+      "value": "80.36",
+      "locator": {
+        "year": "1987",
+        "series_id": "INTL.2-12-CSK-BKWH.A"
+      }
+    },
+    {
+      "date": "1988",
+      "value": "81.747",
+      "locator": {
+        "year": "1988",
+        "series_id": "INTL.2-12-CSK-BKWH.A"
+      }
+    },
+    {
+      "date": "1989",
+      "value": "83.552",
+      "locator": {
+        "year": "1989",
+        "series_id": "INTL.2-12-CSK-BKWH.A"
+      }
+    },
+    {
+      "date": "1990",
+      "value": "81.249",
+      "locator": {
+        "year": "1990",
+        "series_id": "INTL.2-12-CSK-BKWH.A"
+      }
+    },
+    {
+      "date": "1991",
+      "value": "78.415",
+      "locator": {
+        "year": "1991",
+        "series_id": "INTL.2-12-CSK-BKWH.A"
+      }
+    },
+    {
+      "date": "1992",
+      "value": "77.836",
+      "locator": {
+        "year": "1992",
+        "series_id": "INTL.2-12-CSK-BKWH.A"
+      }
+    }
+  ]
+}

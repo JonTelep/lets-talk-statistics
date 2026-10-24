@@ -1,0 +1,169 @@
+{
+  "id": "eia_intl_gen_SRB",
+  "name": "Net generation",
+  "units": "billion kilowatthours",
+  "adjustment": "annual",
+  "nominal_or_real": "generation",
+  "frequency": "annual",
+  "source_id": "eia_intl_bulk",
+  "series_url": "https://www.eia.gov/international/data/world/electricity/electricity-generation",
+  "eia_series_id": "INTL.2-12-SRB-BKWH.A",
+  "country_code": "SRB",
+  "country_name": "Serbia",
+  "population_status": "matched",
+  "notes": "EIA bulk series INTL.2-12-SRB-BKWH.A, Serbia. Annual. Billion kilowatthours. 1 billion kilowatthours = 1 terawatthour. Published years in this file run from 2006 to 2024.",
+  "points": [
+    {
+      "date": "2006",
+      "value": "35.629",
+      "locator": {
+        "year": "2006",
+        "series_id": "INTL.2-12-SRB-BKWH.A"
+      }
+    },
+    {
+      "date": "2007",
+      "value": "35.709",
+      "locator": {
+        "year": "2007",
+        "series_id": "INTL.2-12-SRB-BKWH.A"
+      }
+    },
+    {
+      "date": "2008",
+      "value": "36.498",
+      "locator": {
+        "year": "2008",
+        "series_id": "INTL.2-12-SRB-BKWH.A"
+      }
+    },
+    {
+      "date": "2009",
+      "value": "37.419",
+      "locator": {
+        "year": "2009",
+        "series_id": "INTL.2-12-SRB-BKWH.A"
+      }
+    },
+    {
+      "date": "2010",
+      "value": "37.054",
+      "locator": {
+        "year": "2010",
+        "series_id": "INTL.2-12-SRB-BKWH.A"
+      }
+    },
+    {
+      "date": "2011",
+      "value": "37.74",
+      "locator": {
+        "year": "2011",
+        "series_id": "INTL.2-12-SRB-BKWH.A"
+      }
+    },
+    {
+      "date": "2012",
+      "value": "35.93",
+      "locator": {
+        "year": "2012",
+        "series_id": "INTL.2-12-SRB-BKWH.A"
+      }
+    },
+    {
+      "date": "2013",
+      "value": "38.877",
+      "locator": {
+        "year": "2013",
+        "series_id": "INTL.2-12-SRB-BKWH.A"
+      }
+    },
+    {
+      "date": "2014",
+      "value": "33.163",
+      "locator": {
+        "year": "2014",
+        "series_id": "INTL.2-12-SRB-BKWH.A"
+      }
+    },
+    {
+      "date": "2015",
+      "value": "37.209",
+      "locator": {
+        "year": "2015",
+        "series_id": "INTL.2-12-SRB-BKWH.A"
+      }
+    },
+    {
+      "date": "2016",
+      "value": "38.314",
+      "locator": {
+        "year": "2016",
+        "series_id": "INTL.2-12-SRB-BKWH.A"
+      }
+    },
+    {
+      "date": "2017",
+      "value": "36.1087",
+      "locator": {
+        "year": "2017",
+        "series_id": "INTL.2-12-SRB-BKWH.A"
+      }
+    },
+    {
+      "date": "2018",
+      "value": "36.3608",
+      "locator": {
+        "year": "2018",
+        "series_id": "INTL.2-12-SRB-BKWH.A"
+      }
+    },
+    {
+      "date": "2019",
+      "value": "36.5036",
+      "locator": {
+        "year": "2019",
+        "series_id": "INTL.2-12-SRB-BKWH.A"
+      }
+    },
+    {
+      "date": "2020",
+      "value": "36.9167",
+      "locator": {
+        "year": "2020",
+        "series_id": "INTL.2-12-SRB-BKWH.A"
+      }
+    },
+    {
+      "date": "2021",
+      "value": "37.2364",
+      "locator": {
+        "year": "2021",
+        "series_id": "INTL.2-12-SRB-BKWH.A"
+      }
+    },
+    {
+      "date": "2022",
+      "value": "34.9015387",
+      "locator": {
+        "year": "2022",
+        "series_id": "INTL.2-12-SRB-BKWH.A"
+      }
+    },
+    {
+      "date": "2023",
+      "value": "39.7024198",
+      "locator": {
+        "year": "2023",
+        "series_id": "INTL.2-12-SRB-BKWH.A"
+      }
+    },
+    {
+      "date": "2024",
+      "value": "36.992694724",
+      "locator": {
+        "year": "2024",
+        "series_id": "INTL.2-12-SRB-BKWH.A"
+      }
+    }
+  ]
+}
