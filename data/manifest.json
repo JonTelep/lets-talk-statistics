@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-19T04:18:52Z",
+  "generated_at": "2026-10-24T04:49:06Z",
   "sources": [
     {
       "id": "bls_cu_series",
@@ -375,6 +375,46 @@
       "format": "xlsx",
       "page_url": "https://www.cbp.gov/document/stats/cbp-data-download-portal-library",
       "series_url": "https://www.cbp.gov/document/stats/cbp-data-download-portal-library"
+    },
+    {
+      "id": "eia_total_bulk",
+      "publisher": "U.S. Energy Information Administration",
+      "title": "Monthly Energy Review bulk file, electricity net generation (TOTAL.zip)",
+      "url": "https://www.eia.gov/opendata/bulk/TOTAL.zip",
+      "retrieved_at": "2026-10-24T04:49:05Z",
+      "sha256": "2417c35bbc7b9e311026b4773a153679f9eb4101202614f57dbedd824f123b1b",
+      "bytes": 3232144,
+      "path": "data/raw/eia/TOTAL.zip",
+      "format": "eia_bulk_zip",
+      "series_url": "https://www.eia.gov/totalenergy/data/browser/index.php?tbl=T07.02A",
+      "page_url": "https://www.eia.gov/totalenergy/data/browser/index.php?tbl=T07.02A"
+    },
+    {
+      "id": "eia_intl_bulk",
+      "publisher": "U.S. Energy Information Administration",
+      "title": "International Energy Data bulk file, electricity net generation, billion kilowatthours, annual",
+      "url": "https://www.eia.gov/opendata/bulk/INTL.zip",
+      "retrieved_at": "2026-10-24T04:49:05Z",
+      "sha256": "7de74bfbafe4eaf2603a025a3cb4e36824c5cffd0bde4ada2fe8eb5aa39cf5ef",
+      "bytes": 284817,
+      "path": "data/raw/eia/INTL_electricity_net_generation_bkwh_annual.jsonl",
+      "format": "eia_intl_jsonl",
+      "series_url": "https://www.eia.gov/international/data/world/electricity/electricity-generation",
+      "page_url": "https://www.eia.gov/international/data/world/electricity/electricity-generation",
+      "filter": "INTL.txt lines whose series is annual electricity net generation in billion kilowatthours (INTL.2-12-*-BKWH.A). Lines are copied unchanged."
+    },
+    {
+      "id": "worldbank_sp_pop_totl",
+      "publisher": "World Bank",
+      "title": "World Development Indicators, Population, total (SP.POP.TOTL)",
+      "url": "https://api.worldbank.org/v2/en/indicator/SP.POP.TOTL?downloadformat=csv",
+      "retrieved_at": "2026-10-24T04:49:06Z",
+      "sha256": "9c8a27460bb951b2b6e18fe9c01fac3938c78fd6b8862a84240d01f218b649b0",
+      "bytes": 90332,
+      "path": "data/raw/worldbank/SP.POP.TOTL.zip",
+      "format": "worldbank_zip",
+      "series_url": "https://data.worldbank.org/indicator/SP.POP.TOTL",
+      "page_url": "https://data.worldbank.org/indicator/SP.POP.TOTL"
     }
   ]
 }

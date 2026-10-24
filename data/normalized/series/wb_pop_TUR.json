@@ -1,0 +1,543 @@
+{
+  "id": "wb_pop_TUR",
+  "name": "Turkiye",
+  "units": "people",
+  "adjustment": "midyear",
+  "nominal_or_real": "count",
+  "frequency": "annual",
+  "source_id": "worldbank_sp_pop_totl",
+  "series_url": "https://data.worldbank.org/indicator/SP.POP.TOTL",
+  "country_code": "TUR",
+  "country_name": "Turkiye",
+  "notes": "World Bank World Development Indicators, SP.POP.TOTL, country code TUR. Midyear population. Published years in this file run from 1960 to 2025.",
+  "points": [
+    {
+      "date": "1960",
+      "value": "28329898",
+      "locator": {
+        "year": "1960",
+        "country_code": "TUR"
+      }
+    },
+    {
+      "date": "1961",
+      "value": "29119238",
+      "locator": {
+        "year": "1961",
+        "country_code": "TUR"
+      }
+    },
+    {
+      "date": "1962",
+      "value": "29916147",
+      "locator": {
+        "year": "1962",
+        "country_code": "TUR"
+      }
+    },
+    {
+      "date": "1963",
+      "value": "30726841",
+      "locator": {
+        "year": "1963",
+        "country_code": "TUR"
+      }
+    },
+    {
+      "date": "1964",
+      "value": "31543072",
+      "locator": {
+        "year": "1964",
+        "country_code": "TUR"
+      }
+    },
+    {
+      "date": "1965",
+      "value": "32345220",
+      "locator": {
+        "year": "1965",
+        "country_code": "TUR"
+      }
+    },
+    {
+      "date": "1966",
+      "value": "33177672",
+      "locator": {
+        "year": "1966",
+        "country_code": "TUR"
+      }
+    },
+    {
+      "date": "1967",
+      "value": "34050421",
+      "locator": {
+        "year": "1967",
+        "country_code": "TUR"
+      }
+    },
+    {
+      "date": "1968",
+      "value": "34921684",
+      "locator": {
+        "year": "1968",
+        "country_code": "TUR"
+      }
+    },
+    {
+      "date": "1969",
+      "value": "35787774",
+      "locator": {
+        "year": "1969",
+        "country_code": "TUR"
+      }
+    },
+    {
+      "date": "1970",
+      "value": "36638465",
+      "locator": {
+        "year": "1970",
+        "country_code": "TUR"
+      }
+    },
+    {
+      "date": "1971",
+      "value": "37518611",
+      "locator": {
+        "year": "1971",
+        "country_code": "TUR"
+      }
+    },
+    {
+      "date": "1972",
+      "value": "38430221",
+      "locator": {
+        "year": "1972",
+        "country_code": "TUR"
+      }
+    },
+    {
+      "date": "1973",
+      "value": "39329533",
+      "locator": {
+        "year": "1973",
+        "country_code": "TUR"
+      }
+    },
+    {
+      "date": "1974",
+      "value": "40210234",
+      "locator": {
+        "year": "1974",
+        "country_code": "TUR"
+      }
+    },
+    {
+      "date": "1975",
+      "value": "41053126",
+      "locator": {
+        "year": "1975",
+        "country_code": "TUR"
+      }
+    },
+    {
+      "date": "1976",
+      "value": "41899984",
+      "locator": {
+        "year": "1976",
+        "country_code": "TUR"
+      }
+    },
+    {
+      "date": "1977",
+      "value": "42773298",
+      "locator": {
+        "year": "1977",
+        "country_code": "TUR"
+      }
+    },
+    {
+      "date": "1978",
+      "value": "43645306",
+      "locator": {
+        "year": "1978",
+        "country_code": "TUR"
+      }
+    },
+    {
+      "date": "1979",
+      "value": "44510429",
+      "locator": {
+        "year": "1979",
+        "country_code": "TUR"
+      }
+    },
+    {
+      "date": "1980",
+      "value": "45408815",
+      "locator": {
+        "year": "1980",
+        "country_code": "TUR"
+      }
+    },
+    {
+      "date": "1981",
+      "value": "46321190",
+      "locator": {
+        "year": "1981",
+        "country_code": "TUR"
+      }
+    },
+    {
+      "date": "1982",
+      "value": "47322096",
+      "locator": {
+        "year": "1982",
+        "country_code": "TUR"
+      }
+    },
+    {
+      "date": "1983",
+      "value": "48447410",
+      "locator": {
+        "year": "1983",
+        "country_code": "TUR"
+      }
+    },
+    {
+      "date": "1984",
+      "value": "49574069",
+      "locator": {
+        "year": "1984",
+        "country_code": "TUR"
+      }
+    },
+    {
+      "date": "1985",
+      "value": "50687115",
+      "locator": {
+        "year": "1985",
+        "country_code": "TUR"
+      }
+    },
+    {
+      "date": "1986",
+      "value": "51777772",
+      "locator": {
+        "year": "1986",
+        "country_code": "TUR"
+      }
+    },
+    {
+      "date": "1987",
+      "value": "52843670",
+      "locator": {
+        "year": "1987",
+        "country_code": "TUR"
+      }
+    },
+    {
+      "date": "1988",
+      "value": "53909626",
+      "locator": {
+        "year": "1988",
+        "country_code": "TUR"
+      }
+    },
+    {
+      "date": "1989",
+      "value": "54976723",
+      "locator": {
+        "year": "1989",
+        "country_code": "TUR"
+      }
+    },
+    {
+      "date": "1990",
+      "value": "56015628",
+      "locator": {
+        "year": "1990",
+        "country_code": "TUR"
+      }
+    },
+    {
+      "date": "1991",
+      "value": "57009887",
+      "locator": {
+        "year": "1991",
+        "country_code": "TUR"
+      }
+    },
+    {
+      "date": "1992",
+      "value": "57990118",
+      "locator": {
+        "year": "1992",
+        "country_code": "TUR"
+      }
+    },
+    {
+      "date": "1993",
+      "value": "58999167",
+      "locator": {
+        "year": "1993",
+        "country_code": "TUR"
+      }
+    },
+    {
+      "date": "1994",
+      "value": "60033836",
+      "locator": {
+        "year": "1994",
+        "country_code": "TUR"
+      }
+    },
+    {
+      "date": "1995",
+      "value": "61024503",
+      "locator": {
+        "year": "1995",
+        "country_code": "TUR"
+      }
+    },
+    {
+      "date": "1996",
+      "value": "61951134",
+      "locator": {
+        "year": "1996",
+        "country_code": "TUR"
+      }
+    },
+    {
+      "date": "1997",
+      "value": "62852966",
+      "locator": {
+        "year": "1997",
+        "country_code": "TUR"
+      }
+    },
+    {
+      "date": "1998",
+      "value": "63734383",
+      "locator": {
+        "year": "1998",
+        "country_code": "TUR"
+      }
+    },
+    {
+      "date": "1999",
+      "value": "64591923",
+      "locator": {
+        "year": "1999",
+        "country_code": "TUR"
+      }
+    },
+    {
+      "date": "2000",
+      "value": "65425961",
+      "locator": {
+        "year": "2000",
+        "country_code": "TUR"
+      }
+    },
+    {
+      "date": "2001",
+      "value": "66245128",
+      "locator": {
+        "year": "2001",
+        "country_code": "TUR"
+      }
+    },
+    {
+      "date": "2002",
+      "value": "67048795",
+      "locator": {
+        "year": "2002",
+        "country_code": "TUR"
+      }
+    },
+    {
+      "date": "2003",
+      "value": "67831730",
+      "locator": {
+        "year": "2003",
+        "country_code": "TUR"
+      }
+    },
+    {
+      "date": "2004",
+      "value": "68592617",
+      "locator": {
+        "year": "2004",
+        "country_code": "TUR"
+      }
+    },
+    {
+      "date": "2005",
+      "value": "69329557",
+      "locator": {
+        "year": "2005",
+        "country_code": "TUR"
+      }
+    },
+    {
+      "date": "2006",
+      "value": "70045349",
+      "locator": {
+        "year": "2006",
+        "country_code": "TUR"
+      }
+    },
+    {
+      "date": "2007",
+      "value": "70158112",
+      "locator": {
+        "year": "2007",
+        "country_code": "TUR"
+      }
+    },
+    {
+      "date": "2008",
+      "value": "71051678",
+      "locator": {
+        "year": "2008",
+        "country_code": "TUR"
+      }
+    },
+    {
+      "date": "2009",
+      "value": "72039206",
+      "locator": {
+        "year": "2009",
+        "country_code": "TUR"
+      }
+    },
+    {
+      "date": "2010",
+      "value": "73142150",
+      "locator": {
+        "year": "2010",
+        "country_code": "TUR"
+      }
+    },
+    {
+      "date": "2011",
+      "value": "74223629",
+      "locator": {
+        "year": "2011",
+        "country_code": "TUR"
+      }
+    },
+    {
+      "date": "2012",
+      "value": "75175827",
+      "locator": {
+        "year": "2012",
+        "country_code": "TUR"
+      }
+    },
+    {
+      "date": "2013",
+      "value": "76147624",
+      "locator": {
+        "year": "2013",
+        "country_code": "TUR"
+      }
+    },
+    {
+      "date": "2014",
+      "value": "77181884",
+      "locator": {
+        "year": "2014",
+        "country_code": "TUR"
+      }
+    },
+    {
+      "date": "2015",
+      "value": "78218479",
+      "locator": {
+        "year": "2015",
+        "country_code": "TUR"
+      }
+    },
+    {
+      "date": "2016",
+      "value": "79277962",
+      "locator": {
+        "year": "2016",
+        "country_code": "TUR"
+      }
+    },
+    {
+      "date": "2017",
+      "value": "80312698",
+      "locator": {
+        "year": "2017",
+        "country_code": "TUR"
+      }
+    },
+    {
+      "date": "2018",
+      "value": "81407204",
+      "locator": {
+        "year": "2018",
+        "country_code": "TUR"
+      }
+    },
+    {
+      "date": "2019",
+      "value": "82579440",
+      "locator": {
+        "year": "2019",
+        "country_code": "TUR"
+      }
+    },
+    {
+      "date": "2020",
+      "value": "83384680",
+      "locator": {
+        "year": "2020",
+        "country_code": "TUR"
+      }
+    },
+    {
+      "date": "2021",
+      "value": "84147318",
+      "locator": {
+        "year": "2021",
+        "country_code": "TUR"
+      }
+    },
+    {
+      "date": "2022",
+      "value": "84979913",
+      "locator": {
+        "year": "2022",
+        "country_code": "TUR"
+      }
+    },
+    {
+      "date": "2023",
+      "value": "85325965",
+      "locator": {
+        "year": "2023",
+        "country_code": "TUR"
+      }
+    },
+    {
+      "date": "2024",
+      "value": "85518661",
+      "locator": {
+        "year": "2024",
+        "country_code": "TUR"
+      }
+    },
+    {
+      "date": "2025",
+      "value": "85878556",
+      "locator": {
+        "year": "2025",
+        "country_code": "TUR"
+      }
+    }
+  ]
+}

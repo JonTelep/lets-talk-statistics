@@ -10,10 +10,11 @@ Charts of official U.S. government statistics. Each chart lists the publisher, t
 - https://letstalkstatistics.com/prices
 - https://letstalkstatistics.com/budget
 - https://letstalkstatistics.com/economy
+- https://letstalkstatistics.com/energy
 - https://letstalkstatistics.com/crime
 - https://letstalkstatistics.com/immigration
 - https://letstalkstatistics.com/sources
 
 ## Data
 
-Numbers come from frontend/data/site.json, produced by scripts/fetch from the files in data/raw. A chart is omitted when its source file was not fetched. The crime page states which FBI file was skipped. Immigration charts use DHS Yearbook Table 1 and the CBP nationwide encounters workbooks. See https://letstalkstatistics.com/sources for publishers, retrieval dates, and SHA-256 hashes.
+Numbers come from frontend/data/site.json, produced by scripts/fetch from the files in data/raw. A chart is omitted when its source file was not fetched. The crime page states which FBI file was skipped. Immigration charts use DHS Yearbook Table 1 and the CBP nationwide encounters workbooks. Energy charts use the EIA Monthly Energy Review bulk file, the EIA international bulk file, and World Bank population. See https://letstalkstatistics.com/sources for publishers, retrieval dates, and SHA-256 hashes.

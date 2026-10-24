@@ -38,36 +38,25 @@ def test_manifest_hashes_match_raw_files():
 def test_every_chart_series_traces_to_a_source_record():
     site = load(SITE)
     manifest = {source["id"]: source for source in load(DATA / "manifest.json")["sources"]}
-    bls_values = _bls_index(manifest)
-    treasury = _treasury_index(manifest)
-    workbooks = {}
+    indexes = {
+        "bls": _bls_index(manifest),
+        "treasury": _treasury_index(manifest),
+        "workbooks": {},
+        "eia_total": {},
+        "eia_intl": {},
+        "worldbank": {},
+    }
 
+    seen = set()
     for chart in site["charts"]:
         assert chart["series"], chart["id"]
         for series_id in chart["series"]:
-            series = site["series"][series_id]
-            assert series["points"], series_id
-            for point in series["points"]:
-                assert _is_number(point["value"]), point
-                assert point.get("locator"), (series_id, point)
-            if series.get("derived"):
-                continue
-            source = manifest[series["source_id"]]
-            fmt = source["format"]
-            if fmt == "bls_tsv":
-                for point in series["points"]:
-                    key = (series["bls_series_id"], point["locator"]["year"], point["locator"]["period"])
-                    assert bls_values[source["id"]][key] == point["value"], (series_id, point)
-            elif fmt == "treasury_json":
-                for point in series["points"]:
-                    assert _treasury_value(treasury[source["id"]], point) == point["value"], (series_id, point)
-            elif fmt == "xlsx":
-                for point in series["points"]:
-                    point_source = manifest[point["locator"].get("source_id") or series["source_id"]]
-                    assert point_source["format"] == "xlsx", (series_id, point)
-                    assert _xlsx_value(workbooks, point_source, series, point) == point["value"], (series_id, point)
-            else:
-                raise AssertionError(f"unknown source format {fmt}")
+            seen.add(series_id)
+            _assert_series_matches_source(site["series"][series_id], manifest, indexes)
+    for series in site["series"].values():
+        if series.get("derived") or series["id"] in seen:
+            continue
+        _assert_series_matches_source(series, manifest, indexes)
 
 
 def test_derived_values_recompute_from_source_series():
@@ -118,6 +107,41 @@ def test_site_bundle_matches_normalized_files():
         assert site["series"][item["id"]]["points"] == item["points"]
 
 
+def test_energy_derived_values_recompute():
+    series = load(SITE)["series"]
+    for item in series.values():
+        formula = item.get("formula")
+        if not formula:
+            continue
+        if formula == "us_total_with_small_scale_solar":
+            _assert_us_total(series, item)
+        elif formula == "us_generation_residual":
+            _assert_us_residual(series, item)
+        elif formula == "share_of_total":
+            _assert_share(series, item)
+        elif formula == "kwh_per_person":
+            _assert_kwh(series, item)
+        else:
+            raise AssertionError(formula)
+
+
+def test_energy_charts_cover_required_countries():
+    site = load(SITE)
+    ids = {chart["id"] for chart in site["charts"]}
+    assert "us-electricity-generation-shares" in ids
+    for code in ("usa", "gbr", "deu", "fra", "jpn", "chn", "ind", "can"):
+        assert f"electricity-generation-{code}" in ids, code
+        assert f"electricity-per-person-{code}" in ids, code
+    share = next(chart for chart in site["charts"] if chart["id"] == "us-electricity-generation-shares")
+    assert share["shade"] == "calendar"
+    assert share.get("type") == "stacked"
+    usa = next(chart for chart in site["charts"] if chart["id"] == "electricity-per-person-usa")
+    assert usa["shade"] == "calendar"
+    uk = next(chart for chart in site["charts"] if chart["id"] == "electricity-per-person-gbr")
+    assert uk["shade"] == "none"
+    assert uk["title"] == "United Kingdom: electricity generation per person, kWh"
+
+
 def test_no_placeholder_numbers():
     site = load(SITE)
     banned = {"placeholder", "estimated by", "lorem", "todo", "n/a", "null"}
@@ -133,6 +157,180 @@ def _is_number(value: str) -> bool:
     except Exception:
         return False
     return True
+
+
+def _assert_series_matches_source(series: dict, manifest: dict, indexes: dict) -> None:
+    assert series["points"], series["id"]
+    for point in series["points"]:
+        assert _is_number(point["value"]), point
+        assert point.get("locator"), (series["id"], point)
+    if series.get("derived"):
+        return
+    source = manifest[series["source_id"]]
+    fmt = source["format"]
+    if fmt == "bls_tsv":
+        for point in series["points"]:
+            key = (series["bls_series_id"], point["locator"]["year"], point["locator"]["period"])
+            assert indexes["bls"][source["id"]][key] == point["value"], (series["id"], point)
+    elif fmt == "treasury_json":
+        for point in series["points"]:
+            assert _treasury_value(indexes["treasury"][source["id"]], point) == point["value"], (series["id"], point)
+    elif fmt == "xlsx":
+        for point in series["points"]:
+            point_source = manifest[point["locator"].get("source_id") or series["source_id"]]
+            assert point_source["format"] == "xlsx", (series["id"], point)
+            assert _xlsx_value(indexes["workbooks"], point_source, series, point) == point["value"], (series["id"], point)
+    elif fmt == "eia_bulk_zip":
+        table = _eia_total_table(indexes, source)
+        for point in series["points"]:
+            got = table[point["locator"]["series_id"]][point["locator"]["year"]]
+            assert Decimal(got) == Decimal(point["value"]), (series["id"], point)
+    elif fmt == "eia_intl_jsonl":
+        table = _eia_intl_table(indexes, source)
+        for point in series["points"]:
+            got = table[point["locator"]["series_id"]][point["locator"]["year"]]
+            assert Decimal(got) == Decimal(point["value"]), (series["id"], point)
+    elif fmt == "worldbank_zip":
+        table = _worldbank_table(indexes, source)
+        for point in series["points"]:
+            got = table[point["locator"]["country_code"]][point["locator"]["year"]]
+            assert Decimal(got) == Decimal(point["value"]), (series["id"], point)
+    else:
+        raise AssertionError(f"unknown source format {fmt}")
+
+
+def _year_values(series: dict) -> dict[str, Decimal]:
+    return {point["date"]: Decimal(point["value"]) for point in series["points"]}
+
+
+def _assert_us_total(series: dict, item: dict) -> None:
+    base_id, solar_id, solar_all_id = item["inputs"]
+    base = _year_values(series[base_id])
+    solar = _year_values(series[solar_id])
+    solar_all = _year_values(series[solar_all_id])
+    expected = []
+    for year in sorted(base):
+        if year in solar and year in solar_all:
+            value = base[year] + solar[year] - solar_all[year]
+        else:
+            value = base[year]
+        expected.append((year, q(value, "0.001")))
+    assert [(point["date"], point["value"]) for point in item["points"]] == expected
+
+
+def _assert_us_residual(series: dict, item: dict) -> None:
+    total_id, *part_ids = item["inputs"]
+    total = _year_values(series[total_id])
+    parts = [_year_values(series[part_id]) for part_id in part_ids]
+    expected = []
+    for year in sorted(total):
+        named = sum((part[year] for part in parts if year in part), Decimal(0))
+        expected.append((year, q(total[year] - named, "0.001")))
+    assert [(point["date"], point["value"]) for point in item["points"]] == expected
+
+
+def _assert_share(series: dict, item: dict) -> None:
+    level_id, total_id = item["inputs"]
+    level = _year_values(series[level_id])
+    total = _year_values(series[total_id])
+    expected = []
+    for year in sorted(level):
+        if year not in total or total[year] == 0:
+            continue
+        expected.append((year, q(level[year] / total[year] * Decimal(100), "0.001")))
+    assert [(point["date"], point["value"]) for point in item["points"]] == expected
+
+
+def _assert_kwh(series: dict, item: dict) -> None:
+    gen_id, pop_id = item["inputs"]
+    generation = _year_values(series[gen_id])
+    population = _year_values(series[pop_id])
+    expected = []
+    for year in sorted(set(generation) & set(population)):
+        value = generation[year] * Decimal(1000000000) / population[year]
+        expected.append((year, q(value, "1")))
+    assert [(point["date"], point["value"]) for point in item["points"]] == expected
+
+
+def _decimal_token(value) -> str | None:
+    if isinstance(value, bool) or value is None or isinstance(value, str):
+        return None
+    if isinstance(value, int):
+        return str(value)
+    if isinstance(value, Decimal):
+        return format(value, "f")
+    return None
+
+
+def _eia_total_table(indexes: dict, source: dict) -> dict:
+    if source["id"] not in indexes["eia_total"]:
+        import zipfile
+
+        table = {}
+        with zipfile.ZipFile(ROOT / source["path"]) as archive:
+            name = next(item for item in archive.namelist() if item.endswith("TOTAL.txt"))
+            with archive.open(name) as handle:
+                for raw in handle:
+                    line = raw.decode("utf-8").strip()
+                    if not line.startswith("{"):
+                        continue
+                    obj = json.loads(line, parse_float=Decimal)
+                    series_id = obj.get("series_id")
+                    if not series_id or not isinstance(obj.get("data"), list):
+                        continue
+                    years = {}
+                    for pair in obj["data"]:
+                        if not isinstance(pair, list) or len(pair) < 2:
+                            continue
+                        year, value = pair[0], pair[1]
+                        token = _decimal_token(value)
+                        if token is None:
+                            continue
+                        years[str(year)] = token
+                    table[series_id] = years
+        indexes["eia_total"][source["id"]] = table
+    return indexes["eia_total"][source["id"]]
+
+
+def _eia_intl_table(indexes: dict, source: dict) -> dict:
+    if source["id"] not in indexes["eia_intl"]:
+        table = {}
+        for line in (ROOT / source["path"]).read_text(encoding="utf-8").splitlines():
+            if not line.strip():
+                continue
+            obj = json.loads(line, parse_float=Decimal)
+            years = {}
+            for year, value in obj.get("data") or []:
+                token = _decimal_token(value)
+                if token is None:
+                    continue
+                years[str(year)] = token
+            table[obj["series_id"]] = years
+        indexes["eia_intl"][source["id"]] = table
+    return indexes["eia_intl"][source["id"]]
+
+
+def _worldbank_table(indexes: dict, source: dict) -> dict:
+    if source["id"] not in indexes["worldbank"]:
+        import csv
+        import zipfile
+
+        with zipfile.ZipFile(ROOT / source["path"]) as archive:
+            name = next(item for item in archive.namelist() if item.startswith("API_SP.POP.TOTL") and "Metadata" not in item)
+            text = archive.read(name).decode("utf-8-sig")
+        lines = text.splitlines()
+        start = next(index for index, line in enumerate(lines) if line.startswith('"Country Name"') or line.startswith("Country Name"))
+        table = {}
+        for row in csv.DictReader(lines[start:]):
+            code = (row.get("Country Code") or "").strip()
+            years = {}
+            for key, value in row.items():
+                if key and key.isdigit() and value and number_text(value):
+                    years[key] = number_text(value)
+            if code:
+                table[code] = years
+        indexes["worldbank"][source["id"]] = table
+    return indexes["worldbank"][source["id"]]
 
 
 def _bls_index(manifest: dict) -> dict:

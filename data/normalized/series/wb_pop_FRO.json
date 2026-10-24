@@ -1,0 +1,543 @@
+{
+  "id": "wb_pop_FRO",
+  "name": "Faroe Islands",
+  "units": "people",
+  "adjustment": "midyear",
+  "nominal_or_real": "count",
+  "frequency": "annual",
+  "source_id": "worldbank_sp_pop_totl",
+  "series_url": "https://data.worldbank.org/indicator/SP.POP.TOTL",
+  "country_code": "FRO",
+  "country_name": "Faroe Islands",
+  "notes": "World Bank World Development Indicators, SP.POP.TOTL, country code FRO. Midyear population. Published years in this file run from 1960 to 2025.",
+  "points": [
+    {
+      "date": "1960",
+      "value": "34127",
+      "locator": {
+        "year": "1960",
+        "country_code": "FRO"
+      }
+    },
+    {
+      "date": "1961",
+      "value": "34557",
+      "locator": {
+        "year": "1961",
+        "country_code": "FRO"
+      }
+    },
+    {
+      "date": "1962",
+      "value": "34963",
+      "locator": {
+        "year": "1962",
+        "country_code": "FRO"
+      }
+    },
+    {
+      "date": "1963",
+      "value": "35391",
+      "locator": {
+        "year": "1963",
+        "country_code": "FRO"
+      }
+    },
+    {
+      "date": "1964",
+      "value": "35847",
+      "locator": {
+        "year": "1964",
+        "country_code": "FRO"
+      }
+    },
+    {
+      "date": "1965",
+      "value": "36347",
+      "locator": {
+        "year": "1965",
+        "country_code": "FRO"
+      }
+    },
+    {
+      "date": "1966",
+      "value": "36816",
+      "locator": {
+        "year": "1966",
+        "country_code": "FRO"
+      }
+    },
+    {
+      "date": "1967",
+      "value": "37202",
+      "locator": {
+        "year": "1967",
+        "country_code": "FRO"
+      }
+    },
+    {
+      "date": "1968",
+      "value": "37560",
+      "locator": {
+        "year": "1968",
+        "country_code": "FRO"
+      }
+    },
+    {
+      "date": "1969",
+      "value": "37907",
+      "locator": {
+        "year": "1969",
+        "country_code": "FRO"
+      }
+    },
+    {
+      "date": "1970",
+      "value": "38269",
+      "locator": {
+        "year": "1970",
+        "country_code": "FRO"
+      }
+    },
+    {
+      "date": "1971",
+      "value": "38703",
+      "locator": {
+        "year": "1971",
+        "country_code": "FRO"
+      }
+    },
+    {
+      "date": "1972",
+      "value": "39172",
+      "locator": {
+        "year": "1972",
+        "country_code": "FRO"
+      }
+    },
+    {
+      "date": "1973",
+      "value": "39636",
+      "locator": {
+        "year": "1973",
+        "country_code": "FRO"
+      }
+    },
+    {
+      "date": "1974",
+      "value": "40106",
+      "locator": {
+        "year": "1974",
+        "country_code": "FRO"
+      }
+    },
+    {
+      "date": "1975",
+      "value": "40568",
+      "locator": {
+        "year": "1975",
+        "country_code": "FRO"
+      }
+    },
+    {
+      "date": "1976",
+      "value": "41020",
+      "locator": {
+        "year": "1976",
+        "country_code": "FRO"
+      }
+    },
+    {
+      "date": "1977",
+      "value": "41468",
+      "locator": {
+        "year": "1977",
+        "country_code": "FRO"
+      }
+    },
+    {
+      "date": "1978",
+      "value": "41968",
+      "locator": {
+        "year": "1978",
+        "country_code": "FRO"
+      }
+    },
+    {
+      "date": "1979",
+      "value": "42521",
+      "locator": {
+        "year": "1979",
+        "country_code": "FRO"
+      }
+    },
+    {
+      "date": "1980",
+      "value": "43072",
+      "locator": {
+        "year": "1980",
+        "country_code": "FRO"
+      }
+    },
+    {
+      "date": "1981",
+      "value": "43626",
+      "locator": {
+        "year": "1981",
+        "country_code": "FRO"
+      }
+    },
+    {
+      "date": "1982",
+      "value": "44171",
+      "locator": {
+        "year": "1982",
+        "country_code": "FRO"
+      }
+    },
+    {
+      "date": "1983",
+      "value": "44670",
+      "locator": {
+        "year": "1983",
+        "country_code": "FRO"
+      }
+    },
+    {
+      "date": "1984",
+      "value": "45141",
+      "locator": {
+        "year": "1984",
+        "country_code": "FRO"
+      }
+    },
+    {
+      "date": "1985",
+      "value": "45709",
+      "locator": {
+        "year": "1985",
+        "country_code": "FRO"
+      }
+    },
+    {
+      "date": "1986",
+      "value": "46132",
+      "locator": {
+        "year": "1986",
+        "country_code": "FRO"
+      }
+    },
+    {
+      "date": "1987",
+      "value": "46702",
+      "locator": {
+        "year": "1987",
+        "country_code": "FRO"
+      }
+    },
+    {
+      "date": "1988",
+      "value": "47356",
+      "locator": {
+        "year": "1988",
+        "country_code": "FRO"
+      }
+    },
+    {
+      "date": "1989",
+      "value": "47959",
+      "locator": {
+        "year": "1989",
+        "country_code": "FRO"
+      }
+    },
+    {
+      "date": "1990",
+      "value": "47741",
+      "locator": {
+        "year": "1990",
+        "country_code": "FRO"
+      }
+    },
+    {
+      "date": "1991",
+      "value": "47447",
+      "locator": {
+        "year": "1991",
+        "country_code": "FRO"
+      }
+    },
+    {
+      "date": "1992",
+      "value": "47287",
+      "locator": {
+        "year": "1992",
+        "country_code": "FRO"
+      }
+    },
+    {
+      "date": "1993",
+      "value": "46474",
+      "locator": {
+        "year": "1993",
+        "country_code": "FRO"
+      }
+    },
+    {
+      "date": "1994",
+      "value": "44695",
+      "locator": {
+        "year": "1994",
+        "country_code": "FRO"
+      }
+    },
+    {
+      "date": "1995",
+      "value": "43611",
+      "locator": {
+        "year": "1995",
+        "country_code": "FRO"
+      }
+    },
+    {
+      "date": "1996",
+      "value": "43581",
+      "locator": {
+        "year": "1996",
+        "country_code": "FRO"
+      }
+    },
+    {
+      "date": "1997",
+      "value": "44132",
+      "locator": {
+        "year": "1997",
+        "country_code": "FRO"
+      }
+    },
+    {
+      "date": "1998",
+      "value": "44674",
+      "locator": {
+        "year": "1998",
+        "country_code": "FRO"
+      }
+    },
+    {
+      "date": "1999",
+      "value": "45146",
+      "locator": {
+        "year": "1999",
+        "country_code": "FRO"
+      }
+    },
+    {
+      "date": "2000",
+      "value": "45754",
+      "locator": {
+        "year": "2000",
+        "country_code": "FRO"
+      }
+    },
+    {
+      "date": "2001",
+      "value": "46635",
+      "locator": {
+        "year": "2001",
+        "country_code": "FRO"
+      }
+    },
+    {
+      "date": "2002",
+      "value": "47335",
+      "locator": {
+        "year": "2002",
+        "country_code": "FRO"
+      }
+    },
+    {
+      "date": "2003",
+      "value": "48032",
+      "locator": {
+        "year": "2003",
+        "country_code": "FRO"
+      }
+    },
+    {
+      "date": "2004",
+      "value": "48384",
+      "locator": {
+        "year": "2004",
+        "country_code": "FRO"
+      }
+    },
+    {
+      "date": "2005",
+      "value": "48359",
+      "locator": {
+        "year": "2005",
+        "country_code": "FRO"
+      }
+    },
+    {
+      "date": "2006",
+      "value": "48335",
+      "locator": {
+        "year": "2006",
+        "country_code": "FRO"
+      }
+    },
+    {
+      "date": "2007",
+      "value": "48378",
+      "locator": {
+        "year": "2007",
+        "country_code": "FRO"
+      }
+    },
+    {
+      "date": "2008",
+      "value": "48547",
+      "locator": {
+        "year": "2008",
+        "country_code": "FRO"
+      }
+    },
+    {
+      "date": "2009",
+      "value": "48790",
+      "locator": {
+        "year": "2009",
+        "country_code": "FRO"
+      }
+    },
+    {
+      "date": "2010",
+      "value": "48656",
+      "locator": {
+        "year": "2010",
+        "country_code": "FRO"
+      }
+    },
+    {
+      "date": "2011",
+      "value": "48542",
+      "locator": {
+        "year": "2011",
+        "country_code": "FRO"
+      }
+    },
+    {
+      "date": "2012",
+      "value": "48290",
+      "locator": {
+        "year": "2012",
+        "country_code": "FRO"
+      }
+    },
+    {
+      "date": "2013",
+      "value": "48245",
+      "locator": {
+        "year": "2013",
+        "country_code": "FRO"
+      }
+    },
+    {
+      "date": "2014",
+      "value": "48427",
+      "locator": {
+        "year": "2014",
+        "country_code": "FRO"
+      }
+    },
+    {
+      "date": "2015",
+      "value": "48898",
+      "locator": {
+        "year": "2015",
+        "country_code": "FRO"
+      }
+    },
+    {
+      "date": "2016",
+      "value": "49463",
+      "locator": {
+        "year": "2016",
+        "country_code": "FRO"
+      }
+    },
+    {
+      "date": "2017",
+      "value": "50179",
+      "locator": {
+        "year": "2017",
+        "country_code": "FRO"
+      }
+    },
+    {
+      "date": "2018",
+      "value": "50997",
+      "locator": {
+        "year": "2018",
+        "country_code": "FRO"
+      }
+    },
+    {
+      "date": "2019",
+      "value": "51790",
+      "locator": {
+        "year": "2019",
+        "country_code": "FRO"
+      }
+    },
+    {
+      "date": "2020",
+      "value": "52561",
+      "locator": {
+        "year": "2020",
+        "country_code": "FRO"
+      }
+    },
+    {
+      "date": "2021",
+      "value": "53291",
+      "locator": {
+        "year": "2021",
+        "country_code": "FRO"
+      }
+    },
+    {
+      "date": "2022",
+      "value": "53903",
+      "locator": {
+        "year": "2022",
+        "country_code": "FRO"
+      }
+    },
+    {
+      "date": "2023",
+      "value": "54398",
+      "locator": {
+        "year": "2023",
+        "country_code": "FRO"
+      }
+    },
+    {
+      "date": "2024",
+      "value": "54640",
+      "locator": {
+        "year": "2024",
+        "country_code": "FRO"
+      }
+    },
+    {
+      "date": "2025",
+      "value": "54900",
+      "locator": {
+        "year": "2025",
+        "country_code": "FRO"
+      }
+    }
+  ]
+}

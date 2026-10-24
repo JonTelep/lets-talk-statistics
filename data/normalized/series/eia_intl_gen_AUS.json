@@ -1,0 +1,377 @@
+{
+  "id": "eia_intl_gen_AUS",
+  "name": "Net generation",
+  "units": "billion kilowatthours",
+  "adjustment": "annual",
+  "nominal_or_real": "generation",
+  "frequency": "annual",
+  "source_id": "eia_intl_bulk",
+  "series_url": "https://www.eia.gov/international/data/world/electricity/electricity-generation",
+  "eia_series_id": "INTL.2-12-AUS-BKWH.A",
+  "country_code": "AUS",
+  "country_name": "Australia",
+  "population_status": "matched",
+  "notes": "EIA bulk series INTL.2-12-AUS-BKWH.A, Australia. Annual. Billion kilowatthours. 1 billion kilowatthours = 1 terawatthour. Published years in this file run from 1980 to 2024.",
+  "points": [
+    {
+      "date": "1980",
+      "value": "87.393",
+      "locator": {
+        "year": "1980",
+        "series_id": "INTL.2-12-AUS-BKWH.A"
+      }
+    },
+    {
+      "date": "1981",
+      "value": "92.911",
+      "locator": {
+        "year": "1981",
+        "series_id": "INTL.2-12-AUS-BKWH.A"
+      }
+    },
+    {
+      "date": "1982",
+      "value": "96.736",
+      "locator": {
+        "year": "1982",
+        "series_id": "INTL.2-12-AUS-BKWH.A"
+      }
+    },
+    {
+      "date": "1983",
+      "value": "98.048",
+      "locator": {
+        "year": "1983",
+        "series_id": "INTL.2-12-AUS-BKWH.A"
+      }
+    },
+    {
+      "date": "1984",
+      "value": "103.716",
+      "locator": {
+        "year": "1984",
+        "series_id": "INTL.2-12-AUS-BKWH.A"
+      }
+    },
+    {
+      "date": "1985",
+      "value": "110.425",
+      "locator": {
+        "year": "1985",
+        "series_id": "INTL.2-12-AUS-BKWH.A"
+      }
+    },
+    {
+      "date": "1986",
+      "value": "116.272",
+      "locator": {
+        "year": "1986",
+        "series_id": "INTL.2-12-AUS-BKWH.A"
+      }
+    },
+    {
+      "date": "1987",
+      "value": "121.915",
+      "locator": {
+        "year": "1987",
+        "series_id": "INTL.2-12-AUS-BKWH.A"
+      }
+    },
+    {
+      "date": "1988",
+      "value": "130.92",
+      "locator": {
+        "year": "1988",
+        "series_id": "INTL.2-12-AUS-BKWH.A"
+      }
+    },
+    {
+      "date": "1989",
+      "value": "139.221",
+      "locator": {
+        "year": "1989",
+        "series_id": "INTL.2-12-AUS-BKWH.A"
+      }
+    },
+    {
+      "date": "1990",
+      "value": "146.187",
+      "locator": {
+        "year": "1990",
+        "series_id": "INTL.2-12-AUS-BKWH.A"
+      }
+    },
+    {
+      "date": "1991",
+      "value": "148.367",
+      "locator": {
+        "year": "1991",
+        "series_id": "INTL.2-12-AUS-BKWH.A"
+      }
+    },
+    {
+      "date": "1992",
+      "value": "150.7594",
+      "locator": {
+        "year": "1992",
+        "series_id": "INTL.2-12-AUS-BKWH.A"
+      }
+    },
+    {
+      "date": "1993",
+      "value": "154.646",
+      "locator": {
+        "year": "1993",
+        "series_id": "INTL.2-12-AUS-BKWH.A"
+      }
+    },
+    {
+      "date": "1994",
+      "value": "158.368",
+      "locator": {
+        "year": "1994",
+        "series_id": "INTL.2-12-AUS-BKWH.A"
+      }
+    },
+    {
+      "date": "1995",
+      "value": "163.841",
+      "locator": {
+        "year": "1995",
+        "series_id": "INTL.2-12-AUS-BKWH.A"
+      }
+    },
+    {
+      "date": "1996",
+      "value": "168.06766",
+      "locator": {
+        "year": "1996",
+        "series_id": "INTL.2-12-AUS-BKWH.A"
+      }
+    },
+    {
+      "date": "1997",
+      "value": "173.354",
+      "locator": {
+        "year": "1997",
+        "series_id": "INTL.2-12-AUS-BKWH.A"
+      }
+    },
+    {
+      "date": "1998",
+      "value": "185.41",
+      "locator": {
+        "year": "1998",
+        "series_id": "INTL.2-12-AUS-BKWH.A"
+      }
+    },
+    {
+      "date": "1999",
+      "value": "191.63",
+      "locator": {
+        "year": "1999",
+        "series_id": "INTL.2-12-AUS-BKWH.A"
+      }
+    },
+    {
+      "date": "2000",
+      "value": "209.49",
+      "locator": {
+        "year": "2000",
+        "series_id": "INTL.2-12-AUS-BKWH.A"
+      }
+    },
+    {
+      "date": "2001",
+      "value": "223.883",
+      "locator": {
+        "year": "2001",
+        "series_id": "INTL.2-12-AUS-BKWH.A"
+      }
+    },
+    {
+      "date": "2002",
+      "value": "227.196",
+      "locator": {
+        "year": "2002",
+        "series_id": "INTL.2-12-AUS-BKWH.A"
+      }
+    },
+    {
+      "date": "2003",
+      "value": "220.351",
+      "locator": {
+        "year": "2003",
+        "series_id": "INTL.2-12-AUS-BKWH.A"
+      }
+    },
+    {
+      "date": "2004",
+      "value": "227.904",
+      "locator": {
+        "year": "2004",
+        "series_id": "INTL.2-12-AUS-BKWH.A"
+      }
+    },
+    {
+      "date": "2005",
+      "value": "227.983",
+      "locator": {
+        "year": "2005",
+        "series_id": "INTL.2-12-AUS-BKWH.A"
+      }
+    },
+    {
+      "date": "2006",
+      "value": "232.496",
+      "locator": {
+        "year": "2006",
+        "series_id": "INTL.2-12-AUS-BKWH.A"
+      }
+    },
+    {
+      "date": "2007",
+      "value": "242.712",
+      "locator": {
+        "year": "2007",
+        "series_id": "INTL.2-12-AUS-BKWH.A"
+      }
+    },
+    {
+      "date": "2008",
+      "value": "242.85",
+      "locator": {
+        "year": "2008",
+        "series_id": "INTL.2-12-AUS-BKWH.A"
+      }
+    },
+    {
+      "date": "2009",
+      "value": "247.93",
+      "locator": {
+        "year": "2009",
+        "series_id": "INTL.2-12-AUS-BKWH.A"
+      }
+    },
+    {
+      "date": "2010",
+      "value": "252.4689",
+      "locator": {
+        "year": "2010",
+        "series_id": "INTL.2-12-AUS-BKWH.A"
+      }
+    },
+    {
+      "date": "2011",
+      "value": "254.3307",
+      "locator": {
+        "year": "2011",
+        "series_id": "INTL.2-12-AUS-BKWH.A"
+      }
+    },
+    {
+      "date": "2012",
+      "value": "251.1728",
+      "locator": {
+        "year": "2012",
+        "series_id": "INTL.2-12-AUS-BKWH.A"
+      }
+    },
+    {
+      "date": "2013",
+      "value": "250.6915",
+      "locator": {
+        "year": "2013",
+        "series_id": "INTL.2-12-AUS-BKWH.A"
+      }
+    },
+    {
+      "date": "2014",
+      "value": "247.4687",
+      "locator": {
+        "year": "2014",
+        "series_id": "INTL.2-12-AUS-BKWH.A"
+      }
+    },
+    {
+      "date": "2015",
+      "value": "252.2318",
+      "locator": {
+        "year": "2015",
+        "series_id": "INTL.2-12-AUS-BKWH.A"
+      }
+    },
+    {
+      "date": "2016",
+      "value": "258.419",
+      "locator": {
+        "year": "2016",
+        "series_id": "INTL.2-12-AUS-BKWH.A"
+      }
+    },
+    {
+      "date": "2017",
+      "value": "259.1052",
+      "locator": {
+        "year": "2017",
+        "series_id": "INTL.2-12-AUS-BKWH.A"
+      }
+    },
+    {
+      "date": "2018",
+      "value": "264.6587",
+      "locator": {
+        "year": "2018",
+        "series_id": "INTL.2-12-AUS-BKWH.A"
+      }
+    },
+    {
+      "date": "2019",
+      "value": "269.1917",
+      "locator": {
+        "year": "2019",
+        "series_id": "INTL.2-12-AUS-BKWH.A"
+      }
+    },
+    {
+      "date": "2020",
+      "value": "264.1334967",
+      "locator": {
+        "year": "2020",
+        "series_id": "INTL.2-12-AUS-BKWH.A"
+      }
+    },
+    {
+      "date": "2021",
+      "value": "268.25223",
+      "locator": {
+        "year": "2021",
+        "series_id": "INTL.2-12-AUS-BKWH.A"
+      }
+    },
+    {
+      "date": "2022",
+      "value": "273.1908551",
+      "locator": {
+        "year": "2022",
+        "series_id": "INTL.2-12-AUS-BKWH.A"
+      }
+    },
+    {
+      "date": "2023",
+      "value": "268.975788749",
+      "locator": {
+        "year": "2023",
+        "series_id": "INTL.2-12-AUS-BKWH.A"
+      }
+    },
+    {
+      "date": "2024",
+      "value": "270.1089075",
+      "locator": {
+        "year": "2024",
+        "series_id": "INTL.2-12-AUS-BKWH.A"
+      }
+    }
+  ]
+}

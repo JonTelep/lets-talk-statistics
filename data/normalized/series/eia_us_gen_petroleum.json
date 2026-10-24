@@ -1,0 +1,630 @@
+{
+  "id": "eia_us_gen_petroleum",
+  "name": "Petroleum",
+  "units": "Million Kilowatthours",
+  "adjustment": "annual",
+  "nominal_or_real": "generation",
+  "frequency": "annual",
+  "source_id": "eia_total_bulk",
+  "series_url": "https://www.eia.gov/totalenergy/data/browser/index.php?tbl=T07.02A",
+  "eia_series_id": "TOTAL.PAETPUS.A",
+  "notes": "EIA bulk series TOTAL.PAETPUS.A, Electricity Net Generation From Petroleum, All Sectors, Annual. Annual. Published years in this file run from 1949 to 2025.",
+  "points": [
+    {
+      "date": "1949",
+      "value": "28547.232",
+      "locator": {
+        "year": "1949",
+        "series_id": "TOTAL.PAETPUS.A"
+      }
+    },
+    {
+      "date": "1950",
+      "value": "33734.288",
+      "locator": {
+        "year": "1950",
+        "series_id": "TOTAL.PAETPUS.A"
+      }
+    },
+    {
+      "date": "1951",
+      "value": "28712.116",
+      "locator": {
+        "year": "1951",
+        "series_id": "TOTAL.PAETPUS.A"
+      }
+    },
+    {
+      "date": "1952",
+      "value": "29749.761",
+      "locator": {
+        "year": "1952",
+        "series_id": "TOTAL.PAETPUS.A"
+      }
+    },
+    {
+      "date": "1953",
+      "value": "38404.449",
+      "locator": {
+        "year": "1953",
+        "series_id": "TOTAL.PAETPUS.A"
+      }
+    },
+    {
+      "date": "1954",
+      "value": "31520.175",
+      "locator": {
+        "year": "1954",
+        "series_id": "TOTAL.PAETPUS.A"
+      }
+    },
+    {
+      "date": "1955",
+      "value": "37138.308",
+      "locator": {
+        "year": "1955",
+        "series_id": "TOTAL.PAETPUS.A"
+      }
+    },
+    {
+      "date": "1956",
+      "value": "35946.772",
+      "locator": {
+        "year": "1956",
+        "series_id": "TOTAL.PAETPUS.A"
+      }
+    },
+    {
+      "date": "1957",
+      "value": "40499.357",
+      "locator": {
+        "year": "1957",
+        "series_id": "TOTAL.PAETPUS.A"
+      }
+    },
+    {
+      "date": "1958",
+      "value": "40371.54",
+      "locator": {
+        "year": "1958",
+        "series_id": "TOTAL.PAETPUS.A"
+      }
+    },
+    {
+      "date": "1959",
+      "value": "46839.719",
+      "locator": {
+        "year": "1959",
+        "series_id": "TOTAL.PAETPUS.A"
+      }
+    },
+    {
+      "date": "1960",
+      "value": "47986.893",
+      "locator": {
+        "year": "1960",
+        "series_id": "TOTAL.PAETPUS.A"
+      }
+    },
+    {
+      "date": "1961",
+      "value": "48519.376",
+      "locator": {
+        "year": "1961",
+        "series_id": "TOTAL.PAETPUS.A"
+      }
+    },
+    {
+      "date": "1962",
+      "value": "48879.536",
+      "locator": {
+        "year": "1962",
+        "series_id": "TOTAL.PAETPUS.A"
+      }
+    },
+    {
+      "date": "1963",
+      "value": "52001.61",
+      "locator": {
+        "year": "1963",
+        "series_id": "TOTAL.PAETPUS.A"
+      }
+    },
+    {
+      "date": "1964",
+      "value": "56953.712",
+      "locator": {
+        "year": "1964",
+        "series_id": "TOTAL.PAETPUS.A"
+      }
+    },
+    {
+      "date": "1965",
+      "value": "64801.224",
+      "locator": {
+        "year": "1965",
+        "series_id": "TOTAL.PAETPUS.A"
+      }
+    },
+    {
+      "date": "1966",
+      "value": "78926.172",
+      "locator": {
+        "year": "1966",
+        "series_id": "TOTAL.PAETPUS.A"
+      }
+    },
+    {
+      "date": "1967",
+      "value": "89270.724",
+      "locator": {
+        "year": "1967",
+        "series_id": "TOTAL.PAETPUS.A"
+      }
+    },
+    {
+      "date": "1968",
+      "value": "104275.833",
+      "locator": {
+        "year": "1968",
+        "series_id": "TOTAL.PAETPUS.A"
+      }
+    },
+    {
+      "date": "1969",
+      "value": "137847.152",
+      "locator": {
+        "year": "1969",
+        "series_id": "TOTAL.PAETPUS.A"
+      }
+    },
+    {
+      "date": "1970",
+      "value": "184183.402",
+      "locator": {
+        "year": "1970",
+        "series_id": "TOTAL.PAETPUS.A"
+      }
+    },
+    {
+      "date": "1971",
+      "value": "220225.423",
+      "locator": {
+        "year": "1971",
+        "series_id": "TOTAL.PAETPUS.A"
+      }
+    },
+    {
+      "date": "1972",
+      "value": "274295.961",
+      "locator": {
+        "year": "1972",
+        "series_id": "TOTAL.PAETPUS.A"
+      }
+    },
+    {
+      "date": "1973",
+      "value": "314342.926",
+      "locator": {
+        "year": "1973",
+        "series_id": "TOTAL.PAETPUS.A"
+      }
+    },
+    {
+      "date": "1974",
+      "value": "300930.537",
+      "locator": {
+        "year": "1974",
+        "series_id": "TOTAL.PAETPUS.A"
+      }
+    },
+    {
+      "date": "1975",
+      "value": "289094.9",
+      "locator": {
+        "year": "1975",
+        "series_id": "TOTAL.PAETPUS.A"
+      }
+    },
+    {
+      "date": "1976",
+      "value": "319988.136",
+      "locator": {
+        "year": "1976",
+        "series_id": "TOTAL.PAETPUS.A"
+      }
+    },
+    {
+      "date": "1977",
+      "value": "358178.822",
+      "locator": {
+        "year": "1977",
+        "series_id": "TOTAL.PAETPUS.A"
+      }
+    },
+    {
+      "date": "1978",
+      "value": "365060.441",
+      "locator": {
+        "year": "1978",
+        "series_id": "TOTAL.PAETPUS.A"
+      }
+    },
+    {
+      "date": "1979",
+      "value": "303525.209",
+      "locator": {
+        "year": "1979",
+        "series_id": "TOTAL.PAETPUS.A"
+      }
+    },
+    {
+      "date": "1980",
+      "value": "245994.189",
+      "locator": {
+        "year": "1980",
+        "series_id": "TOTAL.PAETPUS.A"
+      }
+    },
+    {
+      "date": "1981",
+      "value": "206420.775",
+      "locator": {
+        "year": "1981",
+        "series_id": "TOTAL.PAETPUS.A"
+      }
+    },
+    {
+      "date": "1982",
+      "value": "146797.49",
+      "locator": {
+        "year": "1982",
+        "series_id": "TOTAL.PAETPUS.A"
+      }
+    },
+    {
+      "date": "1983",
+      "value": "144498.593",
+      "locator": {
+        "year": "1983",
+        "series_id": "TOTAL.PAETPUS.A"
+      }
+    },
+    {
+      "date": "1984",
+      "value": "119807.913",
+      "locator": {
+        "year": "1984",
+        "series_id": "TOTAL.PAETPUS.A"
+      }
+    },
+    {
+      "date": "1985",
+      "value": "100202.273",
+      "locator": {
+        "year": "1985",
+        "series_id": "TOTAL.PAETPUS.A"
+      }
+    },
+    {
+      "date": "1986",
+      "value": "136584.867",
+      "locator": {
+        "year": "1986",
+        "series_id": "TOTAL.PAETPUS.A"
+      }
+    },
+    {
+      "date": "1987",
+      "value": "118492.571",
+      "locator": {
+        "year": "1987",
+        "series_id": "TOTAL.PAETPUS.A"
+      }
+    },
+    {
+      "date": "1988",
+      "value": "148899.561",
+      "locator": {
+        "year": "1988",
+        "series_id": "TOTAL.PAETPUS.A"
+      }
+    },
+    {
+      "date": "1989",
+      "value": "164358.52",
+      "locator": {
+        "year": "1989",
+        "series_id": "TOTAL.PAETPUS.A"
+      }
+    },
+    {
+      "date": "1990",
+      "value": "126460.202",
+      "locator": {
+        "year": "1990",
+        "series_id": "TOTAL.PAETPUS.A"
+      }
+    },
+    {
+      "date": "1991",
+      "value": "119751.573",
+      "locator": {
+        "year": "1991",
+        "series_id": "TOTAL.PAETPUS.A"
+      }
+    },
+    {
+      "date": "1992",
+      "value": "100154.163",
+      "locator": {
+        "year": "1992",
+        "series_id": "TOTAL.PAETPUS.A"
+      }
+    },
+    {
+      "date": "1993",
+      "value": "112788.18",
+      "locator": {
+        "year": "1993",
+        "series_id": "TOTAL.PAETPUS.A"
+      }
+    },
+    {
+      "date": "1994",
+      "value": "105900.983",
+      "locator": {
+        "year": "1994",
+        "series_id": "TOTAL.PAETPUS.A"
+      }
+    },
+    {
+      "date": "1995",
+      "value": "74554.065",
+      "locator": {
+        "year": "1995",
+        "series_id": "TOTAL.PAETPUS.A"
+      }
+    },
+    {
+      "date": "1996",
+      "value": "81411.225",
+      "locator": {
+        "year": "1996",
+        "series_id": "TOTAL.PAETPUS.A"
+      }
+    },
+    {
+      "date": "1997",
+      "value": "92554.873",
+      "locator": {
+        "year": "1997",
+        "series_id": "TOTAL.PAETPUS.A"
+      }
+    },
+    {
+      "date": "1998",
+      "value": "128800.173",
+      "locator": {
+        "year": "1998",
+        "series_id": "TOTAL.PAETPUS.A"
+      }
+    },
+    {
+      "date": "1999",
+      "value": "118060.838",
+      "locator": {
+        "year": "1999",
+        "series_id": "TOTAL.PAETPUS.A"
+      }
+    },
+    {
+      "date": "2000",
+      "value": "111220.965",
+      "locator": {
+        "year": "2000",
+        "series_id": "TOTAL.PAETPUS.A"
+      }
+    },
+    {
+      "date": "2001",
+      "value": "124880.221",
+      "locator": {
+        "year": "2001",
+        "series_id": "TOTAL.PAETPUS.A"
+      }
+    },
+    {
+      "date": "2002",
+      "value": "94567.395",
+      "locator": {
+        "year": "2002",
+        "series_id": "TOTAL.PAETPUS.A"
+      }
+    },
+    {
+      "date": "2003",
+      "value": "119405.643",
+      "locator": {
+        "year": "2003",
+        "series_id": "TOTAL.PAETPUS.A"
+      }
+    },
+    {
+      "date": "2004",
+      "value": "121145.057",
+      "locator": {
+        "year": "2004",
+        "series_id": "TOTAL.PAETPUS.A"
+      }
+    },
+    {
+      "date": "2005",
+      "value": "122225.017",
+      "locator": {
+        "year": "2005",
+        "series_id": "TOTAL.PAETPUS.A"
+      }
+    },
+    {
+      "date": "2006",
+      "value": "64166.414",
+      "locator": {
+        "year": "2006",
+        "series_id": "TOTAL.PAETPUS.A"
+      }
+    },
+    {
+      "date": "2007",
+      "value": "65738.978",
+      "locator": {
+        "year": "2007",
+        "series_id": "TOTAL.PAETPUS.A"
+      }
+    },
+    {
+      "date": "2008",
+      "value": "46242.612",
+      "locator": {
+        "year": "2008",
+        "series_id": "TOTAL.PAETPUS.A"
+      }
+    },
+    {
+      "date": "2009",
+      "value": "38936.515",
+      "locator": {
+        "year": "2009",
+        "series_id": "TOTAL.PAETPUS.A"
+      }
+    },
+    {
+      "date": "2010",
+      "value": "37061.013",
+      "locator": {
+        "year": "2010",
+        "series_id": "TOTAL.PAETPUS.A"
+      }
+    },
+    {
+      "date": "2011",
+      "value": "30182.245",
+      "locator": {
+        "year": "2011",
+        "series_id": "TOTAL.PAETPUS.A"
+      }
+    },
+    {
+      "date": "2012",
+      "value": "23189.541",
+      "locator": {
+        "year": "2012",
+        "series_id": "TOTAL.PAETPUS.A"
+      }
+    },
+    {
+      "date": "2013",
+      "value": "27164.444",
+      "locator": {
+        "year": "2013",
+        "series_id": "TOTAL.PAETPUS.A"
+      }
+    },
+    {
+      "date": "2014",
+      "value": "30231.862",
+      "locator": {
+        "year": "2014",
+        "series_id": "TOTAL.PAETPUS.A"
+      }
+    },
+    {
+      "date": "2015",
+      "value": "28248.749",
+      "locator": {
+        "year": "2015",
+        "series_id": "TOTAL.PAETPUS.A"
+      }
+    },
+    {
+      "date": "2016",
+      "value": "24204.806",
+      "locator": {
+        "year": "2016",
+        "series_id": "TOTAL.PAETPUS.A"
+      }
+    },
+    {
+      "date": "2017",
+      "value": "21389.945",
+      "locator": {
+        "year": "2017",
+        "series_id": "TOTAL.PAETPUS.A"
+      }
+    },
+    {
+      "date": "2018",
+      "value": "25225.628",
+      "locator": {
+        "year": "2018",
+        "series_id": "TOTAL.PAETPUS.A"
+      }
+    },
+    {
+      "date": "2019",
+      "value": "18340.743",
+      "locator": {
+        "year": "2019",
+        "series_id": "TOTAL.PAETPUS.A"
+      }
+    },
+    {
+      "date": "2020",
+      "value": "17341.015",
+      "locator": {
+        "year": "2020",
+        "series_id": "TOTAL.PAETPUS.A"
+      }
+    },
+    {
+      "date": "2021",
+      "value": "19173.21",
+      "locator": {
+        "year": "2021",
+        "series_id": "TOTAL.PAETPUS.A"
+      }
+    },
+    {
+      "date": "2022",
+      "value": "22931.242",
+      "locator": {
+        "year": "2022",
+        "series_id": "TOTAL.PAETPUS.A"
+      }
+    },
+    {
+      "date": "2023",
+      "value": "16233.021",
+      "locator": {
+        "year": "2023",
+        "series_id": "TOTAL.PAETPUS.A"
+      }
+    },
+    {
+      "date": "2024",
+      "value": "15084.453",
+      "locator": {
+        "year": "2024",
+        "series_id": "TOTAL.PAETPUS.A"
+      }
+    },
+    {
+      "date": "2025",
+      "value": "19259.558",
+      "locator": {
+        "year": "2025",
+        "series_id": "TOTAL.PAETPUS.A"
+      }
+    }
+  ]
+}

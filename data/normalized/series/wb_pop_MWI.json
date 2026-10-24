@@ -1,0 +1,543 @@
+{
+  "id": "wb_pop_MWI",
+  "name": "Malawi",
+  "units": "people",
+  "adjustment": "midyear",
+  "nominal_or_real": "count",
+  "frequency": "annual",
+  "source_id": "worldbank_sp_pop_totl",
+  "series_url": "https://data.worldbank.org/indicator/SP.POP.TOTL",
+  "country_code": "MWI",
+  "country_name": "Malawi",
+  "notes": "World Bank World Development Indicators, SP.POP.TOTL, country code MWI. Midyear population. Published years in this file run from 1960 to 2025.",
+  "points": [
+    {
+      "date": "1960",
+      "value": "3628134",
+      "locator": {
+        "year": "1960",
+        "country_code": "MWI"
+      }
+    },
+    {
+      "date": "1961",
+      "value": "3715534",
+      "locator": {
+        "year": "1961",
+        "country_code": "MWI"
+      }
+    },
+    {
+      "date": "1962",
+      "value": "3806307",
+      "locator": {
+        "year": "1962",
+        "country_code": "MWI"
+      }
+    },
+    {
+      "date": "1963",
+      "value": "3900506",
+      "locator": {
+        "year": "1963",
+        "country_code": "MWI"
+      }
+    },
+    {
+      "date": "1964",
+      "value": "3997305",
+      "locator": {
+        "year": "1964",
+        "country_code": "MWI"
+      }
+    },
+    {
+      "date": "1965",
+      "value": "4096157",
+      "locator": {
+        "year": "1965",
+        "country_code": "MWI"
+      }
+    },
+    {
+      "date": "1966",
+      "value": "4197926",
+      "locator": {
+        "year": "1966",
+        "country_code": "MWI"
+      }
+    },
+    {
+      "date": "1967",
+      "value": "4303012",
+      "locator": {
+        "year": "1967",
+        "country_code": "MWI"
+      }
+    },
+    {
+      "date": "1968",
+      "value": "4411054",
+      "locator": {
+        "year": "1968",
+        "country_code": "MWI"
+      }
+    },
+    {
+      "date": "1969",
+      "value": "4521184",
+      "locator": {
+        "year": "1969",
+        "country_code": "MWI"
+      }
+    },
+    {
+      "date": "1970",
+      "value": "4633944",
+      "locator": {
+        "year": "1970",
+        "country_code": "MWI"
+      }
+    },
+    {
+      "date": "1971",
+      "value": "4751434",
+      "locator": {
+        "year": "1971",
+        "country_code": "MWI"
+      }
+    },
+    {
+      "date": "1972",
+      "value": "4874475",
+      "locator": {
+        "year": "1972",
+        "country_code": "MWI"
+      }
+    },
+    {
+      "date": "1973",
+      "value": "5003938",
+      "locator": {
+        "year": "1973",
+        "country_code": "MWI"
+      }
+    },
+    {
+      "date": "1974",
+      "value": "5141337",
+      "locator": {
+        "year": "1974",
+        "country_code": "MWI"
+      }
+    },
+    {
+      "date": "1975",
+      "value": "5287367",
+      "locator": {
+        "year": "1975",
+        "country_code": "MWI"
+      }
+    },
+    {
+      "date": "1976",
+      "value": "5443384",
+      "locator": {
+        "year": "1976",
+        "country_code": "MWI"
+      }
+    },
+    {
+      "date": "1977",
+      "value": "5614983",
+      "locator": {
+        "year": "1977",
+        "country_code": "MWI"
+      }
+    },
+    {
+      "date": "1978",
+      "value": "5810132",
+      "locator": {
+        "year": "1978",
+        "country_code": "MWI"
+      }
+    },
+    {
+      "date": "1979",
+      "value": "6028749",
+      "locator": {
+        "year": "1979",
+        "country_code": "MWI"
+      }
+    },
+    {
+      "date": "1980",
+      "value": "6265529",
+      "locator": {
+        "year": "1980",
+        "country_code": "MWI"
+      }
+    },
+    {
+      "date": "1981",
+      "value": "6516454",
+      "locator": {
+        "year": "1981",
+        "country_code": "MWI"
+      }
+    },
+    {
+      "date": "1982",
+      "value": "6778879",
+      "locator": {
+        "year": "1982",
+        "country_code": "MWI"
+      }
+    },
+    {
+      "date": "1983",
+      "value": "7051709",
+      "locator": {
+        "year": "1983",
+        "country_code": "MWI"
+      }
+    },
+    {
+      "date": "1984",
+      "value": "7332810",
+      "locator": {
+        "year": "1984",
+        "country_code": "MWI"
+      }
+    },
+    {
+      "date": "1985",
+      "value": "7620508",
+      "locator": {
+        "year": "1985",
+        "country_code": "MWI"
+      }
+    },
+    {
+      "date": "1986",
+      "value": "7906480",
+      "locator": {
+        "year": "1986",
+        "country_code": "MWI"
+      }
+    },
+    {
+      "date": "1987",
+      "value": "8293174",
+      "locator": {
+        "year": "1987",
+        "country_code": "MWI"
+      }
+    },
+    {
+      "date": "1988",
+      "value": "8753262",
+      "locator": {
+        "year": "1988",
+        "country_code": "MWI"
+      }
+    },
+    {
+      "date": "1989",
+      "value": "9176220",
+      "locator": {
+        "year": "1989",
+        "country_code": "MWI"
+      }
+    },
+    {
+      "date": "1990",
+      "value": "9545852",
+      "locator": {
+        "year": "1990",
+        "country_code": "MWI"
+      }
+    },
+    {
+      "date": "1991",
+      "value": "9844227",
+      "locator": {
+        "year": "1991",
+        "country_code": "MWI"
+      }
+    },
+    {
+      "date": "1992",
+      "value": "10135079",
+      "locator": {
+        "year": "1992",
+        "country_code": "MWI"
+      }
+    },
+    {
+      "date": "1993",
+      "value": "10284024",
+      "locator": {
+        "year": "1993",
+        "country_code": "MWI"
+      }
+    },
+    {
+      "date": "1994",
+      "value": "10164894",
+      "locator": {
+        "year": "1994",
+        "country_code": "MWI"
+      }
+    },
+    {
+      "date": "1995",
+      "value": "10150117",
+      "locator": {
+        "year": "1995",
+        "country_code": "MWI"
+      }
+    },
+    {
+      "date": "1996",
+      "value": "10352228",
+      "locator": {
+        "year": "1996",
+        "country_code": "MWI"
+      }
+    },
+    {
+      "date": "1997",
+      "value": "10562035",
+      "locator": {
+        "year": "1997",
+        "country_code": "MWI"
+      }
+    },
+    {
+      "date": "1998",
+      "value": "10792876",
+      "locator": {
+        "year": "1998",
+        "country_code": "MWI"
+      }
+    },
+    {
+      "date": "1999",
+      "value": "11047804",
+      "locator": {
+        "year": "1999",
+        "country_code": "MWI"
+      }
+    },
+    {
+      "date": "2000",
+      "value": "11315942",
+      "locator": {
+        "year": "2000",
+        "country_code": "MWI"
+      }
+    },
+    {
+      "date": "2001",
+      "value": "11593058",
+      "locator": {
+        "year": "2001",
+        "country_code": "MWI"
+      }
+    },
+    {
+      "date": "2002",
+      "value": "11880440",
+      "locator": {
+        "year": "2002",
+        "country_code": "MWI"
+      }
+    },
+    {
+      "date": "2003",
+      "value": "12181574",
+      "locator": {
+        "year": "2003",
+        "country_code": "MWI"
+      }
+    },
+    {
+      "date": "2004",
+      "value": "12500737",
+      "locator": {
+        "year": "2004",
+        "country_code": "MWI"
+      }
+    },
+    {
+      "date": "2005",
+      "value": "12840031",
+      "locator": {
+        "year": "2005",
+        "country_code": "MWI"
+      }
+    },
+    {
+      "date": "2006",
+      "value": "13198701",
+      "locator": {
+        "year": "2006",
+        "country_code": "MWI"
+      }
+    },
+    {
+      "date": "2007",
+      "value": "13576343",
+      "locator": {
+        "year": "2007",
+        "country_code": "MWI"
+      }
+    },
+    {
+      "date": "2008",
+      "value": "13976417",
+      "locator": {
+        "year": "2008",
+        "country_code": "MWI"
+      }
+    },
+    {
+      "date": "2009",
+      "value": "14395788",
+      "locator": {
+        "year": "2009",
+        "country_code": "MWI"
+      }
+    },
+    {
+      "date": "2010",
+      "value": "14826463",
+      "locator": {
+        "year": "2010",
+        "country_code": "MWI"
+      }
+    },
+    {
+      "date": "2011",
+      "value": "15265022",
+      "locator": {
+        "year": "2011",
+        "country_code": "MWI"
+      }
+    },
+    {
+      "date": "2012",
+      "value": "15709577",
+      "locator": {
+        "year": "2012",
+        "country_code": "MWI"
+      }
+    },
+    {
+      "date": "2013",
+      "value": "16161816",
+      "locator": {
+        "year": "2013",
+        "country_code": "MWI"
+      }
+    },
+    {
+      "date": "2014",
+      "value": "16621538",
+      "locator": {
+        "year": "2014",
+        "country_code": "MWI"
+      }
+    },
+    {
+      "date": "2015",
+      "value": "17085587",
+      "locator": {
+        "year": "2015",
+        "country_code": "MWI"
+      }
+    },
+    {
+      "date": "2016",
+      "value": "17557739",
+      "locator": {
+        "year": "2016",
+        "country_code": "MWI"
+      }
+    },
+    {
+      "date": "2017",
+      "value": "18039715",
+      "locator": {
+        "year": "2017",
+        "country_code": "MWI"
+      }
+    },
+    {
+      "date": "2018",
+      "value": "18528081",
+      "locator": {
+        "year": "2018",
+        "country_code": "MWI"
+      }
+    },
+    {
+      "date": "2019",
+      "value": "19025752",
+      "locator": {
+        "year": "2019",
+        "country_code": "MWI"
+      }
+    },
+    {
+      "date": "2020",
+      "value": "19533888",
+      "locator": {
+        "year": "2020",
+        "country_code": "MWI"
+      }
+    },
+    {
+      "date": "2021",
+      "value": "20047258",
+      "locator": {
+        "year": "2021",
+        "country_code": "MWI"
+      }
+    },
+    {
+      "date": "2022",
+      "value": "20568728",
+      "locator": {
+        "year": "2022",
+        "country_code": "MWI"
+      }
+    },
+    {
+      "date": "2023",
+      "value": "21104482",
+      "locator": {
+        "year": "2023",
+        "country_code": "MWI"
+      }
+    },
+    {
+      "date": "2024",
+      "value": "21655286",
+      "locator": {
+        "year": "2024",
+        "country_code": "MWI"
+      }
+    },
+    {
+      "date": "2025",
+      "value": "22216120",
+      "locator": {
+        "year": "2025",
+        "country_code": "MWI"
+      }
+    }
+  ]
+}

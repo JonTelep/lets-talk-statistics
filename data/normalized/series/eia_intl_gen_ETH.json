@@ -1,0 +1,377 @@
+{
+  "id": "eia_intl_gen_ETH",
+  "name": "Net generation",
+  "units": "billion kilowatthours",
+  "adjustment": "annual",
+  "nominal_or_real": "generation",
+  "frequency": "annual",
+  "source_id": "eia_intl_bulk",
+  "series_url": "https://www.eia.gov/international/data/world/electricity/electricity-generation",
+  "eia_series_id": "INTL.2-12-ETH-BKWH.A",
+  "country_code": "ETH",
+  "country_name": "Ethiopia",
+  "population_status": "matched",
+  "notes": "EIA bulk series INTL.2-12-ETH-BKWH.A, Ethiopia. Annual. Billion kilowatthours. 1 billion kilowatthours = 1 terawatthour. Published years in this file run from 1980 to 2024.",
+  "points": [
+    {
+      "date": "1980",
+      "value": "0.651",
+      "locator": {
+        "year": "1980",
+        "series_id": "INTL.2-12-ETH-BKWH.A"
+      }
+    },
+    {
+      "date": "1981",
+      "value": "0.68",
+      "locator": {
+        "year": "1981",
+        "series_id": "INTL.2-12-ETH-BKWH.A"
+      }
+    },
+    {
+      "date": "1982",
+      "value": "0.746",
+      "locator": {
+        "year": "1982",
+        "series_id": "INTL.2-12-ETH-BKWH.A"
+      }
+    },
+    {
+      "date": "1983",
+      "value": "0.787",
+      "locator": {
+        "year": "1983",
+        "series_id": "INTL.2-12-ETH-BKWH.A"
+      }
+    },
+    {
+      "date": "1984",
+      "value": "0.837",
+      "locator": {
+        "year": "1984",
+        "series_id": "INTL.2-12-ETH-BKWH.A"
+      }
+    },
+    {
+      "date": "1985",
+      "value": "0.892",
+      "locator": {
+        "year": "1985",
+        "series_id": "INTL.2-12-ETH-BKWH.A"
+      }
+    },
+    {
+      "date": "1986",
+      "value": "0.949",
+      "locator": {
+        "year": "1986",
+        "series_id": "INTL.2-12-ETH-BKWH.A"
+      }
+    },
+    {
+      "date": "1987",
+      "value": "1.1",
+      "locator": {
+        "year": "1987",
+        "series_id": "INTL.2-12-ETH-BKWH.A"
+      }
+    },
+    {
+      "date": "1988",
+      "value": "1.172",
+      "locator": {
+        "year": "1988",
+        "series_id": "INTL.2-12-ETH-BKWH.A"
+      }
+    },
+    {
+      "date": "1989",
+      "value": "1.218",
+      "locator": {
+        "year": "1989",
+        "series_id": "INTL.2-12-ETH-BKWH.A"
+      }
+    },
+    {
+      "date": "1990",
+      "value": "1.199",
+      "locator": {
+        "year": "1990",
+        "series_id": "INTL.2-12-ETH-BKWH.A"
+      }
+    },
+    {
+      "date": "1991",
+      "value": "1.211",
+      "locator": {
+        "year": "1991",
+        "series_id": "INTL.2-12-ETH-BKWH.A"
+      }
+    },
+    {
+      "date": "1992",
+      "value": "1.221",
+      "locator": {
+        "year": "1992",
+        "series_id": "INTL.2-12-ETH-BKWH.A"
+      }
+    },
+    {
+      "date": "1993",
+      "value": "1.435",
+      "locator": {
+        "year": "1993",
+        "series_id": "INTL.2-12-ETH-BKWH.A"
+      }
+    },
+    {
+      "date": "1994",
+      "value": "1.433",
+      "locator": {
+        "year": "1994",
+        "series_id": "INTL.2-12-ETH-BKWH.A"
+      }
+    },
+    {
+      "date": "1995",
+      "value": "1.453",
+      "locator": {
+        "year": "1995",
+        "series_id": "INTL.2-12-ETH-BKWH.A"
+      }
+    },
+    {
+      "date": "1996",
+      "value": "1.536",
+      "locator": {
+        "year": "1996",
+        "series_id": "INTL.2-12-ETH-BKWH.A"
+      }
+    },
+    {
+      "date": "1997",
+      "value": "1.595",
+      "locator": {
+        "year": "1997",
+        "series_id": "INTL.2-12-ETH-BKWH.A"
+      }
+    },
+    {
+      "date": "1998",
+      "value": "1.634",
+      "locator": {
+        "year": "1998",
+        "series_id": "INTL.2-12-ETH-BKWH.A"
+      }
+    },
+    {
+      "date": "1999",
+      "value": "1.627",
+      "locator": {
+        "year": "1999",
+        "series_id": "INTL.2-12-ETH-BKWH.A"
+      }
+    },
+    {
+      "date": "2000",
+      "value": "1.699",
+      "locator": {
+        "year": "2000",
+        "series_id": "INTL.2-12-ETH-BKWH.A"
+      }
+    },
+    {
+      "date": "2001",
+      "value": "2.0371",
+      "locator": {
+        "year": "2001",
+        "series_id": "INTL.2-12-ETH-BKWH.A"
+      }
+    },
+    {
+      "date": "2002",
+      "value": "2.068",
+      "locator": {
+        "year": "2002",
+        "series_id": "INTL.2-12-ETH-BKWH.A"
+      }
+    },
+    {
+      "date": "2003",
+      "value": "2.325",
+      "locator": {
+        "year": "2003",
+        "series_id": "INTL.2-12-ETH-BKWH.A"
+      }
+    },
+    {
+      "date": "2004",
+      "value": "2.565",
+      "locator": {
+        "year": "2004",
+        "series_id": "INTL.2-12-ETH-BKWH.A"
+      }
+    },
+    {
+      "date": "2005",
+      "value": "2.881",
+      "locator": {
+        "year": "2005",
+        "series_id": "INTL.2-12-ETH-BKWH.A"
+      }
+    },
+    {
+      "date": "2006",
+      "value": "3.306",
+      "locator": {
+        "year": "2006",
+        "series_id": "INTL.2-12-ETH-BKWH.A"
+      }
+    },
+    {
+      "date": "2007",
+      "value": "3.438",
+      "locator": {
+        "year": "2007",
+        "series_id": "INTL.2-12-ETH-BKWH.A"
+      }
+    },
+    {
+      "date": "2008",
+      "value": "3.3361",
+      "locator": {
+        "year": "2008",
+        "series_id": "INTL.2-12-ETH-BKWH.A"
+      }
+    },
+    {
+      "date": "2009",
+      "value": "3.6204",
+      "locator": {
+        "year": "2009",
+        "series_id": "INTL.2-12-ETH-BKWH.A"
+      }
+    },
+    {
+      "date": "2010",
+      "value": "5.0104",
+      "locator": {
+        "year": "2010",
+        "series_id": "INTL.2-12-ETH-BKWH.A"
+      }
+    },
+    {
+      "date": "2011",
+      "value": "6.3308",
+      "locator": {
+        "year": "2011",
+        "series_id": "INTL.2-12-ETH-BKWH.A"
+      }
+    },
+    {
+      "date": "2012",
+      "value": "7.571",
+      "locator": {
+        "year": "2012",
+        "series_id": "INTL.2-12-ETH-BKWH.A"
+      }
+    },
+    {
+      "date": "2013",
+      "value": "8.6531",
+      "locator": {
+        "year": "2013",
+        "series_id": "INTL.2-12-ETH-BKWH.A"
+      }
+    },
+    {
+      "date": "2014",
+      "value": "9.4721",
+      "locator": {
+        "year": "2014",
+        "series_id": "INTL.2-12-ETH-BKWH.A"
+      }
+    },
+    {
+      "date": "2015",
+      "value": "10.3861",
+      "locator": {
+        "year": "2015",
+        "series_id": "INTL.2-12-ETH-BKWH.A"
+      }
+    },
+    {
+      "date": "2016",
+      "value": "12.4701",
+      "locator": {
+        "year": "2016",
+        "series_id": "INTL.2-12-ETH-BKWH.A"
+      }
+    },
+    {
+      "date": "2017",
+      "value": "13.1367",
+      "locator": {
+        "year": "2017",
+        "series_id": "INTL.2-12-ETH-BKWH.A"
+      }
+    },
+    {
+      "date": "2018",
+      "value": "14.2388",
+      "locator": {
+        "year": "2018",
+        "series_id": "INTL.2-12-ETH-BKWH.A"
+      }
+    },
+    {
+      "date": "2019",
+      "value": "15.3073",
+      "locator": {
+        "year": "2019",
+        "series_id": "INTL.2-12-ETH-BKWH.A"
+      }
+    },
+    {
+      "date": "2020",
+      "value": "15.6166",
+      "locator": {
+        "year": "2020",
+        "series_id": "INTL.2-12-ETH-BKWH.A"
+      }
+    },
+    {
+      "date": "2021",
+      "value": "15.7831",
+      "locator": {
+        "year": "2021",
+        "series_id": "INTL.2-12-ETH-BKWH.A"
+      }
+    },
+    {
+      "date": "2022",
+      "value": "17.406807827",
+      "locator": {
+        "year": "2022",
+        "series_id": "INTL.2-12-ETH-BKWH.A"
+      }
+    },
+    {
+      "date": "2023",
+      "value": "17.76494968",
+      "locator": {
+        "year": "2023",
+        "series_id": "INTL.2-12-ETH-BKWH.A"
+      }
+    },
+    {
+      "date": "2024",
+      "value": "16.644076497",
+      "locator": {
+        "year": "2024",
+        "series_id": "INTL.2-12-ETH-BKWH.A"
+      }
+    }
+  ]
+}

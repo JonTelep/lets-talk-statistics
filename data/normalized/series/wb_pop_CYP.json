@@ -1,0 +1,543 @@
+{
+  "id": "wb_pop_CYP",
+  "name": "Cyprus",
+  "units": "people",
+  "adjustment": "midyear",
+  "nominal_or_real": "count",
+  "frequency": "annual",
+  "source_id": "worldbank_sp_pop_totl",
+  "series_url": "https://data.worldbank.org/indicator/SP.POP.TOTL",
+  "country_code": "CYP",
+  "country_name": "Cyprus",
+  "notes": "World Bank World Development Indicators, SP.POP.TOTL, country code CYP. Midyear population. Published years in this file run from 1960 to 2025.",
+  "points": [
+    {
+      "date": "1960",
+      "value": "586490",
+      "locator": {
+        "year": "1960",
+        "country_code": "CYP"
+      }
+    },
+    {
+      "date": "1961",
+      "value": "595514",
+      "locator": {
+        "year": "1961",
+        "country_code": "CYP"
+      }
+    },
+    {
+      "date": "1962",
+      "value": "601466",
+      "locator": {
+        "year": "1962",
+        "country_code": "CYP"
+      }
+    },
+    {
+      "date": "1963",
+      "value": "607252",
+      "locator": {
+        "year": "1963",
+        "country_code": "CYP"
+      }
+    },
+    {
+      "date": "1964",
+      "value": "612521",
+      "locator": {
+        "year": "1964",
+        "country_code": "CYP"
+      }
+    },
+    {
+      "date": "1965",
+      "value": "617736",
+      "locator": {
+        "year": "1965",
+        "country_code": "CYP"
+      }
+    },
+    {
+      "date": "1966",
+      "value": "623390",
+      "locator": {
+        "year": "1966",
+        "country_code": "CYP"
+      }
+    },
+    {
+      "date": "1967",
+      "value": "629251",
+      "locator": {
+        "year": "1967",
+        "country_code": "CYP"
+      }
+    },
+    {
+      "date": "1968",
+      "value": "635157",
+      "locator": {
+        "year": "1968",
+        "country_code": "CYP"
+      }
+    },
+    {
+      "date": "1969",
+      "value": "641189",
+      "locator": {
+        "year": "1969",
+        "country_code": "CYP"
+      }
+    },
+    {
+      "date": "1970",
+      "value": "647446",
+      "locator": {
+        "year": "1970",
+        "country_code": "CYP"
+      }
+    },
+    {
+      "date": "1971",
+      "value": "654050",
+      "locator": {
+        "year": "1971",
+        "country_code": "CYP"
+      }
+    },
+    {
+      "date": "1972",
+      "value": "661063",
+      "locator": {
+        "year": "1972",
+        "country_code": "CYP"
+      }
+    },
+    {
+      "date": "1973",
+      "value": "665937",
+      "locator": {
+        "year": "1973",
+        "country_code": "CYP"
+      }
+    },
+    {
+      "date": "1974",
+      "value": "663254",
+      "locator": {
+        "year": "1974",
+        "country_code": "CYP"
+      }
+    },
+    {
+      "date": "1975",
+      "value": "659405",
+      "locator": {
+        "year": "1975",
+        "country_code": "CYP"
+      }
+    },
+    {
+      "date": "1976",
+      "value": "662032",
+      "locator": {
+        "year": "1976",
+        "country_code": "CYP"
+      }
+    },
+    {
+      "date": "1977",
+      "value": "667101",
+      "locator": {
+        "year": "1977",
+        "country_code": "CYP"
+      }
+    },
+    {
+      "date": "1978",
+      "value": "672249",
+      "locator": {
+        "year": "1978",
+        "country_code": "CYP"
+      }
+    },
+    {
+      "date": "1979",
+      "value": "677549",
+      "locator": {
+        "year": "1979",
+        "country_code": "CYP"
+      }
+    },
+    {
+      "date": "1980",
+      "value": "683076",
+      "locator": {
+        "year": "1980",
+        "country_code": "CYP"
+      }
+    },
+    {
+      "date": "1981",
+      "value": "688893",
+      "locator": {
+        "year": "1981",
+        "country_code": "CYP"
+      }
+    },
+    {
+      "date": "1982",
+      "value": "696497",
+      "locator": {
+        "year": "1982",
+        "country_code": "CYP"
+      }
+    },
+    {
+      "date": "1983",
+      "value": "707225",
+      "locator": {
+        "year": "1983",
+        "country_code": "CYP"
+      }
+    },
+    {
+      "date": "1984",
+      "value": "719334",
+      "locator": {
+        "year": "1984",
+        "country_code": "CYP"
+      }
+    },
+    {
+      "date": "1985",
+      "value": "731277",
+      "locator": {
+        "year": "1985",
+        "country_code": "CYP"
+      }
+    },
+    {
+      "date": "1986",
+      "value": "743105",
+      "locator": {
+        "year": "1986",
+        "country_code": "CYP"
+      }
+    },
+    {
+      "date": "1987",
+      "value": "754785",
+      "locator": {
+        "year": "1987",
+        "country_code": "CYP"
+      }
+    },
+    {
+      "date": "1988",
+      "value": "766235",
+      "locator": {
+        "year": "1988",
+        "country_code": "CYP"
+      }
+    },
+    {
+      "date": "1989",
+      "value": "777420",
+      "locator": {
+        "year": "1989",
+        "country_code": "CYP"
+      }
+    },
+    {
+      "date": "1990",
+      "value": "788351",
+      "locator": {
+        "year": "1990",
+        "country_code": "CYP"
+      }
+    },
+    {
+      "date": "1991",
+      "value": "798944",
+      "locator": {
+        "year": "1991",
+        "country_code": "CYP"
+      }
+    },
+    {
+      "date": "1992",
+      "value": "810341",
+      "locator": {
+        "year": "1992",
+        "country_code": "CYP"
+      }
+    },
+    {
+      "date": "1993",
+      "value": "826034",
+      "locator": {
+        "year": "1993",
+        "country_code": "CYP"
+      }
+    },
+    {
+      "date": "1994",
+      "value": "844667",
+      "locator": {
+        "year": "1994",
+        "country_code": "CYP"
+      }
+    },
+    {
+      "date": "1995",
+      "value": "862695",
+      "locator": {
+        "year": "1995",
+        "country_code": "CYP"
+      }
+    },
+    {
+      "date": "1996",
+      "value": "880290",
+      "locator": {
+        "year": "1996",
+        "country_code": "CYP"
+      }
+    },
+    {
+      "date": "1997",
+      "value": "897568",
+      "locator": {
+        "year": "1997",
+        "country_code": "CYP"
+      }
+    },
+    {
+      "date": "1998",
+      "value": "914548",
+      "locator": {
+        "year": "1998",
+        "country_code": "CYP"
+      }
+    },
+    {
+      "date": "1999",
+      "value": "931234",
+      "locator": {
+        "year": "1999",
+        "country_code": "CYP"
+      }
+    },
+    {
+      "date": "2000",
+      "value": "947667",
+      "locator": {
+        "year": "2000",
+        "country_code": "CYP"
+      }
+    },
+    {
+      "date": "2001",
+      "value": "964127",
+      "locator": {
+        "year": "2001",
+        "country_code": "CYP"
+      }
+    },
+    {
+      "date": "2002",
+      "value": "981440",
+      "locator": {
+        "year": "2002",
+        "country_code": "CYP"
+      }
+    },
+    {
+      "date": "2003",
+      "value": "999590",
+      "locator": {
+        "year": "2003",
+        "country_code": "CYP"
+      }
+    },
+    {
+      "date": "2004",
+      "value": "1017875",
+      "locator": {
+        "year": "2004",
+        "country_code": "CYP"
+      }
+    },
+    {
+      "date": "2005",
+      "value": "1036151",
+      "locator": {
+        "year": "2005",
+        "country_code": "CYP"
+      }
+    },
+    {
+      "date": "2006",
+      "value": "1054418",
+      "locator": {
+        "year": "2006",
+        "country_code": "CYP"
+      }
+    },
+    {
+      "date": "2007",
+      "value": "1072714",
+      "locator": {
+        "year": "2007",
+        "country_code": "CYP"
+      }
+    },
+    {
+      "date": "2008",
+      "value": "1091026",
+      "locator": {
+        "year": "2008",
+        "country_code": "CYP"
+      }
+    },
+    {
+      "date": "2009",
+      "value": "1109371",
+      "locator": {
+        "year": "2009",
+        "country_code": "CYP"
+      }
+    },
+    {
+      "date": "2010",
+      "value": "1127816",
+      "locator": {
+        "year": "2010",
+        "country_code": "CYP"
+      }
+    },
+    {
+      "date": "2011",
+      "value": "1146493",
+      "locator": {
+        "year": "2011",
+        "country_code": "CYP"
+      }
+    },
+    {
+      "date": "2012",
+      "value": "1165397",
+      "locator": {
+        "year": "2012",
+        "country_code": "CYP"
+      }
+    },
+    {
+      "date": "2013",
+      "value": "1183895",
+      "locator": {
+        "year": "2013",
+        "country_code": "CYP"
+      }
+    },
+    {
+      "date": "2014",
+      "value": "1201801",
+      "locator": {
+        "year": "2014",
+        "country_code": "CYP"
+      }
+    },
+    {
+      "date": "2015",
+      "value": "1219502",
+      "locator": {
+        "year": "2015",
+        "country_code": "CYP"
+      }
+    },
+    {
+      "date": "2016",
+      "value": "1237112",
+      "locator": {
+        "year": "2016",
+        "country_code": "CYP"
+      }
+    },
+    {
+      "date": "2017",
+      "value": "1254275",
+      "locator": {
+        "year": "2017",
+        "country_code": "CYP"
+      }
+    },
+    {
+      "date": "2018",
+      "value": "1270737",
+      "locator": {
+        "year": "2018",
+        "country_code": "CYP"
+      }
+    },
+    {
+      "date": "2019",
+      "value": "1286671",
+      "locator": {
+        "year": "2019",
+        "country_code": "CYP"
+      }
+    },
+    {
+      "date": "2020",
+      "value": "1302247",
+      "locator": {
+        "year": "2020",
+        "country_code": "CYP"
+      }
+    },
+    {
+      "date": "2021",
+      "value": "1317309",
+      "locator": {
+        "year": "2021",
+        "country_code": "CYP"
+      }
+    },
+    {
+      "date": "2022",
+      "value": "1331370",
+      "locator": {
+        "year": "2022",
+        "country_code": "CYP"
+      }
+    },
+    {
+      "date": "2023",
+      "value": "1344976",
+      "locator": {
+        "year": "2023",
+        "country_code": "CYP"
+      }
+    },
+    {
+      "date": "2024",
+      "value": "1358282",
+      "locator": {
+        "year": "2024",
+        "country_code": "CYP"
+      }
+    },
+    {
+      "date": "2025",
+      "value": "1370754",
+      "locator": {
+        "year": "2025",
+        "country_code": "CYP"
+      }
+    }
+  ]
+}

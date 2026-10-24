@@ -1,0 +1,543 @@
+{
+  "id": "wb_pop_SWE",
+  "name": "Sweden",
+  "units": "people",
+  "adjustment": "midyear",
+  "nominal_or_real": "count",
+  "frequency": "annual",
+  "source_id": "worldbank_sp_pop_totl",
+  "series_url": "https://data.worldbank.org/indicator/SP.POP.TOTL",
+  "country_code": "SWE",
+  "country_name": "Sweden",
+  "notes": "World Bank World Development Indicators, SP.POP.TOTL, country code SWE. Midyear population. Published years in this file run from 1960 to 2025.",
+  "points": [
+    {
+      "date": "1960",
+      "value": "7484656",
+      "locator": {
+        "year": "1960",
+        "country_code": "SWE"
+      }
+    },
+    {
+      "date": "1961",
+      "value": "7519998",
+      "locator": {
+        "year": "1961",
+        "country_code": "SWE"
+      }
+    },
+    {
+      "date": "1962",
+      "value": "7561588",
+      "locator": {
+        "year": "1962",
+        "country_code": "SWE"
+      }
+    },
+    {
+      "date": "1963",
+      "value": "7604328",
+      "locator": {
+        "year": "1963",
+        "country_code": "SWE"
+      }
+    },
+    {
+      "date": "1964",
+      "value": "7661354",
+      "locator": {
+        "year": "1964",
+        "country_code": "SWE"
+      }
+    },
+    {
+      "date": "1965",
+      "value": "7733853",
+      "locator": {
+        "year": "1965",
+        "country_code": "SWE"
+      }
+    },
+    {
+      "date": "1966",
+      "value": "7807797",
+      "locator": {
+        "year": "1966",
+        "country_code": "SWE"
+      }
+    },
+    {
+      "date": "1967",
+      "value": "7867931",
+      "locator": {
+        "year": "1967",
+        "country_code": "SWE"
+      }
+    },
+    {
+      "date": "1968",
+      "value": "7912273",
+      "locator": {
+        "year": "1968",
+        "country_code": "SWE"
+      }
+    },
+    {
+      "date": "1969",
+      "value": "7968072",
+      "locator": {
+        "year": "1969",
+        "country_code": "SWE"
+      }
+    },
+    {
+      "date": "1970",
+      "value": "8042801",
+      "locator": {
+        "year": "1970",
+        "country_code": "SWE"
+      }
+    },
+    {
+      "date": "1971",
+      "value": "8098334",
+      "locator": {
+        "year": "1971",
+        "country_code": "SWE"
+      }
+    },
+    {
+      "date": "1972",
+      "value": "8122300",
+      "locator": {
+        "year": "1972",
+        "country_code": "SWE"
+      }
+    },
+    {
+      "date": "1973",
+      "value": "8136312",
+      "locator": {
+        "year": "1973",
+        "country_code": "SWE"
+      }
+    },
+    {
+      "date": "1974",
+      "value": "8159955",
+      "locator": {
+        "year": "1974",
+        "country_code": "SWE"
+      }
+    },
+    {
+      "date": "1975",
+      "value": "8192437",
+      "locator": {
+        "year": "1975",
+        "country_code": "SWE"
+      }
+    },
+    {
+      "date": "1976",
+      "value": "8222286",
+      "locator": {
+        "year": "1976",
+        "country_code": "SWE"
+      }
+    },
+    {
+      "date": "1977",
+      "value": "8251540",
+      "locator": {
+        "year": "1977",
+        "country_code": "SWE"
+      }
+    },
+    {
+      "date": "1978",
+      "value": "8275599",
+      "locator": {
+        "year": "1978",
+        "country_code": "SWE"
+      }
+    },
+    {
+      "date": "1979",
+      "value": "8293678",
+      "locator": {
+        "year": "1979",
+        "country_code": "SWE"
+      }
+    },
+    {
+      "date": "1980",
+      "value": "8310531",
+      "locator": {
+        "year": "1980",
+        "country_code": "SWE"
+      }
+    },
+    {
+      "date": "1981",
+      "value": "8320503",
+      "locator": {
+        "year": "1981",
+        "country_code": "SWE"
+      }
+    },
+    {
+      "date": "1982",
+      "value": "8325263",
+      "locator": {
+        "year": "1982",
+        "country_code": "SWE"
+      }
+    },
+    {
+      "date": "1983",
+      "value": "8329033",
+      "locator": {
+        "year": "1983",
+        "country_code": "SWE"
+      }
+    },
+    {
+      "date": "1984",
+      "value": "8336605",
+      "locator": {
+        "year": "1984",
+        "country_code": "SWE"
+      }
+    },
+    {
+      "date": "1985",
+      "value": "8350386",
+      "locator": {
+        "year": "1985",
+        "country_code": "SWE"
+      }
+    },
+    {
+      "date": "1986",
+      "value": "8369829",
+      "locator": {
+        "year": "1986",
+        "country_code": "SWE"
+      }
+    },
+    {
+      "date": "1987",
+      "value": "8397804",
+      "locator": {
+        "year": "1987",
+        "country_code": "SWE"
+      }
+    },
+    {
+      "date": "1988",
+      "value": "8436489",
+      "locator": {
+        "year": "1988",
+        "country_code": "SWE"
+      }
+    },
+    {
+      "date": "1989",
+      "value": "8492964",
+      "locator": {
+        "year": "1989",
+        "country_code": "SWE"
+      }
+    },
+    {
+      "date": "1990",
+      "value": "8558835",
+      "locator": {
+        "year": "1990",
+        "country_code": "SWE"
+      }
+    },
+    {
+      "date": "1991",
+      "value": "8617375",
+      "locator": {
+        "year": "1991",
+        "country_code": "SWE"
+      }
+    },
+    {
+      "date": "1992",
+      "value": "8668067",
+      "locator": {
+        "year": "1992",
+        "country_code": "SWE"
+      }
+    },
+    {
+      "date": "1993",
+      "value": "8718561",
+      "locator": {
+        "year": "1993",
+        "country_code": "SWE"
+      }
+    },
+    {
+      "date": "1994",
+      "value": "8780745",
+      "locator": {
+        "year": "1994",
+        "country_code": "SWE"
+      }
+    },
+    {
+      "date": "1995",
+      "value": "8826939",
+      "locator": {
+        "year": "1995",
+        "country_code": "SWE"
+      }
+    },
+    {
+      "date": "1996",
+      "value": "8840998",
+      "locator": {
+        "year": "1996",
+        "country_code": "SWE"
+      }
+    },
+    {
+      "date": "1997",
+      "value": "8846062",
+      "locator": {
+        "year": "1997",
+        "country_code": "SWE"
+      }
+    },
+    {
+      "date": "1998",
+      "value": "8850974",
+      "locator": {
+        "year": "1998",
+        "country_code": "SWE"
+      }
+    },
+    {
+      "date": "1999",
+      "value": "8857874",
+      "locator": {
+        "year": "1999",
+        "country_code": "SWE"
+      }
+    },
+    {
+      "date": "2000",
+      "value": "8872109",
+      "locator": {
+        "year": "2000",
+        "country_code": "SWE"
+      }
+    },
+    {
+      "date": "2001",
+      "value": "8895960",
+      "locator": {
+        "year": "2001",
+        "country_code": "SWE"
+      }
+    },
+    {
+      "date": "2002",
+      "value": "8924958",
+      "locator": {
+        "year": "2002",
+        "country_code": "SWE"
+      }
+    },
+    {
+      "date": "2003",
+      "value": "8958229",
+      "locator": {
+        "year": "2003",
+        "country_code": "SWE"
+      }
+    },
+    {
+      "date": "2004",
+      "value": "8993531",
+      "locator": {
+        "year": "2004",
+        "country_code": "SWE"
+      }
+    },
+    {
+      "date": "2005",
+      "value": "9029572",
+      "locator": {
+        "year": "2005",
+        "country_code": "SWE"
+      }
+    },
+    {
+      "date": "2006",
+      "value": "9080505",
+      "locator": {
+        "year": "2006",
+        "country_code": "SWE"
+      }
+    },
+    {
+      "date": "2007",
+      "value": "9148092",
+      "locator": {
+        "year": "2007",
+        "country_code": "SWE"
+      }
+    },
+    {
+      "date": "2008",
+      "value": "9219637",
+      "locator": {
+        "year": "2008",
+        "country_code": "SWE"
+      }
+    },
+    {
+      "date": "2009",
+      "value": "9298515",
+      "locator": {
+        "year": "2009",
+        "country_code": "SWE"
+      }
+    },
+    {
+      "date": "2010",
+      "value": "9378126",
+      "locator": {
+        "year": "2010",
+        "country_code": "SWE"
+      }
+    },
+    {
+      "date": "2011",
+      "value": "9449213",
+      "locator": {
+        "year": "2011",
+        "country_code": "SWE"
+      }
+    },
+    {
+      "date": "2012",
+      "value": "9519374",
+      "locator": {
+        "year": "2012",
+        "country_code": "SWE"
+      }
+    },
+    {
+      "date": "2013",
+      "value": "9600379",
+      "locator": {
+        "year": "2013",
+        "country_code": "SWE"
+      }
+    },
+    {
+      "date": "2014",
+      "value": "9696110",
+      "locator": {
+        "year": "2014",
+        "country_code": "SWE"
+      }
+    },
+    {
+      "date": "2015",
+      "value": "9799186",
+      "locator": {
+        "year": "2015",
+        "country_code": "SWE"
+      }
+    },
+    {
+      "date": "2016",
+      "value": "9923085",
+      "locator": {
+        "year": "2016",
+        "country_code": "SWE"
+      }
+    },
+    {
+      "date": "2017",
+      "value": "10057698",
+      "locator": {
+        "year": "2017",
+        "country_code": "SWE"
+      }
+    },
+    {
+      "date": "2018",
+      "value": "10175214",
+      "locator": {
+        "year": "2018",
+        "country_code": "SWE"
+      }
+    },
+    {
+      "date": "2019",
+      "value": "10278887",
+      "locator": {
+        "year": "2019",
+        "country_code": "SWE"
+      }
+    },
+    {
+      "date": "2020",
+      "value": "10353442",
+      "locator": {
+        "year": "2020",
+        "country_code": "SWE"
+      }
+    },
+    {
+      "date": "2021",
+      "value": "10415811",
+      "locator": {
+        "year": "2021",
+        "country_code": "SWE"
+      }
+    },
+    {
+      "date": "2022",
+      "value": "10486941",
+      "locator": {
+        "year": "2022",
+        "country_code": "SWE"
+      }
+    },
+    {
+      "date": "2023",
+      "value": "10536632",
+      "locator": {
+        "year": "2023",
+        "country_code": "SWE"
+      }
+    },
+    {
+      "date": "2024",
+      "value": "10569709",
+      "locator": {
+        "year": "2024",
+        "country_code": "SWE"
+      }
+    },
+    {
+      "date": "2025",
+      "value": "10596620",
+      "locator": {
+        "year": "2025",
+        "country_code": "SWE"
+      }
+    }
+  ]
+}

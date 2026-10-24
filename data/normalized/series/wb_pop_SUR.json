@@ -1,0 +1,543 @@
+{
+  "id": "wb_pop_SUR",
+  "name": "Suriname",
+  "units": "people",
+  "adjustment": "midyear",
+  "nominal_or_real": "count",
+  "frequency": "annual",
+  "source_id": "worldbank_sp_pop_totl",
+  "series_url": "https://data.worldbank.org/indicator/SP.POP.TOTL",
+  "country_code": "SUR",
+  "country_name": "Suriname",
+  "notes": "World Bank World Development Indicators, SP.POP.TOTL, country code SUR. Midyear population. Published years in this file run from 1960 to 2025.",
+  "points": [
+    {
+      "date": "1960",
+      "value": "263918",
+      "locator": {
+        "year": "1960",
+        "country_code": "SUR"
+      }
+    },
+    {
+      "date": "1961",
+      "value": "272791",
+      "locator": {
+        "year": "1961",
+        "country_code": "SUR"
+      }
+    },
+    {
+      "date": "1962",
+      "value": "283912",
+      "locator": {
+        "year": "1962",
+        "country_code": "SUR"
+      }
+    },
+    {
+      "date": "1963",
+      "value": "297034",
+      "locator": {
+        "year": "1963",
+        "country_code": "SUR"
+      }
+    },
+    {
+      "date": "1964",
+      "value": "309041",
+      "locator": {
+        "year": "1964",
+        "country_code": "SUR"
+      }
+    },
+    {
+      "date": "1965",
+      "value": "320000",
+      "locator": {
+        "year": "1965",
+        "country_code": "SUR"
+      }
+    },
+    {
+      "date": "1966",
+      "value": "331135",
+      "locator": {
+        "year": "1966",
+        "country_code": "SUR"
+      }
+    },
+    {
+      "date": "1967",
+      "value": "342679",
+      "locator": {
+        "year": "1967",
+        "country_code": "SUR"
+      }
+    },
+    {
+      "date": "1968",
+      "value": "354616",
+      "locator": {
+        "year": "1968",
+        "country_code": "SUR"
+      }
+    },
+    {
+      "date": "1969",
+      "value": "366906",
+      "locator": {
+        "year": "1969",
+        "country_code": "SUR"
+      }
+    },
+    {
+      "date": "1970",
+      "value": "379442",
+      "locator": {
+        "year": "1970",
+        "country_code": "SUR"
+      }
+    },
+    {
+      "date": "1971",
+      "value": "391932",
+      "locator": {
+        "year": "1971",
+        "country_code": "SUR"
+      }
+    },
+    {
+      "date": "1972",
+      "value": "397413",
+      "locator": {
+        "year": "1972",
+        "country_code": "SUR"
+      }
+    },
+    {
+      "date": "1973",
+      "value": "395772",
+      "locator": {
+        "year": "1973",
+        "country_code": "SUR"
+      }
+    },
+    {
+      "date": "1974",
+      "value": "393676",
+      "locator": {
+        "year": "1974",
+        "country_code": "SUR"
+      }
+    },
+    {
+      "date": "1975",
+      "value": "391170",
+      "locator": {
+        "year": "1975",
+        "country_code": "SUR"
+      }
+    },
+    {
+      "date": "1976",
+      "value": "388289",
+      "locator": {
+        "year": "1976",
+        "country_code": "SUR"
+      }
+    },
+    {
+      "date": "1977",
+      "value": "385067",
+      "locator": {
+        "year": "1977",
+        "country_code": "SUR"
+      }
+    },
+    {
+      "date": "1978",
+      "value": "381502",
+      "locator": {
+        "year": "1978",
+        "country_code": "SUR"
+      }
+    },
+    {
+      "date": "1979",
+      "value": "377602",
+      "locator": {
+        "year": "1979",
+        "country_code": "SUR"
+      }
+    },
+    {
+      "date": "1980",
+      "value": "375377",
+      "locator": {
+        "year": "1980",
+        "country_code": "SUR"
+      }
+    },
+    {
+      "date": "1981",
+      "value": "375459",
+      "locator": {
+        "year": "1981",
+        "country_code": "SUR"
+      }
+    },
+    {
+      "date": "1982",
+      "value": "376555",
+      "locator": {
+        "year": "1982",
+        "country_code": "SUR"
+      }
+    },
+    {
+      "date": "1983",
+      "value": "378746",
+      "locator": {
+        "year": "1983",
+        "country_code": "SUR"
+      }
+    },
+    {
+      "date": "1984",
+      "value": "382193",
+      "locator": {
+        "year": "1984",
+        "country_code": "SUR"
+      }
+    },
+    {
+      "date": "1985",
+      "value": "386972",
+      "locator": {
+        "year": "1985",
+        "country_code": "SUR"
+      }
+    },
+    {
+      "date": "1986",
+      "value": "392330",
+      "locator": {
+        "year": "1986",
+        "country_code": "SUR"
+      }
+    },
+    {
+      "date": "1987",
+      "value": "396911",
+      "locator": {
+        "year": "1987",
+        "country_code": "SUR"
+      }
+    },
+    {
+      "date": "1988",
+      "value": "402227",
+      "locator": {
+        "year": "1988",
+        "country_code": "SUR"
+      }
+    },
+    {
+      "date": "1989",
+      "value": "408409",
+      "locator": {
+        "year": "1989",
+        "country_code": "SUR"
+      }
+    },
+    {
+      "date": "1990",
+      "value": "412493",
+      "locator": {
+        "year": "1990",
+        "country_code": "SUR"
+      }
+    },
+    {
+      "date": "1991",
+      "value": "415013",
+      "locator": {
+        "year": "1991",
+        "country_code": "SUR"
+      }
+    },
+    {
+      "date": "1992",
+      "value": "417589",
+      "locator": {
+        "year": "1992",
+        "country_code": "SUR"
+      }
+    },
+    {
+      "date": "1993",
+      "value": "419352",
+      "locator": {
+        "year": "1993",
+        "country_code": "SUR"
+      }
+    },
+    {
+      "date": "1994",
+      "value": "422375",
+      "locator": {
+        "year": "1994",
+        "country_code": "SUR"
+      }
+    },
+    {
+      "date": "1995",
+      "value": "429606",
+      "locator": {
+        "year": "1995",
+        "country_code": "SUR"
+      }
+    },
+    {
+      "date": "1996",
+      "value": "438830",
+      "locator": {
+        "year": "1996",
+        "country_code": "SUR"
+      }
+    },
+    {
+      "date": "1997",
+      "value": "448067",
+      "locator": {
+        "year": "1997",
+        "country_code": "SUR"
+      }
+    },
+    {
+      "date": "1998",
+      "value": "457406",
+      "locator": {
+        "year": "1998",
+        "country_code": "SUR"
+      }
+    },
+    {
+      "date": "1999",
+      "value": "466916",
+      "locator": {
+        "year": "1999",
+        "country_code": "SUR"
+      }
+    },
+    {
+      "date": "2000",
+      "value": "476643",
+      "locator": {
+        "year": "2000",
+        "country_code": "SUR"
+      }
+    },
+    {
+      "date": "2001",
+      "value": "486560",
+      "locator": {
+        "year": "2001",
+        "country_code": "SUR"
+      }
+    },
+    {
+      "date": "2002",
+      "value": "496551",
+      "locator": {
+        "year": "2002",
+        "country_code": "SUR"
+      }
+    },
+    {
+      "date": "2003",
+      "value": "506414",
+      "locator": {
+        "year": "2003",
+        "country_code": "SUR"
+      }
+    },
+    {
+      "date": "2004",
+      "value": "513923",
+      "locator": {
+        "year": "2004",
+        "country_code": "SUR"
+      }
+    },
+    {
+      "date": "2005",
+      "value": "519313",
+      "locator": {
+        "year": "2005",
+        "country_code": "SUR"
+      }
+    },
+    {
+      "date": "2006",
+      "value": "524997",
+      "locator": {
+        "year": "2006",
+        "country_code": "SUR"
+      }
+    },
+    {
+      "date": "2007",
+      "value": "531016",
+      "locator": {
+        "year": "2007",
+        "country_code": "SUR"
+      }
+    },
+    {
+      "date": "2008",
+      "value": "537245",
+      "locator": {
+        "year": "2008",
+        "country_code": "SUR"
+      }
+    },
+    {
+      "date": "2009",
+      "value": "543568",
+      "locator": {
+        "year": "2009",
+        "country_code": "SUR"
+      }
+    },
+    {
+      "date": "2010",
+      "value": "549923",
+      "locator": {
+        "year": "2010",
+        "country_code": "SUR"
+      }
+    },
+    {
+      "date": "2011",
+      "value": "556269",
+      "locator": {
+        "year": "2011",
+        "country_code": "SUR"
+      }
+    },
+    {
+      "date": "2012",
+      "value": "562633",
+      "locator": {
+        "year": "2012",
+        "country_code": "SUR"
+      }
+    },
+    {
+      "date": "2013",
+      "value": "569020",
+      "locator": {
+        "year": "2013",
+        "country_code": "SUR"
+      }
+    },
+    {
+      "date": "2014",
+      "value": "575373",
+      "locator": {
+        "year": "2014",
+        "country_code": "SUR"
+      }
+    },
+    {
+      "date": "2015",
+      "value": "581627",
+      "locator": {
+        "year": "2015",
+        "country_code": "SUR"
+      }
+    },
+    {
+      "date": "2016",
+      "value": "587757",
+      "locator": {
+        "year": "2016",
+        "country_code": "SUR"
+      }
+    },
+    {
+      "date": "2017",
+      "value": "593713",
+      "locator": {
+        "year": "2017",
+        "country_code": "SUR"
+      }
+    },
+    {
+      "date": "2018",
+      "value": "599513",
+      "locator": {
+        "year": "2018",
+        "country_code": "SUR"
+      }
+    },
+    {
+      "date": "2019",
+      "value": "605768",
+      "locator": {
+        "year": "2019",
+        "country_code": "SUR"
+      }
+    },
+    {
+      "date": "2020",
+      "value": "612317",
+      "locator": {
+        "year": "2020",
+        "country_code": "SUR"
+      }
+    },
+    {
+      "date": "2021",
+      "value": "617896",
+      "locator": {
+        "year": "2021",
+        "country_code": "SUR"
+      }
+    },
+    {
+      "date": "2022",
+      "value": "623164",
+      "locator": {
+        "year": "2022",
+        "country_code": "SUR"
+      }
+    },
+    {
+      "date": "2023",
+      "value": "628886",
+      "locator": {
+        "year": "2023",
+        "country_code": "SUR"
+      }
+    },
+    {
+      "date": "2024",
+      "value": "634431",
+      "locator": {
+        "year": "2024",
+        "country_code": "SUR"
+      }
+    },
+    {
+      "date": "2025",
+      "value": "639850",
+      "locator": {
+        "year": "2025",
+        "country_code": "SUR"
+      }
+    }
+  ]
+}

@@ -1,0 +1,543 @@
+{
+  "id": "wb_pop_KWT",
+  "name": "Kuwait",
+  "units": "people",
+  "adjustment": "midyear",
+  "nominal_or_real": "count",
+  "frequency": "annual",
+  "source_id": "worldbank_sp_pop_totl",
+  "series_url": "https://data.worldbank.org/indicator/SP.POP.TOTL",
+  "country_code": "KWT",
+  "country_name": "Kuwait",
+  "notes": "World Bank World Development Indicators, SP.POP.TOTL, country code KWT. Midyear population. Published years in this file run from 1960 to 2025.",
+  "points": [
+    {
+      "date": "1960",
+      "value": "311060",
+      "locator": {
+        "year": "1960",
+        "country_code": "KWT"
+      }
+    },
+    {
+      "date": "1961",
+      "value": "345945",
+      "locator": {
+        "year": "1961",
+        "country_code": "KWT"
+      }
+    },
+    {
+      "date": "1962",
+      "value": "384995",
+      "locator": {
+        "year": "1962",
+        "country_code": "KWT"
+      }
+    },
+    {
+      "date": "1963",
+      "value": "427694",
+      "locator": {
+        "year": "1963",
+        "country_code": "KWT"
+      }
+    },
+    {
+      "date": "1964",
+      "value": "473115",
+      "locator": {
+        "year": "1964",
+        "country_code": "KWT"
+      }
+    },
+    {
+      "date": "1965",
+      "value": "521174",
+      "locator": {
+        "year": "1965",
+        "country_code": "KWT"
+      }
+    },
+    {
+      "date": "1966",
+      "value": "572590",
+      "locator": {
+        "year": "1966",
+        "country_code": "KWT"
+      }
+    },
+    {
+      "date": "1967",
+      "value": "628089",
+      "locator": {
+        "year": "1967",
+        "country_code": "KWT"
+      }
+    },
+    {
+      "date": "1968",
+      "value": "687716",
+      "locator": {
+        "year": "1968",
+        "country_code": "KWT"
+      }
+    },
+    {
+      "date": "1969",
+      "value": "749452",
+      "locator": {
+        "year": "1969",
+        "country_code": "KWT"
+      }
+    },
+    {
+      "date": "1970",
+      "value": "809114",
+      "locator": {
+        "year": "1970",
+        "country_code": "KWT"
+      }
+    },
+    {
+      "date": "1971",
+      "value": "865076",
+      "locator": {
+        "year": "1971",
+        "country_code": "KWT"
+      }
+    },
+    {
+      "date": "1972",
+      "value": "920352",
+      "locator": {
+        "year": "1972",
+        "country_code": "KWT"
+      }
+    },
+    {
+      "date": "1973",
+      "value": "977654",
+      "locator": {
+        "year": "1973",
+        "country_code": "KWT"
+      }
+    },
+    {
+      "date": "1974",
+      "value": "1038346",
+      "locator": {
+        "year": "1974",
+        "country_code": "KWT"
+      }
+    },
+    {
+      "date": "1975",
+      "value": "1104863",
+      "locator": {
+        "year": "1975",
+        "country_code": "KWT"
+      }
+    },
+    {
+      "date": "1976",
+      "value": "1178711",
+      "locator": {
+        "year": "1976",
+        "country_code": "KWT"
+      }
+    },
+    {
+      "date": "1977",
+      "value": "1258023",
+      "locator": {
+        "year": "1977",
+        "country_code": "KWT"
+      }
+    },
+    {
+      "date": "1978",
+      "value": "1340319",
+      "locator": {
+        "year": "1978",
+        "country_code": "KWT"
+      }
+    },
+    {
+      "date": "1979",
+      "value": "1423514",
+      "locator": {
+        "year": "1979",
+        "country_code": "KWT"
+      }
+    },
+    {
+      "date": "1980",
+      "value": "1504782",
+      "locator": {
+        "year": "1980",
+        "country_code": "KWT"
+      }
+    },
+    {
+      "date": "1981",
+      "value": "1583426",
+      "locator": {
+        "year": "1981",
+        "country_code": "KWT"
+      }
+    },
+    {
+      "date": "1982",
+      "value": "1662480",
+      "locator": {
+        "year": "1982",
+        "country_code": "KWT"
+      }
+    },
+    {
+      "date": "1983",
+      "value": "1744295",
+      "locator": {
+        "year": "1983",
+        "country_code": "KWT"
+      }
+    },
+    {
+      "date": "1984",
+      "value": "1820688",
+      "locator": {
+        "year": "1984",
+        "country_code": "KWT"
+      }
+    },
+    {
+      "date": "1985",
+      "value": "1894242",
+      "locator": {
+        "year": "1985",
+        "country_code": "KWT"
+      }
+    },
+    {
+      "date": "1986",
+      "value": "1972520",
+      "locator": {
+        "year": "1986",
+        "country_code": "KWT"
+      }
+    },
+    {
+      "date": "1987",
+      "value": "2052994",
+      "locator": {
+        "year": "1987",
+        "country_code": "KWT"
+      }
+    },
+    {
+      "date": "1988",
+      "value": "2134707",
+      "locator": {
+        "year": "1988",
+        "country_code": "KWT"
+      }
+    },
+    {
+      "date": "1989",
+      "value": "2217468",
+      "locator": {
+        "year": "1989",
+        "country_code": "KWT"
+      }
+    },
+    {
+      "date": "1990",
+      "value": "1684819",
+      "locator": {
+        "year": "1990",
+        "country_code": "KWT"
+      }
+    },
+    {
+      "date": "1991",
+      "value": "1351399",
+      "locator": {
+        "year": "1991",
+        "country_code": "KWT"
+      }
+    },
+    {
+      "date": "1992",
+      "value": "1634961",
+      "locator": {
+        "year": "1992",
+        "country_code": "KWT"
+      }
+    },
+    {
+      "date": "1993",
+      "value": "1672151",
+      "locator": {
+        "year": "1993",
+        "country_code": "KWT"
+      }
+    },
+    {
+      "date": "1994",
+      "value": "1664361",
+      "locator": {
+        "year": "1994",
+        "country_code": "KWT"
+      }
+    },
+    {
+      "date": "1995",
+      "value": "1681513",
+      "locator": {
+        "year": "1995",
+        "country_code": "KWT"
+      }
+    },
+    {
+      "date": "1996",
+      "value": "1730246",
+      "locator": {
+        "year": "1996",
+        "country_code": "KWT"
+      }
+    },
+    {
+      "date": "1997",
+      "value": "1787683",
+      "locator": {
+        "year": "1997",
+        "country_code": "KWT"
+      }
+    },
+    {
+      "date": "1998",
+      "value": "1844302",
+      "locator": {
+        "year": "1998",
+        "country_code": "KWT"
+      }
+    },
+    {
+      "date": "1999",
+      "value": "1900030",
+      "locator": {
+        "year": "1999",
+        "country_code": "KWT"
+      }
+    },
+    {
+      "date": "2000",
+      "value": "1954709",
+      "locator": {
+        "year": "2000",
+        "country_code": "KWT"
+      }
+    },
+    {
+      "date": "2001",
+      "value": "2008121",
+      "locator": {
+        "year": "2001",
+        "country_code": "KWT"
+      }
+    },
+    {
+      "date": "2002",
+      "value": "2059974",
+      "locator": {
+        "year": "2002",
+        "country_code": "KWT"
+      }
+    },
+    {
+      "date": "2003",
+      "value": "2109881",
+      "locator": {
+        "year": "2003",
+        "country_code": "KWT"
+      }
+    },
+    {
+      "date": "2004",
+      "value": "2157320",
+      "locator": {
+        "year": "2004",
+        "country_code": "KWT"
+      }
+    },
+    {
+      "date": "2005",
+      "value": "2236788",
+      "locator": {
+        "year": "2005",
+        "country_code": "KWT"
+      }
+    },
+    {
+      "date": "2006",
+      "value": "2364733",
+      "locator": {
+        "year": "2006",
+        "country_code": "KWT"
+      }
+    },
+    {
+      "date": "2007",
+      "value": "2507887",
+      "locator": {
+        "year": "2007",
+        "country_code": "KWT"
+      }
+    },
+    {
+      "date": "2008",
+      "value": "2651421",
+      "locator": {
+        "year": "2008",
+        "country_code": "KWT"
+      }
+    },
+    {
+      "date": "2009",
+      "value": "2795484",
+      "locator": {
+        "year": "2009",
+        "country_code": "KWT"
+      }
+    },
+    {
+      "date": "2010",
+      "value": "2943372",
+      "locator": {
+        "year": "2010",
+        "country_code": "KWT"
+      }
+    },
+    {
+      "date": "2011",
+      "value": "3132814",
+      "locator": {
+        "year": "2011",
+        "country_code": "KWT"
+      }
+    },
+    {
+      "date": "2012",
+      "value": "3337109",
+      "locator": {
+        "year": "2012",
+        "country_code": "KWT"
+      }
+    },
+    {
+      "date": "2013",
+      "value": "3507844",
+      "locator": {
+        "year": "2013",
+        "country_code": "KWT"
+      }
+    },
+    {
+      "date": "2014",
+      "value": "3665876",
+      "locator": {
+        "year": "2014",
+        "country_code": "KWT"
+      }
+    },
+    {
+      "date": "2015",
+      "value": "3834574",
+      "locator": {
+        "year": "2015",
+        "country_code": "KWT"
+      }
+    },
+    {
+      "date": "2016",
+      "value": "4004096",
+      "locator": {
+        "year": "2016",
+        "country_code": "KWT"
+      }
+    },
+    {
+      "date": "2017",
+      "value": "4154812",
+      "locator": {
+        "year": "2017",
+        "country_code": "KWT"
+      }
+    },
+    {
+      "date": "2018",
+      "value": "4323515",
+      "locator": {
+        "year": "2018",
+        "country_code": "KWT"
+      }
+    },
+    {
+      "date": "2019",
+      "value": "4442316",
+      "locator": {
+        "year": "2019",
+        "country_code": "KWT"
+      }
+    },
+    {
+      "date": "2020",
+      "value": "4400267",
+      "locator": {
+        "year": "2020",
+        "country_code": "KWT"
+      }
+    },
+    {
+      "date": "2021",
+      "value": "4360865",
+      "locator": {
+        "year": "2021",
+        "country_code": "KWT"
+      }
+    },
+    {
+      "date": "2022",
+      "value": "4589643",
+      "locator": {
+        "year": "2022",
+        "country_code": "KWT"
+      }
+    },
+    {
+      "date": "2023",
+      "value": "4853420",
+      "locator": {
+        "year": "2023",
+        "country_code": "KWT"
+      }
+    },
+    {
+      "date": "2024",
+      "value": "4897263",
+      "locator": {
+        "year": "2024",
+        "country_code": "KWT"
+      }
+    },
+    {
+      "date": "2025",
+      "value": "4865298",
+      "locator": {
+        "year": "2025",
+        "country_code": "KWT"
+      }
+    }
+  ]
+}

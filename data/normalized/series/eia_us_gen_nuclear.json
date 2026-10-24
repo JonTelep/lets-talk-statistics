@@ -1,0 +1,630 @@
+{
+  "id": "eia_us_gen_nuclear",
+  "name": "Nuclear",
+  "units": "Million Kilowatthours",
+  "adjustment": "annual",
+  "nominal_or_real": "generation",
+  "frequency": "annual",
+  "source_id": "eia_total_bulk",
+  "series_url": "https://www.eia.gov/totalenergy/data/browser/index.php?tbl=T07.02A",
+  "eia_series_id": "TOTAL.NUETPUS.A",
+  "notes": "EIA bulk series TOTAL.NUETPUS.A, Electricity Net Generation From Nuclear Electric Power, All Sectors, Annual. Annual. Published years in this file run from 1949 to 2025.",
+  "points": [
+    {
+      "date": "1949",
+      "value": "0",
+      "locator": {
+        "year": "1949",
+        "series_id": "TOTAL.NUETPUS.A"
+      }
+    },
+    {
+      "date": "1950",
+      "value": "0",
+      "locator": {
+        "year": "1950",
+        "series_id": "TOTAL.NUETPUS.A"
+      }
+    },
+    {
+      "date": "1951",
+      "value": "0",
+      "locator": {
+        "year": "1951",
+        "series_id": "TOTAL.NUETPUS.A"
+      }
+    },
+    {
+      "date": "1952",
+      "value": "0",
+      "locator": {
+        "year": "1952",
+        "series_id": "TOTAL.NUETPUS.A"
+      }
+    },
+    {
+      "date": "1953",
+      "value": "0",
+      "locator": {
+        "year": "1953",
+        "series_id": "TOTAL.NUETPUS.A"
+      }
+    },
+    {
+      "date": "1954",
+      "value": "0",
+      "locator": {
+        "year": "1954",
+        "series_id": "TOTAL.NUETPUS.A"
+      }
+    },
+    {
+      "date": "1955",
+      "value": "0",
+      "locator": {
+        "year": "1955",
+        "series_id": "TOTAL.NUETPUS.A"
+      }
+    },
+    {
+      "date": "1956",
+      "value": "0",
+      "locator": {
+        "year": "1956",
+        "series_id": "TOTAL.NUETPUS.A"
+      }
+    },
+    {
+      "date": "1957",
+      "value": "9.67",
+      "locator": {
+        "year": "1957",
+        "series_id": "TOTAL.NUETPUS.A"
+      }
+    },
+    {
+      "date": "1958",
+      "value": "164.691",
+      "locator": {
+        "year": "1958",
+        "series_id": "TOTAL.NUETPUS.A"
+      }
+    },
+    {
+      "date": "1959",
+      "value": "188.101",
+      "locator": {
+        "year": "1959",
+        "series_id": "TOTAL.NUETPUS.A"
+      }
+    },
+    {
+      "date": "1960",
+      "value": "518.182",
+      "locator": {
+        "year": "1960",
+        "series_id": "TOTAL.NUETPUS.A"
+      }
+    },
+    {
+      "date": "1961",
+      "value": "1692.149",
+      "locator": {
+        "year": "1961",
+        "series_id": "TOTAL.NUETPUS.A"
+      }
+    },
+    {
+      "date": "1962",
+      "value": "2269.685",
+      "locator": {
+        "year": "1962",
+        "series_id": "TOTAL.NUETPUS.A"
+      }
+    },
+    {
+      "date": "1963",
+      "value": "3211.836",
+      "locator": {
+        "year": "1963",
+        "series_id": "TOTAL.NUETPUS.A"
+      }
+    },
+    {
+      "date": "1964",
+      "value": "3342.743",
+      "locator": {
+        "year": "1964",
+        "series_id": "TOTAL.NUETPUS.A"
+      }
+    },
+    {
+      "date": "1965",
+      "value": "3656.699",
+      "locator": {
+        "year": "1965",
+        "series_id": "TOTAL.NUETPUS.A"
+      }
+    },
+    {
+      "date": "1966",
+      "value": "5519.909",
+      "locator": {
+        "year": "1966",
+        "series_id": "TOTAL.NUETPUS.A"
+      }
+    },
+    {
+      "date": "1967",
+      "value": "7655.214",
+      "locator": {
+        "year": "1967",
+        "series_id": "TOTAL.NUETPUS.A"
+      }
+    },
+    {
+      "date": "1968",
+      "value": "12528.419",
+      "locator": {
+        "year": "1968",
+        "series_id": "TOTAL.NUETPUS.A"
+      }
+    },
+    {
+      "date": "1969",
+      "value": "13927.839",
+      "locator": {
+        "year": "1969",
+        "series_id": "TOTAL.NUETPUS.A"
+      }
+    },
+    {
+      "date": "1970",
+      "value": "21804.448",
+      "locator": {
+        "year": "1970",
+        "series_id": "TOTAL.NUETPUS.A"
+      }
+    },
+    {
+      "date": "1971",
+      "value": "38104.545",
+      "locator": {
+        "year": "1971",
+        "series_id": "TOTAL.NUETPUS.A"
+      }
+    },
+    {
+      "date": "1972",
+      "value": "54091.135",
+      "locator": {
+        "year": "1972",
+        "series_id": "TOTAL.NUETPUS.A"
+      }
+    },
+    {
+      "date": "1973",
+      "value": "83479.463",
+      "locator": {
+        "year": "1973",
+        "series_id": "TOTAL.NUETPUS.A"
+      }
+    },
+    {
+      "date": "1974",
+      "value": "113975.74",
+      "locator": {
+        "year": "1974",
+        "series_id": "TOTAL.NUETPUS.A"
+      }
+    },
+    {
+      "date": "1975",
+      "value": "172505.075",
+      "locator": {
+        "year": "1975",
+        "series_id": "TOTAL.NUETPUS.A"
+      }
+    },
+    {
+      "date": "1976",
+      "value": "191103.531",
+      "locator": {
+        "year": "1976",
+        "series_id": "TOTAL.NUETPUS.A"
+      }
+    },
+    {
+      "date": "1977",
+      "value": "250883.283",
+      "locator": {
+        "year": "1977",
+        "series_id": "TOTAL.NUETPUS.A"
+      }
+    },
+    {
+      "date": "1978",
+      "value": "276403.07",
+      "locator": {
+        "year": "1978",
+        "series_id": "TOTAL.NUETPUS.A"
+      }
+    },
+    {
+      "date": "1979",
+      "value": "255154.623",
+      "locator": {
+        "year": "1979",
+        "series_id": "TOTAL.NUETPUS.A"
+      }
+    },
+    {
+      "date": "1980",
+      "value": "251115.575",
+      "locator": {
+        "year": "1980",
+        "series_id": "TOTAL.NUETPUS.A"
+      }
+    },
+    {
+      "date": "1981",
+      "value": "272673.503",
+      "locator": {
+        "year": "1981",
+        "series_id": "TOTAL.NUETPUS.A"
+      }
+    },
+    {
+      "date": "1982",
+      "value": "282773.248",
+      "locator": {
+        "year": "1982",
+        "series_id": "TOTAL.NUETPUS.A"
+      }
+    },
+    {
+      "date": "1983",
+      "value": "293677.119",
+      "locator": {
+        "year": "1983",
+        "series_id": "TOTAL.NUETPUS.A"
+      }
+    },
+    {
+      "date": "1984",
+      "value": "327633.549",
+      "locator": {
+        "year": "1984",
+        "series_id": "TOTAL.NUETPUS.A"
+      }
+    },
+    {
+      "date": "1985",
+      "value": "383690.727",
+      "locator": {
+        "year": "1985",
+        "series_id": "TOTAL.NUETPUS.A"
+      }
+    },
+    {
+      "date": "1986",
+      "value": "414038.063",
+      "locator": {
+        "year": "1986",
+        "series_id": "TOTAL.NUETPUS.A"
+      }
+    },
+    {
+      "date": "1987",
+      "value": "455270.382",
+      "locator": {
+        "year": "1987",
+        "series_id": "TOTAL.NUETPUS.A"
+      }
+    },
+    {
+      "date": "1988",
+      "value": "526973.047",
+      "locator": {
+        "year": "1988",
+        "series_id": "TOTAL.NUETPUS.A"
+      }
+    },
+    {
+      "date": "1989",
+      "value": "529354.717",
+      "locator": {
+        "year": "1989",
+        "series_id": "TOTAL.NUETPUS.A"
+      }
+    },
+    {
+      "date": "1990",
+      "value": "576861.678",
+      "locator": {
+        "year": "1990",
+        "series_id": "TOTAL.NUETPUS.A"
+      }
+    },
+    {
+      "date": "1991",
+      "value": "612565.087",
+      "locator": {
+        "year": "1991",
+        "series_id": "TOTAL.NUETPUS.A"
+      }
+    },
+    {
+      "date": "1992",
+      "value": "618776.263",
+      "locator": {
+        "year": "1992",
+        "series_id": "TOTAL.NUETPUS.A"
+      }
+    },
+    {
+      "date": "1993",
+      "value": "610291.214",
+      "locator": {
+        "year": "1993",
+        "series_id": "TOTAL.NUETPUS.A"
+      }
+    },
+    {
+      "date": "1994",
+      "value": "640439.832",
+      "locator": {
+        "year": "1994",
+        "series_id": "TOTAL.NUETPUS.A"
+      }
+    },
+    {
+      "date": "1995",
+      "value": "673402.123",
+      "locator": {
+        "year": "1995",
+        "series_id": "TOTAL.NUETPUS.A"
+      }
+    },
+    {
+      "date": "1996",
+      "value": "674728.546",
+      "locator": {
+        "year": "1996",
+        "series_id": "TOTAL.NUETPUS.A"
+      }
+    },
+    {
+      "date": "1997",
+      "value": "628644.171",
+      "locator": {
+        "year": "1997",
+        "series_id": "TOTAL.NUETPUS.A"
+      }
+    },
+    {
+      "date": "1998",
+      "value": "673702.104",
+      "locator": {
+        "year": "1998",
+        "series_id": "TOTAL.NUETPUS.A"
+      }
+    },
+    {
+      "date": "1999",
+      "value": "728254.124",
+      "locator": {
+        "year": "1999",
+        "series_id": "TOTAL.NUETPUS.A"
+      }
+    },
+    {
+      "date": "2000",
+      "value": "753892.94",
+      "locator": {
+        "year": "2000",
+        "series_id": "TOTAL.NUETPUS.A"
+      }
+    },
+    {
+      "date": "2001",
+      "value": "768826.308",
+      "locator": {
+        "year": "2001",
+        "series_id": "TOTAL.NUETPUS.A"
+      }
+    },
+    {
+      "date": "2002",
+      "value": "780064.087",
+      "locator": {
+        "year": "2002",
+        "series_id": "TOTAL.NUETPUS.A"
+      }
+    },
+    {
+      "date": "2003",
+      "value": "763732.695",
+      "locator": {
+        "year": "2003",
+        "series_id": "TOTAL.NUETPUS.A"
+      }
+    },
+    {
+      "date": "2004",
+      "value": "788528.387",
+      "locator": {
+        "year": "2004",
+        "series_id": "TOTAL.NUETPUS.A"
+      }
+    },
+    {
+      "date": "2005",
+      "value": "781986.365",
+      "locator": {
+        "year": "2005",
+        "series_id": "TOTAL.NUETPUS.A"
+      }
+    },
+    {
+      "date": "2006",
+      "value": "787218.636",
+      "locator": {
+        "year": "2006",
+        "series_id": "TOTAL.NUETPUS.A"
+      }
+    },
+    {
+      "date": "2007",
+      "value": "806424.753",
+      "locator": {
+        "year": "2007",
+        "series_id": "TOTAL.NUETPUS.A"
+      }
+    },
+    {
+      "date": "2008",
+      "value": "806208.435",
+      "locator": {
+        "year": "2008",
+        "series_id": "TOTAL.NUETPUS.A"
+      }
+    },
+    {
+      "date": "2009",
+      "value": "798854.585",
+      "locator": {
+        "year": "2009",
+        "series_id": "TOTAL.NUETPUS.A"
+      }
+    },
+    {
+      "date": "2010",
+      "value": "806968.301",
+      "locator": {
+        "year": "2010",
+        "series_id": "TOTAL.NUETPUS.A"
+      }
+    },
+    {
+      "date": "2011",
+      "value": "790204.367",
+      "locator": {
+        "year": "2011",
+        "series_id": "TOTAL.NUETPUS.A"
+      }
+    },
+    {
+      "date": "2012",
+      "value": "769331.249",
+      "locator": {
+        "year": "2012",
+        "series_id": "TOTAL.NUETPUS.A"
+      }
+    },
+    {
+      "date": "2013",
+      "value": "789016.473",
+      "locator": {
+        "year": "2013",
+        "series_id": "TOTAL.NUETPUS.A"
+      }
+    },
+    {
+      "date": "2014",
+      "value": "797165.982",
+      "locator": {
+        "year": "2014",
+        "series_id": "TOTAL.NUETPUS.A"
+      }
+    },
+    {
+      "date": "2015",
+      "value": "797177.877",
+      "locator": {
+        "year": "2015",
+        "series_id": "TOTAL.NUETPUS.A"
+      }
+    },
+    {
+      "date": "2016",
+      "value": "805693.948",
+      "locator": {
+        "year": "2016",
+        "series_id": "TOTAL.NUETPUS.A"
+      }
+    },
+    {
+      "date": "2017",
+      "value": "804949.635",
+      "locator": {
+        "year": "2017",
+        "series_id": "TOTAL.NUETPUS.A"
+      }
+    },
+    {
+      "date": "2018",
+      "value": "807084.477",
+      "locator": {
+        "year": "2018",
+        "series_id": "TOTAL.NUETPUS.A"
+      }
+    },
+    {
+      "date": "2019",
+      "value": "809409.262",
+      "locator": {
+        "year": "2019",
+        "series_id": "TOTAL.NUETPUS.A"
+      }
+    },
+    {
+      "date": "2020",
+      "value": "789878.863",
+      "locator": {
+        "year": "2020",
+        "series_id": "TOTAL.NUETPUS.A"
+      }
+    },
+    {
+      "date": "2021",
+      "value": "779644.595",
+      "locator": {
+        "year": "2021",
+        "series_id": "TOTAL.NUETPUS.A"
+      }
+    },
+    {
+      "date": "2022",
+      "value": "771537.176",
+      "locator": {
+        "year": "2022",
+        "series_id": "TOTAL.NUETPUS.A"
+      }
+    },
+    {
+      "date": "2023",
+      "value": "774873.169",
+      "locator": {
+        "year": "2023",
+        "series_id": "TOTAL.NUETPUS.A"
+      }
+    },
+    {
+      "date": "2024",
+      "value": "781865.31",
+      "locator": {
+        "year": "2024",
+        "series_id": "TOTAL.NUETPUS.A"
+      }
+    },
+    {
+      "date": "2025",
+      "value": "784780.718",
+      "locator": {
+        "year": "2025",
+        "series_id": "TOTAL.NUETPUS.A"
+      }
+    }
+  ]
+}

@@ -1,0 +1,543 @@
+{
+  "id": "wb_pop_CHN",
+  "name": "China",
+  "units": "people",
+  "adjustment": "midyear",
+  "nominal_or_real": "count",
+  "frequency": "annual",
+  "source_id": "worldbank_sp_pop_totl",
+  "series_url": "https://data.worldbank.org/indicator/SP.POP.TOTL",
+  "country_code": "CHN",
+  "country_name": "China",
+  "notes": "World Bank World Development Indicators, SP.POP.TOTL, country code CHN. Midyear population. Published years in this file run from 1960 to 2025.",
+  "points": [
+    {
+      "date": "1960",
+      "value": "667070000",
+      "locator": {
+        "year": "1960",
+        "country_code": "CHN"
+      }
+    },
+    {
+      "date": "1961",
+      "value": "660330000",
+      "locator": {
+        "year": "1961",
+        "country_code": "CHN"
+      }
+    },
+    {
+      "date": "1962",
+      "value": "665770000",
+      "locator": {
+        "year": "1962",
+        "country_code": "CHN"
+      }
+    },
+    {
+      "date": "1963",
+      "value": "682335000",
+      "locator": {
+        "year": "1963",
+        "country_code": "CHN"
+      }
+    },
+    {
+      "date": "1964",
+      "value": "698355000",
+      "locator": {
+        "year": "1964",
+        "country_code": "CHN"
+      }
+    },
+    {
+      "date": "1965",
+      "value": "715185000",
+      "locator": {
+        "year": "1965",
+        "country_code": "CHN"
+      }
+    },
+    {
+      "date": "1966",
+      "value": "735400000",
+      "locator": {
+        "year": "1966",
+        "country_code": "CHN"
+      }
+    },
+    {
+      "date": "1967",
+      "value": "754550000",
+      "locator": {
+        "year": "1967",
+        "country_code": "CHN"
+      }
+    },
+    {
+      "date": "1968",
+      "value": "774510000",
+      "locator": {
+        "year": "1968",
+        "country_code": "CHN"
+      }
+    },
+    {
+      "date": "1969",
+      "value": "796025000",
+      "locator": {
+        "year": "1969",
+        "country_code": "CHN"
+      }
+    },
+    {
+      "date": "1970",
+      "value": "818315000",
+      "locator": {
+        "year": "1970",
+        "country_code": "CHN"
+      }
+    },
+    {
+      "date": "1971",
+      "value": "841105000",
+      "locator": {
+        "year": "1971",
+        "country_code": "CHN"
+      }
+    },
+    {
+      "date": "1972",
+      "value": "862030000",
+      "locator": {
+        "year": "1972",
+        "country_code": "CHN"
+      }
+    },
+    {
+      "date": "1973",
+      "value": "881940000",
+      "locator": {
+        "year": "1973",
+        "country_code": "CHN"
+      }
+    },
+    {
+      "date": "1974",
+      "value": "900350000",
+      "locator": {
+        "year": "1974",
+        "country_code": "CHN"
+      }
+    },
+    {
+      "date": "1975",
+      "value": "916395000",
+      "locator": {
+        "year": "1975",
+        "country_code": "CHN"
+      }
+    },
+    {
+      "date": "1976",
+      "value": "930685000",
+      "locator": {
+        "year": "1976",
+        "country_code": "CHN"
+      }
+    },
+    {
+      "date": "1977",
+      "value": "943455000",
+      "locator": {
+        "year": "1977",
+        "country_code": "CHN"
+      }
+    },
+    {
+      "date": "1978",
+      "value": "956165000",
+      "locator": {
+        "year": "1978",
+        "country_code": "CHN"
+      }
+    },
+    {
+      "date": "1979",
+      "value": "969005000",
+      "locator": {
+        "year": "1979",
+        "country_code": "CHN"
+      }
+    },
+    {
+      "date": "1980",
+      "value": "981235000",
+      "locator": {
+        "year": "1980",
+        "country_code": "CHN"
+      }
+    },
+    {
+      "date": "1981",
+      "value": "993885000",
+      "locator": {
+        "year": "1981",
+        "country_code": "CHN"
+      }
+    },
+    {
+      "date": "1982",
+      "value": "1008630000",
+      "locator": {
+        "year": "1982",
+        "country_code": "CHN"
+      }
+    },
+    {
+      "date": "1983",
+      "value": "1023310000",
+      "locator": {
+        "year": "1983",
+        "country_code": "CHN"
+      }
+    },
+    {
+      "date": "1984",
+      "value": "1036825000",
+      "locator": {
+        "year": "1984",
+        "country_code": "CHN"
+      }
+    },
+    {
+      "date": "1985",
+      "value": "1051040000",
+      "locator": {
+        "year": "1985",
+        "country_code": "CHN"
+      }
+    },
+    {
+      "date": "1986",
+      "value": "1066790000",
+      "locator": {
+        "year": "1986",
+        "country_code": "CHN"
+      }
+    },
+    {
+      "date": "1987",
+      "value": "1084035000",
+      "locator": {
+        "year": "1987",
+        "country_code": "CHN"
+      }
+    },
+    {
+      "date": "1988",
+      "value": "1101630000",
+      "locator": {
+        "year": "1988",
+        "country_code": "CHN"
+      }
+    },
+    {
+      "date": "1989",
+      "value": "1118650000",
+      "locator": {
+        "year": "1989",
+        "country_code": "CHN"
+      }
+    },
+    {
+      "date": "1990",
+      "value": "1135185000",
+      "locator": {
+        "year": "1990",
+        "country_code": "CHN"
+      }
+    },
+    {
+      "date": "1991",
+      "value": "1150780000",
+      "locator": {
+        "year": "1991",
+        "country_code": "CHN"
+      }
+    },
+    {
+      "date": "1992",
+      "value": "1164970000",
+      "locator": {
+        "year": "1992",
+        "country_code": "CHN"
+      }
+    },
+    {
+      "date": "1993",
+      "value": "1178440000",
+      "locator": {
+        "year": "1993",
+        "country_code": "CHN"
+      }
+    },
+    {
+      "date": "1994",
+      "value": "1191835000",
+      "locator": {
+        "year": "1994",
+        "country_code": "CHN"
+      }
+    },
+    {
+      "date": "1995",
+      "value": "1204855000",
+      "locator": {
+        "year": "1995",
+        "country_code": "CHN"
+      }
+    },
+    {
+      "date": "1996",
+      "value": "1217550000",
+      "locator": {
+        "year": "1996",
+        "country_code": "CHN"
+      }
+    },
+    {
+      "date": "1997",
+      "value": "1230075000",
+      "locator": {
+        "year": "1997",
+        "country_code": "CHN"
+      }
+    },
+    {
+      "date": "1998",
+      "value": "1241935000",
+      "locator": {
+        "year": "1998",
+        "country_code": "CHN"
+      }
+    },
+    {
+      "date": "1999",
+      "value": "1252735000",
+      "locator": {
+        "year": "1999",
+        "country_code": "CHN"
+      }
+    },
+    {
+      "date": "2000",
+      "value": "1262645000",
+      "locator": {
+        "year": "2000",
+        "country_code": "CHN"
+      }
+    },
+    {
+      "date": "2001",
+      "value": "1271850000",
+      "locator": {
+        "year": "2001",
+        "country_code": "CHN"
+      }
+    },
+    {
+      "date": "2002",
+      "value": "1280400000",
+      "locator": {
+        "year": "2002",
+        "country_code": "CHN"
+      }
+    },
+    {
+      "date": "2003",
+      "value": "1288400000",
+      "locator": {
+        "year": "2003",
+        "country_code": "CHN"
+      }
+    },
+    {
+      "date": "2004",
+      "value": "1296075000",
+      "locator": {
+        "year": "2004",
+        "country_code": "CHN"
+      }
+    },
+    {
+      "date": "2005",
+      "value": "1303720000",
+      "locator": {
+        "year": "2005",
+        "country_code": "CHN"
+      }
+    },
+    {
+      "date": "2006",
+      "value": "1311020000",
+      "locator": {
+        "year": "2006",
+        "country_code": "CHN"
+      }
+    },
+    {
+      "date": "2007",
+      "value": "1317885000",
+      "locator": {
+        "year": "2007",
+        "country_code": "CHN"
+      }
+    },
+    {
+      "date": "2008",
+      "value": "1324655000",
+      "locator": {
+        "year": "2008",
+        "country_code": "CHN"
+      }
+    },
+    {
+      "date": "2009",
+      "value": "1331260000",
+      "locator": {
+        "year": "2009",
+        "country_code": "CHN"
+      }
+    },
+    {
+      "date": "2010",
+      "value": "1337705000",
+      "locator": {
+        "year": "2010",
+        "country_code": "CHN"
+      }
+    },
+    {
+      "date": "2011",
+      "value": "1345035000",
+      "locator": {
+        "year": "2011",
+        "country_code": "CHN"
+      }
+    },
+    {
+      "date": "2012",
+      "value": "1354190000",
+      "locator": {
+        "year": "2012",
+        "country_code": "CHN"
+      }
+    },
+    {
+      "date": "2013",
+      "value": "1363240000",
+      "locator": {
+        "year": "2013",
+        "country_code": "CHN"
+      }
+    },
+    {
+      "date": "2014",
+      "value": "1371860000",
+      "locator": {
+        "year": "2014",
+        "country_code": "CHN"
+      }
+    },
+    {
+      "date": "2015",
+      "value": "1379860000",
+      "locator": {
+        "year": "2015",
+        "country_code": "CHN"
+      }
+    },
+    {
+      "date": "2016",
+      "value": "1387790000",
+      "locator": {
+        "year": "2016",
+        "country_code": "CHN"
+      }
+    },
+    {
+      "date": "2017",
+      "value": "1396215000",
+      "locator": {
+        "year": "2017",
+        "country_code": "CHN"
+      }
+    },
+    {
+      "date": "2018",
+      "value": "1402760000",
+      "locator": {
+        "year": "2018",
+        "country_code": "CHN"
+      }
+    },
+    {
+      "date": "2019",
+      "value": "1407745000",
+      "locator": {
+        "year": "2019",
+        "country_code": "CHN"
+      }
+    },
+    {
+      "date": "2020",
+      "value": "1411100000",
+      "locator": {
+        "year": "2020",
+        "country_code": "CHN"
+      }
+    },
+    {
+      "date": "2021",
+      "value": "1412360000",
+      "locator": {
+        "year": "2021",
+        "country_code": "CHN"
+      }
+    },
+    {
+      "date": "2022",
+      "value": "1412175000",
+      "locator": {
+        "year": "2022",
+        "country_code": "CHN"
+      }
+    },
+    {
+      "date": "2023",
+      "value": "1410710000",
+      "locator": {
+        "year": "2023",
+        "country_code": "CHN"
+      }
+    },
+    {
+      "date": "2024",
+      "value": "1408975000",
+      "locator": {
+        "year": "2024",
+        "country_code": "CHN"
+      }
+    },
+    {
+      "date": "2025",
+      "value": "1406585000",
+      "locator": {
+        "year": "2025",
+        "country_code": "CHN"
+      }
+    }
+  ]
+}

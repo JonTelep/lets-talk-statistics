@@ -1,0 +1,543 @@
+{
+  "id": "wb_pop_MNG",
+  "name": "Mongolia",
+  "units": "people",
+  "adjustment": "midyear",
+  "nominal_or_real": "count",
+  "frequency": "annual",
+  "source_id": "worldbank_sp_pop_totl",
+  "series_url": "https://data.worldbank.org/indicator/SP.POP.TOTL",
+  "country_code": "MNG",
+  "country_name": "Mongolia",
+  "notes": "World Bank World Development Indicators, SP.POP.TOTL, country code MNG. Midyear population. Published years in this file run from 1960 to 2025.",
+  "points": [
+    {
+      "date": "1960",
+      "value": "977595",
+      "locator": {
+        "year": "1960",
+        "country_code": "MNG"
+      }
+    },
+    {
+      "date": "1961",
+      "value": "1009284",
+      "locator": {
+        "year": "1961",
+        "country_code": "MNG"
+      }
+    },
+    {
+      "date": "1962",
+      "value": "1041444",
+      "locator": {
+        "year": "1962",
+        "country_code": "MNG"
+      }
+    },
+    {
+      "date": "1963",
+      "value": "1071362",
+      "locator": {
+        "year": "1963",
+        "country_code": "MNG"
+      }
+    },
+    {
+      "date": "1964",
+      "value": "1100234",
+      "locator": {
+        "year": "1964",
+        "country_code": "MNG"
+      }
+    },
+    {
+      "date": "1965",
+      "value": "1131177",
+      "locator": {
+        "year": "1965",
+        "country_code": "MNG"
+      }
+    },
+    {
+      "date": "1966",
+      "value": "1163754",
+      "locator": {
+        "year": "1966",
+        "country_code": "MNG"
+      }
+    },
+    {
+      "date": "1967",
+      "value": "1196996",
+      "locator": {
+        "year": "1967",
+        "country_code": "MNG"
+      }
+    },
+    {
+      "date": "1968",
+      "value": "1229930",
+      "locator": {
+        "year": "1968",
+        "country_code": "MNG"
+      }
+    },
+    {
+      "date": "1969",
+      "value": "1262284",
+      "locator": {
+        "year": "1969",
+        "country_code": "MNG"
+      }
+    },
+    {
+      "date": "1970",
+      "value": "1295272",
+      "locator": {
+        "year": "1970",
+        "country_code": "MNG"
+      }
+    },
+    {
+      "date": "1971",
+      "value": "1330071",
+      "locator": {
+        "year": "1971",
+        "country_code": "MNG"
+      }
+    },
+    {
+      "date": "1972",
+      "value": "1366821",
+      "locator": {
+        "year": "1972",
+        "country_code": "MNG"
+      }
+    },
+    {
+      "date": "1973",
+      "value": "1405502",
+      "locator": {
+        "year": "1973",
+        "country_code": "MNG"
+      }
+    },
+    {
+      "date": "1974",
+      "value": "1446050",
+      "locator": {
+        "year": "1974",
+        "country_code": "MNG"
+      }
+    },
+    {
+      "date": "1975",
+      "value": "1488296",
+      "locator": {
+        "year": "1975",
+        "country_code": "MNG"
+      }
+    },
+    {
+      "date": "1976",
+      "value": "1531945",
+      "locator": {
+        "year": "1976",
+        "country_code": "MNG"
+      }
+    },
+    {
+      "date": "1977",
+      "value": "1576245",
+      "locator": {
+        "year": "1977",
+        "country_code": "MNG"
+      }
+    },
+    {
+      "date": "1978",
+      "value": "1619468",
+      "locator": {
+        "year": "1978",
+        "country_code": "MNG"
+      }
+    },
+    {
+      "date": "1979",
+      "value": "1660659",
+      "locator": {
+        "year": "1979",
+        "country_code": "MNG"
+      }
+    },
+    {
+      "date": "1980",
+      "value": "1701335",
+      "locator": {
+        "year": "1980",
+        "country_code": "MNG"
+      }
+    },
+    {
+      "date": "1981",
+      "value": "1742857",
+      "locator": {
+        "year": "1981",
+        "country_code": "MNG"
+      }
+    },
+    {
+      "date": "1982",
+      "value": "1785364",
+      "locator": {
+        "year": "1982",
+        "country_code": "MNG"
+      }
+    },
+    {
+      "date": "1983",
+      "value": "1829092",
+      "locator": {
+        "year": "1983",
+        "country_code": "MNG"
+      }
+    },
+    {
+      "date": "1984",
+      "value": "1874349",
+      "locator": {
+        "year": "1984",
+        "country_code": "MNG"
+      }
+    },
+    {
+      "date": "1985",
+      "value": "1921514",
+      "locator": {
+        "year": "1985",
+        "country_code": "MNG"
+      }
+    },
+    {
+      "date": "1986",
+      "value": "1970965",
+      "locator": {
+        "year": "1986",
+        "country_code": "MNG"
+      }
+    },
+    {
+      "date": "1987",
+      "value": "2022800",
+      "locator": {
+        "year": "1987",
+        "country_code": "MNG"
+      }
+    },
+    {
+      "date": "1988",
+      "value": "2076322",
+      "locator": {
+        "year": "1988",
+        "country_code": "MNG"
+      }
+    },
+    {
+      "date": "1989",
+      "value": "2124185",
+      "locator": {
+        "year": "1989",
+        "country_code": "MNG"
+      }
+    },
+    {
+      "date": "1990",
+      "value": "2098710",
+      "locator": {
+        "year": "1990",
+        "country_code": "MNG"
+      }
+    },
+    {
+      "date": "1991",
+      "value": "2165342",
+      "locator": {
+        "year": "1991",
+        "country_code": "MNG"
+      }
+    },
+    {
+      "date": "1992",
+      "value": "2167790",
+      "locator": {
+        "year": "1992",
+        "country_code": "MNG"
+      }
+    },
+    {
+      "date": "1993",
+      "value": "2165130",
+      "locator": {
+        "year": "1993",
+        "country_code": "MNG"
+      }
+    },
+    {
+      "date": "1994",
+      "value": "2189395",
+      "locator": {
+        "year": "1994",
+        "country_code": "MNG"
+      }
+    },
+    {
+      "date": "1995",
+      "value": "2224945",
+      "locator": {
+        "year": "1995",
+        "country_code": "MNG"
+      }
+    },
+    {
+      "date": "1996",
+      "value": "2259507",
+      "locator": {
+        "year": "1996",
+        "country_code": "MNG"
+      }
+    },
+    {
+      "date": "1997",
+      "value": "2291750",
+      "locator": {
+        "year": "1997",
+        "country_code": "MNG"
+      }
+    },
+    {
+      "date": "1998",
+      "value": "2323809",
+      "locator": {
+        "year": "1998",
+        "country_code": "MNG"
+      }
+    },
+    {
+      "date": "1999",
+      "value": "2356813",
+      "locator": {
+        "year": "1999",
+        "country_code": "MNG"
+      }
+    },
+    {
+      "date": "2000",
+      "value": "2388299",
+      "locator": {
+        "year": "2000",
+        "country_code": "MNG"
+      }
+    },
+    {
+      "date": "2001",
+      "value": "2417751",
+      "locator": {
+        "year": "2001",
+        "country_code": "MNG"
+      }
+    },
+    {
+      "date": "2002",
+      "value": "2449027",
+      "locator": {
+        "year": "2002",
+        "country_code": "MNG"
+      }
+    },
+    {
+      "date": "2003",
+      "value": "2480374",
+      "locator": {
+        "year": "2003",
+        "country_code": "MNG"
+      }
+    },
+    {
+      "date": "2004",
+      "value": "2508412",
+      "locator": {
+        "year": "2004",
+        "country_code": "MNG"
+      }
+    },
+    {
+      "date": "2005",
+      "value": "2536407",
+      "locator": {
+        "year": "2005",
+        "country_code": "MNG"
+      }
+    },
+    {
+      "date": "2006",
+      "value": "2567168",
+      "locator": {
+        "year": "2006",
+        "country_code": "MNG"
+      }
+    },
+    {
+      "date": "2007",
+      "value": "2601850",
+      "locator": {
+        "year": "2007",
+        "country_code": "MNG"
+      }
+    },
+    {
+      "date": "2008",
+      "value": "2643201",
+      "locator": {
+        "year": "2008",
+        "country_code": "MNG"
+      }
+    },
+    {
+      "date": "2009",
+      "value": "2691115",
+      "locator": {
+        "year": "2009",
+        "country_code": "MNG"
+      }
+    },
+    {
+      "date": "2010",
+      "value": "2738622",
+      "locator": {
+        "year": "2010",
+        "country_code": "MNG"
+      }
+    },
+    {
+      "date": "2011",
+      "value": "2786317",
+      "locator": {
+        "year": "2011",
+        "country_code": "MNG"
+      }
+    },
+    {
+      "date": "2012",
+      "value": "2839705",
+      "locator": {
+        "year": "2012",
+        "country_code": "MNG"
+      }
+    },
+    {
+      "date": "2013",
+      "value": "2899011",
+      "locator": {
+        "year": "2013",
+        "country_code": "MNG"
+      }
+    },
+    {
+      "date": "2014",
+      "value": "2963113",
+      "locator": {
+        "year": "2014",
+        "country_code": "MNG"
+      }
+    },
+    {
+      "date": "2015",
+      "value": "3026864",
+      "locator": {
+        "year": "2015",
+        "country_code": "MNG"
+      }
+    },
+    {
+      "date": "2016",
+      "value": "3088856",
+      "locator": {
+        "year": "2016",
+        "country_code": "MNG"
+      }
+    },
+    {
+      "date": "2017",
+      "value": "3148917",
+      "locator": {
+        "year": "2017",
+        "country_code": "MNG"
+      }
+    },
+    {
+      "date": "2018",
+      "value": "3208189",
+      "locator": {
+        "year": "2018",
+        "country_code": "MNG"
+      }
+    },
+    {
+      "date": "2019",
+      "value": "3267673",
+      "locator": {
+        "year": "2019",
+        "country_code": "MNG"
+      }
+    },
+    {
+      "date": "2020",
+      "value": "3327204",
+      "locator": {
+        "year": "2020",
+        "country_code": "MNG"
+      }
+    },
+    {
+      "date": "2021",
+      "value": "3383741",
+      "locator": {
+        "year": "2021",
+        "country_code": "MNG"
+      }
+    },
+    {
+      "date": "2022",
+      "value": "3433748",
+      "locator": {
+        "year": "2022",
+        "country_code": "MNG"
+      }
+    },
+    {
+      "date": "2023",
+      "value": "3481145",
+      "locator": {
+        "year": "2023",
+        "country_code": "MNG"
+      }
+    },
+    {
+      "date": "2024",
+      "value": "3524788",
+      "locator": {
+        "year": "2024",
+        "country_code": "MNG"
+      }
+    },
+    {
+      "date": "2025",
+      "value": "3568978",
+      "locator": {
+        "year": "2025",
+        "country_code": "MNG"
+      }
+    }
+  ]
+}

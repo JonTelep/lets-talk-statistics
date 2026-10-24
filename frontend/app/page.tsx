@@ -46,6 +46,7 @@ const PAGES = [
   { href: '/prices', name: 'Prices and inflation', page: 'prices' },
   { href: '/budget', name: 'Federal budget and debt', page: 'budget' },
   { href: '/economy', name: 'Economy and wages', page: 'economy' },
+  { href: '/energy', name: 'Energy', page: 'energy' },
   { href: '/crime', name: 'Crime', page: 'crime' },
   { href: '/immigration', name: 'Immigration', page: 'immigration' },
   { href: '/sources', name: 'Sources and methodology', page: 'sources' },
@@ -92,7 +93,13 @@ export default function HomePage() {
           return (
             <Link key={page.href} href={page.href} className="card card-hover p-4">
               <h2 className="text-lg">{page.name}</h2>
-              <p className="mt-2 text-sm">{count === 0 ? 'No chart in this build.' : `${count} charts`}</p>
+              <p className="mt-2 text-sm">
+                {page.page === 'energy'
+                  ? 'U.S. generation by source, and generation by country'
+                  : count === 0
+                    ? 'No chart in this build.'
+                    : `${count} charts`}
+              </p>
             </Link>
           );
         })}

@@ -14,6 +14,7 @@ import {
 } from 'recharts';
 import { useShade } from '@/components/providers/ShadeProvider';
 import { formatCompact, formatDateLabel, formatExact, lineLabel } from '@/lib/format';
+import { markerPoints } from '@/lib/markers';
 import type { Series, Term } from '@/lib/site';
 
 const LINE_COLORS = ['#3b82f6', '#d4d4d4', '#60a5fa', '#a3a3a3', '#93c5fd', '#737373'];
@@ -23,14 +24,14 @@ const PARTY_FILL: Record<Term['party'], string> = {
   Republican: 'rgba(220, 38, 38, 0.12)',
 };
 
-function anchorDate(date: string, shade: 'month' | 'calendar' | 'fiscal'): string {
+function anchorDate(date: string, shade: 'month' | 'calendar' | 'fiscal' | 'none'): string {
   if (shade === 'month') return `${date}-01`;
   if (shade === 'calendar') return `${date}-07-01`;
   const year = Number(date);
   return `${year - 1}-10-01`;
 }
 
-function presidentOn(date: string, shade: 'month' | 'calendar' | 'fiscal', terms: Term[]): Term | undefined {
+function presidentOn(date: string, shade: 'month' | 'calendar' | 'fiscal' | 'none', terms: Term[]): Term | undefined {
   const anchor = anchorDate(date, shade);
   return terms.find((term) => term.start <= anchor && (term.end === null || anchor < term.end));
 }
@@ -40,13 +41,19 @@ export default function TimeChart({
   shade,
   frequency,
   terms,
+  markers,
 }: {
   series: Series[];
-  shade: 'month' | 'calendar' | 'fiscal';
+  shade: 'month' | 'calendar' | 'fiscal' | 'none';
   frequency: string;
   terms: Term[];
+  markers?: 'peak_1970_latest';
 }) {
   const { enabled } = useShade();
+  const markerByDate = useMemo(() => {
+    if (markers !== 'peak_1970_latest' || series.length !== 1) return new Map<string, { value: string; date: string }>();
+    return new Map(markerPoints(series[0].points).map((marker) => [marker.date, marker]));
+  }, [markers, series]);
   const { rows, bands } = useMemo(() => {
     const maps = series.map((item) => new Map(item.points.map((point) => [point.date, Number(point.value)])));
     const dates = Array.from(new Set(series.flatMap((item) => item.points.map((point) => point.date)))).sort();
@@ -60,6 +67,7 @@ export default function TimeChart({
     });
     const nextBands: { x1: string; x2: string; party: Term['party'] }[] = [];
     dates.forEach((date) => {
+      if (shade === 'none') return;
       const term = presidentOn(date, shade, terms);
       if (!term) return;
       const last = nextBands[nextBands.length - 1];
@@ -72,12 +80,32 @@ export default function TimeChart({
     return { rows: nextRows, bands: nextBands };
   }, [series, shade, terms]);
 
+  const renderDot = (props: { cx?: number; cy?: number; payload?: { date?: string } }) => {
+    const date = props.payload?.date;
+    const marker = date ? markerByDate.get(date) : undefined;
+    if (!marker || props.cx == null || props.cy == null) return <g key={date} />;
+    const above = props.cy > 48;
+    const valueY = above ? props.cy - 18 : props.cy + 16;
+    const yearY = above ? props.cy - 6 : props.cy + 28;
+    return (
+      <g key={date}>
+        <circle cx={props.cx} cy={props.cy} r={3.5} fill="#3b82f6" />
+        <text x={props.cx} y={valueY} textAnchor="middle" fill="var(--text-primary)" fontSize={11}>
+          {`${formatExact(marker.value)} kWh`}
+        </text>
+        <text x={props.cx} y={yearY} textAnchor="middle" fill="var(--text-muted)" fontSize={11}>
+          {marker.date}
+        </text>
+      </g>
+    );
+  };
+
   const tickEvery = Math.max(1, Math.ceil(rows.length / 6));
 
   return (
     <div className="h-72 sm:h-96 w-full">
       <ResponsiveContainer key={enabled ? 'shade-on' : 'shade-off'} width="100%" height="100%">
-        <LineChart data={rows} margin={{ top: 8, right: 8, left: 0, bottom: 0 }}>
+        <LineChart data={rows} margin={{ top: markers === 'peak_1970_latest' ? 36 : 8, right: 8, left: 0, bottom: 0 }}>
           <CartesianGrid stroke="var(--border)" vertical={false} />
           {enabled &&
             bands.map((band) => (
@@ -123,7 +151,7 @@ export default function TimeChart({
               dataKey={item.id}
               name={lineLabel(item.name, item.units, series)}
               stroke={LINE_COLORS[index % LINE_COLORS.length]}
-              dot={false}
+              dot={markers === 'peak_1970_latest' ? renderDot : false}
               strokeWidth={1.8}
               connectNulls
               isAnimationActive={false}

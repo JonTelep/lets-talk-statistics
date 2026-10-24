@@ -9,6 +9,7 @@ const PAGE_NAME: Record<string, string> = {
   prices: 'Prices and inflation',
   budget: 'Federal budget and debt',
   economy: 'Economy and wages',
+  energy: 'Energy',
   immigration: 'Immigration',
 };
 
@@ -61,6 +62,7 @@ export default async function ChartPage({ params }: { params: Promise<{ id: stri
         series={series}
         terms={site.presidents.terms}
         presidentNote={site.presidents.note}
+        sources={site.sources}
         permalink
       />
     </div>

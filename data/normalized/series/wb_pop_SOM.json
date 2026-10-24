@@ -1,0 +1,543 @@
+{
+  "id": "wb_pop_SOM",
+  "name": "Somalia",
+  "units": "people",
+  "adjustment": "midyear",
+  "nominal_or_real": "count",
+  "frequency": "annual",
+  "source_id": "worldbank_sp_pop_totl",
+  "series_url": "https://data.worldbank.org/indicator/SP.POP.TOTL",
+  "country_code": "SOM",
+  "country_name": "Somalia",
+  "notes": "World Bank World Development Indicators, SP.POP.TOTL, country code SOM. Midyear population. Published years in this file run from 1960 to 2025.",
+  "points": [
+    {
+      "date": "1960",
+      "value": "2876331",
+      "locator": {
+        "year": "1960",
+        "country_code": "SOM"
+      }
+    },
+    {
+      "date": "1961",
+      "value": "2952054",
+      "locator": {
+        "year": "1961",
+        "country_code": "SOM"
+      }
+    },
+    {
+      "date": "1962",
+      "value": "3030091",
+      "locator": {
+        "year": "1962",
+        "country_code": "SOM"
+      }
+    },
+    {
+      "date": "1963",
+      "value": "3110361",
+      "locator": {
+        "year": "1963",
+        "country_code": "SOM"
+      }
+    },
+    {
+      "date": "1964",
+      "value": "3192796",
+      "locator": {
+        "year": "1964",
+        "country_code": "SOM"
+      }
+    },
+    {
+      "date": "1965",
+      "value": "3277874",
+      "locator": {
+        "year": "1965",
+        "country_code": "SOM"
+      }
+    },
+    {
+      "date": "1966",
+      "value": "3365106",
+      "locator": {
+        "year": "1966",
+        "country_code": "SOM"
+      }
+    },
+    {
+      "date": "1967",
+      "value": "3454537",
+      "locator": {
+        "year": "1967",
+        "country_code": "SOM"
+      }
+    },
+    {
+      "date": "1968",
+      "value": "3546590",
+      "locator": {
+        "year": "1968",
+        "country_code": "SOM"
+      }
+    },
+    {
+      "date": "1969",
+      "value": "3641015",
+      "locator": {
+        "year": "1969",
+        "country_code": "SOM"
+      }
+    },
+    {
+      "date": "1970",
+      "value": "3738448",
+      "locator": {
+        "year": "1970",
+        "country_code": "SOM"
+      }
+    },
+    {
+      "date": "1971",
+      "value": "3837691",
+      "locator": {
+        "year": "1971",
+        "country_code": "SOM"
+      }
+    },
+    {
+      "date": "1972",
+      "value": "3939436",
+      "locator": {
+        "year": "1972",
+        "country_code": "SOM"
+      }
+    },
+    {
+      "date": "1973",
+      "value": "4045592",
+      "locator": {
+        "year": "1973",
+        "country_code": "SOM"
+      }
+    },
+    {
+      "date": "1974",
+      "value": "4151842",
+      "locator": {
+        "year": "1974",
+        "country_code": "SOM"
+      }
+    },
+    {
+      "date": "1975",
+      "value": "4257535",
+      "locator": {
+        "year": "1975",
+        "country_code": "SOM"
+      }
+    },
+    {
+      "date": "1976",
+      "value": "4365812",
+      "locator": {
+        "year": "1976",
+        "country_code": "SOM"
+      }
+    },
+    {
+      "date": "1977",
+      "value": "4484050",
+      "locator": {
+        "year": "1977",
+        "country_code": "SOM"
+      }
+    },
+    {
+      "date": "1978",
+      "value": "4814892",
+      "locator": {
+        "year": "1978",
+        "country_code": "SOM"
+      }
+    },
+    {
+      "date": "1979",
+      "value": "5449117",
+      "locator": {
+        "year": "1979",
+        "country_code": "SOM"
+      }
+    },
+    {
+      "date": "1980",
+      "value": "5936154",
+      "locator": {
+        "year": "1980",
+        "country_code": "SOM"
+      }
+    },
+    {
+      "date": "1981",
+      "value": "5982849",
+      "locator": {
+        "year": "1981",
+        "country_code": "SOM"
+      }
+    },
+    {
+      "date": "1982",
+      "value": "6003840",
+      "locator": {
+        "year": "1982",
+        "country_code": "SOM"
+      }
+    },
+    {
+      "date": "1983",
+      "value": "6198430",
+      "locator": {
+        "year": "1983",
+        "country_code": "SOM"
+      }
+    },
+    {
+      "date": "1984",
+      "value": "6428389",
+      "locator": {
+        "year": "1984",
+        "country_code": "SOM"
+      }
+    },
+    {
+      "date": "1985",
+      "value": "6693289",
+      "locator": {
+        "year": "1985",
+        "country_code": "SOM"
+      }
+    },
+    {
+      "date": "1986",
+      "value": "6974788",
+      "locator": {
+        "year": "1986",
+        "country_code": "SOM"
+      }
+    },
+    {
+      "date": "1987",
+      "value": "7228302",
+      "locator": {
+        "year": "1987",
+        "country_code": "SOM"
+      }
+    },
+    {
+      "date": "1988",
+      "value": "7235360",
+      "locator": {
+        "year": "1988",
+        "country_code": "SOM"
+      }
+    },
+    {
+      "date": "1989",
+      "value": "7114817",
+      "locator": {
+        "year": "1989",
+        "country_code": "SOM"
+      }
+    },
+    {
+      "date": "1990",
+      "value": "7082811",
+      "locator": {
+        "year": "1990",
+        "country_code": "SOM"
+      }
+    },
+    {
+      "date": "1991",
+      "value": "6813760",
+      "locator": {
+        "year": "1991",
+        "country_code": "SOM"
+      }
+    },
+    {
+      "date": "1992",
+      "value": "6495107",
+      "locator": {
+        "year": "1992",
+        "country_code": "SOM"
+      }
+    },
+    {
+      "date": "1993",
+      "value": "6681399",
+      "locator": {
+        "year": "1993",
+        "country_code": "SOM"
+      }
+    },
+    {
+      "date": "1994",
+      "value": "7026797",
+      "locator": {
+        "year": "1994",
+        "country_code": "SOM"
+      }
+    },
+    {
+      "date": "1995",
+      "value": "7285007",
+      "locator": {
+        "year": "1995",
+        "country_code": "SOM"
+      }
+    },
+    {
+      "date": "1996",
+      "value": "7554474",
+      "locator": {
+        "year": "1996",
+        "country_code": "SOM"
+      }
+    },
+    {
+      "date": "1997",
+      "value": "7824525",
+      "locator": {
+        "year": "1997",
+        "country_code": "SOM"
+      }
+    },
+    {
+      "date": "1998",
+      "value": "8155417",
+      "locator": {
+        "year": "1998",
+        "country_code": "SOM"
+      }
+    },
+    {
+      "date": "1999",
+      "value": "8492059",
+      "locator": {
+        "year": "1999",
+        "country_code": "SOM"
+      }
+    },
+    {
+      "date": "2000",
+      "value": "8838713",
+      "locator": {
+        "year": "2000",
+        "country_code": "SOM"
+      }
+    },
+    {
+      "date": "2001",
+      "value": "9198493",
+      "locator": {
+        "year": "2001",
+        "country_code": "SOM"
+      }
+    },
+    {
+      "date": "2002",
+      "value": "9550063",
+      "locator": {
+        "year": "2002",
+        "country_code": "SOM"
+      }
+    },
+    {
+      "date": "2003",
+      "value": "9909157",
+      "locator": {
+        "year": "2003",
+        "country_code": "SOM"
+      }
+    },
+    {
+      "date": "2004",
+      "value": "10280998",
+      "locator": {
+        "year": "2004",
+        "country_code": "SOM"
+      }
+    },
+    {
+      "date": "2005",
+      "value": "10644228",
+      "locator": {
+        "year": "2005",
+        "country_code": "SOM"
+      }
+    },
+    {
+      "date": "2006",
+      "value": "10975502",
+      "locator": {
+        "year": "2006",
+        "country_code": "SOM"
+      }
+    },
+    {
+      "date": "2007",
+      "value": "11322582",
+      "locator": {
+        "year": "2007",
+        "country_code": "SOM"
+      }
+    },
+    {
+      "date": "2008",
+      "value": "11663084",
+      "locator": {
+        "year": "2008",
+        "country_code": "SOM"
+      }
+    },
+    {
+      "date": "2009",
+      "value": "11961201",
+      "locator": {
+        "year": "2009",
+        "country_code": "SOM"
+      }
+    },
+    {
+      "date": "2010",
+      "value": "12261756",
+      "locator": {
+        "year": "2010",
+        "country_code": "SOM"
+      }
+    },
+    {
+      "date": "2011",
+      "value": "12348830",
+      "locator": {
+        "year": "2011",
+        "country_code": "SOM"
+      }
+    },
+    {
+      "date": "2012",
+      "value": "12461160",
+      "locator": {
+        "year": "2012",
+        "country_code": "SOM"
+      }
+    },
+    {
+      "date": "2013",
+      "value": "12869594",
+      "locator": {
+        "year": "2013",
+        "country_code": "SOM"
+      }
+    },
+    {
+      "date": "2014",
+      "value": "13339491",
+      "locator": {
+        "year": "2014",
+        "country_code": "SOM"
+      }
+    },
+    {
+      "date": "2015",
+      "value": "13806963",
+      "locator": {
+        "year": "2015",
+        "country_code": "SOM"
+      }
+    },
+    {
+      "date": "2016",
+      "value": "14348740",
+      "locator": {
+        "year": "2016",
+        "country_code": "SOM"
+      }
+    },
+    {
+      "date": "2017",
+      "value": "14916629",
+      "locator": {
+        "year": "2017",
+        "country_code": "SOM"
+      }
+    },
+    {
+      "date": "2018",
+      "value": "15452487",
+      "locator": {
+        "year": "2018",
+        "country_code": "SOM"
+      }
+    },
+    {
+      "date": "2019",
+      "value": "16030971",
+      "locator": {
+        "year": "2019",
+        "country_code": "SOM"
+      }
+    },
+    {
+      "date": "2020",
+      "value": "16651191",
+      "locator": {
+        "year": "2020",
+        "country_code": "SOM"
+      }
+    },
+    {
+      "date": "2021",
+      "value": "17271431",
+      "locator": {
+        "year": "2021",
+        "country_code": "SOM"
+      }
+    },
+    {
+      "date": "2022",
+      "value": "17801897",
+      "locator": {
+        "year": "2022",
+        "country_code": "SOM"
+      }
+    },
+    {
+      "date": "2023",
+      "value": "18358615",
+      "locator": {
+        "year": "2023",
+        "country_code": "SOM"
+      }
+    },
+    {
+      "date": "2024",
+      "value": "19009151",
+      "locator": {
+        "year": "2024",
+        "country_code": "SOM"
+      }
+    },
+    {
+      "date": "2025",
+      "value": "19654739",
+      "locator": {
+        "year": "2025",
+        "country_code": "SOM"
+      }
+    }
+  ]
+}

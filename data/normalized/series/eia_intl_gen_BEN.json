@@ -1,0 +1,377 @@
+{
+  "id": "eia_intl_gen_BEN",
+  "name": "Net generation",
+  "units": "billion kilowatthours",
+  "adjustment": "annual",
+  "nominal_or_real": "generation",
+  "frequency": "annual",
+  "source_id": "eia_intl_bulk",
+  "series_url": "https://www.eia.gov/international/data/world/electricity/electricity-generation",
+  "eia_series_id": "INTL.2-12-BEN-BKWH.A",
+  "country_code": "BEN",
+  "country_name": "Benin",
+  "population_status": "matched",
+  "notes": "EIA bulk series INTL.2-12-BEN-BKWH.A, Benin. Annual. Billion kilowatthours. 1 billion kilowatthours = 1 terawatthour. Published years in this file run from 1980 to 2024.",
+  "points": [
+    {
+      "date": "1980",
+      "value": "0.005",
+      "locator": {
+        "year": "1980",
+        "series_id": "INTL.2-12-BEN-BKWH.A"
+      }
+    },
+    {
+      "date": "1981",
+      "value": "0.005",
+      "locator": {
+        "year": "1981",
+        "series_id": "INTL.2-12-BEN-BKWH.A"
+      }
+    },
+    {
+      "date": "1982",
+      "value": "0.005",
+      "locator": {
+        "year": "1982",
+        "series_id": "INTL.2-12-BEN-BKWH.A"
+      }
+    },
+    {
+      "date": "1983",
+      "value": "0.005",
+      "locator": {
+        "year": "1983",
+        "series_id": "INTL.2-12-BEN-BKWH.A"
+      }
+    },
+    {
+      "date": "1984",
+      "value": "0.005",
+      "locator": {
+        "year": "1984",
+        "series_id": "INTL.2-12-BEN-BKWH.A"
+      }
+    },
+    {
+      "date": "1985",
+      "value": "0.005",
+      "locator": {
+        "year": "1985",
+        "series_id": "INTL.2-12-BEN-BKWH.A"
+      }
+    },
+    {
+      "date": "1986",
+      "value": "0.005",
+      "locator": {
+        "year": "1986",
+        "series_id": "INTL.2-12-BEN-BKWH.A"
+      }
+    },
+    {
+      "date": "1987",
+      "value": "0.005",
+      "locator": {
+        "year": "1987",
+        "series_id": "INTL.2-12-BEN-BKWH.A"
+      }
+    },
+    {
+      "date": "1988",
+      "value": "0.005",
+      "locator": {
+        "year": "1988",
+        "series_id": "INTL.2-12-BEN-BKWH.A"
+      }
+    },
+    {
+      "date": "1989",
+      "value": "0.005",
+      "locator": {
+        "year": "1989",
+        "series_id": "INTL.2-12-BEN-BKWH.A"
+      }
+    },
+    {
+      "date": "1990",
+      "value": "0.019",
+      "locator": {
+        "year": "1990",
+        "series_id": "INTL.2-12-BEN-BKWH.A"
+      }
+    },
+    {
+      "date": "1991",
+      "value": "0.022",
+      "locator": {
+        "year": "1991",
+        "series_id": "INTL.2-12-BEN-BKWH.A"
+      }
+    },
+    {
+      "date": "1992",
+      "value": "0.023",
+      "locator": {
+        "year": "1992",
+        "series_id": "INTL.2-12-BEN-BKWH.A"
+      }
+    },
+    {
+      "date": "1993",
+      "value": "0.024",
+      "locator": {
+        "year": "1993",
+        "series_id": "INTL.2-12-BEN-BKWH.A"
+      }
+    },
+    {
+      "date": "1994",
+      "value": "0.048",
+      "locator": {
+        "year": "1994",
+        "series_id": "INTL.2-12-BEN-BKWH.A"
+      }
+    },
+    {
+      "date": "1995",
+      "value": "0.029",
+      "locator": {
+        "year": "1995",
+        "series_id": "INTL.2-12-BEN-BKWH.A"
+      }
+    },
+    {
+      "date": "1996",
+      "value": "0.0487",
+      "locator": {
+        "year": "1996",
+        "series_id": "INTL.2-12-BEN-BKWH.A"
+      }
+    },
+    {
+      "date": "1997",
+      "value": "0.0517",
+      "locator": {
+        "year": "1997",
+        "series_id": "INTL.2-12-BEN-BKWH.A"
+      }
+    },
+    {
+      "date": "1998",
+      "value": "0.0597",
+      "locator": {
+        "year": "1998",
+        "series_id": "INTL.2-12-BEN-BKWH.A"
+      }
+    },
+    {
+      "date": "1999",
+      "value": "0.0677",
+      "locator": {
+        "year": "1999",
+        "series_id": "INTL.2-12-BEN-BKWH.A"
+      }
+    },
+    {
+      "date": "2000",
+      "value": "0.084",
+      "locator": {
+        "year": "2000",
+        "series_id": "INTL.2-12-BEN-BKWH.A"
+      }
+    },
+    {
+      "date": "2001",
+      "value": "0.066",
+      "locator": {
+        "year": "2001",
+        "series_id": "INTL.2-12-BEN-BKWH.A"
+      }
+    },
+    {
+      "date": "2002",
+      "value": "0.063",
+      "locator": {
+        "year": "2002",
+        "series_id": "INTL.2-12-BEN-BKWH.A"
+      }
+    },
+    {
+      "date": "2003",
+      "value": "0.08",
+      "locator": {
+        "year": "2003",
+        "series_id": "INTL.2-12-BEN-BKWH.A"
+      }
+    },
+    {
+      "date": "2004",
+      "value": "0.081",
+      "locator": {
+        "year": "2004",
+        "series_id": "INTL.2-12-BEN-BKWH.A"
+      }
+    },
+    {
+      "date": "2005",
+      "value": "0.107",
+      "locator": {
+        "year": "2005",
+        "series_id": "INTL.2-12-BEN-BKWH.A"
+      }
+    },
+    {
+      "date": "2006",
+      "value": "0.155",
+      "locator": {
+        "year": "2006",
+        "series_id": "INTL.2-12-BEN-BKWH.A"
+      }
+    },
+    {
+      "date": "2007",
+      "value": "0.221",
+      "locator": {
+        "year": "2007",
+        "series_id": "INTL.2-12-BEN-BKWH.A"
+      }
+    },
+    {
+      "date": "2008",
+      "value": "0.23",
+      "locator": {
+        "year": "2008",
+        "series_id": "INTL.2-12-BEN-BKWH.A"
+      }
+    },
+    {
+      "date": "2009",
+      "value": "0.129",
+      "locator": {
+        "year": "2009",
+        "series_id": "INTL.2-12-BEN-BKWH.A"
+      }
+    },
+    {
+      "date": "2010",
+      "value": "0.116",
+      "locator": {
+        "year": "2010",
+        "series_id": "INTL.2-12-BEN-BKWH.A"
+      }
+    },
+    {
+      "date": "2011",
+      "value": "0.102",
+      "locator": {
+        "year": "2011",
+        "series_id": "INTL.2-12-BEN-BKWH.A"
+      }
+    },
+    {
+      "date": "2012",
+      "value": "0.049",
+      "locator": {
+        "year": "2012",
+        "series_id": "INTL.2-12-BEN-BKWH.A"
+      }
+    },
+    {
+      "date": "2013",
+      "value": "0.132",
+      "locator": {
+        "year": "2013",
+        "series_id": "INTL.2-12-BEN-BKWH.A"
+      }
+    },
+    {
+      "date": "2014",
+      "value": "0.35",
+      "locator": {
+        "year": "2014",
+        "series_id": "INTL.2-12-BEN-BKWH.A"
+      }
+    },
+    {
+      "date": "2015",
+      "value": "0.33",
+      "locator": {
+        "year": "2015",
+        "series_id": "INTL.2-12-BEN-BKWH.A"
+      }
+    },
+    {
+      "date": "2016",
+      "value": "0.276",
+      "locator": {
+        "year": "2016",
+        "series_id": "INTL.2-12-BEN-BKWH.A"
+      }
+    },
+    {
+      "date": "2017",
+      "value": "0.3305",
+      "locator": {
+        "year": "2017",
+        "series_id": "INTL.2-12-BEN-BKWH.A"
+      }
+    },
+    {
+      "date": "2018",
+      "value": "0.2018",
+      "locator": {
+        "year": "2018",
+        "series_id": "INTL.2-12-BEN-BKWH.A"
+      }
+    },
+    {
+      "date": "2019",
+      "value": "0.5292",
+      "locator": {
+        "year": "2019",
+        "series_id": "INTL.2-12-BEN-BKWH.A"
+      }
+    },
+    {
+      "date": "2020",
+      "value": "0.9887",
+      "locator": {
+        "year": "2020",
+        "series_id": "INTL.2-12-BEN-BKWH.A"
+      }
+    },
+    {
+      "date": "2021",
+      "value": "1.1271",
+      "locator": {
+        "year": "2021",
+        "series_id": "INTL.2-12-BEN-BKWH.A"
+      }
+    },
+    {
+      "date": "2022",
+      "value": "0.98612305",
+      "locator": {
+        "year": "2022",
+        "series_id": "INTL.2-12-BEN-BKWH.A"
+      }
+    },
+    {
+      "date": "2023",
+      "value": "1.00106",
+      "locator": {
+        "year": "2023",
+        "series_id": "INTL.2-12-BEN-BKWH.A"
+      }
+    },
+    {
+      "date": "2024",
+      "value": "1.00569855",
+      "locator": {
+        "year": "2024",
+        "series_id": "INTL.2-12-BEN-BKWH.A"
+      }
+    }
+  ]
+}

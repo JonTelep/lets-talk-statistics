@@ -1,0 +1,543 @@
+{
+  "id": "wb_pop_CAF",
+  "name": "Central African Republic",
+  "units": "people",
+  "adjustment": "midyear",
+  "nominal_or_real": "count",
+  "frequency": "annual",
+  "source_id": "worldbank_sp_pop_totl",
+  "series_url": "https://data.worldbank.org/indicator/SP.POP.TOTL",
+  "country_code": "CAF",
+  "country_name": "Central African Republic",
+  "notes": "World Bank World Development Indicators, SP.POP.TOTL, country code CAF. Midyear population. Published years in this file run from 1960 to 2025.",
+  "points": [
+    {
+      "date": "1960",
+      "value": "1702346",
+      "locator": {
+        "year": "1960",
+        "country_code": "CAF"
+      }
+    },
+    {
+      "date": "1961",
+      "value": "1734580",
+      "locator": {
+        "year": "1961",
+        "country_code": "CAF"
+      }
+    },
+    {
+      "date": "1962",
+      "value": "1768115",
+      "locator": {
+        "year": "1962",
+        "country_code": "CAF"
+      }
+    },
+    {
+      "date": "1963",
+      "value": "1803063",
+      "locator": {
+        "year": "1963",
+        "country_code": "CAF"
+      }
+    },
+    {
+      "date": "1964",
+      "value": "1839583",
+      "locator": {
+        "year": "1964",
+        "country_code": "CAF"
+      }
+    },
+    {
+      "date": "1965",
+      "value": "1877854",
+      "locator": {
+        "year": "1965",
+        "country_code": "CAF"
+      }
+    },
+    {
+      "date": "1966",
+      "value": "1918082",
+      "locator": {
+        "year": "1966",
+        "country_code": "CAF"
+      }
+    },
+    {
+      "date": "1967",
+      "value": "1960444",
+      "locator": {
+        "year": "1967",
+        "country_code": "CAF"
+      }
+    },
+    {
+      "date": "1968",
+      "value": "2005100",
+      "locator": {
+        "year": "1968",
+        "country_code": "CAF"
+      }
+    },
+    {
+      "date": "1969",
+      "value": "2051515",
+      "locator": {
+        "year": "1969",
+        "country_code": "CAF"
+      }
+    },
+    {
+      "date": "1970",
+      "value": "2097505",
+      "locator": {
+        "year": "1970",
+        "country_code": "CAF"
+      }
+    },
+    {
+      "date": "1971",
+      "value": "2141450",
+      "locator": {
+        "year": "1971",
+        "country_code": "CAF"
+      }
+    },
+    {
+      "date": "1972",
+      "value": "2183769",
+      "locator": {
+        "year": "1972",
+        "country_code": "CAF"
+      }
+    },
+    {
+      "date": "1973",
+      "value": "2226008",
+      "locator": {
+        "year": "1973",
+        "country_code": "CAF"
+      }
+    },
+    {
+      "date": "1974",
+      "value": "2269338",
+      "locator": {
+        "year": "1974",
+        "country_code": "CAF"
+      }
+    },
+    {
+      "date": "1975",
+      "value": "2313916",
+      "locator": {
+        "year": "1975",
+        "country_code": "CAF"
+      }
+    },
+    {
+      "date": "1976",
+      "value": "2348566",
+      "locator": {
+        "year": "1976",
+        "country_code": "CAF"
+      }
+    },
+    {
+      "date": "1977",
+      "value": "2372930",
+      "locator": {
+        "year": "1977",
+        "country_code": "CAF"
+      }
+    },
+    {
+      "date": "1978",
+      "value": "2397961",
+      "locator": {
+        "year": "1978",
+        "country_code": "CAF"
+      }
+    },
+    {
+      "date": "1979",
+      "value": "2423794",
+      "locator": {
+        "year": "1979",
+        "country_code": "CAF"
+      }
+    },
+    {
+      "date": "1980",
+      "value": "2450535",
+      "locator": {
+        "year": "1980",
+        "country_code": "CAF"
+      }
+    },
+    {
+      "date": "1981",
+      "value": "2478402",
+      "locator": {
+        "year": "1981",
+        "country_code": "CAF"
+      }
+    },
+    {
+      "date": "1982",
+      "value": "2507375",
+      "locator": {
+        "year": "1982",
+        "country_code": "CAF"
+      }
+    },
+    {
+      "date": "1983",
+      "value": "2537399",
+      "locator": {
+        "year": "1983",
+        "country_code": "CAF"
+      }
+    },
+    {
+      "date": "1984",
+      "value": "2568610",
+      "locator": {
+        "year": "1984",
+        "country_code": "CAF"
+      }
+    },
+    {
+      "date": "1985",
+      "value": "2600932",
+      "locator": {
+        "year": "1985",
+        "country_code": "CAF"
+      }
+    },
+    {
+      "date": "1986",
+      "value": "2634258",
+      "locator": {
+        "year": "1986",
+        "country_code": "CAF"
+      }
+    },
+    {
+      "date": "1987",
+      "value": "2669155",
+      "locator": {
+        "year": "1987",
+        "country_code": "CAF"
+      }
+    },
+    {
+      "date": "1988",
+      "value": "2713965",
+      "locator": {
+        "year": "1988",
+        "country_code": "CAF"
+      }
+    },
+    {
+      "date": "1989",
+      "value": "2783970",
+      "locator": {
+        "year": "1989",
+        "country_code": "CAF"
+      }
+    },
+    {
+      "date": "1990",
+      "value": "2871910",
+      "locator": {
+        "year": "1990",
+        "country_code": "CAF"
+      }
+    },
+    {
+      "date": "1991",
+      "value": "2963191",
+      "locator": {
+        "year": "1991",
+        "country_code": "CAF"
+      }
+    },
+    {
+      "date": "1992",
+      "value": "3058831",
+      "locator": {
+        "year": "1992",
+        "country_code": "CAF"
+      }
+    },
+    {
+      "date": "1993",
+      "value": "3157839",
+      "locator": {
+        "year": "1993",
+        "country_code": "CAF"
+      }
+    },
+    {
+      "date": "1994",
+      "value": "3257954",
+      "locator": {
+        "year": "1994",
+        "country_code": "CAF"
+      }
+    },
+    {
+      "date": "1995",
+      "value": "3348052",
+      "locator": {
+        "year": "1995",
+        "country_code": "CAF"
+      }
+    },
+    {
+      "date": "1996",
+      "value": "3435965",
+      "locator": {
+        "year": "1996",
+        "country_code": "CAF"
+      }
+    },
+    {
+      "date": "1997",
+      "value": "3531700",
+      "locator": {
+        "year": "1997",
+        "country_code": "CAF"
+      }
+    },
+    {
+      "date": "1998",
+      "value": "3628827",
+      "locator": {
+        "year": "1998",
+        "country_code": "CAF"
+      }
+    },
+    {
+      "date": "1999",
+      "value": "3729450",
+      "locator": {
+        "year": "1999",
+        "country_code": "CAF"
+      }
+    },
+    {
+      "date": "2000",
+      "value": "3833416",
+      "locator": {
+        "year": "2000",
+        "country_code": "CAF"
+      }
+    },
+    {
+      "date": "2001",
+      "value": "3919487",
+      "locator": {
+        "year": "2001",
+        "country_code": "CAF"
+      }
+    },
+    {
+      "date": "2002",
+      "value": "4006077",
+      "locator": {
+        "year": "2002",
+        "country_code": "CAF"
+      }
+    },
+    {
+      "date": "2003",
+      "value": "4103086",
+      "locator": {
+        "year": "2003",
+        "country_code": "CAF"
+      }
+    },
+    {
+      "date": "2004",
+      "value": "4192826",
+      "locator": {
+        "year": "2004",
+        "country_code": "CAF"
+      }
+    },
+    {
+      "date": "2005",
+      "value": "4288810",
+      "locator": {
+        "year": "2005",
+        "country_code": "CAF"
+      }
+    },
+    {
+      "date": "2006",
+      "value": "4377579",
+      "locator": {
+        "year": "2006",
+        "country_code": "CAF"
+      }
+    },
+    {
+      "date": "2007",
+      "value": "4462770",
+      "locator": {
+        "year": "2007",
+        "country_code": "CAF"
+      }
+    },
+    {
+      "date": "2008",
+      "value": "4558984",
+      "locator": {
+        "year": "2008",
+        "country_code": "CAF"
+      }
+    },
+    {
+      "date": "2009",
+      "value": "4529047",
+      "locator": {
+        "year": "2009",
+        "country_code": "CAF"
+      }
+    },
+    {
+      "date": "2010",
+      "value": "4492995",
+      "locator": {
+        "year": "2010",
+        "country_code": "CAF"
+      }
+    },
+    {
+      "date": "2011",
+      "value": "4565021",
+      "locator": {
+        "year": "2011",
+        "country_code": "CAF"
+      }
+    },
+    {
+      "date": "2012",
+      "value": "4610848",
+      "locator": {
+        "year": "2012",
+        "country_code": "CAF"
+      }
+    },
+    {
+      "date": "2013",
+      "value": "4642419",
+      "locator": {
+        "year": "2013",
+        "country_code": "CAF"
+      }
+    },
+    {
+      "date": "2014",
+      "value": "4623182",
+      "locator": {
+        "year": "2014",
+        "country_code": "CAF"
+      }
+    },
+    {
+      "date": "2015",
+      "value": "4629320",
+      "locator": {
+        "year": "2015",
+        "country_code": "CAF"
+      }
+    },
+    {
+      "date": "2016",
+      "value": "4713663",
+      "locator": {
+        "year": "2016",
+        "country_code": "CAF"
+      }
+    },
+    {
+      "date": "2017",
+      "value": "4793511",
+      "locator": {
+        "year": "2017",
+        "country_code": "CAF"
+      }
+    },
+    {
+      "date": "2018",
+      "value": "4878657",
+      "locator": {
+        "year": "2018",
+        "country_code": "CAF"
+      }
+    },
+    {
+      "date": "2019",
+      "value": "4944703",
+      "locator": {
+        "year": "2019",
+        "country_code": "CAF"
+      }
+    },
+    {
+      "date": "2020",
+      "value": "5026628",
+      "locator": {
+        "year": "2020",
+        "country_code": "CAF"
+      }
+    },
+    {
+      "date": "2021",
+      "value": "5112100",
+      "locator": {
+        "year": "2021",
+        "country_code": "CAF"
+      }
+    },
+    {
+      "date": "2022",
+      "value": "5098039",
+      "locator": {
+        "year": "2022",
+        "country_code": "CAF"
+      }
+    },
+    {
+      "date": "2023",
+      "value": "5152421",
+      "locator": {
+        "year": "2023",
+        "country_code": "CAF"
+      }
+    },
+    {
+      "date": "2024",
+      "value": "5330690",
+      "locator": {
+        "year": "2024",
+        "country_code": "CAF"
+      }
+    },
+    {
+      "date": "2025",
+      "value": "5513282",
+      "locator": {
+        "year": "2025",
+        "country_code": "CAF"
+      }
+    }
+  ]
+}

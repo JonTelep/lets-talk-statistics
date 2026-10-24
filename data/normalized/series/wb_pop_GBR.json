@@ -1,0 +1,543 @@
+{
+  "id": "wb_pop_GBR",
+  "name": "United Kingdom",
+  "units": "people",
+  "adjustment": "midyear",
+  "nominal_or_real": "count",
+  "frequency": "annual",
+  "source_id": "worldbank_sp_pop_totl",
+  "series_url": "https://data.worldbank.org/indicator/SP.POP.TOTL",
+  "country_code": "GBR",
+  "country_name": "United Kingdom",
+  "notes": "World Bank World Development Indicators, SP.POP.TOTL, country code GBR. Midyear population. Published years in this file run from 1960 to 2025.",
+  "points": [
+    {
+      "date": "1960",
+      "value": "52400000",
+      "locator": {
+        "year": "1960",
+        "country_code": "GBR"
+      }
+    },
+    {
+      "date": "1961",
+      "value": "52800000",
+      "locator": {
+        "year": "1961",
+        "country_code": "GBR"
+      }
+    },
+    {
+      "date": "1962",
+      "value": "53250000",
+      "locator": {
+        "year": "1962",
+        "country_code": "GBR"
+      }
+    },
+    {
+      "date": "1963",
+      "value": "53650000",
+      "locator": {
+        "year": "1963",
+        "country_code": "GBR"
+      }
+    },
+    {
+      "date": "1964",
+      "value": "54000000",
+      "locator": {
+        "year": "1964",
+        "country_code": "GBR"
+      }
+    },
+    {
+      "date": "1965",
+      "value": "54348050",
+      "locator": {
+        "year": "1965",
+        "country_code": "GBR"
+      }
+    },
+    {
+      "date": "1966",
+      "value": "54648500",
+      "locator": {
+        "year": "1966",
+        "country_code": "GBR"
+      }
+    },
+    {
+      "date": "1967",
+      "value": "54943600",
+      "locator": {
+        "year": "1967",
+        "country_code": "GBR"
+      }
+    },
+    {
+      "date": "1968",
+      "value": "55211700",
+      "locator": {
+        "year": "1968",
+        "country_code": "GBR"
+      }
+    },
+    {
+      "date": "1969",
+      "value": "55441750",
+      "locator": {
+        "year": "1969",
+        "country_code": "GBR"
+      }
+    },
+    {
+      "date": "1970",
+      "value": "55663250",
+      "locator": {
+        "year": "1970",
+        "country_code": "GBR"
+      }
+    },
+    {
+      "date": "1971",
+      "value": "55896223",
+      "locator": {
+        "year": "1971",
+        "country_code": "GBR"
+      }
+    },
+    {
+      "date": "1972",
+      "value": "56086065",
+      "locator": {
+        "year": "1972",
+        "country_code": "GBR"
+      }
+    },
+    {
+      "date": "1973",
+      "value": "56194527",
+      "locator": {
+        "year": "1973",
+        "country_code": "GBR"
+      }
+    },
+    {
+      "date": "1974",
+      "value": "56229974",
+      "locator": {
+        "year": "1974",
+        "country_code": "GBR"
+      }
+    },
+    {
+      "date": "1975",
+      "value": "56225800",
+      "locator": {
+        "year": "1975",
+        "country_code": "GBR"
+      }
+    },
+    {
+      "date": "1976",
+      "value": "56211968",
+      "locator": {
+        "year": "1976",
+        "country_code": "GBR"
+      }
+    },
+    {
+      "date": "1977",
+      "value": "56193492",
+      "locator": {
+        "year": "1977",
+        "country_code": "GBR"
+      }
+    },
+    {
+      "date": "1978",
+      "value": "56196504",
+      "locator": {
+        "year": "1978",
+        "country_code": "GBR"
+      }
+    },
+    {
+      "date": "1979",
+      "value": "56246951",
+      "locator": {
+        "year": "1979",
+        "country_code": "GBR"
+      }
+    },
+    {
+      "date": "1980",
+      "value": "56314216",
+      "locator": {
+        "year": "1980",
+        "country_code": "GBR"
+      }
+    },
+    {
+      "date": "1981",
+      "value": "56333829",
+      "locator": {
+        "year": "1981",
+        "country_code": "GBR"
+      }
+    },
+    {
+      "date": "1982",
+      "value": "56313641",
+      "locator": {
+        "year": "1982",
+        "country_code": "GBR"
+      }
+    },
+    {
+      "date": "1983",
+      "value": "56332848",
+      "locator": {
+        "year": "1983",
+        "country_code": "GBR"
+      }
+    },
+    {
+      "date": "1984",
+      "value": "56422072",
+      "locator": {
+        "year": "1984",
+        "country_code": "GBR"
+      }
+    },
+    {
+      "date": "1985",
+      "value": "56550268",
+      "locator": {
+        "year": "1985",
+        "country_code": "GBR"
+      }
+    },
+    {
+      "date": "1986",
+      "value": "56681396",
+      "locator": {
+        "year": "1986",
+        "country_code": "GBR"
+      }
+    },
+    {
+      "date": "1987",
+      "value": "56802050",
+      "locator": {
+        "year": "1987",
+        "country_code": "GBR"
+      }
+    },
+    {
+      "date": "1988",
+      "value": "56928327",
+      "locator": {
+        "year": "1988",
+        "country_code": "GBR"
+      }
+    },
+    {
+      "date": "1989",
+      "value": "57076711",
+      "locator": {
+        "year": "1989",
+        "country_code": "GBR"
+      }
+    },
+    {
+      "date": "1990",
+      "value": "57247586",
+      "locator": {
+        "year": "1990",
+        "country_code": "GBR"
+      }
+    },
+    {
+      "date": "1991",
+      "value": "57424897",
+      "locator": {
+        "year": "1991",
+        "country_code": "GBR"
+      }
+    },
+    {
+      "date": "1992",
+      "value": "57580402",
+      "locator": {
+        "year": "1992",
+        "country_code": "GBR"
+      }
+    },
+    {
+      "date": "1993",
+      "value": "57718614",
+      "locator": {
+        "year": "1993",
+        "country_code": "GBR"
+      }
+    },
+    {
+      "date": "1994",
+      "value": "57865745",
+      "locator": {
+        "year": "1994",
+        "country_code": "GBR"
+      }
+    },
+    {
+      "date": "1995",
+      "value": "58019030",
+      "locator": {
+        "year": "1995",
+        "country_code": "GBR"
+      }
+    },
+    {
+      "date": "1996",
+      "value": "58166950",
+      "locator": {
+        "year": "1996",
+        "country_code": "GBR"
+      }
+    },
+    {
+      "date": "1997",
+      "value": "58316954",
+      "locator": {
+        "year": "1997",
+        "country_code": "GBR"
+      }
+    },
+    {
+      "date": "1998",
+      "value": "58487141",
+      "locator": {
+        "year": "1998",
+        "country_code": "GBR"
+      }
+    },
+    {
+      "date": "1999",
+      "value": "58682466",
+      "locator": {
+        "year": "1999",
+        "country_code": "GBR"
+      }
+    },
+    {
+      "date": "2000",
+      "value": "58892514",
+      "locator": {
+        "year": "2000",
+        "country_code": "GBR"
+      }
+    },
+    {
+      "date": "2001",
+      "value": "59119673",
+      "locator": {
+        "year": "2001",
+        "country_code": "GBR"
+      }
+    },
+    {
+      "date": "2002",
+      "value": "59370479",
+      "locator": {
+        "year": "2002",
+        "country_code": "GBR"
+      }
+    },
+    {
+      "date": "2003",
+      "value": "59647577",
+      "locator": {
+        "year": "2003",
+        "country_code": "GBR"
+      }
+    },
+    {
+      "date": "2004",
+      "value": "59987905",
+      "locator": {
+        "year": "2004",
+        "country_code": "GBR"
+      }
+    },
+    {
+      "date": "2005",
+      "value": "60401206",
+      "locator": {
+        "year": "2005",
+        "country_code": "GBR"
+      }
+    },
+    {
+      "date": "2006",
+      "value": "60846820",
+      "locator": {
+        "year": "2006",
+        "country_code": "GBR"
+      }
+    },
+    {
+      "date": "2007",
+      "value": "61322463",
+      "locator": {
+        "year": "2007",
+        "country_code": "GBR"
+      }
+    },
+    {
+      "date": "2008",
+      "value": "61806995",
+      "locator": {
+        "year": "2008",
+        "country_code": "GBR"
+      }
+    },
+    {
+      "date": "2009",
+      "value": "62276270",
+      "locator": {
+        "year": "2009",
+        "country_code": "GBR"
+      }
+    },
+    {
+      "date": "2010",
+      "value": "62766365",
+      "locator": {
+        "year": "2010",
+        "country_code": "GBR"
+      }
+    },
+    {
+      "date": "2011",
+      "value": "63258810",
+      "locator": {
+        "year": "2011",
+        "country_code": "GBR"
+      }
+    },
+    {
+      "date": "2012",
+      "value": "63711000",
+      "locator": {
+        "year": "2012",
+        "country_code": "GBR"
+      }
+    },
+    {
+      "date": "2013",
+      "value": "64138000",
+      "locator": {
+        "year": "2013",
+        "country_code": "GBR"
+      }
+    },
+    {
+      "date": "2014",
+      "value": "64619000",
+      "locator": {
+        "year": "2014",
+        "country_code": "GBR"
+      }
+    },
+    {
+      "date": "2015",
+      "value": "65087000",
+      "locator": {
+        "year": "2015",
+        "country_code": "GBR"
+      }
+    },
+    {
+      "date": "2016",
+      "value": "65606000",
+      "locator": {
+        "year": "2016",
+        "country_code": "GBR"
+      }
+    },
+    {
+      "date": "2017",
+      "value": "65964000",
+      "locator": {
+        "year": "2017",
+        "country_code": "GBR"
+      }
+    },
+    {
+      "date": "2018",
+      "value": "66287000",
+      "locator": {
+        "year": "2018",
+        "country_code": "GBR"
+      }
+    },
+    {
+      "date": "2019",
+      "value": "66628000",
+      "locator": {
+        "year": "2019",
+        "country_code": "GBR"
+      }
+    },
+    {
+      "date": "2020",
+      "value": "66740000",
+      "locator": {
+        "year": "2020",
+        "country_code": "GBR"
+      }
+    },
+    {
+      "date": "2021",
+      "value": "66978000",
+      "locator": {
+        "year": "2021",
+        "country_code": "GBR"
+      }
+    },
+    {
+      "date": "2022",
+      "value": "67636000",
+      "locator": {
+        "year": "2022",
+        "country_code": "GBR"
+      }
+    },
+    {
+      "date": "2023",
+      "value": "68526000",
+      "locator": {
+        "year": "2023",
+        "country_code": "GBR"
+      }
+    },
+    {
+      "date": "2024",
+      "value": "69281000",
+      "locator": {
+        "year": "2024",
+        "country_code": "GBR"
+      }
+    },
+    {
+      "date": "2025",
+      "value": "69487000",
+      "locator": {
+        "year": "2025",
+        "country_code": "GBR"
+      }
+    }
+  ]
+}
