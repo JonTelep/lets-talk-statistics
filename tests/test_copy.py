@@ -14,11 +14,13 @@ def test_no_em_or_en_dashes_in_copy():
     paths += list((ROOT / "frontend" / "app").rglob("*"))
     paths += list((ROOT / "frontend" / "components").rglob("*"))
     paths += list((ROOT / "frontend" / "lib").rglob("*"))
+    paths += list((ROOT / "frontend" / "functions").rglob("*"))
+    paths += list((ROOT / "functions").rglob("*"))
     offenders = []
     for path in paths:
         if not path.is_file():
             continue
-        if path.suffix not in {".md", ".txt", ".json", ".tsx", ".ts"}:
+        if path.suffix not in {".md", ".txt", ".json", ".tsx", ".ts", ".js", ".mjs"}:
             continue
         text = path.read_text(encoding="utf-8")
         for char in BANNED:
