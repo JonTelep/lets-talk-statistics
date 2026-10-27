@@ -19,7 +19,7 @@ export async function onRequestGet({ request, env }) {
       : 'Could not unsubscribe right now. The address was not changed.';
     return page(title, `<p>${message}</p>`, badLink ? 200 : r.code);
   }
-  return Response.redirect(new URL('/newsletter/unsubscribed/', request.url).href, 303);
+  return Response.redirect(new URL('/newsletter/unsubscribed', request.url).href, 303);
 }
 export async function onRequestPost({ request, env }) {
   const r = await unsub(request, env);

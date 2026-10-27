@@ -17,7 +17,7 @@ function wantsHtml(request) {
 
 function finish(request, body, status = 200) {
   if (wantsHtml(request)) {
-    if (status === 200 && body.ok) return Response.redirect(new URL('/newsletter/subscribed/', request.url).href, 303);
+    if (status === 200 && body.ok) return Response.redirect(new URL('/newsletter/subscribed', request.url).href, 303);
     return page('Stat of the week', `<p>${escapeHtml(body.error || 'Something went wrong.')}</p>`, status);
   }
   return json(body, status);

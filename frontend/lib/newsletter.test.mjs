@@ -167,7 +167,7 @@ test('html form posts redirect and missing secrets do not send', async () => {
     env: {},
   });
   assert.equal(res.status, 303);
-  assert.equal(new URL(res.headers.get('location')).pathname, '/newsletter/subscribed/');
+  assert.equal(new URL(res.headers.get('location')).pathname, '/newsletter/subscribed');
 
   const missing = await subscribe({ request: postJson({ email: 'a@resend.dev' }), env: {} });
   assert.equal(missing.status, 503);
@@ -237,7 +237,7 @@ test('a valid unsubscribe link redirects after the contact is updated', async ()
     env,
   });
   assert.equal(res.status, 303);
-  assert.equal(new URL(res.headers.get('location')).pathname, '/newsletter/unsubscribed/');
+  assert.equal(new URL(res.headers.get('location')).pathname, '/newsletter/unsubscribed');
 });
 
 test('HTTP POST unsubscribe returns 200 and marks the contact unsubscribed', async () => {
