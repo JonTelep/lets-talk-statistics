@@ -1,6 +1,59 @@
 'use client';
 
-import { FormEvent, useState } from 'react';
+import { FormEvent, useEffect, useRef, useState } from 'react';
+
+const TURNSTILE_SITE_KEY = process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY || '';
+const TURNSTILE_SRC = 'https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit';
+
+type TurnstileApi = {
+  render: (el: HTMLElement, options: { sitekey: string; theme: 'auto' }) => string;
+  remove: (id: string) => void;
+};
+
+function turnstileApi(): TurnstileApi | undefined {
+  if (typeof window === 'undefined') return undefined;
+  return (window as Window & { turnstile?: TurnstileApi }).turnstile;
+}
+
+function TurnstileField() {
+  const slot = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (!TURNSTILE_SITE_KEY) return undefined;
+    const el = slot.current;
+    if (!el) return undefined;
+    let widgetId = '';
+    let cancelled = false;
+
+    function mount() {
+      const api = turnstileApi();
+      if (cancelled || !api || widgetId) return;
+      widgetId = api.render(el as HTMLElement, { sitekey: TURNSTILE_SITE_KEY, theme: 'auto' });
+    }
+
+    let script = document.querySelector<HTMLScriptElement>(`script[src="${TURNSTILE_SRC}"]`);
+    if (!script) {
+      script = document.createElement('script');
+      script.src = TURNSTILE_SRC;
+      script.async = true;
+      script.addEventListener('load', mount);
+      document.head.appendChild(script);
+    } else {
+      script.addEventListener('load', mount);
+      mount();
+    }
+
+    return () => {
+      cancelled = true;
+      script?.removeEventListener('load', mount);
+      const api = turnstileApi();
+      if (widgetId && api) api.remove(widgetId);
+    };
+  }, []);
+
+  if (!TURNSTILE_SITE_KEY) return null;
+  return <div ref={slot} className="mt-3" />;
+}
 
 export default function StatOfTheWeekForm() {
   const [state, setState] = useState<'form' | 'sending' | 'done' | 'error'>('form');
@@ -61,6 +114,7 @@ export default function StatOfTheWeekForm() {
         </button>
       </div>
       <input type="hidden" name="placement" value="footer" />
+      <TurnstileField />
       <div className="absolute left-[-9999px] h-px w-px overflow-hidden" aria-hidden="true">
         <label>
           Website

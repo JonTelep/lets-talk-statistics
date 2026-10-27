@@ -34,4 +34,6 @@ def test_footer_lists_other_sites_and_the_postal_address():
     form = (ROOT / "frontend" / "components" / "layout" / "StatOfTheWeekForm.tsx").read_text(encoding="utf-8")
     assert 'name="email"' in form
     assert 'name="website"' in form
+    assert "NEXT_PUBLIC_TURNSTILE_SITE_KEY" in form
+    assert "challenges.cloudflare.com/turnstile/v0/api.js" in form
     assert "No confirmation email is sent." in form

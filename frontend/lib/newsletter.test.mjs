@@ -174,6 +174,196 @@ test('html form posts redirect and missing secrets do not send', async () => {
   assert.equal((await missing.json()).error, 'Signup is not configured yet.');
 });
 
+test('account-wide unsubscribed contacts are not re-subscribed', async () => {
+  const contacts = [
+    { unsubscribed: true, properties: { lts_status: { value: 'active' } } },
+    { unsubscribed: true },
+    { unsubscribed: false, properties: { lts_status: { value: 'unsubscribed' } } },
+  ];
+  for (const contact of contacts) {
+    const calls = installFetch((call) => {
+      if (call.method === 'GET' && call.url.startsWith('https://api.resend.com/contacts/')) return jsonResponse(contact);
+      throw new Error(`unexpected ${call.method} ${call.url}`);
+    });
+    const res = await subscribe({ request: postJson({ email: 'Person@Resend.dev' }), env });
+    assert.equal(res.status, 200);
+    assert.deepEqual(await res.json(), { ok: true });
+    assert.equal(calls.length, 1);
+    assert.equal(calls[0].method, 'GET');
+  }
+});
+
+test('a missing segment id is the same not-configured response', async () => {
+  const calls = installFetch(() => { throw new Error('fetch should not run'); });
+  const partial = { RESEND_API_KEY: 're_test', NEWSLETTER_SECRET: 'secret' };
+  const missing = await subscribe({ request: postJson({ email: 'a@resend.dev' }), env: partial });
+  assert.equal(missing.status, 503);
+  assert.equal((await missing.json()).error, 'Signup is not configured yet.');
+  const blank = await subscribe({
+    request: postJson({ email: 'a@resend.dev' }),
+    env: { ...partial, RESEND_SEGMENT_ID: '   ' },
+  });
+  assert.equal(blank.status, 503);
+  assert.equal((await blank.json()).error, 'Signup is not configured yet.');
+  assert.equal(calls.length, 0);
+});
+
+function memoryKv(store = new Map()) {
+  return {
+    async get(key) { return store.has(key) ? store.get(key) : null; },
+    async put(key, value) { store.set(key, value); },
+  };
+}
+
+function postFrom(ip, extra = {}, body = { email: 'person@resend.dev', placement: 'footer' }) {
+  return postJson(body, { 'cf-connecting-ip': ip, ...extra });
+}
+
+test('FUNNEL KV limits an IP to 5 signups per hour and ignores a spoofed forwarded header', async () => {
+  const calls = installFetch((call) => {
+    if (call.method === 'GET' && call.url.startsWith('https://api.resend.com/contacts/')) return jsonResponse({}, 404);
+    if (call.method === 'POST' && call.url === 'https://api.resend.com/contacts') return jsonResponse({ id: 'c1' });
+    throw new Error(`unexpected ${call.method} ${call.url}`);
+  });
+  const limitedEnv = { ...env, FUNNEL: memoryKv() };
+  for (let i = 0; i < 5; i++) {
+    const res = await subscribe({ request: postFrom('203.0.113.10'), env: limitedEnv });
+    assert.equal(res.status, 200);
+    assert.equal((await res.json()).ok, true);
+  }
+  const before = calls.length;
+  const blocked = await subscribe({
+    request: postFrom('203.0.113.10', { 'x-forwarded-for': '198.51.100.8' }),
+    env: limitedEnv,
+  });
+  assert.equal(blocked.status, 429);
+  assert.equal((await blocked.json()).error, 'Too many signup attempts from this network. Please try again later.');
+  assert.equal(calls.length, before);
+  const other = await subscribe({
+    request: postJson({ email: 'person@resend.dev' }, { 'x-forwarded-for': '198.51.100.8, 10.0.0.1' }),
+    env: limitedEnv,
+  });
+  assert.equal(other.status, 200);
+  assert.equal(calls.filter((call) => call.method === 'POST').length, 6);
+});
+
+test('signup is not rate limited when FUNNEL is absent or KV throws', async () => {
+  installFetch((call) => {
+    if (call.method === 'GET') return jsonResponse({}, 404);
+    if (call.method === 'POST') return jsonResponse({ id: 'c1' });
+    throw new Error(`unexpected ${call.method} ${call.url}`);
+  });
+  for (let i = 0; i < 6; i++) {
+    const res = await subscribe({ request: postFrom('203.0.113.10'), env });
+    assert.equal(res.status, 200);
+  }
+  const broken = {
+    async get() { throw new Error('kv down'); },
+    async put() { throw new Error('kv down'); },
+  };
+  const res = await subscribe({ request: postFrom('203.0.113.10'), env: { ...env, FUNNEL: broken } });
+  assert.equal(res.status, 200);
+  assert.equal((await res.json()).ok, true);
+});
+
+test('turnstile is enforced only when TURNSTILE_SECRET is set', async () => {
+  const open = installFetch((call) => {
+    if (call.url.includes('siteverify')) throw new Error('siteverify should not run');
+    if (call.method === 'GET') return jsonResponse({}, 404);
+    if (call.method === 'POST') return jsonResponse({ id: 'c1' });
+    throw new Error(`unexpected ${call.method} ${call.url}`);
+  });
+  const skipped = await subscribe({ request: postJson({ email: 'person@resend.dev' }), env });
+  assert.equal((await skipped.json()).ok, true);
+  assert.equal(open.some((call) => call.url.includes('siteverify')), false);
+
+  const guarded = { ...env, TURNSTILE_SECRET: 'turnstile-secret' };
+  const missing = await subscribe({ request: postJson({ email: 'person@resend.dev' }), env: guarded });
+  assert.equal(missing.status, 400);
+  assert.equal((await missing.json()).error, 'Please complete the check and try again.');
+
+  installFetch((call) => {
+    if (call.url.includes('siteverify')) return jsonResponse({ success: false });
+    throw new Error(`unexpected ${call.method} ${call.url}`);
+  });
+  const bad = await subscribe({
+    request: postJson({ email: 'person@resend.dev', 'cf-turnstile-response': 'bad-token' }),
+    env: guarded,
+  });
+  assert.equal(bad.status, 400);
+  assert.equal((await bad.json()).error, 'Please complete the check and try again.');
+
+  installFetch(() => { throw new Error('turnstile down'); });
+  const down = await subscribe({
+    request: postJson({ email: 'person@resend.dev', turnstile: 'token-ok' }),
+    env: guarded,
+  });
+  assert.equal(down.status, 400);
+
+  const calls = installFetch((call) => {
+    if (call.url.includes('siteverify')) {
+      assert.equal(call.body.secret, 'turnstile-secret');
+      assert.equal(call.body.response, 'token-ok');
+      assert.equal(call.body.remoteip, '203.0.113.10');
+      return jsonResponse({ success: true });
+    }
+    if (call.method === 'GET') return jsonResponse({}, 404);
+    if (call.method === 'POST' && call.url === 'https://api.resend.com/contacts') return jsonResponse({ id: 'c1' });
+    throw new Error(`unexpected ${call.method} ${call.url}`);
+  });
+  const ok = await subscribe({
+    request: postJson(
+      { email: 'person@resend.dev', 'cf-turnstile-response': 'token-ok' },
+      { 'cf-connecting-ip': '203.0.113.10' },
+    ),
+    env: guarded,
+  });
+  assert.equal(ok.status, 200);
+  assert.equal((await ok.json()).ok, true);
+  assert.equal(calls.some((call) => call.url.includes('/emails')), false);
+  assert.equal(calls.filter((call) => call.method === 'POST' && call.url === 'https://api.resend.com/contacts').length, 1);
+});
+
+test('honeypot still returns success when turnstile and FUNNEL are configured', async () => {
+  const calls = installFetch(() => { throw new Error('fetch should not run'); });
+  const res = await subscribe({
+    request: postJson({ email: 'person@example.com', website: 'https://spam.test' }),
+    env: { ...env, TURNSTILE_SECRET: 'turnstile-secret', FUNNEL: memoryKv() },
+  });
+  assert.deepEqual(await res.json(), { ok: true });
+  assert.equal(calls.length, 0);
+});
+
+test('dryRun success is ignored outside the node test runner', async () => {
+  const saved = process.env.NODE_TEST_CONTEXT;
+  delete process.env.NODE_TEST_CONTEXT;
+  try {
+    const blockedCalls = installFetch(() => { throw new Error('fetch should not run'); });
+    const blocked = await subscribe({
+      request: postJson({ email: 'a@resend.dev', dryRun: true }),
+      env: {},
+    });
+    assert.equal(blocked.status, 503);
+    assert.equal((await blocked.json()).error, 'Signup is not configured yet.');
+    assert.equal(blockedCalls.length, 0);
+
+    const calls = installFetch((call) => {
+      if (call.method === 'GET') return jsonResponse({}, 404);
+      if (call.method === 'POST' && call.url === 'https://api.resend.com/contacts') return jsonResponse({ id: 'c1' });
+      throw new Error(`unexpected ${call.method} ${call.url}`);
+    });
+    const res = await subscribe({ request: postJson({ email: 'a@resend.dev', dryRun: true }), env });
+    const body = await res.json();
+    assert.equal(res.status, 200);
+    assert.equal(body.ok, true);
+    assert.equal(body.dryRun, undefined);
+    assert.equal(calls.filter((call) => call.method === 'POST').length, 1);
+  } finally {
+    if (saved === undefined) delete process.env.NODE_TEST_CONTEXT;
+    else process.env.NODE_TEST_CONTEXT = saved;
+  }
+});
+
 test('pages function entry points re-export the same subscribe handler', () => {
   assert.equal(subscribeFromFrontendFunctions, subscribe);
   assert.equal(subscribeFromRootFunctions, subscribe);
