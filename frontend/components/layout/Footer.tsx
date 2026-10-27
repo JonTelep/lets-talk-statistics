@@ -1,8 +1,11 @@
 import { Github } from 'lucide-react';
 import Link from 'next/link';
+import StatOfTheWeekForm from '@/components/layout/StatOfTheWeekForm';
+import { otherSiteLinks } from '@/lib/otherSites';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
+  const links = otherSiteLinks();
 
   return (
     <footer className="border-t border-border">
@@ -50,14 +53,37 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-8 pt-8 border-t border-border flex flex-col sm:flex-row justify-between items-center gap-4">
+        <div className="mt-8 border-t border-border pt-8">
+          <h3 className="mb-2 text-sm font-medium text-foreground">Stat of the week</h3>
+          <p className="mb-4 max-w-xl text-sm text-surface-500">
+            One official figure and the government source it comes from, once a week.
+          </p>
+          <StatOfTheWeekForm />
+        </div>
+
+        <div className="mt-8 flex flex-col gap-2 border-t border-border pt-8 sm:flex-row sm:items-center sm:justify-between">
           <p className="text-xs text-surface-600">
             © {currentYear} Let&apos;s Talk Statistics
+          </p>
+          <p className="text-xs text-surface-600">
+            Telep IO LLC, PO Box 187, Valley City, OH 44280.
           </p>
           <p className="text-xs text-surface-600">
             Official statistics, cited on each chart.
           </p>
         </div>
+
+        <p id="other-sites" className="mt-8 text-center text-sm leading-relaxed text-surface-500">
+          Our other sites:{' '}
+          {links.map((site, index) => (
+            <span key={site.host}>
+              {index > 0 ? ' · ' : null}
+              <a href={site.href} className="hover:text-foreground transition-colors">
+                {site.label}
+              </a>
+            </span>
+          ))}
+        </p>
       </div>
     </footer>
   );
