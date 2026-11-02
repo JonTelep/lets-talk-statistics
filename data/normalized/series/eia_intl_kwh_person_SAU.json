@@ -1,0 +1,385 @@
+{
+  "id": "eia_intl_kwh_person_SAU",
+  "name": "Generation per person",
+  "units": "kWh per person",
+  "adjustment": "annual",
+  "nominal_or_real": "ratio",
+  "frequency": "annual",
+  "source_id": "eia_intl_bulk",
+  "source_ids": [
+    "eia_intl_bulk",
+    "worldbank_sp_pop_totl"
+  ],
+  "series_url": "https://www.eia.gov/international/data/world/electricity/electricity-generation",
+  "country_code": "SAU",
+  "country_name": "Saudi Arabia",
+  "derived": true,
+  "formula": "kwh_per_person",
+  "inputs": [
+    "eia_intl_gen_SAU",
+    "wb_pop_SAU"
+  ],
+  "notes": "INTL.2-12-SAU-BKWH.A in billion kilowatthours, times 1,000,000,000, divided by World Bank SP.POP.TOTL for SAU. Rounded half up to the nearest kilowatthour. Published years in this file run from 1980 to 2024.",
+  "points": [
+    {
+      "date": "1980",
+      "value": "3382",
+      "locator": {
+        "formula": "billion kWh * 1000000000 / population",
+        "year": "1980"
+      }
+    },
+    {
+      "date": "1981",
+      "value": "4197",
+      "locator": {
+        "formula": "billion kWh * 1000000000 / population",
+        "year": "1981"
+      }
+    },
+    {
+      "date": "1982",
+      "value": "4823",
+      "locator": {
+        "formula": "billion kWh * 1000000000 / population",
+        "year": "1982"
+      }
+    },
+    {
+      "date": "1983",
+      "value": "4852",
+      "locator": {
+        "formula": "billion kWh * 1000000000 / population",
+        "year": "1983"
+      }
+    },
+    {
+      "date": "1984",
+      "value": "5206",
+      "locator": {
+        "formula": "billion kWh * 1000000000 / population",
+        "year": "1984"
+      }
+    },
+    {
+      "date": "1985",
+      "value": "5436",
+      "locator": {
+        "formula": "billion kWh * 1000000000 / population",
+        "year": "1985"
+      }
+    },
+    {
+      "date": "1986",
+      "value": "5522",
+      "locator": {
+        "formula": "billion kWh * 1000000000 / population",
+        "year": "1986"
+      }
+    },
+    {
+      "date": "1987",
+      "value": "5547",
+      "locator": {
+        "formula": "billion kWh * 1000000000 / population",
+        "year": "1987"
+      }
+    },
+    {
+      "date": "1988",
+      "value": "5943",
+      "locator": {
+        "formula": "billion kWh * 1000000000 / population",
+        "year": "1988"
+      }
+    },
+    {
+      "date": "1989",
+      "value": "6079",
+      "locator": {
+        "formula": "billion kWh * 1000000000 / population",
+        "year": "1989"
+      }
+    },
+    {
+      "date": "1990",
+      "value": "6099",
+      "locator": {
+        "formula": "billion kWh * 1000000000 / population",
+        "year": "1990"
+      }
+    },
+    {
+      "date": "1991",
+      "value": "6201",
+      "locator": {
+        "formula": "billion kWh * 1000000000 / population",
+        "year": "1991"
+      }
+    },
+    {
+      "date": "1992",
+      "value": "6333",
+      "locator": {
+        "formula": "billion kWh * 1000000000 / population",
+        "year": "1992"
+      }
+    },
+    {
+      "date": "1993",
+      "value": "6728",
+      "locator": {
+        "formula": "billion kWh * 1000000000 / population",
+        "year": "1993"
+      }
+    },
+    {
+      "date": "1994",
+      "value": "7139",
+      "locator": {
+        "formula": "billion kWh * 1000000000 / population",
+        "year": "1994"
+      }
+    },
+    {
+      "date": "1995",
+      "value": "7363",
+      "locator": {
+        "formula": "billion kWh * 1000000000 / population",
+        "year": "1995"
+      }
+    },
+    {
+      "date": "1996",
+      "value": "7311",
+      "locator": {
+        "formula": "billion kWh * 1000000000 / population",
+        "year": "1996"
+      }
+    },
+    {
+      "date": "1997",
+      "value": "7481",
+      "locator": {
+        "formula": "billion kWh * 1000000000 / population",
+        "year": "1997"
+      }
+    },
+    {
+      "date": "1998",
+      "value": "7681",
+      "locator": {
+        "formula": "billion kWh * 1000000000 / population",
+        "year": "1998"
+      }
+    },
+    {
+      "date": "1999",
+      "value": "7291",
+      "locator": {
+        "formula": "billion kWh * 1000000000 / population",
+        "year": "1999"
+      }
+    },
+    {
+      "date": "2000",
+      "value": "7800",
+      "locator": {
+        "formula": "billion kWh * 1000000000 / population",
+        "year": "2000"
+      }
+    },
+    {
+      "date": "2001",
+      "value": "7844",
+      "locator": {
+        "formula": "billion kWh * 1000000000 / population",
+        "year": "2001"
+      }
+    },
+    {
+      "date": "2002",
+      "value": "7913",
+      "locator": {
+        "formula": "billion kWh * 1000000000 / population",
+        "year": "2002"
+      }
+    },
+    {
+      "date": "2003",
+      "value": "8144",
+      "locator": {
+        "formula": "billion kWh * 1000000000 / population",
+        "year": "2003"
+      }
+    },
+    {
+      "date": "2004",
+      "value": "8128",
+      "locator": {
+        "formula": "billion kWh * 1000000000 / population",
+        "year": "2004"
+      }
+    },
+    {
+      "date": "2005",
+      "value": "8566",
+      "locator": {
+        "formula": "billion kWh * 1000000000 / population",
+        "year": "2005"
+      }
+    },
+    {
+      "date": "2006",
+      "value": "8455",
+      "locator": {
+        "formula": "billion kWh * 1000000000 / population",
+        "year": "2006"
+      }
+    },
+    {
+      "date": "2007",
+      "value": "8518",
+      "locator": {
+        "formula": "billion kWh * 1000000000 / population",
+        "year": "2007"
+      }
+    },
+    {
+      "date": "2008",
+      "value": "8769",
+      "locator": {
+        "formula": "billion kWh * 1000000000 / population",
+        "year": "2008"
+      }
+    },
+    {
+      "date": "2009",
+      "value": "8964",
+      "locator": {
+        "formula": "billion kWh * 1000000000 / population",
+        "year": "2009"
+      }
+    },
+    {
+      "date": "2010",
+      "value": "10012",
+      "locator": {
+        "formula": "billion kWh * 1000000000 / population",
+        "year": "2010"
+      }
+    },
+    {
+      "date": "2011",
+      "value": "9967",
+      "locator": {
+        "formula": "billion kWh * 1000000000 / population",
+        "year": "2011"
+      }
+    },
+    {
+      "date": "2012",
+      "value": "11056",
+      "locator": {
+        "formula": "billion kWh * 1000000000 / population",
+        "year": "2012"
+      }
+    },
+    {
+      "date": "2013",
+      "value": "10971",
+      "locator": {
+        "formula": "billion kWh * 1000000000 / population",
+        "year": "2013"
+      }
+    },
+    {
+      "date": "2014",
+      "value": "11908",
+      "locator": {
+        "formula": "billion kWh * 1000000000 / population",
+        "year": "2014"
+      }
+    },
+    {
+      "date": "2015",
+      "value": "12083",
+      "locator": {
+        "formula": "billion kWh * 1000000000 / population",
+        "year": "2015"
+      }
+    },
+    {
+      "date": "2016",
+      "value": "11920",
+      "locator": {
+        "formula": "billion kWh * 1000000000 / population",
+        "year": "2016"
+      }
+    },
+    {
+      "date": "2017",
+      "value": "12249",
+      "locator": {
+        "formula": "billion kWh * 1000000000 / population",
+        "year": "2017"
+      }
+    },
+    {
+      "date": "2018",
+      "value": "12886",
+      "locator": {
+        "formula": "billion kWh * 1000000000 / population",
+        "year": "2018"
+      }
+    },
+    {
+      "date": "2019",
+      "value": "12895",
+      "locator": {
+        "formula": "billion kWh * 1000000000 / population",
+        "year": "2019"
+      }
+    },
+    {
+      "date": "2020",
+      "value": "12498",
+      "locator": {
+        "formula": "billion kWh * 1000000000 / population",
+        "year": "2020"
+      }
+    },
+    {
+      "date": "2021",
+      "value": "13272",
+      "locator": {
+        "formula": "billion kWh * 1000000000 / population",
+        "year": "2021"
+      }
+    },
+    {
+      "date": "2022",
+      "value": "13027",
+      "locator": {
+        "formula": "billion kWh * 1000000000 / population",
+        "year": "2022"
+      }
+    },
+    {
+      "date": "2023",
+      "value": "13102",
+      "locator": {
+        "formula": "billion kWh * 1000000000 / population",
+        "year": "2023"
+      }
+    },
+    {
+      "date": "2024",
+      "value": "12628",
+      "locator": {
+        "formula": "billion kWh * 1000000000 / population",
+        "year": "2024"
+      }
+    }
+  ]
+}

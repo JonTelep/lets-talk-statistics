@@ -1,0 +1,543 @@
+{
+  "id": "wb_pop_KHM",
+  "name": "Cambodia",
+  "units": "people",
+  "adjustment": "midyear",
+  "nominal_or_real": "count",
+  "frequency": "annual",
+  "source_id": "worldbank_sp_pop_totl",
+  "series_url": "https://data.worldbank.org/indicator/SP.POP.TOTL",
+  "country_code": "KHM",
+  "country_name": "Cambodia",
+  "notes": "World Bank World Development Indicators, SP.POP.TOTL, country code KHM. Midyear population. Published years in this file run from 1960 to 2025.",
+  "points": [
+    {
+      "date": "1960",
+      "value": "5449966",
+      "locator": {
+        "year": "1960",
+        "country_code": "KHM"
+      }
+    },
+    {
+      "date": "1961",
+      "value": "5571168",
+      "locator": {
+        "year": "1961",
+        "country_code": "KHM"
+      }
+    },
+    {
+      "date": "1962",
+      "value": "5697558",
+      "locator": {
+        "year": "1962",
+        "country_code": "KHM"
+      }
+    },
+    {
+      "date": "1963",
+      "value": "5823010",
+      "locator": {
+        "year": "1963",
+        "country_code": "KHM"
+      }
+    },
+    {
+      "date": "1964",
+      "value": "5946178",
+      "locator": {
+        "year": "1964",
+        "country_code": "KHM"
+      }
+    },
+    {
+      "date": "1965",
+      "value": "6072289",
+      "locator": {
+        "year": "1965",
+        "country_code": "KHM"
+      }
+    },
+    {
+      "date": "1966",
+      "value": "6201232",
+      "locator": {
+        "year": "1966",
+        "country_code": "KHM"
+      }
+    },
+    {
+      "date": "1967",
+      "value": "6332944",
+      "locator": {
+        "year": "1967",
+        "country_code": "KHM"
+      }
+    },
+    {
+      "date": "1968",
+      "value": "6467324",
+      "locator": {
+        "year": "1968",
+        "country_code": "KHM"
+      }
+    },
+    {
+      "date": "1969",
+      "value": "6604725",
+      "locator": {
+        "year": "1969",
+        "country_code": "KHM"
+      }
+    },
+    {
+      "date": "1970",
+      "value": "6639182",
+      "locator": {
+        "year": "1970",
+        "country_code": "KHM"
+      }
+    },
+    {
+      "date": "1971",
+      "value": "6620880",
+      "locator": {
+        "year": "1971",
+        "country_code": "KHM"
+      }
+    },
+    {
+      "date": "1972",
+      "value": "6673886",
+      "locator": {
+        "year": "1972",
+        "country_code": "KHM"
+      }
+    },
+    {
+      "date": "1973",
+      "value": "6739726",
+      "locator": {
+        "year": "1973",
+        "country_code": "KHM"
+      }
+    },
+    {
+      "date": "1974",
+      "value": "6783240",
+      "locator": {
+        "year": "1974",
+        "country_code": "KHM"
+      }
+    },
+    {
+      "date": "1975",
+      "value": "6581371",
+      "locator": {
+        "year": "1975",
+        "country_code": "KHM"
+      }
+    },
+    {
+      "date": "1976",
+      "value": "6134991",
+      "locator": {
+        "year": "1976",
+        "country_code": "KHM"
+      }
+    },
+    {
+      "date": "1977",
+      "value": "5668551",
+      "locator": {
+        "year": "1977",
+        "country_code": "KHM"
+      }
+    },
+    {
+      "date": "1978",
+      "value": "5211653",
+      "locator": {
+        "year": "1978",
+        "country_code": "KHM"
+      }
+    },
+    {
+      "date": "1979",
+      "value": "5088808",
+      "locator": {
+        "year": "1979",
+        "country_code": "KHM"
+      }
+    },
+    {
+      "date": "1980",
+      "value": "5199872",
+      "locator": {
+        "year": "1980",
+        "country_code": "KHM"
+      }
+    },
+    {
+      "date": "1981",
+      "value": "5284495",
+      "locator": {
+        "year": "1981",
+        "country_code": "KHM"
+      }
+    },
+    {
+      "date": "1982",
+      "value": "5436432",
+      "locator": {
+        "year": "1982",
+        "country_code": "KHM"
+      }
+    },
+    {
+      "date": "1983",
+      "value": "5636203",
+      "locator": {
+        "year": "1983",
+        "country_code": "KHM"
+      }
+    },
+    {
+      "date": "1984",
+      "value": "5845117",
+      "locator": {
+        "year": "1984",
+        "country_code": "KHM"
+      }
+    },
+    {
+      "date": "1985",
+      "value": "6043783",
+      "locator": {
+        "year": "1985",
+        "country_code": "KHM"
+      }
+    },
+    {
+      "date": "1986",
+      "value": "6285693",
+      "locator": {
+        "year": "1986",
+        "country_code": "KHM"
+      }
+    },
+    {
+      "date": "1987",
+      "value": "6557970",
+      "locator": {
+        "year": "1987",
+        "country_code": "KHM"
+      }
+    },
+    {
+      "date": "1988",
+      "value": "6812014",
+      "locator": {
+        "year": "1988",
+        "country_code": "KHM"
+      }
+    },
+    {
+      "date": "1989",
+      "value": "7073473",
+      "locator": {
+        "year": "1989",
+        "country_code": "KHM"
+      }
+    },
+    {
+      "date": "1990",
+      "value": "7374752",
+      "locator": {
+        "year": "1990",
+        "country_code": "KHM"
+      }
+    },
+    {
+      "date": "1991",
+      "value": "7686850",
+      "locator": {
+        "year": "1991",
+        "country_code": "KHM"
+      }
+    },
+    {
+      "date": "1992",
+      "value": "8113083",
+      "locator": {
+        "year": "1992",
+        "country_code": "KHM"
+      }
+    },
+    {
+      "date": "1993",
+      "value": "8616381",
+      "locator": {
+        "year": "1993",
+        "country_code": "KHM"
+      }
+    },
+    {
+      "date": "1994",
+      "value": "9239162",
+      "locator": {
+        "year": "1994",
+        "country_code": "KHM"
+      }
+    },
+    {
+      "date": "1995",
+      "value": "10018497",
+      "locator": {
+        "year": "1995",
+        "country_code": "KHM"
+      }
+    },
+    {
+      "date": "1996",
+      "value": "10801270",
+      "locator": {
+        "year": "1996",
+        "country_code": "KHM"
+      }
+    },
+    {
+      "date": "1997",
+      "value": "11570982",
+      "locator": {
+        "year": "1997",
+        "country_code": "KHM"
+      }
+    },
+    {
+      "date": "1998",
+      "value": "12058173",
+      "locator": {
+        "year": "1998",
+        "country_code": "KHM"
+      }
+    },
+    {
+      "date": "1999",
+      "value": "12265731",
+      "locator": {
+        "year": "1999",
+        "country_code": "KHM"
+      }
+    },
+    {
+      "date": "2000",
+      "value": "12462336",
+      "locator": {
+        "year": "2000",
+        "country_code": "KHM"
+      }
+    },
+    {
+      "date": "2001",
+      "value": "12658484",
+      "locator": {
+        "year": "2001",
+        "country_code": "KHM"
+      }
+    },
+    {
+      "date": "2002",
+      "value": "12855241",
+      "locator": {
+        "year": "2002",
+        "country_code": "KHM"
+      }
+    },
+    {
+      "date": "2003",
+      "value": "13050968",
+      "locator": {
+        "year": "2003",
+        "country_code": "KHM"
+      }
+    },
+    {
+      "date": "2004",
+      "value": "13244731",
+      "locator": {
+        "year": "2004",
+        "country_code": "KHM"
+      }
+    },
+    {
+      "date": "2005",
+      "value": "13439202",
+      "locator": {
+        "year": "2005",
+        "country_code": "KHM"
+      }
+    },
+    {
+      "date": "2006",
+      "value": "13639028",
+      "locator": {
+        "year": "2006",
+        "country_code": "KHM"
+      }
+    },
+    {
+      "date": "2007",
+      "value": "13841770",
+      "locator": {
+        "year": "2007",
+        "country_code": "KHM"
+      }
+    },
+    {
+      "date": "2008",
+      "value": "14053479",
+      "locator": {
+        "year": "2008",
+        "country_code": "KHM"
+      }
+    },
+    {
+      "date": "2009",
+      "value": "14276810",
+      "locator": {
+        "year": "2009",
+        "country_code": "KHM"
+      }
+    },
+    {
+      "date": "2010",
+      "value": "14500726",
+      "locator": {
+        "year": "2010",
+        "country_code": "KHM"
+      }
+    },
+    {
+      "date": "2011",
+      "value": "14722584",
+      "locator": {
+        "year": "2011",
+        "country_code": "KHM"
+      }
+    },
+    {
+      "date": "2012",
+      "value": "14945085",
+      "locator": {
+        "year": "2012",
+        "country_code": "KHM"
+      }
+    },
+    {
+      "date": "2013",
+      "value": "15170208",
+      "locator": {
+        "year": "2013",
+        "country_code": "KHM"
+      }
+    },
+    {
+      "date": "2014",
+      "value": "15396772",
+      "locator": {
+        "year": "2014",
+        "country_code": "KHM"
+      }
+    },
+    {
+      "date": "2015",
+      "value": "15623251",
+      "locator": {
+        "year": "2015",
+        "country_code": "KHM"
+      }
+    },
+    {
+      "date": "2016",
+      "value": "15852803",
+      "locator": {
+        "year": "2016",
+        "country_code": "KHM"
+      }
+    },
+    {
+      "date": "2017",
+      "value": "16073372",
+      "locator": {
+        "year": "2017",
+        "country_code": "KHM"
+      }
+    },
+    {
+      "date": "2018",
+      "value": "16274522",
+      "locator": {
+        "year": "2018",
+        "country_code": "KHM"
+      }
+    },
+    {
+      "date": "2019",
+      "value": "16481304",
+      "locator": {
+        "year": "2019",
+        "country_code": "KHM"
+      }
+    },
+    {
+      "date": "2020",
+      "value": "16725474",
+      "locator": {
+        "year": "2020",
+        "country_code": "KHM"
+      }
+    },
+    {
+      "date": "2021",
+      "value": "16974305",
+      "locator": {
+        "year": "2021",
+        "country_code": "KHM"
+      }
+    },
+    {
+      "date": "2022",
+      "value": "17201724",
+      "locator": {
+        "year": "2022",
+        "country_code": "KHM"
+      }
+    },
+    {
+      "date": "2023",
+      "value": "17423880",
+      "locator": {
+        "year": "2023",
+        "country_code": "KHM"
+      }
+    },
+    {
+      "date": "2024",
+      "value": "17638801",
+      "locator": {
+        "year": "2024",
+        "country_code": "KHM"
+      }
+    },
+    {
+      "date": "2025",
+      "value": "17847982",
+      "locator": {
+        "year": "2025",
+        "country_code": "KHM"
+      }
+    }
+  ]
+}

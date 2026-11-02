@@ -1,0 +1,543 @@
+{
+  "id": "wb_pop_ABW",
+  "name": "Aruba",
+  "units": "people",
+  "adjustment": "midyear",
+  "nominal_or_real": "count",
+  "frequency": "annual",
+  "source_id": "worldbank_sp_pop_totl",
+  "series_url": "https://data.worldbank.org/indicator/SP.POP.TOTL",
+  "country_code": "ABW",
+  "country_name": "Aruba",
+  "notes": "World Bank World Development Indicators, SP.POP.TOTL, country code ABW. Midyear population. Published years in this file run from 1960 to 2025.",
+  "points": [
+    {
+      "date": "1960",
+      "value": "54922",
+      "locator": {
+        "year": "1960",
+        "country_code": "ABW"
+      }
+    },
+    {
+      "date": "1961",
+      "value": "55578",
+      "locator": {
+        "year": "1961",
+        "country_code": "ABW"
+      }
+    },
+    {
+      "date": "1962",
+      "value": "56320",
+      "locator": {
+        "year": "1962",
+        "country_code": "ABW"
+      }
+    },
+    {
+      "date": "1963",
+      "value": "57002",
+      "locator": {
+        "year": "1963",
+        "country_code": "ABW"
+      }
+    },
+    {
+      "date": "1964",
+      "value": "57619",
+      "locator": {
+        "year": "1964",
+        "country_code": "ABW"
+      }
+    },
+    {
+      "date": "1965",
+      "value": "58190",
+      "locator": {
+        "year": "1965",
+        "country_code": "ABW"
+      }
+    },
+    {
+      "date": "1966",
+      "value": "58694",
+      "locator": {
+        "year": "1966",
+        "country_code": "ABW"
+      }
+    },
+    {
+      "date": "1967",
+      "value": "58990",
+      "locator": {
+        "year": "1967",
+        "country_code": "ABW"
+      }
+    },
+    {
+      "date": "1968",
+      "value": "59069",
+      "locator": {
+        "year": "1968",
+        "country_code": "ABW"
+      }
+    },
+    {
+      "date": "1969",
+      "value": "59052",
+      "locator": {
+        "year": "1969",
+        "country_code": "ABW"
+      }
+    },
+    {
+      "date": "1970",
+      "value": "58950",
+      "locator": {
+        "year": "1970",
+        "country_code": "ABW"
+      }
+    },
+    {
+      "date": "1971",
+      "value": "58781",
+      "locator": {
+        "year": "1971",
+        "country_code": "ABW"
+      }
+    },
+    {
+      "date": "1972",
+      "value": "58047",
+      "locator": {
+        "year": "1972",
+        "country_code": "ABW"
+      }
+    },
+    {
+      "date": "1973",
+      "value": "58299",
+      "locator": {
+        "year": "1973",
+        "country_code": "ABW"
+      }
+    },
+    {
+      "date": "1974",
+      "value": "58349",
+      "locator": {
+        "year": "1974",
+        "country_code": "ABW"
+      }
+    },
+    {
+      "date": "1975",
+      "value": "58295",
+      "locator": {
+        "year": "1975",
+        "country_code": "ABW"
+      }
+    },
+    {
+      "date": "1976",
+      "value": "58368",
+      "locator": {
+        "year": "1976",
+        "country_code": "ABW"
+      }
+    },
+    {
+      "date": "1977",
+      "value": "58580",
+      "locator": {
+        "year": "1977",
+        "country_code": "ABW"
+      }
+    },
+    {
+      "date": "1978",
+      "value": "58776",
+      "locator": {
+        "year": "1978",
+        "country_code": "ABW"
+      }
+    },
+    {
+      "date": "1979",
+      "value": "59191",
+      "locator": {
+        "year": "1979",
+        "country_code": "ABW"
+      }
+    },
+    {
+      "date": "1980",
+      "value": "59909",
+      "locator": {
+        "year": "1980",
+        "country_code": "ABW"
+      }
+    },
+    {
+      "date": "1981",
+      "value": "60563",
+      "locator": {
+        "year": "1981",
+        "country_code": "ABW"
+      }
+    },
+    {
+      "date": "1982",
+      "value": "61276",
+      "locator": {
+        "year": "1982",
+        "country_code": "ABW"
+      }
+    },
+    {
+      "date": "1983",
+      "value": "62228",
+      "locator": {
+        "year": "1983",
+        "country_code": "ABW"
+      }
+    },
+    {
+      "date": "1984",
+      "value": "62901",
+      "locator": {
+        "year": "1984",
+        "country_code": "ABW"
+      }
+    },
+    {
+      "date": "1985",
+      "value": "61728",
+      "locator": {
+        "year": "1985",
+        "country_code": "ABW"
+      }
+    },
+    {
+      "date": "1986",
+      "value": "59931",
+      "locator": {
+        "year": "1986",
+        "country_code": "ABW"
+      }
+    },
+    {
+      "date": "1987",
+      "value": "59159",
+      "locator": {
+        "year": "1987",
+        "country_code": "ABW"
+      }
+    },
+    {
+      "date": "1988",
+      "value": "59331",
+      "locator": {
+        "year": "1988",
+        "country_code": "ABW"
+      }
+    },
+    {
+      "date": "1989",
+      "value": "60443",
+      "locator": {
+        "year": "1989",
+        "country_code": "ABW"
+      }
+    },
+    {
+      "date": "1990",
+      "value": "62753",
+      "locator": {
+        "year": "1990",
+        "country_code": "ABW"
+      }
+    },
+    {
+      "date": "1991",
+      "value": "65896",
+      "locator": {
+        "year": "1991",
+        "country_code": "ABW"
+      }
+    },
+    {
+      "date": "1992",
+      "value": "69005",
+      "locator": {
+        "year": "1992",
+        "country_code": "ABW"
+      }
+    },
+    {
+      "date": "1993",
+      "value": "73685",
+      "locator": {
+        "year": "1993",
+        "country_code": "ABW"
+      }
+    },
+    {
+      "date": "1994",
+      "value": "77595",
+      "locator": {
+        "year": "1994",
+        "country_code": "ABW"
+      }
+    },
+    {
+      "date": "1995",
+      "value": "79805",
+      "locator": {
+        "year": "1995",
+        "country_code": "ABW"
+      }
+    },
+    {
+      "date": "1996",
+      "value": "83021",
+      "locator": {
+        "year": "1996",
+        "country_code": "ABW"
+      }
+    },
+    {
+      "date": "1997",
+      "value": "86301",
+      "locator": {
+        "year": "1997",
+        "country_code": "ABW"
+      }
+    },
+    {
+      "date": "1998",
+      "value": "88451",
+      "locator": {
+        "year": "1998",
+        "country_code": "ABW"
+      }
+    },
+    {
+      "date": "1999",
+      "value": "89659",
+      "locator": {
+        "year": "1999",
+        "country_code": "ABW"
+      }
+    },
+    {
+      "date": "2000",
+      "value": "90588",
+      "locator": {
+        "year": "2000",
+        "country_code": "ABW"
+      }
+    },
+    {
+      "date": "2001",
+      "value": "91439",
+      "locator": {
+        "year": "2001",
+        "country_code": "ABW"
+      }
+    },
+    {
+      "date": "2002",
+      "value": "92074",
+      "locator": {
+        "year": "2002",
+        "country_code": "ABW"
+      }
+    },
+    {
+      "date": "2003",
+      "value": "93128",
+      "locator": {
+        "year": "2003",
+        "country_code": "ABW"
+      }
+    },
+    {
+      "date": "2004",
+      "value": "95138",
+      "locator": {
+        "year": "2004",
+        "country_code": "ABW"
+      }
+    },
+    {
+      "date": "2005",
+      "value": "97635",
+      "locator": {
+        "year": "2005",
+        "country_code": "ABW"
+      }
+    },
+    {
+      "date": "2006",
+      "value": "99405",
+      "locator": {
+        "year": "2006",
+        "country_code": "ABW"
+      }
+    },
+    {
+      "date": "2007",
+      "value": "100150",
+      "locator": {
+        "year": "2007",
+        "country_code": "ABW"
+      }
+    },
+    {
+      "date": "2008",
+      "value": "100917",
+      "locator": {
+        "year": "2008",
+        "country_code": "ABW"
+      }
+    },
+    {
+      "date": "2009",
+      "value": "101604",
+      "locator": {
+        "year": "2009",
+        "country_code": "ABW"
+      }
+    },
+    {
+      "date": "2010",
+      "value": "101838",
+      "locator": {
+        "year": "2010",
+        "country_code": "ABW"
+      }
+    },
+    {
+      "date": "2011",
+      "value": "102591",
+      "locator": {
+        "year": "2011",
+        "country_code": "ABW"
+      }
+    },
+    {
+      "date": "2012",
+      "value": "104110",
+      "locator": {
+        "year": "2012",
+        "country_code": "ABW"
+      }
+    },
+    {
+      "date": "2013",
+      "value": "105675",
+      "locator": {
+        "year": "2013",
+        "country_code": "ABW"
+      }
+    },
+    {
+      "date": "2014",
+      "value": "106807",
+      "locator": {
+        "year": "2014",
+        "country_code": "ABW"
+      }
+    },
+    {
+      "date": "2015",
+      "value": "107906",
+      "locator": {
+        "year": "2015",
+        "country_code": "ABW"
+      }
+    },
+    {
+      "date": "2016",
+      "value": "108727",
+      "locator": {
+        "year": "2016",
+        "country_code": "ABW"
+      }
+    },
+    {
+      "date": "2017",
+      "value": "108735",
+      "locator": {
+        "year": "2017",
+        "country_code": "ABW"
+      }
+    },
+    {
+      "date": "2018",
+      "value": "108908",
+      "locator": {
+        "year": "2018",
+        "country_code": "ABW"
+      }
+    },
+    {
+      "date": "2019",
+      "value": "109203",
+      "locator": {
+        "year": "2019",
+        "country_code": "ABW"
+      }
+    },
+    {
+      "date": "2020",
+      "value": "108587",
+      "locator": {
+        "year": "2020",
+        "country_code": "ABW"
+      }
+    },
+    {
+      "date": "2021",
+      "value": "107700",
+      "locator": {
+        "year": "2021",
+        "country_code": "ABW"
+      }
+    },
+    {
+      "date": "2022",
+      "value": "107310",
+      "locator": {
+        "year": "2022",
+        "country_code": "ABW"
+      }
+    },
+    {
+      "date": "2023",
+      "value": "107359",
+      "locator": {
+        "year": "2023",
+        "country_code": "ABW"
+      }
+    },
+    {
+      "date": "2024",
+      "value": "107995",
+      "locator": {
+        "year": "2024",
+        "country_code": "ABW"
+      }
+    },
+    {
+      "date": "2025",
+      "value": "108785",
+      "locator": {
+        "year": "2025",
+        "country_code": "ABW"
+      }
+    }
+  ]
+}

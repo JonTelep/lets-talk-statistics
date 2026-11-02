@@ -1,0 +1,543 @@
+{
+  "id": "wb_pop_CYM",
+  "name": "Cayman Islands",
+  "units": "people",
+  "adjustment": "midyear",
+  "nominal_or_real": "count",
+  "frequency": "annual",
+  "source_id": "worldbank_sp_pop_totl",
+  "series_url": "https://data.worldbank.org/indicator/SP.POP.TOTL",
+  "country_code": "CYM",
+  "country_name": "Cayman Islands",
+  "notes": "World Bank World Development Indicators, SP.POP.TOTL, country code CYM. Midyear population. Published years in this file run from 1960 to 2025.",
+  "points": [
+    {
+      "date": "1960",
+      "value": "8428",
+      "locator": {
+        "year": "1960",
+        "country_code": "CYM"
+      }
+    },
+    {
+      "date": "1961",
+      "value": "8601",
+      "locator": {
+        "year": "1961",
+        "country_code": "CYM"
+      }
+    },
+    {
+      "date": "1962",
+      "value": "8781",
+      "locator": {
+        "year": "1962",
+        "country_code": "CYM"
+      }
+    },
+    {
+      "date": "1963",
+      "value": "8970",
+      "locator": {
+        "year": "1963",
+        "country_code": "CYM"
+      }
+    },
+    {
+      "date": "1964",
+      "value": "9166",
+      "locator": {
+        "year": "1964",
+        "country_code": "CYM"
+      }
+    },
+    {
+      "date": "1965",
+      "value": "9361",
+      "locator": {
+        "year": "1965",
+        "country_code": "CYM"
+      }
+    },
+    {
+      "date": "1966",
+      "value": "9560",
+      "locator": {
+        "year": "1966",
+        "country_code": "CYM"
+      }
+    },
+    {
+      "date": "1967",
+      "value": "9769",
+      "locator": {
+        "year": "1967",
+        "country_code": "CYM"
+      }
+    },
+    {
+      "date": "1968",
+      "value": "9971",
+      "locator": {
+        "year": "1968",
+        "country_code": "CYM"
+      }
+    },
+    {
+      "date": "1969",
+      "value": "10165",
+      "locator": {
+        "year": "1969",
+        "country_code": "CYM"
+      }
+    },
+    {
+      "date": "1970",
+      "value": "10517",
+      "locator": {
+        "year": "1970",
+        "country_code": "CYM"
+      }
+    },
+    {
+      "date": "1971",
+      "value": "11098",
+      "locator": {
+        "year": "1971",
+        "country_code": "CYM"
+      }
+    },
+    {
+      "date": "1972",
+      "value": "11764",
+      "locator": {
+        "year": "1972",
+        "country_code": "CYM"
+      }
+    },
+    {
+      "date": "1973",
+      "value": "12438",
+      "locator": {
+        "year": "1973",
+        "country_code": "CYM"
+      }
+    },
+    {
+      "date": "1974",
+      "value": "13114",
+      "locator": {
+        "year": "1974",
+        "country_code": "CYM"
+      }
+    },
+    {
+      "date": "1975",
+      "value": "13788",
+      "locator": {
+        "year": "1975",
+        "country_code": "CYM"
+      }
+    },
+    {
+      "date": "1976",
+      "value": "14454",
+      "locator": {
+        "year": "1976",
+        "country_code": "CYM"
+      }
+    },
+    {
+      "date": "1977",
+      "value": "15105",
+      "locator": {
+        "year": "1977",
+        "country_code": "CYM"
+      }
+    },
+    {
+      "date": "1978",
+      "value": "15727",
+      "locator": {
+        "year": "1978",
+        "country_code": "CYM"
+      }
+    },
+    {
+      "date": "1979",
+      "value": "16351",
+      "locator": {
+        "year": "1979",
+        "country_code": "CYM"
+      }
+    },
+    {
+      "date": "1980",
+      "value": "17079",
+      "locator": {
+        "year": "1980",
+        "country_code": "CYM"
+      }
+    },
+    {
+      "date": "1981",
+      "value": "17905",
+      "locator": {
+        "year": "1981",
+        "country_code": "CYM"
+      }
+    },
+    {
+      "date": "1982",
+      "value": "18750",
+      "locator": {
+        "year": "1982",
+        "country_code": "CYM"
+      }
+    },
+    {
+      "date": "1983",
+      "value": "19598",
+      "locator": {
+        "year": "1983",
+        "country_code": "CYM"
+      }
+    },
+    {
+      "date": "1984",
+      "value": "20454",
+      "locator": {
+        "year": "1984",
+        "country_code": "CYM"
+      }
+    },
+    {
+      "date": "1985",
+      "value": "21324",
+      "locator": {
+        "year": "1985",
+        "country_code": "CYM"
+      }
+    },
+    {
+      "date": "1986",
+      "value": "22197",
+      "locator": {
+        "year": "1986",
+        "country_code": "CYM"
+      }
+    },
+    {
+      "date": "1987",
+      "value": "23073",
+      "locator": {
+        "year": "1987",
+        "country_code": "CYM"
+      }
+    },
+    {
+      "date": "1988",
+      "value": "23951",
+      "locator": {
+        "year": "1988",
+        "country_code": "CYM"
+      }
+    },
+    {
+      "date": "1989",
+      "value": "24874",
+      "locator": {
+        "year": "1989",
+        "country_code": "CYM"
+      }
+    },
+    {
+      "date": "1990",
+      "value": "25999",
+      "locator": {
+        "year": "1990",
+        "country_code": "CYM"
+      }
+    },
+    {
+      "date": "1991",
+      "value": "27294",
+      "locator": {
+        "year": "1991",
+        "country_code": "CYM"
+      }
+    },
+    {
+      "date": "1992",
+      "value": "28621",
+      "locator": {
+        "year": "1992",
+        "country_code": "CYM"
+      }
+    },
+    {
+      "date": "1993",
+      "value": "29976",
+      "locator": {
+        "year": "1993",
+        "country_code": "CYM"
+      }
+    },
+    {
+      "date": "1994",
+      "value": "31352",
+      "locator": {
+        "year": "1994",
+        "country_code": "CYM"
+      }
+    },
+    {
+      "date": "1995",
+      "value": "32743",
+      "locator": {
+        "year": "1995",
+        "country_code": "CYM"
+      }
+    },
+    {
+      "date": "1996",
+      "value": "34143",
+      "locator": {
+        "year": "1996",
+        "country_code": "CYM"
+      }
+    },
+    {
+      "date": "1997",
+      "value": "35543",
+      "locator": {
+        "year": "1997",
+        "country_code": "CYM"
+      }
+    },
+    {
+      "date": "1998",
+      "value": "36922",
+      "locator": {
+        "year": "1998",
+        "country_code": "CYM"
+      }
+    },
+    {
+      "date": "1999",
+      "value": "38284",
+      "locator": {
+        "year": "1999",
+        "country_code": "CYM"
+      }
+    },
+    {
+      "date": "2000",
+      "value": "39674",
+      "locator": {
+        "year": "2000",
+        "country_code": "CYM"
+      }
+    },
+    {
+      "date": "2001",
+      "value": "41089",
+      "locator": {
+        "year": "2001",
+        "country_code": "CYM"
+      }
+    },
+    {
+      "date": "2002",
+      "value": "42514",
+      "locator": {
+        "year": "2002",
+        "country_code": "CYM"
+      }
+    },
+    {
+      "date": "2003",
+      "value": "43934",
+      "locator": {
+        "year": "2003",
+        "country_code": "CYM"
+      }
+    },
+    {
+      "date": "2004",
+      "value": "45352",
+      "locator": {
+        "year": "2004",
+        "country_code": "CYM"
+      }
+    },
+    {
+      "date": "2005",
+      "value": "46788",
+      "locator": {
+        "year": "2005",
+        "country_code": "CYM"
+      }
+    },
+    {
+      "date": "2006",
+      "value": "48232",
+      "locator": {
+        "year": "2006",
+        "country_code": "CYM"
+      }
+    },
+    {
+      "date": "2007",
+      "value": "49687",
+      "locator": {
+        "year": "2007",
+        "country_code": "CYM"
+      }
+    },
+    {
+      "date": "2008",
+      "value": "51151",
+      "locator": {
+        "year": "2008",
+        "country_code": "CYM"
+      }
+    },
+    {
+      "date": "2009",
+      "value": "52618",
+      "locator": {
+        "year": "2009",
+        "country_code": "CYM"
+      }
+    },
+    {
+      "date": "2010",
+      "value": "54099",
+      "locator": {
+        "year": "2010",
+        "country_code": "CYM"
+      }
+    },
+    {
+      "date": "2011",
+      "value": "55606",
+      "locator": {
+        "year": "2011",
+        "country_code": "CYM"
+      }
+    },
+    {
+      "date": "2012",
+      "value": "57136",
+      "locator": {
+        "year": "2012",
+        "country_code": "CYM"
+      }
+    },
+    {
+      "date": "2013",
+      "value": "58655",
+      "locator": {
+        "year": "2013",
+        "country_code": "CYM"
+      }
+    },
+    {
+      "date": "2014",
+      "value": "60160",
+      "locator": {
+        "year": "2014",
+        "country_code": "CYM"
+      }
+    },
+    {
+      "date": "2015",
+      "value": "61642",
+      "locator": {
+        "year": "2015",
+        "country_code": "CYM"
+      }
+    },
+    {
+      "date": "2016",
+      "value": "63100",
+      "locator": {
+        "year": "2016",
+        "country_code": "CYM"
+      }
+    },
+    {
+      "date": "2017",
+      "value": "64535",
+      "locator": {
+        "year": "2017",
+        "country_code": "CYM"
+      }
+    },
+    {
+      "date": "2018",
+      "value": "65941",
+      "locator": {
+        "year": "2018",
+        "country_code": "CYM"
+      }
+    },
+    {
+      "date": "2019",
+      "value": "67327",
+      "locator": {
+        "year": "2019",
+        "country_code": "CYM"
+      }
+    },
+    {
+      "date": "2020",
+      "value": "68684",
+      "locator": {
+        "year": "2020",
+        "country_code": "CYM"
+      }
+    },
+    {
+      "date": "2021",
+      "value": "70108",
+      "locator": {
+        "year": "2021",
+        "country_code": "CYM"
+      }
+    },
+    {
+      "date": "2022",
+      "value": "71591",
+      "locator": {
+        "year": "2022",
+        "country_code": "CYM"
+      }
+    },
+    {
+      "date": "2023",
+      "value": "73038",
+      "locator": {
+        "year": "2023",
+        "country_code": "CYM"
+      }
+    },
+    {
+      "date": "2024",
+      "value": "74457",
+      "locator": {
+        "year": "2024",
+        "country_code": "CYM"
+      }
+    },
+    {
+      "date": "2025",
+      "value": "75844",
+      "locator": {
+        "year": "2025",
+        "country_code": "CYM"
+      }
+    }
+  ]
+}

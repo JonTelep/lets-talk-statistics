@@ -1,0 +1,543 @@
+{
+  "id": "wb_pop_RUS",
+  "name": "Russia",
+  "units": "people",
+  "adjustment": "midyear",
+  "nominal_or_real": "count",
+  "frequency": "annual",
+  "source_id": "worldbank_sp_pop_totl",
+  "series_url": "https://data.worldbank.org/indicator/SP.POP.TOTL",
+  "country_code": "RUS",
+  "country_name": "Russia",
+  "notes": "World Bank World Development Indicators, SP.POP.TOTL, country code RUS. Midyear population. Published years in this file run from 1960 to 2025.",
+  "points": [
+    {
+      "date": "1960",
+      "value": "119897000",
+      "locator": {
+        "year": "1960",
+        "country_code": "RUS"
+      }
+    },
+    {
+      "date": "1961",
+      "value": "121236000",
+      "locator": {
+        "year": "1961",
+        "country_code": "RUS"
+      }
+    },
+    {
+      "date": "1962",
+      "value": "122591000",
+      "locator": {
+        "year": "1962",
+        "country_code": "RUS"
+      }
+    },
+    {
+      "date": "1963",
+      "value": "123960000",
+      "locator": {
+        "year": "1963",
+        "country_code": "RUS"
+      }
+    },
+    {
+      "date": "1964",
+      "value": "125345000",
+      "locator": {
+        "year": "1964",
+        "country_code": "RUS"
+      }
+    },
+    {
+      "date": "1965",
+      "value": "126745000",
+      "locator": {
+        "year": "1965",
+        "country_code": "RUS"
+      }
+    },
+    {
+      "date": "1966",
+      "value": "127468000",
+      "locator": {
+        "year": "1966",
+        "country_code": "RUS"
+      }
+    },
+    {
+      "date": "1967",
+      "value": "128196000",
+      "locator": {
+        "year": "1967",
+        "country_code": "RUS"
+      }
+    },
+    {
+      "date": "1968",
+      "value": "128928000",
+      "locator": {
+        "year": "1968",
+        "country_code": "RUS"
+      }
+    },
+    {
+      "date": "1969",
+      "value": "129664000",
+      "locator": {
+        "year": "1969",
+        "country_code": "RUS"
+      }
+    },
+    {
+      "date": "1970",
+      "value": "130404000",
+      "locator": {
+        "year": "1970",
+        "country_code": "RUS"
+      }
+    },
+    {
+      "date": "1971",
+      "value": "131155000",
+      "locator": {
+        "year": "1971",
+        "country_code": "RUS"
+      }
+    },
+    {
+      "date": "1972",
+      "value": "131909000",
+      "locator": {
+        "year": "1972",
+        "country_code": "RUS"
+      }
+    },
+    {
+      "date": "1973",
+      "value": "132669000",
+      "locator": {
+        "year": "1973",
+        "country_code": "RUS"
+      }
+    },
+    {
+      "date": "1974",
+      "value": "133432000",
+      "locator": {
+        "year": "1974",
+        "country_code": "RUS"
+      }
+    },
+    {
+      "date": "1975",
+      "value": "134200000",
+      "locator": {
+        "year": "1975",
+        "country_code": "RUS"
+      }
+    },
+    {
+      "date": "1976",
+      "value": "135147000",
+      "locator": {
+        "year": "1976",
+        "country_code": "RUS"
+      }
+    },
+    {
+      "date": "1977",
+      "value": "136100000",
+      "locator": {
+        "year": "1977",
+        "country_code": "RUS"
+      }
+    },
+    {
+      "date": "1978",
+      "value": "137060000",
+      "locator": {
+        "year": "1978",
+        "country_code": "RUS"
+      }
+    },
+    {
+      "date": "1979",
+      "value": "138027000",
+      "locator": {
+        "year": "1979",
+        "country_code": "RUS"
+      }
+    },
+    {
+      "date": "1980",
+      "value": "139010000",
+      "locator": {
+        "year": "1980",
+        "country_code": "RUS"
+      }
+    },
+    {
+      "date": "1981",
+      "value": "139941000",
+      "locator": {
+        "year": "1981",
+        "country_code": "RUS"
+      }
+    },
+    {
+      "date": "1982",
+      "value": "140823000",
+      "locator": {
+        "year": "1982",
+        "country_code": "RUS"
+      }
+    },
+    {
+      "date": "1983",
+      "value": "141668000",
+      "locator": {
+        "year": "1983",
+        "country_code": "RUS"
+      }
+    },
+    {
+      "date": "1984",
+      "value": "142745000",
+      "locator": {
+        "year": "1984",
+        "country_code": "RUS"
+      }
+    },
+    {
+      "date": "1985",
+      "value": "143858000",
+      "locator": {
+        "year": "1985",
+        "country_code": "RUS"
+      }
+    },
+    {
+      "date": "1986",
+      "value": "144894000",
+      "locator": {
+        "year": "1986",
+        "country_code": "RUS"
+      }
+    },
+    {
+      "date": "1987",
+      "value": "145908000",
+      "locator": {
+        "year": "1987",
+        "country_code": "RUS"
+      }
+    },
+    {
+      "date": "1988",
+      "value": "146857000",
+      "locator": {
+        "year": "1988",
+        "country_code": "RUS"
+      }
+    },
+    {
+      "date": "1989",
+      "value": "147721000",
+      "locator": {
+        "year": "1989",
+        "country_code": "RUS"
+      }
+    },
+    {
+      "date": "1990",
+      "value": "147969406",
+      "locator": {
+        "year": "1990",
+        "country_code": "RUS"
+      }
+    },
+    {
+      "date": "1991",
+      "value": "148394216",
+      "locator": {
+        "year": "1991",
+        "country_code": "RUS"
+      }
+    },
+    {
+      "date": "1992",
+      "value": "148538197",
+      "locator": {
+        "year": "1992",
+        "country_code": "RUS"
+      }
+    },
+    {
+      "date": "1993",
+      "value": "148458777",
+      "locator": {
+        "year": "1993",
+        "country_code": "RUS"
+      }
+    },
+    {
+      "date": "1994",
+      "value": "148407912",
+      "locator": {
+        "year": "1994",
+        "country_code": "RUS"
+      }
+    },
+    {
+      "date": "1995",
+      "value": "148375787",
+      "locator": {
+        "year": "1995",
+        "country_code": "RUS"
+      }
+    },
+    {
+      "date": "1996",
+      "value": "148160129",
+      "locator": {
+        "year": "1996",
+        "country_code": "RUS"
+      }
+    },
+    {
+      "date": "1997",
+      "value": "147915361",
+      "locator": {
+        "year": "1997",
+        "country_code": "RUS"
+      }
+    },
+    {
+      "date": "1998",
+      "value": "147670784",
+      "locator": {
+        "year": "1998",
+        "country_code": "RUS"
+      }
+    },
+    {
+      "date": "1999",
+      "value": "147214776",
+      "locator": {
+        "year": "1999",
+        "country_code": "RUS"
+      }
+    },
+    {
+      "date": "2000",
+      "value": "146596869",
+      "locator": {
+        "year": "2000",
+        "country_code": "RUS"
+      }
+    },
+    {
+      "date": "2001",
+      "value": "145976482",
+      "locator": {
+        "year": "2001",
+        "country_code": "RUS"
+      }
+    },
+    {
+      "date": "2002",
+      "value": "145306497",
+      "locator": {
+        "year": "2002",
+        "country_code": "RUS"
+      }
+    },
+    {
+      "date": "2003",
+      "value": "144648618",
+      "locator": {
+        "year": "2003",
+        "country_code": "RUS"
+      }
+    },
+    {
+      "date": "2004",
+      "value": "144067316",
+      "locator": {
+        "year": "2004",
+        "country_code": "RUS"
+      }
+    },
+    {
+      "date": "2005",
+      "value": "143518814",
+      "locator": {
+        "year": "2005",
+        "country_code": "RUS"
+      }
+    },
+    {
+      "date": "2006",
+      "value": "143049637",
+      "locator": {
+        "year": "2006",
+        "country_code": "RUS"
+      }
+    },
+    {
+      "date": "2007",
+      "value": "142805114",
+      "locator": {
+        "year": "2007",
+        "country_code": "RUS"
+      }
+    },
+    {
+      "date": "2008",
+      "value": "142742366",
+      "locator": {
+        "year": "2008",
+        "country_code": "RUS"
+      }
+    },
+    {
+      "date": "2009",
+      "value": "142785348",
+      "locator": {
+        "year": "2009",
+        "country_code": "RUS"
+      }
+    },
+    {
+      "date": "2010",
+      "value": "142849468",
+      "locator": {
+        "year": "2010",
+        "country_code": "RUS"
+      }
+    },
+    {
+      "date": "2011",
+      "value": "143018195",
+      "locator": {
+        "year": "2011",
+        "country_code": "RUS"
+      }
+    },
+    {
+      "date": "2012",
+      "value": "143378447",
+      "locator": {
+        "year": "2012",
+        "country_code": "RUS"
+      }
+    },
+    {
+      "date": "2013",
+      "value": "143805638",
+      "locator": {
+        "year": "2013",
+        "country_code": "RUS"
+      }
+    },
+    {
+      "date": "2014",
+      "value": "144237223",
+      "locator": {
+        "year": "2014",
+        "country_code": "RUS"
+      }
+    },
+    {
+      "date": "2015",
+      "value": "144640716",
+      "locator": {
+        "year": "2015",
+        "country_code": "RUS"
+      }
+    },
+    {
+      "date": "2016",
+      "value": "145015460",
+      "locator": {
+        "year": "2016",
+        "country_code": "RUS"
+      }
+    },
+    {
+      "date": "2017",
+      "value": "145293260",
+      "locator": {
+        "year": "2017",
+        "country_code": "RUS"
+      }
+    },
+    {
+      "date": "2018",
+      "value": "145398106",
+      "locator": {
+        "year": "2018",
+        "country_code": "RUS"
+      }
+    },
+    {
+      "date": "2019",
+      "value": "145453291",
+      "locator": {
+        "year": "2019",
+        "country_code": "RUS"
+      }
+    },
+    {
+      "date": "2020",
+      "value": "145245148",
+      "locator": {
+        "year": "2020",
+        "country_code": "RUS"
+      }
+    },
+    {
+      "date": "2021",
+      "value": "144746762",
+      "locator": {
+        "year": "2021",
+        "country_code": "RUS"
+      }
+    },
+    {
+      "date": "2022",
+      "value": "144236933",
+      "locator": {
+        "year": "2022",
+        "country_code": "RUS"
+      }
+    },
+    {
+      "date": "2023",
+      "value": "143826130",
+      "locator": {
+        "year": "2023",
+        "country_code": "RUS"
+      }
+    },
+    {
+      "date": "2024",
+      "value": "143669648",
+      "locator": {
+        "year": "2024",
+        "country_code": "RUS"
+      }
+    },
+    {
+      "date": "2025",
+      "value": "143513328",
+      "locator": {
+        "year": "2025",
+        "country_code": "RUS"
+      }
+    }
+  ]
+}

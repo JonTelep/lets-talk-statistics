@@ -1,0 +1,543 @@
+{
+  "id": "wb_pop_CUB",
+  "name": "Cuba",
+  "units": "people",
+  "adjustment": "midyear",
+  "nominal_or_real": "count",
+  "frequency": "annual",
+  "source_id": "worldbank_sp_pop_totl",
+  "series_url": "https://data.worldbank.org/indicator/SP.POP.TOTL",
+  "country_code": "CUB",
+  "country_name": "Cuba",
+  "notes": "World Bank World Development Indicators, SP.POP.TOTL, country code CUB. Midyear population. Published years in this file run from 1960 to 2025.",
+  "points": [
+    {
+      "date": "1960",
+      "value": "7238081",
+      "locator": {
+        "year": "1960",
+        "country_code": "CUB"
+      }
+    },
+    {
+      "date": "1961",
+      "value": "7387117",
+      "locator": {
+        "year": "1961",
+        "country_code": "CUB"
+      }
+    },
+    {
+      "date": "1962",
+      "value": "7541098",
+      "locator": {
+        "year": "1962",
+        "country_code": "CUB"
+      }
+    },
+    {
+      "date": "1963",
+      "value": "7701660",
+      "locator": {
+        "year": "1963",
+        "country_code": "CUB"
+      }
+    },
+    {
+      "date": "1964",
+      "value": "7866020",
+      "locator": {
+        "year": "1964",
+        "country_code": "CUB"
+      }
+    },
+    {
+      "date": "1965",
+      "value": "8030797",
+      "locator": {
+        "year": "1965",
+        "country_code": "CUB"
+      }
+    },
+    {
+      "date": "1966",
+      "value": "8193450",
+      "locator": {
+        "year": "1966",
+        "country_code": "CUB"
+      }
+    },
+    {
+      "date": "1967",
+      "value": "8352625",
+      "locator": {
+        "year": "1967",
+        "country_code": "CUB"
+      }
+    },
+    {
+      "date": "1968",
+      "value": "8509522",
+      "locator": {
+        "year": "1968",
+        "country_code": "CUB"
+      }
+    },
+    {
+      "date": "1969",
+      "value": "8666640",
+      "locator": {
+        "year": "1969",
+        "country_code": "CUB"
+      }
+    },
+    {
+      "date": "1970",
+      "value": "8824382",
+      "locator": {
+        "year": "1970",
+        "country_code": "CUB"
+      }
+    },
+    {
+      "date": "1971",
+      "value": "8979085",
+      "locator": {
+        "year": "1971",
+        "country_code": "CUB"
+      }
+    },
+    {
+      "date": "1972",
+      "value": "9123891",
+      "locator": {
+        "year": "1972",
+        "country_code": "CUB"
+      }
+    },
+    {
+      "date": "1973",
+      "value": "9255328",
+      "locator": {
+        "year": "1973",
+        "country_code": "CUB"
+      }
+    },
+    {
+      "date": "1974",
+      "value": "9374183",
+      "locator": {
+        "year": "1974",
+        "country_code": "CUB"
+      }
+    },
+    {
+      "date": "1975",
+      "value": "9479726",
+      "locator": {
+        "year": "1975",
+        "country_code": "CUB"
+      }
+    },
+    {
+      "date": "1976",
+      "value": "9571242",
+      "locator": {
+        "year": "1976",
+        "country_code": "CUB"
+      }
+    },
+    {
+      "date": "1977",
+      "value": "9648440",
+      "locator": {
+        "year": "1977",
+        "country_code": "CUB"
+      }
+    },
+    {
+      "date": "1978",
+      "value": "9711980",
+      "locator": {
+        "year": "1978",
+        "country_code": "CUB"
+      }
+    },
+    {
+      "date": "1979",
+      "value": "9763355",
+      "locator": {
+        "year": "1979",
+        "country_code": "CUB"
+      }
+    },
+    {
+      "date": "1980",
+      "value": "9804796",
+      "locator": {
+        "year": "1980",
+        "country_code": "CUB"
+      }
+    },
+    {
+      "date": "1981",
+      "value": "9849320",
+      "locator": {
+        "year": "1981",
+        "country_code": "CUB"
+      }
+    },
+    {
+      "date": "1982",
+      "value": "9912681",
+      "locator": {
+        "year": "1982",
+        "country_code": "CUB"
+      }
+    },
+    {
+      "date": "1983",
+      "value": "9991026",
+      "locator": {
+        "year": "1983",
+        "country_code": "CUB"
+      }
+    },
+    {
+      "date": "1984",
+      "value": "10073299",
+      "locator": {
+        "year": "1984",
+        "country_code": "CUB"
+      }
+    },
+    {
+      "date": "1985",
+      "value": "10157228",
+      "locator": {
+        "year": "1985",
+        "country_code": "CUB"
+      }
+    },
+    {
+      "date": "1986",
+      "value": "10244247",
+      "locator": {
+        "year": "1986",
+        "country_code": "CUB"
+      }
+    },
+    {
+      "date": "1987",
+      "value": "10335342",
+      "locator": {
+        "year": "1987",
+        "country_code": "CUB"
+      }
+    },
+    {
+      "date": "1988",
+      "value": "10432585",
+      "locator": {
+        "year": "1988",
+        "country_code": "CUB"
+      }
+    },
+    {
+      "date": "1989",
+      "value": "10533243",
+      "locator": {
+        "year": "1989",
+        "country_code": "CUB"
+      }
+    },
+    {
+      "date": "1990",
+      "value": "10631799",
+      "locator": {
+        "year": "1990",
+        "country_code": "CUB"
+      }
+    },
+    {
+      "date": "1991",
+      "value": "10717640",
+      "locator": {
+        "year": "1991",
+        "country_code": "CUB"
+      }
+    },
+    {
+      "date": "1992",
+      "value": "10785801",
+      "locator": {
+        "year": "1992",
+        "country_code": "CUB"
+      }
+    },
+    {
+      "date": "1993",
+      "value": "10841031",
+      "locator": {
+        "year": "1993",
+        "country_code": "CUB"
+      }
+    },
+    {
+      "date": "1994",
+      "value": "10886021",
+      "locator": {
+        "year": "1994",
+        "country_code": "CUB"
+      }
+    },
+    {
+      "date": "1995",
+      "value": "10925362",
+      "locator": {
+        "year": "1995",
+        "country_code": "CUB"
+      }
+    },
+    {
+      "date": "1996",
+      "value": "10962010",
+      "locator": {
+        "year": "1996",
+        "country_code": "CUB"
+      }
+    },
+    {
+      "date": "1997",
+      "value": "10997934",
+      "locator": {
+        "year": "1997",
+        "country_code": "CUB"
+      }
+    },
+    {
+      "date": "1998",
+      "value": "11034712",
+      "locator": {
+        "year": "1998",
+        "country_code": "CUB"
+      }
+    },
+    {
+      "date": "1999",
+      "value": "11072230",
+      "locator": {
+        "year": "1999",
+        "country_code": "CUB"
+      }
+    },
+    {
+      "date": "2000",
+      "value": "11109109",
+      "locator": {
+        "year": "2000",
+        "country_code": "CUB"
+      }
+    },
+    {
+      "date": "2001",
+      "value": "11144132",
+      "locator": {
+        "year": "2001",
+        "country_code": "CUB"
+      }
+    },
+    {
+      "date": "2002",
+      "value": "11177418",
+      "locator": {
+        "year": "2002",
+        "country_code": "CUB"
+      }
+    },
+    {
+      "date": "2003",
+      "value": "11209383",
+      "locator": {
+        "year": "2003",
+        "country_code": "CUB"
+      }
+    },
+    {
+      "date": "2004",
+      "value": "11238756",
+      "locator": {
+        "year": "2004",
+        "country_code": "CUB"
+      }
+    },
+    {
+      "date": "2005",
+      "value": "11262554",
+      "locator": {
+        "year": "2005",
+        "country_code": "CUB"
+      }
+    },
+    {
+      "date": "2006",
+      "value": "11278550",
+      "locator": {
+        "year": "2006",
+        "country_code": "CUB"
+      }
+    },
+    {
+      "date": "2007",
+      "value": "11287272",
+      "locator": {
+        "year": "2007",
+        "country_code": "CUB"
+      }
+    },
+    {
+      "date": "2008",
+      "value": "11291762",
+      "locator": {
+        "year": "2008",
+        "country_code": "CUB"
+      }
+    },
+    {
+      "date": "2009",
+      "value": "11294719",
+      "locator": {
+        "year": "2009",
+        "country_code": "CUB"
+      }
+    },
+    {
+      "date": "2010",
+      "value": "11297409",
+      "locator": {
+        "year": "2010",
+        "country_code": "CUB"
+      }
+    },
+    {
+      "date": "2011",
+      "value": "11301571",
+      "locator": {
+        "year": "2011",
+        "country_code": "CUB"
+      }
+    },
+    {
+      "date": "2012",
+      "value": "11303175",
+      "locator": {
+        "year": "2012",
+        "country_code": "CUB"
+      }
+    },
+    {
+      "date": "2013",
+      "value": "11298167",
+      "locator": {
+        "year": "2013",
+        "country_code": "CUB"
+      }
+    },
+    {
+      "date": "2014",
+      "value": "11285775",
+      "locator": {
+        "year": "2014",
+        "country_code": "CUB"
+      }
+    },
+    {
+      "date": "2015",
+      "value": "11275065",
+      "locator": {
+        "year": "2015",
+        "country_code": "CUB"
+      }
+    },
+    {
+      "date": "2016",
+      "value": "11265612",
+      "locator": {
+        "year": "2016",
+        "country_code": "CUB"
+      }
+    },
+    {
+      "date": "2017",
+      "value": "11247829",
+      "locator": {
+        "year": "2017",
+        "country_code": "CUB"
+      }
+    },
+    {
+      "date": "2018",
+      "value": "11227118",
+      "locator": {
+        "year": "2018",
+        "country_code": "CUB"
+      }
+    },
+    {
+      "date": "2019",
+      "value": "11202846",
+      "locator": {
+        "year": "2019",
+        "country_code": "CUB"
+      }
+    },
+    {
+      "date": "2020",
+      "value": "11176354",
+      "locator": {
+        "year": "2020",
+        "country_code": "CUB"
+      }
+    },
+    {
+      "date": "2021",
+      "value": "11122168",
+      "locator": {
+        "year": "2021",
+        "country_code": "CUB"
+      }
+    },
+    {
+      "date": "2022",
+      "value": "11059820",
+      "locator": {
+        "year": "2022",
+        "country_code": "CUB"
+      }
+    },
+    {
+      "date": "2023",
+      "value": "11019931",
+      "locator": {
+        "year": "2023",
+        "country_code": "CUB"
+      }
+    },
+    {
+      "date": "2024",
+      "value": "10979783",
+      "locator": {
+        "year": "2024",
+        "country_code": "CUB"
+      }
+    },
+    {
+      "date": "2025",
+      "value": "10937203",
+      "locator": {
+        "year": "2025",
+        "country_code": "CUB"
+      }
+    }
+  ]
+}

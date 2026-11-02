@@ -1,0 +1,543 @@
+{
+  "id": "wb_pop_ITA",
+  "name": "Italy",
+  "units": "people",
+  "adjustment": "midyear",
+  "nominal_or_real": "count",
+  "frequency": "annual",
+  "source_id": "worldbank_sp_pop_totl",
+  "series_url": "https://data.worldbank.org/indicator/SP.POP.TOTL",
+  "country_code": "ITA",
+  "country_name": "Italy",
+  "notes": "World Bank World Development Indicators, SP.POP.TOTL, country code ITA. Midyear population. Published years in this file run from 1960 to 2025.",
+  "points": [
+    {
+      "date": "1960",
+      "value": "50199700",
+      "locator": {
+        "year": "1960",
+        "country_code": "ITA"
+      }
+    },
+    {
+      "date": "1961",
+      "value": "50536350",
+      "locator": {
+        "year": "1961",
+        "country_code": "ITA"
+      }
+    },
+    {
+      "date": "1962",
+      "value": "50879450",
+      "locator": {
+        "year": "1962",
+        "country_code": "ITA"
+      }
+    },
+    {
+      "date": "1963",
+      "value": "51252000",
+      "locator": {
+        "year": "1963",
+        "country_code": "ITA"
+      }
+    },
+    {
+      "date": "1964",
+      "value": "51675350",
+      "locator": {
+        "year": "1964",
+        "country_code": "ITA"
+      }
+    },
+    {
+      "date": "1965",
+      "value": "52112350",
+      "locator": {
+        "year": "1965",
+        "country_code": "ITA"
+      }
+    },
+    {
+      "date": "1966",
+      "value": "52519000",
+      "locator": {
+        "year": "1966",
+        "country_code": "ITA"
+      }
+    },
+    {
+      "date": "1967",
+      "value": "52900500",
+      "locator": {
+        "year": "1967",
+        "country_code": "ITA"
+      }
+    },
+    {
+      "date": "1968",
+      "value": "53235750",
+      "locator": {
+        "year": "1968",
+        "country_code": "ITA"
+      }
+    },
+    {
+      "date": "1969",
+      "value": "53537950",
+      "locator": {
+        "year": "1969",
+        "country_code": "ITA"
+      }
+    },
+    {
+      "date": "1970",
+      "value": "53821850",
+      "locator": {
+        "year": "1970",
+        "country_code": "ITA"
+      }
+    },
+    {
+      "date": "1971",
+      "value": "54073490",
+      "locator": {
+        "year": "1971",
+        "country_code": "ITA"
+      }
+    },
+    {
+      "date": "1972",
+      "value": "54381345",
+      "locator": {
+        "year": "1972",
+        "country_code": "ITA"
+      }
+    },
+    {
+      "date": "1973",
+      "value": "54751406",
+      "locator": {
+        "year": "1973",
+        "country_code": "ITA"
+      }
+    },
+    {
+      "date": "1974",
+      "value": "55110868",
+      "locator": {
+        "year": "1974",
+        "country_code": "ITA"
+      }
+    },
+    {
+      "date": "1975",
+      "value": "55441001",
+      "locator": {
+        "year": "1975",
+        "country_code": "ITA"
+      }
+    },
+    {
+      "date": "1976",
+      "value": "55718260",
+      "locator": {
+        "year": "1976",
+        "country_code": "ITA"
+      }
+    },
+    {
+      "date": "1977",
+      "value": "55955411",
+      "locator": {
+        "year": "1977",
+        "country_code": "ITA"
+      }
+    },
+    {
+      "date": "1978",
+      "value": "56155143",
+      "locator": {
+        "year": "1978",
+        "country_code": "ITA"
+      }
+    },
+    {
+      "date": "1979",
+      "value": "56317749",
+      "locator": {
+        "year": "1979",
+        "country_code": "ITA"
+      }
+    },
+    {
+      "date": "1980",
+      "value": "56433883",
+      "locator": {
+        "year": "1980",
+        "country_code": "ITA"
+      }
+    },
+    {
+      "date": "1981",
+      "value": "56501675",
+      "locator": {
+        "year": "1981",
+        "country_code": "ITA"
+      }
+    },
+    {
+      "date": "1982",
+      "value": "56543548",
+      "locator": {
+        "year": "1982",
+        "country_code": "ITA"
+      }
+    },
+    {
+      "date": "1983",
+      "value": "56564074",
+      "locator": {
+        "year": "1983",
+        "country_code": "ITA"
+      }
+    },
+    {
+      "date": "1984",
+      "value": "56576718",
+      "locator": {
+        "year": "1984",
+        "country_code": "ITA"
+      }
+    },
+    {
+      "date": "1985",
+      "value": "56593071",
+      "locator": {
+        "year": "1985",
+        "country_code": "ITA"
+      }
+    },
+    {
+      "date": "1986",
+      "value": "56596155",
+      "locator": {
+        "year": "1986",
+        "country_code": "ITA"
+      }
+    },
+    {
+      "date": "1987",
+      "value": "56601931",
+      "locator": {
+        "year": "1987",
+        "country_code": "ITA"
+      }
+    },
+    {
+      "date": "1988",
+      "value": "56629288",
+      "locator": {
+        "year": "1988",
+        "country_code": "ITA"
+      }
+    },
+    {
+      "date": "1989",
+      "value": "56671781",
+      "locator": {
+        "year": "1989",
+        "country_code": "ITA"
+      }
+    },
+    {
+      "date": "1990",
+      "value": "56719240",
+      "locator": {
+        "year": "1990",
+        "country_code": "ITA"
+      }
+    },
+    {
+      "date": "1991",
+      "value": "56758521",
+      "locator": {
+        "year": "1991",
+        "country_code": "ITA"
+      }
+    },
+    {
+      "date": "1992",
+      "value": "56797087",
+      "locator": {
+        "year": "1992",
+        "country_code": "ITA"
+      }
+    },
+    {
+      "date": "1993",
+      "value": "56831821",
+      "locator": {
+        "year": "1993",
+        "country_code": "ITA"
+      }
+    },
+    {
+      "date": "1994",
+      "value": "56843400",
+      "locator": {
+        "year": "1994",
+        "country_code": "ITA"
+      }
+    },
+    {
+      "date": "1995",
+      "value": "56844303",
+      "locator": {
+        "year": "1995",
+        "country_code": "ITA"
+      }
+    },
+    {
+      "date": "1996",
+      "value": "56860281",
+      "locator": {
+        "year": "1996",
+        "country_code": "ITA"
+      }
+    },
+    {
+      "date": "1997",
+      "value": "56890372",
+      "locator": {
+        "year": "1997",
+        "country_code": "ITA"
+      }
+    },
+    {
+      "date": "1998",
+      "value": "56906744",
+      "locator": {
+        "year": "1998",
+        "country_code": "ITA"
+      }
+    },
+    {
+      "date": "1999",
+      "value": "56916317",
+      "locator": {
+        "year": "1999",
+        "country_code": "ITA"
+      }
+    },
+    {
+      "date": "2000",
+      "value": "56942108",
+      "locator": {
+        "year": "2000",
+        "country_code": "ITA"
+      }
+    },
+    {
+      "date": "2001",
+      "value": "56976981",
+      "locator": {
+        "year": "2001",
+        "country_code": "ITA"
+      }
+    },
+    {
+      "date": "2002",
+      "value": "57089824",
+      "locator": {
+        "year": "2002",
+        "country_code": "ITA"
+      }
+    },
+    {
+      "date": "2003",
+      "value": "57399184",
+      "locator": {
+        "year": "2003",
+        "country_code": "ITA"
+      }
+    },
+    {
+      "date": "2004",
+      "value": "57828179",
+      "locator": {
+        "year": "2004",
+        "country_code": "ITA"
+      }
+    },
+    {
+      "date": "2005",
+      "value": "58166682",
+      "locator": {
+        "year": "2005",
+        "country_code": "ITA"
+      }
+    },
+    {
+      "date": "2006",
+      "value": "58399861",
+      "locator": {
+        "year": "2006",
+        "country_code": "ITA"
+      }
+    },
+    {
+      "date": "2007",
+      "value": "58756247",
+      "locator": {
+        "year": "2007",
+        "country_code": "ITA"
+      }
+    },
+    {
+      "date": "2008",
+      "value": "59211181",
+      "locator": {
+        "year": "2008",
+        "country_code": "ITA"
+      }
+    },
+    {
+      "date": "2009",
+      "value": "59555454",
+      "locator": {
+        "year": "2009",
+        "country_code": "ITA"
+      }
+    },
+    {
+      "date": "2010",
+      "value": "59819407",
+      "locator": {
+        "year": "2010",
+        "country_code": "ITA"
+      }
+    },
+    {
+      "date": "2011",
+      "value": "60026841",
+      "locator": {
+        "year": "2011",
+        "country_code": "ITA"
+      }
+    },
+    {
+      "date": "2012",
+      "value": "60191247",
+      "locator": {
+        "year": "2012",
+        "country_code": "ITA"
+      }
+    },
+    {
+      "date": "2013",
+      "value": "60311613",
+      "locator": {
+        "year": "2013",
+        "country_code": "ITA"
+      }
+    },
+    {
+      "date": "2014",
+      "value": "60320707",
+      "locator": {
+        "year": "2014",
+        "country_code": "ITA"
+      }
+    },
+    {
+      "date": "2015",
+      "value": "60229605",
+      "locator": {
+        "year": "2015",
+        "country_code": "ITA"
+      }
+    },
+    {
+      "date": "2016",
+      "value": "60115223",
+      "locator": {
+        "year": "2016",
+        "country_code": "ITA"
+      }
+    },
+    {
+      "date": "2017",
+      "value": "60002252",
+      "locator": {
+        "year": "2017",
+        "country_code": "ITA"
+      }
+    },
+    {
+      "date": "2018",
+      "value": "59877221",
+      "locator": {
+        "year": "2018",
+        "country_code": "ITA"
+      }
+    },
+    {
+      "date": "2019",
+      "value": "59729081",
+      "locator": {
+        "year": "2019",
+        "country_code": "ITA"
+      }
+    },
+    {
+      "date": "2020",
+      "value": "59438851",
+      "locator": {
+        "year": "2020",
+        "country_code": "ITA"
+      }
+    },
+    {
+      "date": "2021",
+      "value": "59133173",
+      "locator": {
+        "year": "2021",
+        "country_code": "ITA"
+      }
+    },
+    {
+      "date": "2022",
+      "value": "59013667",
+      "locator": {
+        "year": "2022",
+        "country_code": "ITA"
+      }
+    },
+    {
+      "date": "2023",
+      "value": "58984216",
+      "locator": {
+        "year": "2023",
+        "country_code": "ITA"
+      }
+    },
+    {
+      "date": "2024",
+      "value": "58952704",
+      "locator": {
+        "year": "2024",
+        "country_code": "ITA"
+      }
+    },
+    {
+      "date": "2025",
+      "value": "58915656",
+      "locator": {
+        "year": "2025",
+        "country_code": "ITA"
+      }
+    }
+  ]
+}

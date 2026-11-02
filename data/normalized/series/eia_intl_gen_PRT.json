@@ -1,0 +1,377 @@
+{
+  "id": "eia_intl_gen_PRT",
+  "name": "Net generation",
+  "units": "billion kilowatthours",
+  "adjustment": "annual",
+  "nominal_or_real": "generation",
+  "frequency": "annual",
+  "source_id": "eia_intl_bulk",
+  "series_url": "https://www.eia.gov/international/data/world/electricity/electricity-generation",
+  "eia_series_id": "INTL.2-12-PRT-BKWH.A",
+  "country_code": "PRT",
+  "country_name": "Portugal",
+  "population_status": "matched",
+  "notes": "EIA bulk series INTL.2-12-PRT-BKWH.A, Portugal. Annual. Billion kilowatthours. 1 billion kilowatthours = 1 terawatthour. Published years in this file run from 1980 to 2024.",
+  "points": [
+    {
+      "date": "1980",
+      "value": "14.948",
+      "locator": {
+        "year": "1980",
+        "series_id": "INTL.2-12-PRT-BKWH.A"
+      }
+    },
+    {
+      "date": "1981",
+      "value": "13.518",
+      "locator": {
+        "year": "1981",
+        "series_id": "INTL.2-12-PRT-BKWH.A"
+      }
+    },
+    {
+      "date": "1982",
+      "value": "15.089",
+      "locator": {
+        "year": "1982",
+        "series_id": "INTL.2-12-PRT-BKWH.A"
+      }
+    },
+    {
+      "date": "1983",
+      "value": "17.721",
+      "locator": {
+        "year": "1983",
+        "series_id": "INTL.2-12-PRT-BKWH.A"
+      }
+    },
+    {
+      "date": "1984",
+      "value": "18.83",
+      "locator": {
+        "year": "1984",
+        "series_id": "INTL.2-12-PRT-BKWH.A"
+      }
+    },
+    {
+      "date": "1985",
+      "value": "18.56",
+      "locator": {
+        "year": "1985",
+        "series_id": "INTL.2-12-PRT-BKWH.A"
+      }
+    },
+    {
+      "date": "1986",
+      "value": "19.886",
+      "locator": {
+        "year": "1986",
+        "series_id": "INTL.2-12-PRT-BKWH.A"
+      }
+    },
+    {
+      "date": "1987",
+      "value": "19.854",
+      "locator": {
+        "year": "1987",
+        "series_id": "INTL.2-12-PRT-BKWH.A"
+      }
+    },
+    {
+      "date": "1988",
+      "value": "20.894",
+      "locator": {
+        "year": "1988",
+        "series_id": "INTL.2-12-PRT-BKWH.A"
+      }
+    },
+    {
+      "date": "1989",
+      "value": "24.869",
+      "locator": {
+        "year": "1989",
+        "series_id": "INTL.2-12-PRT-BKWH.A"
+      }
+    },
+    {
+      "date": "1990",
+      "value": "27.09",
+      "locator": {
+        "year": "1990",
+        "series_id": "INTL.2-12-PRT-BKWH.A"
+      }
+    },
+    {
+      "date": "1991",
+      "value": "28.398",
+      "locator": {
+        "year": "1991",
+        "series_id": "INTL.2-12-PRT-BKWH.A"
+      }
+    },
+    {
+      "date": "1992",
+      "value": "27.983",
+      "locator": {
+        "year": "1992",
+        "series_id": "INTL.2-12-PRT-BKWH.A"
+      }
+    },
+    {
+      "date": "1993",
+      "value": "29.544",
+      "locator": {
+        "year": "1993",
+        "series_id": "INTL.2-12-PRT-BKWH.A"
+      }
+    },
+    {
+      "date": "1994",
+      "value": "30.03",
+      "locator": {
+        "year": "1994",
+        "series_id": "INTL.2-12-PRT-BKWH.A"
+      }
+    },
+    {
+      "date": "1995",
+      "value": "31.597",
+      "locator": {
+        "year": "1995",
+        "series_id": "INTL.2-12-PRT-BKWH.A"
+      }
+    },
+    {
+      "date": "1996",
+      "value": "33.118",
+      "locator": {
+        "year": "1996",
+        "series_id": "INTL.2-12-PRT-BKWH.A"
+      }
+    },
+    {
+      "date": "1997",
+      "value": "32.78295",
+      "locator": {
+        "year": "1997",
+        "series_id": "INTL.2-12-PRT-BKWH.A"
+      }
+    },
+    {
+      "date": "1998",
+      "value": "37.267",
+      "locator": {
+        "year": "1998",
+        "series_id": "INTL.2-12-PRT-BKWH.A"
+      }
+    },
+    {
+      "date": "1999",
+      "value": "40.67",
+      "locator": {
+        "year": "1999",
+        "series_id": "INTL.2-12-PRT-BKWH.A"
+      }
+    },
+    {
+      "date": "2000",
+      "value": "43.093",
+      "locator": {
+        "year": "2000",
+        "series_id": "INTL.2-12-PRT-BKWH.A"
+      }
+    },
+    {
+      "date": "2001",
+      "value": "45.884",
+      "locator": {
+        "year": "2001",
+        "series_id": "INTL.2-12-PRT-BKWH.A"
+      }
+    },
+    {
+      "date": "2002",
+      "value": "45.359",
+      "locator": {
+        "year": "2002",
+        "series_id": "INTL.2-12-PRT-BKWH.A"
+      }
+    },
+    {
+      "date": "2003",
+      "value": "46.21",
+      "locator": {
+        "year": "2003",
+        "series_id": "INTL.2-12-PRT-BKWH.A"
+      }
+    },
+    {
+      "date": "2004",
+      "value": "44.598",
+      "locator": {
+        "year": "2004",
+        "series_id": "INTL.2-12-PRT-BKWH.A"
+      }
+    },
+    {
+      "date": "2005",
+      "value": "45.96",
+      "locator": {
+        "year": "2005",
+        "series_id": "INTL.2-12-PRT-BKWH.A"
+      }
+    },
+    {
+      "date": "2006",
+      "value": "48.228",
+      "locator": {
+        "year": "2006",
+        "series_id": "INTL.2-12-PRT-BKWH.A"
+      }
+    },
+    {
+      "date": "2007",
+      "value": "46.612",
+      "locator": {
+        "year": "2007",
+        "series_id": "INTL.2-12-PRT-BKWH.A"
+      }
+    },
+    {
+      "date": "2008",
+      "value": "45.262",
+      "locator": {
+        "year": "2008",
+        "series_id": "INTL.2-12-PRT-BKWH.A"
+      }
+    },
+    {
+      "date": "2009",
+      "value": "49.195",
+      "locator": {
+        "year": "2009",
+        "series_id": "INTL.2-12-PRT-BKWH.A"
+      }
+    },
+    {
+      "date": "2010",
+      "value": "53.2759",
+      "locator": {
+        "year": "2010",
+        "series_id": "INTL.2-12-PRT-BKWH.A"
+      }
+    },
+    {
+      "date": "2011",
+      "value": "51.5225",
+      "locator": {
+        "year": "2011",
+        "series_id": "INTL.2-12-PRT-BKWH.A"
+      }
+    },
+    {
+      "date": "2012",
+      "value": "45.1304",
+      "locator": {
+        "year": "2012",
+        "series_id": "INTL.2-12-PRT-BKWH.A"
+      }
+    },
+    {
+      "date": "2013",
+      "value": "49.9917",
+      "locator": {
+        "year": "2013",
+        "series_id": "INTL.2-12-PRT-BKWH.A"
+      }
+    },
+    {
+      "date": "2014",
+      "value": "51.4647",
+      "locator": {
+        "year": "2014",
+        "series_id": "INTL.2-12-PRT-BKWH.A"
+      }
+    },
+    {
+      "date": "2015",
+      "value": "50.7588",
+      "locator": {
+        "year": "2015",
+        "series_id": "INTL.2-12-PRT-BKWH.A"
+      }
+    },
+    {
+      "date": "2016",
+      "value": "58.5427",
+      "locator": {
+        "year": "2016",
+        "series_id": "INTL.2-12-PRT-BKWH.A"
+      }
+    },
+    {
+      "date": "2017",
+      "value": "56.9419",
+      "locator": {
+        "year": "2017",
+        "series_id": "INTL.2-12-PRT-BKWH.A"
+      }
+    },
+    {
+      "date": "2018",
+      "value": "57.8527",
+      "locator": {
+        "year": "2018",
+        "series_id": "INTL.2-12-PRT-BKWH.A"
+      }
+    },
+    {
+      "date": "2019",
+      "value": "51.0464",
+      "locator": {
+        "year": "2019",
+        "series_id": "INTL.2-12-PRT-BKWH.A"
+      }
+    },
+    {
+      "date": "2020",
+      "value": "51.0902",
+      "locator": {
+        "year": "2020",
+        "series_id": "INTL.2-12-PRT-BKWH.A"
+      }
+    },
+    {
+      "date": "2021",
+      "value": "48.7717",
+      "locator": {
+        "year": "2021",
+        "series_id": "INTL.2-12-PRT-BKWH.A"
+      }
+    },
+    {
+      "date": "2022",
+      "value": "46.3150629",
+      "locator": {
+        "year": "2022",
+        "series_id": "INTL.2-12-PRT-BKWH.A"
+      }
+    },
+    {
+      "date": "2023",
+      "value": "45.268888343",
+      "locator": {
+        "year": "2023",
+        "series_id": "INTL.2-12-PRT-BKWH.A"
+      }
+    },
+    {
+      "date": "2024",
+      "value": "45.78213002",
+      "locator": {
+        "year": "2024",
+        "series_id": "INTL.2-12-PRT-BKWH.A"
+      }
+    }
+  ]
+}

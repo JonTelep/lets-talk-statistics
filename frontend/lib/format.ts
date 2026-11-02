@@ -23,6 +23,9 @@ const ADJUSTMENT_LABELS: Record<string, string> = {
   rate: 'Rate',
   share_of_gdp: 'Share of GDP',
   count: 'Count',
+  generation: 'Generation',
+  share: 'Share',
+  ratio: 'Ratio',
 };
 
 function shortName(name: string): string {

@@ -1,0 +1,543 @@
+{
+  "id": "wb_pop_MAC",
+  "name": "Macau",
+  "units": "people",
+  "adjustment": "midyear",
+  "nominal_or_real": "count",
+  "frequency": "annual",
+  "source_id": "worldbank_sp_pop_totl",
+  "series_url": "https://data.worldbank.org/indicator/SP.POP.TOTL",
+  "country_code": "MAC",
+  "country_name": "Macau",
+  "notes": "World Bank World Development Indicators, SP.POP.TOTL, country code MAC. Midyear population. Published years in this file run from 1960 to 2025.",
+  "points": [
+    {
+      "date": "1960",
+      "value": "173315",
+      "locator": {
+        "year": "1960",
+        "country_code": "MAC"
+      }
+    },
+    {
+      "date": "1961",
+      "value": "173323",
+      "locator": {
+        "year": "1961",
+        "country_code": "MAC"
+      }
+    },
+    {
+      "date": "1962",
+      "value": "177810",
+      "locator": {
+        "year": "1962",
+        "country_code": "MAC"
+      }
+    },
+    {
+      "date": "1963",
+      "value": "182135",
+      "locator": {
+        "year": "1963",
+        "country_code": "MAC"
+      }
+    },
+    {
+      "date": "1964",
+      "value": "225655",
+      "locator": {
+        "year": "1964",
+        "country_code": "MAC"
+      }
+    },
+    {
+      "date": "1965",
+      "value": "265631",
+      "locator": {
+        "year": "1965",
+        "country_code": "MAC"
+      }
+    },
+    {
+      "date": "1966",
+      "value": "262942",
+      "locator": {
+        "year": "1966",
+        "country_code": "MAC"
+      }
+    },
+    {
+      "date": "1967",
+      "value": "260423",
+      "locator": {
+        "year": "1967",
+        "country_code": "MAC"
+      }
+    },
+    {
+      "date": "1968",
+      "value": "257933",
+      "locator": {
+        "year": "1968",
+        "country_code": "MAC"
+      }
+    },
+    {
+      "date": "1969",
+      "value": "255306",
+      "locator": {
+        "year": "1969",
+        "country_code": "MAC"
+      }
+    },
+    {
+      "date": "1970",
+      "value": "257396",
+      "locator": {
+        "year": "1970",
+        "country_code": "MAC"
+      }
+    },
+    {
+      "date": "1971",
+      "value": "247400",
+      "locator": {
+        "year": "1971",
+        "country_code": "MAC"
+      }
+    },
+    {
+      "date": "1972",
+      "value": "245050",
+      "locator": {
+        "year": "1972",
+        "country_code": "MAC"
+      }
+    },
+    {
+      "date": "1973",
+      "value": "242800",
+      "locator": {
+        "year": "1973",
+        "country_code": "MAC"
+      }
+    },
+    {
+      "date": "1974",
+      "value": "240550",
+      "locator": {
+        "year": "1974",
+        "country_code": "MAC"
+      }
+    },
+    {
+      "date": "1975",
+      "value": "238200",
+      "locator": {
+        "year": "1975",
+        "country_code": "MAC"
+      }
+    },
+    {
+      "date": "1976",
+      "value": "235600",
+      "locator": {
+        "year": "1976",
+        "country_code": "MAC"
+      }
+    },
+    {
+      "date": "1977",
+      "value": "232950",
+      "locator": {
+        "year": "1977",
+        "country_code": "MAC"
+      }
+    },
+    {
+      "date": "1978",
+      "value": "232400",
+      "locator": {
+        "year": "1978",
+        "country_code": "MAC"
+      }
+    },
+    {
+      "date": "1979",
+      "value": "235200",
+      "locator": {
+        "year": "1979",
+        "country_code": "MAC"
+      }
+    },
+    {
+      "date": "1980",
+      "value": "239650",
+      "locator": {
+        "year": "1980",
+        "country_code": "MAC"
+      }
+    },
+    {
+      "date": "1981",
+      "value": "244800",
+      "locator": {
+        "year": "1981",
+        "country_code": "MAC"
+      }
+    },
+    {
+      "date": "1982",
+      "value": "254650",
+      "locator": {
+        "year": "1982",
+        "country_code": "MAC"
+      }
+    },
+    {
+      "date": "1983",
+      "value": "269300",
+      "locator": {
+        "year": "1983",
+        "country_code": "MAC"
+      }
+    },
+    {
+      "date": "1984",
+      "value": "282850",
+      "locator": {
+        "year": "1984",
+        "country_code": "MAC"
+      }
+    },
+    {
+      "date": "1985",
+      "value": "289700",
+      "locator": {
+        "year": "1985",
+        "country_code": "MAC"
+      }
+    },
+    {
+      "date": "1986",
+      "value": "296050",
+      "locator": {
+        "year": "1986",
+        "country_code": "MAC"
+      }
+    },
+    {
+      "date": "1987",
+      "value": "306850",
+      "locator": {
+        "year": "1987",
+        "country_code": "MAC"
+      }
+    },
+    {
+      "date": "1988",
+      "value": "316000",
+      "locator": {
+        "year": "1988",
+        "country_code": "MAC"
+      }
+    },
+    {
+      "date": "1989",
+      "value": "325100",
+      "locator": {
+        "year": "1989",
+        "country_code": "MAC"
+      }
+    },
+    {
+      "date": "1990",
+      "value": "334950",
+      "locator": {
+        "year": "1990",
+        "country_code": "MAC"
+      }
+    },
+    {
+      "date": "1991",
+      "value": "351650",
+      "locator": {
+        "year": "1991",
+        "country_code": "MAC"
+      }
+    },
+    {
+      "date": "1992",
+      "value": "370900",
+      "locator": {
+        "year": "1992",
+        "country_code": "MAC"
+      }
+    },
+    {
+      "date": "1993",
+      "value": "384000",
+      "locator": {
+        "year": "1993",
+        "country_code": "MAC"
+      }
+    },
+    {
+      "date": "1994",
+      "value": "396800",
+      "locator": {
+        "year": "1994",
+        "country_code": "MAC"
+      }
+    },
+    {
+      "date": "1995",
+      "value": "409300",
+      "locator": {
+        "year": "1995",
+        "country_code": "MAC"
+      }
+    },
+    {
+      "date": "1996",
+      "value": "415100",
+      "locator": {
+        "year": "1996",
+        "country_code": "MAC"
+      }
+    },
+    {
+      "date": "1997",
+      "value": "417300",
+      "locator": {
+        "year": "1997",
+        "country_code": "MAC"
+      }
+    },
+    {
+      "date": "1998",
+      "value": "422300",
+      "locator": {
+        "year": "1998",
+        "country_code": "MAC"
+      }
+    },
+    {
+      "date": "1999",
+      "value": "427400",
+      "locator": {
+        "year": "1999",
+        "country_code": "MAC"
+      }
+    },
+    {
+      "date": "2000",
+      "value": "430600",
+      "locator": {
+        "year": "2000",
+        "country_code": "MAC"
+      }
+    },
+    {
+      "date": "2001",
+      "value": "433900",
+      "locator": {
+        "year": "2001",
+        "country_code": "MAC"
+      }
+    },
+    {
+      "date": "2002",
+      "value": "438400",
+      "locator": {
+        "year": "2002",
+        "country_code": "MAC"
+      }
+    },
+    {
+      "date": "2003",
+      "value": "443600",
+      "locator": {
+        "year": "2003",
+        "country_code": "MAC"
+      }
+    },
+    {
+      "date": "2004",
+      "value": "454700",
+      "locator": {
+        "year": "2004",
+        "country_code": "MAC"
+      }
+    },
+    {
+      "date": "2005",
+      "value": "473500",
+      "locator": {
+        "year": "2005",
+        "country_code": "MAC"
+      }
+    },
+    {
+      "date": "2006",
+      "value": "498900",
+      "locator": {
+        "year": "2006",
+        "country_code": "MAC"
+      }
+    },
+    {
+      "date": "2007",
+      "value": "520900",
+      "locator": {
+        "year": "2007",
+        "country_code": "MAC"
+      }
+    },
+    {
+      "date": "2008",
+      "value": "540700",
+      "locator": {
+        "year": "2008",
+        "country_code": "MAC"
+      }
+    },
+    {
+      "date": "2009",
+      "value": "535000",
+      "locator": {
+        "year": "2009",
+        "country_code": "MAC"
+      }
+    },
+    {
+      "date": "2010",
+      "value": "537000",
+      "locator": {
+        "year": "2010",
+        "country_code": "MAC"
+      }
+    },
+    {
+      "date": "2011",
+      "value": "549600",
+      "locator": {
+        "year": "2011",
+        "country_code": "MAC"
+      }
+    },
+    {
+      "date": "2012",
+      "value": "567900",
+      "locator": {
+        "year": "2012",
+        "country_code": "MAC"
+      }
+    },
+    {
+      "date": "2013",
+      "value": "591900",
+      "locator": {
+        "year": "2013",
+        "country_code": "MAC"
+      }
+    },
+    {
+      "date": "2014",
+      "value": "621700",
+      "locator": {
+        "year": "2014",
+        "country_code": "MAC"
+      }
+    },
+    {
+      "date": "2015",
+      "value": "642900",
+      "locator": {
+        "year": "2015",
+        "country_code": "MAC"
+      }
+    },
+    {
+      "date": "2016",
+      "value": "652500",
+      "locator": {
+        "year": "2016",
+        "country_code": "MAC"
+      }
+    },
+    {
+      "date": "2017",
+      "value": "648400",
+      "locator": {
+        "year": "2017",
+        "country_code": "MAC"
+      }
+    },
+    {
+      "date": "2018",
+      "value": "658900",
+      "locator": {
+        "year": "2018",
+        "country_code": "MAC"
+      }
+    },
+    {
+      "date": "2019",
+      "value": "672000",
+      "locator": {
+        "year": "2019",
+        "country_code": "MAC"
+      }
+    },
+    {
+      "date": "2020",
+      "value": "685400",
+      "locator": {
+        "year": "2020",
+        "country_code": "MAC"
+      }
+    },
+    {
+      "date": "2021",
+      "value": "682500",
+      "locator": {
+        "year": "2021",
+        "country_code": "MAC"
+      }
+    },
+    {
+      "date": "2022",
+      "value": "677300",
+      "locator": {
+        "year": "2022",
+        "country_code": "MAC"
+      }
+    },
+    {
+      "date": "2023",
+      "value": "678800",
+      "locator": {
+        "year": "2023",
+        "country_code": "MAC"
+      }
+    },
+    {
+      "date": "2024",
+      "value": "687000",
+      "locator": {
+        "year": "2024",
+        "country_code": "MAC"
+      }
+    },
+    {
+      "date": "2025",
+      "value": "685900",
+      "locator": {
+        "year": "2025",
+        "country_code": "MAC"
+      }
+    }
+  ]
+}

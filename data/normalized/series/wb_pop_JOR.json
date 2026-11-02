@@ -1,0 +1,543 @@
+{
+  "id": "wb_pop_JOR",
+  "name": "Jordan",
+  "units": "people",
+  "adjustment": "midyear",
+  "nominal_or_real": "count",
+  "frequency": "annual",
+  "source_id": "worldbank_sp_pop_totl",
+  "series_url": "https://data.worldbank.org/indicator/SP.POP.TOTL",
+  "country_code": "JOR",
+  "country_name": "Jordan",
+  "notes": "World Bank World Development Indicators, SP.POP.TOTL, country code JOR. Midyear population. Published years in this file run from 1960 to 2025.",
+  "points": [
+    {
+      "date": "1960",
+      "value": "853471",
+      "locator": {
+        "year": "1960",
+        "country_code": "JOR"
+      }
+    },
+    {
+      "date": "1961",
+      "value": "897591",
+      "locator": {
+        "year": "1961",
+        "country_code": "JOR"
+      }
+    },
+    {
+      "date": "1962",
+      "value": "940554",
+      "locator": {
+        "year": "1962",
+        "country_code": "JOR"
+      }
+    },
+    {
+      "date": "1963",
+      "value": "984714",
+      "locator": {
+        "year": "1963",
+        "country_code": "JOR"
+      }
+    },
+    {
+      "date": "1964",
+      "value": "1035640",
+      "locator": {
+        "year": "1964",
+        "country_code": "JOR"
+      }
+    },
+    {
+      "date": "1965",
+      "value": "1099440",
+      "locator": {
+        "year": "1965",
+        "country_code": "JOR"
+      }
+    },
+    {
+      "date": "1966",
+      "value": "1178360",
+      "locator": {
+        "year": "1966",
+        "country_code": "JOR"
+      }
+    },
+    {
+      "date": "1967",
+      "value": "1271183",
+      "locator": {
+        "year": "1967",
+        "country_code": "JOR"
+      }
+    },
+    {
+      "date": "1968",
+      "value": "1372460",
+      "locator": {
+        "year": "1968",
+        "country_code": "JOR"
+      }
+    },
+    {
+      "date": "1969",
+      "value": "1473100",
+      "locator": {
+        "year": "1969",
+        "country_code": "JOR"
+      }
+    },
+    {
+      "date": "1970",
+      "value": "1565163",
+      "locator": {
+        "year": "1970",
+        "country_code": "JOR"
+      }
+    },
+    {
+      "date": "1971",
+      "value": "1645145",
+      "locator": {
+        "year": "1971",
+        "country_code": "JOR"
+      }
+    },
+    {
+      "date": "1972",
+      "value": "1714555",
+      "locator": {
+        "year": "1972",
+        "country_code": "JOR"
+      }
+    },
+    {
+      "date": "1973",
+      "value": "1778094",
+      "locator": {
+        "year": "1973",
+        "country_code": "JOR"
+      }
+    },
+    {
+      "date": "1974",
+      "value": "1839182",
+      "locator": {
+        "year": "1974",
+        "country_code": "JOR"
+      }
+    },
+    {
+      "date": "1975",
+      "value": "1899055",
+      "locator": {
+        "year": "1975",
+        "country_code": "JOR"
+      }
+    },
+    {
+      "date": "1976",
+      "value": "1958177",
+      "locator": {
+        "year": "1976",
+        "country_code": "JOR"
+      }
+    },
+    {
+      "date": "1977",
+      "value": "2019002",
+      "locator": {
+        "year": "1977",
+        "country_code": "JOR"
+      }
+    },
+    {
+      "date": "1978",
+      "value": "2083595",
+      "locator": {
+        "year": "1978",
+        "country_code": "JOR"
+      }
+    },
+    {
+      "date": "1979",
+      "value": "2153882",
+      "locator": {
+        "year": "1979",
+        "country_code": "JOR"
+      }
+    },
+    {
+      "date": "1980",
+      "value": "2234186",
+      "locator": {
+        "year": "1980",
+        "country_code": "JOR"
+      }
+    },
+    {
+      "date": "1981",
+      "value": "2325517",
+      "locator": {
+        "year": "1981",
+        "country_code": "JOR"
+      }
+    },
+    {
+      "date": "1982",
+      "value": "2426927",
+      "locator": {
+        "year": "1982",
+        "country_code": "JOR"
+      }
+    },
+    {
+      "date": "1983",
+      "value": "2537307",
+      "locator": {
+        "year": "1983",
+        "country_code": "JOR"
+      }
+    },
+    {
+      "date": "1984",
+      "value": "2654688",
+      "locator": {
+        "year": "1984",
+        "country_code": "JOR"
+      }
+    },
+    {
+      "date": "1985",
+      "value": "2778810",
+      "locator": {
+        "year": "1985",
+        "country_code": "JOR"
+      }
+    },
+    {
+      "date": "1986",
+      "value": "2909887",
+      "locator": {
+        "year": "1986",
+        "country_code": "JOR"
+      }
+    },
+    {
+      "date": "1987",
+      "value": "3047634",
+      "locator": {
+        "year": "1987",
+        "country_code": "JOR"
+      }
+    },
+    {
+      "date": "1988",
+      "value": "3193039",
+      "locator": {
+        "year": "1988",
+        "country_code": "JOR"
+      }
+    },
+    {
+      "date": "1989",
+      "value": "3349627",
+      "locator": {
+        "year": "1989",
+        "country_code": "JOR"
+      }
+    },
+    {
+      "date": "1990",
+      "value": "3621908",
+      "locator": {
+        "year": "1990",
+        "country_code": "JOR"
+      }
+    },
+    {
+      "date": "1991",
+      "value": "3915149",
+      "locator": {
+        "year": "1991",
+        "country_code": "JOR"
+      }
+    },
+    {
+      "date": "1992",
+      "value": "4127693",
+      "locator": {
+        "year": "1992",
+        "country_code": "JOR"
+      }
+    },
+    {
+      "date": "1993",
+      "value": "4348020",
+      "locator": {
+        "year": "1993",
+        "country_code": "JOR"
+      }
+    },
+    {
+      "date": "1994",
+      "value": "4561406",
+      "locator": {
+        "year": "1994",
+        "country_code": "JOR"
+      }
+    },
+    {
+      "date": "1995",
+      "value": "4752096",
+      "locator": {
+        "year": "1995",
+        "country_code": "JOR"
+      }
+    },
+    {
+      "date": "1996",
+      "value": "4912516",
+      "locator": {
+        "year": "1996",
+        "country_code": "JOR"
+      }
+    },
+    {
+      "date": "1997",
+      "value": "5046285",
+      "locator": {
+        "year": "1997",
+        "country_code": "JOR"
+      }
+    },
+    {
+      "date": "1998",
+      "value": "5164284",
+      "locator": {
+        "year": "1998",
+        "country_code": "JOR"
+      }
+    },
+    {
+      "date": "1999",
+      "value": "5276444",
+      "locator": {
+        "year": "1999",
+        "country_code": "JOR"
+      }
+    },
+    {
+      "date": "2000",
+      "value": "5386945",
+      "locator": {
+        "year": "2000",
+        "country_code": "JOR"
+      }
+    },
+    {
+      "date": "2001",
+      "value": "5498894",
+      "locator": {
+        "year": "2001",
+        "country_code": "JOR"
+      }
+    },
+    {
+      "date": "2002",
+      "value": "5616066",
+      "locator": {
+        "year": "2002",
+        "country_code": "JOR"
+      }
+    },
+    {
+      "date": "2003",
+      "value": "5741828",
+      "locator": {
+        "year": "2003",
+        "country_code": "JOR"
+      }
+    },
+    {
+      "date": "2004",
+      "value": "5882061",
+      "locator": {
+        "year": "2004",
+        "country_code": "JOR"
+      }
+    },
+    {
+      "date": "2005",
+      "value": "6029587",
+      "locator": {
+        "year": "2005",
+        "country_code": "JOR"
+      }
+    },
+    {
+      "date": "2006",
+      "value": "6427371",
+      "locator": {
+        "year": "2006",
+        "country_code": "JOR"
+      }
+    },
+    {
+      "date": "2007",
+      "value": "6827227",
+      "locator": {
+        "year": "2007",
+        "country_code": "JOR"
+      }
+    },
+    {
+      "date": "2008",
+      "value": "6989866",
+      "locator": {
+        "year": "2008",
+        "country_code": "JOR"
+      }
+    },
+    {
+      "date": "2009",
+      "value": "7141753",
+      "locator": {
+        "year": "2009",
+        "country_code": "JOR"
+      }
+    },
+    {
+      "date": "2010",
+      "value": "7297043",
+      "locator": {
+        "year": "2010",
+        "country_code": "JOR"
+      }
+    },
+    {
+      "date": "2011",
+      "value": "7480424",
+      "locator": {
+        "year": "2011",
+        "country_code": "JOR"
+      }
+    },
+    {
+      "date": "2012",
+      "value": "7587127",
+      "locator": {
+        "year": "2012",
+        "country_code": "JOR"
+      }
+    },
+    {
+      "date": "2013",
+      "value": "7991809",
+      "locator": {
+        "year": "2013",
+        "country_code": "JOR"
+      }
+    },
+    {
+      "date": "2014",
+      "value": "8791710",
+      "locator": {
+        "year": "2014",
+        "country_code": "JOR"
+      }
+    },
+    {
+      "date": "2015",
+      "value": "9544729",
+      "locator": {
+        "year": "2015",
+        "country_code": "JOR"
+      }
+    },
+    {
+      "date": "2016",
+      "value": "10006367",
+      "locator": {
+        "year": "2016",
+        "country_code": "JOR"
+      }
+    },
+    {
+      "date": "2017",
+      "value": "10234226",
+      "locator": {
+        "year": "2017",
+        "country_code": "JOR"
+      }
+    },
+    {
+      "date": "2018",
+      "value": "10462306",
+      "locator": {
+        "year": "2018",
+        "country_code": "JOR"
+      }
+    },
+    {
+      "date": "2019",
+      "value": "10671891",
+      "locator": {
+        "year": "2019",
+        "country_code": "JOR"
+      }
+    },
+    {
+      "date": "2020",
+      "value": "10865228",
+      "locator": {
+        "year": "2020",
+        "country_code": "JOR"
+      }
+    },
+    {
+      "date": "2021",
+      "value": "11066356",
+      "locator": {
+        "year": "2021",
+        "country_code": "JOR"
+      }
+    },
+    {
+      "date": "2022",
+      "value": "11256263",
+      "locator": {
+        "year": "2022",
+        "country_code": "JOR"
+      }
+    },
+    {
+      "date": "2023",
+      "value": "11439213",
+      "locator": {
+        "year": "2023",
+        "country_code": "JOR"
+      }
+    },
+    {
+      "date": "2024",
+      "value": "11552876",
+      "locator": {
+        "year": "2024",
+        "country_code": "JOR"
+      }
+    },
+    {
+      "date": "2025",
+      "value": "11520684",
+      "locator": {
+        "year": "2025",
+        "country_code": "JOR"
+      }
+    }
+  ]
+}

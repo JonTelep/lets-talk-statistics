@@ -1,0 +1,543 @@
+{
+  "id": "wb_pop_THA",
+  "name": "Thailand",
+  "units": "people",
+  "adjustment": "midyear",
+  "nominal_or_real": "count",
+  "frequency": "annual",
+  "source_id": "worldbank_sp_pop_totl",
+  "series_url": "https://data.worldbank.org/indicator/SP.POP.TOTL",
+  "country_code": "THA",
+  "country_name": "Thailand",
+  "notes": "World Bank World Development Indicators, SP.POP.TOTL, country code THA. Midyear population. Published years in this file run from 1960 to 2025.",
+  "points": [
+    {
+      "date": "1960",
+      "value": "26851747",
+      "locator": {
+        "year": "1960",
+        "country_code": "THA"
+      }
+    },
+    {
+      "date": "1961",
+      "value": "27650334",
+      "locator": {
+        "year": "1961",
+        "country_code": "THA"
+      }
+    },
+    {
+      "date": "1962",
+      "value": "28481040",
+      "locator": {
+        "year": "1962",
+        "country_code": "THA"
+      }
+    },
+    {
+      "date": "1963",
+      "value": "29342322",
+      "locator": {
+        "year": "1963",
+        "country_code": "THA"
+      }
+    },
+    {
+      "date": "1964",
+      "value": "30232141",
+      "locator": {
+        "year": "1964",
+        "country_code": "THA"
+      }
+    },
+    {
+      "date": "1965",
+      "value": "31149337",
+      "locator": {
+        "year": "1965",
+        "country_code": "THA"
+      }
+    },
+    {
+      "date": "1966",
+      "value": "32086071",
+      "locator": {
+        "year": "1966",
+        "country_code": "THA"
+      }
+    },
+    {
+      "date": "1967",
+      "value": "33037801",
+      "locator": {
+        "year": "1967",
+        "country_code": "THA"
+      }
+    },
+    {
+      "date": "1968",
+      "value": "34002560",
+      "locator": {
+        "year": "1968",
+        "country_code": "THA"
+      }
+    },
+    {
+      "date": "1969",
+      "value": "34973782",
+      "locator": {
+        "year": "1969",
+        "country_code": "THA"
+      }
+    },
+    {
+      "date": "1970",
+      "value": "35954408",
+      "locator": {
+        "year": "1970",
+        "country_code": "THA"
+      }
+    },
+    {
+      "date": "1971",
+      "value": "36937387",
+      "locator": {
+        "year": "1971",
+        "country_code": "THA"
+      }
+    },
+    {
+      "date": "1972",
+      "value": "37933929",
+      "locator": {
+        "year": "1972",
+        "country_code": "THA"
+      }
+    },
+    {
+      "date": "1973",
+      "value": "38947787",
+      "locator": {
+        "year": "1973",
+        "country_code": "THA"
+      }
+    },
+    {
+      "date": "1974",
+      "value": "39952891",
+      "locator": {
+        "year": "1974",
+        "country_code": "THA"
+      }
+    },
+    {
+      "date": "1975",
+      "value": "40940005",
+      "locator": {
+        "year": "1975",
+        "country_code": "THA"
+      }
+    },
+    {
+      "date": "1976",
+      "value": "41896504",
+      "locator": {
+        "year": "1976",
+        "country_code": "THA"
+      }
+    },
+    {
+      "date": "1977",
+      "value": "42843974",
+      "locator": {
+        "year": "1977",
+        "country_code": "THA"
+      }
+    },
+    {
+      "date": "1978",
+      "value": "43788976",
+      "locator": {
+        "year": "1978",
+        "country_code": "THA"
+      }
+    },
+    {
+      "date": "1979",
+      "value": "44718434",
+      "locator": {
+        "year": "1979",
+        "country_code": "THA"
+      }
+    },
+    {
+      "date": "1980",
+      "value": "45650022",
+      "locator": {
+        "year": "1980",
+        "country_code": "THA"
+      }
+    },
+    {
+      "date": "1981",
+      "value": "46575855",
+      "locator": {
+        "year": "1981",
+        "country_code": "THA"
+      }
+    },
+    {
+      "date": "1982",
+      "value": "47494577",
+      "locator": {
+        "year": "1982",
+        "country_code": "THA"
+      }
+    },
+    {
+      "date": "1983",
+      "value": "48423309",
+      "locator": {
+        "year": "1983",
+        "country_code": "THA"
+      }
+    },
+    {
+      "date": "1984",
+      "value": "49351708",
+      "locator": {
+        "year": "1984",
+        "country_code": "THA"
+      }
+    },
+    {
+      "date": "1985",
+      "value": "50270753",
+      "locator": {
+        "year": "1985",
+        "country_code": "THA"
+      }
+    },
+    {
+      "date": "1986",
+      "value": "51177834",
+      "locator": {
+        "year": "1986",
+        "country_code": "THA"
+      }
+    },
+    {
+      "date": "1987",
+      "value": "52074105",
+      "locator": {
+        "year": "1987",
+        "country_code": "THA"
+      }
+    },
+    {
+      "date": "1988",
+      "value": "52969595",
+      "locator": {
+        "year": "1988",
+        "country_code": "THA"
+      }
+    },
+    {
+      "date": "1989",
+      "value": "53848956",
+      "locator": {
+        "year": "1989",
+        "country_code": "THA"
+      }
+    },
+    {
+      "date": "1990",
+      "value": "54738329",
+      "locator": {
+        "year": "1990",
+        "country_code": "THA"
+      }
+    },
+    {
+      "date": "1991",
+      "value": "55637434",
+      "locator": {
+        "year": "1991",
+        "country_code": "THA"
+      }
+    },
+    {
+      "date": "1992",
+      "value": "56528834",
+      "locator": {
+        "year": "1992",
+        "country_code": "THA"
+      }
+    },
+    {
+      "date": "1993",
+      "value": "57408198",
+      "locator": {
+        "year": "1993",
+        "country_code": "THA"
+      }
+    },
+    {
+      "date": "1994",
+      "value": "58260854",
+      "locator": {
+        "year": "1994",
+        "country_code": "THA"
+      }
+    },
+    {
+      "date": "1995",
+      "value": "59098232",
+      "locator": {
+        "year": "1995",
+        "country_code": "THA"
+      }
+    },
+    {
+      "date": "1996",
+      "value": "59920064",
+      "locator": {
+        "year": "1996",
+        "country_code": "THA"
+      }
+    },
+    {
+      "date": "1997",
+      "value": "60724584",
+      "locator": {
+        "year": "1997",
+        "country_code": "THA"
+      }
+    },
+    {
+      "date": "1998",
+      "value": "61522630",
+      "locator": {
+        "year": "1998",
+        "country_code": "THA"
+      }
+    },
+    {
+      "date": "1999",
+      "value": "62299043",
+      "locator": {
+        "year": "1999",
+        "country_code": "THA"
+      }
+    },
+    {
+      "date": "2000",
+      "value": "63007815",
+      "locator": {
+        "year": "2000",
+        "country_code": "THA"
+      }
+    },
+    {
+      "date": "2001",
+      "value": "63651141",
+      "locator": {
+        "year": "2001",
+        "country_code": "THA"
+      }
+    },
+    {
+      "date": "2002",
+      "value": "64266437",
+      "locator": {
+        "year": "2002",
+        "country_code": "THA"
+      }
+    },
+    {
+      "date": "2003",
+      "value": "64868166",
+      "locator": {
+        "year": "2003",
+        "country_code": "THA"
+      }
+    },
+    {
+      "date": "2004",
+      "value": "65452047",
+      "locator": {
+        "year": "2004",
+        "country_code": "THA"
+      }
+    },
+    {
+      "date": "2005",
+      "value": "66017420",
+      "locator": {
+        "year": "2005",
+        "country_code": "THA"
+      }
+    },
+    {
+      "date": "2006",
+      "value": "66567687",
+      "locator": {
+        "year": "2006",
+        "country_code": "THA"
+      }
+    },
+    {
+      "date": "2007",
+      "value": "67102394",
+      "locator": {
+        "year": "2007",
+        "country_code": "THA"
+      }
+    },
+    {
+      "date": "2008",
+      "value": "67619830",
+      "locator": {
+        "year": "2008",
+        "country_code": "THA"
+      }
+    },
+    {
+      "date": "2009",
+      "value": "68121080",
+      "locator": {
+        "year": "2009",
+        "country_code": "THA"
+      }
+    },
+    {
+      "date": "2010",
+      "value": "68579447",
+      "locator": {
+        "year": "2010",
+        "country_code": "THA"
+      }
+    },
+    {
+      "date": "2011",
+      "value": "69007208",
+      "locator": {
+        "year": "2011",
+        "country_code": "THA"
+      }
+    },
+    {
+      "date": "2012",
+      "value": "69436098",
+      "locator": {
+        "year": "2012",
+        "country_code": "THA"
+      }
+    },
+    {
+      "date": "2013",
+      "value": "69845114",
+      "locator": {
+        "year": "2013",
+        "country_code": "THA"
+      }
+    },
+    {
+      "date": "2014",
+      "value": "70216367",
+      "locator": {
+        "year": "2014",
+        "country_code": "THA"
+      }
+    },
+    {
+      "date": "2015",
+      "value": "70540795",
+      "locator": {
+        "year": "2015",
+        "country_code": "THA"
+      }
+    },
+    {
+      "date": "2016",
+      "value": "70859841",
+      "locator": {
+        "year": "2016",
+        "country_code": "THA"
+      }
+    },
+    {
+      "date": "2017",
+      "value": "71160187",
+      "locator": {
+        "year": "2017",
+        "country_code": "THA"
+      }
+    },
+    {
+      "date": "2018",
+      "value": "71376079",
+      "locator": {
+        "year": "2018",
+        "country_code": "THA"
+      }
+    },
+    {
+      "date": "2019",
+      "value": "71522271",
+      "locator": {
+        "year": "2019",
+        "country_code": "THA"
+      }
+    },
+    {
+      "date": "2020",
+      "value": "71641484",
+      "locator": {
+        "year": "2020",
+        "country_code": "THA"
+      }
+    },
+    {
+      "date": "2021",
+      "value": "71727332",
+      "locator": {
+        "year": "2021",
+        "country_code": "THA"
+      }
+    },
+    {
+      "date": "2022",
+      "value": "71735329",
+      "locator": {
+        "year": "2022",
+        "country_code": "THA"
+      }
+    },
+    {
+      "date": "2023",
+      "value": "71702435",
+      "locator": {
+        "year": "2023",
+        "country_code": "THA"
+      }
+    },
+    {
+      "date": "2024",
+      "value": "71668011",
+      "locator": {
+        "year": "2024",
+        "country_code": "THA"
+      }
+    },
+    {
+      "date": "2025",
+      "value": "71619863",
+      "locator": {
+        "year": "2025",
+        "country_code": "THA"
+      }
+    }
+  ]
+}

@@ -1,0 +1,543 @@
+{
+  "id": "wb_pop_BDI",
+  "name": "Burundi",
+  "units": "people",
+  "adjustment": "midyear",
+  "nominal_or_real": "count",
+  "frequency": "annual",
+  "source_id": "worldbank_sp_pop_totl",
+  "series_url": "https://data.worldbank.org/indicator/SP.POP.TOTL",
+  "country_code": "BDI",
+  "country_name": "Burundi",
+  "notes": "World Bank World Development Indicators, SP.POP.TOTL, country code BDI. Midyear population. Published years in this file run from 1960 to 2025.",
+  "points": [
+    {
+      "date": "1960",
+      "value": "2764258",
+      "locator": {
+        "year": "1960",
+        "country_code": "BDI"
+      }
+    },
+    {
+      "date": "1961",
+      "value": "2835119",
+      "locator": {
+        "year": "1961",
+        "country_code": "BDI"
+      }
+    },
+    {
+      "date": "1962",
+      "value": "2907943",
+      "locator": {
+        "year": "1962",
+        "country_code": "BDI"
+      }
+    },
+    {
+      "date": "1963",
+      "value": "2969841",
+      "locator": {
+        "year": "1963",
+        "country_code": "BDI"
+      }
+    },
+    {
+      "date": "1964",
+      "value": "3055650",
+      "locator": {
+        "year": "1964",
+        "country_code": "BDI"
+      }
+    },
+    {
+      "date": "1965",
+      "value": "3141367",
+      "locator": {
+        "year": "1965",
+        "country_code": "BDI"
+      }
+    },
+    {
+      "date": "1966",
+      "value": "3217960",
+      "locator": {
+        "year": "1966",
+        "country_code": "BDI"
+      }
+    },
+    {
+      "date": "1967",
+      "value": "3300690",
+      "locator": {
+        "year": "1967",
+        "country_code": "BDI"
+      }
+    },
+    {
+      "date": "1968",
+      "value": "3380387",
+      "locator": {
+        "year": "1968",
+        "country_code": "BDI"
+      }
+    },
+    {
+      "date": "1969",
+      "value": "3454590",
+      "locator": {
+        "year": "1969",
+        "country_code": "BDI"
+      }
+    },
+    {
+      "date": "1970",
+      "value": "3530432",
+      "locator": {
+        "year": "1970",
+        "country_code": "BDI"
+      }
+    },
+    {
+      "date": "1971",
+      "value": "3617289",
+      "locator": {
+        "year": "1971",
+        "country_code": "BDI"
+      }
+    },
+    {
+      "date": "1972",
+      "value": "3617128",
+      "locator": {
+        "year": "1972",
+        "country_code": "BDI"
+      }
+    },
+    {
+      "date": "1973",
+      "value": "3611991",
+      "locator": {
+        "year": "1973",
+        "country_code": "BDI"
+      }
+    },
+    {
+      "date": "1974",
+      "value": "3703590",
+      "locator": {
+        "year": "1974",
+        "country_code": "BDI"
+      }
+    },
+    {
+      "date": "1975",
+      "value": "3796612",
+      "locator": {
+        "year": "1975",
+        "country_code": "BDI"
+      }
+    },
+    {
+      "date": "1976",
+      "value": "3882626",
+      "locator": {
+        "year": "1976",
+        "country_code": "BDI"
+      }
+    },
+    {
+      "date": "1977",
+      "value": "3983582",
+      "locator": {
+        "year": "1977",
+        "country_code": "BDI"
+      }
+    },
+    {
+      "date": "1978",
+      "value": "4100338",
+      "locator": {
+        "year": "1978",
+        "country_code": "BDI"
+      }
+    },
+    {
+      "date": "1979",
+      "value": "4203530",
+      "locator": {
+        "year": "1979",
+        "country_code": "BDI"
+      }
+    },
+    {
+      "date": "1980",
+      "value": "4383706",
+      "locator": {
+        "year": "1980",
+        "country_code": "BDI"
+      }
+    },
+    {
+      "date": "1981",
+      "value": "4566014",
+      "locator": {
+        "year": "1981",
+        "country_code": "BDI"
+      }
+    },
+    {
+      "date": "1982",
+      "value": "4681390",
+      "locator": {
+        "year": "1982",
+        "country_code": "BDI"
+      }
+    },
+    {
+      "date": "1983",
+      "value": "4808528",
+      "locator": {
+        "year": "1983",
+        "country_code": "BDI"
+      }
+    },
+    {
+      "date": "1984",
+      "value": "4926465",
+      "locator": {
+        "year": "1984",
+        "country_code": "BDI"
+      }
+    },
+    {
+      "date": "1985",
+      "value": "5034042",
+      "locator": {
+        "year": "1985",
+        "country_code": "BDI"
+      }
+    },
+    {
+      "date": "1986",
+      "value": "5129414",
+      "locator": {
+        "year": "1986",
+        "country_code": "BDI"
+      }
+    },
+    {
+      "date": "1987",
+      "value": "5247787",
+      "locator": {
+        "year": "1987",
+        "country_code": "BDI"
+      }
+    },
+    {
+      "date": "1988",
+      "value": "5365327",
+      "locator": {
+        "year": "1988",
+        "country_code": "BDI"
+      }
+    },
+    {
+      "date": "1989",
+      "value": "5471706",
+      "locator": {
+        "year": "1989",
+        "country_code": "BDI"
+      }
+    },
+    {
+      "date": "1990",
+      "value": "5587052",
+      "locator": {
+        "year": "1990",
+        "country_code": "BDI"
+      }
+    },
+    {
+      "date": "1991",
+      "value": "5703857",
+      "locator": {
+        "year": "1991",
+        "country_code": "BDI"
+      }
+    },
+    {
+      "date": "1992",
+      "value": "5858407",
+      "locator": {
+        "year": "1992",
+        "country_code": "BDI"
+      }
+    },
+    {
+      "date": "1993",
+      "value": "5676843",
+      "locator": {
+        "year": "1993",
+        "country_code": "BDI"
+      }
+    },
+    {
+      "date": "1994",
+      "value": "5713854",
+      "locator": {
+        "year": "1994",
+        "country_code": "BDI"
+      }
+    },
+    {
+      "date": "1995",
+      "value": "6066316",
+      "locator": {
+        "year": "1995",
+        "country_code": "BDI"
+      }
+    },
+    {
+      "date": "1996",
+      "value": "6070506",
+      "locator": {
+        "year": "1996",
+        "country_code": "BDI"
+      }
+    },
+    {
+      "date": "1997",
+      "value": "6070042",
+      "locator": {
+        "year": "1997",
+        "country_code": "BDI"
+      }
+    },
+    {
+      "date": "1998",
+      "value": "6187108",
+      "locator": {
+        "year": "1998",
+        "country_code": "BDI"
+      }
+    },
+    {
+      "date": "1999",
+      "value": "6337155",
+      "locator": {
+        "year": "1999",
+        "country_code": "BDI"
+      }
+    },
+    {
+      "date": "2000",
+      "value": "6470194",
+      "locator": {
+        "year": "2000",
+        "country_code": "BDI"
+      }
+    },
+    {
+      "date": "2001",
+      "value": "6634365",
+      "locator": {
+        "year": "2001",
+        "country_code": "BDI"
+      }
+    },
+    {
+      "date": "2002",
+      "value": "6824132",
+      "locator": {
+        "year": "2002",
+        "country_code": "BDI"
+      }
+    },
+    {
+      "date": "2003",
+      "value": "7043154",
+      "locator": {
+        "year": "2003",
+        "country_code": "BDI"
+      }
+    },
+    {
+      "date": "2004",
+      "value": "7310656",
+      "locator": {
+        "year": "2004",
+        "country_code": "BDI"
+      }
+    },
+    {
+      "date": "2005",
+      "value": "7587299",
+      "locator": {
+        "year": "2005",
+        "country_code": "BDI"
+      }
+    },
+    {
+      "date": "2006",
+      "value": "7865547",
+      "locator": {
+        "year": "2006",
+        "country_code": "BDI"
+      }
+    },
+    {
+      "date": "2007",
+      "value": "8161874",
+      "locator": {
+        "year": "2007",
+        "country_code": "BDI"
+      }
+    },
+    {
+      "date": "2008",
+      "value": "8505637",
+      "locator": {
+        "year": "2008",
+        "country_code": "BDI"
+      }
+    },
+    {
+      "date": "2009",
+      "value": "8947646",
+      "locator": {
+        "year": "2009",
+        "country_code": "BDI"
+      }
+    },
+    {
+      "date": "2010",
+      "value": "9376444",
+      "locator": {
+        "year": "2010",
+        "country_code": "BDI"
+      }
+    },
+    {
+      "date": "2011",
+      "value": "9717978",
+      "locator": {
+        "year": "2011",
+        "country_code": "BDI"
+      }
+    },
+    {
+      "date": "2012",
+      "value": "10071028",
+      "locator": {
+        "year": "2012",
+        "country_code": "BDI"
+      }
+    },
+    {
+      "date": "2013",
+      "value": "10439341",
+      "locator": {
+        "year": "2013",
+        "country_code": "BDI"
+      }
+    },
+    {
+      "date": "2014",
+      "value": "10799785",
+      "locator": {
+        "year": "2014",
+        "country_code": "BDI"
+      }
+    },
+    {
+      "date": "2015",
+      "value": "11047580",
+      "locator": {
+        "year": "2015",
+        "country_code": "BDI"
+      }
+    },
+    {
+      "date": "2016",
+      "value": "11239451",
+      "locator": {
+        "year": "2016",
+        "country_code": "BDI"
+      }
+    },
+    {
+      "date": "2017",
+      "value": "11506762",
+      "locator": {
+        "year": "2017",
+        "country_code": "BDI"
+      }
+    },
+    {
+      "date": "2018",
+      "value": "11859446",
+      "locator": {
+        "year": "2018",
+        "country_code": "BDI"
+      }
+    },
+    {
+      "date": "2019",
+      "value": "12255336",
+      "locator": {
+        "year": "2019",
+        "country_code": "BDI"
+      }
+    },
+    {
+      "date": "2020",
+      "value": "12617036",
+      "locator": {
+        "year": "2020",
+        "country_code": "BDI"
+      }
+    },
+    {
+      "date": "2021",
+      "value": "12965481",
+      "locator": {
+        "year": "2021",
+        "country_code": "BDI"
+      }
+    },
+    {
+      "date": "2022",
+      "value": "13321097",
+      "locator": {
+        "year": "2022",
+        "country_code": "BDI"
+      }
+    },
+    {
+      "date": "2023",
+      "value": "13689450",
+      "locator": {
+        "year": "2023",
+        "country_code": "BDI"
+      }
+    },
+    {
+      "date": "2024",
+      "value": "14047786",
+      "locator": {
+        "year": "2024",
+        "country_code": "BDI"
+      }
+    },
+    {
+      "date": "2025",
+      "value": "14390003",
+      "locator": {
+        "year": "2025",
+        "country_code": "BDI"
+      }
+    }
+  ]
+}

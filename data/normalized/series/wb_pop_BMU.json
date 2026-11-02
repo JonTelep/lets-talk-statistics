@@ -1,0 +1,543 @@
+{
+  "id": "wb_pop_BMU",
+  "name": "Bermuda",
+  "units": "people",
+  "adjustment": "midyear",
+  "nominal_or_real": "count",
+  "frequency": "annual",
+  "source_id": "worldbank_sp_pop_totl",
+  "series_url": "https://data.worldbank.org/indicator/SP.POP.TOTL",
+  "country_code": "BMU",
+  "country_name": "Bermuda",
+  "notes": "World Bank World Development Indicators, SP.POP.TOTL, country code BMU. Midyear population. Published years in this file run from 1960 to 2025.",
+  "points": [
+    {
+      "date": "1960",
+      "value": "42208",
+      "locator": {
+        "year": "1960",
+        "country_code": "BMU"
+      }
+    },
+    {
+      "date": "1961",
+      "value": "43123",
+      "locator": {
+        "year": "1961",
+        "country_code": "BMU"
+      }
+    },
+    {
+      "date": "1962",
+      "value": "44239",
+      "locator": {
+        "year": "1962",
+        "country_code": "BMU"
+      }
+    },
+    {
+      "date": "1963",
+      "value": "45340",
+      "locator": {
+        "year": "1963",
+        "country_code": "BMU"
+      }
+    },
+    {
+      "date": "1964",
+      "value": "46410",
+      "locator": {
+        "year": "1964",
+        "country_code": "BMU"
+      }
+    },
+    {
+      "date": "1965",
+      "value": "47461",
+      "locator": {
+        "year": "1965",
+        "country_code": "BMU"
+      }
+    },
+    {
+      "date": "1966",
+      "value": "48534",
+      "locator": {
+        "year": "1966",
+        "country_code": "BMU"
+      }
+    },
+    {
+      "date": "1967",
+      "value": "49514",
+      "locator": {
+        "year": "1967",
+        "country_code": "BMU"
+      }
+    },
+    {
+      "date": "1968",
+      "value": "50404",
+      "locator": {
+        "year": "1968",
+        "country_code": "BMU"
+      }
+    },
+    {
+      "date": "1969",
+      "value": "51306",
+      "locator": {
+        "year": "1969",
+        "country_code": "BMU"
+      }
+    },
+    {
+      "date": "1970",
+      "value": "52124",
+      "locator": {
+        "year": "1970",
+        "country_code": "BMU"
+      }
+    },
+    {
+      "date": "1971",
+      "value": "52607",
+      "locator": {
+        "year": "1971",
+        "country_code": "BMU"
+      }
+    },
+    {
+      "date": "1972",
+      "value": "52803",
+      "locator": {
+        "year": "1972",
+        "country_code": "BMU"
+      }
+    },
+    {
+      "date": "1973",
+      "value": "52946",
+      "locator": {
+        "year": "1973",
+        "country_code": "BMU"
+      }
+    },
+    {
+      "date": "1974",
+      "value": "53056",
+      "locator": {
+        "year": "1974",
+        "country_code": "BMU"
+      }
+    },
+    {
+      "date": "1975",
+      "value": "53129",
+      "locator": {
+        "year": "1975",
+        "country_code": "BMU"
+      }
+    },
+    {
+      "date": "1976",
+      "value": "53210",
+      "locator": {
+        "year": "1976",
+        "country_code": "BMU"
+      }
+    },
+    {
+      "date": "1977",
+      "value": "53322",
+      "locator": {
+        "year": "1977",
+        "country_code": "BMU"
+      }
+    },
+    {
+      "date": "1978",
+      "value": "53431",
+      "locator": {
+        "year": "1978",
+        "country_code": "BMU"
+      }
+    },
+    {
+      "date": "1979",
+      "value": "53517",
+      "locator": {
+        "year": "1979",
+        "country_code": "BMU"
+      }
+    },
+    {
+      "date": "1980",
+      "value": "53673",
+      "locator": {
+        "year": "1980",
+        "country_code": "BMU"
+      }
+    },
+    {
+      "date": "1981",
+      "value": "53997",
+      "locator": {
+        "year": "1981",
+        "country_code": "BMU"
+      }
+    },
+    {
+      "date": "1982",
+      "value": "54387",
+      "locator": {
+        "year": "1982",
+        "country_code": "BMU"
+      }
+    },
+    {
+      "date": "1983",
+      "value": "54777",
+      "locator": {
+        "year": "1983",
+        "country_code": "BMU"
+      }
+    },
+    {
+      "date": "1984",
+      "value": "55169",
+      "locator": {
+        "year": "1984",
+        "country_code": "BMU"
+      }
+    },
+    {
+      "date": "1985",
+      "value": "55547",
+      "locator": {
+        "year": "1985",
+        "country_code": "BMU"
+      }
+    },
+    {
+      "date": "1986",
+      "value": "55889",
+      "locator": {
+        "year": "1986",
+        "country_code": "BMU"
+      }
+    },
+    {
+      "date": "1987",
+      "value": "56265",
+      "locator": {
+        "year": "1987",
+        "country_code": "BMU"
+      }
+    },
+    {
+      "date": "1988",
+      "value": "56699",
+      "locator": {
+        "year": "1988",
+        "country_code": "BMU"
+      }
+    },
+    {
+      "date": "1989",
+      "value": "57129",
+      "locator": {
+        "year": "1989",
+        "country_code": "BMU"
+      }
+    },
+    {
+      "date": "1990",
+      "value": "57559",
+      "locator": {
+        "year": "1990",
+        "country_code": "BMU"
+      }
+    },
+    {
+      "date": "1991",
+      "value": "57984",
+      "locator": {
+        "year": "1991",
+        "country_code": "BMU"
+      }
+    },
+    {
+      "date": "1992",
+      "value": "58407",
+      "locator": {
+        "year": "1992",
+        "country_code": "BMU"
+      }
+    },
+    {
+      "date": "1993",
+      "value": "58816",
+      "locator": {
+        "year": "1993",
+        "country_code": "BMU"
+      }
+    },
+    {
+      "date": "1994",
+      "value": "59194",
+      "locator": {
+        "year": "1994",
+        "country_code": "BMU"
+      }
+    },
+    {
+      "date": "1995",
+      "value": "59526",
+      "locator": {
+        "year": "1995",
+        "country_code": "BMU"
+      }
+    },
+    {
+      "date": "1996",
+      "value": "59813",
+      "locator": {
+        "year": "1996",
+        "country_code": "BMU"
+      }
+    },
+    {
+      "date": "1997",
+      "value": "60177",
+      "locator": {
+        "year": "1997",
+        "country_code": "BMU"
+      }
+    },
+    {
+      "date": "1998",
+      "value": "60639",
+      "locator": {
+        "year": "1998",
+        "country_code": "BMU"
+      }
+    },
+    {
+      "date": "1999",
+      "value": "61124",
+      "locator": {
+        "year": "1999",
+        "country_code": "BMU"
+      }
+    },
+    {
+      "date": "2000",
+      "value": "61550",
+      "locator": {
+        "year": "2000",
+        "country_code": "BMU"
+      }
+    },
+    {
+      "date": "2001",
+      "value": "61867",
+      "locator": {
+        "year": "2001",
+        "country_code": "BMU"
+      }
+    },
+    {
+      "date": "2002",
+      "value": "62142",
+      "locator": {
+        "year": "2002",
+        "country_code": "BMU"
+      }
+    },
+    {
+      "date": "2003",
+      "value": "62386",
+      "locator": {
+        "year": "2003",
+        "country_code": "BMU"
+      }
+    },
+    {
+      "date": "2004",
+      "value": "62555",
+      "locator": {
+        "year": "2004",
+        "country_code": "BMU"
+      }
+    },
+    {
+      "date": "2005",
+      "value": "62711",
+      "locator": {
+        "year": "2005",
+        "country_code": "BMU"
+      }
+    },
+    {
+      "date": "2006",
+      "value": "62834",
+      "locator": {
+        "year": "2006",
+        "country_code": "BMU"
+      }
+    },
+    {
+      "date": "2007",
+      "value": "63010",
+      "locator": {
+        "year": "2007",
+        "country_code": "BMU"
+      }
+    },
+    {
+      "date": "2008",
+      "value": "63300",
+      "locator": {
+        "year": "2008",
+        "country_code": "BMU"
+      }
+    },
+    {
+      "date": "2009",
+      "value": "63565",
+      "locator": {
+        "year": "2009",
+        "country_code": "BMU"
+      }
+    },
+    {
+      "date": "2010",
+      "value": "63725",
+      "locator": {
+        "year": "2010",
+        "country_code": "BMU"
+      }
+    },
+    {
+      "date": "2011",
+      "value": "63733",
+      "locator": {
+        "year": "2011",
+        "country_code": "BMU"
+      }
+    },
+    {
+      "date": "2012",
+      "value": "63646",
+      "locator": {
+        "year": "2012",
+        "country_code": "BMU"
+      }
+    },
+    {
+      "date": "2013",
+      "value": "63574",
+      "locator": {
+        "year": "2013",
+        "country_code": "BMU"
+      }
+    },
+    {
+      "date": "2014",
+      "value": "63529",
+      "locator": {
+        "year": "2014",
+        "country_code": "BMU"
+      }
+    },
+    {
+      "date": "2015",
+      "value": "63464",
+      "locator": {
+        "year": "2015",
+        "country_code": "BMU"
+      }
+    },
+    {
+      "date": "2016",
+      "value": "63449",
+      "locator": {
+        "year": "2016",
+        "country_code": "BMU"
+      }
+    },
+    {
+      "date": "2017",
+      "value": "63578",
+      "locator": {
+        "year": "2017",
+        "country_code": "BMU"
+      }
+    },
+    {
+      "date": "2018",
+      "value": "63831",
+      "locator": {
+        "year": "2018",
+        "country_code": "BMU"
+      }
+    },
+    {
+      "date": "2019",
+      "value": "64107",
+      "locator": {
+        "year": "2019",
+        "country_code": "BMU"
+      }
+    },
+    {
+      "date": "2020",
+      "value": "64382",
+      "locator": {
+        "year": "2020",
+        "country_code": "BMU"
+      }
+    },
+    {
+      "date": "2021",
+      "value": "64648",
+      "locator": {
+        "year": "2021",
+        "country_code": "BMU"
+      }
+    },
+    {
+      "date": "2022",
+      "value": "64749",
+      "locator": {
+        "year": "2022",
+        "country_code": "BMU"
+      }
+    },
+    {
+      "date": "2023",
+      "value": "64698",
+      "locator": {
+        "year": "2023",
+        "country_code": "BMU"
+      }
+    },
+    {
+      "date": "2024",
+      "value": "64636",
+      "locator": {
+        "year": "2024",
+        "country_code": "BMU"
+      }
+    },
+    {
+      "date": "2025",
+      "value": "64555",
+      "locator": {
+        "year": "2025",
+        "country_code": "BMU"
+      }
+    }
+  ]
+}

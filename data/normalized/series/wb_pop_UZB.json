@@ -1,0 +1,543 @@
+{
+  "id": "wb_pop_UZB",
+  "name": "Uzbekistan",
+  "units": "people",
+  "adjustment": "midyear",
+  "nominal_or_real": "count",
+  "frequency": "annual",
+  "source_id": "worldbank_sp_pop_totl",
+  "series_url": "https://data.worldbank.org/indicator/SP.POP.TOTL",
+  "country_code": "UZB",
+  "country_name": "Uzbekistan",
+  "notes": "World Bank World Development Indicators, SP.POP.TOTL, country code UZB. Midyear population. Published years in this file run from 1960 to 2025.",
+  "points": [
+    {
+      "date": "1960",
+      "value": "8209109",
+      "locator": {
+        "year": "1960",
+        "country_code": "UZB"
+      }
+    },
+    {
+      "date": "1961",
+      "value": "8517711",
+      "locator": {
+        "year": "1961",
+        "country_code": "UZB"
+      }
+    },
+    {
+      "date": "1962",
+      "value": "8854368",
+      "locator": {
+        "year": "1962",
+        "country_code": "UZB"
+      }
+    },
+    {
+      "date": "1963",
+      "value": "9202246",
+      "locator": {
+        "year": "1963",
+        "country_code": "UZB"
+      }
+    },
+    {
+      "date": "1964",
+      "value": "9557611",
+      "locator": {
+        "year": "1964",
+        "country_code": "UZB"
+      }
+    },
+    {
+      "date": "1965",
+      "value": "9921681",
+      "locator": {
+        "year": "1965",
+        "country_code": "UZB"
+      }
+    },
+    {
+      "date": "1966",
+      "value": "10289294",
+      "locator": {
+        "year": "1966",
+        "country_code": "UZB"
+      }
+    },
+    {
+      "date": "1967",
+      "value": "10659180",
+      "locator": {
+        "year": "1967",
+        "country_code": "UZB"
+      }
+    },
+    {
+      "date": "1968",
+      "value": "11032155",
+      "locator": {
+        "year": "1968",
+        "country_code": "UZB"
+      }
+    },
+    {
+      "date": "1969",
+      "value": "11403150",
+      "locator": {
+        "year": "1969",
+        "country_code": "UZB"
+      }
+    },
+    {
+      "date": "1970",
+      "value": "11762638",
+      "locator": {
+        "year": "1970",
+        "country_code": "UZB"
+      }
+    },
+    {
+      "date": "1971",
+      "value": "12111511",
+      "locator": {
+        "year": "1971",
+        "country_code": "UZB"
+      }
+    },
+    {
+      "date": "1972",
+      "value": "12465106",
+      "locator": {
+        "year": "1972",
+        "country_code": "UZB"
+      }
+    },
+    {
+      "date": "1973",
+      "value": "12831047",
+      "locator": {
+        "year": "1973",
+        "country_code": "UZB"
+      }
+    },
+    {
+      "date": "1974",
+      "value": "13209011",
+      "locator": {
+        "year": "1974",
+        "country_code": "UZB"
+      }
+    },
+    {
+      "date": "1975",
+      "value": "13598521",
+      "locator": {
+        "year": "1975",
+        "country_code": "UZB"
+      }
+    },
+    {
+      "date": "1976",
+      "value": "13998620",
+      "locator": {
+        "year": "1976",
+        "country_code": "UZB"
+      }
+    },
+    {
+      "date": "1977",
+      "value": "14408822",
+      "locator": {
+        "year": "1977",
+        "country_code": "UZB"
+      }
+    },
+    {
+      "date": "1978",
+      "value": "14816349",
+      "locator": {
+        "year": "1978",
+        "country_code": "UZB"
+      }
+    },
+    {
+      "date": "1979",
+      "value": "15215587",
+      "locator": {
+        "year": "1979",
+        "country_code": "UZB"
+      }
+    },
+    {
+      "date": "1980",
+      "value": "15619936",
+      "locator": {
+        "year": "1980",
+        "country_code": "UZB"
+      }
+    },
+    {
+      "date": "1981",
+      "value": "16035032",
+      "locator": {
+        "year": "1981",
+        "country_code": "UZB"
+      }
+    },
+    {
+      "date": "1982",
+      "value": "16462736",
+      "locator": {
+        "year": "1982",
+        "country_code": "UZB"
+      }
+    },
+    {
+      "date": "1983",
+      "value": "16908400",
+      "locator": {
+        "year": "1983",
+        "country_code": "UZB"
+      }
+    },
+    {
+      "date": "1984",
+      "value": "17378846",
+      "locator": {
+        "year": "1984",
+        "country_code": "UZB"
+      }
+    },
+    {
+      "date": "1985",
+      "value": "17875339",
+      "locator": {
+        "year": "1985",
+        "country_code": "UZB"
+      }
+    },
+    {
+      "date": "1986",
+      "value": "18395621",
+      "locator": {
+        "year": "1986",
+        "country_code": "UZB"
+      }
+    },
+    {
+      "date": "1987",
+      "value": "18930070",
+      "locator": {
+        "year": "1987",
+        "country_code": "UZB"
+      }
+    },
+    {
+      "date": "1988",
+      "value": "19460630",
+      "locator": {
+        "year": "1988",
+        "country_code": "UZB"
+      }
+    },
+    {
+      "date": "1989",
+      "value": "19977183",
+      "locator": {
+        "year": "1989",
+        "country_code": "UZB"
+      }
+    },
+    {
+      "date": "1990",
+      "value": "20464956",
+      "locator": {
+        "year": "1990",
+        "country_code": "UZB"
+      }
+    },
+    {
+      "date": "1991",
+      "value": "20962910",
+      "locator": {
+        "year": "1991",
+        "country_code": "UZB"
+      }
+    },
+    {
+      "date": "1992",
+      "value": "21485090",
+      "locator": {
+        "year": "1992",
+        "country_code": "UZB"
+      }
+    },
+    {
+      "date": "1993",
+      "value": "21987955",
+      "locator": {
+        "year": "1993",
+        "country_code": "UZB"
+      }
+    },
+    {
+      "date": "1994",
+      "value": "22463291",
+      "locator": {
+        "year": "1994",
+        "country_code": "UZB"
+      }
+    },
+    {
+      "date": "1995",
+      "value": "22917589",
+      "locator": {
+        "year": "1995",
+        "country_code": "UZB"
+      }
+    },
+    {
+      "date": "1996",
+      "value": "23351981",
+      "locator": {
+        "year": "1996",
+        "country_code": "UZB"
+      }
+    },
+    {
+      "date": "1997",
+      "value": "23758960",
+      "locator": {
+        "year": "1997",
+        "country_code": "UZB"
+      }
+    },
+    {
+      "date": "1998",
+      "value": "24134929",
+      "locator": {
+        "year": "1998",
+        "country_code": "UZB"
+      }
+    },
+    {
+      "date": "1999",
+      "value": "24476008",
+      "locator": {
+        "year": "1999",
+        "country_code": "UZB"
+      }
+    },
+    {
+      "date": "2000",
+      "value": "24787054",
+      "locator": {
+        "year": "2000",
+        "country_code": "UZB"
+      }
+    },
+    {
+      "date": "2001",
+      "value": "25090283",
+      "locator": {
+        "year": "2001",
+        "country_code": "UZB"
+      }
+    },
+    {
+      "date": "2002",
+      "value": "25399980",
+      "locator": {
+        "year": "2002",
+        "country_code": "UZB"
+      }
+    },
+    {
+      "date": "2003",
+      "value": "25711259",
+      "locator": {
+        "year": "2003",
+        "country_code": "UZB"
+      }
+    },
+    {
+      "date": "2004",
+      "value": "26029350",
+      "locator": {
+        "year": "2004",
+        "country_code": "UZB"
+      }
+    },
+    {
+      "date": "2005",
+      "value": "26356975",
+      "locator": {
+        "year": "2005",
+        "country_code": "UZB"
+      }
+    },
+    {
+      "date": "2006",
+      "value": "26699043",
+      "locator": {
+        "year": "2006",
+        "country_code": "UZB"
+      }
+    },
+    {
+      "date": "2007",
+      "value": "27076008",
+      "locator": {
+        "year": "2007",
+        "country_code": "UZB"
+      }
+    },
+    {
+      "date": "2008",
+      "value": "27494774",
+      "locator": {
+        "year": "2008",
+        "country_code": "UZB"
+      }
+    },
+    {
+      "date": "2009",
+      "value": "27939328",
+      "locator": {
+        "year": "2009",
+        "country_code": "UZB"
+      }
+    },
+    {
+      "date": "2010",
+      "value": "28385506",
+      "locator": {
+        "year": "2010",
+        "country_code": "UZB"
+      }
+    },
+    {
+      "date": "2011",
+      "value": "28823196",
+      "locator": {
+        "year": "2011",
+        "country_code": "UZB"
+      }
+    },
+    {
+      "date": "2012",
+      "value": "29261903",
+      "locator": {
+        "year": "2012",
+        "country_code": "UZB"
+      }
+    },
+    {
+      "date": "2013",
+      "value": "29724065",
+      "locator": {
+        "year": "2013",
+        "country_code": "UZB"
+      }
+    },
+    {
+      "date": "2014",
+      "value": "30222994",
+      "locator": {
+        "year": "2014",
+        "country_code": "UZB"
+      }
+    },
+    {
+      "date": "2015",
+      "value": "30749346",
+      "locator": {
+        "year": "2015",
+        "country_code": "UZB"
+      }
+    },
+    {
+      "date": "2016",
+      "value": "31284568",
+      "locator": {
+        "year": "2016",
+        "country_code": "UZB"
+      }
+    },
+    {
+      "date": "2017",
+      "value": "31819178",
+      "locator": {
+        "year": "2017",
+        "country_code": "UZB"
+      }
+    },
+    {
+      "date": "2018",
+      "value": "32373490",
+      "locator": {
+        "year": "2018",
+        "country_code": "UZB"
+      }
+    },
+    {
+      "date": "2019",
+      "value": "32964701",
+      "locator": {
+        "year": "2019",
+        "country_code": "UZB"
+      }
+    },
+    {
+      "date": "2020",
+      "value": "33586372",
+      "locator": {
+        "year": "2020",
+        "country_code": "UZB"
+      }
+    },
+    {
+      "date": "2021",
+      "value": "34243696",
+      "locator": {
+        "year": "2021",
+        "country_code": "UZB"
+      }
+    },
+    {
+      "date": "2022",
+      "value": "34938955",
+      "locator": {
+        "year": "2022",
+        "country_code": "UZB"
+      }
+    },
+    {
+      "date": "2023",
+      "value": "35652307",
+      "locator": {
+        "year": "2023",
+        "country_code": "UZB"
+      }
+    },
+    {
+      "date": "2024",
+      "value": "36361859",
+      "locator": {
+        "year": "2024",
+        "country_code": "UZB"
+      }
+    },
+    {
+      "date": "2025",
+      "value": "37053428",
+      "locator": {
+        "year": "2025",
+        "country_code": "UZB"
+      }
+    }
+  ]
+}

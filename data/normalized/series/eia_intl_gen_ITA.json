@@ -1,0 +1,377 @@
+{
+  "id": "eia_intl_gen_ITA",
+  "name": "Net generation",
+  "units": "billion kilowatthours",
+  "adjustment": "annual",
+  "nominal_or_real": "generation",
+  "frequency": "annual",
+  "source_id": "eia_intl_bulk",
+  "series_url": "https://www.eia.gov/international/data/world/electricity/electricity-generation",
+  "eia_series_id": "INTL.2-12-ITA-BKWH.A",
+  "country_code": "ITA",
+  "country_name": "Italy",
+  "population_status": "matched",
+  "notes": "EIA bulk series INTL.2-12-ITA-BKWH.A, Italy. Annual. Billion kilowatthours. 1 billion kilowatthours = 1 terawatthour. Published years in this file run from 1980 to 2024.",
+  "points": [
+    {
+      "date": "1980",
+      "value": "175.413",
+      "locator": {
+        "year": "1980",
+        "series_id": "INTL.2-12-ITA-BKWH.A"
+      }
+    },
+    {
+      "date": "1981",
+      "value": "169.761",
+      "locator": {
+        "year": "1981",
+        "series_id": "INTL.2-12-ITA-BKWH.A"
+      }
+    },
+    {
+      "date": "1982",
+      "value": "173.03",
+      "locator": {
+        "year": "1982",
+        "series_id": "INTL.2-12-ITA-BKWH.A"
+      }
+    },
+    {
+      "date": "1983",
+      "value": "170.44",
+      "locator": {
+        "year": "1983",
+        "series_id": "INTL.2-12-ITA-BKWH.A"
+      }
+    },
+    {
+      "date": "1984",
+      "value": "169.876",
+      "locator": {
+        "year": "1984",
+        "series_id": "INTL.2-12-ITA-BKWH.A"
+      }
+    },
+    {
+      "date": "1985",
+      "value": "171.861",
+      "locator": {
+        "year": "1985",
+        "series_id": "INTL.2-12-ITA-BKWH.A"
+      }
+    },
+    {
+      "date": "1986",
+      "value": "178.341",
+      "locator": {
+        "year": "1986",
+        "series_id": "INTL.2-12-ITA-BKWH.A"
+      }
+    },
+    {
+      "date": "1987",
+      "value": "187.607",
+      "locator": {
+        "year": "1987",
+        "series_id": "INTL.2-12-ITA-BKWH.A"
+      }
+    },
+    {
+      "date": "1988",
+      "value": "173.751",
+      "locator": {
+        "year": "1988",
+        "series_id": "INTL.2-12-ITA-BKWH.A"
+      }
+    },
+    {
+      "date": "1989",
+      "value": "195.2898",
+      "locator": {
+        "year": "1989",
+        "series_id": "INTL.2-12-ITA-BKWH.A"
+      }
+    },
+    {
+      "date": "1990",
+      "value": "200.811",
+      "locator": {
+        "year": "1990",
+        "series_id": "INTL.2-12-ITA-BKWH.A"
+      }
+    },
+    {
+      "date": "1991",
+      "value": "206.449",
+      "locator": {
+        "year": "1991",
+        "series_id": "INTL.2-12-ITA-BKWH.A"
+      }
+    },
+    {
+      "date": "1992",
+      "value": "211.296",
+      "locator": {
+        "year": "1992",
+        "series_id": "INTL.2-12-ITA-BKWH.A"
+      }
+    },
+    {
+      "date": "1993",
+      "value": "207.754",
+      "locator": {
+        "year": "1993",
+        "series_id": "INTL.2-12-ITA-BKWH.A"
+      }
+    },
+    {
+      "date": "1994",
+      "value": "216.413",
+      "locator": {
+        "year": "1994",
+        "series_id": "INTL.2-12-ITA-BKWH.A"
+      }
+    },
+    {
+      "date": "1995",
+      "value": "223.763",
+      "locator": {
+        "year": "1995",
+        "series_id": "INTL.2-12-ITA-BKWH.A"
+      }
+    },
+    {
+      "date": "1996",
+      "value": "225.575",
+      "locator": {
+        "year": "1996",
+        "series_id": "INTL.2-12-ITA-BKWH.A"
+      }
+    },
+    {
+      "date": "1997",
+      "value": "232.36697",
+      "locator": {
+        "year": "1997",
+        "series_id": "INTL.2-12-ITA-BKWH.A"
+      }
+    },
+    {
+      "date": "1998",
+      "value": "238.669",
+      "locator": {
+        "year": "1998",
+        "series_id": "INTL.2-12-ITA-BKWH.A"
+      }
+    },
+    {
+      "date": "1999",
+      "value": "243.915",
+      "locator": {
+        "year": "1999",
+        "series_id": "INTL.2-12-ITA-BKWH.A"
+      }
+    },
+    {
+      "date": "2000",
+      "value": "266.284",
+      "locator": {
+        "year": "2000",
+        "series_id": "INTL.2-12-ITA-BKWH.A"
+      }
+    },
+    {
+      "date": "2001",
+      "value": "268.209",
+      "locator": {
+        "year": "2001",
+        "series_id": "INTL.2-12-ITA-BKWH.A"
+      }
+    },
+    {
+      "date": "2002",
+      "value": "273.458",
+      "locator": {
+        "year": "2002",
+        "series_id": "INTL.2-12-ITA-BKWH.A"
+      }
+    },
+    {
+      "date": "2003",
+      "value": "279.137",
+      "locator": {
+        "year": "2003",
+        "series_id": "INTL.2-12-ITA-BKWH.A"
+      }
+    },
+    {
+      "date": "2004",
+      "value": "291.674",
+      "locator": {
+        "year": "2004",
+        "series_id": "INTL.2-12-ITA-BKWH.A"
+      }
+    },
+    {
+      "date": "2005",
+      "value": "292.904",
+      "locator": {
+        "year": "2005",
+        "series_id": "INTL.2-12-ITA-BKWH.A"
+      }
+    },
+    {
+      "date": "2006",
+      "value": "303.973",
+      "locator": {
+        "year": "2006",
+        "series_id": "INTL.2-12-ITA-BKWH.A"
+      }
+    },
+    {
+      "date": "2007",
+      "value": "304.885",
+      "locator": {
+        "year": "2007",
+        "series_id": "INTL.2-12-ITA-BKWH.A"
+      }
+    },
+    {
+      "date": "2008",
+      "value": "310.181",
+      "locator": {
+        "year": "2008",
+        "series_id": "INTL.2-12-ITA-BKWH.A"
+      }
+    },
+    {
+      "date": "2009",
+      "value": "285.748",
+      "locator": {
+        "year": "2009",
+        "series_id": "INTL.2-12-ITA-BKWH.A"
+      }
+    },
+    {
+      "date": "2010",
+      "value": "295.783",
+      "locator": {
+        "year": "2010",
+        "series_id": "INTL.2-12-ITA-BKWH.A"
+      }
+    },
+    {
+      "date": "2011",
+      "value": "298.2288",
+      "locator": {
+        "year": "2011",
+        "series_id": "INTL.2-12-ITA-BKWH.A"
+      }
+    },
+    {
+      "date": "2012",
+      "value": "294.7792",
+      "locator": {
+        "year": "2012",
+        "series_id": "INTL.2-12-ITA-BKWH.A"
+      }
+    },
+    {
+      "date": "2013",
+      "value": "285.2453",
+      "locator": {
+        "year": "2013",
+        "series_id": "INTL.2-12-ITA-BKWH.A"
+      }
+    },
+    {
+      "date": "2014",
+      "value": "275.3426",
+      "locator": {
+        "year": "2014",
+        "series_id": "INTL.2-12-ITA-BKWH.A"
+      }
+    },
+    {
+      "date": "2015",
+      "value": "279.1786",
+      "locator": {
+        "year": "2015",
+        "series_id": "INTL.2-12-ITA-BKWH.A"
+      }
+    },
+    {
+      "date": "2016",
+      "value": "285.2047",
+      "locator": {
+        "year": "2016",
+        "series_id": "INTL.2-12-ITA-BKWH.A"
+      }
+    },
+    {
+      "date": "2017",
+      "value": "291.4122",
+      "locator": {
+        "year": "2017",
+        "series_id": "INTL.2-12-ITA-BKWH.A"
+      }
+    },
+    {
+      "date": "2018",
+      "value": "285.4116",
+      "locator": {
+        "year": "2018",
+        "series_id": "INTL.2-12-ITA-BKWH.A"
+      }
+    },
+    {
+      "date": "2019",
+      "value": "282.9239816",
+      "locator": {
+        "year": "2019",
+        "series_id": "INTL.2-12-ITA-BKWH.A"
+      }
+    },
+    {
+      "date": "2020",
+      "value": "271.0109249",
+      "locator": {
+        "year": "2020",
+        "series_id": "INTL.2-12-ITA-BKWH.A"
+      }
+    },
+    {
+      "date": "2021",
+      "value": "277.1432518",
+      "locator": {
+        "year": "2021",
+        "series_id": "INTL.2-12-ITA-BKWH.A"
+      }
+    },
+    {
+      "date": "2022",
+      "value": "272.0487946",
+      "locator": {
+        "year": "2022",
+        "series_id": "INTL.2-12-ITA-BKWH.A"
+      }
+    },
+    {
+      "date": "2023",
+      "value": "254.130162082",
+      "locator": {
+        "year": "2023",
+        "series_id": "INTL.2-12-ITA-BKWH.A"
+      }
+    },
+    {
+      "date": "2024",
+      "value": "258.84521807",
+      "locator": {
+        "year": "2024",
+        "series_id": "INTL.2-12-ITA-BKWH.A"
+      }
+    }
+  ]
+}

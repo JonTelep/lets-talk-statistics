@@ -1,0 +1,543 @@
+{
+  "id": "wb_pop_SGP",
+  "name": "Singapore",
+  "units": "people",
+  "adjustment": "midyear",
+  "nominal_or_real": "count",
+  "frequency": "annual",
+  "source_id": "worldbank_sp_pop_totl",
+  "series_url": "https://data.worldbank.org/indicator/SP.POP.TOTL",
+  "country_code": "SGP",
+  "country_name": "Singapore",
+  "notes": "World Bank World Development Indicators, SP.POP.TOTL, country code SGP. Midyear population. Published years in this file run from 1960 to 2025.",
+  "points": [
+    {
+      "date": "1960",
+      "value": "1646400",
+      "locator": {
+        "year": "1960",
+        "country_code": "SGP"
+      }
+    },
+    {
+      "date": "1961",
+      "value": "1702400",
+      "locator": {
+        "year": "1961",
+        "country_code": "SGP"
+      }
+    },
+    {
+      "date": "1962",
+      "value": "1750200",
+      "locator": {
+        "year": "1962",
+        "country_code": "SGP"
+      }
+    },
+    {
+      "date": "1963",
+      "value": "1795000",
+      "locator": {
+        "year": "1963",
+        "country_code": "SGP"
+      }
+    },
+    {
+      "date": "1964",
+      "value": "1841600",
+      "locator": {
+        "year": "1964",
+        "country_code": "SGP"
+      }
+    },
+    {
+      "date": "1965",
+      "value": "1886900",
+      "locator": {
+        "year": "1965",
+        "country_code": "SGP"
+      }
+    },
+    {
+      "date": "1966",
+      "value": "1934400",
+      "locator": {
+        "year": "1966",
+        "country_code": "SGP"
+      }
+    },
+    {
+      "date": "1967",
+      "value": "1977600",
+      "locator": {
+        "year": "1967",
+        "country_code": "SGP"
+      }
+    },
+    {
+      "date": "1968",
+      "value": "2012000",
+      "locator": {
+        "year": "1968",
+        "country_code": "SGP"
+      }
+    },
+    {
+      "date": "1969",
+      "value": "2042500",
+      "locator": {
+        "year": "1969",
+        "country_code": "SGP"
+      }
+    },
+    {
+      "date": "1970",
+      "value": "2074507",
+      "locator": {
+        "year": "1970",
+        "country_code": "SGP"
+      }
+    },
+    {
+      "date": "1971",
+      "value": "2112900",
+      "locator": {
+        "year": "1971",
+        "country_code": "SGP"
+      }
+    },
+    {
+      "date": "1972",
+      "value": "2152400",
+      "locator": {
+        "year": "1972",
+        "country_code": "SGP"
+      }
+    },
+    {
+      "date": "1973",
+      "value": "2193000",
+      "locator": {
+        "year": "1973",
+        "country_code": "SGP"
+      }
+    },
+    {
+      "date": "1974",
+      "value": "2229800",
+      "locator": {
+        "year": "1974",
+        "country_code": "SGP"
+      }
+    },
+    {
+      "date": "1975",
+      "value": "2262600",
+      "locator": {
+        "year": "1975",
+        "country_code": "SGP"
+      }
+    },
+    {
+      "date": "1976",
+      "value": "2293300",
+      "locator": {
+        "year": "1976",
+        "country_code": "SGP"
+      }
+    },
+    {
+      "date": "1977",
+      "value": "2325300",
+      "locator": {
+        "year": "1977",
+        "country_code": "SGP"
+      }
+    },
+    {
+      "date": "1978",
+      "value": "2353600",
+      "locator": {
+        "year": "1978",
+        "country_code": "SGP"
+      }
+    },
+    {
+      "date": "1979",
+      "value": "2383500",
+      "locator": {
+        "year": "1979",
+        "country_code": "SGP"
+      }
+    },
+    {
+      "date": "1980",
+      "value": "2413945",
+      "locator": {
+        "year": "1980",
+        "country_code": "SGP"
+      }
+    },
+    {
+      "date": "1981",
+      "value": "2532835",
+      "locator": {
+        "year": "1981",
+        "country_code": "SGP"
+      }
+    },
+    {
+      "date": "1982",
+      "value": "2646466",
+      "locator": {
+        "year": "1982",
+        "country_code": "SGP"
+      }
+    },
+    {
+      "date": "1983",
+      "value": "2681061",
+      "locator": {
+        "year": "1983",
+        "country_code": "SGP"
+      }
+    },
+    {
+      "date": "1984",
+      "value": "2732221",
+      "locator": {
+        "year": "1984",
+        "country_code": "SGP"
+      }
+    },
+    {
+      "date": "1985",
+      "value": "2735957",
+      "locator": {
+        "year": "1985",
+        "country_code": "SGP"
+      }
+    },
+    {
+      "date": "1986",
+      "value": "2733373",
+      "locator": {
+        "year": "1986",
+        "country_code": "SGP"
+      }
+    },
+    {
+      "date": "1987",
+      "value": "2774789",
+      "locator": {
+        "year": "1987",
+        "country_code": "SGP"
+      }
+    },
+    {
+      "date": "1988",
+      "value": "2846108",
+      "locator": {
+        "year": "1988",
+        "country_code": "SGP"
+      }
+    },
+    {
+      "date": "1989",
+      "value": "2930901",
+      "locator": {
+        "year": "1989",
+        "country_code": "SGP"
+      }
+    },
+    {
+      "date": "1990",
+      "value": "3047132",
+      "locator": {
+        "year": "1990",
+        "country_code": "SGP"
+      }
+    },
+    {
+      "date": "1991",
+      "value": "3135083",
+      "locator": {
+        "year": "1991",
+        "country_code": "SGP"
+      }
+    },
+    {
+      "date": "1992",
+      "value": "3230698",
+      "locator": {
+        "year": "1992",
+        "country_code": "SGP"
+      }
+    },
+    {
+      "date": "1993",
+      "value": "3313471",
+      "locator": {
+        "year": "1993",
+        "country_code": "SGP"
+      }
+    },
+    {
+      "date": "1994",
+      "value": "3419048",
+      "locator": {
+        "year": "1994",
+        "country_code": "SGP"
+      }
+    },
+    {
+      "date": "1995",
+      "value": "3524506",
+      "locator": {
+        "year": "1995",
+        "country_code": "SGP"
+      }
+    },
+    {
+      "date": "1996",
+      "value": "3670704",
+      "locator": {
+        "year": "1996",
+        "country_code": "SGP"
+      }
+    },
+    {
+      "date": "1997",
+      "value": "3796038",
+      "locator": {
+        "year": "1997",
+        "country_code": "SGP"
+      }
+    },
+    {
+      "date": "1998",
+      "value": "3927213",
+      "locator": {
+        "year": "1998",
+        "country_code": "SGP"
+      }
+    },
+    {
+      "date": "1999",
+      "value": "3958723",
+      "locator": {
+        "year": "1999",
+        "country_code": "SGP"
+      }
+    },
+    {
+      "date": "2000",
+      "value": "4027887",
+      "locator": {
+        "year": "2000",
+        "country_code": "SGP"
+      }
+    },
+    {
+      "date": "2001",
+      "value": "4138012",
+      "locator": {
+        "year": "2001",
+        "country_code": "SGP"
+      }
+    },
+    {
+      "date": "2002",
+      "value": "4175950",
+      "locator": {
+        "year": "2002",
+        "country_code": "SGP"
+      }
+    },
+    {
+      "date": "2003",
+      "value": "4114826",
+      "locator": {
+        "year": "2003",
+        "country_code": "SGP"
+      }
+    },
+    {
+      "date": "2004",
+      "value": "4166664",
+      "locator": {
+        "year": "2004",
+        "country_code": "SGP"
+      }
+    },
+    {
+      "date": "2005",
+      "value": "4265762",
+      "locator": {
+        "year": "2005",
+        "country_code": "SGP"
+      }
+    },
+    {
+      "date": "2006",
+      "value": "4401365",
+      "locator": {
+        "year": "2006",
+        "country_code": "SGP"
+      }
+    },
+    {
+      "date": "2007",
+      "value": "4588599",
+      "locator": {
+        "year": "2007",
+        "country_code": "SGP"
+      }
+    },
+    {
+      "date": "2008",
+      "value": "4839396",
+      "locator": {
+        "year": "2008",
+        "country_code": "SGP"
+      }
+    },
+    {
+      "date": "2009",
+      "value": "4987573",
+      "locator": {
+        "year": "2009",
+        "country_code": "SGP"
+      }
+    },
+    {
+      "date": "2010",
+      "value": "5076732",
+      "locator": {
+        "year": "2010",
+        "country_code": "SGP"
+      }
+    },
+    {
+      "date": "2011",
+      "value": "5183688",
+      "locator": {
+        "year": "2011",
+        "country_code": "SGP"
+      }
+    },
+    {
+      "date": "2012",
+      "value": "5312437",
+      "locator": {
+        "year": "2012",
+        "country_code": "SGP"
+      }
+    },
+    {
+      "date": "2013",
+      "value": "5399162",
+      "locator": {
+        "year": "2013",
+        "country_code": "SGP"
+      }
+    },
+    {
+      "date": "2014",
+      "value": "5469724",
+      "locator": {
+        "year": "2014",
+        "country_code": "SGP"
+      }
+    },
+    {
+      "date": "2015",
+      "value": "5535002",
+      "locator": {
+        "year": "2015",
+        "country_code": "SGP"
+      }
+    },
+    {
+      "date": "2016",
+      "value": "5607283",
+      "locator": {
+        "year": "2016",
+        "country_code": "SGP"
+      }
+    },
+    {
+      "date": "2017",
+      "value": "5612253",
+      "locator": {
+        "year": "2017",
+        "country_code": "SGP"
+      }
+    },
+    {
+      "date": "2018",
+      "value": "5638676",
+      "locator": {
+        "year": "2018",
+        "country_code": "SGP"
+      }
+    },
+    {
+      "date": "2019",
+      "value": "5703569",
+      "locator": {
+        "year": "2019",
+        "country_code": "SGP"
+      }
+    },
+    {
+      "date": "2020",
+      "value": "5685807",
+      "locator": {
+        "year": "2020",
+        "country_code": "SGP"
+      }
+    },
+    {
+      "date": "2021",
+      "value": "5453566",
+      "locator": {
+        "year": "2021",
+        "country_code": "SGP"
+      }
+    },
+    {
+      "date": "2022",
+      "value": "5637022",
+      "locator": {
+        "year": "2022",
+        "country_code": "SGP"
+      }
+    },
+    {
+      "date": "2023",
+      "value": "5917648",
+      "locator": {
+        "year": "2023",
+        "country_code": "SGP"
+      }
+    },
+    {
+      "date": "2024",
+      "value": "6036860",
+      "locator": {
+        "year": "2024",
+        "country_code": "SGP"
+      }
+    },
+    {
+      "date": "2025",
+      "value": "6111175",
+      "locator": {
+        "year": "2025",
+        "country_code": "SGP"
+      }
+    }
+  ]
+}

@@ -1,0 +1,543 @@
+{
+  "id": "wb_pop_AUT",
+  "name": "Austria",
+  "units": "people",
+  "adjustment": "midyear",
+  "nominal_or_real": "count",
+  "frequency": "annual",
+  "source_id": "worldbank_sp_pop_totl",
+  "series_url": "https://data.worldbank.org/indicator/SP.POP.TOTL",
+  "country_code": "AUT",
+  "country_name": "Austria",
+  "notes": "World Bank World Development Indicators, SP.POP.TOTL, country code AUT. Midyear population. Published years in this file run from 1960 to 2025.",
+  "points": [
+    {
+      "date": "1960",
+      "value": "7047539",
+      "locator": {
+        "year": "1960",
+        "country_code": "AUT"
+      }
+    },
+    {
+      "date": "1961",
+      "value": "7086299",
+      "locator": {
+        "year": "1961",
+        "country_code": "AUT"
+      }
+    },
+    {
+      "date": "1962",
+      "value": "7129864",
+      "locator": {
+        "year": "1962",
+        "country_code": "AUT"
+      }
+    },
+    {
+      "date": "1963",
+      "value": "7175811",
+      "locator": {
+        "year": "1963",
+        "country_code": "AUT"
+      }
+    },
+    {
+      "date": "1964",
+      "value": "7223801",
+      "locator": {
+        "year": "1964",
+        "country_code": "AUT"
+      }
+    },
+    {
+      "date": "1965",
+      "value": "7270889",
+      "locator": {
+        "year": "1965",
+        "country_code": "AUT"
+      }
+    },
+    {
+      "date": "1966",
+      "value": "7322066",
+      "locator": {
+        "year": "1966",
+        "country_code": "AUT"
+      }
+    },
+    {
+      "date": "1967",
+      "value": "7376998",
+      "locator": {
+        "year": "1967",
+        "country_code": "AUT"
+      }
+    },
+    {
+      "date": "1968",
+      "value": "7415403",
+      "locator": {
+        "year": "1968",
+        "country_code": "AUT"
+      }
+    },
+    {
+      "date": "1969",
+      "value": "7441055",
+      "locator": {
+        "year": "1969",
+        "country_code": "AUT"
+      }
+    },
+    {
+      "date": "1970",
+      "value": "7467086",
+      "locator": {
+        "year": "1970",
+        "country_code": "AUT"
+      }
+    },
+    {
+      "date": "1971",
+      "value": "7500482",
+      "locator": {
+        "year": "1971",
+        "country_code": "AUT"
+      }
+    },
+    {
+      "date": "1972",
+      "value": "7544201",
+      "locator": {
+        "year": "1972",
+        "country_code": "AUT"
+      }
+    },
+    {
+      "date": "1973",
+      "value": "7586115",
+      "locator": {
+        "year": "1973",
+        "country_code": "AUT"
+      }
+    },
+    {
+      "date": "1974",
+      "value": "7599038",
+      "locator": {
+        "year": "1974",
+        "country_code": "AUT"
+      }
+    },
+    {
+      "date": "1975",
+      "value": "7578903",
+      "locator": {
+        "year": "1975",
+        "country_code": "AUT"
+      }
+    },
+    {
+      "date": "1976",
+      "value": "7565525",
+      "locator": {
+        "year": "1976",
+        "country_code": "AUT"
+      }
+    },
+    {
+      "date": "1977",
+      "value": "7568430",
+      "locator": {
+        "year": "1977",
+        "country_code": "AUT"
+      }
+    },
+    {
+      "date": "1978",
+      "value": "7562305",
+      "locator": {
+        "year": "1978",
+        "country_code": "AUT"
+      }
+    },
+    {
+      "date": "1979",
+      "value": "7549425",
+      "locator": {
+        "year": "1979",
+        "country_code": "AUT"
+      }
+    },
+    {
+      "date": "1980",
+      "value": "7549433",
+      "locator": {
+        "year": "1980",
+        "country_code": "AUT"
+      }
+    },
+    {
+      "date": "1981",
+      "value": "7568710",
+      "locator": {
+        "year": "1981",
+        "country_code": "AUT"
+      }
+    },
+    {
+      "date": "1982",
+      "value": "7574140",
+      "locator": {
+        "year": "1982",
+        "country_code": "AUT"
+      }
+    },
+    {
+      "date": "1983",
+      "value": "7561910",
+      "locator": {
+        "year": "1983",
+        "country_code": "AUT"
+      }
+    },
+    {
+      "date": "1984",
+      "value": "7561434",
+      "locator": {
+        "year": "1984",
+        "country_code": "AUT"
+      }
+    },
+    {
+      "date": "1985",
+      "value": "7564985",
+      "locator": {
+        "year": "1985",
+        "country_code": "AUT"
+      }
+    },
+    {
+      "date": "1986",
+      "value": "7569794",
+      "locator": {
+        "year": "1986",
+        "country_code": "AUT"
+      }
+    },
+    {
+      "date": "1987",
+      "value": "7574586",
+      "locator": {
+        "year": "1987",
+        "country_code": "AUT"
+      }
+    },
+    {
+      "date": "1988",
+      "value": "7585317",
+      "locator": {
+        "year": "1988",
+        "country_code": "AUT"
+      }
+    },
+    {
+      "date": "1989",
+      "value": "7619567",
+      "locator": {
+        "year": "1989",
+        "country_code": "AUT"
+      }
+    },
+    {
+      "date": "1990",
+      "value": "7677850",
+      "locator": {
+        "year": "1990",
+        "country_code": "AUT"
+      }
+    },
+    {
+      "date": "1991",
+      "value": "7754891",
+      "locator": {
+        "year": "1991",
+        "country_code": "AUT"
+      }
+    },
+    {
+      "date": "1992",
+      "value": "7840709",
+      "locator": {
+        "year": "1992",
+        "country_code": "AUT"
+      }
+    },
+    {
+      "date": "1993",
+      "value": "7905633",
+      "locator": {
+        "year": "1993",
+        "country_code": "AUT"
+      }
+    },
+    {
+      "date": "1994",
+      "value": "7936118",
+      "locator": {
+        "year": "1994",
+        "country_code": "AUT"
+      }
+    },
+    {
+      "date": "1995",
+      "value": "7948278",
+      "locator": {
+        "year": "1995",
+        "country_code": "AUT"
+      }
+    },
+    {
+      "date": "1996",
+      "value": "7959017",
+      "locator": {
+        "year": "1996",
+        "country_code": "AUT"
+      }
+    },
+    {
+      "date": "1997",
+      "value": "7968041",
+      "locator": {
+        "year": "1997",
+        "country_code": "AUT"
+      }
+    },
+    {
+      "date": "1998",
+      "value": "7976789",
+      "locator": {
+        "year": "1998",
+        "country_code": "AUT"
+      }
+    },
+    {
+      "date": "1999",
+      "value": "7992324",
+      "locator": {
+        "year": "1999",
+        "country_code": "AUT"
+      }
+    },
+    {
+      "date": "2000",
+      "value": "8011566",
+      "locator": {
+        "year": "2000",
+        "country_code": "AUT"
+      }
+    },
+    {
+      "date": "2001",
+      "value": "8042293",
+      "locator": {
+        "year": "2001",
+        "country_code": "AUT"
+      }
+    },
+    {
+      "date": "2002",
+      "value": "8081957",
+      "locator": {
+        "year": "2002",
+        "country_code": "AUT"
+      }
+    },
+    {
+      "date": "2003",
+      "value": "8121423",
+      "locator": {
+        "year": "2003",
+        "country_code": "AUT"
+      }
+    },
+    {
+      "date": "2004",
+      "value": "8171966",
+      "locator": {
+        "year": "2004",
+        "country_code": "AUT"
+      }
+    },
+    {
+      "date": "2005",
+      "value": "8227829",
+      "locator": {
+        "year": "2005",
+        "country_code": "AUT"
+      }
+    },
+    {
+      "date": "2006",
+      "value": "8268641",
+      "locator": {
+        "year": "2006",
+        "country_code": "AUT"
+      }
+    },
+    {
+      "date": "2007",
+      "value": "8295487",
+      "locator": {
+        "year": "2007",
+        "country_code": "AUT"
+      }
+    },
+    {
+      "date": "2008",
+      "value": "8321496",
+      "locator": {
+        "year": "2008",
+        "country_code": "AUT"
+      }
+    },
+    {
+      "date": "2009",
+      "value": "8343323",
+      "locator": {
+        "year": "2009",
+        "country_code": "AUT"
+      }
+    },
+    {
+      "date": "2010",
+      "value": "8363404",
+      "locator": {
+        "year": "2010",
+        "country_code": "AUT"
+      }
+    },
+    {
+      "date": "2011",
+      "value": "8391643",
+      "locator": {
+        "year": "2011",
+        "country_code": "AUT"
+      }
+    },
+    {
+      "date": "2012",
+      "value": "8429991",
+      "locator": {
+        "year": "2012",
+        "country_code": "AUT"
+      }
+    },
+    {
+      "date": "2013",
+      "value": "8479823",
+      "locator": {
+        "year": "2013",
+        "country_code": "AUT"
+      }
+    },
+    {
+      "date": "2014",
+      "value": "8546356",
+      "locator": {
+        "year": "2014",
+        "country_code": "AUT"
+      }
+    },
+    {
+      "date": "2015",
+      "value": "8642699",
+      "locator": {
+        "year": "2015",
+        "country_code": "AUT"
+      }
+    },
+    {
+      "date": "2016",
+      "value": "8736668",
+      "locator": {
+        "year": "2016",
+        "country_code": "AUT"
+      }
+    },
+    {
+      "date": "2017",
+      "value": "8797566",
+      "locator": {
+        "year": "2017",
+        "country_code": "AUT"
+      }
+    },
+    {
+      "date": "2018",
+      "value": "8840521",
+      "locator": {
+        "year": "2018",
+        "country_code": "AUT"
+      }
+    },
+    {
+      "date": "2019",
+      "value": "8879920",
+      "locator": {
+        "year": "2019",
+        "country_code": "AUT"
+      }
+    },
+    {
+      "date": "2020",
+      "value": "8916864",
+      "locator": {
+        "year": "2020",
+        "country_code": "AUT"
+      }
+    },
+    {
+      "date": "2021",
+      "value": "8955797",
+      "locator": {
+        "year": "2021",
+        "country_code": "AUT"
+      }
+    },
+    {
+      "date": "2022",
+      "value": "9041851",
+      "locator": {
+        "year": "2022",
+        "country_code": "AUT"
+      }
+    },
+    {
+      "date": "2023",
+      "value": "9131761",
+      "locator": {
+        "year": "2023",
+        "country_code": "AUT"
+      }
+    },
+    {
+      "date": "2024",
+      "value": "9177982",
+      "locator": {
+        "year": "2024",
+        "country_code": "AUT"
+      }
+    },
+    {
+      "date": "2025",
+      "value": "9208163",
+      "locator": {
+        "year": "2025",
+        "country_code": "AUT"
+      }
+    }
+  ]
+}

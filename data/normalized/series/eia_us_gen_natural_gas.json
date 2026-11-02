@@ -1,0 +1,630 @@
+{
+  "id": "eia_us_gen_natural_gas",
+  "name": "Natural gas",
+  "units": "Million Kilowatthours",
+  "adjustment": "annual",
+  "nominal_or_real": "generation",
+  "frequency": "annual",
+  "source_id": "eia_total_bulk",
+  "series_url": "https://www.eia.gov/totalenergy/data/browser/index.php?tbl=T07.02A",
+  "eia_series_id": "TOTAL.NGETPUS.A",
+  "notes": "EIA bulk series TOTAL.NGETPUS.A, Electricity Net Generation From Natural Gas, All Sectors, Annual. Annual. Published years in this file run from 1949 to 2025.",
+  "points": [
+    {
+      "date": "1949",
+      "value": "36966.709",
+      "locator": {
+        "year": "1949",
+        "series_id": "TOTAL.NGETPUS.A"
+      }
+    },
+    {
+      "date": "1950",
+      "value": "44559.159",
+      "locator": {
+        "year": "1950",
+        "series_id": "TOTAL.NGETPUS.A"
+      }
+    },
+    {
+      "date": "1951",
+      "value": "56615.678",
+      "locator": {
+        "year": "1951",
+        "series_id": "TOTAL.NGETPUS.A"
+      }
+    },
+    {
+      "date": "1952",
+      "value": "68453.088",
+      "locator": {
+        "year": "1952",
+        "series_id": "TOTAL.NGETPUS.A"
+      }
+    },
+    {
+      "date": "1953",
+      "value": "79790.975",
+      "locator": {
+        "year": "1953",
+        "series_id": "TOTAL.NGETPUS.A"
+      }
+    },
+    {
+      "date": "1954",
+      "value": "93688.271",
+      "locator": {
+        "year": "1954",
+        "series_id": "TOTAL.NGETPUS.A"
+      }
+    },
+    {
+      "date": "1955",
+      "value": "95285.441",
+      "locator": {
+        "year": "1955",
+        "series_id": "TOTAL.NGETPUS.A"
+      }
+    },
+    {
+      "date": "1956",
+      "value": "104037.208",
+      "locator": {
+        "year": "1956",
+        "series_id": "TOTAL.NGETPUS.A"
+      }
+    },
+    {
+      "date": "1957",
+      "value": "114212.525",
+      "locator": {
+        "year": "1957",
+        "series_id": "TOTAL.NGETPUS.A"
+      }
+    },
+    {
+      "date": "1958",
+      "value": "119759.302",
+      "locator": {
+        "year": "1958",
+        "series_id": "TOTAL.NGETPUS.A"
+      }
+    },
+    {
+      "date": "1959",
+      "value": "146619.391",
+      "locator": {
+        "year": "1959",
+        "series_id": "TOTAL.NGETPUS.A"
+      }
+    },
+    {
+      "date": "1960",
+      "value": "157969.787",
+      "locator": {
+        "year": "1960",
+        "series_id": "TOTAL.NGETPUS.A"
+      }
+    },
+    {
+      "date": "1961",
+      "value": "169285.998",
+      "locator": {
+        "year": "1961",
+        "series_id": "TOTAL.NGETPUS.A"
+      }
+    },
+    {
+      "date": "1962",
+      "value": "184301.293",
+      "locator": {
+        "year": "1962",
+        "series_id": "TOTAL.NGETPUS.A"
+      }
+    },
+    {
+      "date": "1963",
+      "value": "201602.073",
+      "locator": {
+        "year": "1963",
+        "series_id": "TOTAL.NGETPUS.A"
+      }
+    },
+    {
+      "date": "1964",
+      "value": "220038.479",
+      "locator": {
+        "year": "1964",
+        "series_id": "TOTAL.NGETPUS.A"
+      }
+    },
+    {
+      "date": "1965",
+      "value": "221559.434",
+      "locator": {
+        "year": "1965",
+        "series_id": "TOTAL.NGETPUS.A"
+      }
+    },
+    {
+      "date": "1966",
+      "value": "251151.562",
+      "locator": {
+        "year": "1966",
+        "series_id": "TOTAL.NGETPUS.A"
+      }
+    },
+    {
+      "date": "1967",
+      "value": "264805.785",
+      "locator": {
+        "year": "1967",
+        "series_id": "TOTAL.NGETPUS.A"
+      }
+    },
+    {
+      "date": "1968",
+      "value": "304432.723",
+      "locator": {
+        "year": "1968",
+        "series_id": "TOTAL.NGETPUS.A"
+      }
+    },
+    {
+      "date": "1969",
+      "value": "333278.945",
+      "locator": {
+        "year": "1969",
+        "series_id": "TOTAL.NGETPUS.A"
+      }
+    },
+    {
+      "date": "1970",
+      "value": "372890.063",
+      "locator": {
+        "year": "1970",
+        "series_id": "TOTAL.NGETPUS.A"
+      }
+    },
+    {
+      "date": "1971",
+      "value": "374030.784",
+      "locator": {
+        "year": "1971",
+        "series_id": "TOTAL.NGETPUS.A"
+      }
+    },
+    {
+      "date": "1972",
+      "value": "375747.796",
+      "locator": {
+        "year": "1972",
+        "series_id": "TOTAL.NGETPUS.A"
+      }
+    },
+    {
+      "date": "1973",
+      "value": "340858.192",
+      "locator": {
+        "year": "1973",
+        "series_id": "TOTAL.NGETPUS.A"
+      }
+    },
+    {
+      "date": "1974",
+      "value": "320065.088",
+      "locator": {
+        "year": "1974",
+        "series_id": "TOTAL.NGETPUS.A"
+      }
+    },
+    {
+      "date": "1975",
+      "value": "299778.408",
+      "locator": {
+        "year": "1975",
+        "series_id": "TOTAL.NGETPUS.A"
+      }
+    },
+    {
+      "date": "1976",
+      "value": "294623.911",
+      "locator": {
+        "year": "1976",
+        "series_id": "TOTAL.NGETPUS.A"
+      }
+    },
+    {
+      "date": "1977",
+      "value": "305504.859",
+      "locator": {
+        "year": "1977",
+        "series_id": "TOTAL.NGETPUS.A"
+      }
+    },
+    {
+      "date": "1978",
+      "value": "305390.836",
+      "locator": {
+        "year": "1978",
+        "series_id": "TOTAL.NGETPUS.A"
+      }
+    },
+    {
+      "date": "1979",
+      "value": "329485.107",
+      "locator": {
+        "year": "1979",
+        "series_id": "TOTAL.NGETPUS.A"
+      }
+    },
+    {
+      "date": "1980",
+      "value": "346239.9",
+      "locator": {
+        "year": "1980",
+        "series_id": "TOTAL.NGETPUS.A"
+      }
+    },
+    {
+      "date": "1981",
+      "value": "345777.173",
+      "locator": {
+        "year": "1981",
+        "series_id": "TOTAL.NGETPUS.A"
+      }
+    },
+    {
+      "date": "1982",
+      "value": "305259.749",
+      "locator": {
+        "year": "1982",
+        "series_id": "TOTAL.NGETPUS.A"
+      }
+    },
+    {
+      "date": "1983",
+      "value": "274098.458",
+      "locator": {
+        "year": "1983",
+        "series_id": "TOTAL.NGETPUS.A"
+      }
+    },
+    {
+      "date": "1984",
+      "value": "297393.596",
+      "locator": {
+        "year": "1984",
+        "series_id": "TOTAL.NGETPUS.A"
+      }
+    },
+    {
+      "date": "1985",
+      "value": "291945.965",
+      "locator": {
+        "year": "1985",
+        "series_id": "TOTAL.NGETPUS.A"
+      }
+    },
+    {
+      "date": "1986",
+      "value": "248508.433",
+      "locator": {
+        "year": "1986",
+        "series_id": "TOTAL.NGETPUS.A"
+      }
+    },
+    {
+      "date": "1987",
+      "value": "272620.803",
+      "locator": {
+        "year": "1987",
+        "series_id": "TOTAL.NGETPUS.A"
+      }
+    },
+    {
+      "date": "1988",
+      "value": "252800.704",
+      "locator": {
+        "year": "1988",
+        "series_id": "TOTAL.NGETPUS.A"
+      }
+    },
+    {
+      "date": "1989",
+      "value": "352628.866",
+      "locator": {
+        "year": "1989",
+        "series_id": "TOTAL.NGETPUS.A"
+      }
+    },
+    {
+      "date": "1990",
+      "value": "372765.154",
+      "locator": {
+        "year": "1990",
+        "series_id": "TOTAL.NGETPUS.A"
+      }
+    },
+    {
+      "date": "1991",
+      "value": "381553.017",
+      "locator": {
+        "year": "1991",
+        "series_id": "TOTAL.NGETPUS.A"
+      }
+    },
+    {
+      "date": "1992",
+      "value": "404074.372",
+      "locator": {
+        "year": "1992",
+        "series_id": "TOTAL.NGETPUS.A"
+      }
+    },
+    {
+      "date": "1993",
+      "value": "414926.798",
+      "locator": {
+        "year": "1993",
+        "series_id": "TOTAL.NGETPUS.A"
+      }
+    },
+    {
+      "date": "1994",
+      "value": "460218.682",
+      "locator": {
+        "year": "1994",
+        "series_id": "TOTAL.NGETPUS.A"
+      }
+    },
+    {
+      "date": "1995",
+      "value": "496057.945",
+      "locator": {
+        "year": "1995",
+        "series_id": "TOTAL.NGETPUS.A"
+      }
+    },
+    {
+      "date": "1996",
+      "value": "455055.576",
+      "locator": {
+        "year": "1996",
+        "series_id": "TOTAL.NGETPUS.A"
+      }
+    },
+    {
+      "date": "1997",
+      "value": "479398.67",
+      "locator": {
+        "year": "1997",
+        "series_id": "TOTAL.NGETPUS.A"
+      }
+    },
+    {
+      "date": "1998",
+      "value": "531257.104",
+      "locator": {
+        "year": "1998",
+        "series_id": "TOTAL.NGETPUS.A"
+      }
+    },
+    {
+      "date": "1999",
+      "value": "556396.127",
+      "locator": {
+        "year": "1999",
+        "series_id": "TOTAL.NGETPUS.A"
+      }
+    },
+    {
+      "date": "2000",
+      "value": "601038.159",
+      "locator": {
+        "year": "2000",
+        "series_id": "TOTAL.NGETPUS.A"
+      }
+    },
+    {
+      "date": "2001",
+      "value": "639129.119",
+      "locator": {
+        "year": "2001",
+        "series_id": "TOTAL.NGETPUS.A"
+      }
+    },
+    {
+      "date": "2002",
+      "value": "691005.744",
+      "locator": {
+        "year": "2002",
+        "series_id": "TOTAL.NGETPUS.A"
+      }
+    },
+    {
+      "date": "2003",
+      "value": "649907.539",
+      "locator": {
+        "year": "2003",
+        "series_id": "TOTAL.NGETPUS.A"
+      }
+    },
+    {
+      "date": "2004",
+      "value": "710100.017",
+      "locator": {
+        "year": "2004",
+        "series_id": "TOTAL.NGETPUS.A"
+      }
+    },
+    {
+      "date": "2005",
+      "value": "760960.254",
+      "locator": {
+        "year": "2005",
+        "series_id": "TOTAL.NGETPUS.A"
+      }
+    },
+    {
+      "date": "2006",
+      "value": "816440.77",
+      "locator": {
+        "year": "2006",
+        "series_id": "TOTAL.NGETPUS.A"
+      }
+    },
+    {
+      "date": "2007",
+      "value": "896589.791",
+      "locator": {
+        "year": "2007",
+        "series_id": "TOTAL.NGETPUS.A"
+      }
+    },
+    {
+      "date": "2008",
+      "value": "882980.599",
+      "locator": {
+        "year": "2008",
+        "series_id": "TOTAL.NGETPUS.A"
+      }
+    },
+    {
+      "date": "2009",
+      "value": "920978.681",
+      "locator": {
+        "year": "2009",
+        "series_id": "TOTAL.NGETPUS.A"
+      }
+    },
+    {
+      "date": "2010",
+      "value": "987697.234",
+      "locator": {
+        "year": "2010",
+        "series_id": "TOTAL.NGETPUS.A"
+      }
+    },
+    {
+      "date": "2011",
+      "value": "1013688.929",
+      "locator": {
+        "year": "2011",
+        "series_id": "TOTAL.NGETPUS.A"
+      }
+    },
+    {
+      "date": "2012",
+      "value": "1225894.175",
+      "locator": {
+        "year": "2012",
+        "series_id": "TOTAL.NGETPUS.A"
+      }
+    },
+    {
+      "date": "2013",
+      "value": "1124835.56",
+      "locator": {
+        "year": "2013",
+        "series_id": "TOTAL.NGETPUS.A"
+      }
+    },
+    {
+      "date": "2014",
+      "value": "1126635.116",
+      "locator": {
+        "year": "2014",
+        "series_id": "TOTAL.NGETPUS.A"
+      }
+    },
+    {
+      "date": "2015",
+      "value": "1334668.003",
+      "locator": {
+        "year": "2015",
+        "series_id": "TOTAL.NGETPUS.A"
+      }
+    },
+    {
+      "date": "2016",
+      "value": "1379270.922",
+      "locator": {
+        "year": "2016",
+        "series_id": "TOTAL.NGETPUS.A"
+      }
+    },
+    {
+      "date": "2017",
+      "value": "1297702.528",
+      "locator": {
+        "year": "2017",
+        "series_id": "TOTAL.NGETPUS.A"
+      }
+    },
+    {
+      "date": "2018",
+      "value": "1471843.031",
+      "locator": {
+        "year": "2018",
+        "series_id": "TOTAL.NGETPUS.A"
+      }
+    },
+    {
+      "date": "2019",
+      "value": "1588532.84",
+      "locator": {
+        "year": "2019",
+        "series_id": "TOTAL.NGETPUS.A"
+      }
+    },
+    {
+      "date": "2020",
+      "value": "1626789.64",
+      "locator": {
+        "year": "2020",
+        "series_id": "TOTAL.NGETPUS.A"
+      }
+    },
+    {
+      "date": "2021",
+      "value": "1579189.987",
+      "locator": {
+        "year": "2021",
+        "series_id": "TOTAL.NGETPUS.A"
+      }
+    },
+    {
+      "date": "2022",
+      "value": "1687064.739",
+      "locator": {
+        "year": "2022",
+        "series_id": "TOTAL.NGETPUS.A"
+      }
+    },
+    {
+      "date": "2023",
+      "value": "1806062.912",
+      "locator": {
+        "year": "2023",
+        "series_id": "TOTAL.NGETPUS.A"
+      }
+    },
+    {
+      "date": "2024",
+      "value": "1869902.146",
+      "locator": {
+        "year": "2024",
+        "series_id": "TOTAL.NGETPUS.A"
+      }
+    },
+    {
+      "date": "2025",
+      "value": "1807338.288",
+      "locator": {
+        "year": "2025",
+        "series_id": "TOTAL.NGETPUS.A"
+      }
+    }
+  ]
+}

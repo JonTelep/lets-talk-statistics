@@ -11,6 +11,7 @@ from .census import fetch as fetch_census
 from .common import DATA, NORMALIZED, SITE_JSON, utc_now, write_json
 from .derive import rebase_to_common_year, real_home_price, twelve_month_change
 from .omb import fetch as fetch_omb
+from .energy import fetch as fetch_energy
 from .immigration import fetch as fetch_immigration
 from .optional import collect_todos
 from .presidents import payload as presidents_payload
@@ -53,6 +54,11 @@ def main() -> None:
     im_sources, im_series, im_todos = fetch_immigration()
     all_sources.extend(im_sources)
     all_series.extend(im_series)
+
+    en_sources, en_series, en_todos = fetch_energy()
+    all_sources.extend(en_sources)
+    all_series.extend(en_series)
+    todos.extend(en_todos)
 
     by_id = {item["id"]: item for item in all_series}
     if "bls_cuur0000sa0_monthly" in by_id:

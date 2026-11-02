@@ -18,6 +18,8 @@ export default function Footer() {
               <li><a href="https://www.census.gov" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">U.S. Census Bureau</a></li>
               <li><a href="https://ohss.dhs.gov" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">Office of Homeland Security Statistics</a></li>
               <li><a href="https://www.cbp.gov" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">U.S. Customs and Border Protection</a></li>
+              <li><a href="https://www.eia.gov" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">U.S. Energy Information Administration</a></li>
+              <li><a href="https://data.worldbank.org" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">World Bank</a></li>
             </ul>
           </div>
 
@@ -27,6 +29,7 @@ export default function Footer() {
               <li><Link href="/prices" className="hover:text-foreground transition-colors">Prices and inflation</Link></li>
               <li><Link href="/budget" className="hover:text-foreground transition-colors">Federal budget and debt</Link></li>
               <li><Link href="/economy" className="hover:text-foreground transition-colors">Economy and wages</Link></li>
+              <li><Link href="/energy" className="hover:text-foreground transition-colors">Energy</Link></li>
               <li><Link href="/crime" className="hover:text-foreground transition-colors">Crime</Link></li>
               <li><Link href="/immigration" className="hover:text-foreground transition-colors">Immigration</Link></li>
               <li><Link href="/sources" className="hover:text-foreground transition-colors">Sources and methodology</Link></li>

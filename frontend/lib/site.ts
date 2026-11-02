@@ -1,4 +1,5 @@
 import raw from '../data/site.json';
+import { sourcesForSeries } from './sources';
 
 export type Point = {
   date: string;
@@ -18,10 +19,16 @@ export type Series = {
   points: Point[];
   notes?: string;
   bls_series_id?: string;
+  eia_series_id?: string;
   derived?: boolean;
+  formula?: string;
   inputs?: string[];
+  source_ids?: string[];
   base_year?: string;
   published_units?: string;
+  country_code?: string;
+  country_name?: string;
+  population_status?: string;
 };
 
 export type ChartSpec = {
@@ -29,9 +36,13 @@ export type ChartSpec = {
   title: string;
   page: string;
   frequency: string;
-  shade: 'month' | 'calendar' | 'fiscal';
+  shade: 'month' | 'calendar' | 'fiscal' | 'none';
   series: string[];
   notes: string;
+  type?: 'line' | 'stacked';
+  markers?: 'peak_1970_latest';
+  country_code?: string;
+  country_name?: string;
 };
 
 export type SourceRecord = {
@@ -90,16 +101,7 @@ export function sourceFor(series: Series): SourceRecord | undefined {
 }
 
 export function sourcesFor(series: Series): SourceRecord[] {
-  const ids: string[] = [];
-  const add = (id: string | undefined) => {
-    if (id && !ids.includes(id)) ids.push(id);
-  };
-  for (const point of series.points) add(point.locator?.source_id);
-  add(series.source_id);
-  return ids.flatMap((id) => {
-    const source = site.sources.find((item) => item.id === id);
-    return source ? [source] : [];
-  });
+  return sourcesForSeries(series, site.sources);
 }
 
 export function latestPoint(seriesId: string): Point | undefined {

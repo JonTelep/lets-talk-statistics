@@ -1,0 +1,543 @@
+{
+  "id": "wb_pop_DJI",
+  "name": "Djibouti",
+  "units": "people",
+  "adjustment": "midyear",
+  "nominal_or_real": "count",
+  "frequency": "annual",
+  "source_id": "worldbank_sp_pop_totl",
+  "series_url": "https://data.worldbank.org/indicator/SP.POP.TOTL",
+  "country_code": "DJI",
+  "country_name": "Djibouti",
+  "notes": "World Bank World Development Indicators, SP.POP.TOTL, country code DJI. Midyear population. Published years in this file run from 1960 to 2025.",
+  "points": [
+    {
+      "date": "1960",
+      "value": "86024",
+      "locator": {
+        "year": "1960",
+        "country_code": "DJI"
+      }
+    },
+    {
+      "date": "1961",
+      "value": "89390",
+      "locator": {
+        "year": "1961",
+        "country_code": "DJI"
+      }
+    },
+    {
+      "date": "1962",
+      "value": "93283",
+      "locator": {
+        "year": "1962",
+        "country_code": "DJI"
+      }
+    },
+    {
+      "date": "1963",
+      "value": "97872",
+      "locator": {
+        "year": "1963",
+        "country_code": "DJI"
+      }
+    },
+    {
+      "date": "1964",
+      "value": "103198",
+      "locator": {
+        "year": "1964",
+        "country_code": "DJI"
+      }
+    },
+    {
+      "date": "1965",
+      "value": "109092",
+      "locator": {
+        "year": "1965",
+        "country_code": "DJI"
+      }
+    },
+    {
+      "date": "1966",
+      "value": "115269",
+      "locator": {
+        "year": "1966",
+        "country_code": "DJI"
+      }
+    },
+    {
+      "date": "1967",
+      "value": "121649",
+      "locator": {
+        "year": "1967",
+        "country_code": "DJI"
+      }
+    },
+    {
+      "date": "1968",
+      "value": "128250",
+      "locator": {
+        "year": "1968",
+        "country_code": "DJI"
+      }
+    },
+    {
+      "date": "1969",
+      "value": "136078",
+      "locator": {
+        "year": "1969",
+        "country_code": "DJI"
+      }
+    },
+    {
+      "date": "1970",
+      "value": "145175",
+      "locator": {
+        "year": "1970",
+        "country_code": "DJI"
+      }
+    },
+    {
+      "date": "1971",
+      "value": "155136",
+      "locator": {
+        "year": "1971",
+        "country_code": "DJI"
+      }
+    },
+    {
+      "date": "1972",
+      "value": "166256",
+      "locator": {
+        "year": "1972",
+        "country_code": "DJI"
+      }
+    },
+    {
+      "date": "1973",
+      "value": "178449",
+      "locator": {
+        "year": "1973",
+        "country_code": "DJI"
+      }
+    },
+    {
+      "date": "1974",
+      "value": "192613",
+      "locator": {
+        "year": "1974",
+        "country_code": "DJI"
+      }
+    },
+    {
+      "date": "1975",
+      "value": "209908",
+      "locator": {
+        "year": "1975",
+        "country_code": "DJI"
+      }
+    },
+    {
+      "date": "1976",
+      "value": "230737",
+      "locator": {
+        "year": "1976",
+        "country_code": "DJI"
+      }
+    },
+    {
+      "date": "1977",
+      "value": "254613",
+      "locator": {
+        "year": "1977",
+        "country_code": "DJI"
+      }
+    },
+    {
+      "date": "1978",
+      "value": "280031",
+      "locator": {
+        "year": "1978",
+        "country_code": "DJI"
+      }
+    },
+    {
+      "date": "1979",
+      "value": "304513",
+      "locator": {
+        "year": "1979",
+        "country_code": "DJI"
+      }
+    },
+    {
+      "date": "1980",
+      "value": "325815",
+      "locator": {
+        "year": "1980",
+        "country_code": "DJI"
+      }
+    },
+    {
+      "date": "1981",
+      "value": "343047",
+      "locator": {
+        "year": "1981",
+        "country_code": "DJI"
+      }
+    },
+    {
+      "date": "1982",
+      "value": "356880",
+      "locator": {
+        "year": "1982",
+        "country_code": "DJI"
+      }
+    },
+    {
+      "date": "1983",
+      "value": "369553",
+      "locator": {
+        "year": "1983",
+        "country_code": "DJI"
+      }
+    },
+    {
+      "date": "1984",
+      "value": "384053",
+      "locator": {
+        "year": "1984",
+        "country_code": "DJI"
+      }
+    },
+    {
+      "date": "1985",
+      "value": "402687",
+      "locator": {
+        "year": "1985",
+        "country_code": "DJI"
+      }
+    },
+    {
+      "date": "1986",
+      "value": "426341",
+      "locator": {
+        "year": "1986",
+        "country_code": "DJI"
+      }
+    },
+    {
+      "date": "1987",
+      "value": "454399",
+      "locator": {
+        "year": "1987",
+        "country_code": "DJI"
+      }
+    },
+    {
+      "date": "1988",
+      "value": "484523",
+      "locator": {
+        "year": "1988",
+        "country_code": "DJI"
+      }
+    },
+    {
+      "date": "1989",
+      "value": "523355",
+      "locator": {
+        "year": "1989",
+        "country_code": "DJI"
+      }
+    },
+    {
+      "date": "1990",
+      "value": "579538",
+      "locator": {
+        "year": "1990",
+        "country_code": "DJI"
+      }
+    },
+    {
+      "date": "1991",
+      "value": "631092",
+      "locator": {
+        "year": "1991",
+        "country_code": "DJI"
+      }
+    },
+    {
+      "date": "1992",
+      "value": "626010",
+      "locator": {
+        "year": "1992",
+        "country_code": "DJI"
+      }
+    },
+    {
+      "date": "1993",
+      "value": "614245",
+      "locator": {
+        "year": "1993",
+        "country_code": "DJI"
+      }
+    },
+    {
+      "date": "1994",
+      "value": "626710",
+      "locator": {
+        "year": "1994",
+        "country_code": "DJI"
+      }
+    },
+    {
+      "date": "1995",
+      "value": "633074",
+      "locator": {
+        "year": "1995",
+        "country_code": "DJI"
+      }
+    },
+    {
+      "date": "1996",
+      "value": "648348",
+      "locator": {
+        "year": "1996",
+        "country_code": "DJI"
+      }
+    },
+    {
+      "date": "1997",
+      "value": "671817",
+      "locator": {
+        "year": "1997",
+        "country_code": "DJI"
+      }
+    },
+    {
+      "date": "1998",
+      "value": "699352",
+      "locator": {
+        "year": "1998",
+        "country_code": "DJI"
+      }
+    },
+    {
+      "date": "1999",
+      "value": "724218",
+      "locator": {
+        "year": "1999",
+        "country_code": "DJI"
+      }
+    },
+    {
+      "date": "2000",
+      "value": "747318",
+      "locator": {
+        "year": "2000",
+        "country_code": "DJI"
+      }
+    },
+    {
+      "date": "2001",
+      "value": "771313",
+      "locator": {
+        "year": "2001",
+        "country_code": "DJI"
+      }
+    },
+    {
+      "date": "2002",
+      "value": "795574",
+      "locator": {
+        "year": "2002",
+        "country_code": "DJI"
+      }
+    },
+    {
+      "date": "2003",
+      "value": "813519",
+      "locator": {
+        "year": "2003",
+        "country_code": "DJI"
+      }
+    },
+    {
+      "date": "2004",
+      "value": "826124",
+      "locator": {
+        "year": "2004",
+        "country_code": "DJI"
+      }
+    },
+    {
+      "date": "2005",
+      "value": "839167",
+      "locator": {
+        "year": "2005",
+        "country_code": "DJI"
+      }
+    },
+    {
+      "date": "2006",
+      "value": "855764",
+      "locator": {
+        "year": "2006",
+        "country_code": "DJI"
+      }
+    },
+    {
+      "date": "2007",
+      "value": "874528",
+      "locator": {
+        "year": "2007",
+        "country_code": "DJI"
+      }
+    },
+    {
+      "date": "2008",
+      "value": "892734",
+      "locator": {
+        "year": "2008",
+        "country_code": "DJI"
+      }
+    },
+    {
+      "date": "2009",
+      "value": "911527",
+      "locator": {
+        "year": "2009",
+        "country_code": "DJI"
+      }
+    },
+    {
+      "date": "2010",
+      "value": "930251",
+      "locator": {
+        "year": "2010",
+        "country_code": "DJI"
+      }
+    },
+    {
+      "date": "2011",
+      "value": "948558",
+      "locator": {
+        "year": "2011",
+        "country_code": "DJI"
+      }
+    },
+    {
+      "date": "2012",
+      "value": "966747",
+      "locator": {
+        "year": "2012",
+        "country_code": "DJI"
+      }
+    },
+    {
+      "date": "2013",
+      "value": "984824",
+      "locator": {
+        "year": "2013",
+        "country_code": "DJI"
+      }
+    },
+    {
+      "date": "2014",
+      "value": "1002717",
+      "locator": {
+        "year": "2014",
+        "country_code": "DJI"
+      }
+    },
+    {
+      "date": "2015",
+      "value": "1020313",
+      "locator": {
+        "year": "2015",
+        "country_code": "DJI"
+      }
+    },
+    {
+      "date": "2016",
+      "value": "1037653",
+      "locator": {
+        "year": "2016",
+        "country_code": "DJI"
+      }
+    },
+    {
+      "date": "2017",
+      "value": "1054841",
+      "locator": {
+        "year": "2017",
+        "country_code": "DJI"
+      }
+    },
+    {
+      "date": "2018",
+      "value": "1071882",
+      "locator": {
+        "year": "2018",
+        "country_code": "DJI"
+      }
+    },
+    {
+      "date": "2019",
+      "value": "1088709",
+      "locator": {
+        "year": "2019",
+        "country_code": "DJI"
+      }
+    },
+    {
+      "date": "2020",
+      "value": "1105188",
+      "locator": {
+        "year": "2020",
+        "country_code": "DJI"
+      }
+    },
+    {
+      "date": "2021",
+      "value": "1121248",
+      "locator": {
+        "year": "2021",
+        "country_code": "DJI"
+      }
+    },
+    {
+      "date": "2022",
+      "value": "1137096",
+      "locator": {
+        "year": "2022",
+        "country_code": "DJI"
+      }
+    },
+    {
+      "date": "2023",
+      "value": "1152944",
+      "locator": {
+        "year": "2023",
+        "country_code": "DJI"
+      }
+    },
+    {
+      "date": "2024",
+      "value": "1168722",
+      "locator": {
+        "year": "2024",
+        "country_code": "DJI"
+      }
+    },
+    {
+      "date": "2025",
+      "value": "1184076",
+      "locator": {
+        "year": "2025",
+        "country_code": "DJI"
+      }
+    }
+  ]
+}

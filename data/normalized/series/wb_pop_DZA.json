@@ -1,0 +1,543 @@
+{
+  "id": "wb_pop_DZA",
+  "name": "Algeria",
+  "units": "people",
+  "adjustment": "midyear",
+  "nominal_or_real": "count",
+  "frequency": "annual",
+  "source_id": "worldbank_sp_pop_totl",
+  "series_url": "https://data.worldbank.org/indicator/SP.POP.TOTL",
+  "country_code": "DZA",
+  "country_name": "Algeria",
+  "notes": "World Bank World Development Indicators, SP.POP.TOTL, country code DZA. Midyear population. Published years in this file run from 1960 to 2025.",
+  "points": [
+    {
+      "date": "1960",
+      "value": "11424922",
+      "locator": {
+        "year": "1960",
+        "country_code": "DZA"
+      }
+    },
+    {
+      "date": "1961",
+      "value": "11628883",
+      "locator": {
+        "year": "1961",
+        "country_code": "DZA"
+      }
+    },
+    {
+      "date": "1962",
+      "value": "11800771",
+      "locator": {
+        "year": "1962",
+        "country_code": "DZA"
+      }
+    },
+    {
+      "date": "1963",
+      "value": "11982118",
+      "locator": {
+        "year": "1963",
+        "country_code": "DZA"
+      }
+    },
+    {
+      "date": "1964",
+      "value": "12179813",
+      "locator": {
+        "year": "1964",
+        "country_code": "DZA"
+      }
+    },
+    {
+      "date": "1965",
+      "value": "12365976",
+      "locator": {
+        "year": "1965",
+        "country_code": "DZA"
+      }
+    },
+    {
+      "date": "1966",
+      "value": "12590069",
+      "locator": {
+        "year": "1966",
+        "country_code": "DZA"
+      }
+    },
+    {
+      "date": "1967",
+      "value": "12876118",
+      "locator": {
+        "year": "1967",
+        "country_code": "DZA"
+      }
+    },
+    {
+      "date": "1968",
+      "value": "13172614",
+      "locator": {
+        "year": "1968",
+        "country_code": "DZA"
+      }
+    },
+    {
+      "date": "1969",
+      "value": "13475960",
+      "locator": {
+        "year": "1969",
+        "country_code": "DZA"
+      }
+    },
+    {
+      "date": "1970",
+      "value": "13783719",
+      "locator": {
+        "year": "1970",
+        "country_code": "DZA"
+      }
+    },
+    {
+      "date": "1971",
+      "value": "14098936",
+      "locator": {
+        "year": "1971",
+        "country_code": "DZA"
+      }
+    },
+    {
+      "date": "1972",
+      "value": "14427072",
+      "locator": {
+        "year": "1972",
+        "country_code": "DZA"
+      }
+    },
+    {
+      "date": "1973",
+      "value": "14771147",
+      "locator": {
+        "year": "1973",
+        "country_code": "DZA"
+      }
+    },
+    {
+      "date": "1974",
+      "value": "15133502",
+      "locator": {
+        "year": "1974",
+        "country_code": "DZA"
+      }
+    },
+    {
+      "date": "1975",
+      "value": "15678596",
+      "locator": {
+        "year": "1975",
+        "country_code": "DZA"
+      }
+    },
+    {
+      "date": "1976",
+      "value": "16409170",
+      "locator": {
+        "year": "1976",
+        "country_code": "DZA"
+      }
+    },
+    {
+      "date": "1977",
+      "value": "17015994",
+      "locator": {
+        "year": "1977",
+        "country_code": "DZA"
+      }
+    },
+    {
+      "date": "1978",
+      "value": "17506974",
+      "locator": {
+        "year": "1978",
+        "country_code": "DZA"
+      }
+    },
+    {
+      "date": "1979",
+      "value": "18036655",
+      "locator": {
+        "year": "1979",
+        "country_code": "DZA"
+      }
+    },
+    {
+      "date": "1980",
+      "value": "18607174",
+      "locator": {
+        "year": "1980",
+        "country_code": "DZA"
+      }
+    },
+    {
+      "date": "1981",
+      "value": "19220704",
+      "locator": {
+        "year": "1981",
+        "country_code": "DZA"
+      }
+    },
+    {
+      "date": "1982",
+      "value": "19872348",
+      "locator": {
+        "year": "1982",
+        "country_code": "DZA"
+      }
+    },
+    {
+      "date": "1983",
+      "value": "20558115",
+      "locator": {
+        "year": "1983",
+        "country_code": "DZA"
+      }
+    },
+    {
+      "date": "1984",
+      "value": "21271969",
+      "locator": {
+        "year": "1984",
+        "country_code": "DZA"
+      }
+    },
+    {
+      "date": "1985",
+      "value": "22008544",
+      "locator": {
+        "year": "1985",
+        "country_code": "DZA"
+      }
+    },
+    {
+      "date": "1986",
+      "value": "22745499",
+      "locator": {
+        "year": "1986",
+        "country_code": "DZA"
+      }
+    },
+    {
+      "date": "1987",
+      "value": "23443624",
+      "locator": {
+        "year": "1987",
+        "country_code": "DZA"
+      }
+    },
+    {
+      "date": "1988",
+      "value": "24109536",
+      "locator": {
+        "year": "1988",
+        "country_code": "DZA"
+      }
+    },
+    {
+      "date": "1989",
+      "value": "24754485",
+      "locator": {
+        "year": "1989",
+        "country_code": "DZA"
+      }
+    },
+    {
+      "date": "1990",
+      "value": "25375810",
+      "locator": {
+        "year": "1990",
+        "country_code": "DZA"
+      }
+    },
+    {
+      "date": "1991",
+      "value": "25987928",
+      "locator": {
+        "year": "1991",
+        "country_code": "DZA"
+      }
+    },
+    {
+      "date": "1992",
+      "value": "26628568",
+      "locator": {
+        "year": "1992",
+        "country_code": "DZA"
+      }
+    },
+    {
+      "date": "1993",
+      "value": "27277048",
+      "locator": {
+        "year": "1993",
+        "country_code": "DZA"
+      }
+    },
+    {
+      "date": "1994",
+      "value": "27887279",
+      "locator": {
+        "year": "1994",
+        "country_code": "DZA"
+      }
+    },
+    {
+      "date": "1995",
+      "value": "28470191",
+      "locator": {
+        "year": "1995",
+        "country_code": "DZA"
+      }
+    },
+    {
+      "date": "1996",
+      "value": "29033044",
+      "locator": {
+        "year": "1996",
+        "country_code": "DZA"
+      }
+    },
+    {
+      "date": "1997",
+      "value": "29579301",
+      "locator": {
+        "year": "1997",
+        "country_code": "DZA"
+      }
+    },
+    {
+      "date": "1998",
+      "value": "30054133",
+      "locator": {
+        "year": "1998",
+        "country_code": "DZA"
+      }
+    },
+    {
+      "date": "1999",
+      "value": "30474354",
+      "locator": {
+        "year": "1999",
+        "country_code": "DZA"
+      }
+    },
+    {
+      "date": "2000",
+      "value": "30903893",
+      "locator": {
+        "year": "2000",
+        "country_code": "DZA"
+      }
+    },
+    {
+      "date": "2001",
+      "value": "31331221",
+      "locator": {
+        "year": "2001",
+        "country_code": "DZA"
+      }
+    },
+    {
+      "date": "2002",
+      "value": "31750835",
+      "locator": {
+        "year": "2002",
+        "country_code": "DZA"
+      }
+    },
+    {
+      "date": "2003",
+      "value": "32175818",
+      "locator": {
+        "year": "2003",
+        "country_code": "DZA"
+      }
+    },
+    {
+      "date": "2004",
+      "value": "32628286",
+      "locator": {
+        "year": "2004",
+        "country_code": "DZA"
+      }
+    },
+    {
+      "date": "2005",
+      "value": "33109249",
+      "locator": {
+        "year": "2005",
+        "country_code": "DZA"
+      }
+    },
+    {
+      "date": "2006",
+      "value": "33623506",
+      "locator": {
+        "year": "2006",
+        "country_code": "DZA"
+      }
+    },
+    {
+      "date": "2007",
+      "value": "34189416",
+      "locator": {
+        "year": "2007",
+        "country_code": "DZA"
+      }
+    },
+    {
+      "date": "2008",
+      "value": "34816961",
+      "locator": {
+        "year": "2008",
+        "country_code": "DZA"
+      }
+    },
+    {
+      "date": "2009",
+      "value": "35490445",
+      "locator": {
+        "year": "2009",
+        "country_code": "DZA"
+      }
+    },
+    {
+      "date": "2010",
+      "value": "36188236",
+      "locator": {
+        "year": "2010",
+        "country_code": "DZA"
+      }
+    },
+    {
+      "date": "2011",
+      "value": "36903376",
+      "locator": {
+        "year": "2011",
+        "country_code": "DZA"
+      }
+    },
+    {
+      "date": "2012",
+      "value": "37646166",
+      "locator": {
+        "year": "2012",
+        "country_code": "DZA"
+      }
+    },
+    {
+      "date": "2013",
+      "value": "38414171",
+      "locator": {
+        "year": "2013",
+        "country_code": "DZA"
+      }
+    },
+    {
+      "date": "2014",
+      "value": "39205031",
+      "locator": {
+        "year": "2014",
+        "country_code": "DZA"
+      }
+    },
+    {
+      "date": "2015",
+      "value": "40019529",
+      "locator": {
+        "year": "2015",
+        "country_code": "DZA"
+      }
+    },
+    {
+      "date": "2016",
+      "value": "40850721",
+      "locator": {
+        "year": "2016",
+        "country_code": "DZA"
+      }
+    },
+    {
+      "date": "2017",
+      "value": "41689299",
+      "locator": {
+        "year": "2017",
+        "country_code": "DZA"
+      }
+    },
+    {
+      "date": "2018",
+      "value": "42505035",
+      "locator": {
+        "year": "2018",
+        "country_code": "DZA"
+      }
+    },
+    {
+      "date": "2019",
+      "value": "43294546",
+      "locator": {
+        "year": "2019",
+        "country_code": "DZA"
+      }
+    },
+    {
+      "date": "2020",
+      "value": "44042091",
+      "locator": {
+        "year": "2020",
+        "country_code": "DZA"
+      }
+    },
+    {
+      "date": "2021",
+      "value": "44761099",
+      "locator": {
+        "year": "2021",
+        "country_code": "DZA"
+      }
+    },
+    {
+      "date": "2022",
+      "value": "45477389",
+      "locator": {
+        "year": "2022",
+        "country_code": "DZA"
+      }
+    },
+    {
+      "date": "2023",
+      "value": "46164219",
+      "locator": {
+        "year": "2023",
+        "country_code": "DZA"
+      }
+    },
+    {
+      "date": "2024",
+      "value": "46814308",
+      "locator": {
+        "year": "2024",
+        "country_code": "DZA"
+      }
+    },
+    {
+      "date": "2025",
+      "value": "47435312",
+      "locator": {
+        "year": "2025",
+        "country_code": "DZA"
+      }
+    }
+  ]
+}

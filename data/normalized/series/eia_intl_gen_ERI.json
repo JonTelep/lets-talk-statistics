@@ -1,0 +1,265 @@
+{
+  "id": "eia_intl_gen_ERI",
+  "name": "Net generation",
+  "units": "billion kilowatthours",
+  "adjustment": "annual",
+  "nominal_or_real": "generation",
+  "frequency": "annual",
+  "source_id": "eia_intl_bulk",
+  "series_url": "https://www.eia.gov/international/data/world/electricity/electricity-generation",
+  "eia_series_id": "INTL.2-12-ERI-BKWH.A",
+  "country_code": "ERI",
+  "country_name": "Eritrea",
+  "population_status": "matched",
+  "notes": "EIA bulk series INTL.2-12-ERI-BKWH.A, Eritrea. Annual. Billion kilowatthours. 1 billion kilowatthours = 1 terawatthour. Published years in this file run from 1994 to 2024.",
+  "points": [
+    {
+      "date": "1994",
+      "value": "0.151",
+      "locator": {
+        "year": "1994",
+        "series_id": "INTL.2-12-ERI-BKWH.A"
+      }
+    },
+    {
+      "date": "1995",
+      "value": "0.162",
+      "locator": {
+        "year": "1995",
+        "series_id": "INTL.2-12-ERI-BKWH.A"
+      }
+    },
+    {
+      "date": "1996",
+      "value": "0.181",
+      "locator": {
+        "year": "1996",
+        "series_id": "INTL.2-12-ERI-BKWH.A"
+      }
+    },
+    {
+      "date": "1997",
+      "value": "0.1784",
+      "locator": {
+        "year": "1997",
+        "series_id": "INTL.2-12-ERI-BKWH.A"
+      }
+    },
+    {
+      "date": "1998",
+      "value": "0.184962",
+      "locator": {
+        "year": "1998",
+        "series_id": "INTL.2-12-ERI-BKWH.A"
+      }
+    },
+    {
+      "date": "1999",
+      "value": "0.201",
+      "locator": {
+        "year": "1999",
+        "series_id": "INTL.2-12-ERI-BKWH.A"
+      }
+    },
+    {
+      "date": "2000",
+      "value": "0.21",
+      "locator": {
+        "year": "2000",
+        "series_id": "INTL.2-12-ERI-BKWH.A"
+      }
+    },
+    {
+      "date": "2001",
+      "value": "0.233",
+      "locator": {
+        "year": "2001",
+        "series_id": "INTL.2-12-ERI-BKWH.A"
+      }
+    },
+    {
+      "date": "2002",
+      "value": "0.259",
+      "locator": {
+        "year": "2002",
+        "series_id": "INTL.2-12-ERI-BKWH.A"
+      }
+    },
+    {
+      "date": "2003",
+      "value": "0.277",
+      "locator": {
+        "year": "2003",
+        "series_id": "INTL.2-12-ERI-BKWH.A"
+      }
+    },
+    {
+      "date": "2004",
+      "value": "0.283",
+      "locator": {
+        "year": "2004",
+        "series_id": "INTL.2-12-ERI-BKWH.A"
+      }
+    },
+    {
+      "date": "2005",
+      "value": "0.288",
+      "locator": {
+        "year": "2005",
+        "series_id": "INTL.2-12-ERI-BKWH.A"
+      }
+    },
+    {
+      "date": "2006",
+      "value": "0.269",
+      "locator": {
+        "year": "2006",
+        "series_id": "INTL.2-12-ERI-BKWH.A"
+      }
+    },
+    {
+      "date": "2007",
+      "value": "0.288",
+      "locator": {
+        "year": "2007",
+        "series_id": "INTL.2-12-ERI-BKWH.A"
+      }
+    },
+    {
+      "date": "2008",
+      "value": "0.289",
+      "locator": {
+        "year": "2008",
+        "series_id": "INTL.2-12-ERI-BKWH.A"
+      }
+    },
+    {
+      "date": "2009",
+      "value": "0.297",
+      "locator": {
+        "year": "2009",
+        "series_id": "INTL.2-12-ERI-BKWH.A"
+      }
+    },
+    {
+      "date": "2010",
+      "value": "0.313",
+      "locator": {
+        "year": "2010",
+        "series_id": "INTL.2-12-ERI-BKWH.A"
+      }
+    },
+    {
+      "date": "2011",
+      "value": "0.326",
+      "locator": {
+        "year": "2011",
+        "series_id": "INTL.2-12-ERI-BKWH.A"
+      }
+    },
+    {
+      "date": "2012",
+      "value": "0.323",
+      "locator": {
+        "year": "2012",
+        "series_id": "INTL.2-12-ERI-BKWH.A"
+      }
+    },
+    {
+      "date": "2013",
+      "value": "0.279",
+      "locator": {
+        "year": "2013",
+        "series_id": "INTL.2-12-ERI-BKWH.A"
+      }
+    },
+    {
+      "date": "2014",
+      "value": "0.278",
+      "locator": {
+        "year": "2014",
+        "series_id": "INTL.2-12-ERI-BKWH.A"
+      }
+    },
+    {
+      "date": "2015",
+      "value": "0.271",
+      "locator": {
+        "year": "2015",
+        "series_id": "INTL.2-12-ERI-BKWH.A"
+      }
+    },
+    {
+      "date": "2016",
+      "value": "0.276",
+      "locator": {
+        "year": "2016",
+        "series_id": "INTL.2-12-ERI-BKWH.A"
+      }
+    },
+    {
+      "date": "2017",
+      "value": "0.3338",
+      "locator": {
+        "year": "2017",
+        "series_id": "INTL.2-12-ERI-BKWH.A"
+      }
+    },
+    {
+      "date": "2018",
+      "value": "0.3897",
+      "locator": {
+        "year": "2018",
+        "series_id": "INTL.2-12-ERI-BKWH.A"
+      }
+    },
+    {
+      "date": "2019",
+      "value": "0.4008",
+      "locator": {
+        "year": "2019",
+        "series_id": "INTL.2-12-ERI-BKWH.A"
+      }
+    },
+    {
+      "date": "2020",
+      "value": "0.4116",
+      "locator": {
+        "year": "2020",
+        "series_id": "INTL.2-12-ERI-BKWH.A"
+      }
+    },
+    {
+      "date": "2021",
+      "value": "0.42",
+      "locator": {
+        "year": "2021",
+        "series_id": "INTL.2-12-ERI-BKWH.A"
+      }
+    },
+    {
+      "date": "2022",
+      "value": "0.436",
+      "locator": {
+        "year": "2022",
+        "series_id": "INTL.2-12-ERI-BKWH.A"
+      }
+    },
+    {
+      "date": "2023",
+      "value": "0.483694",
+      "locator": {
+        "year": "2023",
+        "series_id": "INTL.2-12-ERI-BKWH.A"
+      }
+    },
+    {
+      "date": "2024",
+      "value": "0.45460642",
+      "locator": {
+        "year": "2024",
+        "series_id": "INTL.2-12-ERI-BKWH.A"
+      }
+    }
+  ]
+}

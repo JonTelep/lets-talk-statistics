@@ -1,0 +1,543 @@
+{
+  "id": "wb_pop_ZAF",
+  "name": "South Africa",
+  "units": "people",
+  "adjustment": "midyear",
+  "nominal_or_real": "count",
+  "frequency": "annual",
+  "source_id": "worldbank_sp_pop_totl",
+  "series_url": "https://data.worldbank.org/indicator/SP.POP.TOTL",
+  "country_code": "ZAF",
+  "country_name": "South Africa",
+  "notes": "World Bank World Development Indicators, SP.POP.TOTL, country code ZAF. Midyear population. Published years in this file run from 1960 to 2025.",
+  "points": [
+    {
+      "date": "1960",
+      "value": "16440172",
+      "locator": {
+        "year": "1960",
+        "country_code": "ZAF"
+      }
+    },
+    {
+      "date": "1961",
+      "value": "16908035",
+      "locator": {
+        "year": "1961",
+        "country_code": "ZAF"
+      }
+    },
+    {
+      "date": "1962",
+      "value": "17418522",
+      "locator": {
+        "year": "1962",
+        "country_code": "ZAF"
+      }
+    },
+    {
+      "date": "1963",
+      "value": "17954564",
+      "locator": {
+        "year": "1963",
+        "country_code": "ZAF"
+      }
+    },
+    {
+      "date": "1964",
+      "value": "18511361",
+      "locator": {
+        "year": "1964",
+        "country_code": "ZAF"
+      }
+    },
+    {
+      "date": "1965",
+      "value": "19089380",
+      "locator": {
+        "year": "1965",
+        "country_code": "ZAF"
+      }
+    },
+    {
+      "date": "1966",
+      "value": "19690087",
+      "locator": {
+        "year": "1966",
+        "country_code": "ZAF"
+      }
+    },
+    {
+      "date": "1967",
+      "value": "20314066",
+      "locator": {
+        "year": "1967",
+        "country_code": "ZAF"
+      }
+    },
+    {
+      "date": "1968",
+      "value": "20957287",
+      "locator": {
+        "year": "1968",
+        "country_code": "ZAF"
+      }
+    },
+    {
+      "date": "1969",
+      "value": "21614676",
+      "locator": {
+        "year": "1969",
+        "country_code": "ZAF"
+      }
+    },
+    {
+      "date": "1970",
+      "value": "22279984",
+      "locator": {
+        "year": "1970",
+        "country_code": "ZAF"
+      }
+    },
+    {
+      "date": "1971",
+      "value": "22942143",
+      "locator": {
+        "year": "1971",
+        "country_code": "ZAF"
+      }
+    },
+    {
+      "date": "1972",
+      "value": "23609456",
+      "locator": {
+        "year": "1972",
+        "country_code": "ZAF"
+      }
+    },
+    {
+      "date": "1973",
+      "value": "24294263",
+      "locator": {
+        "year": "1973",
+        "country_code": "ZAF"
+      }
+    },
+    {
+      "date": "1974",
+      "value": "24989108",
+      "locator": {
+        "year": "1974",
+        "country_code": "ZAF"
+      }
+    },
+    {
+      "date": "1975",
+      "value": "25690940",
+      "locator": {
+        "year": "1975",
+        "country_code": "ZAF"
+      }
+    },
+    {
+      "date": "1976",
+      "value": "26395450",
+      "locator": {
+        "year": "1976",
+        "country_code": "ZAF"
+      }
+    },
+    {
+      "date": "1977",
+      "value": "27118952",
+      "locator": {
+        "year": "1977",
+        "country_code": "ZAF"
+      }
+    },
+    {
+      "date": "1978",
+      "value": "27869507",
+      "locator": {
+        "year": "1978",
+        "country_code": "ZAF"
+      }
+    },
+    {
+      "date": "1979",
+      "value": "28634162",
+      "locator": {
+        "year": "1979",
+        "country_code": "ZAF"
+      }
+    },
+    {
+      "date": "1980",
+      "value": "29518857",
+      "locator": {
+        "year": "1980",
+        "country_code": "ZAF"
+      }
+    },
+    {
+      "date": "1981",
+      "value": "30541044",
+      "locator": {
+        "year": "1981",
+        "country_code": "ZAF"
+      }
+    },
+    {
+      "date": "1982",
+      "value": "31615339",
+      "locator": {
+        "year": "1982",
+        "country_code": "ZAF"
+      }
+    },
+    {
+      "date": "1983",
+      "value": "32739304",
+      "locator": {
+        "year": "1983",
+        "country_code": "ZAF"
+      }
+    },
+    {
+      "date": "1984",
+      "value": "33892788",
+      "locator": {
+        "year": "1984",
+        "country_code": "ZAF"
+      }
+    },
+    {
+      "date": "1985",
+      "value": "35042093",
+      "locator": {
+        "year": "1985",
+        "country_code": "ZAF"
+      }
+    },
+    {
+      "date": "1986",
+      "value": "36180515",
+      "locator": {
+        "year": "1986",
+        "country_code": "ZAF"
+      }
+    },
+    {
+      "date": "1987",
+      "value": "37326190",
+      "locator": {
+        "year": "1987",
+        "country_code": "ZAF"
+      }
+    },
+    {
+      "date": "1988",
+      "value": "38480649",
+      "locator": {
+        "year": "1988",
+        "country_code": "ZAF"
+      }
+    },
+    {
+      "date": "1989",
+      "value": "39628575",
+      "locator": {
+        "year": "1989",
+        "country_code": "ZAF"
+      }
+    },
+    {
+      "date": "1990",
+      "value": "40746268",
+      "locator": {
+        "year": "1990",
+        "country_code": "ZAF"
+      }
+    },
+    {
+      "date": "1991",
+      "value": "41687898",
+      "locator": {
+        "year": "1991",
+        "country_code": "ZAF"
+      }
+    },
+    {
+      "date": "1992",
+      "value": "42443509",
+      "locator": {
+        "year": "1992",
+        "country_code": "ZAF"
+      }
+    },
+    {
+      "date": "1993",
+      "value": "43297156",
+      "locator": {
+        "year": "1993",
+        "country_code": "ZAF"
+      }
+    },
+    {
+      "date": "1994",
+      "value": "44004139",
+      "locator": {
+        "year": "1994",
+        "country_code": "ZAF"
+      }
+    },
+    {
+      "date": "1995",
+      "value": "44541554",
+      "locator": {
+        "year": "1995",
+        "country_code": "ZAF"
+      }
+    },
+    {
+      "date": "1996",
+      "value": "45123018",
+      "locator": {
+        "year": "1996",
+        "country_code": "ZAF"
+      }
+    },
+    {
+      "date": "1997",
+      "value": "45666838",
+      "locator": {
+        "year": "1997",
+        "country_code": "ZAF"
+      }
+    },
+    {
+      "date": "1998",
+      "value": "46223880",
+      "locator": {
+        "year": "1998",
+        "country_code": "ZAF"
+      }
+    },
+    {
+      "date": "1999",
+      "value": "46730335",
+      "locator": {
+        "year": "1999",
+        "country_code": "ZAF"
+      }
+    },
+    {
+      "date": "2000",
+      "value": "47159719",
+      "locator": {
+        "year": "2000",
+        "country_code": "ZAF"
+      }
+    },
+    {
+      "date": "2001",
+      "value": "47566800",
+      "locator": {
+        "year": "2001",
+        "country_code": "ZAF"
+      }
+    },
+    {
+      "date": "2002",
+      "value": "48019415",
+      "locator": {
+        "year": "2002",
+        "country_code": "ZAF"
+      }
+    },
+    {
+      "date": "2003",
+      "value": "48500348",
+      "locator": {
+        "year": "2003",
+        "country_code": "ZAF"
+      }
+    },
+    {
+      "date": "2004",
+      "value": "48991421",
+      "locator": {
+        "year": "2004",
+        "country_code": "ZAF"
+      }
+    },
+    {
+      "date": "2005",
+      "value": "49490033",
+      "locator": {
+        "year": "2005",
+        "country_code": "ZAF"
+      }
+    },
+    {
+      "date": "2006",
+      "value": "49998277",
+      "locator": {
+        "year": "2006",
+        "country_code": "ZAF"
+      }
+    },
+    {
+      "date": "2007",
+      "value": "50528584",
+      "locator": {
+        "year": "2007",
+        "country_code": "ZAF"
+      }
+    },
+    {
+      "date": "2008",
+      "value": "51114599",
+      "locator": {
+        "year": "2008",
+        "country_code": "ZAF"
+      }
+    },
+    {
+      "date": "2009",
+      "value": "51728516",
+      "locator": {
+        "year": "2009",
+        "country_code": "ZAF"
+      }
+    },
+    {
+      "date": "2010",
+      "value": "52344051",
+      "locator": {
+        "year": "2010",
+        "country_code": "ZAF"
+      }
+    },
+    {
+      "date": "2011",
+      "value": "52995205",
+      "locator": {
+        "year": "2011",
+        "country_code": "ZAF"
+      }
+    },
+    {
+      "date": "2012",
+      "value": "53782567",
+      "locator": {
+        "year": "2012",
+        "country_code": "ZAF"
+      }
+    },
+    {
+      "date": "2013",
+      "value": "54678791",
+      "locator": {
+        "year": "2013",
+        "country_code": "ZAF"
+      }
+    },
+    {
+      "date": "2014",
+      "value": "55594838",
+      "locator": {
+        "year": "2014",
+        "country_code": "ZAF"
+      }
+    },
+    {
+      "date": "2015",
+      "value": "56723537",
+      "locator": {
+        "year": "2015",
+        "country_code": "ZAF"
+      }
+    },
+    {
+      "date": "2016",
+      "value": "57259551",
+      "locator": {
+        "year": "2016",
+        "country_code": "ZAF"
+      }
+    },
+    {
+      "date": "2017",
+      "value": "57635162",
+      "locator": {
+        "year": "2017",
+        "country_code": "ZAF"
+      }
+    },
+    {
+      "date": "2018",
+      "value": "58613001",
+      "locator": {
+        "year": "2018",
+        "country_code": "ZAF"
+      }
+    },
+    {
+      "date": "2019",
+      "value": "59587885",
+      "locator": {
+        "year": "2019",
+        "country_code": "ZAF"
+      }
+    },
+    {
+      "date": "2020",
+      "value": "60562381",
+      "locator": {
+        "year": "2020",
+        "country_code": "ZAF"
+      }
+    },
+    {
+      "date": "2021",
+      "value": "61502603",
+      "locator": {
+        "year": "2021",
+        "country_code": "ZAF"
+      }
+    },
+    {
+      "date": "2022",
+      "value": "62378410",
+      "locator": {
+        "year": "2022",
+        "country_code": "ZAF"
+      }
+    },
+    {
+      "date": "2023",
+      "value": "63212384",
+      "locator": {
+        "year": "2023",
+        "country_code": "ZAF"
+      }
+    },
+    {
+      "date": "2024",
+      "value": "64007187",
+      "locator": {
+        "year": "2024",
+        "country_code": "ZAF"
+      }
+    },
+    {
+      "date": "2025",
+      "value": "64747319",
+      "locator": {
+        "year": "2025",
+        "country_code": "ZAF"
+      }
+    }
+  ]
+}

@@ -1,0 +1,543 @@
+{
+  "id": "wb_pop_BEL",
+  "name": "Belgium",
+  "units": "people",
+  "adjustment": "midyear",
+  "nominal_or_real": "count",
+  "frequency": "annual",
+  "source_id": "worldbank_sp_pop_totl",
+  "series_url": "https://data.worldbank.org/indicator/SP.POP.TOTL",
+  "country_code": "BEL",
+  "country_name": "Belgium",
+  "notes": "World Bank World Development Indicators, SP.POP.TOTL, country code BEL. Midyear population. Published years in this file run from 1960 to 2025.",
+  "points": [
+    {
+      "date": "1960",
+      "value": "9153489",
+      "locator": {
+        "year": "1960",
+        "country_code": "BEL"
+      }
+    },
+    {
+      "date": "1961",
+      "value": "9183948",
+      "locator": {
+        "year": "1961",
+        "country_code": "BEL"
+      }
+    },
+    {
+      "date": "1962",
+      "value": "9220578",
+      "locator": {
+        "year": "1962",
+        "country_code": "BEL"
+      }
+    },
+    {
+      "date": "1963",
+      "value": "9289770",
+      "locator": {
+        "year": "1963",
+        "country_code": "BEL"
+      }
+    },
+    {
+      "date": "1964",
+      "value": "9378113",
+      "locator": {
+        "year": "1964",
+        "country_code": "BEL"
+      }
+    },
+    {
+      "date": "1965",
+      "value": "9463667",
+      "locator": {
+        "year": "1965",
+        "country_code": "BEL"
+      }
+    },
+    {
+      "date": "1966",
+      "value": "9527807",
+      "locator": {
+        "year": "1966",
+        "country_code": "BEL"
+      }
+    },
+    {
+      "date": "1967",
+      "value": "9580991",
+      "locator": {
+        "year": "1967",
+        "country_code": "BEL"
+      }
+    },
+    {
+      "date": "1968",
+      "value": "9618756",
+      "locator": {
+        "year": "1968",
+        "country_code": "BEL"
+      }
+    },
+    {
+      "date": "1969",
+      "value": "9646032",
+      "locator": {
+        "year": "1969",
+        "country_code": "BEL"
+      }
+    },
+    {
+      "date": "1970",
+      "value": "9655549",
+      "locator": {
+        "year": "1970",
+        "country_code": "BEL"
+      }
+    },
+    {
+      "date": "1971",
+      "value": "9673162",
+      "locator": {
+        "year": "1971",
+        "country_code": "BEL"
+      }
+    },
+    {
+      "date": "1972",
+      "value": "9711115",
+      "locator": {
+        "year": "1972",
+        "country_code": "BEL"
+      }
+    },
+    {
+      "date": "1973",
+      "value": "9741720",
+      "locator": {
+        "year": "1973",
+        "country_code": "BEL"
+      }
+    },
+    {
+      "date": "1974",
+      "value": "9772419",
+      "locator": {
+        "year": "1974",
+        "country_code": "BEL"
+      }
+    },
+    {
+      "date": "1975",
+      "value": "9800700",
+      "locator": {
+        "year": "1975",
+        "country_code": "BEL"
+      }
+    },
+    {
+      "date": "1976",
+      "value": "9818227",
+      "locator": {
+        "year": "1976",
+        "country_code": "BEL"
+      }
+    },
+    {
+      "date": "1977",
+      "value": "9830358",
+      "locator": {
+        "year": "1977",
+        "country_code": "BEL"
+      }
+    },
+    {
+      "date": "1978",
+      "value": "9839534",
+      "locator": {
+        "year": "1978",
+        "country_code": "BEL"
+      }
+    },
+    {
+      "date": "1979",
+      "value": "9848382",
+      "locator": {
+        "year": "1979",
+        "country_code": "BEL"
+      }
+    },
+    {
+      "date": "1980",
+      "value": "9859242",
+      "locator": {
+        "year": "1980",
+        "country_code": "BEL"
+      }
+    },
+    {
+      "date": "1981",
+      "value": "9858982",
+      "locator": {
+        "year": "1981",
+        "country_code": "BEL"
+      }
+    },
+    {
+      "date": "1982",
+      "value": "9856303",
+      "locator": {
+        "year": "1982",
+        "country_code": "BEL"
+      }
+    },
+    {
+      "date": "1983",
+      "value": "9855520",
+      "locator": {
+        "year": "1983",
+        "country_code": "BEL"
+      }
+    },
+    {
+      "date": "1984",
+      "value": "9855372",
+      "locator": {
+        "year": "1984",
+        "country_code": "BEL"
+      }
+    },
+    {
+      "date": "1985",
+      "value": "9858308",
+      "locator": {
+        "year": "1985",
+        "country_code": "BEL"
+      }
+    },
+    {
+      "date": "1986",
+      "value": "9861823",
+      "locator": {
+        "year": "1986",
+        "country_code": "BEL"
+      }
+    },
+    {
+      "date": "1987",
+      "value": "9870234",
+      "locator": {
+        "year": "1987",
+        "country_code": "BEL"
+      }
+    },
+    {
+      "date": "1988",
+      "value": "9901664",
+      "locator": {
+        "year": "1988",
+        "country_code": "BEL"
+      }
+    },
+    {
+      "date": "1989",
+      "value": "9937697",
+      "locator": {
+        "year": "1989",
+        "country_code": "BEL"
+      }
+    },
+    {
+      "date": "1990",
+      "value": "9967379",
+      "locator": {
+        "year": "1990",
+        "country_code": "BEL"
+      }
+    },
+    {
+      "date": "1991",
+      "value": "10004486",
+      "locator": {
+        "year": "1991",
+        "country_code": "BEL"
+      }
+    },
+    {
+      "date": "1992",
+      "value": "10045158",
+      "locator": {
+        "year": "1992",
+        "country_code": "BEL"
+      }
+    },
+    {
+      "date": "1993",
+      "value": "10084475",
+      "locator": {
+        "year": "1993",
+        "country_code": "BEL"
+      }
+    },
+    {
+      "date": "1994",
+      "value": "10115603",
+      "locator": {
+        "year": "1994",
+        "country_code": "BEL"
+      }
+    },
+    {
+      "date": "1995",
+      "value": "10136811",
+      "locator": {
+        "year": "1995",
+        "country_code": "BEL"
+      }
+    },
+    {
+      "date": "1996",
+      "value": "10156637",
+      "locator": {
+        "year": "1996",
+        "country_code": "BEL"
+      }
+    },
+    {
+      "date": "1997",
+      "value": "10181245",
+      "locator": {
+        "year": "1997",
+        "country_code": "BEL"
+      }
+    },
+    {
+      "date": "1998",
+      "value": "10203008",
+      "locator": {
+        "year": "1998",
+        "country_code": "BEL"
+      }
+    },
+    {
+      "date": "1999",
+      "value": "10226419",
+      "locator": {
+        "year": "1999",
+        "country_code": "BEL"
+      }
+    },
+    {
+      "date": "2000",
+      "value": "10251250",
+      "locator": {
+        "year": "2000",
+        "country_code": "BEL"
+      }
+    },
+    {
+      "date": "2001",
+      "value": "10286570",
+      "locator": {
+        "year": "2001",
+        "country_code": "BEL"
+      }
+    },
+    {
+      "date": "2002",
+      "value": "10332785",
+      "locator": {
+        "year": "2002",
+        "country_code": "BEL"
+      }
+    },
+    {
+      "date": "2003",
+      "value": "10376133",
+      "locator": {
+        "year": "2003",
+        "country_code": "BEL"
+      }
+    },
+    {
+      "date": "2004",
+      "value": "10421137",
+      "locator": {
+        "year": "2004",
+        "country_code": "BEL"
+      }
+    },
+    {
+      "date": "2005",
+      "value": "10478617",
+      "locator": {
+        "year": "2005",
+        "country_code": "BEL"
+      }
+    },
+    {
+      "date": "2006",
+      "value": "10547958",
+      "locator": {
+        "year": "2006",
+        "country_code": "BEL"
+      }
+    },
+    {
+      "date": "2007",
+      "value": "10625700",
+      "locator": {
+        "year": "2007",
+        "country_code": "BEL"
+      }
+    },
+    {
+      "date": "2008",
+      "value": "10709973",
+      "locator": {
+        "year": "2008",
+        "country_code": "BEL"
+      }
+    },
+    {
+      "date": "2009",
+      "value": "10796493",
+      "locator": {
+        "year": "2009",
+        "country_code": "BEL"
+      }
+    },
+    {
+      "date": "2010",
+      "value": "10895586",
+      "locator": {
+        "year": "2010",
+        "country_code": "BEL"
+      }
+    },
+    {
+      "date": "2011",
+      "value": "11038264",
+      "locator": {
+        "year": "2011",
+        "country_code": "BEL"
+      }
+    },
+    {
+      "date": "2012",
+      "value": "11106932",
+      "locator": {
+        "year": "2012",
+        "country_code": "BEL"
+      }
+    },
+    {
+      "date": "2013",
+      "value": "11159407",
+      "locator": {
+        "year": "2013",
+        "country_code": "BEL"
+      }
+    },
+    {
+      "date": "2014",
+      "value": "11209057",
+      "locator": {
+        "year": "2014",
+        "country_code": "BEL"
+      }
+    },
+    {
+      "date": "2015",
+      "value": "11274196",
+      "locator": {
+        "year": "2015",
+        "country_code": "BEL"
+      }
+    },
+    {
+      "date": "2016",
+      "value": "11331422",
+      "locator": {
+        "year": "2016",
+        "country_code": "BEL"
+      }
+    },
+    {
+      "date": "2017",
+      "value": "11375158",
+      "locator": {
+        "year": "2017",
+        "country_code": "BEL"
+      }
+    },
+    {
+      "date": "2018",
+      "value": "11427054",
+      "locator": {
+        "year": "2018",
+        "country_code": "BEL"
+      }
+    },
+    {
+      "date": "2019",
+      "value": "11488980",
+      "locator": {
+        "year": "2019",
+        "country_code": "BEL"
+      }
+    },
+    {
+      "date": "2020",
+      "value": "11538604",
+      "locator": {
+        "year": "2020",
+        "country_code": "BEL"
+      }
+    },
+    {
+      "date": "2021",
+      "value": "11586195",
+      "locator": {
+        "year": "2021",
+        "country_code": "BEL"
+      }
+    },
+    {
+      "date": "2022",
+      "value": "11680210",
+      "locator": {
+        "year": "2022",
+        "country_code": "BEL"
+      }
+    },
+    {
+      "date": "2023",
+      "value": "11779946",
+      "locator": {
+        "year": "2023",
+        "country_code": "BEL"
+      }
+    },
+    {
+      "date": "2024",
+      "value": "11858610",
+      "locator": {
+        "year": "2024",
+        "country_code": "BEL"
+      }
+    },
+    {
+      "date": "2025",
+      "value": "11941781",
+      "locator": {
+        "year": "2025",
+        "country_code": "BEL"
+      }
+    }
+  ]
+}

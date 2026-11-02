@@ -1,0 +1,543 @@
+{
+  "id": "wb_pop_DMA",
+  "name": "Dominica",
+  "units": "people",
+  "adjustment": "midyear",
+  "nominal_or_real": "count",
+  "frequency": "annual",
+  "source_id": "worldbank_sp_pop_totl",
+  "series_url": "https://data.worldbank.org/indicator/SP.POP.TOTL",
+  "country_code": "DMA",
+  "country_name": "Dominica",
+  "notes": "World Bank World Development Indicators, SP.POP.TOTL, country code DMA. Midyear population. Published years in this file run from 1960 to 2025.",
+  "points": [
+    {
+      "date": "1960",
+      "value": "59372",
+      "locator": {
+        "year": "1960",
+        "country_code": "DMA"
+      }
+    },
+    {
+      "date": "1961",
+      "value": "60209",
+      "locator": {
+        "year": "1961",
+        "country_code": "DMA"
+      }
+    },
+    {
+      "date": "1962",
+      "value": "60948",
+      "locator": {
+        "year": "1962",
+        "country_code": "DMA"
+      }
+    },
+    {
+      "date": "1963",
+      "value": "61739",
+      "locator": {
+        "year": "1963",
+        "country_code": "DMA"
+      }
+    },
+    {
+      "date": "1964",
+      "value": "62587",
+      "locator": {
+        "year": "1964",
+        "country_code": "DMA"
+      }
+    },
+    {
+      "date": "1965",
+      "value": "63505",
+      "locator": {
+        "year": "1965",
+        "country_code": "DMA"
+      }
+    },
+    {
+      "date": "1966",
+      "value": "64507",
+      "locator": {
+        "year": "1966",
+        "country_code": "DMA"
+      }
+    },
+    {
+      "date": "1967",
+      "value": "65585",
+      "locator": {
+        "year": "1967",
+        "country_code": "DMA"
+      }
+    },
+    {
+      "date": "1968",
+      "value": "66732",
+      "locator": {
+        "year": "1968",
+        "country_code": "DMA"
+      }
+    },
+    {
+      "date": "1969",
+      "value": "67934",
+      "locator": {
+        "year": "1969",
+        "country_code": "DMA"
+      }
+    },
+    {
+      "date": "1970",
+      "value": "68908",
+      "locator": {
+        "year": "1970",
+        "country_code": "DMA"
+      }
+    },
+    {
+      "date": "1971",
+      "value": "69532",
+      "locator": {
+        "year": "1971",
+        "country_code": "DMA"
+      }
+    },
+    {
+      "date": "1972",
+      "value": "70060",
+      "locator": {
+        "year": "1972",
+        "country_code": "DMA"
+      }
+    },
+    {
+      "date": "1973",
+      "value": "70585",
+      "locator": {
+        "year": "1973",
+        "country_code": "DMA"
+      }
+    },
+    {
+      "date": "1974",
+      "value": "71091",
+      "locator": {
+        "year": "1974",
+        "country_code": "DMA"
+      }
+    },
+    {
+      "date": "1975",
+      "value": "71570",
+      "locator": {
+        "year": "1975",
+        "country_code": "DMA"
+      }
+    },
+    {
+      "date": "1976",
+      "value": "72017",
+      "locator": {
+        "year": "1976",
+        "country_code": "DMA"
+      }
+    },
+    {
+      "date": "1977",
+      "value": "72406",
+      "locator": {
+        "year": "1977",
+        "country_code": "DMA"
+      }
+    },
+    {
+      "date": "1978",
+      "value": "72724",
+      "locator": {
+        "year": "1978",
+        "country_code": "DMA"
+      }
+    },
+    {
+      "date": "1979",
+      "value": "72959",
+      "locator": {
+        "year": "1979",
+        "country_code": "DMA"
+      }
+    },
+    {
+      "date": "1980",
+      "value": "73083",
+      "locator": {
+        "year": "1980",
+        "country_code": "DMA"
+      }
+    },
+    {
+      "date": "1981",
+      "value": "72986",
+      "locator": {
+        "year": "1981",
+        "country_code": "DMA"
+      }
+    },
+    {
+      "date": "1982",
+      "value": "72688",
+      "locator": {
+        "year": "1982",
+        "country_code": "DMA"
+      }
+    },
+    {
+      "date": "1983",
+      "value": "72365",
+      "locator": {
+        "year": "1983",
+        "country_code": "DMA"
+      }
+    },
+    {
+      "date": "1984",
+      "value": "72056",
+      "locator": {
+        "year": "1984",
+        "country_code": "DMA"
+      }
+    },
+    {
+      "date": "1985",
+      "value": "71744",
+      "locator": {
+        "year": "1985",
+        "country_code": "DMA"
+      }
+    },
+    {
+      "date": "1986",
+      "value": "71406",
+      "locator": {
+        "year": "1986",
+        "country_code": "DMA"
+      }
+    },
+    {
+      "date": "1987",
+      "value": "71023",
+      "locator": {
+        "year": "1987",
+        "country_code": "DMA"
+      }
+    },
+    {
+      "date": "1988",
+      "value": "70608",
+      "locator": {
+        "year": "1988",
+        "country_code": "DMA"
+      }
+    },
+    {
+      "date": "1989",
+      "value": "70153",
+      "locator": {
+        "year": "1989",
+        "country_code": "DMA"
+      }
+    },
+    {
+      "date": "1990",
+      "value": "69627",
+      "locator": {
+        "year": "1990",
+        "country_code": "DMA"
+      }
+    },
+    {
+      "date": "1991",
+      "value": "69296",
+      "locator": {
+        "year": "1991",
+        "country_code": "DMA"
+      }
+    },
+    {
+      "date": "1992",
+      "value": "69325",
+      "locator": {
+        "year": "1992",
+        "country_code": "DMA"
+      }
+    },
+    {
+      "date": "1993",
+      "value": "69433",
+      "locator": {
+        "year": "1993",
+        "country_code": "DMA"
+      }
+    },
+    {
+      "date": "1994",
+      "value": "69477",
+      "locator": {
+        "year": "1994",
+        "country_code": "DMA"
+      }
+    },
+    {
+      "date": "1995",
+      "value": "69469",
+      "locator": {
+        "year": "1995",
+        "country_code": "DMA"
+      }
+    },
+    {
+      "date": "1996",
+      "value": "69410",
+      "locator": {
+        "year": "1996",
+        "country_code": "DMA"
+      }
+    },
+    {
+      "date": "1997",
+      "value": "69299",
+      "locator": {
+        "year": "1997",
+        "country_code": "DMA"
+      }
+    },
+    {
+      "date": "1998",
+      "value": "69124",
+      "locator": {
+        "year": "1998",
+        "country_code": "DMA"
+      }
+    },
+    {
+      "date": "1999",
+      "value": "68870",
+      "locator": {
+        "year": "1999",
+        "country_code": "DMA"
+      }
+    },
+    {
+      "date": "2000",
+      "value": "68511",
+      "locator": {
+        "year": "2000",
+        "country_code": "DMA"
+      }
+    },
+    {
+      "date": "2001",
+      "value": "68288",
+      "locator": {
+        "year": "2001",
+        "country_code": "DMA"
+      }
+    },
+    {
+      "date": "2002",
+      "value": "68367",
+      "locator": {
+        "year": "2002",
+        "country_code": "DMA"
+      }
+    },
+    {
+      "date": "2003",
+      "value": "68531",
+      "locator": {
+        "year": "2003",
+        "country_code": "DMA"
+      }
+    },
+    {
+      "date": "2004",
+      "value": "68649",
+      "locator": {
+        "year": "2004",
+        "country_code": "DMA"
+      }
+    },
+    {
+      "date": "2005",
+      "value": "68734",
+      "locator": {
+        "year": "2005",
+        "country_code": "DMA"
+      }
+    },
+    {
+      "date": "2006",
+      "value": "68806",
+      "locator": {
+        "year": "2006",
+        "country_code": "DMA"
+      }
+    },
+    {
+      "date": "2007",
+      "value": "68847",
+      "locator": {
+        "year": "2007",
+        "country_code": "DMA"
+      }
+    },
+    {
+      "date": "2008",
+      "value": "68854",
+      "locator": {
+        "year": "2008",
+        "country_code": "DMA"
+      }
+    },
+    {
+      "date": "2009",
+      "value": "68864",
+      "locator": {
+        "year": "2009",
+        "country_code": "DMA"
+      }
+    },
+    {
+      "date": "2010",
+      "value": "68859",
+      "locator": {
+        "year": "2010",
+        "country_code": "DMA"
+      }
+    },
+    {
+      "date": "2011",
+      "value": "69053",
+      "locator": {
+        "year": "2011",
+        "country_code": "DMA"
+      }
+    },
+    {
+      "date": "2012",
+      "value": "69118",
+      "locator": {
+        "year": "2012",
+        "country_code": "DMA"
+      }
+    },
+    {
+      "date": "2013",
+      "value": "69715",
+      "locator": {
+        "year": "2013",
+        "country_code": "DMA"
+      }
+    },
+    {
+      "date": "2014",
+      "value": "70373",
+      "locator": {
+        "year": "2014",
+        "country_code": "DMA"
+      }
+    },
+    {
+      "date": "2015",
+      "value": "70410",
+      "locator": {
+        "year": "2015",
+        "country_code": "DMA"
+      }
+    },
+    {
+      "date": "2016",
+      "value": "69606",
+      "locator": {
+        "year": "2016",
+        "country_code": "DMA"
+      }
+    },
+    {
+      "date": "2017",
+      "value": "68496",
+      "locator": {
+        "year": "2017",
+        "country_code": "DMA"
+      }
+    },
+    {
+      "date": "2018",
+      "value": "68174",
+      "locator": {
+        "year": "2018",
+        "country_code": "DMA"
+      }
+    },
+    {
+      "date": "2019",
+      "value": "67880",
+      "locator": {
+        "year": "2019",
+        "country_code": "DMA"
+      }
+    },
+    {
+      "date": "2020",
+      "value": "67573",
+      "locator": {
+        "year": "2020",
+        "country_code": "DMA"
+      }
+    },
+    {
+      "date": "2021",
+      "value": "67202",
+      "locator": {
+        "year": "2021",
+        "country_code": "DMA"
+      }
+    },
+    {
+      "date": "2022",
+      "value": "66826",
+      "locator": {
+        "year": "2022",
+        "country_code": "DMA"
+      }
+    },
+    {
+      "date": "2023",
+      "value": "66510",
+      "locator": {
+        "year": "2023",
+        "country_code": "DMA"
+      }
+    },
+    {
+      "date": "2024",
+      "value": "66205",
+      "locator": {
+        "year": "2024",
+        "country_code": "DMA"
+      }
+    },
+    {
+      "date": "2025",
+      "value": "65871",
+      "locator": {
+        "year": "2025",
+        "country_code": "DMA"
+      }
+    }
+  ]
+}

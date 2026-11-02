@@ -6,7 +6,7 @@ export const dynamic = 'force-static';
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://letstalkstatistics.com';
   const lastModified = new Date(site.generated_at);
-  const paths = ['', '/prices', '/budget', '/economy', '/crime', '/immigration', '/sources', ...site.charts.map((chart) => `/c/${chart.id}`)];
+  const paths = ['', '/prices', '/budget', '/economy', '/energy', '/crime', '/immigration', '/sources', ...site.charts.map((chart) => `/c/${chart.id}`)];
 
   return paths.map((path) => ({
     url: `${baseUrl}${path}`,

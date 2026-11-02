@@ -1,0 +1,543 @@
+{
+  "id": "wb_pop_UGA",
+  "name": "Uganda",
+  "units": "people",
+  "adjustment": "midyear",
+  "nominal_or_real": "count",
+  "frequency": "annual",
+  "source_id": "worldbank_sp_pop_totl",
+  "series_url": "https://data.worldbank.org/indicator/SP.POP.TOTL",
+  "country_code": "UGA",
+  "country_name": "Uganda",
+  "notes": "World Bank World Development Indicators, SP.POP.TOTL, country code UGA. Midyear population. Published years in this file run from 1960 to 2025.",
+  "points": [
+    {
+      "date": "1960",
+      "value": "7640973",
+      "locator": {
+        "year": "1960",
+        "country_code": "UGA"
+      }
+    },
+    {
+      "date": "1961",
+      "value": "7862217",
+      "locator": {
+        "year": "1961",
+        "country_code": "UGA"
+      }
+    },
+    {
+      "date": "1962",
+      "value": "8092231",
+      "locator": {
+        "year": "1962",
+        "country_code": "UGA"
+      }
+    },
+    {
+      "date": "1963",
+      "value": "8333663",
+      "locator": {
+        "year": "1963",
+        "country_code": "UGA"
+      }
+    },
+    {
+      "date": "1964",
+      "value": "8586363",
+      "locator": {
+        "year": "1964",
+        "country_code": "UGA"
+      }
+    },
+    {
+      "date": "1965",
+      "value": "8849203",
+      "locator": {
+        "year": "1965",
+        "country_code": "UGA"
+      }
+    },
+    {
+      "date": "1966",
+      "value": "9122864",
+      "locator": {
+        "year": "1966",
+        "country_code": "UGA"
+      }
+    },
+    {
+      "date": "1967",
+      "value": "9408924",
+      "locator": {
+        "year": "1967",
+        "country_code": "UGA"
+      }
+    },
+    {
+      "date": "1968",
+      "value": "9708632",
+      "locator": {
+        "year": "1968",
+        "country_code": "UGA"
+      }
+    },
+    {
+      "date": "1969",
+      "value": "10014858",
+      "locator": {
+        "year": "1969",
+        "country_code": "UGA"
+      }
+    },
+    {
+      "date": "1970",
+      "value": "10321603",
+      "locator": {
+        "year": "1970",
+        "country_code": "UGA"
+      }
+    },
+    {
+      "date": "1971",
+      "value": "10618206",
+      "locator": {
+        "year": "1971",
+        "country_code": "UGA"
+      }
+    },
+    {
+      "date": "1972",
+      "value": "10885796",
+      "locator": {
+        "year": "1972",
+        "country_code": "UGA"
+      }
+    },
+    {
+      "date": "1973",
+      "value": "11144236",
+      "locator": {
+        "year": "1973",
+        "country_code": "UGA"
+      }
+    },
+    {
+      "date": "1974",
+      "value": "11424846",
+      "locator": {
+        "year": "1974",
+        "country_code": "UGA"
+      }
+    },
+    {
+      "date": "1975",
+      "value": "11725240",
+      "locator": {
+        "year": "1975",
+        "country_code": "UGA"
+      }
+    },
+    {
+      "date": "1976",
+      "value": "12037294",
+      "locator": {
+        "year": "1976",
+        "country_code": "UGA"
+      }
+    },
+    {
+      "date": "1977",
+      "value": "12359669",
+      "locator": {
+        "year": "1977",
+        "country_code": "UGA"
+      }
+    },
+    {
+      "date": "1978",
+      "value": "12692113",
+      "locator": {
+        "year": "1978",
+        "country_code": "UGA"
+      }
+    },
+    {
+      "date": "1979",
+      "value": "13002163",
+      "locator": {
+        "year": "1979",
+        "country_code": "UGA"
+      }
+    },
+    {
+      "date": "1980",
+      "value": "13275741",
+      "locator": {
+        "year": "1980",
+        "country_code": "UGA"
+      }
+    },
+    {
+      "date": "1981",
+      "value": "13556452",
+      "locator": {
+        "year": "1981",
+        "country_code": "UGA"
+      }
+    },
+    {
+      "date": "1982",
+      "value": "13873631",
+      "locator": {
+        "year": "1982",
+        "country_code": "UGA"
+      }
+    },
+    {
+      "date": "1983",
+      "value": "14221881",
+      "locator": {
+        "year": "1983",
+        "country_code": "UGA"
+      }
+    },
+    {
+      "date": "1984",
+      "value": "14607677",
+      "locator": {
+        "year": "1984",
+        "country_code": "UGA"
+      }
+    },
+    {
+      "date": "1985",
+      "value": "15023681",
+      "locator": {
+        "year": "1985",
+        "country_code": "UGA"
+      }
+    },
+    {
+      "date": "1986",
+      "value": "15467579",
+      "locator": {
+        "year": "1986",
+        "country_code": "UGA"
+      }
+    },
+    {
+      "date": "1987",
+      "value": "15954170",
+      "locator": {
+        "year": "1987",
+        "country_code": "UGA"
+      }
+    },
+    {
+      "date": "1988",
+      "value": "16470483",
+      "locator": {
+        "year": "1988",
+        "country_code": "UGA"
+      }
+    },
+    {
+      "date": "1989",
+      "value": "17010698",
+      "locator": {
+        "year": "1989",
+        "country_code": "UGA"
+      }
+    },
+    {
+      "date": "1990",
+      "value": "17569897",
+      "locator": {
+        "year": "1990",
+        "country_code": "UGA"
+      }
+    },
+    {
+      "date": "1991",
+      "value": "18155901",
+      "locator": {
+        "year": "1991",
+        "country_code": "UGA"
+      }
+    },
+    {
+      "date": "1992",
+      "value": "18785032",
+      "locator": {
+        "year": "1992",
+        "country_code": "UGA"
+      }
+    },
+    {
+      "date": "1993",
+      "value": "19445161",
+      "locator": {
+        "year": "1993",
+        "country_code": "UGA"
+      }
+    },
+    {
+      "date": "1994",
+      "value": "20108801",
+      "locator": {
+        "year": "1994",
+        "country_code": "UGA"
+      }
+    },
+    {
+      "date": "1995",
+      "value": "20665667",
+      "locator": {
+        "year": "1995",
+        "country_code": "UGA"
+      }
+    },
+    {
+      "date": "1996",
+      "value": "21231550",
+      "locator": {
+        "year": "1996",
+        "country_code": "UGA"
+      }
+    },
+    {
+      "date": "1997",
+      "value": "21856046",
+      "locator": {
+        "year": "1997",
+        "country_code": "UGA"
+      }
+    },
+    {
+      "date": "1998",
+      "value": "22515806",
+      "locator": {
+        "year": "1998",
+        "country_code": "UGA"
+      }
+    },
+    {
+      "date": "1999",
+      "value": "23257281",
+      "locator": {
+        "year": "1999",
+        "country_code": "UGA"
+      }
+    },
+    {
+      "date": "2000",
+      "value": "24000150",
+      "locator": {
+        "year": "2000",
+        "country_code": "UGA"
+      }
+    },
+    {
+      "date": "2001",
+      "value": "24745676",
+      "locator": {
+        "year": "2001",
+        "country_code": "UGA"
+      }
+    },
+    {
+      "date": "2002",
+      "value": "25532870",
+      "locator": {
+        "year": "2002",
+        "country_code": "UGA"
+      }
+    },
+    {
+      "date": "2003",
+      "value": "26352124",
+      "locator": {
+        "year": "2003",
+        "country_code": "UGA"
+      }
+    },
+    {
+      "date": "2004",
+      "value": "27154515",
+      "locator": {
+        "year": "2004",
+        "country_code": "UGA"
+      }
+    },
+    {
+      "date": "2005",
+      "value": "27963289",
+      "locator": {
+        "year": "2005",
+        "country_code": "UGA"
+      }
+    },
+    {
+      "date": "2006",
+      "value": "28794003",
+      "locator": {
+        "year": "2006",
+        "country_code": "UGA"
+      }
+    },
+    {
+      "date": "2007",
+      "value": "29653430",
+      "locator": {
+        "year": "2007",
+        "country_code": "UGA"
+      }
+    },
+    {
+      "date": "2008",
+      "value": "30539553",
+      "locator": {
+        "year": "2008",
+        "country_code": "UGA"
+      }
+    },
+    {
+      "date": "2009",
+      "value": "31451151",
+      "locator": {
+        "year": "2009",
+        "country_code": "UGA"
+      }
+    },
+    {
+      "date": "2010",
+      "value": "32390802",
+      "locator": {
+        "year": "2010",
+        "country_code": "UGA"
+      }
+    },
+    {
+      "date": "2011",
+      "value": "33354543",
+      "locator": {
+        "year": "2011",
+        "country_code": "UGA"
+      }
+    },
+    {
+      "date": "2012",
+      "value": "34337438",
+      "locator": {
+        "year": "2012",
+        "country_code": "UGA"
+      }
+    },
+    {
+      "date": "2013",
+      "value": "35337042",
+      "locator": {
+        "year": "2013",
+        "country_code": "UGA"
+      }
+    },
+    {
+      "date": "2014",
+      "value": "36395539",
+      "locator": {
+        "year": "2014",
+        "country_code": "UGA"
+      }
+    },
+    {
+      "date": "2015",
+      "value": "37531446",
+      "locator": {
+        "year": "2015",
+        "country_code": "UGA"
+      }
+    },
+    {
+      "date": "2016",
+      "value": "38799152",
+      "locator": {
+        "year": "2016",
+        "country_code": "UGA"
+      }
+    },
+    {
+      "date": "2017",
+      "value": "40177388",
+      "locator": {
+        "year": "2017",
+        "country_code": "UGA"
+      }
+    },
+    {
+      "date": "2018",
+      "value": "41565831",
+      "locator": {
+        "year": "2018",
+        "country_code": "UGA"
+      }
+    },
+    {
+      "date": "2019",
+      "value": "42999637",
+      "locator": {
+        "year": "2019",
+        "country_code": "UGA"
+      }
+    },
+    {
+      "date": "2020",
+      "value": "44457152",
+      "locator": {
+        "year": "2020",
+        "country_code": "UGA"
+      }
+    },
+    {
+      "date": "2021",
+      "value": "45910930",
+      "locator": {
+        "year": "2021",
+        "country_code": "UGA"
+      }
+    },
+    {
+      "date": "2022",
+      "value": "47312719",
+      "locator": {
+        "year": "2022",
+        "country_code": "UGA"
+      }
+    },
+    {
+      "date": "2023",
+      "value": "48656601",
+      "locator": {
+        "year": "2023",
+        "country_code": "UGA"
+      }
+    },
+    {
+      "date": "2024",
+      "value": "50015092",
+      "locator": {
+        "year": "2024",
+        "country_code": "UGA"
+      }
+    },
+    {
+      "date": "2025",
+      "value": "51384894",
+      "locator": {
+        "year": "2025",
+        "country_code": "UGA"
+      }
+    }
+  ]
+}

@@ -1,0 +1,543 @@
+{
+  "id": "wb_pop_VEN",
+  "name": "Venezuela",
+  "units": "people",
+  "adjustment": "midyear",
+  "nominal_or_real": "count",
+  "frequency": "annual",
+  "source_id": "worldbank_sp_pop_totl",
+  "series_url": "https://data.worldbank.org/indicator/SP.POP.TOTL",
+  "country_code": "VEN",
+  "country_name": "Venezuela",
+  "notes": "World Bank World Development Indicators, SP.POP.TOTL, country code VEN. Midyear population. Published years in this file run from 1960 to 2025.",
+  "points": [
+    {
+      "date": "1960",
+      "value": "8160090",
+      "locator": {
+        "year": "1960",
+        "country_code": "VEN"
+      }
+    },
+    {
+      "date": "1961",
+      "value": "8455915",
+      "locator": {
+        "year": "1961",
+        "country_code": "VEN"
+      }
+    },
+    {
+      "date": "1962",
+      "value": "8756870",
+      "locator": {
+        "year": "1962",
+        "country_code": "VEN"
+      }
+    },
+    {
+      "date": "1963",
+      "value": "9064021",
+      "locator": {
+        "year": "1963",
+        "country_code": "VEN"
+      }
+    },
+    {
+      "date": "1964",
+      "value": "9377712",
+      "locator": {
+        "year": "1964",
+        "country_code": "VEN"
+      }
+    },
+    {
+      "date": "1965",
+      "value": "9697790",
+      "locator": {
+        "year": "1965",
+        "country_code": "VEN"
+      }
+    },
+    {
+      "date": "1966",
+      "value": "10024854",
+      "locator": {
+        "year": "1966",
+        "country_code": "VEN"
+      }
+    },
+    {
+      "date": "1967",
+      "value": "10358513",
+      "locator": {
+        "year": "1967",
+        "country_code": "VEN"
+      }
+    },
+    {
+      "date": "1968",
+      "value": "10697530",
+      "locator": {
+        "year": "1968",
+        "country_code": "VEN"
+      }
+    },
+    {
+      "date": "1969",
+      "value": "11040280",
+      "locator": {
+        "year": "1969",
+        "country_code": "VEN"
+      }
+    },
+    {
+      "date": "1970",
+      "value": "11387790",
+      "locator": {
+        "year": "1970",
+        "country_code": "VEN"
+      }
+    },
+    {
+      "date": "1971",
+      "value": "11741008",
+      "locator": {
+        "year": "1971",
+        "country_code": "VEN"
+      }
+    },
+    {
+      "date": "1972",
+      "value": "12099180",
+      "locator": {
+        "year": "1972",
+        "country_code": "VEN"
+      }
+    },
+    {
+      "date": "1973",
+      "value": "12463537",
+      "locator": {
+        "year": "1973",
+        "country_code": "VEN"
+      }
+    },
+    {
+      "date": "1974",
+      "value": "12835351",
+      "locator": {
+        "year": "1974",
+        "country_code": "VEN"
+      }
+    },
+    {
+      "date": "1975",
+      "value": "13215892",
+      "locator": {
+        "year": "1975",
+        "country_code": "VEN"
+      }
+    },
+    {
+      "date": "1976",
+      "value": "13606284",
+      "locator": {
+        "year": "1976",
+        "country_code": "VEN"
+      }
+    },
+    {
+      "date": "1977",
+      "value": "14006812",
+      "locator": {
+        "year": "1977",
+        "country_code": "VEN"
+      }
+    },
+    {
+      "date": "1978",
+      "value": "14416684",
+      "locator": {
+        "year": "1978",
+        "country_code": "VEN"
+      }
+    },
+    {
+      "date": "1979",
+      "value": "14834552",
+      "locator": {
+        "year": "1979",
+        "country_code": "VEN"
+      }
+    },
+    {
+      "date": "1980",
+      "value": "15258218",
+      "locator": {
+        "year": "1980",
+        "country_code": "VEN"
+      }
+    },
+    {
+      "date": "1981",
+      "value": "15687297",
+      "locator": {
+        "year": "1981",
+        "country_code": "VEN"
+      }
+    },
+    {
+      "date": "1982",
+      "value": "16121874",
+      "locator": {
+        "year": "1982",
+        "country_code": "VEN"
+      }
+    },
+    {
+      "date": "1983",
+      "value": "16562205",
+      "locator": {
+        "year": "1983",
+        "country_code": "VEN"
+      }
+    },
+    {
+      "date": "1984",
+      "value": "17008841",
+      "locator": {
+        "year": "1984",
+        "country_code": "VEN"
+      }
+    },
+    {
+      "date": "1985",
+      "value": "17461434",
+      "locator": {
+        "year": "1985",
+        "country_code": "VEN"
+      }
+    },
+    {
+      "date": "1986",
+      "value": "17923536",
+      "locator": {
+        "year": "1986",
+        "country_code": "VEN"
+      }
+    },
+    {
+      "date": "1987",
+      "value": "18394963",
+      "locator": {
+        "year": "1987",
+        "country_code": "VEN"
+      }
+    },
+    {
+      "date": "1988",
+      "value": "18871020",
+      "locator": {
+        "year": "1988",
+        "country_code": "VEN"
+      }
+    },
+    {
+      "date": "1989",
+      "value": "19348921",
+      "locator": {
+        "year": "1989",
+        "country_code": "VEN"
+      }
+    },
+    {
+      "date": "1990",
+      "value": "19827010",
+      "locator": {
+        "year": "1990",
+        "country_code": "VEN"
+      }
+    },
+    {
+      "date": "1991",
+      "value": "20304896",
+      "locator": {
+        "year": "1991",
+        "country_code": "VEN"
+      }
+    },
+    {
+      "date": "1992",
+      "value": "20780948",
+      "locator": {
+        "year": "1992",
+        "country_code": "VEN"
+      }
+    },
+    {
+      "date": "1993",
+      "value": "21254520",
+      "locator": {
+        "year": "1993",
+        "country_code": "VEN"
+      }
+    },
+    {
+      "date": "1994",
+      "value": "21725188",
+      "locator": {
+        "year": "1994",
+        "country_code": "VEN"
+      }
+    },
+    {
+      "date": "1995",
+      "value": "22193821",
+      "locator": {
+        "year": "1995",
+        "country_code": "VEN"
+      }
+    },
+    {
+      "date": "1996",
+      "value": "22662113",
+      "locator": {
+        "year": "1996",
+        "country_code": "VEN"
+      }
+    },
+    {
+      "date": "1997",
+      "value": "23131685",
+      "locator": {
+        "year": "1997",
+        "country_code": "VEN"
+      }
+    },
+    {
+      "date": "1998",
+      "value": "23601337",
+      "locator": {
+        "year": "1998",
+        "country_code": "VEN"
+      }
+    },
+    {
+      "date": "1999",
+      "value": "24066593",
+      "locator": {
+        "year": "1999",
+        "country_code": "VEN"
+      }
+    },
+    {
+      "date": "2000",
+      "value": "24526708",
+      "locator": {
+        "year": "2000",
+        "country_code": "VEN"
+      }
+    },
+    {
+      "date": "2001",
+      "value": "24979922",
+      "locator": {
+        "year": "2001",
+        "country_code": "VEN"
+      }
+    },
+    {
+      "date": "2002",
+      "value": "25435671",
+      "locator": {
+        "year": "2002",
+        "country_code": "VEN"
+      }
+    },
+    {
+      "date": "2003",
+      "value": "25892703",
+      "locator": {
+        "year": "2003",
+        "country_code": "VEN"
+      }
+    },
+    {
+      "date": "2004",
+      "value": "26340838",
+      "locator": {
+        "year": "2004",
+        "country_code": "VEN"
+      }
+    },
+    {
+      "date": "2005",
+      "value": "26785804",
+      "locator": {
+        "year": "2005",
+        "country_code": "VEN"
+      }
+    },
+    {
+      "date": "2006",
+      "value": "27224686",
+      "locator": {
+        "year": "2006",
+        "country_code": "VEN"
+      }
+    },
+    {
+      "date": "2007",
+      "value": "27649363",
+      "locator": {
+        "year": "2007",
+        "country_code": "VEN"
+      }
+    },
+    {
+      "date": "2008",
+      "value": "28053696",
+      "locator": {
+        "year": "2008",
+        "country_code": "VEN"
+      }
+    },
+    {
+      "date": "2009",
+      "value": "28438298",
+      "locator": {
+        "year": "2009",
+        "country_code": "VEN"
+      }
+    },
+    {
+      "date": "2010",
+      "value": "28813101",
+      "locator": {
+        "year": "2010",
+        "country_code": "VEN"
+      }
+    },
+    {
+      "date": "2011",
+      "value": "29185212",
+      "locator": {
+        "year": "2011",
+        "country_code": "VEN"
+      }
+    },
+    {
+      "date": "2012",
+      "value": "29553826",
+      "locator": {
+        "year": "2012",
+        "country_code": "VEN"
+      }
+    },
+    {
+      "date": "2013",
+      "value": "29912198",
+      "locator": {
+        "year": "2013",
+        "country_code": "VEN"
+      }
+    },
+    {
+      "date": "2014",
+      "value": "30254079",
+      "locator": {
+        "year": "2014",
+        "country_code": "VEN"
+      }
+    },
+    {
+      "date": "2015",
+      "value": "30573972",
+      "locator": {
+        "year": "2015",
+        "country_code": "VEN"
+      }
+    },
+    {
+      "date": "2016",
+      "value": "30765720",
+      "locator": {
+        "year": "2016",
+        "country_code": "VEN"
+      }
+    },
+    {
+      "date": "2017",
+      "value": "30565323",
+      "locator": {
+        "year": "2017",
+        "country_code": "VEN"
+      }
+    },
+    {
+      "date": "2018",
+      "value": "29807592",
+      "locator": {
+        "year": "2018",
+        "country_code": "VEN"
+      }
+    },
+    {
+      "date": "2019",
+      "value": "28938098",
+      "locator": {
+        "year": "2019",
+        "country_code": "VEN"
+      }
+    },
+    {
+      "date": "2020",
+      "value": "28444077",
+      "locator": {
+        "year": "2020",
+        "country_code": "VEN"
+      }
+    },
+    {
+      "date": "2021",
+      "value": "28237826",
+      "locator": {
+        "year": "2021",
+        "country_code": "VEN"
+      }
+    },
+    {
+      "date": "2022",
+      "value": "28213017",
+      "locator": {
+        "year": "2022",
+        "country_code": "VEN"
+      }
+    },
+    {
+      "date": "2023",
+      "value": "28300854",
+      "locator": {
+        "year": "2023",
+        "country_code": "VEN"
+      }
+    },
+    {
+      "date": "2024",
+      "value": "28405543",
+      "locator": {
+        "year": "2024",
+        "country_code": "VEN"
+      }
+    },
+    {
+      "date": "2025",
+      "value": "28516896",
+      "locator": {
+        "year": "2025",
+        "country_code": "VEN"
+      }
+    }
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "id": "eia_intl_gen_SCG",
+  "name": "Net generation",
+  "units": "billion kilowatthours",
+  "adjustment": "annual",
+  "nominal_or_real": "generation",
+  "frequency": "annual",
+  "source_id": "eia_intl_bulk",
+  "series_url": "https://www.eia.gov/international/data/world/electricity/electricity-generation",
+  "eia_series_id": "INTL.2-12-SCG-BKWH.A",
+  "country_code": "SCG",
+  "country_name": "Former Serbia and Montenegro",
+  "population_status": "no_world_bank_country",
+  "notes": "EIA bulk series INTL.2-12-SCG-BKWH.A, Former Serbia and Montenegro. Annual. Billion kilowatthours. 1 billion kilowatthours = 1 terawatthour. Published years in this file run from 1992 to 2005.",
+  "points": [
+    {
+      "date": "1992",
+      "value": "34.866",
+      "locator": {
+        "year": "1992",
+        "series_id": "INTL.2-12-SCG-BKWH.A"
+      }
+    },
+    {
+      "date": "1993",
+      "value": "31.681",
+      "locator": {
+        "year": "1993",
+        "series_id": "INTL.2-12-SCG-BKWH.A"
+      }
+    },
+    {
+      "date": "1994",
+      "value": "32.213",
+      "locator": {
+        "year": "1994",
+        "series_id": "INTL.2-12-SCG-BKWH.A"
+      }
+    },
+    {
+      "date": "1995",
+      "value": "35.268",
+      "locator": {
+        "year": "1995",
+        "series_id": "INTL.2-12-SCG-BKWH.A"
+      }
+    },
+    {
+      "date": "1996",
+      "value": "38.05",
+      "locator": {
+        "year": "1996",
+        "series_id": "INTL.2-12-SCG-BKWH.A"
+      }
+    },
+    {
+      "date": "1997",
+      "value": "37.97",
+      "locator": {
+        "year": "1997",
+        "series_id": "INTL.2-12-SCG-BKWH.A"
+      }
+    },
+    {
+      "date": "1998",
+      "value": "35.191",
+      "locator": {
+        "year": "1998",
+        "series_id": "INTL.2-12-SCG-BKWH.A"
+      }
+    },
+    {
+      "date": "1999",
+      "value": "30.946",
+      "locator": {
+        "year": "1999",
+        "series_id": "INTL.2-12-SCG-BKWH.A"
+      }
+    },
+    {
+      "date": "2000",
+      "value": "33.17",
+      "locator": {
+        "year": "2000",
+        "series_id": "INTL.2-12-SCG-BKWH.A"
+      }
+    },
+    {
+      "date": "2001",
+      "value": "34.106",
+      "locator": {
+        "year": "2001",
+        "series_id": "INTL.2-12-SCG-BKWH.A"
+      }
+    },
+    {
+      "date": "2002",
+      "value": "34.431",
+      "locator": {
+        "year": "2002",
+        "series_id": "INTL.2-12-SCG-BKWH.A"
+      }
+    },
+    {
+      "date": "2003",
+      "value": "34.771",
+      "locator": {
+        "year": "2003",
+        "series_id": "INTL.2-12-SCG-BKWH.A"
+      }
+    },
+    {
+      "date": "2004",
+      "value": "37.284",
+      "locator": {
+        "year": "2004",
+        "series_id": "INTL.2-12-SCG-BKWH.A"
+      }
+    },
+    {
+      "date": "2005",
+      "value": "37.011",
+      "locator": {
+        "year": "2005",
+        "series_id": "INTL.2-12-SCG-BKWH.A"
+      }
+    }
+  ]
+}

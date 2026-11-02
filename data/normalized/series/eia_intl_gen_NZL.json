@@ -1,0 +1,377 @@
+{
+  "id": "eia_intl_gen_NZL",
+  "name": "Net generation",
+  "units": "billion kilowatthours",
+  "adjustment": "annual",
+  "nominal_or_real": "generation",
+  "frequency": "annual",
+  "source_id": "eia_intl_bulk",
+  "series_url": "https://www.eia.gov/international/data/world/electricity/electricity-generation",
+  "eia_series_id": "INTL.2-12-NZL-BKWH.A",
+  "country_code": "NZL",
+  "country_name": "New Zealand",
+  "population_status": "matched",
+  "notes": "EIA bulk series INTL.2-12-NZL-BKWH.A, New Zealand. Annual. Billion kilowatthours. 1 billion kilowatthours = 1 terawatthour. Published years in this file run from 1980 to 2024.",
+  "points": [
+    {
+      "date": "1980",
+      "value": "23.01610271861204",
+      "locator": {
+        "year": "1980",
+        "series_id": "INTL.2-12-NZL-BKWH.A"
+      }
+    },
+    {
+      "date": "1981",
+      "value": "23.59485271861204",
+      "locator": {
+        "year": "1981",
+        "series_id": "INTL.2-12-NZL-BKWH.A"
+      }
+    },
+    {
+      "date": "1982",
+      "value": "24.87922771861204",
+      "locator": {
+        "year": "1982",
+        "series_id": "INTL.2-12-NZL-BKWH.A"
+      }
+    },
+    {
+      "date": "1983",
+      "value": "26.44465521861204",
+      "locator": {
+        "year": "1983",
+        "series_id": "INTL.2-12-NZL-BKWH.A"
+      }
+    },
+    {
+      "date": "1984",
+      "value": "27.55695921861204",
+      "locator": {
+        "year": "1984",
+        "series_id": "INTL.2-12-NZL-BKWH.A"
+      }
+    },
+    {
+      "date": "1985",
+      "value": "27.99208839764814",
+      "locator": {
+        "year": "1985",
+        "series_id": "INTL.2-12-NZL-BKWH.A"
+      }
+    },
+    {
+      "date": "1986",
+      "value": "28.95542259651434",
+      "locator": {
+        "year": "1986",
+        "series_id": "INTL.2-12-NZL-BKWH.A"
+      }
+    },
+    {
+      "date": "1987",
+      "value": "29.32416920344074",
+      "locator": {
+        "year": "1987",
+        "series_id": "INTL.2-12-NZL-BKWH.A"
+      }
+    },
+    {
+      "date": "1988",
+      "value": "30.62664897418204",
+      "locator": {
+        "year": "1988",
+        "series_id": "INTL.2-12-NZL-BKWH.A"
+      }
+    },
+    {
+      "date": "1989",
+      "value": "30.84926893459749",
+      "locator": {
+        "year": "1989",
+        "series_id": "INTL.2-12-NZL-BKWH.A"
+      }
+    },
+    {
+      "date": "1990",
+      "value": "31.85360536938089",
+      "locator": {
+        "year": "1990",
+        "series_id": "INTL.2-12-NZL-BKWH.A"
+      }
+    },
+    {
+      "date": "1991",
+      "value": "32.79659385140908",
+      "locator": {
+        "year": "1991",
+        "series_id": "INTL.2-12-NZL-BKWH.A"
+      }
+    },
+    {
+      "date": "1992",
+      "value": "32.29618628726272",
+      "locator": {
+        "year": "1992",
+        "series_id": "INTL.2-12-NZL-BKWH.A"
+      }
+    },
+    {
+      "date": "1993",
+      "value": "33.74329699324943",
+      "locator": {
+        "year": "1993",
+        "series_id": "INTL.2-12-NZL-BKWH.A"
+      }
+    },
+    {
+      "date": "1994",
+      "value": "34.41401024298093",
+      "locator": {
+        "year": "1994",
+        "series_id": "INTL.2-12-NZL-BKWH.A"
+      }
+    },
+    {
+      "date": "1995",
+      "value": "35.64248050305798",
+      "locator": {
+        "year": "1995",
+        "series_id": "INTL.2-12-NZL-BKWH.A"
+      }
+    },
+    {
+      "date": "1996",
+      "value": "35.93667727047842",
+      "locator": {
+        "year": "1996",
+        "series_id": "INTL.2-12-NZL-BKWH.A"
+      }
+    },
+    {
+      "date": "1997",
+      "value": "36.37269496254543",
+      "locator": {
+        "year": "1997",
+        "series_id": "INTL.2-12-NZL-BKWH.A"
+      }
+    },
+    {
+      "date": "1998",
+      "value": "36.80062528359028",
+      "locator": {
+        "year": "1998",
+        "series_id": "INTL.2-12-NZL-BKWH.A"
+      }
+    },
+    {
+      "date": "1999",
+      "value": "36.8426801937217",
+      "locator": {
+        "year": "1999",
+        "series_id": "INTL.2-12-NZL-BKWH.A"
+      }
+    },
+    {
+      "date": "2000",
+      "value": "38.9126",
+      "locator": {
+        "year": "2000",
+        "series_id": "INTL.2-12-NZL-BKWH.A"
+      }
+    },
+    {
+      "date": "2001",
+      "value": "39.2788",
+      "locator": {
+        "year": "2001",
+        "series_id": "INTL.2-12-NZL-BKWH.A"
+      }
+    },
+    {
+      "date": "2002",
+      "value": "40.2239",
+      "locator": {
+        "year": "2002",
+        "series_id": "INTL.2-12-NZL-BKWH.A"
+      }
+    },
+    {
+      "date": "2003",
+      "value": "40.3733",
+      "locator": {
+        "year": "2003",
+        "series_id": "INTL.2-12-NZL-BKWH.A"
+      }
+    },
+    {
+      "date": "2004",
+      "value": "42.2487",
+      "locator": {
+        "year": "2004",
+        "series_id": "INTL.2-12-NZL-BKWH.A"
+      }
+    },
+    {
+      "date": "2005",
+      "value": "42.4842",
+      "locator": {
+        "year": "2005",
+        "series_id": "INTL.2-12-NZL-BKWH.A"
+      }
+    },
+    {
+      "date": "2006",
+      "value": "43.0308",
+      "locator": {
+        "year": "2006",
+        "series_id": "INTL.2-12-NZL-BKWH.A"
+      }
+    },
+    {
+      "date": "2007",
+      "value": "43.3948",
+      "locator": {
+        "year": "2007",
+        "series_id": "INTL.2-12-NZL-BKWH.A"
+      }
+    },
+    {
+      "date": "2008",
+      "value": "43.4003",
+      "locator": {
+        "year": "2008",
+        "series_id": "INTL.2-12-NZL-BKWH.A"
+      }
+    },
+    {
+      "date": "2009",
+      "value": "42.9639",
+      "locator": {
+        "year": "2009",
+        "series_id": "INTL.2-12-NZL-BKWH.A"
+      }
+    },
+    {
+      "date": "2010",
+      "value": "44.3175",
+      "locator": {
+        "year": "2010",
+        "series_id": "INTL.2-12-NZL-BKWH.A"
+      }
+    },
+    {
+      "date": "2011",
+      "value": "43.852",
+      "locator": {
+        "year": "2011",
+        "series_id": "INTL.2-12-NZL-BKWH.A"
+      }
+    },
+    {
+      "date": "2012",
+      "value": "43.7394",
+      "locator": {
+        "year": "2012",
+        "series_id": "INTL.2-12-NZL-BKWH.A"
+      }
+    },
+    {
+      "date": "2013",
+      "value": "42.7124",
+      "locator": {
+        "year": "2013",
+        "series_id": "INTL.2-12-NZL-BKWH.A"
+      }
+    },
+    {
+      "date": "2014",
+      "value": "42.9202",
+      "locator": {
+        "year": "2014",
+        "series_id": "INTL.2-12-NZL-BKWH.A"
+      }
+    },
+    {
+      "date": "2015",
+      "value": "43.5685",
+      "locator": {
+        "year": "2015",
+        "series_id": "INTL.2-12-NZL-BKWH.A"
+      }
+    },
+    {
+      "date": "2016",
+      "value": "43.1558",
+      "locator": {
+        "year": "2016",
+        "series_id": "INTL.2-12-NZL-BKWH.A"
+      }
+    },
+    {
+      "date": "2017",
+      "value": "43.6563",
+      "locator": {
+        "year": "2017",
+        "series_id": "INTL.2-12-NZL-BKWH.A"
+      }
+    },
+    {
+      "date": "2018",
+      "value": "43.7301",
+      "locator": {
+        "year": "2018",
+        "series_id": "INTL.2-12-NZL-BKWH.A"
+      }
+    },
+    {
+      "date": "2019",
+      "value": "43.7456",
+      "locator": {
+        "year": "2019",
+        "series_id": "INTL.2-12-NZL-BKWH.A"
+      }
+    },
+    {
+      "date": "2020",
+      "value": "43.3446",
+      "locator": {
+        "year": "2020",
+        "series_id": "INTL.2-12-NZL-BKWH.A"
+      }
+    },
+    {
+      "date": "2021",
+      "value": "43.5361",
+      "locator": {
+        "year": "2021",
+        "series_id": "INTL.2-12-NZL-BKWH.A"
+      }
+    },
+    {
+      "date": "2022",
+      "value": "43.2575035",
+      "locator": {
+        "year": "2022",
+        "series_id": "INTL.2-12-NZL-BKWH.A"
+      }
+    },
+    {
+      "date": "2023",
+      "value": "42.8948414",
+      "locator": {
+        "year": "2023",
+        "series_id": "INTL.2-12-NZL-BKWH.A"
+      }
+    },
+    {
+      "date": "2024",
+      "value": "43.9951707",
+      "locator": {
+        "year": "2024",
+        "series_id": "INTL.2-12-NZL-BKWH.A"
+      }
+    }
+  ]
+}

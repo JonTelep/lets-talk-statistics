@@ -218,7 +218,95 @@ CHARTS = [
         "series": ["cbp_nationwide_encounters_monthly"],
         "notes": "Sum of the Encounter Count column in each CBP nationwide encounters workbook. October of a fiscal year is October of the previous calendar year. Repeated rows in a file stay in the sum.",
     },
+    {
+        "id": "us-electricity-generation-shares",
+        "title": "United States: electricity net generation shares by source",
+        "page": "energy",
+        "frequency": "annual",
+        "shade": "calendar",
+        "type": "stacked",
+        "series": [
+            "eia_us_share_coal",
+            "eia_us_share_natural_gas",
+            "eia_us_share_nuclear",
+            "eia_us_share_hydro",
+            "eia_us_share_wind",
+            "eia_us_share_solar",
+            "eia_us_share_petroleum",
+            "eia_us_share_other",
+        ],
+        "notes": (
+            "Annual percent of U.S. electricity net generation. "
+            "Coal, natural gas, nuclear, conventional hydroelectric, wind, petroleum, and TOTAL.ELETPUS "
+            "are all-sectors series in the EIA Monthly Energy Review bulk file. "
+            "Solar is TOTAL.SOTEPUS (Solar Electricity Net Generation), which includes estimated small-scale solar. "
+            "The total is TOTAL.ELETPUS plus TOTAL.SOTEPUS minus TOTAL.SOETPUS when both solar series are published for that year, "
+            "so small-scale solar is included once. "
+            "Other is that total minus the named sources published for that year. "
+            "An NA source is omitted and is not subtracted. "
+            "Shares are rounded half up to 3 decimals and can sum to a number other than 100."
+        ),
+    },
 ]
+
+
+def _country_charts(series_by_id: dict[str, dict]) -> list[dict]:
+    charts = []
+    for series_id, series in series_by_id.items():
+        if not series_id.startswith("eia_intl_gen_"):
+            continue
+        if not series.get("points"):
+            continue
+        code = series.get("country_code")
+        name = series.get("country_name")
+        if not code or not name:
+            continue
+        shade = "calendar" if code == "USA" else "none"
+        charts.append(
+            {
+                "id": f"electricity-generation-{code.lower()}",
+                "title": f"{name}: electricity generation, TWh",
+                "page": "energy",
+                "frequency": "annual",
+                "shade": shade,
+                "type": "line",
+                "country_code": code,
+                "country_name": name,
+                "series": [series_id],
+                "notes": (
+                    "EIA International Energy Data, electricity net generation, billion kilowatthours. "
+                    "1 billion kilowatthours = 1 terawatthour. Annual."
+                ),
+            }
+        )
+        person_id = f"eia_intl_kwh_person_{code}"
+        person = series_by_id.get(person_id)
+        if person and person.get("points"):
+            charts.append(
+                {
+                    "id": f"electricity-per-person-{code.lower()}",
+                    "title": f"{name}: electricity generation per person, kWh",
+                    "page": "energy",
+                    "frequency": "annual",
+                    "shade": shade,
+                    "type": "line",
+                    "markers": "peak_1970_latest",
+                    "country_code": code,
+                    "country_name": name,
+                    "series": [person_id],
+                    "notes": (
+                        "Kilowatthours per person equal EIA electricity net generation in billion kilowatthours, "
+                        "times 1,000,000,000, divided by the World Bank midyear population for that country code and year "
+                        "(SP.POP.TOTL). Rounded half up to the nearest kilowatthour. "
+                        "A year is omitted when either value is missing. "
+                        "Labels mark the earliest year of the maximum value and the latest year. "
+                        "When the series contains a year from 1960 to 1979, that label is 1970 if 1970 is published, "
+                        "otherwise the earliest published year in that span."
+                    ),
+                }
+            )
+    charts.sort(key=lambda chart: chart["title"].casefold())
+    return charts
 
 
 def build(series_by_id: dict[str, dict]) -> tuple[list[dict], list[dict]]:
@@ -237,4 +325,5 @@ def build(series_by_id: dict[str, dict]) -> tuple[list[dict], list[dict]]:
             )
             continue
         charts.append(chart)
+    charts.extend(_country_charts(series_by_id))
     return charts, skipped

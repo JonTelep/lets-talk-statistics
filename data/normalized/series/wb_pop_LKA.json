@@ -1,0 +1,543 @@
+{
+  "id": "wb_pop_LKA",
+  "name": "Sri Lanka",
+  "units": "people",
+  "adjustment": "midyear",
+  "nominal_or_real": "count",
+  "frequency": "annual",
+  "source_id": "worldbank_sp_pop_totl",
+  "series_url": "https://data.worldbank.org/indicator/SP.POP.TOTL",
+  "country_code": "LKA",
+  "country_name": "Sri Lanka",
+  "notes": "World Bank World Development Indicators, SP.POP.TOTL, country code LKA. Midyear population. Published years in this file run from 1960 to 2025.",
+  "points": [
+    {
+      "date": "1960",
+      "value": "9661389",
+      "locator": {
+        "year": "1960",
+        "country_code": "LKA"
+      }
+    },
+    {
+      "date": "1961",
+      "value": "9899372",
+      "locator": {
+        "year": "1961",
+        "country_code": "LKA"
+      }
+    },
+    {
+      "date": "1962",
+      "value": "10143754",
+      "locator": {
+        "year": "1962",
+        "country_code": "LKA"
+      }
+    },
+    {
+      "date": "1963",
+      "value": "10395040",
+      "locator": {
+        "year": "1963",
+        "country_code": "LKA"
+      }
+    },
+    {
+      "date": "1964",
+      "value": "10653397",
+      "locator": {
+        "year": "1964",
+        "country_code": "LKA"
+      }
+    },
+    {
+      "date": "1965",
+      "value": "10916965",
+      "locator": {
+        "year": "1965",
+        "country_code": "LKA"
+      }
+    },
+    {
+      "date": "1966",
+      "value": "11183928",
+      "locator": {
+        "year": "1966",
+        "country_code": "LKA"
+      }
+    },
+    {
+      "date": "1967",
+      "value": "11457328",
+      "locator": {
+        "year": "1967",
+        "country_code": "LKA"
+      }
+    },
+    {
+      "date": "1968",
+      "value": "11736088",
+      "locator": {
+        "year": "1968",
+        "country_code": "LKA"
+      }
+    },
+    {
+      "date": "1969",
+      "value": "12013858",
+      "locator": {
+        "year": "1969",
+        "country_code": "LKA"
+      }
+    },
+    {
+      "date": "1970",
+      "value": "12287110",
+      "locator": {
+        "year": "1970",
+        "country_code": "LKA"
+      }
+    },
+    {
+      "date": "1971",
+      "value": "12551910",
+      "locator": {
+        "year": "1971",
+        "country_code": "LKA"
+      }
+    },
+    {
+      "date": "1972",
+      "value": "12809205",
+      "locator": {
+        "year": "1972",
+        "country_code": "LKA"
+      }
+    },
+    {
+      "date": "1973",
+      "value": "13060916",
+      "locator": {
+        "year": "1973",
+        "country_code": "LKA"
+      }
+    },
+    {
+      "date": "1974",
+      "value": "13305693",
+      "locator": {
+        "year": "1974",
+        "country_code": "LKA"
+      }
+    },
+    {
+      "date": "1975",
+      "value": "13548984",
+      "locator": {
+        "year": "1975",
+        "country_code": "LKA"
+      }
+    },
+    {
+      "date": "1976",
+      "value": "13796770",
+      "locator": {
+        "year": "1976",
+        "country_code": "LKA"
+      }
+    },
+    {
+      "date": "1977",
+      "value": "14049371",
+      "locator": {
+        "year": "1977",
+        "country_code": "LKA"
+      }
+    },
+    {
+      "date": "1978",
+      "value": "14310128",
+      "locator": {
+        "year": "1978",
+        "country_code": "LKA"
+      }
+    },
+    {
+      "date": "1979",
+      "value": "14579614",
+      "locator": {
+        "year": "1979",
+        "country_code": "LKA"
+      }
+    },
+    {
+      "date": "1980",
+      "value": "14847974",
+      "locator": {
+        "year": "1980",
+        "country_code": "LKA"
+      }
+    },
+    {
+      "date": "1981",
+      "value": "15099414",
+      "locator": {
+        "year": "1981",
+        "country_code": "LKA"
+      }
+    },
+    {
+      "date": "1982",
+      "value": "15286567",
+      "locator": {
+        "year": "1982",
+        "country_code": "LKA"
+      }
+    },
+    {
+      "date": "1983",
+      "value": "15388794",
+      "locator": {
+        "year": "1983",
+        "country_code": "LKA"
+      }
+    },
+    {
+      "date": "1984",
+      "value": "15441860",
+      "locator": {
+        "year": "1984",
+        "country_code": "LKA"
+      }
+    },
+    {
+      "date": "1985",
+      "value": "15544154",
+      "locator": {
+        "year": "1985",
+        "country_code": "LKA"
+      }
+    },
+    {
+      "date": "1986",
+      "value": "15731256",
+      "locator": {
+        "year": "1986",
+        "country_code": "LKA"
+      }
+    },
+    {
+      "date": "1987",
+      "value": "15916576",
+      "locator": {
+        "year": "1987",
+        "country_code": "LKA"
+      }
+    },
+    {
+      "date": "1988",
+      "value": "16078621",
+      "locator": {
+        "year": "1988",
+        "country_code": "LKA"
+      }
+    },
+    {
+      "date": "1989",
+      "value": "16248557",
+      "locator": {
+        "year": "1989",
+        "country_code": "LKA"
+      }
+    },
+    {
+      "date": "1990",
+      "value": "16352458",
+      "locator": {
+        "year": "1990",
+        "country_code": "LKA"
+      }
+    },
+    {
+      "date": "1991",
+      "value": "16475354",
+      "locator": {
+        "year": "1991",
+        "country_code": "LKA"
+      }
+    },
+    {
+      "date": "1992",
+      "value": "16739284",
+      "locator": {
+        "year": "1992",
+        "country_code": "LKA"
+      }
+    },
+    {
+      "date": "1993",
+      "value": "17025918",
+      "locator": {
+        "year": "1993",
+        "country_code": "LKA"
+      }
+    },
+    {
+      "date": "1994",
+      "value": "17275773",
+      "locator": {
+        "year": "1994",
+        "country_code": "LKA"
+      }
+    },
+    {
+      "date": "1995",
+      "value": "17564068",
+      "locator": {
+        "year": "1995",
+        "country_code": "LKA"
+      }
+    },
+    {
+      "date": "1996",
+      "value": "17905018",
+      "locator": {
+        "year": "1996",
+        "country_code": "LKA"
+      }
+    },
+    {
+      "date": "1997",
+      "value": "18248200",
+      "locator": {
+        "year": "1997",
+        "country_code": "LKA"
+      }
+    },
+    {
+      "date": "1998",
+      "value": "18596003",
+      "locator": {
+        "year": "1998",
+        "country_code": "LKA"
+      }
+    },
+    {
+      "date": "1999",
+      "value": "18944731",
+      "locator": {
+        "year": "1999",
+        "country_code": "LKA"
+      }
+    },
+    {
+      "date": "2000",
+      "value": "19293054",
+      "locator": {
+        "year": "2000",
+        "country_code": "LKA"
+      }
+    },
+    {
+      "date": "2001",
+      "value": "19600362",
+      "locator": {
+        "year": "2001",
+        "country_code": "LKA"
+      }
+    },
+    {
+      "date": "2002",
+      "value": "19805752",
+      "locator": {
+        "year": "2002",
+        "country_code": "LKA"
+      }
+    },
+    {
+      "date": "2003",
+      "value": "19951521",
+      "locator": {
+        "year": "2003",
+        "country_code": "LKA"
+      }
+    },
+    {
+      "date": "2004",
+      "value": "20087605",
+      "locator": {
+        "year": "2004",
+        "country_code": "LKA"
+      }
+    },
+    {
+      "date": "2005",
+      "value": "20216524",
+      "locator": {
+        "year": "2005",
+        "country_code": "LKA"
+      }
+    },
+    {
+      "date": "2006",
+      "value": "20352411",
+      "locator": {
+        "year": "2006",
+        "country_code": "LKA"
+      }
+    },
+    {
+      "date": "2007",
+      "value": "20492545",
+      "locator": {
+        "year": "2007",
+        "country_code": "LKA"
+      }
+    },
+    {
+      "date": "2008",
+      "value": "20629378",
+      "locator": {
+        "year": "2008",
+        "country_code": "LKA"
+      }
+    },
+    {
+      "date": "2009",
+      "value": "20756435",
+      "locator": {
+        "year": "2009",
+        "country_code": "LKA"
+      }
+    },
+    {
+      "date": "2010",
+      "value": "20879089",
+      "locator": {
+        "year": "2010",
+        "country_code": "LKA"
+      }
+    },
+    {
+      "date": "2011",
+      "value": "21009048",
+      "locator": {
+        "year": "2011",
+        "country_code": "LKA"
+      }
+    },
+    {
+      "date": "2012",
+      "value": "21169458",
+      "locator": {
+        "year": "2012",
+        "country_code": "LKA"
+      }
+    },
+    {
+      "date": "2013",
+      "value": "20585000",
+      "locator": {
+        "year": "2013",
+        "country_code": "LKA"
+      }
+    },
+    {
+      "date": "2014",
+      "value": "20778000",
+      "locator": {
+        "year": "2014",
+        "country_code": "LKA"
+      }
+    },
+    {
+      "date": "2015",
+      "value": "20970000",
+      "locator": {
+        "year": "2015",
+        "country_code": "LKA"
+      }
+    },
+    {
+      "date": "2016",
+      "value": "21209000",
+      "locator": {
+        "year": "2016",
+        "country_code": "LKA"
+      }
+    },
+    {
+      "date": "2017",
+      "value": "21453000",
+      "locator": {
+        "year": "2017",
+        "country_code": "LKA"
+      }
+    },
+    {
+      "date": "2018",
+      "value": "21670000",
+      "locator": {
+        "year": "2018",
+        "country_code": "LKA"
+      }
+    },
+    {
+      "date": "2019",
+      "value": "21803000",
+      "locator": {
+        "year": "2019",
+        "country_code": "LKA"
+      }
+    },
+    {
+      "date": "2020",
+      "value": "21919000",
+      "locator": {
+        "year": "2020",
+        "country_code": "LKA"
+      }
+    },
+    {
+      "date": "2021",
+      "value": "22156000",
+      "locator": {
+        "year": "2021",
+        "country_code": "LKA"
+      }
+    },
+    {
+      "date": "2022",
+      "value": "22181000",
+      "locator": {
+        "year": "2022",
+        "country_code": "LKA"
+      }
+    },
+    {
+      "date": "2023",
+      "value": "22037000",
+      "locator": {
+        "year": "2023",
+        "country_code": "LKA"
+      }
+    },
+    {
+      "date": "2024",
+      "value": "21916000",
+      "locator": {
+        "year": "2024",
+        "country_code": "LKA"
+      }
+    },
+    {
+      "date": "2025",
+      "value": "21756000",
+      "locator": {
+        "year": "2025",
+        "country_code": "LKA"
+      }
+    }
+  ]
+}
