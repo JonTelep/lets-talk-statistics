@@ -1,0 +1,580 @@
+{
+  "id": "census_new_home_median",
+  "name": "Median sales price",
+  "units": "Dollars, nominal",
+  "adjustment": "not inflation-adjusted",
+  "nominal_or_real": "nominal",
+  "frequency": "annual",
+  "source_id": "census_new_home_prices",
+  "series_url": "https://www.census.gov/construction/nrs/data/series.html",
+  "notes": "Sales Price of New Privately-Owned Houses Sold. United States. Note: The sales price includes the land. New privately owned houses sold. This is not the price of existing homes.",
+  "points": [
+    {
+      "date": "1963",
+      "value": "18000",
+      "locator": {
+        "sheet": "Annual",
+        "column": "Median sales price",
+        "year": "1963"
+      }
+    },
+    {
+      "date": "1964",
+      "value": "18900",
+      "locator": {
+        "sheet": "Annual",
+        "column": "Median sales price",
+        "year": "1964"
+      }
+    },
+    {
+      "date": "1965",
+      "value": "20000",
+      "locator": {
+        "sheet": "Annual",
+        "column": "Median sales price",
+        "year": "1965"
+      }
+    },
+    {
+      "date": "1966",
+      "value": "21400",
+      "locator": {
+        "sheet": "Annual",
+        "column": "Median sales price",
+        "year": "1966"
+      }
+    },
+    {
+      "date": "1967",
+      "value": "22700",
+      "locator": {
+        "sheet": "Annual",
+        "column": "Median sales price",
+        "year": "1967"
+      }
+    },
+    {
+      "date": "1968",
+      "value": "24700",
+      "locator": {
+        "sheet": "Annual",
+        "column": "Median sales price",
+        "year": "1968"
+      }
+    },
+    {
+      "date": "1969",
+      "value": "25600",
+      "locator": {
+        "sheet": "Annual",
+        "column": "Median sales price",
+        "year": "1969"
+      }
+    },
+    {
+      "date": "1970",
+      "value": "23400",
+      "locator": {
+        "sheet": "Annual",
+        "column": "Median sales price",
+        "year": "1970"
+      }
+    },
+    {
+      "date": "1971",
+      "value": "25200",
+      "locator": {
+        "sheet": "Annual",
+        "column": "Median sales price",
+        "year": "1971"
+      }
+    },
+    {
+      "date": "1972",
+      "value": "27600",
+      "locator": {
+        "sheet": "Annual",
+        "column": "Median sales price",
+        "year": "1972"
+      }
+    },
+    {
+      "date": "1973",
+      "value": "32500",
+      "locator": {
+        "sheet": "Annual",
+        "column": "Median sales price",
+        "year": "1973"
+      }
+    },
+    {
+      "date": "1974",
+      "value": "35900",
+      "locator": {
+        "sheet": "Annual",
+        "column": "Median sales price",
+        "year": "1974"
+      }
+    },
+    {
+      "date": "1975",
+      "value": "39300",
+      "locator": {
+        "sheet": "Annual",
+        "column": "Median sales price",
+        "year": "1975"
+      }
+    },
+    {
+      "date": "1976",
+      "value": "44200",
+      "locator": {
+        "sheet": "Annual",
+        "column": "Median sales price",
+        "year": "1976"
+      }
+    },
+    {
+      "date": "1977",
+      "value": "48800",
+      "locator": {
+        "sheet": "Annual",
+        "column": "Median sales price",
+        "year": "1977"
+      }
+    },
+    {
+      "date": "1978",
+      "value": "55700",
+      "locator": {
+        "sheet": "Annual",
+        "column": "Median sales price",
+        "year": "1978"
+      }
+    },
+    {
+      "date": "1979",
+      "value": "62900",
+      "locator": {
+        "sheet": "Annual",
+        "column": "Median sales price",
+        "year": "1979"
+      }
+    },
+    {
+      "date": "1980",
+      "value": "64600",
+      "locator": {
+        "sheet": "Annual",
+        "column": "Median sales price",
+        "year": "1980"
+      }
+    },
+    {
+      "date": "1981",
+      "value": "68900",
+      "locator": {
+        "sheet": "Annual",
+        "column": "Median sales price",
+        "year": "1981"
+      }
+    },
+    {
+      "date": "1982",
+      "value": "69300",
+      "locator": {
+        "sheet": "Annual",
+        "column": "Median sales price",
+        "year": "1982"
+      }
+    },
+    {
+      "date": "1983",
+      "value": "75300",
+      "locator": {
+        "sheet": "Annual",
+        "column": "Median sales price",
+        "year": "1983"
+      }
+    },
+    {
+      "date": "1984",
+      "value": "79900",
+      "locator": {
+        "sheet": "Annual",
+        "column": "Median sales price",
+        "year": "1984"
+      }
+    },
+    {
+      "date": "1985",
+      "value": "84300",
+      "locator": {
+        "sheet": "Annual",
+        "column": "Median sales price",
+        "year": "1985"
+      }
+    },
+    {
+      "date": "1986",
+      "value": "92000",
+      "locator": {
+        "sheet": "Annual",
+        "column": "Median sales price",
+        "year": "1986"
+      }
+    },
+    {
+      "date": "1987",
+      "value": "104500",
+      "locator": {
+        "sheet": "Annual",
+        "column": "Median sales price",
+        "year": "1987"
+      }
+    },
+    {
+      "date": "1988",
+      "value": "112500",
+      "locator": {
+        "sheet": "Annual",
+        "column": "Median sales price",
+        "year": "1988"
+      }
+    },
+    {
+      "date": "1989",
+      "value": "120000",
+      "locator": {
+        "sheet": "Annual",
+        "column": "Median sales price",
+        "year": "1989"
+      }
+    },
+    {
+      "date": "1990",
+      "value": "122900",
+      "locator": {
+        "sheet": "Annual",
+        "column": "Median sales price",
+        "year": "1990"
+      }
+    },
+    {
+      "date": "1991",
+      "value": "120000",
+      "locator": {
+        "sheet": "Annual",
+        "column": "Median sales price",
+        "year": "1991"
+      }
+    },
+    {
+      "date": "1992",
+      "value": "121500",
+      "locator": {
+        "sheet": "Annual",
+        "column": "Median sales price",
+        "year": "1992"
+      }
+    },
+    {
+      "date": "1993",
+      "value": "126500",
+      "locator": {
+        "sheet": "Annual",
+        "column": "Median sales price",
+        "year": "1993"
+      }
+    },
+    {
+      "date": "1994",
+      "value": "130000",
+      "locator": {
+        "sheet": "Annual",
+        "column": "Median sales price",
+        "year": "1994"
+      }
+    },
+    {
+      "date": "1995",
+      "value": "133900",
+      "locator": {
+        "sheet": "Annual",
+        "column": "Median sales price",
+        "year": "1995"
+      }
+    },
+    {
+      "date": "1996",
+      "value": "140000",
+      "locator": {
+        "sheet": "Annual",
+        "column": "Median sales price",
+        "year": "1996"
+      }
+    },
+    {
+      "date": "1997",
+      "value": "146000",
+      "locator": {
+        "sheet": "Annual",
+        "column": "Median sales price",
+        "year": "1997"
+      }
+    },
+    {
+      "date": "1998",
+      "value": "152500",
+      "locator": {
+        "sheet": "Annual",
+        "column": "Median sales price",
+        "year": "1998"
+      }
+    },
+    {
+      "date": "1999",
+      "value": "161000",
+      "locator": {
+        "sheet": "Annual",
+        "column": "Median sales price",
+        "year": "1999"
+      }
+    },
+    {
+      "date": "2000",
+      "value": "169000",
+      "locator": {
+        "sheet": "Annual",
+        "column": "Median sales price",
+        "year": "2000"
+      }
+    },
+    {
+      "date": "2001",
+      "value": "175200",
+      "locator": {
+        "sheet": "Annual",
+        "column": "Median sales price",
+        "year": "2001"
+      }
+    },
+    {
+      "date": "2002",
+      "value": "187600",
+      "locator": {
+        "sheet": "Annual",
+        "column": "Median sales price",
+        "year": "2002"
+      }
+    },
+    {
+      "date": "2003",
+      "value": "195000",
+      "locator": {
+        "sheet": "Annual",
+        "column": "Median sales price",
+        "year": "2003"
+      }
+    },
+    {
+      "date": "2004",
+      "value": "221000",
+      "locator": {
+        "sheet": "Annual",
+        "column": "Median sales price",
+        "year": "2004"
+      }
+    },
+    {
+      "date": "2005",
+      "value": "240900",
+      "locator": {
+        "sheet": "Annual",
+        "column": "Median sales price",
+        "year": "2005"
+      }
+    },
+    {
+      "date": "2006",
+      "value": "246500",
+      "locator": {
+        "sheet": "Annual",
+        "column": "Median sales price",
+        "year": "2006"
+      }
+    },
+    {
+      "date": "2007",
+      "value": "247900",
+      "locator": {
+        "sheet": "Annual",
+        "column": "Median sales price",
+        "year": "2007"
+      }
+    },
+    {
+      "date": "2008",
+      "value": "232100",
+      "locator": {
+        "sheet": "Annual",
+        "column": "Median sales price",
+        "year": "2008"
+      }
+    },
+    {
+      "date": "2009",
+      "value": "216700",
+      "locator": {
+        "sheet": "Annual",
+        "column": "Median sales price",
+        "year": "2009"
+      }
+    },
+    {
+      "date": "2010",
+      "value": "221800",
+      "locator": {
+        "sheet": "Annual",
+        "column": "Median sales price",
+        "year": "2010"
+      }
+    },
+    {
+      "date": "2011",
+      "value": "227200",
+      "locator": {
+        "sheet": "Annual",
+        "column": "Median sales price",
+        "year": "2011"
+      }
+    },
+    {
+      "date": "2012",
+      "value": "245200",
+      "locator": {
+        "sheet": "Annual",
+        "column": "Median sales price",
+        "year": "2012"
+      }
+    },
+    {
+      "date": "2013",
+      "value": "268900",
+      "locator": {
+        "sheet": "Annual",
+        "column": "Median sales price",
+        "year": "2013"
+      }
+    },
+    {
+      "date": "2014",
+      "value": "288500",
+      "locator": {
+        "sheet": "Annual",
+        "column": "Median sales price",
+        "year": "2014"
+      }
+    },
+    {
+      "date": "2015",
+      "value": "294200",
+      "locator": {
+        "sheet": "Annual",
+        "column": "Median sales price",
+        "year": "2015"
+      }
+    },
+    {
+      "date": "2016",
+      "value": "307800",
+      "locator": {
+        "sheet": "Annual",
+        "column": "Median sales price",
+        "year": "2016"
+      }
+    },
+    {
+      "date": "2017",
+      "value": "323100",
+      "locator": {
+        "sheet": "Annual",
+        "column": "Median sales price",
+        "year": "2017"
+      }
+    },
+    {
+      "date": "2018",
+      "value": "326400",
+      "locator": {
+        "sheet": "Annual",
+        "column": "Median sales price",
+        "year": "2018"
+      }
+    },
+    {
+      "date": "2019",
+      "value": "321500",
+      "locator": {
+        "sheet": "Annual",
+        "column": "Median sales price",
+        "year": "2019"
+      }
+    },
+    {
+      "date": "2020",
+      "value": "330900",
+      "locator": {
+        "sheet": "Annual",
+        "column": "Median sales price",
+        "year": "2020"
+      }
+    },
+    {
+      "date": "2021",
+      "value": "383500",
+      "locator": {
+        "sheet": "Annual",
+        "column": "Median sales price",
+        "year": "2021"
+      }
+    },
+    {
+      "date": "2022",
+      "value": "434500",
+      "locator": {
+        "sheet": "Annual",
+        "column": "Median sales price",
+        "year": "2022"
+      }
+    },
+    {
+      "date": "2023",
+      "value": "428600",
+      "locator": {
+        "sheet": "Annual",
+        "column": "Median sales price",
+        "year": "2023"
+      }
+    },
+    {
+      "date": "2024",
+      "value": "420300",
+      "locator": {
+        "sheet": "Annual",
+        "column": "Median sales price",
+        "year": "2024"
+      }
+    },
+    {
+      "date": "2025",
+      "value": "417400",
+      "locator": {
+        "sheet": "Annual",
+        "column": "Median sales price",
+        "year": "2025"
+      }
+    }
+  ]
+}

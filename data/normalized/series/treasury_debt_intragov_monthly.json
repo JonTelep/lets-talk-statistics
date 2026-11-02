@@ -1,0 +1,2453 @@
+{
+  "id": "treasury_debt_intragov_monthly",
+  "name": "Intragovernmental Holdings",
+  "units": "Dollars, nominal",
+  "adjustment": "not applicable",
+  "nominal_or_real": "nominal",
+  "frequency": "monthly",
+  "source_id": "treasury_debt_to_penny",
+  "series_url": "https://fiscaldata.treasury.gov/datasets/debt-to-the-penny/debt-to-the-penny",
+  "notes": "Month value is the last Debt to the Penny record in that calendar month.",
+  "points": [
+    {
+      "date": "1997-09",
+      "value": "1623478464547.74",
+      "locator": {
+        "record_date": "1997-09-30",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "1998-09",
+      "value": "1792328536734.09",
+      "locator": {
+        "record_date": "1998-09-30",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "1999-09",
+      "value": "2020166307131.62",
+      "locator": {
+        "record_date": "1999-09-30",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2000-09",
+      "value": "2268874719665.66",
+      "locator": {
+        "record_date": "2000-09-29",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2001-09",
+      "value": "2468153236105.32",
+      "locator": {
+        "record_date": "2001-09-28",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2001-10",
+      "value": "2482943910405.32",
+      "locator": {
+        "record_date": "2001-10-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2001-11",
+      "value": "2484870049533.17",
+      "locator": {
+        "record_date": "2001-11-30",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2001-12",
+      "value": "2549039605222.53",
+      "locator": {
+        "record_date": "2001-12-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2002-01",
+      "value": "2558304316769.61",
+      "locator": {
+        "record_date": "2002-01-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2002-02",
+      "value": "2561209259543.44",
+      "locator": {
+        "record_date": "2002-02-28",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2002-03",
+      "value": "2561894577988.05",
+      "locator": {
+        "record_date": "2002-03-29",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2002-04",
+      "value": "2582340471146.16",
+      "locator": {
+        "record_date": "2002-04-30",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2002-05",
+      "value": "2585495830856.64",
+      "locator": {
+        "record_date": "2002-05-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2002-06",
+      "value": "2662321387619.66",
+      "locator": {
+        "record_date": "2002-06-28",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2002-07",
+      "value": "2659288870276.97",
+      "locator": {
+        "record_date": "2002-07-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2002-08",
+      "value": "2652204940270.63",
+      "locator": {
+        "record_date": "2002-08-30",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2002-09",
+      "value": "2675055717722.42",
+      "locator": {
+        "record_date": "2002-09-30",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2002-10",
+      "value": "2696004418229.93",
+      "locator": {
+        "record_date": "2002-10-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2002-11",
+      "value": "2694107607206.43",
+      "locator": {
+        "record_date": "2002-11-29",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2002-12",
+      "value": "2757767686463.80",
+      "locator": {
+        "record_date": "2002-12-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2003-02",
+      "value": "2761902070509.55",
+      "locator": {
+        "record_date": "2003-02-28",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2003-03",
+      "value": "2749464294178.99",
+      "locator": {
+        "record_date": "2003-03-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2003-04",
+      "value": "2757535748111.21",
+      "locator": {
+        "record_date": "2003-04-30",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2003-05",
+      "value": "2781524839178.20",
+      "locator": {
+        "record_date": "2003-05-30",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2003-06",
+      "value": "2853289839463.42",
+      "locator": {
+        "record_date": "2003-06-30",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2003-07",
+      "value": "2848301245048.05",
+      "locator": {
+        "record_date": "2003-07-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2003-08",
+      "value": "2842180842303.34",
+      "locator": {
+        "record_date": "2003-08-29",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2003-09",
+      "value": "2859140955862.74",
+      "locator": {
+        "record_date": "2003-09-30",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2003-10",
+      "value": "2882167744909.14",
+      "locator": {
+        "record_date": "2003-10-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2003-11",
+      "value": "2892160708832.97",
+      "locator": {
+        "record_date": "2003-11-28",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2003-12",
+      "value": "2953720418578.68",
+      "locator": {
+        "record_date": "2003-12-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2004-01",
+      "value": "2964033628713.37",
+      "locator": {
+        "record_date": "2004-01-30",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2004-02",
+      "value": "2966349800790.71",
+      "locator": {
+        "record_date": "2004-02-27",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2004-03",
+      "value": "2954194311538.37",
+      "locator": {
+        "record_date": "2004-03-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2004-04",
+      "value": "2974811477645.08",
+      "locator": {
+        "record_date": "2004-04-30",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2004-05",
+      "value": "2989294638154.54",
+      "locator": {
+        "record_date": "2004-05-28",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2004-06",
+      "value": "3055424625642.29",
+      "locator": {
+        "record_date": "2004-06-30",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2004-07",
+      "value": "3048654181993.85",
+      "locator": {
+        "record_date": "2004-07-30",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2004-08",
+      "value": "3052458361366.23",
+      "locator": {
+        "record_date": "2004-08-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2004-09",
+      "value": "3071708099421.40",
+      "locator": {
+        "record_date": "2004-09-30",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2004-10",
+      "value": "3111192279118.66",
+      "locator": {
+        "record_date": "2004-10-29",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2004-11",
+      "value": "3117302823058.97",
+      "locator": {
+        "record_date": "2004-11-30",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2004-12",
+      "value": "3187753474781.19",
+      "locator": {
+        "record_date": "2004-12-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2005-01",
+      "value": "3199521544939.83",
+      "locator": {
+        "record_date": "2005-01-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2005-02",
+      "value": "3204850030323.76",
+      "locator": {
+        "record_date": "2005-02-28",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2005-03",
+      "value": "3204223407550.94",
+      "locator": {
+        "record_date": "2005-03-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2005-04",
+      "value": "3213472491939.22",
+      "locator": {
+        "record_date": "2005-04-29",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2005-05",
+      "value": "3235502213279.97",
+      "locator": {
+        "record_date": "2005-05-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2005-06",
+      "value": "3308798843328.22",
+      "locator": {
+        "record_date": "2005-06-30",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2005-07",
+      "value": "3306833837220.25",
+      "locator": {
+        "record_date": "2005-07-29",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2005-08",
+      "value": "3312654019984.63",
+      "locator": {
+        "record_date": "2005-08-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2005-09",
+      "value": "3331470935661.46",
+      "locator": {
+        "record_date": "2005-09-30",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2005-10",
+      "value": "3376607032283.70",
+      "locator": {
+        "record_date": "2005-10-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2005-11",
+      "value": "3382919254161.88",
+      "locator": {
+        "record_date": "2005-11-30",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2005-12",
+      "value": "3455603330310.29",
+      "locator": {
+        "record_date": "2005-12-30",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2006-01",
+      "value": "3471432946972.72",
+      "locator": {
+        "record_date": "2006-01-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2006-02",
+      "value": "3498768465290.04",
+      "locator": {
+        "record_date": "2006-02-28",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2006-03",
+      "value": "3498671562135.14",
+      "locator": {
+        "record_date": "2006-03-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2006-04",
+      "value": "3535769322660.75",
+      "locator": {
+        "record_date": "2006-04-28",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2006-05",
+      "value": "3549260070711.85",
+      "locator": {
+        "record_date": "2006-05-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2006-06",
+      "value": "3622838382753.41",
+      "locator": {
+        "record_date": "2006-06-30",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2006-07",
+      "value": "3624614379572.38",
+      "locator": {
+        "record_date": "2006-07-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2006-08",
+      "value": "3630348327059.60",
+      "locator": {
+        "record_date": "2006-08-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2006-09",
+      "value": "3663853163022.80",
+      "locator": {
+        "record_date": "2006-09-29",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2006-10",
+      "value": "3703717927882.65",
+      "locator": {
+        "record_date": "2006-10-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2006-11",
+      "value": "3703678427313.69",
+      "locator": {
+        "record_date": "2006-11-30",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2006-12",
+      "value": "3779177863718.40",
+      "locator": {
+        "record_date": "2006-12-29",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2007-01",
+      "value": "3793600173259.34",
+      "locator": {
+        "record_date": "2007-01-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2007-02",
+      "value": "3798999871306.30",
+      "locator": {
+        "record_date": "2007-02-28",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2007-03",
+      "value": "3795725164861.92",
+      "locator": {
+        "record_date": "2007-03-30",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2007-04",
+      "value": "3833110332444.19",
+      "locator": {
+        "record_date": "2007-04-30",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2007-05",
+      "value": "3848121005858.91",
+      "locator": {
+        "record_date": "2007-05-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2007-06",
+      "value": "3924585456513.39",
+      "locator": {
+        "record_date": "2007-06-29",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2007-07",
+      "value": "3928721566851.08",
+      "locator": {
+        "record_date": "2007-07-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2007-08",
+      "value": "3908710444762.10",
+      "locator": {
+        "record_date": "2007-08-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2007-09",
+      "value": "3958347869336.00",
+      "locator": {
+        "record_date": "2007-09-28",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2007-10",
+      "value": "4012007639210.72",
+      "locator": {
+        "record_date": "2007-10-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2007-11",
+      "value": "4002761870488.07",
+      "locator": {
+        "record_date": "2007-11-30",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2007-12",
+      "value": "4092869932145.64",
+      "locator": {
+        "record_date": "2007-12-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2008-01",
+      "value": "4105743221110.40",
+      "locator": {
+        "record_date": "2008-01-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2008-02",
+      "value": "4098247047033.02",
+      "locator": {
+        "record_date": "2008-02-29",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2008-03",
+      "value": "4103478562348.51",
+      "locator": {
+        "record_date": "2008-03-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2008-04",
+      "value": "4133362638169.27",
+      "locator": {
+        "record_date": "2008-04-30",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2008-05",
+      "value": "4110099549786.81",
+      "locator": {
+        "record_date": "2008-05-30",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2008-06",
+      "value": "4206942429625.55",
+      "locator": {
+        "record_date": "2008-06-30",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2008-07",
+      "value": "4182097687425.30",
+      "locator": {
+        "record_date": "2008-07-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2008-08",
+      "value": "4166625468977.92",
+      "locator": {
+        "record_date": "2008-08-29",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2008-09",
+      "value": "4216033231508.78",
+      "locator": {
+        "record_date": "2008-09-30",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2008-10",
+      "value": "4271300715369.26",
+      "locator": {
+        "record_date": "2008-10-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2008-11",
+      "value": "4264584043238.19",
+      "locator": {
+        "record_date": "2008-11-28",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2008-12",
+      "value": "4330485995135.59",
+      "locator": {
+        "record_date": "2008-12-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2009-01",
+      "value": "4314781064103.03",
+      "locator": {
+        "record_date": "2009-01-30",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2009-02",
+      "value": "4297981792622.92",
+      "locator": {
+        "record_date": "2009-02-27",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2009-03",
+      "value": "4293398031000.47",
+      "locator": {
+        "record_date": "2009-03-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2009-04",
+      "value": "4307767198983.08",
+      "locator": {
+        "record_date": "2009-04-30",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2009-05",
+      "value": "4302278379831.15",
+      "locator": {
+        "record_date": "2009-05-29",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2009-06",
+      "value": "4370362961372.13",
+      "locator": {
+        "record_date": "2009-06-30",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2009-07",
+      "value": "4333678049082.54",
+      "locator": {
+        "record_date": "2009-07-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2009-08",
+      "value": "4328725448984.19",
+      "locator": {
+        "record_date": "2009-08-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2009-09",
+      "value": "4357967444774.98",
+      "locator": {
+        "record_date": "2009-09-30",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2009-10",
+      "value": "4405204097808.54",
+      "locator": {
+        "record_date": "2009-10-30",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2009-11",
+      "value": "4400660351004.17",
+      "locator": {
+        "record_date": "2009-11-30",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2009-12",
+      "value": "4500340892024.73",
+      "locator": {
+        "record_date": "2009-12-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2010-01",
+      "value": "4519145704930.91",
+      "locator": {
+        "record_date": "2010-01-29",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2010-02",
+      "value": "4503397019620.34",
+      "locator": {
+        "record_date": "2010-02-26",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2010-03",
+      "value": "4483054265092.94",
+      "locator": {
+        "record_date": "2010-03-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2010-04",
+      "value": "4514304290243.70",
+      "locator": {
+        "record_date": "2010-04-30",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2010-05",
+      "value": "4498119698371.03",
+      "locator": {
+        "record_date": "2010-05-28",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2010-06",
+      "value": "4569793360878.17",
+      "locator": {
+        "record_date": "2010-06-30",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2010-07",
+      "value": "4535269210484.39",
+      "locator": {
+        "record_date": "2010-07-30",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2010-08",
+      "value": "4522591298974.57",
+      "locator": {
+        "record_date": "2010-08-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2010-09",
+      "value": "4538814607438.71",
+      "locator": {
+        "record_date": "2010-09-30",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2010-10",
+      "value": "4598946449537.84",
+      "locator": {
+        "record_date": "2010-10-29",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2010-11",
+      "value": "4585749068174.55",
+      "locator": {
+        "record_date": "2010-11-30",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2010-12",
+      "value": "4634739130665.17",
+      "locator": {
+        "record_date": "2010-12-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2011-01",
+      "value": "4645634195846.55",
+      "locator": {
+        "record_date": "2011-01-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2011-02",
+      "value": "4629222921952.50",
+      "locator": {
+        "record_date": "2011-02-28",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2011-03",
+      "value": "4618471376661.65",
+      "locator": {
+        "record_date": "2011-03-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2011-04",
+      "value": "4632679886492.71",
+      "locator": {
+        "record_date": "2011-04-29",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2011-05",
+      "value": "4621212257467.27",
+      "locator": {
+        "record_date": "2011-05-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2011-06",
+      "value": "4600864275161.82",
+      "locator": {
+        "record_date": "2011-06-30",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2011-07",
+      "value": "4586573604746.79",
+      "locator": {
+        "record_date": "2011-07-29",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2011-08",
+      "value": "4660039640336.86",
+      "locator": {
+        "record_date": "2011-08-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2011-09",
+      "value": "4663308943903.05",
+      "locator": {
+        "record_date": "2011-09-30",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2011-10",
+      "value": "4737693612757.32",
+      "locator": {
+        "record_date": "2011-10-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2011-11",
+      "value": "4720540767674.72",
+      "locator": {
+        "record_date": "2011-11-30",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2011-12",
+      "value": "4775277193643.94",
+      "locator": {
+        "record_date": "2011-12-30",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2012-01",
+      "value": "4783766105917.00",
+      "locator": {
+        "record_date": "2012-01-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2012-02",
+      "value": "4765894997379.80",
+      "locator": {
+        "record_date": "2012-02-29",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2012-03",
+      "value": "4735254134245.54",
+      "locator": {
+        "record_date": "2012-03-30",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2012-04",
+      "value": "4776297169202.55",
+      "locator": {
+        "record_date": "2012-04-30",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2012-05",
+      "value": "4764433990989.88",
+      "locator": {
+        "record_date": "2012-05-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2012-06",
+      "value": "4812182369712.78",
+      "locator": {
+        "record_date": "2012-06-29",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2012-07",
+      "value": "4810953087545.33",
+      "locator": {
+        "record_date": "2012-07-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2012-08",
+      "value": "4743144124553.23",
+      "locator": {
+        "record_date": "2012-08-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2012-09",
+      "value": "4796655607346.57",
+      "locator": {
+        "record_date": "2012-09-28",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2012-10",
+      "value": "4849872449742.20",
+      "locator": {
+        "record_date": "2012-10-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2012-11",
+      "value": "4816348184806.98",
+      "locator": {
+        "record_date": "2012-11-30",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2012-12",
+      "value": "4851212500174.05",
+      "locator": {
+        "record_date": "2012-12-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2013-01",
+      "value": "4873616281762.41",
+      "locator": {
+        "record_date": "2013-01-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2013-02",
+      "value": "4864852997544.29",
+      "locator": {
+        "record_date": "2013-02-28",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2013-03",
+      "value": "4854491368262.02",
+      "locator": {
+        "record_date": "2013-03-29",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2013-04",
+      "value": "4885697098978.25",
+      "locator": {
+        "record_date": "2013-04-30",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2013-05",
+      "value": "4841671232812.58",
+      "locator": {
+        "record_date": "2013-05-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2013-06",
+      "value": "4837027798364.88",
+      "locator": {
+        "record_date": "2013-06-28",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2013-07",
+      "value": "4821575923414.72",
+      "locator": {
+        "record_date": "2013-07-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2013-08",
+      "value": "4771635600972.47",
+      "locator": {
+        "record_date": "2013-08-30",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2013-09",
+      "value": "4761904290623.49",
+      "locator": {
+        "record_date": "2013-09-30",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2013-10",
+      "value": "4968747245771.27",
+      "locator": {
+        "record_date": "2013-10-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2013-11",
+      "value": "4936025387118.78",
+      "locator": {
+        "record_date": "2013-11-29",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2013-12",
+      "value": "4996544261665.60",
+      "locator": {
+        "record_date": "2013-12-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2014-01",
+      "value": "4984876805567.80",
+      "locator": {
+        "record_date": "2014-01-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2014-02",
+      "value": "4970678692085.12",
+      "locator": {
+        "record_date": "2014-02-28",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2014-03",
+      "value": "4981908178019.90",
+      "locator": {
+        "record_date": "2014-03-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2014-04",
+      "value": "5004968792143.34",
+      "locator": {
+        "record_date": "2014-04-30",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2014-05",
+      "value": "4978928099011.90",
+      "locator": {
+        "record_date": "2014-05-30",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2014-06",
+      "value": "5060386612348.35",
+      "locator": {
+        "record_date": "2014-06-30",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2014-07",
+      "value": "5035658600415.07",
+      "locator": {
+        "record_date": "2014-07-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2014-08",
+      "value": "5016560747762.62",
+      "locator": {
+        "record_date": "2014-08-29",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2014-09",
+      "value": "5039100141755.80",
+      "locator": {
+        "record_date": "2014-09-30",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2014-10",
+      "value": "5080104107616.38",
+      "locator": {
+        "record_date": "2014-10-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2014-11",
+      "value": "5082867603128.51",
+      "locator": {
+        "record_date": "2014-11-28",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2014-12",
+      "value": "5117492754794.72",
+      "locator": {
+        "record_date": "2014-12-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2015-01",
+      "value": "5097363731197.36",
+      "locator": {
+        "record_date": "2015-01-30",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2015-02",
+      "value": "5081817556297.57",
+      "locator": {
+        "record_date": "2015-02-27",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2015-03",
+      "value": "5061656903829.81",
+      "locator": {
+        "record_date": "2015-03-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2015-04",
+      "value": "5098878878836.55",
+      "locator": {
+        "record_date": "2015-04-30",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2015-05",
+      "value": "5100145277714.56",
+      "locator": {
+        "record_date": "2015-05-29",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2015-06",
+      "value": "5075583365511.52",
+      "locator": {
+        "record_date": "2015-06-30",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2015-07",
+      "value": "5016277623587.14",
+      "locator": {
+        "record_date": "2015-07-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2015-08",
+      "value": "5031397450800.36",
+      "locator": {
+        "record_date": "2015-08-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2015-09",
+      "value": "5026770468136.52",
+      "locator": {
+        "record_date": "2015-09-30",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2015-10",
+      "value": "5092324810779.99",
+      "locator": {
+        "record_date": "2015-10-30",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2015-11",
+      "value": "5238334464759.14",
+      "locator": {
+        "record_date": "2015-11-30",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2015-12",
+      "value": "5249656752129.30",
+      "locator": {
+        "record_date": "2015-12-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2016-01",
+      "value": "5355672500702.44",
+      "locator": {
+        "record_date": "2016-01-29",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2016-02",
+      "value": "5340265823115.77",
+      "locator": {
+        "record_date": "2016-02-29",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2016-03",
+      "value": "5340060980686.25",
+      "locator": {
+        "record_date": "2016-03-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2016-04",
+      "value": "5346192750684.33",
+      "locator": {
+        "record_date": "2016-04-29",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2016-05",
+      "value": "5379148932964.07",
+      "locator": {
+        "record_date": "2016-05-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2016-06",
+      "value": "5448848424251.79",
+      "locator": {
+        "record_date": "2016-06-30",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2016-07",
+      "value": "5429474970060.72",
+      "locator": {
+        "record_date": "2016-07-29",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2016-08",
+      "value": "5406182525876.91",
+      "locator": {
+        "record_date": "2016-08-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2016-09",
+      "value": "5400021197040.97",
+      "locator": {
+        "record_date": "2016-09-30",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2016-10",
+      "value": "5519214676251.18",
+      "locator": {
+        "record_date": "2016-10-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2016-11",
+      "value": "5504364549387.56",
+      "locator": {
+        "record_date": "2016-11-30",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2016-12",
+      "value": "5541985430119.43",
+      "locator": {
+        "record_date": "2016-12-30",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2017-01",
+      "value": "5561122510968.48",
+      "locator": {
+        "record_date": "2017-01-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2017-02",
+      "value": "5548212666153.04",
+      "locator": {
+        "record_date": "2017-02-28",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2017-03",
+      "value": "5476738123373.96",
+      "locator": {
+        "record_date": "2017-03-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2017-04",
+      "value": "5552784531172.11",
+      "locator": {
+        "record_date": "2017-04-28",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2017-05",
+      "value": "5546965420673.08",
+      "locator": {
+        "record_date": "2017-05-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2017-06",
+      "value": "5478367838085.63",
+      "locator": {
+        "record_date": "2017-06-30",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2017-07",
+      "value": "5483964552527.37",
+      "locator": {
+        "record_date": "2017-07-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2017-08",
+      "value": "5462971446427.15",
+      "locator": {
+        "record_date": "2017-08-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2017-09",
+      "value": "5571471352912.57",
+      "locator": {
+        "record_date": "2017-09-29",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2017-10",
+      "value": "5691027453089.30",
+      "locator": {
+        "record_date": "2017-10-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2017-11",
+      "value": "5671678704922.24",
+      "locator": {
+        "record_date": "2017-11-30",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2017-12",
+      "value": "5678025418389.98",
+      "locator": {
+        "record_date": "2017-12-29",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2018-01",
+      "value": "5690560189529.56",
+      "locator": {
+        "record_date": "2018-01-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2018-02",
+      "value": "5705082307393.12",
+      "locator": {
+        "record_date": "2018-02-28",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2018-03",
+      "value": "5661632908677.02",
+      "locator": {
+        "record_date": "2018-03-30",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2018-04",
+      "value": "5733071837291.80",
+      "locator": {
+        "record_date": "2018-04-30",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2018-05",
+      "value": "5718301751254.52",
+      "locator": {
+        "record_date": "2018-05-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2018-06",
+      "value": "5728505322006.22",
+      "locator": {
+        "record_date": "2018-06-29",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2018-07",
+      "value": "5743567934811.30",
+      "locator": {
+        "record_date": "2018-07-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2018-08",
+      "value": "5673460531712.84",
+      "locator": {
+        "record_date": "2018-08-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2018-09",
+      "value": "5754903659047.78",
+      "locator": {
+        "record_date": "2018-09-28",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2018-10",
+      "value": "5859040457584.48",
+      "locator": {
+        "record_date": "2018-10-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2018-11",
+      "value": "5805775685497.00",
+      "locator": {
+        "record_date": "2018-11-30",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2018-12",
+      "value": "5872429205308.87",
+      "locator": {
+        "record_date": "2018-12-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2019-01",
+      "value": "5881196244587.36",
+      "locator": {
+        "record_date": "2019-01-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2019-02",
+      "value": "5864628400870.73",
+      "locator": {
+        "record_date": "2019-02-28",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2019-03",
+      "value": "5823488154655.02",
+      "locator": {
+        "record_date": "2019-03-29",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2019-04",
+      "value": "5834878723443.44",
+      "locator": {
+        "record_date": "2019-04-30",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2019-05",
+      "value": "5824141099887.17",
+      "locator": {
+        "record_date": "2019-05-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2019-06",
+      "value": "5834860570640.75",
+      "locator": {
+        "record_date": "2019-06-28",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2019-07",
+      "value": "5811183838560.73",
+      "locator": {
+        "record_date": "2019-07-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2019-08",
+      "value": "5863651035691.63",
+      "locator": {
+        "record_date": "2019-08-30",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2019-09",
+      "value": "5910309428261.98",
+      "locator": {
+        "record_date": "2019-09-30",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2019-10",
+      "value": "6027098649127.50",
+      "locator": {
+        "record_date": "2019-10-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2019-11",
+      "value": "5970778150916.67",
+      "locator": {
+        "record_date": "2019-11-29",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2019-12",
+      "value": "6030937647175.17",
+      "locator": {
+        "record_date": "2019-12-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2020-01",
+      "value": "6011178074802.87",
+      "locator": {
+        "record_date": "2020-01-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2020-02",
+      "value": "5996909234363.83",
+      "locator": {
+        "record_date": "2020-02-28",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2020-03",
+      "value": "6012099546166.00",
+      "locator": {
+        "record_date": "2020-03-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2020-04",
+      "value": "5920553066244.38",
+      "locator": {
+        "record_date": "2020-04-30",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2020-05",
+      "value": "5933491158070.24",
+      "locator": {
+        "record_date": "2020-05-29",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2020-06",
+      "value": "5946962620735.41",
+      "locator": {
+        "record_date": "2020-06-30",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2020-07",
+      "value": "5890553743441.20",
+      "locator": {
+        "record_date": "2020-07-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2020-08",
+      "value": "5906797456602.38",
+      "locator": {
+        "record_date": "2020-08-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2020-09",
+      "value": "5926439114229.52",
+      "locator": {
+        "record_date": "2020-09-30",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2020-10",
+      "value": "6038521105983.20",
+      "locator": {
+        "record_date": "2020-10-30",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2020-11",
+      "value": "6096816614939.36",
+      "locator": {
+        "record_date": "2020-11-30",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2020-12",
+      "value": "6115379043563.53",
+      "locator": {
+        "record_date": "2020-12-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2021-01",
+      "value": "6140638244631.14",
+      "locator": {
+        "record_date": "2021-01-29",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2021-02",
+      "value": "6146626539588.91",
+      "locator": {
+        "record_date": "2021-02-26",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2021-03",
+      "value": "6145633292048.65",
+      "locator": {
+        "record_date": "2021-03-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2021-04",
+      "value": "6118659345749.70",
+      "locator": {
+        "record_date": "2021-04-30",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2021-05",
+      "value": "6178069324914.87",
+      "locator": {
+        "record_date": "2021-05-28",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2021-06",
+      "value": "6199612910937.77",
+      "locator": {
+        "record_date": "2021-06-30",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2021-07",
+      "value": "6143094225112.44",
+      "locator": {
+        "record_date": "2021-07-30",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2021-08",
+      "value": "6172773630395.71",
+      "locator": {
+        "record_date": "2021-08-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2021-09",
+      "value": "6146018206963.91",
+      "locator": {
+        "record_date": "2021-09-30",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2021-10",
+      "value": "6271675566380.76",
+      "locator": {
+        "record_date": "2021-10-29",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2021-11",
+      "value": "6262074927758.33",
+      "locator": {
+        "record_date": "2021-11-30",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2021-12",
+      "value": "6473467501334.54",
+      "locator": {
+        "record_date": "2021-12-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2022-01",
+      "value": "6525205197513.93",
+      "locator": {
+        "record_date": "2022-01-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2022-02",
+      "value": "6513792792133.57",
+      "locator": {
+        "record_date": "2022-02-28",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2022-03",
+      "value": "6521192177806.53",
+      "locator": {
+        "record_date": "2022-03-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2022-04",
+      "value": "6526909395140.41",
+      "locator": {
+        "record_date": "2022-04-29",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2022-05",
+      "value": "6595227074868.94",
+      "locator": {
+        "record_date": "2022-05-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2022-06",
+      "value": "6656422299394.58",
+      "locator": {
+        "record_date": "2022-06-30",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2022-07",
+      "value": "6642529384133.17",
+      "locator": {
+        "record_date": "2022-07-29",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2022-08",
+      "value": "6668523972602.09",
+      "locator": {
+        "record_date": "2022-08-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2022-09",
+      "value": "6629718993148.22",
+      "locator": {
+        "record_date": "2022-09-30",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2022-10",
+      "value": "6885759485893.93",
+      "locator": {
+        "record_date": "2022-10-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2022-11",
+      "value": "6859865885618.37",
+      "locator": {
+        "record_date": "2022-11-30",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2022-12",
+      "value": "6902096097163.71",
+      "locator": {
+        "record_date": "2022-12-30",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2023-01",
+      "value": "6870988654664.50",
+      "locator": {
+        "record_date": "2023-01-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2023-02",
+      "value": "6850050656857.69",
+      "locator": {
+        "record_date": "2023-02-28",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2023-03",
+      "value": "6764922537269.94",
+      "locator": {
+        "record_date": "2023-03-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2023-04",
+      "value": "6852746625848.93",
+      "locator": {
+        "record_date": "2023-04-28",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2023-05",
+      "value": "6833771182109.43",
+      "locator": {
+        "record_date": "2023-05-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2023-06",
+      "value": "6870275996707.15",
+      "locator": {
+        "record_date": "2023-06-30",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2023-07",
+      "value": "6899785884182.23",
+      "locator": {
+        "record_date": "2023-07-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2023-08",
+      "value": "6870098786176.41",
+      "locator": {
+        "record_date": "2023-08-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2023-09",
+      "value": "6837191571531.22",
+      "locator": {
+        "record_date": "2023-09-29",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2023-10",
+      "value": "7123358284223.14",
+      "locator": {
+        "record_date": "2023-10-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2023-11",
+      "value": "7034857303738.75",
+      "locator": {
+        "record_date": "2023-11-30",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2023-12",
+      "value": "7062976040880.89",
+      "locator": {
+        "record_date": "2023-12-29",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2024-01",
+      "value": "7119288507552.64",
+      "locator": {
+        "record_date": "2024-01-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2024-02",
+      "value": "7090793248927.98",
+      "locator": {
+        "record_date": "2024-02-29",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2024-03",
+      "value": "7075078486105.91",
+      "locator": {
+        "record_date": "2024-03-29",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2024-04",
+      "value": "7136033799632.56",
+      "locator": {
+        "record_date": "2024-04-30",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2024-05",
+      "value": "7060308520700.91",
+      "locator": {
+        "record_date": "2024-05-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2024-06",
+      "value": "7218737882064.30",
+      "locator": {
+        "record_date": "2024-06-28",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2024-07",
+      "value": "7174259120507.20",
+      "locator": {
+        "record_date": "2024-07-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2024-08",
+      "value": "7088051796953.61",
+      "locator": {
+        "record_date": "2024-08-30",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2024-09",
+      "value": "7157361638388.69",
+      "locator": {
+        "record_date": "2024-09-30",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2024-10",
+      "value": "7379452135511.76",
+      "locator": {
+        "record_date": "2024-10-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2024-11",
+      "value": "7296155216076.36",
+      "locator": {
+        "record_date": "2024-11-29",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2024-12",
+      "value": "7381609199808.10",
+      "locator": {
+        "record_date": "2024-12-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2025-01",
+      "value": "7308698079354.88",
+      "locator": {
+        "record_date": "2025-01-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2025-02",
+      "value": "7304512781549.76",
+      "locator": {
+        "record_date": "2025-02-28",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2025-03",
+      "value": "7304801569898.55",
+      "locator": {
+        "record_date": "2025-03-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2025-04",
+      "value": "7360896246491.44",
+      "locator": {
+        "record_date": "2025-04-30",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2025-05",
+      "value": "7263357246936.72",
+      "locator": {
+        "record_date": "2025-05-30",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2025-06",
+      "value": "7257972846477.77",
+      "locator": {
+        "record_date": "2025-06-30",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2025-07",
+      "value": "7385646596017.51",
+      "locator": {
+        "record_date": "2025-07-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2025-08",
+      "value": "7305734610439.47",
+      "locator": {
+        "record_date": "2025-08-29",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2025-09",
+      "value": "7359787054165.03",
+      "locator": {
+        "record_date": "2025-09-30",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2025-10",
+      "value": "7469385303511.90",
+      "locator": {
+        "record_date": "2025-10-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2025-11",
+      "value": "7622094259407.34",
+      "locator": {
+        "record_date": "2025-11-28",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2025-12",
+      "value": "7667292648019.46",
+      "locator": {
+        "record_date": "2025-12-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2026-01",
+      "value": "7602245442279.35",
+      "locator": {
+        "record_date": "2026-01-30",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2026-02",
+      "value": "7582840691457.92",
+      "locator": {
+        "record_date": "2026-02-27",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2026-03",
+      "value": "7634239113504.56",
+      "locator": {
+        "record_date": "2026-03-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2026-04",
+      "value": "7695343996107.23",
+      "locator": {
+        "record_date": "2026-04-30",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2026-05",
+      "value": "7692389799679.64",
+      "locator": {
+        "record_date": "2026-05-29",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2026-06",
+      "value": "7781090007079.34",
+      "locator": {
+        "record_date": "2026-06-30",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2026-07",
+      "value": "7725753468002.67",
+      "locator": {
+        "record_date": "2026-07-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2026-08",
+      "value": "7760652224458.92",
+      "locator": {
+        "record_date": "2026-08-31",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2026-09",
+      "value": "7746812554949.74",
+      "locator": {
+        "record_date": "2026-09-30",
+        "field": "intragov_hold_amt"
+      }
+    },
+    {
+      "date": "2026-10",
+      "value": "7850081127619.83",
+      "locator": {
+        "record_date": "2026-10-15",
+        "field": "intragov_hold_amt"
+      }
+    }
+  ]
+}

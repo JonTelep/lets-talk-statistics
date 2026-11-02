@@ -1,0 +1,7 @@
+series_id        	area_code	item_code	seasonal	periodicity_code	base_code	base_period	series_title	footnote_codes	begin_year	begin_period	end_year	end_period
+CUUR0000SA0      	0000	SA0	U	R	S	1982-84=100	All items in U.S. city average, all urban consumers, not seasonally adjusted		1913	M01	2026	M09
+CUUR0000SAF1     	0000	SAF1	U	R	S	1982-84=100	Food in U.S. city average, all urban consumers, not seasonally adjusted		1913	M01	2026	M09
+CUUR0000SAH1     	0000	SAH1	U	R	S	1982-84=100	Shelter in U.S. city average, all urban consumers, not seasonally adjusted		1952	M12	2026	M09
+CUUR0000SA0E     	0000	SA0E	U	R	S	1982-84=100	Energy in U.S. city average, all urban consumers, not seasonally adjusted		1957	M01	2026	M09
+CUUR0000SAM      	0000	SAM	U	R	S	1982-84=100	Medical care in U.S. city average, all urban consumers, not seasonally adjusted		1935	M03	2026	M09
+CUUR0000SAE1     	0000	SAE1	U	R	S	DECEMBER 1997=100	Education in U.S. city average, all urban consumers, not seasonally adjusted		1993	M01	2026	M09

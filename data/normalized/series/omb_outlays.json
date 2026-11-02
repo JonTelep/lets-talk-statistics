@@ -1,0 +1,1013 @@
+{
+  "id": "omb_outlays",
+  "name": "Outlays",
+  "units": "(in millions of dollars)",
+  "adjustment": "fiscal year",
+  "nominal_or_real": "nominal",
+  "frequency": "fiscal_year",
+  "source_id": "hist01z1",
+  "series_url": "https://www.whitehouse.gov/wp-content/uploads/2026/04/hist01z1_fy2027.xlsx",
+  "notes": "Note: Budget figures prior to 1933 are based on the \"Administrative Budget\" concepts rather than the \"Unified Budget\" concepts.",
+  "points": [
+    {
+      "date": "1901",
+      "value": "525",
+      "locator": {
+        "row_label": "1901",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "1902",
+      "value": "485",
+      "locator": {
+        "row_label": "1902",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "1903",
+      "value": "517",
+      "locator": {
+        "row_label": "1903",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "1904",
+      "value": "584",
+      "locator": {
+        "row_label": "1904",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "1905",
+      "value": "567",
+      "locator": {
+        "row_label": "1905",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "1906",
+      "value": "570",
+      "locator": {
+        "row_label": "1906",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "1907",
+      "value": "579",
+      "locator": {
+        "row_label": "1907",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "1908",
+      "value": "659",
+      "locator": {
+        "row_label": "1908",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "1909",
+      "value": "694",
+      "locator": {
+        "row_label": "1909",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "1910",
+      "value": "694",
+      "locator": {
+        "row_label": "1910",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "1911",
+      "value": "691",
+      "locator": {
+        "row_label": "1911",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "1912",
+      "value": "690",
+      "locator": {
+        "row_label": "1912",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "1913",
+      "value": "715",
+      "locator": {
+        "row_label": "1913",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "1914",
+      "value": "726",
+      "locator": {
+        "row_label": "1914",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "1915",
+      "value": "746",
+      "locator": {
+        "row_label": "1915",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "1916",
+      "value": "713",
+      "locator": {
+        "row_label": "1916",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "1917",
+      "value": "1954",
+      "locator": {
+        "row_label": "1917",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "1918",
+      "value": "12677",
+      "locator": {
+        "row_label": "1918",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "1919",
+      "value": "18493",
+      "locator": {
+        "row_label": "1919",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "1920",
+      "value": "6358",
+      "locator": {
+        "row_label": "1920",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "1921",
+      "value": "5062",
+      "locator": {
+        "row_label": "1921",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "1922",
+      "value": "3289",
+      "locator": {
+        "row_label": "1922",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "1923",
+      "value": "3140",
+      "locator": {
+        "row_label": "1923",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "1924",
+      "value": "2908",
+      "locator": {
+        "row_label": "1924",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "1925",
+      "value": "2924",
+      "locator": {
+        "row_label": "1925",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "1926",
+      "value": "2930",
+      "locator": {
+        "row_label": "1926",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "1927",
+      "value": "2857",
+      "locator": {
+        "row_label": "1927",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "1928",
+      "value": "2961",
+      "locator": {
+        "row_label": "1928",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "1929",
+      "value": "3127",
+      "locator": {
+        "row_label": "1929",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "1930",
+      "value": "3320",
+      "locator": {
+        "row_label": "1930",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "1931",
+      "value": "3577",
+      "locator": {
+        "row_label": "1931",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "1932",
+      "value": "4659",
+      "locator": {
+        "row_label": "1932",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "1933",
+      "value": "4598",
+      "locator": {
+        "row_label": "1933",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "1934",
+      "value": "6541",
+      "locator": {
+        "row_label": "1934",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "1935",
+      "value": "6412",
+      "locator": {
+        "row_label": "1935",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "1936",
+      "value": "8228",
+      "locator": {
+        "row_label": "1936",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "1937",
+      "value": "7580",
+      "locator": {
+        "row_label": "1937",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "1938",
+      "value": "6840",
+      "locator": {
+        "row_label": "1938",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "1939",
+      "value": "9141",
+      "locator": {
+        "row_label": "1939",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "1940",
+      "value": "9468",
+      "locator": {
+        "row_label": "1940",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "1941",
+      "value": "13653",
+      "locator": {
+        "row_label": "1941",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "1942",
+      "value": "35137",
+      "locator": {
+        "row_label": "1942",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "1943",
+      "value": "78555",
+      "locator": {
+        "row_label": "1943",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "1944",
+      "value": "91304",
+      "locator": {
+        "row_label": "1944",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "1945",
+      "value": "92712",
+      "locator": {
+        "row_label": "1945",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "1946",
+      "value": "55232",
+      "locator": {
+        "row_label": "1946",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "1947",
+      "value": "34496",
+      "locator": {
+        "row_label": "1947",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "1948",
+      "value": "29764",
+      "locator": {
+        "row_label": "1948",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "1949",
+      "value": "38835",
+      "locator": {
+        "row_label": "1949",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "1950",
+      "value": "42562",
+      "locator": {
+        "row_label": "1950",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "1951",
+      "value": "45514",
+      "locator": {
+        "row_label": "1951",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "1952",
+      "value": "67686",
+      "locator": {
+        "row_label": "1952",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "1953",
+      "value": "76101",
+      "locator": {
+        "row_label": "1953",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "1954",
+      "value": "70855",
+      "locator": {
+        "row_label": "1954",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "1955",
+      "value": "68444",
+      "locator": {
+        "row_label": "1955",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "1956",
+      "value": "70640",
+      "locator": {
+        "row_label": "1956",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "1957",
+      "value": "76578",
+      "locator": {
+        "row_label": "1957",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "1958",
+      "value": "82405",
+      "locator": {
+        "row_label": "1958",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "1959",
+      "value": "92098",
+      "locator": {
+        "row_label": "1959",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "1960",
+      "value": "92191",
+      "locator": {
+        "row_label": "1960",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "1961",
+      "value": "97723",
+      "locator": {
+        "row_label": "1961",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "1962",
+      "value": "106821",
+      "locator": {
+        "row_label": "1962",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "1963",
+      "value": "111316",
+      "locator": {
+        "row_label": "1963",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "1964",
+      "value": "118528",
+      "locator": {
+        "row_label": "1964",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "1965",
+      "value": "118228",
+      "locator": {
+        "row_label": "1965",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "1966",
+      "value": "134532",
+      "locator": {
+        "row_label": "1966",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "1967",
+      "value": "157464",
+      "locator": {
+        "row_label": "1967",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "1968",
+      "value": "178134",
+      "locator": {
+        "row_label": "1968",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "1969",
+      "value": "183640",
+      "locator": {
+        "row_label": "1969",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "1970",
+      "value": "195649",
+      "locator": {
+        "row_label": "1970",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "1971",
+      "value": "210172",
+      "locator": {
+        "row_label": "1971",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "1972",
+      "value": "230681",
+      "locator": {
+        "row_label": "1972",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "1973",
+      "value": "245707",
+      "locator": {
+        "row_label": "1973",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "1974",
+      "value": "269359",
+      "locator": {
+        "row_label": "1974",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "1975",
+      "value": "332332",
+      "locator": {
+        "row_label": "1975",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "1976",
+      "value": "371792",
+      "locator": {
+        "row_label": "1976",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "1977",
+      "value": "409218",
+      "locator": {
+        "row_label": "1977",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "1978",
+      "value": "458746",
+      "locator": {
+        "row_label": "1978",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "1979",
+      "value": "504028",
+      "locator": {
+        "row_label": "1979",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "1980",
+      "value": "590941",
+      "locator": {
+        "row_label": "1980",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "1981",
+      "value": "678241",
+      "locator": {
+        "row_label": "1981",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "1982",
+      "value": "745743",
+      "locator": {
+        "row_label": "1982",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "1983",
+      "value": "808364",
+      "locator": {
+        "row_label": "1983",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "1984",
+      "value": "851805",
+      "locator": {
+        "row_label": "1984",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "1985",
+      "value": "946344",
+      "locator": {
+        "row_label": "1985",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "1986",
+      "value": "990382",
+      "locator": {
+        "row_label": "1986",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "1987",
+      "value": "1004017",
+      "locator": {
+        "row_label": "1987",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "1988",
+      "value": "1064416",
+      "locator": {
+        "row_label": "1988",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "1989",
+      "value": "1143743",
+      "locator": {
+        "row_label": "1989",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "1990",
+      "value": "1252993",
+      "locator": {
+        "row_label": "1990",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "1991",
+      "value": "1324226",
+      "locator": {
+        "row_label": "1991",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "1992",
+      "value": "1381529",
+      "locator": {
+        "row_label": "1992",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "1993",
+      "value": "1409386",
+      "locator": {
+        "row_label": "1993",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "1994",
+      "value": "1461752",
+      "locator": {
+        "row_label": "1994",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "1995",
+      "value": "1515742",
+      "locator": {
+        "row_label": "1995",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "1996",
+      "value": "1560484",
+      "locator": {
+        "row_label": "1996",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "1997",
+      "value": "1601116",
+      "locator": {
+        "row_label": "1997",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "1998",
+      "value": "1652458",
+      "locator": {
+        "row_label": "1998",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "1999",
+      "value": "1701842",
+      "locator": {
+        "row_label": "1999",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "2000",
+      "value": "1788950",
+      "locator": {
+        "row_label": "2000",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "2001",
+      "value": "1862846",
+      "locator": {
+        "row_label": "2001",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "2002",
+      "value": "2010894",
+      "locator": {
+        "row_label": "2002",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "2003",
+      "value": "2159899",
+      "locator": {
+        "row_label": "2003",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "2004",
+      "value": "2292841",
+      "locator": {
+        "row_label": "2004",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "2005",
+      "value": "2471957",
+      "locator": {
+        "row_label": "2005",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "2006",
+      "value": "2655050",
+      "locator": {
+        "row_label": "2006",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "2007",
+      "value": "2728686",
+      "locator": {
+        "row_label": "2007",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "2008",
+      "value": "2982544",
+      "locator": {
+        "row_label": "2008",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "2009",
+      "value": "3517677",
+      "locator": {
+        "row_label": "2009",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "2010",
+      "value": "3457079",
+      "locator": {
+        "row_label": "2010",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "2011",
+      "value": "3603065",
+      "locator": {
+        "row_label": "2011",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "2012",
+      "value": "3526563",
+      "locator": {
+        "row_label": "2012",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "2013",
+      "value": "3454881",
+      "locator": {
+        "row_label": "2013",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "2014",
+      "value": "3506284",
+      "locator": {
+        "row_label": "2014",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "2015",
+      "value": "3691850",
+      "locator": {
+        "row_label": "2015",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "2016",
+      "value": "3852615",
+      "locator": {
+        "row_label": "2016",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "2017",
+      "value": "3981634",
+      "locator": {
+        "row_label": "2017",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "2018",
+      "value": "4108981",
+      "locator": {
+        "row_label": "2018",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "2019",
+      "value": "4446952",
+      "locator": {
+        "row_label": "2019",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "2020",
+      "value": "6516817",
+      "locator": {
+        "row_label": "2020",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "2021",
+      "value": "6820705",
+      "locator": {
+        "row_label": "2021",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "2022",
+      "value": "6271510",
+      "locator": {
+        "row_label": "2022",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "2023",
+      "value": "6128415",
+      "locator": {
+        "row_label": "2023",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "2024",
+      "value": "6735261",
+      "locator": {
+        "row_label": "2024",
+        "column": "Outlays"
+      }
+    },
+    {
+      "date": "2025",
+      "value": "7011105",
+      "locator": {
+        "row_label": "2025",
+        "column": "Outlays"
+      }
+    }
+  ]
+}

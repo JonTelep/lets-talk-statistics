@@ -1,0 +1,701 @@
+{
+  "id": "omb_fn_other",
+  "name": "Other functions",
+  "units": "millions of dollars",
+  "adjustment": "fiscal year",
+  "nominal_or_real": "nominal",
+  "frequency": "fiscal_year",
+  "source_id": "hist03z1",
+  "series_url": "https://www.whitehouse.gov/wp-content/uploads/2026/04/hist03z1_fy2027.xlsx",
+  "notes": "Estimate columns in the source table are omitted.",
+  "points": [
+    {
+      "date": "1940",
+      "value": "775",
+      "locator": {
+        "row_label": "Other functions",
+        "column": "1940"
+      }
+    },
+    {
+      "date": "1941",
+      "value": "882",
+      "locator": {
+        "row_label": "Other functions",
+        "column": "1941"
+      }
+    },
+    {
+      "date": "1942",
+      "value": "1830",
+      "locator": {
+        "row_label": "Other functions",
+        "column": "1942"
+      }
+    },
+    {
+      "date": "1943",
+      "value": "2457",
+      "locator": {
+        "row_label": "Other functions",
+        "column": "1943"
+      }
+    },
+    {
+      "date": "1944",
+      "value": "3864",
+      "locator": {
+        "row_label": "Other functions",
+        "column": "1944"
+      }
+    },
+    {
+      "date": "1945",
+      "value": "4418",
+      "locator": {
+        "row_label": "Other functions",
+        "column": "1945"
+      }
+    },
+    {
+      "date": "1946",
+      "value": "3580",
+      "locator": {
+        "row_label": "Other functions",
+        "column": "1946"
+      }
+    },
+    {
+      "date": "1947",
+      "value": "7900",
+      "locator": {
+        "row_label": "Other functions",
+        "column": "1947"
+      }
+    },
+    {
+      "date": "1948",
+      "value": "5851",
+      "locator": {
+        "row_label": "Other functions",
+        "column": "1948"
+      }
+    },
+    {
+      "date": "1949",
+      "value": "9032",
+      "locator": {
+        "row_label": "Other functions",
+        "column": "1949"
+      }
+    },
+    {
+      "date": "1950",
+      "value": "7955",
+      "locator": {
+        "row_label": "Other functions",
+        "column": "1950"
+      }
+    },
+    {
+      "date": "1951",
+      "value": "4690",
+      "locator": {
+        "row_label": "Other functions",
+        "column": "1951"
+      }
+    },
+    {
+      "date": "1952",
+      "value": "4346",
+      "locator": {
+        "row_label": "Other functions",
+        "column": "1952"
+      }
+    },
+    {
+      "date": "1953",
+      "value": "5873",
+      "locator": {
+        "row_label": "Other functions",
+        "column": "1953"
+      }
+    },
+    {
+      "date": "1954",
+      "value": "4515",
+      "locator": {
+        "row_label": "Other functions",
+        "column": "1954"
+      }
+    },
+    {
+      "date": "1955",
+      "value": "6718",
+      "locator": {
+        "row_label": "Other functions",
+        "column": "1955"
+      }
+    },
+    {
+      "date": "1956",
+      "value": "7482",
+      "locator": {
+        "row_label": "Other functions",
+        "column": "1956"
+      }
+    },
+    {
+      "date": "1957",
+      "value": "7220",
+      "locator": {
+        "row_label": "Other functions",
+        "column": "1957"
+      }
+    },
+    {
+      "date": "1958",
+      "value": "6896",
+      "locator": {
+        "row_label": "Other functions",
+        "column": "1958"
+      }
+    },
+    {
+      "date": "1959",
+      "value": "9229",
+      "locator": {
+        "row_label": "Other functions",
+        "column": "1959"
+      }
+    },
+    {
+      "date": "1960",
+      "value": "7760",
+      "locator": {
+        "row_label": "Other functions",
+        "column": "1960"
+      }
+    },
+    {
+      "date": "1961",
+      "value": "8621",
+      "locator": {
+        "row_label": "Other functions",
+        "column": "1961"
+      }
+    },
+    {
+      "date": "1962",
+      "value": "12401",
+      "locator": {
+        "row_label": "Other functions",
+        "column": "1962"
+      }
+    },
+    {
+      "date": "1963",
+      "value": "14437",
+      "locator": {
+        "row_label": "Other functions",
+        "column": "1963"
+      }
+    },
+    {
+      "date": "1964",
+      "value": "16458",
+      "locator": {
+        "row_label": "Other functions",
+        "column": "1964"
+      }
+    },
+    {
+      "date": "1965",
+      "value": "17086",
+      "locator": {
+        "row_label": "Other functions",
+        "column": "1965"
+      }
+    },
+    {
+      "date": "1966",
+      "value": "16911",
+      "locator": {
+        "row_label": "Other functions",
+        "column": "1966"
+      }
+    },
+    {
+      "date": "1967",
+      "value": "17126",
+      "locator": {
+        "row_label": "Other functions",
+        "column": "1967"
+      }
+    },
+    {
+      "date": "1968",
+      "value": "17786",
+      "locator": {
+        "row_label": "Other functions",
+        "column": "1968"
+      }
+    },
+    {
+      "date": "1969",
+      "value": "18151",
+      "locator": {
+        "row_label": "Other functions",
+        "column": "1969"
+      }
+    },
+    {
+      "date": "1970",
+      "value": "17286",
+      "locator": {
+        "row_label": "Other functions",
+        "column": "1970"
+      }
+    },
+    {
+      "date": "1971",
+      "value": "16379",
+      "locator": {
+        "row_label": "Other functions",
+        "column": "1971"
+      }
+    },
+    {
+      "date": "1972",
+      "value": "18828",
+      "locator": {
+        "row_label": "Other functions",
+        "column": "1972"
+      }
+    },
+    {
+      "date": "1973",
+      "value": "24950",
+      "locator": {
+        "row_label": "Other functions",
+        "column": "1973"
+      }
+    },
+    {
+      "date": "1974",
+      "value": "24423",
+      "locator": {
+        "row_label": "Other functions",
+        "column": "1974"
+      }
+    },
+    {
+      "date": "1975",
+      "value": "27487",
+      "locator": {
+        "row_label": "Other functions",
+        "column": "1975"
+      }
+    },
+    {
+      "date": "1976",
+      "value": "27050",
+      "locator": {
+        "row_label": "Other functions",
+        "column": "1976"
+      }
+    },
+    {
+      "date": "1977",
+      "value": "34315",
+      "locator": {
+        "row_label": "Other functions",
+        "column": "1977"
+      }
+    },
+    {
+      "date": "1978",
+      "value": "39594",
+      "locator": {
+        "row_label": "Other functions",
+        "column": "1978"
+      }
+    },
+    {
+      "date": "1979",
+      "value": "40396",
+      "locator": {
+        "row_label": "Other functions",
+        "column": "1979"
+      }
+    },
+    {
+      "date": "1980",
+      "value": "44996",
+      "locator": {
+        "row_label": "Other functions",
+        "column": "1980"
+      }
+    },
+    {
+      "date": "1981",
+      "value": "47095",
+      "locator": {
+        "row_label": "Other functions",
+        "column": "1981"
+      }
+    },
+    {
+      "date": "1982",
+      "value": "51068",
+      "locator": {
+        "row_label": "Other functions",
+        "column": "1982"
+      }
+    },
+    {
+      "date": "1983",
+      "value": "59015",
+      "locator": {
+        "row_label": "Other functions",
+        "column": "1983"
+      }
+    },
+    {
+      "date": "1984",
+      "value": "55214",
+      "locator": {
+        "row_label": "Other functions",
+        "column": "1984"
+      }
+    },
+    {
+      "date": "1985",
+      "value": "68160",
+      "locator": {
+        "row_label": "Other functions",
+        "column": "1985"
+      }
+    },
+    {
+      "date": "1986",
+      "value": "73652",
+      "locator": {
+        "row_label": "Other functions",
+        "column": "1986"
+      }
+    },
+    {
+      "date": "1987",
+      "value": "62513",
+      "locator": {
+        "row_label": "Other functions",
+        "column": "1987"
+      }
+    },
+    {
+      "date": "1988",
+      "value": "57169",
+      "locator": {
+        "row_label": "Other functions",
+        "column": "1988"
+      }
+    },
+    {
+      "date": "1989",
+      "value": "58063",
+      "locator": {
+        "row_label": "Other functions",
+        "column": "1989"
+      }
+    },
+    {
+      "date": "1990",
+      "value": "60468",
+      "locator": {
+        "row_label": "Other functions",
+        "column": "1990"
+      }
+    },
+    {
+      "date": "1991",
+      "value": "70879",
+      "locator": {
+        "row_label": "Other functions",
+        "column": "1991"
+      }
+    },
+    {
+      "date": "1992",
+      "value": "74934",
+      "locator": {
+        "row_label": "Other functions",
+        "column": "1992"
+      }
+    },
+    {
+      "date": "1993",
+      "value": "82443",
+      "locator": {
+        "row_label": "Other functions",
+        "column": "1993"
+      }
+    },
+    {
+      "date": "1994",
+      "value": "74725",
+      "locator": {
+        "row_label": "Other functions",
+        "column": "1994"
+      }
+    },
+    {
+      "date": "1995",
+      "value": "73099",
+      "locator": {
+        "row_label": "Other functions",
+        "column": "1995"
+      }
+    },
+    {
+      "date": "1996",
+      "value": "68859",
+      "locator": {
+        "row_label": "Other functions",
+        "column": "1996"
+      }
+    },
+    {
+      "date": "1997",
+      "value": "74362",
+      "locator": {
+        "row_label": "Other functions",
+        "column": "1997"
+      }
+    },
+    {
+      "date": "1998",
+      "value": "82206",
+      "locator": {
+        "row_label": "Other functions",
+        "column": "1998"
+      }
+    },
+    {
+      "date": "1999",
+      "value": "98101",
+      "locator": {
+        "row_label": "Other functions",
+        "column": "1999"
+      }
+    },
+    {
+      "date": "2000",
+      "value": "113777",
+      "locator": {
+        "row_label": "Other functions",
+        "column": "2000"
+      }
+    },
+    {
+      "date": "2001",
+      "value": "107049",
+      "locator": {
+        "row_label": "Other functions",
+        "column": "2001"
+      }
+    },
+    {
+      "date": "2002",
+      "value": "117026",
+      "locator": {
+        "row_label": "Other functions",
+        "column": "2002"
+      }
+    },
+    {
+      "date": "2003",
+      "value": "123030",
+      "locator": {
+        "row_label": "Other functions",
+        "column": "2003"
+      }
+    },
+    {
+      "date": "2004",
+      "value": "133252",
+      "locator": {
+        "row_label": "Other functions",
+        "column": "2004"
+      }
+    },
+    {
+      "date": "2005",
+      "value": "141743",
+      "locator": {
+        "row_label": "Other functions",
+        "column": "2005"
+      }
+    },
+    {
+      "date": "2006",
+      "value": "138245",
+      "locator": {
+        "row_label": "Other functions",
+        "column": "2006"
+      }
+    },
+    {
+      "date": "2007",
+      "value": "130338",
+      "locator": {
+        "row_label": "Other functions",
+        "column": "2007"
+      }
+    },
+    {
+      "date": "2008",
+      "value": "142437",
+      "locator": {
+        "row_label": "Other functions",
+        "column": "2008"
+      }
+    },
+    {
+      "date": "2009",
+      "value": "162781",
+      "locator": {
+        "row_label": "Other functions",
+        "column": "2009"
+      }
+    },
+    {
+      "date": "2010",
+      "value": "174048",
+      "locator": {
+        "row_label": "Other functions",
+        "column": "2010"
+      }
+    },
+    {
+      "date": "2011",
+      "value": "179345",
+      "locator": {
+        "row_label": "Other functions",
+        "column": "2011"
+      }
+    },
+    {
+      "date": "2012",
+      "value": "167965",
+      "locator": {
+        "row_label": "Other functions",
+        "column": "2012"
+      }
+    },
+    {
+      "date": "2013",
+      "value": "185388",
+      "locator": {
+        "row_label": "Other functions",
+        "column": "2013"
+      }
+    },
+    {
+      "date": "2014",
+      "value": "177205",
+      "locator": {
+        "row_label": "Other functions",
+        "column": "2014"
+      }
+    },
+    {
+      "date": "2015",
+      "value": "172814",
+      "locator": {
+        "row_label": "Other functions",
+        "column": "2015"
+      }
+    },
+    {
+      "date": "2016",
+      "value": "172738",
+      "locator": {
+        "row_label": "Other functions",
+        "column": "2016"
+      }
+    },
+    {
+      "date": "2017",
+      "value": "177343",
+      "locator": {
+        "row_label": "Other functions",
+        "column": "2017"
+      }
+    },
+    {
+      "date": "2018",
+      "value": "186503",
+      "locator": {
+        "row_label": "Other functions",
+        "column": "2018"
+      }
+    },
+    {
+      "date": "2019",
+      "value": "213026",
+      "locator": {
+        "row_label": "Other functions",
+        "column": "2019"
+      }
+    },
+    {
+      "date": "2020",
+      "value": "364349",
+      "locator": {
+        "row_label": "Other functions",
+        "column": "2020"
+      }
+    },
+    {
+      "date": "2021",
+      "value": "473498",
+      "locator": {
+        "row_label": "Other functions",
+        "column": "2021"
+      }
+    },
+    {
+      "date": "2022",
+      "value": "345563",
+      "locator": {
+        "row_label": "Other functions",
+        "column": "2022"
+      }
+    },
+    {
+      "date": "2023",
+      "value": "256613",
+      "locator": {
+        "row_label": "Other functions",
+        "column": "2023"
+      }
+    },
+    {
+      "date": "2024",
+      "value": "249822",
+      "locator": {
+        "row_label": "Other functions",
+        "column": "2024"
+      }
+    },
+    {
+      "date": "2025",
+      "value": "258276",
+      "locator": {
+        "row_label": "Other functions",
+        "column": "2025"
+      }
+    }
+  ]
+}

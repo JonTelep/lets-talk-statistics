@@ -1,0 +1,781 @@
+{
+  "id": "omb_deficit_pct_gdp",
+  "name": "Surplus or Deficit (-)",
+  "units": "percent of GDP",
+  "adjustment": "fiscal year",
+  "nominal_or_real": "share_of_gdp",
+  "frequency": "fiscal_year",
+  "source_id": "hist01z2",
+  "series_url": "https://www.whitehouse.gov/wp-content/uploads/2026/04/hist01z2_fy2027.xlsx",
+  "notes": "Table 1.2 - SUMMARY OF RECEIPTS, OUTLAYS, AND SURPLUSES OR DEFICITS ( - ) AS PERCENTAGES OF GDP: 1930 - 2025",
+  "points": [
+    {
+      "date": "1930",
+      "value": "0.8",
+      "locator": {
+        "row_label": "1930",
+        "column": "Surplus or Deficit (-)"
+      }
+    },
+    {
+      "date": "1931",
+      "value": "-0.5",
+      "locator": {
+        "row_label": "1931",
+        "column": "Surplus or Deficit (-)"
+      }
+    },
+    {
+      "date": "1932",
+      "value": "-4",
+      "locator": {
+        "row_label": "1932",
+        "column": "Surplus or Deficit (-)"
+      }
+    },
+    {
+      "date": "1933",
+      "value": "-4.5",
+      "locator": {
+        "row_label": "1933",
+        "column": "Surplus or Deficit (-)"
+      }
+    },
+    {
+      "date": "1934",
+      "value": "-5.8",
+      "locator": {
+        "row_label": "1934",
+        "column": "Surplus or Deficit (-)"
+      }
+    },
+    {
+      "date": "1935",
+      "value": "-4",
+      "locator": {
+        "row_label": "1935",
+        "column": "Surplus or Deficit (-)"
+      }
+    },
+    {
+      "date": "1936",
+      "value": "-5.4",
+      "locator": {
+        "row_label": "1936",
+        "column": "Surplus or Deficit (-)"
+      }
+    },
+    {
+      "date": "1937",
+      "value": "-2.5",
+      "locator": {
+        "row_label": "1937",
+        "column": "Surplus or Deficit (-)"
+      }
+    },
+    {
+      "date": "1938",
+      "value": "-0.1",
+      "locator": {
+        "row_label": "1938",
+        "column": "Surplus or Deficit (-)"
+      }
+    },
+    {
+      "date": "1939",
+      "value": "-3.1",
+      "locator": {
+        "row_label": "1939",
+        "column": "Surplus or Deficit (-)"
+      }
+    },
+    {
+      "date": "1940",
+      "value": "-3",
+      "locator": {
+        "row_label": "1940",
+        "column": "Surplus or Deficit (-)"
+      }
+    },
+    {
+      "date": "1941",
+      "value": "-4.3",
+      "locator": {
+        "row_label": "1941",
+        "column": "Surplus or Deficit (-)"
+      }
+    },
+    {
+      "date": "1942",
+      "value": "-13.9",
+      "locator": {
+        "row_label": "1942",
+        "column": "Surplus or Deficit (-)"
+      }
+    },
+    {
+      "date": "1943",
+      "value": "-29.6",
+      "locator": {
+        "row_label": "1943",
+        "column": "Surplus or Deficit (-)"
+      }
+    },
+    {
+      "date": "1944",
+      "value": "-22.2",
+      "locator": {
+        "row_label": "1944",
+        "column": "Surplus or Deficit (-)"
+      }
+    },
+    {
+      "date": "1945",
+      "value": "-21",
+      "locator": {
+        "row_label": "1945",
+        "column": "Surplus or Deficit (-)"
+      }
+    },
+    {
+      "date": "1946",
+      "value": "-7",
+      "locator": {
+        "row_label": "1946",
+        "column": "Surplus or Deficit (-)"
+      }
+    },
+    {
+      "date": "1947",
+      "value": "1.7",
+      "locator": {
+        "row_label": "1947",
+        "column": "Surplus or Deficit (-)"
+      }
+    },
+    {
+      "date": "1948",
+      "value": "4.5",
+      "locator": {
+        "row_label": "1948",
+        "column": "Surplus or Deficit (-)"
+      }
+    },
+    {
+      "date": "1949",
+      "value": "0.2",
+      "locator": {
+        "row_label": "1949",
+        "column": "Surplus or Deficit (-)"
+      }
+    },
+    {
+      "date": "1950",
+      "value": "-1.1",
+      "locator": {
+        "row_label": "1950",
+        "column": "Surplus or Deficit (-)"
+      }
+    },
+    {
+      "date": "1951",
+      "value": "1.9",
+      "locator": {
+        "row_label": "1951",
+        "column": "Surplus or Deficit (-)"
+      }
+    },
+    {
+      "date": "1952",
+      "value": "-0.4",
+      "locator": {
+        "row_label": "1952",
+        "column": "Surplus or Deficit (-)"
+      }
+    },
+    {
+      "date": "1953",
+      "value": "-1.7",
+      "locator": {
+        "row_label": "1953",
+        "column": "Surplus or Deficit (-)"
+      }
+    },
+    {
+      "date": "1954",
+      "value": "-0.3",
+      "locator": {
+        "row_label": "1954",
+        "column": "Surplus or Deficit (-)"
+      }
+    },
+    {
+      "date": "1955",
+      "value": "-0.7",
+      "locator": {
+        "row_label": "1955",
+        "column": "Surplus or Deficit (-)"
+      }
+    },
+    {
+      "date": "1956",
+      "value": "0.9",
+      "locator": {
+        "row_label": "1956",
+        "column": "Surplus or Deficit (-)"
+      }
+    },
+    {
+      "date": "1957",
+      "value": "0.7",
+      "locator": {
+        "row_label": "1957",
+        "column": "Surplus or Deficit (-)"
+      }
+    },
+    {
+      "date": "1958",
+      "value": "-0.6",
+      "locator": {
+        "row_label": "1958",
+        "column": "Surplus or Deficit (-)"
+      }
+    },
+    {
+      "date": "1959",
+      "value": "-2.5",
+      "locator": {
+        "row_label": "1959",
+        "column": "Surplus or Deficit (-)"
+      }
+    },
+    {
+      "date": "1960",
+      "value": "0.1",
+      "locator": {
+        "row_label": "1960",
+        "column": "Surplus or Deficit (-)"
+      }
+    },
+    {
+      "date": "1961",
+      "value": "-0.6",
+      "locator": {
+        "row_label": "1961",
+        "column": "Surplus or Deficit (-)"
+      }
+    },
+    {
+      "date": "1962",
+      "value": "-1.2",
+      "locator": {
+        "row_label": "1962",
+        "column": "Surplus or Deficit (-)"
+      }
+    },
+    {
+      "date": "1963",
+      "value": "-0.8",
+      "locator": {
+        "row_label": "1963",
+        "column": "Surplus or Deficit (-)"
+      }
+    },
+    {
+      "date": "1964",
+      "value": "-0.9",
+      "locator": {
+        "row_label": "1964",
+        "column": "Surplus or Deficit (-)"
+      }
+    },
+    {
+      "date": "1965",
+      "value": "-0.2",
+      "locator": {
+        "row_label": "1965",
+        "column": "Surplus or Deficit (-)"
+      }
+    },
+    {
+      "date": "1966",
+      "value": "-0.5",
+      "locator": {
+        "row_label": "1966",
+        "column": "Surplus or Deficit (-)"
+      }
+    },
+    {
+      "date": "1967",
+      "value": "-1",
+      "locator": {
+        "row_label": "1967",
+        "column": "Surplus or Deficit (-)"
+      }
+    },
+    {
+      "date": "1968",
+      "value": "-2.8",
+      "locator": {
+        "row_label": "1968",
+        "column": "Surplus or Deficit (-)"
+      }
+    },
+    {
+      "date": "1969",
+      "value": "0.3",
+      "locator": {
+        "row_label": "1969",
+        "column": "Surplus or Deficit (-)"
+      }
+    },
+    {
+      "date": "1970",
+      "value": "-0.3",
+      "locator": {
+        "row_label": "1970",
+        "column": "Surplus or Deficit (-)"
+      }
+    },
+    {
+      "date": "1971",
+      "value": "-2.1",
+      "locator": {
+        "row_label": "1971",
+        "column": "Surplus or Deficit (-)"
+      }
+    },
+    {
+      "date": "1972",
+      "value": "-1.9",
+      "locator": {
+        "row_label": "1972",
+        "column": "Surplus or Deficit (-)"
+      }
+    },
+    {
+      "date": "1973",
+      "value": "-1.1",
+      "locator": {
+        "row_label": "1973",
+        "column": "Surplus or Deficit (-)"
+      }
+    },
+    {
+      "date": "1974",
+      "value": "-0.4",
+      "locator": {
+        "row_label": "1974",
+        "column": "Surplus or Deficit (-)"
+      }
+    },
+    {
+      "date": "1975",
+      "value": "-3.3",
+      "locator": {
+        "row_label": "1975",
+        "column": "Surplus or Deficit (-)"
+      }
+    },
+    {
+      "date": "1976",
+      "value": "-4.1",
+      "locator": {
+        "row_label": "1976",
+        "column": "Surplus or Deficit (-)"
+      }
+    },
+    {
+      "date": "1977",
+      "value": "-2.7",
+      "locator": {
+        "row_label": "1977",
+        "column": "Surplus or Deficit (-)"
+      }
+    },
+    {
+      "date": "1978",
+      "value": "-2.6",
+      "locator": {
+        "row_label": "1978",
+        "column": "Surplus or Deficit (-)"
+      }
+    },
+    {
+      "date": "1979",
+      "value": "-1.6",
+      "locator": {
+        "row_label": "1979",
+        "column": "Surplus or Deficit (-)"
+      }
+    },
+    {
+      "date": "1980",
+      "value": "-2.6",
+      "locator": {
+        "row_label": "1980",
+        "column": "Surplus or Deficit (-)"
+      }
+    },
+    {
+      "date": "1981",
+      "value": "-2.5",
+      "locator": {
+        "row_label": "1981",
+        "column": "Surplus or Deficit (-)"
+      }
+    },
+    {
+      "date": "1982",
+      "value": "-3.9",
+      "locator": {
+        "row_label": "1982",
+        "column": "Surplus or Deficit (-)"
+      }
+    },
+    {
+      "date": "1983",
+      "value": "-5.9",
+      "locator": {
+        "row_label": "1983",
+        "column": "Surplus or Deficit (-)"
+      }
+    },
+    {
+      "date": "1984",
+      "value": "-4.7",
+      "locator": {
+        "row_label": "1984",
+        "column": "Surplus or Deficit (-)"
+      }
+    },
+    {
+      "date": "1985",
+      "value": "-5",
+      "locator": {
+        "row_label": "1985",
+        "column": "Surplus or Deficit (-)"
+      }
+    },
+    {
+      "date": "1986",
+      "value": "-4.9",
+      "locator": {
+        "row_label": "1986",
+        "column": "Surplus or Deficit (-)"
+      }
+    },
+    {
+      "date": "1987",
+      "value": "-3.1",
+      "locator": {
+        "row_label": "1987",
+        "column": "Surplus or Deficit (-)"
+      }
+    },
+    {
+      "date": "1988",
+      "value": "-3",
+      "locator": {
+        "row_label": "1988",
+        "column": "Surplus or Deficit (-)"
+      }
+    },
+    {
+      "date": "1989",
+      "value": "-2.7",
+      "locator": {
+        "row_label": "1989",
+        "column": "Surplus or Deficit (-)"
+      }
+    },
+    {
+      "date": "1990",
+      "value": "-3.7",
+      "locator": {
+        "row_label": "1990",
+        "column": "Surplus or Deficit (-)"
+      }
+    },
+    {
+      "date": "1991",
+      "value": "-4.4",
+      "locator": {
+        "row_label": "1991",
+        "column": "Surplus or Deficit (-)"
+      }
+    },
+    {
+      "date": "1992",
+      "value": "-4.5",
+      "locator": {
+        "row_label": "1992",
+        "column": "Surplus or Deficit (-)"
+      }
+    },
+    {
+      "date": "1993",
+      "value": "-3.8",
+      "locator": {
+        "row_label": "1993",
+        "column": "Surplus or Deficit (-)"
+      }
+    },
+    {
+      "date": "1994",
+      "value": "-2.8",
+      "locator": {
+        "row_label": "1994",
+        "column": "Surplus or Deficit (-)"
+      }
+    },
+    {
+      "date": "1995",
+      "value": "-2.2",
+      "locator": {
+        "row_label": "1995",
+        "column": "Surplus or Deficit (-)"
+      }
+    },
+    {
+      "date": "1996",
+      "value": "-1.4",
+      "locator": {
+        "row_label": "1996",
+        "column": "Surplus or Deficit (-)"
+      }
+    },
+    {
+      "date": "1997",
+      "value": "-0.3",
+      "locator": {
+        "row_label": "1997",
+        "column": "Surplus or Deficit (-)"
+      }
+    },
+    {
+      "date": "1998",
+      "value": "0.8",
+      "locator": {
+        "row_label": "1998",
+        "column": "Surplus or Deficit (-)"
+      }
+    },
+    {
+      "date": "1999",
+      "value": "1.3",
+      "locator": {
+        "row_label": "1999",
+        "column": "Surplus or Deficit (-)"
+      }
+    },
+    {
+      "date": "2000",
+      "value": "2.3",
+      "locator": {
+        "row_label": "2000",
+        "column": "Surplus or Deficit (-)"
+      }
+    },
+    {
+      "date": "2001",
+      "value": "1.2",
+      "locator": {
+        "row_label": "2001",
+        "column": "Surplus or Deficit (-)"
+      }
+    },
+    {
+      "date": "2002",
+      "value": "-1.5",
+      "locator": {
+        "row_label": "2002",
+        "column": "Surplus or Deficit (-)"
+      }
+    },
+    {
+      "date": "2003",
+      "value": "-3.3",
+      "locator": {
+        "row_label": "2003",
+        "column": "Surplus or Deficit (-)"
+      }
+    },
+    {
+      "date": "2004",
+      "value": "-3.4",
+      "locator": {
+        "row_label": "2004",
+        "column": "Surplus or Deficit (-)"
+      }
+    },
+    {
+      "date": "2005",
+      "value": "-2.5",
+      "locator": {
+        "row_label": "2005",
+        "column": "Surplus or Deficit (-)"
+      }
+    },
+    {
+      "date": "2006",
+      "value": "-1.8",
+      "locator": {
+        "row_label": "2006",
+        "column": "Surplus or Deficit (-)"
+      }
+    },
+    {
+      "date": "2007",
+      "value": "-1.1",
+      "locator": {
+        "row_label": "2007",
+        "column": "Surplus or Deficit (-)"
+      }
+    },
+    {
+      "date": "2008",
+      "value": "-3.1",
+      "locator": {
+        "row_label": "2008",
+        "column": "Surplus or Deficit (-)"
+      }
+    },
+    {
+      "date": "2009",
+      "value": "-9.8",
+      "locator": {
+        "row_label": "2009",
+        "column": "Surplus or Deficit (-)"
+      }
+    },
+    {
+      "date": "2010",
+      "value": "-8.7",
+      "locator": {
+        "row_label": "2010",
+        "column": "Surplus or Deficit (-)"
+      }
+    },
+    {
+      "date": "2011",
+      "value": "-8.4",
+      "locator": {
+        "row_label": "2011",
+        "column": "Surplus or Deficit (-)"
+      }
+    },
+    {
+      "date": "2012",
+      "value": "-6.7",
+      "locator": {
+        "row_label": "2012",
+        "column": "Surplus or Deficit (-)"
+      }
+    },
+    {
+      "date": "2013",
+      "value": "-4.1",
+      "locator": {
+        "row_label": "2013",
+        "column": "Surplus or Deficit (-)"
+      }
+    },
+    {
+      "date": "2014",
+      "value": "-2.8",
+      "locator": {
+        "row_label": "2014",
+        "column": "Surplus or Deficit (-)"
+      }
+    },
+    {
+      "date": "2015",
+      "value": "-2.4",
+      "locator": {
+        "row_label": "2015",
+        "column": "Surplus or Deficit (-)"
+      }
+    },
+    {
+      "date": "2016",
+      "value": "-3.1",
+      "locator": {
+        "row_label": "2016",
+        "column": "Surplus or Deficit (-)"
+      }
+    },
+    {
+      "date": "2017",
+      "value": "-3.4",
+      "locator": {
+        "row_label": "2017",
+        "column": "Surplus or Deficit (-)"
+      }
+    },
+    {
+      "date": "2018",
+      "value": "-3.8",
+      "locator": {
+        "row_label": "2018",
+        "column": "Surplus or Deficit (-)"
+      }
+    },
+    {
+      "date": "2019",
+      "value": "-4.6",
+      "locator": {
+        "row_label": "2019",
+        "column": "Surplus or Deficit (-)"
+      }
+    },
+    {
+      "date": "2020",
+      "value": "-14.5",
+      "locator": {
+        "row_label": "2020",
+        "column": "Surplus or Deficit (-)"
+      }
+    },
+    {
+      "date": "2021",
+      "value": "-12",
+      "locator": {
+        "row_label": "2021",
+        "column": "Surplus or Deficit (-)"
+      }
+    },
+    {
+      "date": "2022",
+      "value": "-5.4",
+      "locator": {
+        "row_label": "2022",
+        "column": "Surplus or Deficit (-)"
+      }
+    },
+    {
+      "date": "2023",
+      "value": "-6.2",
+      "locator": {
+        "row_label": "2023",
+        "column": "Surplus or Deficit (-)"
+      }
+    },
+    {
+      "date": "2024",
+      "value": "-6.3",
+      "locator": {
+        "row_label": "2024",
+        "column": "Surplus or Deficit (-)"
+      }
+    },
+    {
+      "date": "2025",
+      "value": "-5.9",
+      "locator": {
+        "row_label": "2025",
+        "column": "Surplus or Deficit (-)"
+      }
+    }
+  ]
+}

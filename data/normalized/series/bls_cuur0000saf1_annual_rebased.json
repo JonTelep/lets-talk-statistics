@@ -1,0 +1,316 @@
+{
+  "id": "bls_cuur0000saf1_annual_rebased",
+  "name": "Food in U.S. city average, all urban consumers, not seasonally adjusted",
+  "units": "Index, 1993=100",
+  "adjustment": "not seasonally adjusted",
+  "nominal_or_real": "index",
+  "frequency": "annual",
+  "source_id": "bls_cuur0000saf1",
+  "series_url": "https://data.bls.gov/timeseries/CUUR0000SAF1",
+  "derived": true,
+  "inputs": [
+    "bls_cuur0000saf1_annual"
+  ],
+  "base_year": "1993",
+  "published_units": "1982-84=100",
+  "notes": "Published index divided by its 1993 annual average and multiplied by 100. Published base: 1982-84=100. Rounded half up to 3 decimals.",
+  "points": [
+    {
+      "date": "1993",
+      "value": "100.000",
+      "locator": {
+        "formula": "rebase",
+        "base_year": "1993",
+        "input": "bls_cuur0000saf1_annual"
+      }
+    },
+    {
+      "date": "1994",
+      "value": "102.413",
+      "locator": {
+        "formula": "rebase",
+        "base_year": "1993",
+        "input": "bls_cuur0000saf1_annual"
+      }
+    },
+    {
+      "date": "1995",
+      "value": "105.323",
+      "locator": {
+        "formula": "rebase",
+        "base_year": "1993",
+        "input": "bls_cuur0000saf1_annual"
+      }
+    },
+    {
+      "date": "1996",
+      "value": "108.801",
+      "locator": {
+        "formula": "rebase",
+        "base_year": "1993",
+        "input": "bls_cuur0000saf1_annual"
+      }
+    },
+    {
+      "date": "1997",
+      "value": "111.639",
+      "locator": {
+        "formula": "rebase",
+        "base_year": "1993",
+        "input": "bls_cuur0000saf1_annual"
+      }
+    },
+    {
+      "date": "1998",
+      "value": "114.053",
+      "locator": {
+        "formula": "rebase",
+        "base_year": "1993",
+        "input": "bls_cuur0000saf1_annual"
+      }
+    },
+    {
+      "date": "1999",
+      "value": "116.466",
+      "locator": {
+        "formula": "rebase",
+        "base_year": "1993",
+        "input": "bls_cuur0000saf1_annual"
+      }
+    },
+    {
+      "date": "2000",
+      "value": "119.092",
+      "locator": {
+        "formula": "rebase",
+        "base_year": "1993",
+        "input": "bls_cuur0000saf1_annual"
+      }
+    },
+    {
+      "date": "2001",
+      "value": "122.853",
+      "locator": {
+        "formula": "rebase",
+        "base_year": "1993",
+        "input": "bls_cuur0000saf1_annual"
+      }
+    },
+    {
+      "date": "2002",
+      "value": "125.053",
+      "locator": {
+        "formula": "rebase",
+        "base_year": "1993",
+        "input": "bls_cuur0000saf1_annual"
+      }
+    },
+    {
+      "date": "2003",
+      "value": "127.750",
+      "locator": {
+        "formula": "rebase",
+        "base_year": "1993",
+        "input": "bls_cuur0000saf1_annual"
+      }
+    },
+    {
+      "date": "2004",
+      "value": "132.150",
+      "locator": {
+        "formula": "rebase",
+        "base_year": "1993",
+        "input": "bls_cuur0000saf1_annual"
+      }
+    },
+    {
+      "date": "2005",
+      "value": "135.344",
+      "locator": {
+        "formula": "rebase",
+        "base_year": "1993",
+        "input": "bls_cuur0000saf1_annual"
+      }
+    },
+    {
+      "date": "2006",
+      "value": "138.538",
+      "locator": {
+        "formula": "rebase",
+        "base_year": "1993",
+        "input": "bls_cuur0000saf1_annual"
+      }
+    },
+    {
+      "date": "2007",
+      "value": "144.014",
+      "locator": {
+        "formula": "rebase",
+        "base_year": "1993",
+        "input": "bls_cuur0000saf1_annual"
+      }
+    },
+    {
+      "date": "2008",
+      "value": "151.956",
+      "locator": {
+        "formula": "rebase",
+        "base_year": "1993",
+        "input": "bls_cuur0000saf1_annual"
+      }
+    },
+    {
+      "date": "2009",
+      "value": "154.688",
+      "locator": {
+        "formula": "rebase",
+        "base_year": "1993",
+        "input": "bls_cuur0000saf1_annual"
+      }
+    },
+    {
+      "date": "2010",
+      "value": "155.873",
+      "locator": {
+        "formula": "rebase",
+        "base_year": "1993",
+        "input": "bls_cuur0000saf1_annual"
+      }
+    },
+    {
+      "date": "2011",
+      "value": "161.705",
+      "locator": {
+        "formula": "rebase",
+        "base_year": "1993",
+        "input": "bls_cuur0000saf1_annual"
+      }
+    },
+    {
+      "date": "2012",
+      "value": "165.917",
+      "locator": {
+        "formula": "rebase",
+        "base_year": "1993",
+        "input": "bls_cuur0000saf1_annual"
+      }
+    },
+    {
+      "date": "2013",
+      "value": "168.231",
+      "locator": {
+        "formula": "rebase",
+        "base_year": "1993",
+        "input": "bls_cuur0000saf1_annual"
+      }
+    },
+    {
+      "date": "2014",
+      "value": "172.268",
+      "locator": {
+        "formula": "rebase",
+        "base_year": "1993",
+        "input": "bls_cuur0000saf1_annual"
+      }
+    },
+    {
+      "date": "2015",
+      "value": "175.468",
+      "locator": {
+        "formula": "rebase",
+        "base_year": "1993",
+        "input": "bls_cuur0000saf1_annual"
+      }
+    },
+    {
+      "date": "2016",
+      "value": "175.962",
+      "locator": {
+        "formula": "rebase",
+        "base_year": "1993",
+        "input": "bls_cuur0000saf1_annual"
+      }
+    },
+    {
+      "date": "2017",
+      "value": "177.477",
+      "locator": {
+        "formula": "rebase",
+        "base_year": "1993",
+        "input": "bls_cuur0000saf1_annual"
+      }
+    },
+    {
+      "date": "2018",
+      "value": "179.956",
+      "locator": {
+        "formula": "rebase",
+        "base_year": "1993",
+        "input": "bls_cuur0000saf1_annual"
+      }
+    },
+    {
+      "date": "2019",
+      "value": "183.333",
+      "locator": {
+        "formula": "rebase",
+        "base_year": "1993",
+        "input": "bls_cuur0000saf1_annual"
+      }
+    },
+    {
+      "date": "2020",
+      "value": "189.652",
+      "locator": {
+        "formula": "rebase",
+        "base_year": "1993",
+        "input": "bls_cuur0000saf1_annual"
+      }
+    },
+    {
+      "date": "2021",
+      "value": "197.130",
+      "locator": {
+        "formula": "rebase",
+        "base_year": "1993",
+        "input": "bls_cuur0000saf1_annual"
+      }
+    },
+    {
+      "date": "2022",
+      "value": "216.741",
+      "locator": {
+        "formula": "rebase",
+        "base_year": "1993",
+        "input": "bls_cuur0000saf1_annual"
+      }
+    },
+    {
+      "date": "2023",
+      "value": "229.216",
+      "locator": {
+        "formula": "rebase",
+        "base_year": "1993",
+        "input": "bls_cuur0000saf1_annual"
+      }
+    },
+    {
+      "date": "2024",
+      "value": "234.395",
+      "locator": {
+        "formula": "rebase",
+        "base_year": "1993",
+        "input": "bls_cuur0000saf1_annual"
+      }
+    },
+    {
+      "date": "2025",
+      "value": "240.960",
+      "locator": {
+        "formula": "rebase",
+        "base_year": "1993",
+        "input": "bls_cuur0000saf1_annual"
+      }
+    }
+  ]
+}

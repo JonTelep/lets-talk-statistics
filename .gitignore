@@ -28,7 +28,8 @@ dist/
 downloads/
 eggs/
 .eggs/
-lib/
+# setuptools output at the repo root. frontend/lib is application source.
+/lib/
 lib64/
 parts/
 sdist/

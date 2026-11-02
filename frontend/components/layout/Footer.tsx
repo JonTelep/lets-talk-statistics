@@ -9,28 +9,34 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <h3 className="text-sm font-medium text-foreground mb-4">Data Sources</h3>
+            <h3 className="text-sm font-medium text-foreground mb-4">Publishers</h3>
             <ul className="space-y-2 text-sm text-surface-500">
-              <li><a href="https://fiscaldata.treasury.gov" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">Treasury Fiscal Data</a></li>
               <li><a href="https://www.bls.gov" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">Bureau of Labor Statistics</a></li>
-              <li><a href="https://www.dhs.gov" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">Dept. of Homeland Security</a></li>
-              <li><a href="https://www.fec.gov" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">Federal Election Commission</a></li>
+              <li><a href="https://fiscaldata.treasury.gov" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">Treasury Fiscal Data</a></li>
+              <li><a href="https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">Office of Management and Budget</a></li>
+              <li><a href="https://www.bea.gov" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">Bureau of Economic Analysis</a></li>
+              <li><a href="https://www.census.gov" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">U.S. Census Bureau</a></li>
+              <li><a href="https://ohss.dhs.gov" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">Office of Homeland Security Statistics</a></li>
+              <li><a href="https://www.cbp.gov" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">U.S. Customs and Border Protection</a></li>
             </ul>
           </div>
 
           <div>
-            <h3 className="text-sm font-medium text-foreground mb-4">Navigate</h3>
+            <h3 className="text-sm font-medium text-foreground mb-4">Pages</h3>
             <ul className="space-y-2 text-sm text-surface-500">
-              <li><Link href="/about" className="hover:text-foreground transition-colors">About &amp; Methodology</Link></li>
-              <li><Link href="/debt" className="hover:text-foreground transition-colors">National Debt</Link></li>
-              <li><Link href="/congress" className="hover:text-foreground transition-colors">Congressional Trading</Link></li>
+              <li><Link href="/prices" className="hover:text-foreground transition-colors">Prices and inflation</Link></li>
+              <li><Link href="/budget" className="hover:text-foreground transition-colors">Federal budget and debt</Link></li>
+              <li><Link href="/economy" className="hover:text-foreground transition-colors">Economy and wages</Link></li>
+              <li><Link href="/crime" className="hover:text-foreground transition-colors">Crime</Link></li>
+              <li><Link href="/immigration" className="hover:text-foreground transition-colors">Immigration</Link></li>
+              <li><Link href="/sources" className="hover:text-foreground transition-colors">Sources and methodology</Link></li>
             </ul>
           </div>
 
           <div>
-            <h3 className="text-sm font-medium text-foreground mb-4">Open Source</h3>
+            <h3 className="text-sm font-medium text-foreground mb-4">Files</h3>
             <p className="text-sm text-surface-500 mb-4">
-              All data sourced from official U.S. government agencies. Verify everything.
+              Every chart value is produced by a script in this repository from a saved government file.
             </p>
             <a
               href="https://github.com/JonTelep/lets-talk-statistics"
@@ -46,11 +52,10 @@ export default function Footer() {
 
         <div className="mt-8 pt-8 border-t border-border flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="text-xs text-surface-600">
-            © {currentYear} Let&apos;s Talk Statistics · Built by{' '}
-            <a href="https://telep.io" className="text-surface-400 hover:text-foreground transition-colors">Telep IO</a>
+            © {currentYear} Let&apos;s Talk Statistics
           </p>
           <p className="text-xs text-surface-600">
-            Government data, clearly presented.
+            Official statistics, cited on each chart.
           </p>
         </div>
       </div>

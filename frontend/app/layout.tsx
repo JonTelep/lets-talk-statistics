@@ -3,10 +3,8 @@ import { Inter, JetBrains_Mono } from 'next/font/google';
 import '../styles/globals.css';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
-import { SWRProvider } from '@/components/providers/SWRProvider';
 import { ThemeProvider } from '@/components/providers/ThemeProvider';
-import { PreloaderProvider } from '@/components/providers/PreloaderProvider';
-import { PWA } from '@/components/PWA';
+import { ShadeProvider } from '@/components/providers/ShadeProvider';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -22,17 +20,27 @@ const jetbrainsMono = JetBrains_Mono({
   weight: ['400', '500', '600', '700'],
 });
 
+const description = 'Charts of official U.S. government statistics. Each figure links to the government table it came from.';
+
 export const metadata: Metadata = {
   metadataBase: new URL('https://letstalkstatistics.com'),
   title: {
-    default: "Let's Talk Statistics | Government Data Without Spin",
+    default: "Let's Talk Statistics",
     template: "%s | Let's Talk Statistics",
   },
-  description: 'Objective analysis of US government statistics. Explore federal spending, national debt, employment data, and more from official sources.',
-  keywords: ['government statistics', 'federal data', 'national debt', 'public spending', 'objective analysis', 'congressional trades'],
+  description,
+  keywords: [
+    'U.S. government statistics',
+    'CPI-U',
+    'national debt',
+    'federal budget',
+    'unemployment rate',
+    'median household income',
+    'Bureau of Labor Statistics',
+    'U.S. Treasury',
+  ],
   authors: [{ name: "Let's Talk Statistics", url: 'https://letstalkstatistics.com' }],
-  creator: 'Telep IO',
-  publisher: 'Telep IO',
+  creator: "Let's Talk Statistics",
   icons: {
     icon: '/favicon.svg',
     shortcut: '/favicon.svg',
@@ -40,7 +48,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Let's Talk Statistics",
-    description: 'Government data without spin - objective statistical analysis from official sources',
+    description,
     url: 'https://letstalkstatistics.com',
     siteName: "Let's Talk Statistics",
     locale: 'en_US',
@@ -50,15 +58,14 @@ export const metadata: Metadata = {
         url: '/og-image.png',
         width: 1200,
         height: 630,
-        alt: "Let's Talk Statistics - Government Data Without Spin",
+        alt: "Let's Talk Statistics",
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
     title: "Let's Talk Statistics",
-    description: 'Government data without spin - objective statistical analysis',
-    creator: '@telep_io',
+    description,
     images: ['/og-image.png'],
   },
   robots: {
@@ -66,17 +73,8 @@ export const metadata: Metadata = {
     follow: true,
   },
   manifest: '/manifest.json',
-  appleWebApp: {
-    capable: true,
-    statusBarStyle: 'black-translucent',
-    title: "Let's Talk Statistics",
-  },
   formatDetection: {
     telephone: false,
-  },
-  other: {
-    'msapplication-TileColor': '#0a0a0a',
-    'msapplication-config': '/browserconfig.xml',
   },
 };
 
@@ -88,15 +86,12 @@ export default function RootLayout({
   return (
     <html lang="en" data-theme="dark" className={`${inter.variable} ${jetbrainsMono.variable}`}>
       <body className="font-sans flex min-h-screen flex-col antialiased">
-        <PWA />
         <ThemeProvider>
-          <SWRProvider>
-            <PreloaderProvider>
-              <Header />
-              <main className="flex-1">{children}</main>
-              <Footer />
-            </PreloaderProvider>
-          </SWRProvider>
+          <ShadeProvider>
+            <Header />
+            <main className="flex-1">{children}</main>
+            <Footer />
+          </ShadeProvider>
         </ThemeProvider>
       </body>
     </html>

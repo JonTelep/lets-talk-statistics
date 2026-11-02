@@ -1,0 +1,701 @@
+{
+  "id": "omb_debt_gross",
+  "name": "Gross Federal Debt",
+  "units": "millions of dollars",
+  "adjustment": "fiscal year",
+  "nominal_or_real": "nominal",
+  "frequency": "fiscal_year",
+  "source_id": "hist07z1",
+  "series_url": "https://www.whitehouse.gov/wp-content/uploads/2026/04/hist07z1_fy2027.xlsx",
+  "notes": "Table 7.1 - FEDERAL DEBT AT THE END OF YEAR: 1940 - 2025",
+  "points": [
+    {
+      "date": "1940",
+      "value": "50696",
+      "locator": {
+        "row_label": "1940",
+        "column": "Gross Federal Debt"
+      }
+    },
+    {
+      "date": "1941",
+      "value": "57531",
+      "locator": {
+        "row_label": "1941",
+        "column": "Gross Federal Debt"
+      }
+    },
+    {
+      "date": "1942",
+      "value": "79200",
+      "locator": {
+        "row_label": "1942",
+        "column": "Gross Federal Debt"
+      }
+    },
+    {
+      "date": "1943",
+      "value": "142648",
+      "locator": {
+        "row_label": "1943",
+        "column": "Gross Federal Debt"
+      }
+    },
+    {
+      "date": "1944",
+      "value": "204079",
+      "locator": {
+        "row_label": "1944",
+        "column": "Gross Federal Debt"
+      }
+    },
+    {
+      "date": "1945",
+      "value": "260123",
+      "locator": {
+        "row_label": "1945",
+        "column": "Gross Federal Debt"
+      }
+    },
+    {
+      "date": "1946",
+      "value": "270991",
+      "locator": {
+        "row_label": "1946",
+        "column": "Gross Federal Debt"
+      }
+    },
+    {
+      "date": "1947",
+      "value": "257149",
+      "locator": {
+        "row_label": "1947",
+        "column": "Gross Federal Debt"
+      }
+    },
+    {
+      "date": "1948",
+      "value": "252031",
+      "locator": {
+        "row_label": "1948",
+        "column": "Gross Federal Debt"
+      }
+    },
+    {
+      "date": "1949",
+      "value": "252610",
+      "locator": {
+        "row_label": "1949",
+        "column": "Gross Federal Debt"
+      }
+    },
+    {
+      "date": "1950",
+      "value": "256853",
+      "locator": {
+        "row_label": "1950",
+        "column": "Gross Federal Debt"
+      }
+    },
+    {
+      "date": "1951",
+      "value": "255288",
+      "locator": {
+        "row_label": "1951",
+        "column": "Gross Federal Debt"
+      }
+    },
+    {
+      "date": "1952",
+      "value": "259097",
+      "locator": {
+        "row_label": "1952",
+        "column": "Gross Federal Debt"
+      }
+    },
+    {
+      "date": "1953",
+      "value": "265963",
+      "locator": {
+        "row_label": "1953",
+        "column": "Gross Federal Debt"
+      }
+    },
+    {
+      "date": "1954",
+      "value": "270812",
+      "locator": {
+        "row_label": "1954",
+        "column": "Gross Federal Debt"
+      }
+    },
+    {
+      "date": "1955",
+      "value": "274366",
+      "locator": {
+        "row_label": "1955",
+        "column": "Gross Federal Debt"
+      }
+    },
+    {
+      "date": "1956",
+      "value": "272693",
+      "locator": {
+        "row_label": "1956",
+        "column": "Gross Federal Debt"
+      }
+    },
+    {
+      "date": "1957",
+      "value": "272252",
+      "locator": {
+        "row_label": "1957",
+        "column": "Gross Federal Debt"
+      }
+    },
+    {
+      "date": "1958",
+      "value": "279666",
+      "locator": {
+        "row_label": "1958",
+        "column": "Gross Federal Debt"
+      }
+    },
+    {
+      "date": "1959",
+      "value": "287465",
+      "locator": {
+        "row_label": "1959",
+        "column": "Gross Federal Debt"
+      }
+    },
+    {
+      "date": "1960",
+      "value": "290525",
+      "locator": {
+        "row_label": "1960",
+        "column": "Gross Federal Debt"
+      }
+    },
+    {
+      "date": "1961",
+      "value": "292648",
+      "locator": {
+        "row_label": "1961",
+        "column": "Gross Federal Debt"
+      }
+    },
+    {
+      "date": "1962",
+      "value": "302928",
+      "locator": {
+        "row_label": "1962",
+        "column": "Gross Federal Debt"
+      }
+    },
+    {
+      "date": "1963",
+      "value": "310324",
+      "locator": {
+        "row_label": "1963",
+        "column": "Gross Federal Debt"
+      }
+    },
+    {
+      "date": "1964",
+      "value": "316059",
+      "locator": {
+        "row_label": "1964",
+        "column": "Gross Federal Debt"
+      }
+    },
+    {
+      "date": "1965",
+      "value": "322318",
+      "locator": {
+        "row_label": "1965",
+        "column": "Gross Federal Debt"
+      }
+    },
+    {
+      "date": "1966",
+      "value": "328498",
+      "locator": {
+        "row_label": "1966",
+        "column": "Gross Federal Debt"
+      }
+    },
+    {
+      "date": "1967",
+      "value": "340445",
+      "locator": {
+        "row_label": "1967",
+        "column": "Gross Federal Debt"
+      }
+    },
+    {
+      "date": "1968",
+      "value": "368685",
+      "locator": {
+        "row_label": "1968",
+        "column": "Gross Federal Debt"
+      }
+    },
+    {
+      "date": "1969",
+      "value": "365769",
+      "locator": {
+        "row_label": "1969",
+        "column": "Gross Federal Debt"
+      }
+    },
+    {
+      "date": "1970",
+      "value": "380921",
+      "locator": {
+        "row_label": "1970",
+        "column": "Gross Federal Debt"
+      }
+    },
+    {
+      "date": "1971",
+      "value": "408176",
+      "locator": {
+        "row_label": "1971",
+        "column": "Gross Federal Debt"
+      }
+    },
+    {
+      "date": "1972",
+      "value": "435936",
+      "locator": {
+        "row_label": "1972",
+        "column": "Gross Federal Debt"
+      }
+    },
+    {
+      "date": "1973",
+      "value": "466291",
+      "locator": {
+        "row_label": "1973",
+        "column": "Gross Federal Debt"
+      }
+    },
+    {
+      "date": "1974",
+      "value": "483893",
+      "locator": {
+        "row_label": "1974",
+        "column": "Gross Federal Debt"
+      }
+    },
+    {
+      "date": "1975",
+      "value": "541925",
+      "locator": {
+        "row_label": "1975",
+        "column": "Gross Federal Debt"
+      }
+    },
+    {
+      "date": "1976",
+      "value": "628970",
+      "locator": {
+        "row_label": "1976",
+        "column": "Gross Federal Debt"
+      }
+    },
+    {
+      "date": "1977",
+      "value": "706398",
+      "locator": {
+        "row_label": "1977",
+        "column": "Gross Federal Debt"
+      }
+    },
+    {
+      "date": "1978",
+      "value": "776602",
+      "locator": {
+        "row_label": "1978",
+        "column": "Gross Federal Debt"
+      }
+    },
+    {
+      "date": "1979",
+      "value": "829467",
+      "locator": {
+        "row_label": "1979",
+        "column": "Gross Federal Debt"
+      }
+    },
+    {
+      "date": "1980",
+      "value": "909041",
+      "locator": {
+        "row_label": "1980",
+        "column": "Gross Federal Debt"
+      }
+    },
+    {
+      "date": "1981",
+      "value": "994828",
+      "locator": {
+        "row_label": "1981",
+        "column": "Gross Federal Debt"
+      }
+    },
+    {
+      "date": "1982",
+      "value": "1137315",
+      "locator": {
+        "row_label": "1982",
+        "column": "Gross Federal Debt"
+      }
+    },
+    {
+      "date": "1983",
+      "value": "1371660",
+      "locator": {
+        "row_label": "1983",
+        "column": "Gross Federal Debt"
+      }
+    },
+    {
+      "date": "1984",
+      "value": "1564586",
+      "locator": {
+        "row_label": "1984",
+        "column": "Gross Federal Debt"
+      }
+    },
+    {
+      "date": "1985",
+      "value": "1817423",
+      "locator": {
+        "row_label": "1985",
+        "column": "Gross Federal Debt"
+      }
+    },
+    {
+      "date": "1986",
+      "value": "2120501",
+      "locator": {
+        "row_label": "1986",
+        "column": "Gross Federal Debt"
+      }
+    },
+    {
+      "date": "1987",
+      "value": "2345956",
+      "locator": {
+        "row_label": "1987",
+        "column": "Gross Federal Debt"
+      }
+    },
+    {
+      "date": "1988",
+      "value": "2601104",
+      "locator": {
+        "row_label": "1988",
+        "column": "Gross Federal Debt"
+      }
+    },
+    {
+      "date": "1989",
+      "value": "2867800",
+      "locator": {
+        "row_label": "1989",
+        "column": "Gross Federal Debt"
+      }
+    },
+    {
+      "date": "1990",
+      "value": "3206290",
+      "locator": {
+        "row_label": "1990",
+        "column": "Gross Federal Debt"
+      }
+    },
+    {
+      "date": "1991",
+      "value": "3598178",
+      "locator": {
+        "row_label": "1991",
+        "column": "Gross Federal Debt"
+      }
+    },
+    {
+      "date": "1992",
+      "value": "4001787",
+      "locator": {
+        "row_label": "1992",
+        "column": "Gross Federal Debt"
+      }
+    },
+    {
+      "date": "1993",
+      "value": "4351044",
+      "locator": {
+        "row_label": "1993",
+        "column": "Gross Federal Debt"
+      }
+    },
+    {
+      "date": "1994",
+      "value": "4643307",
+      "locator": {
+        "row_label": "1994",
+        "column": "Gross Federal Debt"
+      }
+    },
+    {
+      "date": "1995",
+      "value": "4920586",
+      "locator": {
+        "row_label": "1995",
+        "column": "Gross Federal Debt"
+      }
+    },
+    {
+      "date": "1996",
+      "value": "5181465",
+      "locator": {
+        "row_label": "1996",
+        "column": "Gross Federal Debt"
+      }
+    },
+    {
+      "date": "1997",
+      "value": "5369206",
+      "locator": {
+        "row_label": "1997",
+        "column": "Gross Federal Debt"
+      }
+    },
+    {
+      "date": "1998",
+      "value": "5478189",
+      "locator": {
+        "row_label": "1998",
+        "column": "Gross Federal Debt"
+      }
+    },
+    {
+      "date": "1999",
+      "value": "5605523",
+      "locator": {
+        "row_label": "1999",
+        "column": "Gross Federal Debt"
+      }
+    },
+    {
+      "date": "2000",
+      "value": "5628700",
+      "locator": {
+        "row_label": "2000",
+        "column": "Gross Federal Debt"
+      }
+    },
+    {
+      "date": "2001",
+      "value": "5769881",
+      "locator": {
+        "row_label": "2001",
+        "column": "Gross Federal Debt"
+      }
+    },
+    {
+      "date": "2002",
+      "value": "6198401",
+      "locator": {
+        "row_label": "2002",
+        "column": "Gross Federal Debt"
+      }
+    },
+    {
+      "date": "2003",
+      "value": "6760014",
+      "locator": {
+        "row_label": "2003",
+        "column": "Gross Federal Debt"
+      }
+    },
+    {
+      "date": "2004",
+      "value": "7354657",
+      "locator": {
+        "row_label": "2004",
+        "column": "Gross Federal Debt"
+      }
+    },
+    {
+      "date": "2005",
+      "value": "7905300",
+      "locator": {
+        "row_label": "2005",
+        "column": "Gross Federal Debt"
+      }
+    },
+    {
+      "date": "2006",
+      "value": "8451350",
+      "locator": {
+        "row_label": "2006",
+        "column": "Gross Federal Debt"
+      }
+    },
+    {
+      "date": "2007",
+      "value": "8950744",
+      "locator": {
+        "row_label": "2007",
+        "column": "Gross Federal Debt"
+      }
+    },
+    {
+      "date": "2008",
+      "value": "9986082",
+      "locator": {
+        "row_label": "2008",
+        "column": "Gross Federal Debt"
+      }
+    },
+    {
+      "date": "2009",
+      "value": "11875851",
+      "locator": {
+        "row_label": "2009",
+        "column": "Gross Federal Debt"
+      }
+    },
+    {
+      "date": "2010",
+      "value": "13528807",
+      "locator": {
+        "row_label": "2010",
+        "column": "Gross Federal Debt"
+      }
+    },
+    {
+      "date": "2011",
+      "value": "14764222",
+      "locator": {
+        "row_label": "2011",
+        "column": "Gross Federal Debt"
+      }
+    },
+    {
+      "date": "2012",
+      "value": "16050921",
+      "locator": {
+        "row_label": "2012",
+        "column": "Gross Federal Debt"
+      }
+    },
+    {
+      "date": "2013",
+      "value": "16719434",
+      "locator": {
+        "row_label": "2013",
+        "column": "Gross Federal Debt"
+      }
+    },
+    {
+      "date": "2014",
+      "value": "17794483",
+      "locator": {
+        "row_label": "2014",
+        "column": "Gross Federal Debt"
+      }
+    },
+    {
+      "date": "2015",
+      "value": "18120106",
+      "locator": {
+        "row_label": "2015",
+        "column": "Gross Federal Debt"
+      }
+    },
+    {
+      "date": "2016",
+      "value": "19539450",
+      "locator": {
+        "row_label": "2016",
+        "column": "Gross Federal Debt"
+      }
+    },
+    {
+      "date": "2017",
+      "value": "20205704",
+      "locator": {
+        "row_label": "2017",
+        "column": "Gross Federal Debt"
+      }
+    },
+    {
+      "date": "2018",
+      "value": "21462277",
+      "locator": {
+        "row_label": "2018",
+        "column": "Gross Federal Debt"
+      }
+    },
+    {
+      "date": "2019",
+      "value": "22669466",
+      "locator": {
+        "row_label": "2019",
+        "column": "Gross Federal Debt"
+      }
+    },
+    {
+      "date": "2020",
+      "value": "26902455",
+      "locator": {
+        "row_label": "2020",
+        "column": "Gross Federal Debt"
+      }
+    },
+    {
+      "date": "2021",
+      "value": "28385562",
+      "locator": {
+        "row_label": "2021",
+        "column": "Gross Federal Debt"
+      }
+    },
+    {
+      "date": "2022",
+      "value": "30838586",
+      "locator": {
+        "row_label": "2022",
+        "column": "Gross Federal Debt"
+      }
+    },
+    {
+      "date": "2023",
+      "value": "32988990",
+      "locator": {
+        "row_label": "2023",
+        "column": "Gross Federal Debt"
+      }
+    },
+    {
+      "date": "2024",
+      "value": "35230714",
+      "locator": {
+        "row_label": "2024",
+        "column": "Gross Federal Debt"
+      }
+    },
+    {
+      "date": "2025",
+      "value": "37374964",
+      "locator": {
+        "row_label": "2025",
+        "column": "Gross Federal Debt"
+      }
+    }
+  ]
+}

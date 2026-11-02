@@ -1,0 +1,886 @@
+{
+  "id": "bea_gdp_real",
+  "name": "Gross domestic product",
+  "units": "[Millions of chained (2017) dollars]",
+  "adjustment": "annual",
+  "nominal_or_real": "inflation-adjusted",
+  "frequency": "annual",
+  "source_id": "bea_nipa_section1",
+  "series_url": "https://www.bea.gov/data/gdp/gross-domestic-product",
+  "notes": "Table 1.1.6. Real Gross Domestic Product, Chained Dollars Line code A191RX.",
+  "points": [
+    {
+      "date": "1929",
+      "value": "1191124",
+      "locator": {
+        "sheet": "T10106-A",
+        "line_code": "A191RX",
+        "column": "1929"
+      }
+    },
+    {
+      "date": "1930",
+      "value": "1089785",
+      "locator": {
+        "sheet": "T10106-A",
+        "line_code": "A191RX",
+        "column": "1930"
+      }
+    },
+    {
+      "date": "1931",
+      "value": "1019977",
+      "locator": {
+        "sheet": "T10106-A",
+        "line_code": "A191RX",
+        "column": "1931"
+      }
+    },
+    {
+      "date": "1932",
+      "value": "888414",
+      "locator": {
+        "sheet": "T10106-A",
+        "line_code": "A191RX",
+        "column": "1932"
+      }
+    },
+    {
+      "date": "1933",
+      "value": "877431",
+      "locator": {
+        "sheet": "T10106-A",
+        "line_code": "A191RX",
+        "column": "1933"
+      }
+    },
+    {
+      "date": "1934",
+      "value": "972263",
+      "locator": {
+        "sheet": "T10106-A",
+        "line_code": "A191RX",
+        "column": "1934"
+      }
+    },
+    {
+      "date": "1935",
+      "value": "1058836",
+      "locator": {
+        "sheet": "T10106-A",
+        "line_code": "A191RX",
+        "column": "1935"
+      }
+    },
+    {
+      "date": "1936",
+      "value": "1195251",
+      "locator": {
+        "sheet": "T10106-A",
+        "line_code": "A191RX",
+        "column": "1936"
+      }
+    },
+    {
+      "date": "1937",
+      "value": "1256503",
+      "locator": {
+        "sheet": "T10106-A",
+        "line_code": "A191RX",
+        "column": "1937"
+      }
+    },
+    {
+      "date": "1938",
+      "value": "1214869",
+      "locator": {
+        "sheet": "T10106-A",
+        "line_code": "A191RX",
+        "column": "1938"
+      }
+    },
+    {
+      "date": "1939",
+      "value": "1312365",
+      "locator": {
+        "sheet": "T10106-A",
+        "line_code": "A191RX",
+        "column": "1939"
+      }
+    },
+    {
+      "date": "1940",
+      "value": "1428075",
+      "locator": {
+        "sheet": "T10106-A",
+        "line_code": "A191RX",
+        "column": "1940"
+      }
+    },
+    {
+      "date": "1941",
+      "value": "1681049",
+      "locator": {
+        "sheet": "T10106-A",
+        "line_code": "A191RX",
+        "column": "1941"
+      }
+    },
+    {
+      "date": "1942",
+      "value": "1998542",
+      "locator": {
+        "sheet": "T10106-A",
+        "line_code": "A191RX",
+        "column": "1942"
+      }
+    },
+    {
+      "date": "1943",
+      "value": "2338761",
+      "locator": {
+        "sheet": "T10106-A",
+        "line_code": "A191RX",
+        "column": "1943"
+      }
+    },
+    {
+      "date": "1944",
+      "value": "2524752",
+      "locator": {
+        "sheet": "T10106-A",
+        "line_code": "A191RX",
+        "column": "1944"
+      }
+    },
+    {
+      "date": "1945",
+      "value": "2500057",
+      "locator": {
+        "sheet": "T10106-A",
+        "line_code": "A191RX",
+        "column": "1945"
+      }
+    },
+    {
+      "date": "1946",
+      "value": "2209911",
+      "locator": {
+        "sheet": "T10106-A",
+        "line_code": "A191RX",
+        "column": "1946"
+      }
+    },
+    {
+      "date": "1947",
+      "value": "2184614",
+      "locator": {
+        "sheet": "T10106-A",
+        "line_code": "A191RX",
+        "column": "1947"
+      }
+    },
+    {
+      "date": "1948",
+      "value": "2274627",
+      "locator": {
+        "sheet": "T10106-A",
+        "line_code": "A191RX",
+        "column": "1948"
+      }
+    },
+    {
+      "date": "1949",
+      "value": "2261928",
+      "locator": {
+        "sheet": "T10106-A",
+        "line_code": "A191RX",
+        "column": "1949"
+      }
+    },
+    {
+      "date": "1950",
+      "value": "2458532",
+      "locator": {
+        "sheet": "T10106-A",
+        "line_code": "A191RX",
+        "column": "1950"
+      }
+    },
+    {
+      "date": "1951",
+      "value": "2656320",
+      "locator": {
+        "sheet": "T10106-A",
+        "line_code": "A191RX",
+        "column": "1951"
+      }
+    },
+    {
+      "date": "1952",
+      "value": "2764803",
+      "locator": {
+        "sheet": "T10106-A",
+        "line_code": "A191RX",
+        "column": "1952"
+      }
+    },
+    {
+      "date": "1953",
+      "value": "2894411",
+      "locator": {
+        "sheet": "T10106-A",
+        "line_code": "A191RX",
+        "column": "1953"
+      }
+    },
+    {
+      "date": "1954",
+      "value": "2877708",
+      "locator": {
+        "sheet": "T10106-A",
+        "line_code": "A191RX",
+        "column": "1954"
+      }
+    },
+    {
+      "date": "1955",
+      "value": "3083026",
+      "locator": {
+        "sheet": "T10106-A",
+        "line_code": "A191RX",
+        "column": "1955"
+      }
+    },
+    {
+      "date": "1956",
+      "value": "3148765",
+      "locator": {
+        "sheet": "T10106-A",
+        "line_code": "A191RX",
+        "column": "1956"
+      }
+    },
+    {
+      "date": "1957",
+      "value": "3215065",
+      "locator": {
+        "sheet": "T10106-A",
+        "line_code": "A191RX",
+        "column": "1957"
+      }
+    },
+    {
+      "date": "1958",
+      "value": "3191216",
+      "locator": {
+        "sheet": "T10106-A",
+        "line_code": "A191RX",
+        "column": "1958"
+      }
+    },
+    {
+      "date": "1959",
+      "value": "3412421",
+      "locator": {
+        "sheet": "T10106-A",
+        "line_code": "A191RX",
+        "column": "1959"
+      }
+    },
+    {
+      "date": "1960",
+      "value": "3500272",
+      "locator": {
+        "sheet": "T10106-A",
+        "line_code": "A191RX",
+        "column": "1960"
+      }
+    },
+    {
+      "date": "1961",
+      "value": "3590066",
+      "locator": {
+        "sheet": "T10106-A",
+        "line_code": "A191RX",
+        "column": "1961"
+      }
+    },
+    {
+      "date": "1962",
+      "value": "3810124",
+      "locator": {
+        "sheet": "T10106-A",
+        "line_code": "A191RX",
+        "column": "1962"
+      }
+    },
+    {
+      "date": "1963",
+      "value": "3976142",
+      "locator": {
+        "sheet": "T10106-A",
+        "line_code": "A191RX",
+        "column": "1963"
+      }
+    },
+    {
+      "date": "1964",
+      "value": "4205277",
+      "locator": {
+        "sheet": "T10106-A",
+        "line_code": "A191RX",
+        "column": "1964"
+      }
+    },
+    {
+      "date": "1965",
+      "value": "4478555",
+      "locator": {
+        "sheet": "T10106-A",
+        "line_code": "A191RX",
+        "column": "1965"
+      }
+    },
+    {
+      "date": "1966",
+      "value": "4773931",
+      "locator": {
+        "sheet": "T10106-A",
+        "line_code": "A191RX",
+        "column": "1966"
+      }
+    },
+    {
+      "date": "1967",
+      "value": "4904864",
+      "locator": {
+        "sheet": "T10106-A",
+        "line_code": "A191RX",
+        "column": "1967"
+      }
+    },
+    {
+      "date": "1968",
+      "value": "5145914",
+      "locator": {
+        "sheet": "T10106-A",
+        "line_code": "A191RX",
+        "column": "1968"
+      }
+    },
+    {
+      "date": "1969",
+      "value": "5306594",
+      "locator": {
+        "sheet": "T10106-A",
+        "line_code": "A191RX",
+        "column": "1969"
+      }
+    },
+    {
+      "date": "1970",
+      "value": "5316391",
+      "locator": {
+        "sheet": "T10106-A",
+        "line_code": "A191RX",
+        "column": "1970"
+      }
+    },
+    {
+      "date": "1971",
+      "value": "5491445",
+      "locator": {
+        "sheet": "T10106-A",
+        "line_code": "A191RX",
+        "column": "1971"
+      }
+    },
+    {
+      "date": "1972",
+      "value": "5780048",
+      "locator": {
+        "sheet": "T10106-A",
+        "line_code": "A191RX",
+        "column": "1972"
+      }
+    },
+    {
+      "date": "1973",
+      "value": "6106371",
+      "locator": {
+        "sheet": "T10106-A",
+        "line_code": "A191RX",
+        "column": "1973"
+      }
+    },
+    {
+      "date": "1974",
+      "value": "6073363",
+      "locator": {
+        "sheet": "T10106-A",
+        "line_code": "A191RX",
+        "column": "1974"
+      }
+    },
+    {
+      "date": "1975",
+      "value": "6060875",
+      "locator": {
+        "sheet": "T10106-A",
+        "line_code": "A191RX",
+        "column": "1975"
+      }
+    },
+    {
+      "date": "1976",
+      "value": "6387437",
+      "locator": {
+        "sheet": "T10106-A",
+        "line_code": "A191RX",
+        "column": "1976"
+      }
+    },
+    {
+      "date": "1977",
+      "value": "6682804",
+      "locator": {
+        "sheet": "T10106-A",
+        "line_code": "A191RX",
+        "column": "1977"
+      }
+    },
+    {
+      "date": "1978",
+      "value": "7052711",
+      "locator": {
+        "sheet": "T10106-A",
+        "line_code": "A191RX",
+        "column": "1978"
+      }
+    },
+    {
+      "date": "1979",
+      "value": "7275999",
+      "locator": {
+        "sheet": "T10106-A",
+        "line_code": "A191RX",
+        "column": "1979"
+      }
+    },
+    {
+      "date": "1980",
+      "value": "7257316",
+      "locator": {
+        "sheet": "T10106-A",
+        "line_code": "A191RX",
+        "column": "1980"
+      }
+    },
+    {
+      "date": "1981",
+      "value": "7441485",
+      "locator": {
+        "sheet": "T10106-A",
+        "line_code": "A191RX",
+        "column": "1981"
+      }
+    },
+    {
+      "date": "1982",
+      "value": "7307314",
+      "locator": {
+        "sheet": "T10106-A",
+        "line_code": "A191RX",
+        "column": "1982"
+      }
+    },
+    {
+      "date": "1983",
+      "value": "7642266",
+      "locator": {
+        "sheet": "T10106-A",
+        "line_code": "A191RX",
+        "column": "1983"
+      }
+    },
+    {
+      "date": "1984",
+      "value": "8195295",
+      "locator": {
+        "sheet": "T10106-A",
+        "line_code": "A191RX",
+        "column": "1984"
+      }
+    },
+    {
+      "date": "1985",
+      "value": "8537004",
+      "locator": {
+        "sheet": "T10106-A",
+        "line_code": "A191RX",
+        "column": "1985"
+      }
+    },
+    {
+      "date": "1986",
+      "value": "8832611",
+      "locator": {
+        "sheet": "T10106-A",
+        "line_code": "A191RX",
+        "column": "1986"
+      }
+    },
+    {
+      "date": "1987",
+      "value": "9137745",
+      "locator": {
+        "sheet": "T10106-A",
+        "line_code": "A191RX",
+        "column": "1987"
+      }
+    },
+    {
+      "date": "1988",
+      "value": "9519427",
+      "locator": {
+        "sheet": "T10106-A",
+        "line_code": "A191RX",
+        "column": "1988"
+      }
+    },
+    {
+      "date": "1989",
+      "value": "9869003",
+      "locator": {
+        "sheet": "T10106-A",
+        "line_code": "A191RX",
+        "column": "1989"
+      }
+    },
+    {
+      "date": "1990",
+      "value": "10055129",
+      "locator": {
+        "sheet": "T10106-A",
+        "line_code": "A191RX",
+        "column": "1990"
+      }
+    },
+    {
+      "date": "1991",
+      "value": "10044238",
+      "locator": {
+        "sheet": "T10106-A",
+        "line_code": "A191RX",
+        "column": "1991"
+      }
+    },
+    {
+      "date": "1992",
+      "value": "10398046",
+      "locator": {
+        "sheet": "T10106-A",
+        "line_code": "A191RX",
+        "column": "1992"
+      }
+    },
+    {
+      "date": "1993",
+      "value": "10684179",
+      "locator": {
+        "sheet": "T10106-A",
+        "line_code": "A191RX",
+        "column": "1993"
+      }
+    },
+    {
+      "date": "1994",
+      "value": "11114647",
+      "locator": {
+        "sheet": "T10106-A",
+        "line_code": "A191RX",
+        "column": "1994"
+      }
+    },
+    {
+      "date": "1995",
+      "value": "11413012",
+      "locator": {
+        "sheet": "T10106-A",
+        "line_code": "A191RX",
+        "column": "1995"
+      }
+    },
+    {
+      "date": "1996",
+      "value": "11843599",
+      "locator": {
+        "sheet": "T10106-A",
+        "line_code": "A191RX",
+        "column": "1996"
+      }
+    },
+    {
+      "date": "1997",
+      "value": "12370299",
+      "locator": {
+        "sheet": "T10106-A",
+        "line_code": "A191RX",
+        "column": "1997"
+      }
+    },
+    {
+      "date": "1998",
+      "value": "12924876",
+      "locator": {
+        "sheet": "T10106-A",
+        "line_code": "A191RX",
+        "column": "1998"
+      }
+    },
+    {
+      "date": "1999",
+      "value": "13543774",
+      "locator": {
+        "sheet": "T10106-A",
+        "line_code": "A191RX",
+        "column": "1999"
+      }
+    },
+    {
+      "date": "2000",
+      "value": "14096033",
+      "locator": {
+        "sheet": "T10106-A",
+        "line_code": "A191RX",
+        "column": "2000"
+      }
+    },
+    {
+      "date": "2001",
+      "value": "14230726",
+      "locator": {
+        "sheet": "T10106-A",
+        "line_code": "A191RX",
+        "column": "2001"
+      }
+    },
+    {
+      "date": "2002",
+      "value": "14472712",
+      "locator": {
+        "sheet": "T10106-A",
+        "line_code": "A191RX",
+        "column": "2002"
+      }
+    },
+    {
+      "date": "2003",
+      "value": "14877312",
+      "locator": {
+        "sheet": "T10106-A",
+        "line_code": "A191RX",
+        "column": "2003"
+      }
+    },
+    {
+      "date": "2004",
+      "value": "15449757",
+      "locator": {
+        "sheet": "T10106-A",
+        "line_code": "A191RX",
+        "column": "2004"
+      }
+    },
+    {
+      "date": "2005",
+      "value": "15987957",
+      "locator": {
+        "sheet": "T10106-A",
+        "line_code": "A191RX",
+        "column": "2005"
+      }
+    },
+    {
+      "date": "2006",
+      "value": "16433148",
+      "locator": {
+        "sheet": "T10106-A",
+        "line_code": "A191RX",
+        "column": "2006"
+      }
+    },
+    {
+      "date": "2007",
+      "value": "16762445",
+      "locator": {
+        "sheet": "T10106-A",
+        "line_code": "A191RX",
+        "column": "2007"
+      }
+    },
+    {
+      "date": "2008",
+      "value": "16781485",
+      "locator": {
+        "sheet": "T10106-A",
+        "line_code": "A191RX",
+        "column": "2008"
+      }
+    },
+    {
+      "date": "2009",
+      "value": "16349110",
+      "locator": {
+        "sheet": "T10106-A",
+        "line_code": "A191RX",
+        "column": "2009"
+      }
+    },
+    {
+      "date": "2010",
+      "value": "16789750",
+      "locator": {
+        "sheet": "T10106-A",
+        "line_code": "A191RX",
+        "column": "2010"
+      }
+    },
+    {
+      "date": "2011",
+      "value": "17052410",
+      "locator": {
+        "sheet": "T10106-A",
+        "line_code": "A191RX",
+        "column": "2011"
+      }
+    },
+    {
+      "date": "2012",
+      "value": "17442759",
+      "locator": {
+        "sheet": "T10106-A",
+        "line_code": "A191RX",
+        "column": "2012"
+      }
+    },
+    {
+      "date": "2013",
+      "value": "17812167",
+      "locator": {
+        "sheet": "T10106-A",
+        "line_code": "A191RX",
+        "column": "2013"
+      }
+    },
+    {
+      "date": "2014",
+      "value": "18261714",
+      "locator": {
+        "sheet": "T10106-A",
+        "line_code": "A191RX",
+        "column": "2014"
+      }
+    },
+    {
+      "date": "2015",
+      "value": "18799622",
+      "locator": {
+        "sheet": "T10106-A",
+        "line_code": "A191RX",
+        "column": "2015"
+      }
+    },
+    {
+      "date": "2016",
+      "value": "19141672",
+      "locator": {
+        "sheet": "T10106-A",
+        "line_code": "A191RX",
+        "column": "2016"
+      }
+    },
+    {
+      "date": "2017",
+      "value": "19612102",
+      "locator": {
+        "sheet": "T10106-A",
+        "line_code": "A191RX",
+        "column": "2017"
+      }
+    },
+    {
+      "date": "2018",
+      "value": "20193896",
+      "locator": {
+        "sheet": "T10106-A",
+        "line_code": "A191RX",
+        "column": "2018"
+      }
+    },
+    {
+      "date": "2019",
+      "value": "20715671",
+      "locator": {
+        "sheet": "T10106-A",
+        "line_code": "A191RX",
+        "column": "2019"
+      }
+    },
+    {
+      "date": "2020",
+      "value": "20284500",
+      "locator": {
+        "sheet": "T10106-A",
+        "line_code": "A191RX",
+        "column": "2020"
+      }
+    },
+    {
+      "date": "2021",
+      "value": "21556002",
+      "locator": {
+        "sheet": "T10106-A",
+        "line_code": "A191RX",
+        "column": "2021"
+      }
+    },
+    {
+      "date": "2022",
+      "value": "22079726",
+      "locator": {
+        "sheet": "T10106-A",
+        "line_code": "A191RX",
+        "column": "2022"
+      }
+    },
+    {
+      "date": "2023",
+      "value": "22724135",
+      "locator": {
+        "sheet": "T10106-A",
+        "line_code": "A191RX",
+        "column": "2023"
+      }
+    },
+    {
+      "date": "2024",
+      "value": "23394892",
+      "locator": {
+        "sheet": "T10106-A",
+        "line_code": "A191RX",
+        "column": "2024"
+      }
+    },
+    {
+      "date": "2025",
+      "value": "23943305",
+      "locator": {
+        "sheet": "T10106-A",
+        "line_code": "A191RX",
+        "column": "2025"
+      }
+    }
+  ]
+}

@@ -1,0 +1,522 @@
+{
+  "id": "census_new_home_median_cpi_u",
+  "name": "Median sales price, CPI-U adjusted",
+  "units": "1982-84 dollars",
+  "adjustment": "inflation-adjusted with CPI-U, base 1982-84=100",
+  "nominal_or_real": "inflation-adjusted",
+  "frequency": "annual",
+  "source_id": "census_new_home_prices",
+  "series_url": "https://www.census.gov/construction/nrs/data/series.html",
+  "derived": true,
+  "inputs": [
+    "census_new_home_median",
+    "bls_cuur0000sa0_annual"
+  ],
+  "notes": "Median sales price times 100, divided by the CPI-U all-items annual average for that year. CPI-U base is 1982-84=100. Rounded half up to cents. Census does not publish this adjusted series.",
+  "points": [
+    {
+      "date": "1963",
+      "value": "58823.53",
+      "locator": {
+        "formula": "price x 100 / CPI-U",
+        "cpi_series": "bls_cuur0000sa0_annual"
+      }
+    },
+    {
+      "date": "1964",
+      "value": "60967.74",
+      "locator": {
+        "formula": "price x 100 / CPI-U",
+        "cpi_series": "bls_cuur0000sa0_annual"
+      }
+    },
+    {
+      "date": "1965",
+      "value": "63492.06",
+      "locator": {
+        "formula": "price x 100 / CPI-U",
+        "cpi_series": "bls_cuur0000sa0_annual"
+      }
+    },
+    {
+      "date": "1966",
+      "value": "66049.38",
+      "locator": {
+        "formula": "price x 100 / CPI-U",
+        "cpi_series": "bls_cuur0000sa0_annual"
+      }
+    },
+    {
+      "date": "1967",
+      "value": "67964.07",
+      "locator": {
+        "formula": "price x 100 / CPI-U",
+        "cpi_series": "bls_cuur0000sa0_annual"
+      }
+    },
+    {
+      "date": "1968",
+      "value": "70977.01",
+      "locator": {
+        "formula": "price x 100 / CPI-U",
+        "cpi_series": "bls_cuur0000sa0_annual"
+      }
+    },
+    {
+      "date": "1969",
+      "value": "69754.77",
+      "locator": {
+        "formula": "price x 100 / CPI-U",
+        "cpi_series": "bls_cuur0000sa0_annual"
+      }
+    },
+    {
+      "date": "1970",
+      "value": "60309.28",
+      "locator": {
+        "formula": "price x 100 / CPI-U",
+        "cpi_series": "bls_cuur0000sa0_annual"
+      }
+    },
+    {
+      "date": "1971",
+      "value": "62222.22",
+      "locator": {
+        "formula": "price x 100 / CPI-U",
+        "cpi_series": "bls_cuur0000sa0_annual"
+      }
+    },
+    {
+      "date": "1972",
+      "value": "66028.71",
+      "locator": {
+        "formula": "price x 100 / CPI-U",
+        "cpi_series": "bls_cuur0000sa0_annual"
+      }
+    },
+    {
+      "date": "1973",
+      "value": "73198.20",
+      "locator": {
+        "formula": "price x 100 / CPI-U",
+        "cpi_series": "bls_cuur0000sa0_annual"
+      }
+    },
+    {
+      "date": "1974",
+      "value": "72819.47",
+      "locator": {
+        "formula": "price x 100 / CPI-U",
+        "cpi_series": "bls_cuur0000sa0_annual"
+      }
+    },
+    {
+      "date": "1975",
+      "value": "73048.33",
+      "locator": {
+        "formula": "price x 100 / CPI-U",
+        "cpi_series": "bls_cuur0000sa0_annual"
+      }
+    },
+    {
+      "date": "1976",
+      "value": "77680.14",
+      "locator": {
+        "formula": "price x 100 / CPI-U",
+        "cpi_series": "bls_cuur0000sa0_annual"
+      }
+    },
+    {
+      "date": "1977",
+      "value": "80528.05",
+      "locator": {
+        "formula": "price x 100 / CPI-U",
+        "cpi_series": "bls_cuur0000sa0_annual"
+      }
+    },
+    {
+      "date": "1978",
+      "value": "85429.45",
+      "locator": {
+        "formula": "price x 100 / CPI-U",
+        "cpi_series": "bls_cuur0000sa0_annual"
+      }
+    },
+    {
+      "date": "1979",
+      "value": "86639.12",
+      "locator": {
+        "formula": "price x 100 / CPI-U",
+        "cpi_series": "bls_cuur0000sa0_annual"
+      }
+    },
+    {
+      "date": "1980",
+      "value": "78398.06",
+      "locator": {
+        "formula": "price x 100 / CPI-U",
+        "cpi_series": "bls_cuur0000sa0_annual"
+      }
+    },
+    {
+      "date": "1981",
+      "value": "75797.58",
+      "locator": {
+        "formula": "price x 100 / CPI-U",
+        "cpi_series": "bls_cuur0000sa0_annual"
+      }
+    },
+    {
+      "date": "1982",
+      "value": "71813.47",
+      "locator": {
+        "formula": "price x 100 / CPI-U",
+        "cpi_series": "bls_cuur0000sa0_annual"
+      }
+    },
+    {
+      "date": "1983",
+      "value": "75602.41",
+      "locator": {
+        "formula": "price x 100 / CPI-U",
+        "cpi_series": "bls_cuur0000sa0_annual"
+      }
+    },
+    {
+      "date": "1984",
+      "value": "76900.87",
+      "locator": {
+        "formula": "price x 100 / CPI-U",
+        "cpi_series": "bls_cuur0000sa0_annual"
+      }
+    },
+    {
+      "date": "1985",
+      "value": "78345.72",
+      "locator": {
+        "formula": "price x 100 / CPI-U",
+        "cpi_series": "bls_cuur0000sa0_annual"
+      }
+    },
+    {
+      "date": "1986",
+      "value": "83941.61",
+      "locator": {
+        "formula": "price x 100 / CPI-U",
+        "cpi_series": "bls_cuur0000sa0_annual"
+      }
+    },
+    {
+      "date": "1987",
+      "value": "91989.44",
+      "locator": {
+        "formula": "price x 100 / CPI-U",
+        "cpi_series": "bls_cuur0000sa0_annual"
+      }
+    },
+    {
+      "date": "1988",
+      "value": "95097.21",
+      "locator": {
+        "formula": "price x 100 / CPI-U",
+        "cpi_series": "bls_cuur0000sa0_annual"
+      }
+    },
+    {
+      "date": "1989",
+      "value": "96774.19",
+      "locator": {
+        "formula": "price x 100 / CPI-U",
+        "cpi_series": "bls_cuur0000sa0_annual"
+      }
+    },
+    {
+      "date": "1990",
+      "value": "94032.13",
+      "locator": {
+        "formula": "price x 100 / CPI-U",
+        "cpi_series": "bls_cuur0000sa0_annual"
+      }
+    },
+    {
+      "date": "1991",
+      "value": "88105.73",
+      "locator": {
+        "formula": "price x 100 / CPI-U",
+        "cpi_series": "bls_cuur0000sa0_annual"
+      }
+    },
+    {
+      "date": "1992",
+      "value": "86600.14",
+      "locator": {
+        "formula": "price x 100 / CPI-U",
+        "cpi_series": "bls_cuur0000sa0_annual"
+      }
+    },
+    {
+      "date": "1993",
+      "value": "87543.25",
+      "locator": {
+        "formula": "price x 100 / CPI-U",
+        "cpi_series": "bls_cuur0000sa0_annual"
+      }
+    },
+    {
+      "date": "1994",
+      "value": "87719.30",
+      "locator": {
+        "formula": "price x 100 / CPI-U",
+        "cpi_series": "bls_cuur0000sa0_annual"
+      }
+    },
+    {
+      "date": "1995",
+      "value": "87860.89",
+      "locator": {
+        "formula": "price x 100 / CPI-U",
+        "cpi_series": "bls_cuur0000sa0_annual"
+      }
+    },
+    {
+      "date": "1996",
+      "value": "89228.81",
+      "locator": {
+        "formula": "price x 100 / CPI-U",
+        "cpi_series": "bls_cuur0000sa0_annual"
+      }
+    },
+    {
+      "date": "1997",
+      "value": "90965.73",
+      "locator": {
+        "formula": "price x 100 / CPI-U",
+        "cpi_series": "bls_cuur0000sa0_annual"
+      }
+    },
+    {
+      "date": "1998",
+      "value": "93558.28",
+      "locator": {
+        "formula": "price x 100 / CPI-U",
+        "cpi_series": "bls_cuur0000sa0_annual"
+      }
+    },
+    {
+      "date": "1999",
+      "value": "96638.66",
+      "locator": {
+        "formula": "price x 100 / CPI-U",
+        "cpi_series": "bls_cuur0000sa0_annual"
+      }
+    },
+    {
+      "date": "2000",
+      "value": "98141.70",
+      "locator": {
+        "formula": "price x 100 / CPI-U",
+        "cpi_series": "bls_cuur0000sa0_annual"
+      }
+    },
+    {
+      "date": "2001",
+      "value": "98927.16",
+      "locator": {
+        "formula": "price x 100 / CPI-U",
+        "cpi_series": "bls_cuur0000sa0_annual"
+      }
+    },
+    {
+      "date": "2002",
+      "value": "104280.16",
+      "locator": {
+        "formula": "price x 100 / CPI-U",
+        "cpi_series": "bls_cuur0000sa0_annual"
+      }
+    },
+    {
+      "date": "2003",
+      "value": "105978.26",
+      "locator": {
+        "formula": "price x 100 / CPI-U",
+        "cpi_series": "bls_cuur0000sa0_annual"
+      }
+    },
+    {
+      "date": "2004",
+      "value": "116993.12",
+      "locator": {
+        "formula": "price x 100 / CPI-U",
+        "cpi_series": "bls_cuur0000sa0_annual"
+      }
+    },
+    {
+      "date": "2005",
+      "value": "123348.69",
+      "locator": {
+        "formula": "price x 100 / CPI-U",
+        "cpi_series": "bls_cuur0000sa0_annual"
+      }
+    },
+    {
+      "date": "2006",
+      "value": "122271.83",
+      "locator": {
+        "formula": "price x 100 / CPI-U",
+        "cpi_series": "bls_cuur0000sa0_annual"
+      }
+    },
+    {
+      "date": "2007",
+      "value": "119560.92",
+      "locator": {
+        "formula": "price x 100 / CPI-U",
+        "cpi_series": "bls_cuur0000sa0_annual"
+      }
+    },
+    {
+      "date": "2008",
+      "value": "107801.56",
+      "locator": {
+        "formula": "price x 100 / CPI-U",
+        "cpi_series": "bls_cuur0000sa0_annual"
+      }
+    },
+    {
+      "date": "2009",
+      "value": "101008.22",
+      "locator": {
+        "formula": "price x 100 / CPI-U",
+        "cpi_series": "bls_cuur0000sa0_annual"
+      }
+    },
+    {
+      "date": "2010",
+      "value": "101716.99",
+      "locator": {
+        "formula": "price x 100 / CPI-U",
+        "cpi_series": "bls_cuur0000sa0_annual"
+      }
+    },
+    {
+      "date": "2011",
+      "value": "101005.16",
+      "locator": {
+        "formula": "price x 100 / CPI-U",
+        "cpi_series": "bls_cuur0000sa0_annual"
+      }
+    },
+    {
+      "date": "2012",
+      "value": "106797.22",
+      "locator": {
+        "formula": "price x 100 / CPI-U",
+        "cpi_series": "bls_cuur0000sa0_annual"
+      }
+    },
+    {
+      "date": "2013",
+      "value": "115429.03",
+      "locator": {
+        "formula": "price x 100 / CPI-U",
+        "cpi_series": "bls_cuur0000sa0_annual"
+      }
+    },
+    {
+      "date": "2014",
+      "value": "121865.71",
+      "locator": {
+        "formula": "price x 100 / CPI-U",
+        "cpi_series": "bls_cuur0000sa0_annual"
+      }
+    },
+    {
+      "date": "2015",
+      "value": "124126.12",
+      "locator": {
+        "formula": "price x 100 / CPI-U",
+        "cpi_series": "bls_cuur0000sa0_annual"
+      }
+    },
+    {
+      "date": "2016",
+      "value": "128246.26",
+      "locator": {
+        "formula": "price x 100 / CPI-U",
+        "cpi_series": "bls_cuur0000sa0_annual"
+      }
+    },
+    {
+      "date": "2017",
+      "value": "131812.99",
+      "locator": {
+        "formula": "price x 100 / CPI-U",
+        "cpi_series": "bls_cuur0000sa0_annual"
+      }
+    },
+    {
+      "date": "2018",
+      "value": "129984.43",
+      "locator": {
+        "formula": "price x 100 / CPI-U",
+        "cpi_series": "bls_cuur0000sa0_annual"
+      }
+    },
+    {
+      "date": "2019",
+      "value": "125754.43",
+      "locator": {
+        "formula": "price x 100 / CPI-U",
+        "cpi_series": "bls_cuur0000sa0_annual"
+      }
+    },
+    {
+      "date": "2020",
+      "value": "127853.92",
+      "locator": {
+        "formula": "price x 100 / CPI-U",
+        "cpi_series": "bls_cuur0000sa0_annual"
+      }
+    },
+    {
+      "date": "2021",
+      "value": "141528.58",
+      "locator": {
+        "formula": "price x 100 / CPI-U",
+        "cpi_series": "bls_cuur0000sa0_annual"
+      }
+    },
+    {
+      "date": "2022",
+      "value": "148468.33",
+      "locator": {
+        "formula": "price x 100 / CPI-U",
+        "cpi_series": "bls_cuur0000sa0_annual"
+      }
+    },
+    {
+      "date": "2023",
+      "value": "140662.02",
+      "locator": {
+        "formula": "price x 100 / CPI-U",
+        "cpi_series": "bls_cuur0000sa0_annual"
+      }
+    },
+    {
+      "date": "2024",
+      "value": "133986.21",
+      "locator": {
+        "formula": "price x 100 / CPI-U",
+        "cpi_series": "bls_cuur0000sa0_annual"
+      }
+    },
+    {
+      "date": "2025",
+      "value": "129650.28",
+      "locator": {
+        "formula": "price x 100 / CPI-U",
+        "cpi_series": "bls_cuur0000sa0_annual"
+      }
+    }
+  ]
+}

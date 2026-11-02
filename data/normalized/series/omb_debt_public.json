@@ -1,0 +1,701 @@
+{
+  "id": "omb_debt_public",
+  "name": "Held by the Public, Total",
+  "units": "millions of dollars",
+  "adjustment": "fiscal year",
+  "nominal_or_real": "nominal",
+  "frequency": "fiscal_year",
+  "source_id": "hist07z1",
+  "series_url": "https://www.whitehouse.gov/wp-content/uploads/2026/04/hist07z1_fy2027.xlsx",
+  "notes": "Table 7.1 - FEDERAL DEBT AT THE END OF YEAR: 1940 - 2025",
+  "points": [
+    {
+      "date": "1940",
+      "value": "42772",
+      "locator": {
+        "row_label": "1940",
+        "column": "Held by the Public, Total"
+      }
+    },
+    {
+      "date": "1941",
+      "value": "48223",
+      "locator": {
+        "row_label": "1941",
+        "column": "Held by the Public, Total"
+      }
+    },
+    {
+      "date": "1942",
+      "value": "67753",
+      "locator": {
+        "row_label": "1942",
+        "column": "Held by the Public, Total"
+      }
+    },
+    {
+      "date": "1943",
+      "value": "127766",
+      "locator": {
+        "row_label": "1943",
+        "column": "Held by the Public, Total"
+      }
+    },
+    {
+      "date": "1944",
+      "value": "184796",
+      "locator": {
+        "row_label": "1944",
+        "column": "Held by the Public, Total"
+      }
+    },
+    {
+      "date": "1945",
+      "value": "235182",
+      "locator": {
+        "row_label": "1945",
+        "column": "Held by the Public, Total"
+      }
+    },
+    {
+      "date": "1946",
+      "value": "241861",
+      "locator": {
+        "row_label": "1946",
+        "column": "Held by the Public, Total"
+      }
+    },
+    {
+      "date": "1947",
+      "value": "224339",
+      "locator": {
+        "row_label": "1947",
+        "column": "Held by the Public, Total"
+      }
+    },
+    {
+      "date": "1948",
+      "value": "216270",
+      "locator": {
+        "row_label": "1948",
+        "column": "Held by the Public, Total"
+      }
+    },
+    {
+      "date": "1949",
+      "value": "214322",
+      "locator": {
+        "row_label": "1949",
+        "column": "Held by the Public, Total"
+      }
+    },
+    {
+      "date": "1950",
+      "value": "219023",
+      "locator": {
+        "row_label": "1950",
+        "column": "Held by the Public, Total"
+      }
+    },
+    {
+      "date": "1951",
+      "value": "214326",
+      "locator": {
+        "row_label": "1951",
+        "column": "Held by the Public, Total"
+      }
+    },
+    {
+      "date": "1952",
+      "value": "214758",
+      "locator": {
+        "row_label": "1952",
+        "column": "Held by the Public, Total"
+      }
+    },
+    {
+      "date": "1953",
+      "value": "218383",
+      "locator": {
+        "row_label": "1953",
+        "column": "Held by the Public, Total"
+      }
+    },
+    {
+      "date": "1954",
+      "value": "224499",
+      "locator": {
+        "row_label": "1954",
+        "column": "Held by the Public, Total"
+      }
+    },
+    {
+      "date": "1955",
+      "value": "226616",
+      "locator": {
+        "row_label": "1955",
+        "column": "Held by the Public, Total"
+      }
+    },
+    {
+      "date": "1956",
+      "value": "222156",
+      "locator": {
+        "row_label": "1956",
+        "column": "Held by the Public, Total"
+      }
+    },
+    {
+      "date": "1957",
+      "value": "219320",
+      "locator": {
+        "row_label": "1957",
+        "column": "Held by the Public, Total"
+      }
+    },
+    {
+      "date": "1958",
+      "value": "226336",
+      "locator": {
+        "row_label": "1958",
+        "column": "Held by the Public, Total"
+      }
+    },
+    {
+      "date": "1959",
+      "value": "234701",
+      "locator": {
+        "row_label": "1959",
+        "column": "Held by the Public, Total"
+      }
+    },
+    {
+      "date": "1960",
+      "value": "236840",
+      "locator": {
+        "row_label": "1960",
+        "column": "Held by the Public, Total"
+      }
+    },
+    {
+      "date": "1961",
+      "value": "238357",
+      "locator": {
+        "row_label": "1961",
+        "column": "Held by the Public, Total"
+      }
+    },
+    {
+      "date": "1962",
+      "value": "248010",
+      "locator": {
+        "row_label": "1962",
+        "column": "Held by the Public, Total"
+      }
+    },
+    {
+      "date": "1963",
+      "value": "253978",
+      "locator": {
+        "row_label": "1963",
+        "column": "Held by the Public, Total"
+      }
+    },
+    {
+      "date": "1964",
+      "value": "256849",
+      "locator": {
+        "row_label": "1964",
+        "column": "Held by the Public, Total"
+      }
+    },
+    {
+      "date": "1965",
+      "value": "260778",
+      "locator": {
+        "row_label": "1965",
+        "column": "Held by the Public, Total"
+      }
+    },
+    {
+      "date": "1966",
+      "value": "263714",
+      "locator": {
+        "row_label": "1966",
+        "column": "Held by the Public, Total"
+      }
+    },
+    {
+      "date": "1967",
+      "value": "266626",
+      "locator": {
+        "row_label": "1967",
+        "column": "Held by the Public, Total"
+      }
+    },
+    {
+      "date": "1968",
+      "value": "289545",
+      "locator": {
+        "row_label": "1968",
+        "column": "Held by the Public, Total"
+      }
+    },
+    {
+      "date": "1969",
+      "value": "278108",
+      "locator": {
+        "row_label": "1969",
+        "column": "Held by the Public, Total"
+      }
+    },
+    {
+      "date": "1970",
+      "value": "283198",
+      "locator": {
+        "row_label": "1970",
+        "column": "Held by the Public, Total"
+      }
+    },
+    {
+      "date": "1971",
+      "value": "303037",
+      "locator": {
+        "row_label": "1971",
+        "column": "Held by the Public, Total"
+      }
+    },
+    {
+      "date": "1972",
+      "value": "322377",
+      "locator": {
+        "row_label": "1972",
+        "column": "Held by the Public, Total"
+      }
+    },
+    {
+      "date": "1973",
+      "value": "340910",
+      "locator": {
+        "row_label": "1973",
+        "column": "Held by the Public, Total"
+      }
+    },
+    {
+      "date": "1974",
+      "value": "343699",
+      "locator": {
+        "row_label": "1974",
+        "column": "Held by the Public, Total"
+      }
+    },
+    {
+      "date": "1975",
+      "value": "394700",
+      "locator": {
+        "row_label": "1975",
+        "column": "Held by the Public, Total"
+      }
+    },
+    {
+      "date": "1976",
+      "value": "477404",
+      "locator": {
+        "row_label": "1976",
+        "column": "Held by the Public, Total"
+      }
+    },
+    {
+      "date": "1977",
+      "value": "549104",
+      "locator": {
+        "row_label": "1977",
+        "column": "Held by the Public, Total"
+      }
+    },
+    {
+      "date": "1978",
+      "value": "607126",
+      "locator": {
+        "row_label": "1978",
+        "column": "Held by the Public, Total"
+      }
+    },
+    {
+      "date": "1979",
+      "value": "640306",
+      "locator": {
+        "row_label": "1979",
+        "column": "Held by the Public, Total"
+      }
+    },
+    {
+      "date": "1980",
+      "value": "711923",
+      "locator": {
+        "row_label": "1980",
+        "column": "Held by the Public, Total"
+      }
+    },
+    {
+      "date": "1981",
+      "value": "789410",
+      "locator": {
+        "row_label": "1981",
+        "column": "Held by the Public, Total"
+      }
+    },
+    {
+      "date": "1982",
+      "value": "924575",
+      "locator": {
+        "row_label": "1982",
+        "column": "Held by the Public, Total"
+      }
+    },
+    {
+      "date": "1983",
+      "value": "1137268",
+      "locator": {
+        "row_label": "1983",
+        "column": "Held by the Public, Total"
+      }
+    },
+    {
+      "date": "1984",
+      "value": "1306975",
+      "locator": {
+        "row_label": "1984",
+        "column": "Held by the Public, Total"
+      }
+    },
+    {
+      "date": "1985",
+      "value": "1507260",
+      "locator": {
+        "row_label": "1985",
+        "column": "Held by the Public, Total"
+      }
+    },
+    {
+      "date": "1986",
+      "value": "1740623",
+      "locator": {
+        "row_label": "1986",
+        "column": "Held by the Public, Total"
+      }
+    },
+    {
+      "date": "1987",
+      "value": "1889753",
+      "locator": {
+        "row_label": "1987",
+        "column": "Held by the Public, Total"
+      }
+    },
+    {
+      "date": "1988",
+      "value": "2051616",
+      "locator": {
+        "row_label": "1988",
+        "column": "Held by the Public, Total"
+      }
+    },
+    {
+      "date": "1989",
+      "value": "2190716",
+      "locator": {
+        "row_label": "1989",
+        "column": "Held by the Public, Total"
+      }
+    },
+    {
+      "date": "1990",
+      "value": "2411558",
+      "locator": {
+        "row_label": "1990",
+        "column": "Held by the Public, Total"
+      }
+    },
+    {
+      "date": "1991",
+      "value": "2688999",
+      "locator": {
+        "row_label": "1991",
+        "column": "Held by the Public, Total"
+      }
+    },
+    {
+      "date": "1992",
+      "value": "2999737",
+      "locator": {
+        "row_label": "1992",
+        "column": "Held by the Public, Total"
+      }
+    },
+    {
+      "date": "1993",
+      "value": "3248396",
+      "locator": {
+        "row_label": "1993",
+        "column": "Held by the Public, Total"
+      }
+    },
+    {
+      "date": "1994",
+      "value": "3433065",
+      "locator": {
+        "row_label": "1994",
+        "column": "Held by the Public, Total"
+      }
+    },
+    {
+      "date": "1995",
+      "value": "3604378",
+      "locator": {
+        "row_label": "1995",
+        "column": "Held by the Public, Total"
+      }
+    },
+    {
+      "date": "1996",
+      "value": "3734073",
+      "locator": {
+        "row_label": "1996",
+        "column": "Held by the Public, Total"
+      }
+    },
+    {
+      "date": "1997",
+      "value": "3772344",
+      "locator": {
+        "row_label": "1997",
+        "column": "Held by the Public, Total"
+      }
+    },
+    {
+      "date": "1998",
+      "value": "3721099",
+      "locator": {
+        "row_label": "1998",
+        "column": "Held by the Public, Total"
+      }
+    },
+    {
+      "date": "1999",
+      "value": "3632363",
+      "locator": {
+        "row_label": "1999",
+        "column": "Held by the Public, Total"
+      }
+    },
+    {
+      "date": "2000",
+      "value": "3409804",
+      "locator": {
+        "row_label": "2000",
+        "column": "Held by the Public, Total"
+      }
+    },
+    {
+      "date": "2001",
+      "value": "3319615",
+      "locator": {
+        "row_label": "2001",
+        "column": "Held by the Public, Total"
+      }
+    },
+    {
+      "date": "2002",
+      "value": "3540427",
+      "locator": {
+        "row_label": "2002",
+        "column": "Held by the Public, Total"
+      }
+    },
+    {
+      "date": "2003",
+      "value": "3913443",
+      "locator": {
+        "row_label": "2003",
+        "column": "Held by the Public, Total"
+      }
+    },
+    {
+      "date": "2004",
+      "value": "4295544",
+      "locator": {
+        "row_label": "2004",
+        "column": "Held by the Public, Total"
+      }
+    },
+    {
+      "date": "2005",
+      "value": "4592212",
+      "locator": {
+        "row_label": "2005",
+        "column": "Held by the Public, Total"
+      }
+    },
+    {
+      "date": "2006",
+      "value": "4828972",
+      "locator": {
+        "row_label": "2006",
+        "column": "Held by the Public, Total"
+      }
+    },
+    {
+      "date": "2007",
+      "value": "5035129",
+      "locator": {
+        "row_label": "2007",
+        "column": "Held by the Public, Total"
+      }
+    },
+    {
+      "date": "2008",
+      "value": "5803050",
+      "locator": {
+        "row_label": "2008",
+        "column": "Held by the Public, Total"
+      }
+    },
+    {
+      "date": "2009",
+      "value": "7544707",
+      "locator": {
+        "row_label": "2009",
+        "column": "Held by the Public, Total"
+      }
+    },
+    {
+      "date": "2010",
+      "value": "9018882",
+      "locator": {
+        "row_label": "2010",
+        "column": "Held by the Public, Total"
+      }
+    },
+    {
+      "date": "2011",
+      "value": "10128187",
+      "locator": {
+        "row_label": "2011",
+        "column": "Held by the Public, Total"
+      }
+    },
+    {
+      "date": "2012",
+      "value": "11281131",
+      "locator": {
+        "row_label": "2012",
+        "column": "Held by the Public, Total"
+      }
+    },
+    {
+      "date": "2013",
+      "value": "11982713",
+      "locator": {
+        "row_label": "2013",
+        "column": "Held by the Public, Total"
+      }
+    },
+    {
+      "date": "2014",
+      "value": "12779899",
+      "locator": {
+        "row_label": "2014",
+        "column": "Held by the Public, Total"
+      }
+    },
+    {
+      "date": "2015",
+      "value": "13116692",
+      "locator": {
+        "row_label": "2015",
+        "column": "Held by the Public, Total"
+      }
+    },
+    {
+      "date": "2016",
+      "value": "14167624",
+      "locator": {
+        "row_label": "2016",
+        "column": "Held by the Public, Total"
+      }
+    },
+    {
+      "date": "2017",
+      "value": "14665439",
+      "locator": {
+        "row_label": "2017",
+        "column": "Held by the Public, Total"
+      }
+    },
+    {
+      "date": "2018",
+      "value": "15749567",
+      "locator": {
+        "row_label": "2018",
+        "column": "Held by the Public, Total"
+      }
+    },
+    {
+      "date": "2019",
+      "value": "16800700",
+      "locator": {
+        "row_label": "2019",
+        "column": "Held by the Public, Total"
+      }
+    },
+    {
+      "date": "2020",
+      "value": "21016669",
+      "locator": {
+        "row_label": "2020",
+        "column": "Held by the Public, Total"
+      }
+    },
+    {
+      "date": "2021",
+      "value": "22284040",
+      "locator": {
+        "row_label": "2021",
+        "column": "Held by the Public, Total"
+      }
+    },
+    {
+      "date": "2022",
+      "value": "24253445",
+      "locator": {
+        "row_label": "2022",
+        "column": "Held by the Public, Total"
+      }
+    },
+    {
+      "date": "2023",
+      "value": "26235592",
+      "locator": {
+        "row_label": "2023",
+        "column": "Held by the Public, Total"
+      }
+    },
+    {
+      "date": "2024",
+      "value": "28193866",
+      "locator": {
+        "row_label": "2024",
+        "column": "Held by the Public, Total"
+      }
+    },
+    {
+      "date": "2025",
+      "value": "30167224",
+      "locator": {
+        "row_label": "2025",
+        "column": "Held by the Public, Total"
+      }
+    }
+  ]
+}

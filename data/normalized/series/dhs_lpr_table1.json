@@ -1,0 +1,2063 @@
+{
+  "id": "dhs_lpr_table1",
+  "name": "Persons Obtaining Lawful Permanent Resident Status",
+  "units": "Persons",
+  "adjustment": "as published",
+  "nominal_or_real": "count",
+  "frequency": "fiscal_year",
+  "source_id": "dhs_lpr_yearbook",
+  "series_url": "https://ohss.dhs.gov/topics/immigration/yearbook/2024/table1",
+  "notes": "Table 1, Persons Obtaining Lawful Permanent Resident Status. 1 Includes the 15 months from July 1, 1975 to September 30, 1976 because the end date of fiscal years was changed from June 30 to September 30. Note: To protect privacy, we round table cells to the nearest 10. Source: March 2025 Office of Homeland Security Statistics System of Record based on data provided by USCIS.",
+  "points": [
+    {
+      "date": "1820",
+      "value": "8390",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1820",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1821",
+      "value": "9130",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1821",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1822",
+      "value": "6910",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1822",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1823",
+      "value": "6350",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1823",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1824",
+      "value": "7910",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1824",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1825",
+      "value": "10200",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1825",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1826",
+      "value": "10840",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1826",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1827",
+      "value": "18880",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1827",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1828",
+      "value": "27380",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1828",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1829",
+      "value": "22520",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1829",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1830",
+      "value": "23320",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1830",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1831",
+      "value": "22630",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1831",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1832",
+      "value": "60480",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1832",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1833",
+      "value": "58640",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1833",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1834",
+      "value": "65370",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1834",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1835",
+      "value": "45370",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1835",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1836",
+      "value": "76240",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1836",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1837",
+      "value": "79340",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1837",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1838",
+      "value": "38910",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1838",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1839",
+      "value": "68070",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1839",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1840",
+      "value": "84070",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1840",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1841",
+      "value": "80290",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1841",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1842",
+      "value": "104570",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1842",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1843",
+      "value": "52500",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1843",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1844",
+      "value": "78620",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1844",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1845",
+      "value": "114370",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1845",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1846",
+      "value": "154420",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1846",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1847",
+      "value": "234970",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1847",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1848",
+      "value": "226530",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1848",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1849",
+      "value": "297020",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1849",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1850",
+      "value": "369980",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1850",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1851",
+      "value": "379470",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1851",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1852",
+      "value": "371600",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1852",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1853",
+      "value": "368650",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1853",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1854",
+      "value": "427830",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1854",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1855",
+      "value": "200880",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1855",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1856",
+      "value": "200440",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1856",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1857",
+      "value": "251310",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1857",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1858",
+      "value": "123130",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1858",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1859",
+      "value": "121280",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1859",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1860",
+      "value": "153640",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1860",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1861",
+      "value": "91920",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1861",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1862",
+      "value": "91990",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1862",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1863",
+      "value": "176280",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1863",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1864",
+      "value": "193420",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1864",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1865",
+      "value": "248120",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1865",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1866",
+      "value": "318570",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1866",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1867",
+      "value": "315720",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1867",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1868",
+      "value": "138840",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1868",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1869",
+      "value": "352770",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1869",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1870",
+      "value": "387200",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1870",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1871",
+      "value": "321350",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1871",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1872",
+      "value": "404810",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1872",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1873",
+      "value": "459800",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1873",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1874",
+      "value": "313340",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1874",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1875",
+      "value": "227500",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1875",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1876",
+      "value": "169990",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1876",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1877",
+      "value": "141860",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1877",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1878",
+      "value": "138470",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1878",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1879",
+      "value": "177830",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1879",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1880",
+      "value": "457260",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1880",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1881",
+      "value": "669430",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1881",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1882",
+      "value": "788990",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1882",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1883",
+      "value": "603320",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1883",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1884",
+      "value": "518590",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1884",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1885",
+      "value": "395350",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1885",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1886",
+      "value": "334200",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1886",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1887",
+      "value": "490110",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1887",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1888",
+      "value": "546890",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1888",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1889",
+      "value": "444430",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1889",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1890",
+      "value": "455300",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1890",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1891",
+      "value": "560320",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1891",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1892",
+      "value": "579660",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1892",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1893",
+      "value": "439730",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1893",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1894",
+      "value": "285630",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1894",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1895",
+      "value": "258540",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1895",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1896",
+      "value": "343270",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1896",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1897",
+      "value": "230830",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1897",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1898",
+      "value": "229300",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1898",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1899",
+      "value": "311720",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1899",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1900",
+      "value": "448570",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1900",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1901",
+      "value": "487920",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1901",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1902",
+      "value": "648740",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1902",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1903",
+      "value": "857050",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1903",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1904",
+      "value": "812870",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1904",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1905",
+      "value": "1026500",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1905",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1906",
+      "value": "1100740",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1906",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1907",
+      "value": "1285350",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1907",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1908",
+      "value": "782870",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1908",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1909",
+      "value": "751790",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1909",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1910",
+      "value": "1041570",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1910",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1911",
+      "value": "878590",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1911",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1912",
+      "value": "838170",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1912",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1913",
+      "value": "1197890",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1913",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1914",
+      "value": "1218480",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1914",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1915",
+      "value": "326700",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1915",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1916",
+      "value": "298830",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1916",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1917",
+      "value": "295400",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1917",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1918",
+      "value": "110620",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1918",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1919",
+      "value": "141130",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1919",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1920",
+      "value": "430000",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1920",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1921",
+      "value": "805230",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1921",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1922",
+      "value": "309560",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1922",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1923",
+      "value": "522920",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1923",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1924",
+      "value": "706900",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1924",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1925",
+      "value": "294310",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1925",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1926",
+      "value": "304490",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1926",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1927",
+      "value": "335180",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1927",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1928",
+      "value": "307260",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1928",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1929",
+      "value": "279680",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1929",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1930",
+      "value": "241700",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1930",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1931",
+      "value": "97140",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1931",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1932",
+      "value": "35580",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1932",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1933",
+      "value": "23070",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1933",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1934",
+      "value": "29470",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1934",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1935",
+      "value": "34960",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1935",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1936",
+      "value": "36330",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1936",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1937",
+      "value": "50240",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1937",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1938",
+      "value": "67900",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1938",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1939",
+      "value": "83000",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1939",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1940",
+      "value": "70760",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1940",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1941",
+      "value": "51780",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1941",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1942",
+      "value": "28780",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1942",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1943",
+      "value": "23730",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1943",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1944",
+      "value": "28550",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1944",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1945",
+      "value": "38120",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1945",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1946",
+      "value": "108720",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1946",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1947",
+      "value": "147290",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1947",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1948",
+      "value": "170570",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1948",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1949",
+      "value": "188320",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1949",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1950",
+      "value": "249190",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1950",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1951",
+      "value": "205720",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1951",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1952",
+      "value": "265520",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1952",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1953",
+      "value": "170430",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1953",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1954",
+      "value": "208180",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1954",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1955",
+      "value": "237790",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1955",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1956",
+      "value": "321630",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1956",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1957",
+      "value": "326870",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1957",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1958",
+      "value": "253270",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1958",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1959",
+      "value": "260690",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1959",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1960",
+      "value": "265400",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1960",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1961",
+      "value": "271340",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1961",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1962",
+      "value": "283760",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1962",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1963",
+      "value": "306260",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1963",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1964",
+      "value": "292250",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1964",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1965",
+      "value": "296700",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1965",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1966",
+      "value": "323040",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1966",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1967",
+      "value": "361970",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1967",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1968",
+      "value": "454450",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1968",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1969",
+      "value": "358580",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1969",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1970",
+      "value": "373330",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1970",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1971",
+      "value": "370480",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1971",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1972",
+      "value": "384690",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1972",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1973",
+      "value": "398520",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1973",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1974",
+      "value": "393920",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1974",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1975",
+      "value": "385380",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1975",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1976",
+      "value": "499090",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1976 1",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1977",
+      "value": "458760",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1977",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1978",
+      "value": "589810",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1978",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1979",
+      "value": "394240",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1979",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1980",
+      "value": "524300",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1980",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1981",
+      "value": "595010",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1981",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1982",
+      "value": "533620",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1982",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1983",
+      "value": "550050",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1983",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1984",
+      "value": "541810",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1984",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1985",
+      "value": "568150",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1985",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1986",
+      "value": "600030",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1986",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1987",
+      "value": "599890",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1987",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1988",
+      "value": "641350",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1988",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1989",
+      "value": "1090170",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1989",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1990",
+      "value": "1535870",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1990",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1991",
+      "value": "1826600",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1991",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1992",
+      "value": "973450",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1992",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1993",
+      "value": "903920",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1993",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1994",
+      "value": "803990",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1994",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1995",
+      "value": "720180",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1995",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1996",
+      "value": "915560",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1996",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1997",
+      "value": "797850",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1997",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1998",
+      "value": "653210",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1998",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "1999",
+      "value": "644790",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "1999",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "2000",
+      "value": "841000",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "2000",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "2001",
+      "value": "1058900",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "2001",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "2002",
+      "value": "1059360",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "2002",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "2003",
+      "value": "703540",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "2003",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "2004",
+      "value": "957880",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "2004",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "2005",
+      "value": "1122260",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "2005",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "2006",
+      "value": "1266130",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "2006",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "2007",
+      "value": "1052420",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "2007",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "2008",
+      "value": "1107130",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "2008",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "2009",
+      "value": "1130820",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "2009",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "2010",
+      "value": "1042630",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "2010",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "2011",
+      "value": "1062040",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "2011",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "2012",
+      "value": "1031630",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "2012",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "2013",
+      "value": "990550",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "2013",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "2014",
+      "value": "1016520",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "2014",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "2015",
+      "value": "1051030",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "2015",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "2016",
+      "value": "1183510",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "2016",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "2017",
+      "value": "1127170",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "2017",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "2018",
+      "value": "1096610",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "2018",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "2019",
+      "value": "1031770",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "2019",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "2020",
+      "value": "707360",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "2020",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "2021",
+      "value": "740000",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "2021",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "2022",
+      "value": "1018350",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "2022",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "2023",
+      "value": "1172910",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "2023",
+        "column": "Number"
+      }
+    },
+    {
+      "date": "2024",
+      "value": "1364090",
+      "locator": {
+        "source_id": "dhs_lpr_yearbook",
+        "sheet": "Table 1",
+        "row_label": "2024",
+        "column": "Number"
+      }
+    }
+  ]
+}

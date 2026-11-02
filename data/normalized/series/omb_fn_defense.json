@@ -1,0 +1,701 @@
+{
+  "id": "omb_fn_defense",
+  "name": "National Defense",
+  "units": "millions of dollars",
+  "adjustment": "fiscal year",
+  "nominal_or_real": "nominal",
+  "frequency": "fiscal_year",
+  "source_id": "hist03z1",
+  "series_url": "https://www.whitehouse.gov/wp-content/uploads/2026/04/hist03z1_fy2027.xlsx",
+  "notes": "Estimate columns in the source table are omitted.",
+  "points": [
+    {
+      "date": "1940",
+      "value": "1660",
+      "locator": {
+        "row_label": "National Defense",
+        "column": "1940"
+      }
+    },
+    {
+      "date": "1941",
+      "value": "6435",
+      "locator": {
+        "row_label": "National Defense",
+        "column": "1941"
+      }
+    },
+    {
+      "date": "1942",
+      "value": "25658",
+      "locator": {
+        "row_label": "National Defense",
+        "column": "1942"
+      }
+    },
+    {
+      "date": "1943",
+      "value": "66699",
+      "locator": {
+        "row_label": "National Defense",
+        "column": "1943"
+      }
+    },
+    {
+      "date": "1944",
+      "value": "79143",
+      "locator": {
+        "row_label": "National Defense",
+        "column": "1944"
+      }
+    },
+    {
+      "date": "1945",
+      "value": "82965",
+      "locator": {
+        "row_label": "National Defense",
+        "column": "1945"
+      }
+    },
+    {
+      "date": "1946",
+      "value": "42681",
+      "locator": {
+        "row_label": "National Defense",
+        "column": "1946"
+      }
+    },
+    {
+      "date": "1947",
+      "value": "12808",
+      "locator": {
+        "row_label": "National Defense",
+        "column": "1947"
+      }
+    },
+    {
+      "date": "1948",
+      "value": "9105",
+      "locator": {
+        "row_label": "National Defense",
+        "column": "1948"
+      }
+    },
+    {
+      "date": "1949",
+      "value": "13150",
+      "locator": {
+        "row_label": "National Defense",
+        "column": "1949"
+      }
+    },
+    {
+      "date": "1950",
+      "value": "13724",
+      "locator": {
+        "row_label": "National Defense",
+        "column": "1950"
+      }
+    },
+    {
+      "date": "1951",
+      "value": "23566",
+      "locator": {
+        "row_label": "National Defense",
+        "column": "1951"
+      }
+    },
+    {
+      "date": "1952",
+      "value": "46089",
+      "locator": {
+        "row_label": "National Defense",
+        "column": "1952"
+      }
+    },
+    {
+      "date": "1953",
+      "value": "52802",
+      "locator": {
+        "row_label": "National Defense",
+        "column": "1953"
+      }
+    },
+    {
+      "date": "1954",
+      "value": "49266",
+      "locator": {
+        "row_label": "National Defense",
+        "column": "1954"
+      }
+    },
+    {
+      "date": "1955",
+      "value": "42729",
+      "locator": {
+        "row_label": "National Defense",
+        "column": "1955"
+      }
+    },
+    {
+      "date": "1956",
+      "value": "42523",
+      "locator": {
+        "row_label": "National Defense",
+        "column": "1956"
+      }
+    },
+    {
+      "date": "1957",
+      "value": "45430",
+      "locator": {
+        "row_label": "National Defense",
+        "column": "1957"
+      }
+    },
+    {
+      "date": "1958",
+      "value": "46815",
+      "locator": {
+        "row_label": "National Defense",
+        "column": "1958"
+      }
+    },
+    {
+      "date": "1959",
+      "value": "49015",
+      "locator": {
+        "row_label": "National Defense",
+        "column": "1959"
+      }
+    },
+    {
+      "date": "1960",
+      "value": "48130",
+      "locator": {
+        "row_label": "National Defense",
+        "column": "1960"
+      }
+    },
+    {
+      "date": "1961",
+      "value": "49601",
+      "locator": {
+        "row_label": "National Defense",
+        "column": "1961"
+      }
+    },
+    {
+      "date": "1962",
+      "value": "52345",
+      "locator": {
+        "row_label": "National Defense",
+        "column": "1962"
+      }
+    },
+    {
+      "date": "1963",
+      "value": "53400",
+      "locator": {
+        "row_label": "National Defense",
+        "column": "1963"
+      }
+    },
+    {
+      "date": "1964",
+      "value": "54757",
+      "locator": {
+        "row_label": "National Defense",
+        "column": "1964"
+      }
+    },
+    {
+      "date": "1965",
+      "value": "50620",
+      "locator": {
+        "row_label": "National Defense",
+        "column": "1965"
+      }
+    },
+    {
+      "date": "1966",
+      "value": "58111",
+      "locator": {
+        "row_label": "National Defense",
+        "column": "1966"
+      }
+    },
+    {
+      "date": "1967",
+      "value": "71417",
+      "locator": {
+        "row_label": "National Defense",
+        "column": "1967"
+      }
+    },
+    {
+      "date": "1968",
+      "value": "81926",
+      "locator": {
+        "row_label": "National Defense",
+        "column": "1968"
+      }
+    },
+    {
+      "date": "1969",
+      "value": "82497",
+      "locator": {
+        "row_label": "National Defense",
+        "column": "1969"
+      }
+    },
+    {
+      "date": "1970",
+      "value": "81692",
+      "locator": {
+        "row_label": "National Defense",
+        "column": "1970"
+      }
+    },
+    {
+      "date": "1971",
+      "value": "78872",
+      "locator": {
+        "row_label": "National Defense",
+        "column": "1971"
+      }
+    },
+    {
+      "date": "1972",
+      "value": "79174",
+      "locator": {
+        "row_label": "National Defense",
+        "column": "1972"
+      }
+    },
+    {
+      "date": "1973",
+      "value": "76681",
+      "locator": {
+        "row_label": "National Defense",
+        "column": "1973"
+      }
+    },
+    {
+      "date": "1974",
+      "value": "79347",
+      "locator": {
+        "row_label": "National Defense",
+        "column": "1974"
+      }
+    },
+    {
+      "date": "1975",
+      "value": "86509",
+      "locator": {
+        "row_label": "National Defense",
+        "column": "1975"
+      }
+    },
+    {
+      "date": "1976",
+      "value": "89619",
+      "locator": {
+        "row_label": "National Defense",
+        "column": "1976"
+      }
+    },
+    {
+      "date": "1977",
+      "value": "97241",
+      "locator": {
+        "row_label": "National Defense",
+        "column": "1977"
+      }
+    },
+    {
+      "date": "1978",
+      "value": "104495",
+      "locator": {
+        "row_label": "National Defense",
+        "column": "1978"
+      }
+    },
+    {
+      "date": "1979",
+      "value": "116342",
+      "locator": {
+        "row_label": "National Defense",
+        "column": "1979"
+      }
+    },
+    {
+      "date": "1980",
+      "value": "133995",
+      "locator": {
+        "row_label": "National Defense",
+        "column": "1980"
+      }
+    },
+    {
+      "date": "1981",
+      "value": "157513",
+      "locator": {
+        "row_label": "National Defense",
+        "column": "1981"
+      }
+    },
+    {
+      "date": "1982",
+      "value": "185309",
+      "locator": {
+        "row_label": "National Defense",
+        "column": "1982"
+      }
+    },
+    {
+      "date": "1983",
+      "value": "209903",
+      "locator": {
+        "row_label": "National Defense",
+        "column": "1983"
+      }
+    },
+    {
+      "date": "1984",
+      "value": "227411",
+      "locator": {
+        "row_label": "National Defense",
+        "column": "1984"
+      }
+    },
+    {
+      "date": "1985",
+      "value": "252743",
+      "locator": {
+        "row_label": "National Defense",
+        "column": "1985"
+      }
+    },
+    {
+      "date": "1986",
+      "value": "273373",
+      "locator": {
+        "row_label": "National Defense",
+        "column": "1986"
+      }
+    },
+    {
+      "date": "1987",
+      "value": "281996",
+      "locator": {
+        "row_label": "National Defense",
+        "column": "1987"
+      }
+    },
+    {
+      "date": "1988",
+      "value": "290360",
+      "locator": {
+        "row_label": "National Defense",
+        "column": "1988"
+      }
+    },
+    {
+      "date": "1989",
+      "value": "303555",
+      "locator": {
+        "row_label": "National Defense",
+        "column": "1989"
+      }
+    },
+    {
+      "date": "1990",
+      "value": "299321",
+      "locator": {
+        "row_label": "National Defense",
+        "column": "1990"
+      }
+    },
+    {
+      "date": "1991",
+      "value": "273285",
+      "locator": {
+        "row_label": "National Defense",
+        "column": "1991"
+      }
+    },
+    {
+      "date": "1992",
+      "value": "298346",
+      "locator": {
+        "row_label": "National Defense",
+        "column": "1992"
+      }
+    },
+    {
+      "date": "1993",
+      "value": "291084",
+      "locator": {
+        "row_label": "National Defense",
+        "column": "1993"
+      }
+    },
+    {
+      "date": "1994",
+      "value": "281640",
+      "locator": {
+        "row_label": "National Defense",
+        "column": "1994"
+      }
+    },
+    {
+      "date": "1995",
+      "value": "272063",
+      "locator": {
+        "row_label": "National Defense",
+        "column": "1995"
+      }
+    },
+    {
+      "date": "1996",
+      "value": "265748",
+      "locator": {
+        "row_label": "National Defense",
+        "column": "1996"
+      }
+    },
+    {
+      "date": "1997",
+      "value": "270502",
+      "locator": {
+        "row_label": "National Defense",
+        "column": "1997"
+      }
+    },
+    {
+      "date": "1998",
+      "value": "268194",
+      "locator": {
+        "row_label": "National Defense",
+        "column": "1998"
+      }
+    },
+    {
+      "date": "1999",
+      "value": "274769",
+      "locator": {
+        "row_label": "National Defense",
+        "column": "1999"
+      }
+    },
+    {
+      "date": "2000",
+      "value": "294363",
+      "locator": {
+        "row_label": "National Defense",
+        "column": "2000"
+      }
+    },
+    {
+      "date": "2001",
+      "value": "304732",
+      "locator": {
+        "row_label": "National Defense",
+        "column": "2001"
+      }
+    },
+    {
+      "date": "2002",
+      "value": "348456",
+      "locator": {
+        "row_label": "National Defense",
+        "column": "2002"
+      }
+    },
+    {
+      "date": "2003",
+      "value": "404733",
+      "locator": {
+        "row_label": "National Defense",
+        "column": "2003"
+      }
+    },
+    {
+      "date": "2004",
+      "value": "455813",
+      "locator": {
+        "row_label": "National Defense",
+        "column": "2004"
+      }
+    },
+    {
+      "date": "2005",
+      "value": "495294",
+      "locator": {
+        "row_label": "National Defense",
+        "column": "2005"
+      }
+    },
+    {
+      "date": "2006",
+      "value": "521820",
+      "locator": {
+        "row_label": "National Defense",
+        "column": "2006"
+      }
+    },
+    {
+      "date": "2007",
+      "value": "551258",
+      "locator": {
+        "row_label": "National Defense",
+        "column": "2007"
+      }
+    },
+    {
+      "date": "2008",
+      "value": "616066",
+      "locator": {
+        "row_label": "National Defense",
+        "column": "2008"
+      }
+    },
+    {
+      "date": "2009",
+      "value": "661012",
+      "locator": {
+        "row_label": "National Defense",
+        "column": "2009"
+      }
+    },
+    {
+      "date": "2010",
+      "value": "693485",
+      "locator": {
+        "row_label": "National Defense",
+        "column": "2010"
+      }
+    },
+    {
+      "date": "2011",
+      "value": "705554",
+      "locator": {
+        "row_label": "National Defense",
+        "column": "2011"
+      }
+    },
+    {
+      "date": "2012",
+      "value": "677852",
+      "locator": {
+        "row_label": "National Defense",
+        "column": "2012"
+      }
+    },
+    {
+      "date": "2013",
+      "value": "633446",
+      "locator": {
+        "row_label": "National Defense",
+        "column": "2013"
+      }
+    },
+    {
+      "date": "2014",
+      "value": "603457",
+      "locator": {
+        "row_label": "National Defense",
+        "column": "2014"
+      }
+    },
+    {
+      "date": "2015",
+      "value": "589659",
+      "locator": {
+        "row_label": "National Defense",
+        "column": "2015"
+      }
+    },
+    {
+      "date": "2016",
+      "value": "593372",
+      "locator": {
+        "row_label": "National Defense",
+        "column": "2016"
+      }
+    },
+    {
+      "date": "2017",
+      "value": "598723",
+      "locator": {
+        "row_label": "National Defense",
+        "column": "2017"
+      }
+    },
+    {
+      "date": "2018",
+      "value": "631251",
+      "locator": {
+        "row_label": "National Defense",
+        "column": "2018"
+      }
+    },
+    {
+      "date": "2019",
+      "value": "685707",
+      "locator": {
+        "row_label": "National Defense",
+        "column": "2019"
+      }
+    },
+    {
+      "date": "2020",
+      "value": "724589",
+      "locator": {
+        "row_label": "National Defense",
+        "column": "2020"
+      }
+    },
+    {
+      "date": "2021",
+      "value": "753897",
+      "locator": {
+        "row_label": "National Defense",
+        "column": "2021"
+      }
+    },
+    {
+      "date": "2022",
+      "value": "765649",
+      "locator": {
+        "row_label": "National Defense",
+        "column": "2022"
+      }
+    },
+    {
+      "date": "2023",
+      "value": "820263",
+      "locator": {
+        "row_label": "National Defense",
+        "column": "2023"
+      }
+    },
+    {
+      "date": "2024",
+      "value": "873523",
+      "locator": {
+        "row_label": "National Defense",
+        "column": "2024"
+      }
+    },
+    {
+      "date": "2025",
+      "value": "916140",
+      "locator": {
+        "row_label": "National Defense",
+        "column": "2025"
+      }
+    }
+  ]
+}

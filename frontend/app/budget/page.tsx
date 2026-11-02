@@ -1,45 +1,36 @@
 import type { Metadata } from 'next';
-import BudgetPageContentWrapper from './BudgetPageContent';
+import ChartSection from '@/components/charts/ChartSection';
+import ChartDatasets from '@/components/seo/ChartDatasets';
+import { chartsFor } from '@/lib/site';
+
+const title = 'Federal budget and debt';
+const description = 'Treasury debt, monthly receipts and outlays, interest expense, and OMB historical tables in dollars and as a percent of GDP.';
 
 export const metadata: Metadata = {
-  title: 'Federal Budget Data | Government Spending & Revenue Statistics',
-  description: 'Track U.S. federal budget data — spending, revenue, deficit, and debt from Treasury Fiscal Data API. Live government budget statistics with historical trends and breakdowns.',
-  keywords: [
-    'federal budget data',
-    'government spending',
-    'budget deficit',
-    'federal revenue',
-    'treasury fiscal data',
-    'government budget statistics',
-    'federal outlays',
-    'budget breakdown',
-    'deficit spending',
-    'fiscal policy data',
-    'government receipts',
-    'budget categories',
-    'federal spending trends'
-  ],
+  title,
+  description,
+  alternates: { canonical: 'https://letstalkstatistics.com/budget' },
   openGraph: {
-    title: 'Federal Budget Data | U.S. Government Spending Statistics',
-    description: 'Live tracking of federal budget data — spending, revenue, deficit trends from official Treasury sources.',
+    title,
+    description,
     url: 'https://letstalkstatistics.com/budget',
-    images: [
-      {
-        url: '/og-budget.png',
-        width: 1200,
-        height: 630,
-        alt: 'Federal Budget Dashboard - Government Spending Data',
-      },
-    ],
+    images: [{ url: '/charts/debt-to-the-penny.png', width: 1200, height: 675, alt: title }],
   },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Federal Budget Data | Government Spending Statistics',
-    description: 'Track live U.S. federal budget data with historical trends — spending, revenue, and deficit analysis.',
-    images: ['/og-budget.png'],
-  },
+  twitter: { card: 'summary_large_image', title, description, images: ['/charts/debt-to-the-penny.png'] },
 };
 
 export default function BudgetPage() {
-  return <BudgetPageContentWrapper />;
+  const charts = chartsFor('budget');
+  return (
+    <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
+      <ChartDatasets charts={charts} />
+      <h1>{title}</h1>
+      <p className="mt-4 max-w-3xl">
+        Monthly Treasury figures are nominal dollars. OMB historical tables are fiscal years. A fiscal year starts on October 1 and can include two presidents.
+      </p>
+      <div className="mt-8">
+        <ChartSection charts={charts} />
+      </div>
+    </div>
+  );
 }

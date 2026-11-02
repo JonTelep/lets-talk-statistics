@@ -1,0 +1,701 @@
+{
+  "id": "omb_receipts_fy2017",
+  "name": "Receipts",
+  "units": "billions of constant FY 2017 dollars",
+  "adjustment": "fiscal year",
+  "nominal_or_real": "inflation-adjusted",
+  "frequency": "fiscal_year",
+  "source_id": "hist01z3",
+  "series_url": "https://www.whitehouse.gov/wp-content/uploads/2026/04/hist01z3_fy2027.xlsx",
+  "notes": "Constant dollars use the composite deflator published in this table. Base: FY 2017 dollars.",
+  "points": [
+    {
+      "date": "1940",
+      "value": "107.4",
+      "locator": {
+        "row_label": "1940",
+        "column": "Receipts"
+      }
+    },
+    {
+      "date": "1941",
+      "value": "127.4",
+      "locator": {
+        "row_label": "1941",
+        "column": "Receipts"
+      }
+    },
+    {
+      "date": "1942",
+      "value": "187.4",
+      "locator": {
+        "row_label": "1942",
+        "column": "Receipts"
+      }
+    },
+    {
+      "date": "1943",
+      "value": "275.6",
+      "locator": {
+        "row_label": "1943",
+        "column": "Receipts"
+      }
+    },
+    {
+      "date": "1944",
+      "value": "546.2",
+      "locator": {
+        "row_label": "1944",
+        "column": "Receipts"
+      }
+    },
+    {
+      "date": "1945",
+      "value": "597.3",
+      "locator": {
+        "row_label": "1945",
+        "column": "Receipts"
+      }
+    },
+    {
+      "date": "1946",
+      "value": "519.1",
+      "locator": {
+        "row_label": "1946",
+        "column": "Receipts"
+      }
+    },
+    {
+      "date": "1947",
+      "value": "457.4",
+      "locator": {
+        "row_label": "1947",
+        "column": "Receipts"
+      }
+    },
+    {
+      "date": "1948",
+      "value": "475",
+      "locator": {
+        "row_label": "1948",
+        "column": "Receipts"
+      }
+    },
+    {
+      "date": "1949",
+      "value": "469.2",
+      "locator": {
+        "row_label": "1949",
+        "column": "Receipts"
+      }
+    },
+    {
+      "date": "1950",
+      "value": "446.2",
+      "locator": {
+        "row_label": "1950",
+        "column": "Receipts"
+      }
+    },
+    {
+      "date": "1951",
+      "value": "576.7",
+      "locator": {
+        "row_label": "1951",
+        "column": "Receipts"
+      }
+    },
+    {
+      "date": "1952",
+      "value": "736.8",
+      "locator": {
+        "row_label": "1952",
+        "column": "Receipts"
+      }
+    },
+    {
+      "date": "1953",
+      "value": "721.3",
+      "locator": {
+        "row_label": "1953",
+        "column": "Receipts"
+      }
+    },
+    {
+      "date": "1954",
+      "value": "699.1",
+      "locator": {
+        "row_label": "1954",
+        "column": "Receipts"
+      }
+    },
+    {
+      "date": "1955",
+      "value": "637.3",
+      "locator": {
+        "row_label": "1955",
+        "column": "Receipts"
+      }
+    },
+    {
+      "date": "1956",
+      "value": "696.4",
+      "locator": {
+        "row_label": "1956",
+        "column": "Receipts"
+      }
+    },
+    {
+      "date": "1957",
+      "value": "711.7",
+      "locator": {
+        "row_label": "1957",
+        "column": "Receipts"
+      }
+    },
+    {
+      "date": "1958",
+      "value": "668.6",
+      "locator": {
+        "row_label": "1958",
+        "column": "Receipts"
+      }
+    },
+    {
+      "date": "1959",
+      "value": "640.7",
+      "locator": {
+        "row_label": "1959",
+        "column": "Receipts"
+      }
+    },
+    {
+      "date": "1960",
+      "value": "735.8",
+      "locator": {
+        "row_label": "1960",
+        "column": "Receipts"
+      }
+    },
+    {
+      "date": "1961",
+      "value": "735.1",
+      "locator": {
+        "row_label": "1961",
+        "column": "Receipts"
+      }
+    },
+    {
+      "date": "1962",
+      "value": "776.3",
+      "locator": {
+        "row_label": "1962",
+        "column": "Receipts"
+      }
+    },
+    {
+      "date": "1963",
+      "value": "794.6",
+      "locator": {
+        "row_label": "1963",
+        "column": "Receipts"
+      }
+    },
+    {
+      "date": "1964",
+      "value": "827.4",
+      "locator": {
+        "row_label": "1964",
+        "column": "Receipts"
+      }
+    },
+    {
+      "date": "1965",
+      "value": "847.7",
+      "locator": {
+        "row_label": "1965",
+        "column": "Receipts"
+      }
+    },
+    {
+      "date": "1966",
+      "value": "924",
+      "locator": {
+        "row_label": "1966",
+        "column": "Receipts"
+      }
+    },
+    {
+      "date": "1967",
+      "value": "1027.8",
+      "locator": {
+        "row_label": "1967",
+        "column": "Receipts"
+      }
+    },
+    {
+      "date": "1968",
+      "value": "1019.1",
+      "locator": {
+        "row_label": "1968",
+        "column": "Receipts"
+      }
+    },
+    {
+      "date": "1969",
+      "value": "1169.5",
+      "locator": {
+        "row_label": "1969",
+        "column": "Receipts"
+      }
+    },
+    {
+      "date": "1970",
+      "value": "1144.3",
+      "locator": {
+        "row_label": "1970",
+        "column": "Receipts"
+      }
+    },
+    {
+      "date": "1971",
+      "value": "1039.1",
+      "locator": {
+        "row_label": "1971",
+        "column": "Receipts"
+      }
+    },
+    {
+      "date": "1972",
+      "value": "1082",
+      "locator": {
+        "row_label": "1972",
+        "column": "Receipts"
+      }
+    },
+    {
+      "date": "1973",
+      "value": "1153.4",
+      "locator": {
+        "row_label": "1973",
+        "column": "Receipts"
+      }
+    },
+    {
+      "date": "1974",
+      "value": "1213",
+      "locator": {
+        "row_label": "1974",
+        "column": "Receipts"
+      }
+    },
+    {
+      "date": "1975",
+      "value": "1174.1",
+      "locator": {
+        "row_label": "1975",
+        "column": "Receipts"
+      }
+    },
+    {
+      "date": "1976",
+      "value": "1170.2",
+      "locator": {
+        "row_label": "1976",
+        "column": "Receipts"
+      }
+    },
+    {
+      "date": "1977",
+      "value": "1301.5",
+      "locator": {
+        "row_label": "1977",
+        "column": "Receipts"
+      }
+    },
+    {
+      "date": "1978",
+      "value": "1377.8",
+      "locator": {
+        "row_label": "1978",
+        "column": "Receipts"
+      }
+    },
+    {
+      "date": "1979",
+      "value": "1468.5",
+      "locator": {
+        "row_label": "1979",
+        "column": "Receipts"
+      }
+    },
+    {
+      "date": "1980",
+      "value": "1483",
+      "locator": {
+        "row_label": "1980",
+        "column": "Receipts"
+      }
+    },
+    {
+      "date": "1981",
+      "value": "1546.1",
+      "locator": {
+        "row_label": "1981",
+        "column": "Receipts"
+      }
+    },
+    {
+      "date": "1982",
+      "value": "1479",
+      "locator": {
+        "row_label": "1982",
+        "column": "Receipts"
+      }
+    },
+    {
+      "date": "1983",
+      "value": "1369.3",
+      "locator": {
+        "row_label": "1983",
+        "column": "Receipts"
+      }
+    },
+    {
+      "date": "1984",
+      "value": "1448.8",
+      "locator": {
+        "row_label": "1984",
+        "column": "Receipts"
+      }
+    },
+    {
+      "date": "1985",
+      "value": "1539.5",
+      "locator": {
+        "row_label": "1985",
+        "column": "Receipts"
+      }
+    },
+    {
+      "date": "1986",
+      "value": "1580.3",
+      "locator": {
+        "row_label": "1986",
+        "column": "Receipts"
+      }
+    },
+    {
+      "date": "1987",
+      "value": "1704.5",
+      "locator": {
+        "row_label": "1987",
+        "column": "Receipts"
+      }
+    },
+    {
+      "date": "1988",
+      "value": "1754.3",
+      "locator": {
+        "row_label": "1988",
+        "column": "Receipts"
+      }
+    },
+    {
+      "date": "1989",
+      "value": "1840.1",
+      "locator": {
+        "row_label": "1989",
+        "column": "Receipts"
+      }
+    },
+    {
+      "date": "1990",
+      "value": "1865.1",
+      "locator": {
+        "row_label": "1990",
+        "column": "Receipts"
+      }
+    },
+    {
+      "date": "1991",
+      "value": "1826.2",
+      "locator": {
+        "row_label": "1991",
+        "column": "Receipts"
+      }
+    },
+    {
+      "date": "1992",
+      "value": "1811.4",
+      "locator": {
+        "row_label": "1992",
+        "column": "Receipts"
+      }
+    },
+    {
+      "date": "1993",
+      "value": "1860",
+      "locator": {
+        "row_label": "1993",
+        "column": "Receipts"
+      }
+    },
+    {
+      "date": "1994",
+      "value": "1994.2",
+      "locator": {
+        "row_label": "1994",
+        "column": "Receipts"
+      }
+    },
+    {
+      "date": "1995",
+      "value": "2079",
+      "locator": {
+        "row_label": "1995",
+        "column": "Receipts"
+      }
+    },
+    {
+      "date": "1996",
+      "value": "2189.7",
+      "locator": {
+        "row_label": "1996",
+        "column": "Receipts"
+      }
+    },
+    {
+      "date": "1997",
+      "value": "2330.3",
+      "locator": {
+        "row_label": "1997",
+        "column": "Receipts"
+      }
+    },
+    {
+      "date": "1998",
+      "value": "2521.6",
+      "locator": {
+        "row_label": "1998",
+        "column": "Receipts"
+      }
+    },
+    {
+      "date": "1999",
+      "value": "2645.4",
+      "locator": {
+        "row_label": "1999",
+        "column": "Receipts"
+      }
+    },
+    {
+      "date": "2000",
+      "value": "2858",
+      "locator": {
+        "row_label": "2000",
+        "column": "Receipts"
+      }
+    },
+    {
+      "date": "2001",
+      "value": "2735.8",
+      "locator": {
+        "row_label": "2001",
+        "column": "Receipts"
+      }
+    },
+    {
+      "date": "2002",
+      "value": "2506.6",
+      "locator": {
+        "row_label": "2002",
+        "column": "Receipts"
+      }
+    },
+    {
+      "date": "2003",
+      "value": "2341.1",
+      "locator": {
+        "row_label": "2003",
+        "column": "Receipts"
+      }
+    },
+    {
+      "date": "2004",
+      "value": "2406.1",
+      "locator": {
+        "row_label": "2004",
+        "column": "Receipts"
+      }
+    },
+    {
+      "date": "2005",
+      "value": "2665",
+      "locator": {
+        "row_label": "2005",
+        "column": "Receipts"
+      }
+    },
+    {
+      "date": "2006",
+      "value": "2877.7",
+      "locator": {
+        "row_label": "2006",
+        "column": "Receipts"
+      }
+    },
+    {
+      "date": "2007",
+      "value": "2983.6",
+      "locator": {
+        "row_label": "2007",
+        "column": "Receipts"
+      }
+    },
+    {
+      "date": "2008",
+      "value": "2834.4",
+      "locator": {
+        "row_label": "2008",
+        "column": "Receipts"
+      }
+    },
+    {
+      "date": "2009",
+      "value": "2372.4",
+      "locator": {
+        "row_label": "2009",
+        "column": "Receipts"
+      }
+    },
+    {
+      "date": "2010",
+      "value": "2386.3",
+      "locator": {
+        "row_label": "2010",
+        "column": "Receipts"
+      }
+    },
+    {
+      "date": "2011",
+      "value": "2484.1",
+      "locator": {
+        "row_label": "2011",
+        "column": "Receipts"
+      }
+    },
+    {
+      "date": "2012",
+      "value": "2592.6",
+      "locator": {
+        "row_label": "2012",
+        "column": "Receipts"
+      }
+    },
+    {
+      "date": "2013",
+      "value": "2892.5",
+      "locator": {
+        "row_label": "2013",
+        "column": "Receipts"
+      }
+    },
+    {
+      "date": "2014",
+      "value": "3103.1",
+      "locator": {
+        "row_label": "2014",
+        "column": "Receipts"
+      }
+    },
+    {
+      "date": "2015",
+      "value": "3324",
+      "locator": {
+        "row_label": "2015",
+        "column": "Receipts"
+      }
+    },
+    {
+      "date": "2016",
+      "value": "3322.5",
+      "locator": {
+        "row_label": "2016",
+        "column": "Receipts"
+      }
+    },
+    {
+      "date": "2017",
+      "value": "3316.2",
+      "locator": {
+        "row_label": "2017",
+        "column": "Receipts"
+      }
+    },
+    {
+      "date": "2018",
+      "value": "3259.5",
+      "locator": {
+        "row_label": "2018",
+        "column": "Receipts"
+      }
+    },
+    {
+      "date": "2019",
+      "value": "3334.3",
+      "locator": {
+        "row_label": "2019",
+        "column": "Receipts"
+      }
+    },
+    {
+      "date": "2020",
+      "value": "3247.7",
+      "locator": {
+        "row_label": "2020",
+        "column": "Receipts"
+      }
+    },
+    {
+      "date": "2021",
+      "value": "3726.6",
+      "locator": {
+        "row_label": "2021",
+        "column": "Receipts"
+      }
+    },
+    {
+      "date": "2022",
+      "value": "4238.3",
+      "locator": {
+        "row_label": "2022",
+        "column": "Receipts"
+      }
+    },
+    {
+      "date": "2023",
+      "value": "3676",
+      "locator": {
+        "row_label": "2023",
+        "column": "Receipts"
+      }
+    },
+    {
+      "date": "2024",
+      "value": "3957.1",
+      "locator": {
+        "row_label": "2024",
+        "column": "Receipts"
+      }
+    },
+    {
+      "date": "2025",
+      "value": "4108.3",
+      "locator": {
+        "row_label": "2025",
+        "column": "Receipts"
+      }
+    }
+  ]
+}

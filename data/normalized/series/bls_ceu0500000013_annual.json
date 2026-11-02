@@ -1,0 +1,165 @@
+{
+  "id": "bls_ceu0500000013_annual",
+  "name": "Average hourly earnings of all employees, 1982-1984 dollars, total private, not seasonally adjusted",
+  "bls_series_id": "CEU0500000013",
+  "units": "as published by BLS",
+  "adjustment": "not seasonally adjusted",
+  "nominal_or_real": "inflation-adjusted",
+  "frequency": "annual",
+  "source_id": "bls_ce_data_05b_totalprivate_allemployeehoursandearnings",
+  "series_url": "https://data.bls.gov/timeseries/CEU0500000013",
+  "points": [
+    {
+      "date": "2007",
+      "value": "10.09",
+      "locator": {
+        "year": "2007",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "2008",
+      "value": "10.01",
+      "locator": {
+        "year": "2008",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "2009",
+      "value": "10.33",
+      "locator": {
+        "year": "2009",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "2010",
+      "value": "10.35",
+      "locator": {
+        "year": "2010",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "2011",
+      "value": "10.24",
+      "locator": {
+        "year": "2011",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "2012",
+      "value": "10.23",
+      "locator": {
+        "year": "2012",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "2013",
+      "value": "10.28",
+      "locator": {
+        "year": "2013",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "2014",
+      "value": "10.33",
+      "locator": {
+        "year": "2014",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "2015",
+      "value": "10.56",
+      "locator": {
+        "year": "2015",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "2016",
+      "value": "10.68",
+      "locator": {
+        "year": "2016",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "2017",
+      "value": "10.74",
+      "locator": {
+        "year": "2017",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "2018",
+      "value": "10.80",
+      "locator": {
+        "year": "2018",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "2019",
+      "value": "10.95",
+      "locator": {
+        "year": "2019",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "2020",
+      "value": "11.34",
+      "locator": {
+        "year": "2020",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "2021",
+      "value": "11.29",
+      "locator": {
+        "year": "2021",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "2022",
+      "value": "11.02",
+      "locator": {
+        "year": "2022",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "2023",
+      "value": "11.07",
+      "locator": {
+        "year": "2023",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "2024",
+      "value": "11.18",
+      "locator": {
+        "year": "2024",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "2025",
+      "value": "11.31",
+      "locator": {
+        "year": "2025",
+        "period": "M13"
+      }
+    }
+  ]
+}

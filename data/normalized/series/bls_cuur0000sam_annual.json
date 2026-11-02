@@ -1,0 +1,741 @@
+{
+  "id": "bls_cuur0000sam_annual",
+  "name": "Medical care in U.S. city average, all urban consumers, not seasonally adjusted",
+  "bls_series_id": "CUUR0000SAM",
+  "units": "1982-84=100",
+  "adjustment": "not seasonally adjusted",
+  "nominal_or_real": "inflation-adjusted",
+  "frequency": "annual",
+  "source_id": "bls_cuur0000sam",
+  "series_url": "https://data.bls.gov/timeseries/CUUR0000SAM",
+  "points": [
+    {
+      "date": "1935",
+      "value": "10.2",
+      "locator": {
+        "year": "1935",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "1936",
+      "value": "10.2",
+      "locator": {
+        "year": "1936",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "1937",
+      "value": "10.3",
+      "locator": {
+        "year": "1937",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "1938",
+      "value": "10.3",
+      "locator": {
+        "year": "1938",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "1939",
+      "value": "10.3",
+      "locator": {
+        "year": "1939",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "1940",
+      "value": "10.4",
+      "locator": {
+        "year": "1940",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "1941",
+      "value": "10.4",
+      "locator": {
+        "year": "1941",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "1942",
+      "value": "10.7",
+      "locator": {
+        "year": "1942",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "1943",
+      "value": "11.2",
+      "locator": {
+        "year": "1943",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "1944",
+      "value": "11.6",
+      "locator": {
+        "year": "1944",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "1945",
+      "value": "11.9",
+      "locator": {
+        "year": "1945",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "1946",
+      "value": "12.5",
+      "locator": {
+        "year": "1946",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "1947",
+      "value": "13.5",
+      "locator": {
+        "year": "1947",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "1948",
+      "value": "14.4",
+      "locator": {
+        "year": "1948",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "1949",
+      "value": "14.8",
+      "locator": {
+        "year": "1949",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "1950",
+      "value": "15.1",
+      "locator": {
+        "year": "1950",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "1951",
+      "value": "15.9",
+      "locator": {
+        "year": "1951",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "1952",
+      "value": "16.7",
+      "locator": {
+        "year": "1952",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "1953",
+      "value": "17.3",
+      "locator": {
+        "year": "1953",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "1954",
+      "value": "17.8",
+      "locator": {
+        "year": "1954",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "1955",
+      "value": "18.2",
+      "locator": {
+        "year": "1955",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "1956",
+      "value": "18.9",
+      "locator": {
+        "year": "1956",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "1957",
+      "value": "19.7",
+      "locator": {
+        "year": "1957",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "1958",
+      "value": "20.6",
+      "locator": {
+        "year": "1958",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "1959",
+      "value": "21.5",
+      "locator": {
+        "year": "1959",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "1960",
+      "value": "22.3",
+      "locator": {
+        "year": "1960",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "1961",
+      "value": "22.9",
+      "locator": {
+        "year": "1961",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "1962",
+      "value": "23.5",
+      "locator": {
+        "year": "1962",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "1963",
+      "value": "24.1",
+      "locator": {
+        "year": "1963",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "1964",
+      "value": "24.6",
+      "locator": {
+        "year": "1964",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "1965",
+      "value": "25.2",
+      "locator": {
+        "year": "1965",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "1966",
+      "value": "26.3",
+      "locator": {
+        "year": "1966",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "1967",
+      "value": "28.2",
+      "locator": {
+        "year": "1967",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "1968",
+      "value": "29.9",
+      "locator": {
+        "year": "1968",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "1969",
+      "value": "31.9",
+      "locator": {
+        "year": "1969",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "1970",
+      "value": "34.0",
+      "locator": {
+        "year": "1970",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "1971",
+      "value": "36.1",
+      "locator": {
+        "year": "1971",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "1972",
+      "value": "37.3",
+      "locator": {
+        "year": "1972",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "1973",
+      "value": "38.8",
+      "locator": {
+        "year": "1973",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "1974",
+      "value": "42.4",
+      "locator": {
+        "year": "1974",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "1975",
+      "value": "47.5",
+      "locator": {
+        "year": "1975",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "1976",
+      "value": "52.0",
+      "locator": {
+        "year": "1976",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "1977",
+      "value": "57.0",
+      "locator": {
+        "year": "1977",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "1978",
+      "value": "61.8",
+      "locator": {
+        "year": "1978",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "1979",
+      "value": "67.5",
+      "locator": {
+        "year": "1979",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "1980",
+      "value": "74.9",
+      "locator": {
+        "year": "1980",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "1981",
+      "value": "82.9",
+      "locator": {
+        "year": "1981",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "1982",
+      "value": "92.5",
+      "locator": {
+        "year": "1982",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "1983",
+      "value": "100.6",
+      "locator": {
+        "year": "1983",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "1984",
+      "value": "106.8",
+      "locator": {
+        "year": "1984",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "1985",
+      "value": "113.5",
+      "locator": {
+        "year": "1985",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "1986",
+      "value": "122.0",
+      "locator": {
+        "year": "1986",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "1987",
+      "value": "130.1",
+      "locator": {
+        "year": "1987",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "1988",
+      "value": "138.6",
+      "locator": {
+        "year": "1988",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "1989",
+      "value": "149.3",
+      "locator": {
+        "year": "1989",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "1990",
+      "value": "162.8",
+      "locator": {
+        "year": "1990",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "1991",
+      "value": "177.0",
+      "locator": {
+        "year": "1991",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "1992",
+      "value": "190.1",
+      "locator": {
+        "year": "1992",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "1993",
+      "value": "201.4",
+      "locator": {
+        "year": "1993",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "1994",
+      "value": "211.0",
+      "locator": {
+        "year": "1994",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "1995",
+      "value": "220.5",
+      "locator": {
+        "year": "1995",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "1996",
+      "value": "228.2",
+      "locator": {
+        "year": "1996",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "1997",
+      "value": "234.6",
+      "locator": {
+        "year": "1997",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "1998",
+      "value": "242.1",
+      "locator": {
+        "year": "1998",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "1999",
+      "value": "250.6",
+      "locator": {
+        "year": "1999",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "2000",
+      "value": "260.8",
+      "locator": {
+        "year": "2000",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "2001",
+      "value": "272.8",
+      "locator": {
+        "year": "2001",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "2002",
+      "value": "285.6",
+      "locator": {
+        "year": "2002",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "2003",
+      "value": "297.1",
+      "locator": {
+        "year": "2003",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "2004",
+      "value": "310.1",
+      "locator": {
+        "year": "2004",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "2005",
+      "value": "323.2",
+      "locator": {
+        "year": "2005",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "2006",
+      "value": "336.2",
+      "locator": {
+        "year": "2006",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "2007",
+      "value": "351.054",
+      "locator": {
+        "year": "2007",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "2008",
+      "value": "364.065",
+      "locator": {
+        "year": "2008",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "2009",
+      "value": "375.613",
+      "locator": {
+        "year": "2009",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "2010",
+      "value": "388.436",
+      "locator": {
+        "year": "2010",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "2011",
+      "value": "400.258",
+      "locator": {
+        "year": "2011",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "2012",
+      "value": "414.924",
+      "locator": {
+        "year": "2012",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "2013",
+      "value": "425.134",
+      "locator": {
+        "year": "2013",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "2014",
+      "value": "435.292",
+      "locator": {
+        "year": "2014",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "2015",
+      "value": "446.752",
+      "locator": {
+        "year": "2015",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "2016",
+      "value": "463.675",
+      "locator": {
+        "year": "2016",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "2017",
+      "value": "475.322",
+      "locator": {
+        "year": "2017",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "2018",
+      "value": "484.707",
+      "locator": {
+        "year": "2018",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "2019",
+      "value": "498.413",
+      "locator": {
+        "year": "2019",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "2020",
+      "value": "518.876",
+      "locator": {
+        "year": "2020",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "2021",
+      "value": "525.276",
+      "locator": {
+        "year": "2021",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "2022",
+      "value": "546.554",
+      "locator": {
+        "year": "2022",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "2023",
+      "value": "549.084",
+      "locator": {
+        "year": "2023",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "2024",
+      "value": "563.841",
+      "locator": {
+        "year": "2024",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "2025",
+      "value": "580.102",
+      "locator": {
+        "year": "2025",
+        "period": "M13"
+      }
+    }
+  ]
+}

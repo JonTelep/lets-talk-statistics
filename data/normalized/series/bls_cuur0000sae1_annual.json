@@ -1,0 +1,277 @@
+{
+  "id": "bls_cuur0000sae1_annual",
+  "name": "Education in U.S. city average, all urban consumers, not seasonally adjusted",
+  "bls_series_id": "CUUR0000SAE1",
+  "units": "DECEMBER 1997=100",
+  "adjustment": "not seasonally adjusted",
+  "nominal_or_real": "index",
+  "frequency": "annual",
+  "source_id": "bls_cuur0000sae1",
+  "series_url": "https://data.bls.gov/timeseries/CUUR0000SAE1",
+  "points": [
+    {
+      "date": "1993",
+      "value": "78.4",
+      "locator": {
+        "year": "1993",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "1994",
+      "value": "83.3",
+      "locator": {
+        "year": "1994",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "1995",
+      "value": "88.0",
+      "locator": {
+        "year": "1995",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "1996",
+      "value": "92.7",
+      "locator": {
+        "year": "1996",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "1997",
+      "value": "97.3",
+      "locator": {
+        "year": "1997",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "1998",
+      "value": "102.1",
+      "locator": {
+        "year": "1998",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "1999",
+      "value": "107.0",
+      "locator": {
+        "year": "1999",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "2000",
+      "value": "112.5",
+      "locator": {
+        "year": "2000",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "2001",
+      "value": "118.5",
+      "locator": {
+        "year": "2001",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "2002",
+      "value": "126.0",
+      "locator": {
+        "year": "2002",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "2003",
+      "value": "134.4",
+      "locator": {
+        "year": "2003",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "2004",
+      "value": "143.7",
+      "locator": {
+        "year": "2004",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "2005",
+      "value": "152.7",
+      "locator": {
+        "year": "2005",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "2006",
+      "value": "162.1",
+      "locator": {
+        "year": "2006",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "2007",
+      "value": "171.388",
+      "locator": {
+        "year": "2007",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "2008",
+      "value": "181.277",
+      "locator": {
+        "year": "2008",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "2009",
+      "value": "190.857",
+      "locator": {
+        "year": "2009",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "2010",
+      "value": "199.337",
+      "locator": {
+        "year": "2010",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "2011",
+      "value": "207.768",
+      "locator": {
+        "year": "2011",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "2012",
+      "value": "216.328",
+      "locator": {
+        "year": "2012",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "2013",
+      "value": "224.521",
+      "locator": {
+        "year": "2013",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "2014",
+      "value": "231.914",
+      "locator": {
+        "year": "2014",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "2015",
+      "value": "240.535",
+      "locator": {
+        "year": "2015",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "2016",
+      "value": "247.526",
+      "locator": {
+        "year": "2016",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "2017",
+      "value": "253.211",
+      "locator": {
+        "year": "2017",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "2018",
+      "value": "258.840",
+      "locator": {
+        "year": "2018",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "2019",
+      "value": "265.840",
+      "locator": {
+        "year": "2019",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "2020",
+      "value": "270.731",
+      "locator": {
+        "year": "2020",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "2021",
+      "value": "274.555",
+      "locator": {
+        "year": "2021",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "2022",
+      "value": "282.070",
+      "locator": {
+        "year": "2022",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "2023",
+      "value": "290.707",
+      "locator": {
+        "year": "2023",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "2024",
+      "value": "299.677",
+      "locator": {
+        "year": "2024",
+        "period": "M13"
+      }
+    },
+    {
+      "date": "2025",
+      "value": "309.644",
+      "locator": {
+        "year": "2025",
+        "period": "M13"
+      }
+    }
+  ]
+}

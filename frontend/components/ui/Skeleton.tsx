@@ -1,5 +1,5 @@
 /**
- * Loading Skeleton Components — Dark theme
+ * Loading Skeleton Components. Dark theme.
  */
 'use client';
 

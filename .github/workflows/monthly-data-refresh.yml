@@ -1,0 +1,63 @@
+name: Monthly data refresh
+
+on:
+  schedule:
+    - cron: "0 14 1 * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: monthly-data-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install fetch tools
+        run: pip install -r scripts/requirements.txt
+
+      - name: Fetch official files
+        env:
+          FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
+          DATA_GOV_API_KEY: ${{ secrets.DATA_GOV_API_KEY }}
+          FBI_API_KEY: ${{ secrets.FBI_API_KEY }}
+        run: python -m scripts.fetch
+
+      - name: Check chart values against saved files
+        run: python -m pytest tests/test_data_integrity.py tests/test_copy.py
+
+      - name: Render chart images
+        run: python scripts/render_charts.py
+
+      - name: Open a pull request
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          branch="data/monthly-refresh"
+          git checkout -B "$branch"
+          git add data frontend/data frontend/public/charts frontend/public/og-image.png
+          if git diff --cached --quiet; then
+            echo "No data changes."
+            exit 0
+          fi
+          git commit -m "Refresh official statistics"
+          git push --force-with-lease -u origin "$branch"
+          if gh pr view "$branch" >/dev/null 2>&1; then
+            echo "Updated the open data refresh pull request."
+          else
+            gh pr create --base main --head "$branch" --title "Monthly data refresh" --body "Refreshes the saved government files, chart JSON, and chart images. The integrity tests passed in this workflow."
+          fi
