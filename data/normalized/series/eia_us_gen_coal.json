@@ -1,0 +1,630 @@
+{
+  "id": "eia_us_gen_coal",
+  "name": "Coal",
+  "units": "Million Kilowatthours",
+  "adjustment": "annual",
+  "nominal_or_real": "generation",
+  "frequency": "annual",
+  "source_id": "eia_total_bulk",
+  "series_url": "https://www.eia.gov/totalenergy/data/browser/index.php?tbl=T07.02A",
+  "eia_series_id": "TOTAL.CLETPUS.A",
+  "notes": "EIA bulk series TOTAL.CLETPUS.A, Electricity Net Generation From Coal, All Sectors, Annual. Annual. Published years in this file run from 1949 to 2025.",
+  "points": [
+    {
+      "date": "1949",
+      "value": "135451.32",
+      "locator": {
+        "year": "1949",
+        "series_id": "TOTAL.CLETPUS.A"
+      }
+    },
+    {
+      "date": "1950",
+      "value": "154519.994",
+      "locator": {
+        "year": "1950",
+        "series_id": "TOTAL.CLETPUS.A"
+      }
+    },
+    {
+      "date": "1951",
+      "value": "185203.657",
+      "locator": {
+        "year": "1951",
+        "series_id": "TOTAL.CLETPUS.A"
+      }
+    },
+    {
+      "date": "1952",
+      "value": "195436.666",
+      "locator": {
+        "year": "1952",
+        "series_id": "TOTAL.CLETPUS.A"
+      }
+    },
+    {
+      "date": "1953",
+      "value": "218846.325",
+      "locator": {
+        "year": "1953",
+        "series_id": "TOTAL.CLETPUS.A"
+      }
+    },
+    {
+      "date": "1954",
+      "value": "239145.966",
+      "locator": {
+        "year": "1954",
+        "series_id": "TOTAL.CLETPUS.A"
+      }
+    },
+    {
+      "date": "1955",
+      "value": "301362.698",
+      "locator": {
+        "year": "1955",
+        "series_id": "TOTAL.CLETPUS.A"
+      }
+    },
+    {
+      "date": "1956",
+      "value": "338503.484",
+      "locator": {
+        "year": "1956",
+        "series_id": "TOTAL.CLETPUS.A"
+      }
+    },
+    {
+      "date": "1957",
+      "value": "346386.207",
+      "locator": {
+        "year": "1957",
+        "series_id": "TOTAL.CLETPUS.A"
+      }
+    },
+    {
+      "date": "1958",
+      "value": "344365.781",
+      "locator": {
+        "year": "1958",
+        "series_id": "TOTAL.CLETPUS.A"
+      }
+    },
+    {
+      "date": "1959",
+      "value": "378424.21",
+      "locator": {
+        "year": "1959",
+        "series_id": "TOTAL.CLETPUS.A"
+      }
+    },
+    {
+      "date": "1960",
+      "value": "403067.357",
+      "locator": {
+        "year": "1960",
+        "series_id": "TOTAL.CLETPUS.A"
+      }
+    },
+    {
+      "date": "1961",
+      "value": "421870.669",
+      "locator": {
+        "year": "1961",
+        "series_id": "TOTAL.CLETPUS.A"
+      }
+    },
+    {
+      "date": "1962",
+      "value": "450249.238",
+      "locator": {
+        "year": "1962",
+        "series_id": "TOTAL.CLETPUS.A"
+      }
+    },
+    {
+      "date": "1963",
+      "value": "493926.719",
+      "locator": {
+        "year": "1963",
+        "series_id": "TOTAL.CLETPUS.A"
+      }
+    },
+    {
+      "date": "1964",
+      "value": "526230.019",
+      "locator": {
+        "year": "1964",
+        "series_id": "TOTAL.CLETPUS.A"
+      }
+    },
+    {
+      "date": "1965",
+      "value": "570925.951",
+      "locator": {
+        "year": "1965",
+        "series_id": "TOTAL.CLETPUS.A"
+      }
+    },
+    {
+      "date": "1966",
+      "value": "613474.8",
+      "locator": {
+        "year": "1966",
+        "series_id": "TOTAL.CLETPUS.A"
+      }
+    },
+    {
+      "date": "1967",
+      "value": "630483.363",
+      "locator": {
+        "year": "1967",
+        "series_id": "TOTAL.CLETPUS.A"
+      }
+    },
+    {
+      "date": "1968",
+      "value": "684904.58",
+      "locator": {
+        "year": "1968",
+        "series_id": "TOTAL.CLETPUS.A"
+      }
+    },
+    {
+      "date": "1969",
+      "value": "706001.24",
+      "locator": {
+        "year": "1969",
+        "series_id": "TOTAL.CLETPUS.A"
+      }
+    },
+    {
+      "date": "1970",
+      "value": "704394.479",
+      "locator": {
+        "year": "1970",
+        "series_id": "TOTAL.CLETPUS.A"
+      }
+    },
+    {
+      "date": "1971",
+      "value": "713102.454",
+      "locator": {
+        "year": "1971",
+        "series_id": "TOTAL.CLETPUS.A"
+      }
+    },
+    {
+      "date": "1972",
+      "value": "771131.265",
+      "locator": {
+        "year": "1972",
+        "series_id": "TOTAL.CLETPUS.A"
+      }
+    },
+    {
+      "date": "1973",
+      "value": "847651.47",
+      "locator": {
+        "year": "1973",
+        "series_id": "TOTAL.CLETPUS.A"
+      }
+    },
+    {
+      "date": "1974",
+      "value": "828432.921",
+      "locator": {
+        "year": "1974",
+        "series_id": "TOTAL.CLETPUS.A"
+      }
+    },
+    {
+      "date": "1975",
+      "value": "852786.222",
+      "locator": {
+        "year": "1975",
+        "series_id": "TOTAL.CLETPUS.A"
+      }
+    },
+    {
+      "date": "1976",
+      "value": "944390.993",
+      "locator": {
+        "year": "1976",
+        "series_id": "TOTAL.CLETPUS.A"
+      }
+    },
+    {
+      "date": "1977",
+      "value": "985218.596",
+      "locator": {
+        "year": "1977",
+        "series_id": "TOTAL.CLETPUS.A"
+      }
+    },
+    {
+      "date": "1978",
+      "value": "975742.083",
+      "locator": {
+        "year": "1978",
+        "series_id": "TOTAL.CLETPUS.A"
+      }
+    },
+    {
+      "date": "1979",
+      "value": "1075037.091",
+      "locator": {
+        "year": "1979",
+        "series_id": "TOTAL.CLETPUS.A"
+      }
+    },
+    {
+      "date": "1980",
+      "value": "1161562.368",
+      "locator": {
+        "year": "1980",
+        "series_id": "TOTAL.CLETPUS.A"
+      }
+    },
+    {
+      "date": "1981",
+      "value": "1203203.232",
+      "locator": {
+        "year": "1981",
+        "series_id": "TOTAL.CLETPUS.A"
+      }
+    },
+    {
+      "date": "1982",
+      "value": "1192004.204",
+      "locator": {
+        "year": "1982",
+        "series_id": "TOTAL.CLETPUS.A"
+      }
+    },
+    {
+      "date": "1983",
+      "value": "1259424.279",
+      "locator": {
+        "year": "1983",
+        "series_id": "TOTAL.CLETPUS.A"
+      }
+    },
+    {
+      "date": "1984",
+      "value": "1341680.752",
+      "locator": {
+        "year": "1984",
+        "series_id": "TOTAL.CLETPUS.A"
+      }
+    },
+    {
+      "date": "1985",
+      "value": "1402128.125",
+      "locator": {
+        "year": "1985",
+        "series_id": "TOTAL.CLETPUS.A"
+      }
+    },
+    {
+      "date": "1986",
+      "value": "1385831.452",
+      "locator": {
+        "year": "1986",
+        "series_id": "TOTAL.CLETPUS.A"
+      }
+    },
+    {
+      "date": "1987",
+      "value": "1463781.289",
+      "locator": {
+        "year": "1987",
+        "series_id": "TOTAL.CLETPUS.A"
+      }
+    },
+    {
+      "date": "1988",
+      "value": "1540652.774",
+      "locator": {
+        "year": "1988",
+        "series_id": "TOTAL.CLETPUS.A"
+      }
+    },
+    {
+      "date": "1989",
+      "value": "1583779.139",
+      "locator": {
+        "year": "1989",
+        "series_id": "TOTAL.CLETPUS.A"
+      }
+    },
+    {
+      "date": "1990",
+      "value": "1594011.479",
+      "locator": {
+        "year": "1990",
+        "series_id": "TOTAL.CLETPUS.A"
+      }
+    },
+    {
+      "date": "1991",
+      "value": "1590622.748",
+      "locator": {
+        "year": "1991",
+        "series_id": "TOTAL.CLETPUS.A"
+      }
+    },
+    {
+      "date": "1992",
+      "value": "1621206.039",
+      "locator": {
+        "year": "1992",
+        "series_id": "TOTAL.CLETPUS.A"
+      }
+    },
+    {
+      "date": "1993",
+      "value": "1690070.232",
+      "locator": {
+        "year": "1993",
+        "series_id": "TOTAL.CLETPUS.A"
+      }
+    },
+    {
+      "date": "1994",
+      "value": "1690693.864",
+      "locator": {
+        "year": "1994",
+        "series_id": "TOTAL.CLETPUS.A"
+      }
+    },
+    {
+      "date": "1995",
+      "value": "1709426.468",
+      "locator": {
+        "year": "1995",
+        "series_id": "TOTAL.CLETPUS.A"
+      }
+    },
+    {
+      "date": "1996",
+      "value": "1795195.593",
+      "locator": {
+        "year": "1996",
+        "series_id": "TOTAL.CLETPUS.A"
+      }
+    },
+    {
+      "date": "1997",
+      "value": "1845015.736",
+      "locator": {
+        "year": "1997",
+        "series_id": "TOTAL.CLETPUS.A"
+      }
+    },
+    {
+      "date": "1998",
+      "value": "1873515.69",
+      "locator": {
+        "year": "1998",
+        "series_id": "TOTAL.CLETPUS.A"
+      }
+    },
+    {
+      "date": "1999",
+      "value": "1881087.224",
+      "locator": {
+        "year": "1999",
+        "series_id": "TOTAL.CLETPUS.A"
+      }
+    },
+    {
+      "date": "2000",
+      "value": "1966264.596",
+      "locator": {
+        "year": "2000",
+        "series_id": "TOTAL.CLETPUS.A"
+      }
+    },
+    {
+      "date": "2001",
+      "value": "1903955.942",
+      "locator": {
+        "year": "2001",
+        "series_id": "TOTAL.CLETPUS.A"
+      }
+    },
+    {
+      "date": "2002",
+      "value": "1933130.354",
+      "locator": {
+        "year": "2002",
+        "series_id": "TOTAL.CLETPUS.A"
+      }
+    },
+    {
+      "date": "2003",
+      "value": "1973736.752",
+      "locator": {
+        "year": "2003",
+        "series_id": "TOTAL.CLETPUS.A"
+      }
+    },
+    {
+      "date": "2004",
+      "value": "1978300.549",
+      "locator": {
+        "year": "2004",
+        "series_id": "TOTAL.CLETPUS.A"
+      }
+    },
+    {
+      "date": "2005",
+      "value": "2012873.046",
+      "locator": {
+        "year": "2005",
+        "series_id": "TOTAL.CLETPUS.A"
+      }
+    },
+    {
+      "date": "2006",
+      "value": "1990511.135",
+      "locator": {
+        "year": "2006",
+        "series_id": "TOTAL.CLETPUS.A"
+      }
+    },
+    {
+      "date": "2007",
+      "value": "2016455.584",
+      "locator": {
+        "year": "2007",
+        "series_id": "TOTAL.CLETPUS.A"
+      }
+    },
+    {
+      "date": "2008",
+      "value": "1985801.247",
+      "locator": {
+        "year": "2008",
+        "series_id": "TOTAL.CLETPUS.A"
+      }
+    },
+    {
+      "date": "2009",
+      "value": "1755904.253",
+      "locator": {
+        "year": "2009",
+        "series_id": "TOTAL.CLETPUS.A"
+      }
+    },
+    {
+      "date": "2010",
+      "value": "1847290.279",
+      "locator": {
+        "year": "2010",
+        "series_id": "TOTAL.CLETPUS.A"
+      }
+    },
+    {
+      "date": "2011",
+      "value": "1733430.005",
+      "locator": {
+        "year": "2011",
+        "series_id": "TOTAL.CLETPUS.A"
+      }
+    },
+    {
+      "date": "2012",
+      "value": "1514042.945",
+      "locator": {
+        "year": "2012",
+        "series_id": "TOTAL.CLETPUS.A"
+      }
+    },
+    {
+      "date": "2013",
+      "value": "1581114.716",
+      "locator": {
+        "year": "2013",
+        "series_id": "TOTAL.CLETPUS.A"
+      }
+    },
+    {
+      "date": "2014",
+      "value": "1581710.35",
+      "locator": {
+        "year": "2014",
+        "series_id": "TOTAL.CLETPUS.A"
+      }
+    },
+    {
+      "date": "2015",
+      "value": "1352398.197",
+      "locator": {
+        "year": "2015",
+        "series_id": "TOTAL.CLETPUS.A"
+      }
+    },
+    {
+      "date": "2016",
+      "value": "1239148.654",
+      "locator": {
+        "year": "2016",
+        "series_id": "TOTAL.CLETPUS.A"
+      }
+    },
+    {
+      "date": "2017",
+      "value": "1205835.276",
+      "locator": {
+        "year": "2017",
+        "series_id": "TOTAL.CLETPUS.A"
+      }
+    },
+    {
+      "date": "2018",
+      "value": "1149487.339",
+      "locator": {
+        "year": "2018",
+        "series_id": "TOTAL.CLETPUS.A"
+      }
+    },
+    {
+      "date": "2019",
+      "value": "964956.812",
+      "locator": {
+        "year": "2019",
+        "series_id": "TOTAL.CLETPUS.A"
+      }
+    },
+    {
+      "date": "2020",
+      "value": "773392.897",
+      "locator": {
+        "year": "2020",
+        "series_id": "TOTAL.CLETPUS.A"
+      }
+    },
+    {
+      "date": "2021",
+      "value": "897998.76",
+      "locator": {
+        "year": "2021",
+        "series_id": "TOTAL.CLETPUS.A"
+      }
+    },
+    {
+      "date": "2022",
+      "value": "831511.612",
+      "locator": {
+        "year": "2022",
+        "series_id": "TOTAL.CLETPUS.A"
+      }
+    },
+    {
+      "date": "2023",
+      "value": "675115.277",
+      "locator": {
+        "year": "2023",
+        "series_id": "TOTAL.CLETPUS.A"
+      }
+    },
+    {
+      "date": "2024",
+      "value": "652155.921",
+      "locator": {
+        "year": "2024",
+        "series_id": "TOTAL.CLETPUS.A"
+      }
+    },
+    {
+      "date": "2025",
+      "value": "737150.711",
+      "locator": {
+        "year": "2025",
+        "series_id": "TOTAL.CLETPUS.A"
+      }
+    }
+  ]
+}

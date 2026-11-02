@@ -1,0 +1,543 @@
+{
+  "id": "wb_pop_PAN",
+  "name": "Panama",
+  "units": "people",
+  "adjustment": "midyear",
+  "nominal_or_real": "count",
+  "frequency": "annual",
+  "source_id": "worldbank_sp_pop_totl",
+  "series_url": "https://data.worldbank.org/indicator/SP.POP.TOTL",
+  "country_code": "PAN",
+  "country_name": "Panama",
+  "notes": "World Bank World Development Indicators, SP.POP.TOTL, country code PAN. Midyear population. Published years in this file run from 1960 to 2025.",
+  "points": [
+    {
+      "date": "1960",
+      "value": "1126005",
+      "locator": {
+        "year": "1960",
+        "country_code": "PAN"
+      }
+    },
+    {
+      "date": "1961",
+      "value": "1159870",
+      "locator": {
+        "year": "1961",
+        "country_code": "PAN"
+      }
+    },
+    {
+      "date": "1962",
+      "value": "1195301",
+      "locator": {
+        "year": "1962",
+        "country_code": "PAN"
+      }
+    },
+    {
+      "date": "1963",
+      "value": "1232124",
+      "locator": {
+        "year": "1963",
+        "country_code": "PAN"
+      }
+    },
+    {
+      "date": "1964",
+      "value": "1270065",
+      "locator": {
+        "year": "1964",
+        "country_code": "PAN"
+      }
+    },
+    {
+      "date": "1965",
+      "value": "1308835",
+      "locator": {
+        "year": "1965",
+        "country_code": "PAN"
+      }
+    },
+    {
+      "date": "1966",
+      "value": "1348388",
+      "locator": {
+        "year": "1966",
+        "country_code": "PAN"
+      }
+    },
+    {
+      "date": "1967",
+      "value": "1388628",
+      "locator": {
+        "year": "1967",
+        "country_code": "PAN"
+      }
+    },
+    {
+      "date": "1968",
+      "value": "1429447",
+      "locator": {
+        "year": "1968",
+        "country_code": "PAN"
+      }
+    },
+    {
+      "date": "1969",
+      "value": "1470886",
+      "locator": {
+        "year": "1969",
+        "country_code": "PAN"
+      }
+    },
+    {
+      "date": "1970",
+      "value": "1513070",
+      "locator": {
+        "year": "1970",
+        "country_code": "PAN"
+      }
+    },
+    {
+      "date": "1971",
+      "value": "1556081",
+      "locator": {
+        "year": "1971",
+        "country_code": "PAN"
+      }
+    },
+    {
+      "date": "1972",
+      "value": "1599723",
+      "locator": {
+        "year": "1972",
+        "country_code": "PAN"
+      }
+    },
+    {
+      "date": "1973",
+      "value": "1643690",
+      "locator": {
+        "year": "1973",
+        "country_code": "PAN"
+      }
+    },
+    {
+      "date": "1974",
+      "value": "1687926",
+      "locator": {
+        "year": "1974",
+        "country_code": "PAN"
+      }
+    },
+    {
+      "date": "1975",
+      "value": "1732389",
+      "locator": {
+        "year": "1975",
+        "country_code": "PAN"
+      }
+    },
+    {
+      "date": "1976",
+      "value": "1776935",
+      "locator": {
+        "year": "1976",
+        "country_code": "PAN"
+      }
+    },
+    {
+      "date": "1977",
+      "value": "1821543",
+      "locator": {
+        "year": "1977",
+        "country_code": "PAN"
+      }
+    },
+    {
+      "date": "1978",
+      "value": "1866311",
+      "locator": {
+        "year": "1978",
+        "country_code": "PAN"
+      }
+    },
+    {
+      "date": "1979",
+      "value": "1911552",
+      "locator": {
+        "year": "1979",
+        "country_code": "PAN"
+      }
+    },
+    {
+      "date": "1980",
+      "value": "1957534",
+      "locator": {
+        "year": "1980",
+        "country_code": "PAN"
+      }
+    },
+    {
+      "date": "1981",
+      "value": "2004418",
+      "locator": {
+        "year": "1981",
+        "country_code": "PAN"
+      }
+    },
+    {
+      "date": "1982",
+      "value": "2052271",
+      "locator": {
+        "year": "1982",
+        "country_code": "PAN"
+      }
+    },
+    {
+      "date": "1983",
+      "value": "2101106",
+      "locator": {
+        "year": "1983",
+        "country_code": "PAN"
+      }
+    },
+    {
+      "date": "1984",
+      "value": "2150782",
+      "locator": {
+        "year": "1984",
+        "country_code": "PAN"
+      }
+    },
+    {
+      "date": "1985",
+      "value": "2200915",
+      "locator": {
+        "year": "1985",
+        "country_code": "PAN"
+      }
+    },
+    {
+      "date": "1986",
+      "value": "2251325",
+      "locator": {
+        "year": "1986",
+        "country_code": "PAN"
+      }
+    },
+    {
+      "date": "1987",
+      "value": "2301970",
+      "locator": {
+        "year": "1987",
+        "country_code": "PAN"
+      }
+    },
+    {
+      "date": "1988",
+      "value": "2352848",
+      "locator": {
+        "year": "1988",
+        "country_code": "PAN"
+      }
+    },
+    {
+      "date": "1989",
+      "value": "2403820",
+      "locator": {
+        "year": "1989",
+        "country_code": "PAN"
+      }
+    },
+    {
+      "date": "1990",
+      "value": "2455583",
+      "locator": {
+        "year": "1990",
+        "country_code": "PAN"
+      }
+    },
+    {
+      "date": "1991",
+      "value": "2508265",
+      "locator": {
+        "year": "1991",
+        "country_code": "PAN"
+      }
+    },
+    {
+      "date": "1992",
+      "value": "2561336",
+      "locator": {
+        "year": "1992",
+        "country_code": "PAN"
+      }
+    },
+    {
+      "date": "1993",
+      "value": "2615099",
+      "locator": {
+        "year": "1993",
+        "country_code": "PAN"
+      }
+    },
+    {
+      "date": "1994",
+      "value": "2669546",
+      "locator": {
+        "year": "1994",
+        "country_code": "PAN"
+      }
+    },
+    {
+      "date": "1995",
+      "value": "2724557",
+      "locator": {
+        "year": "1995",
+        "country_code": "PAN"
+      }
+    },
+    {
+      "date": "1996",
+      "value": "2780227",
+      "locator": {
+        "year": "1996",
+        "country_code": "PAN"
+      }
+    },
+    {
+      "date": "1997",
+      "value": "2836695",
+      "locator": {
+        "year": "1997",
+        "country_code": "PAN"
+      }
+    },
+    {
+      "date": "1998",
+      "value": "2893914",
+      "locator": {
+        "year": "1998",
+        "country_code": "PAN"
+      }
+    },
+    {
+      "date": "1999",
+      "value": "2951822",
+      "locator": {
+        "year": "1999",
+        "country_code": "PAN"
+      }
+    },
+    {
+      "date": "2000",
+      "value": "3010369",
+      "locator": {
+        "year": "2000",
+        "country_code": "PAN"
+      }
+    },
+    {
+      "date": "2001",
+      "value": "3069537",
+      "locator": {
+        "year": "2001",
+        "country_code": "PAN"
+      }
+    },
+    {
+      "date": "2002",
+      "value": "3129344",
+      "locator": {
+        "year": "2002",
+        "country_code": "PAN"
+      }
+    },
+    {
+      "date": "2003",
+      "value": "3189807",
+      "locator": {
+        "year": "2003",
+        "country_code": "PAN"
+      }
+    },
+    {
+      "date": "2004",
+      "value": "3251155",
+      "locator": {
+        "year": "2004",
+        "country_code": "PAN"
+      }
+    },
+    {
+      "date": "2005",
+      "value": "3313026",
+      "locator": {
+        "year": "2005",
+        "country_code": "PAN"
+      }
+    },
+    {
+      "date": "2006",
+      "value": "3375024",
+      "locator": {
+        "year": "2006",
+        "country_code": "PAN"
+      }
+    },
+    {
+      "date": "2007",
+      "value": "3437490",
+      "locator": {
+        "year": "2007",
+        "country_code": "PAN"
+      }
+    },
+    {
+      "date": "2008",
+      "value": "3500648",
+      "locator": {
+        "year": "2008",
+        "country_code": "PAN"
+      }
+    },
+    {
+      "date": "2009",
+      "value": "3564381",
+      "locator": {
+        "year": "2009",
+        "country_code": "PAN"
+      }
+    },
+    {
+      "date": "2010",
+      "value": "3628535",
+      "locator": {
+        "year": "2010",
+        "country_code": "PAN"
+      }
+    },
+    {
+      "date": "2011",
+      "value": "3693505",
+      "locator": {
+        "year": "2011",
+        "country_code": "PAN"
+      }
+    },
+    {
+      "date": "2012",
+      "value": "3759256",
+      "locator": {
+        "year": "2012",
+        "country_code": "PAN"
+      }
+    },
+    {
+      "date": "2013",
+      "value": "3825329",
+      "locator": {
+        "year": "2013",
+        "country_code": "PAN"
+      }
+    },
+    {
+      "date": "2014",
+      "value": "3892101",
+      "locator": {
+        "year": "2014",
+        "country_code": "PAN"
+      }
+    },
+    {
+      "date": "2015",
+      "value": "3960035",
+      "locator": {
+        "year": "2015",
+        "country_code": "PAN"
+      }
+    },
+    {
+      "date": "2016",
+      "value": "4029086",
+      "locator": {
+        "year": "2016",
+        "country_code": "PAN"
+      }
+    },
+    {
+      "date": "2017",
+      "value": "4098707",
+      "locator": {
+        "year": "2017",
+        "country_code": "PAN"
+      }
+    },
+    {
+      "date": "2018",
+      "value": "4167860",
+      "locator": {
+        "year": "2018",
+        "country_code": "PAN"
+      }
+    },
+    {
+      "date": "2019",
+      "value": "4234700",
+      "locator": {
+        "year": "2019",
+        "country_code": "PAN"
+      }
+    },
+    {
+      "date": "2020",
+      "value": "4293261",
+      "locator": {
+        "year": "2020",
+        "country_code": "PAN"
+      }
+    },
+    {
+      "date": "2021",
+      "value": "4345405",
+      "locator": {
+        "year": "2021",
+        "country_code": "PAN"
+      }
+    },
+    {
+      "date": "2022",
+      "value": "4400773",
+      "locator": {
+        "year": "2022",
+        "country_code": "PAN"
+      }
+    },
+    {
+      "date": "2023",
+      "value": "4458759",
+      "locator": {
+        "year": "2023",
+        "country_code": "PAN"
+      }
+    },
+    {
+      "date": "2024",
+      "value": "4515577",
+      "locator": {
+        "year": "2024",
+        "country_code": "PAN"
+      }
+    },
+    {
+      "date": "2025",
+      "value": "4571189",
+      "locator": {
+        "year": "2025",
+        "country_code": "PAN"
+      }
+    }
+  ]
+}

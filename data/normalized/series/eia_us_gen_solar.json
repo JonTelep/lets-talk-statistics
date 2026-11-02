@@ -1,0 +1,350 @@
+{
+  "id": "eia_us_gen_solar",
+  "name": "Solar",
+  "units": "Million Kilowatthours",
+  "adjustment": "annual",
+  "nominal_or_real": "generation",
+  "frequency": "annual",
+  "source_id": "eia_total_bulk",
+  "series_url": "https://www.eia.gov/totalenergy/data/browser/index.php?tbl=T07.02A",
+  "eia_series_id": "TOTAL.SOTEPUS.A",
+  "notes": "EIA bulk series TOTAL.SOTEPUS.A, Solar Electricity Net Generation, Annual. Annual. Published years in this file run from 1984 to 2025. This series includes estimated small-scale solar.",
+  "points": [
+    {
+      "date": "1984",
+      "value": "5.248",
+      "locator": {
+        "year": "1984",
+        "series_id": "TOTAL.SOTEPUS.A"
+      }
+    },
+    {
+      "date": "1985",
+      "value": "10.63",
+      "locator": {
+        "year": "1985",
+        "series_id": "TOTAL.SOTEPUS.A"
+      }
+    },
+    {
+      "date": "1986",
+      "value": "14.032",
+      "locator": {
+        "year": "1986",
+        "series_id": "TOTAL.SOTEPUS.A"
+      }
+    },
+    {
+      "date": "1987",
+      "value": "10.497",
+      "locator": {
+        "year": "1987",
+        "series_id": "TOTAL.SOTEPUS.A"
+      }
+    },
+    {
+      "date": "1988",
+      "value": "9.094",
+      "locator": {
+        "year": "1988",
+        "series_id": "TOTAL.SOTEPUS.A"
+      }
+    },
+    {
+      "date": "1989",
+      "value": "278.283",
+      "locator": {
+        "year": "1989",
+        "series_id": "TOTAL.SOTEPUS.A"
+      }
+    },
+    {
+      "date": "1990",
+      "value": "398.597",
+      "locator": {
+        "year": "1990",
+        "series_id": "TOTAL.SOTEPUS.A"
+      }
+    },
+    {
+      "date": "1991",
+      "value": "506.946",
+      "locator": {
+        "year": "1991",
+        "series_id": "TOTAL.SOTEPUS.A"
+      }
+    },
+    {
+      "date": "1992",
+      "value": "438.325",
+      "locator": {
+        "year": "1992",
+        "series_id": "TOTAL.SOTEPUS.A"
+      }
+    },
+    {
+      "date": "1993",
+      "value": "504.871",
+      "locator": {
+        "year": "1993",
+        "series_id": "TOTAL.SOTEPUS.A"
+      }
+    },
+    {
+      "date": "1994",
+      "value": "534.128",
+      "locator": {
+        "year": "1994",
+        "series_id": "TOTAL.SOTEPUS.A"
+      }
+    },
+    {
+      "date": "1995",
+      "value": "551.133",
+      "locator": {
+        "year": "1995",
+        "series_id": "TOTAL.SOTEPUS.A"
+      }
+    },
+    {
+      "date": "1996",
+      "value": "583.606",
+      "locator": {
+        "year": "1996",
+        "series_id": "TOTAL.SOTEPUS.A"
+      }
+    },
+    {
+      "date": "1997",
+      "value": "581.039",
+      "locator": {
+        "year": "1997",
+        "series_id": "TOTAL.SOTEPUS.A"
+      }
+    },
+    {
+      "date": "1998",
+      "value": "581.511",
+      "locator": {
+        "year": "1998",
+        "series_id": "TOTAL.SOTEPUS.A"
+      }
+    },
+    {
+      "date": "1999",
+      "value": "587.032",
+      "locator": {
+        "year": "1999",
+        "series_id": "TOTAL.SOTEPUS.A"
+      }
+    },
+    {
+      "date": "2000",
+      "value": "597.678",
+      "locator": {
+        "year": "2000",
+        "series_id": "TOTAL.SOTEPUS.A"
+      }
+    },
+    {
+      "date": "2001",
+      "value": "668.862",
+      "locator": {
+        "year": "2001",
+        "series_id": "TOTAL.SOTEPUS.A"
+      }
+    },
+    {
+      "date": "2002",
+      "value": "704.307",
+      "locator": {
+        "year": "2002",
+        "series_id": "TOTAL.SOTEPUS.A"
+      }
+    },
+    {
+      "date": "2003",
+      "value": "708.539",
+      "locator": {
+        "year": "2003",
+        "series_id": "TOTAL.SOTEPUS.A"
+      }
+    },
+    {
+      "date": "2004",
+      "value": "791.375",
+      "locator": {
+        "year": "2004",
+        "series_id": "TOTAL.SOTEPUS.A"
+      }
+    },
+    {
+      "date": "2005",
+      "value": "874.71",
+      "locator": {
+        "year": "2005",
+        "series_id": "TOTAL.SOTEPUS.A"
+      }
+    },
+    {
+      "date": "2006",
+      "value": "980.84",
+      "locator": {
+        "year": "2006",
+        "series_id": "TOTAL.SOTEPUS.A"
+      }
+    },
+    {
+      "date": "2007",
+      "value": "1279.795",
+      "locator": {
+        "year": "2007",
+        "series_id": "TOTAL.SOTEPUS.A"
+      }
+    },
+    {
+      "date": "2008",
+      "value": "1937.81",
+      "locator": {
+        "year": "2008",
+        "series_id": "TOTAL.SOTEPUS.A"
+      }
+    },
+    {
+      "date": "2009",
+      "value": "2334.073",
+      "locator": {
+        "year": "2009",
+        "series_id": "TOTAL.SOTEPUS.A"
+      }
+    },
+    {
+      "date": "2010",
+      "value": "3492.114",
+      "locator": {
+        "year": "2010",
+        "series_id": "TOTAL.SOTEPUS.A"
+      }
+    },
+    {
+      "date": "2011",
+      "value": "5429.489",
+      "locator": {
+        "year": "2011",
+        "series_id": "TOTAL.SOTEPUS.A"
+      }
+    },
+    {
+      "date": "2012",
+      "value": "10123.499",
+      "locator": {
+        "year": "2012",
+        "series_id": "TOTAL.SOTEPUS.A"
+      }
+    },
+    {
+      "date": "2013",
+      "value": "17267.971",
+      "locator": {
+        "year": "2013",
+        "series_id": "TOTAL.SOTEPUS.A"
+      }
+    },
+    {
+      "date": "2014",
+      "value": "28923.69",
+      "locator": {
+        "year": "2014",
+        "series_id": "TOTAL.SOTEPUS.A"
+      }
+    },
+    {
+      "date": "2015",
+      "value": "39032.171",
+      "locator": {
+        "year": "2015",
+        "series_id": "TOTAL.SOTEPUS.A"
+      }
+    },
+    {
+      "date": "2016",
+      "value": "54866.492",
+      "locator": {
+        "year": "2016",
+        "series_id": "TOTAL.SOTEPUS.A"
+      }
+    },
+    {
+      "date": "2017",
+      "value": "77277.148",
+      "locator": {
+        "year": "2017",
+        "series_id": "TOTAL.SOTEPUS.A"
+      }
+    },
+    {
+      "date": "2018",
+      "value": "93364.589",
+      "locator": {
+        "year": "2018",
+        "series_id": "TOTAL.SOTEPUS.A"
+      }
+    },
+    {
+      "date": "2019",
+      "value": "106894.27",
+      "locator": {
+        "year": "2019",
+        "series_id": "TOTAL.SOTEPUS.A"
+      }
+    },
+    {
+      "date": "2020",
+      "value": "130721.095",
+      "locator": {
+        "year": "2020",
+        "series_id": "TOTAL.SOTEPUS.A"
+      }
+    },
+    {
+      "date": "2021",
+      "value": "164422.45",
+      "locator": {
+        "year": "2021",
+        "series_id": "TOTAL.SOTEPUS.A"
+      }
+    },
+    {
+      "date": "2022",
+      "value": "205074.136",
+      "locator": {
+        "year": "2022",
+        "series_id": "TOTAL.SOTEPUS.A"
+      }
+    },
+    {
+      "date": "2023",
+      "value": "238936.701",
+      "locator": {
+        "year": "2023",
+        "series_id": "TOTAL.SOTEPUS.A"
+      }
+    },
+    {
+      "date": "2024",
+      "value": "303751.962",
+      "locator": {
+        "year": "2024",
+        "series_id": "TOTAL.SOTEPUS.A"
+      }
+    },
+    {
+      "date": "2025",
+      "value": "388819.86",
+      "locator": {
+        "year": "2025",
+        "series_id": "TOTAL.SOTEPUS.A"
+      }
+    }
+  ]
+}

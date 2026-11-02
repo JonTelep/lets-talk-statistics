@@ -1,0 +1,641 @@
+{
+  "id": "eia_us_gen_other",
+  "name": "Other",
+  "units": "Million Kilowatthours",
+  "adjustment": "annual",
+  "nominal_or_real": "generation",
+  "frequency": "annual",
+  "source_id": "eia_total_bulk",
+  "series_url": "https://www.eia.gov/totalenergy/data/browser/index.php?tbl=T07.02A",
+  "derived": true,
+  "formula": "us_generation_residual",
+  "inputs": [
+    "eia_us_gen_total",
+    "eia_us_gen_coal",
+    "eia_us_gen_natural_gas",
+    "eia_us_gen_nuclear",
+    "eia_us_gen_hydro",
+    "eia_us_gen_wind",
+    "eia_us_gen_solar",
+    "eia_us_gen_petroleum"
+  ],
+  "notes": "Total minus coal, natural gas, nuclear, conventional hydroelectric, wind, solar, and petroleum in the years those series publish a number. An NA source is not subtracted. Rounded half up to 3 decimals. Pumped storage, wood, waste, geothermal, and other gases stay in this remainder because they are not separate lines on the chart.",
+  "points": [
+    {
+      "date": "1949",
+      "value": "386.036",
+      "locator": {
+        "formula": "total - named sources",
+        "year": "1949"
+      }
+    },
+    {
+      "date": "1950",
+      "value": "389.585",
+      "locator": {
+        "formula": "total - named sources",
+        "year": "1950"
+      }
+    },
+    {
+      "date": "1951",
+      "value": "390.784",
+      "locator": {
+        "formula": "total - named sources",
+        "year": "1951"
+      }
+    },
+    {
+      "date": "1952",
+      "value": "481.647",
+      "locator": {
+        "formula": "total - named sources",
+        "year": "1952"
+      }
+    },
+    {
+      "date": "1953",
+      "value": "389.418",
+      "locator": {
+        "formula": "total - named sources",
+        "year": "1953"
+      }
+    },
+    {
+      "date": "1954",
+      "value": "263.434",
+      "locator": {
+        "formula": "total - named sources",
+        "year": "1954"
+      }
+    },
+    {
+      "date": "1955",
+      "value": "276.469",
+      "locator": {
+        "formula": "total - named sources",
+        "year": "1955"
+      }
+    },
+    {
+      "date": "1956",
+      "value": "151.678",
+      "locator": {
+        "formula": "total - named sources",
+        "year": "1956"
+      }
+    },
+    {
+      "date": "1957",
+      "value": "176.678",
+      "locator": {
+        "formula": "total - named sources",
+        "year": "1957"
+      }
+    },
+    {
+      "date": "1958",
+      "value": "175.003",
+      "locator": {
+        "formula": "total - named sources",
+        "year": "1958"
+      }
+    },
+    {
+      "date": "1959",
+      "value": "152.877",
+      "locator": {
+        "formula": "total - named sources",
+        "year": "1959"
+      }
+    },
+    {
+      "date": "1960",
+      "value": "173.534",
+      "locator": {
+        "formula": "total - named sources",
+        "year": "1960"
+      }
+    },
+    {
+      "date": "1961",
+      "value": "219.755",
+      "locator": {
+        "formula": "total - named sources",
+        "year": "1961"
+      }
+    },
+    {
+      "date": "1962",
+      "value": "228.258",
+      "locator": {
+        "formula": "total - named sources",
+        "year": "1962"
+      }
+    },
+    {
+      "date": "1963",
+      "value": "295.893",
+      "locator": {
+        "formula": "total - named sources",
+        "year": "1963"
+      }
+    },
+    {
+      "date": "1964",
+      "value": "351.867",
+      "locator": {
+        "formula": "total - named sources",
+        "year": "1964"
+      }
+    },
+    {
+      "date": "1965",
+      "value": "458.018",
+      "locator": {
+        "formula": "total - named sources",
+        "year": "1965"
+      }
+    },
+    {
+      "date": "1966",
+      "value": "521.914",
+      "locator": {
+        "formula": "total - named sources",
+        "year": "1966"
+      }
+    },
+    {
+      "date": "1967",
+      "value": "631.997",
+      "locator": {
+        "formula": "total - named sources",
+        "year": "1967"
+      }
+    },
+    {
+      "date": "1968",
+      "value": "810.888",
+      "locator": {
+        "formula": "total - named sources",
+        "year": "1968"
+      }
+    },
+    {
+      "date": "1969",
+      "value": "934.643",
+      "locator": {
+        "formula": "total - named sources",
+        "year": "1969"
+      }
+    },
+    {
+      "date": "1970",
+      "value": "881.633",
+      "locator": {
+        "formula": "total - named sources",
+        "year": "1970"
+      }
+    },
+    {
+      "date": "1971",
+      "value": "858.951",
+      "locator": {
+        "formula": "total - named sources",
+        "year": "1971"
+      }
+    },
+    {
+      "date": "1972",
+      "value": "1783.428",
+      "locator": {
+        "formula": "total - named sources",
+        "year": "1972"
+      }
+    },
+    {
+      "date": "1973",
+      "value": "2294.007",
+      "locator": {
+        "formula": "total - named sources",
+        "year": "1973"
+      }
+    },
+    {
+      "date": "1974",
+      "value": "2703.313",
+      "locator": {
+        "formula": "total - named sources",
+        "year": "1974"
+      }
+    },
+    {
+      "date": "1975",
+      "value": "3437.291",
+      "locator": {
+        "formula": "total - named sources",
+        "year": "1975"
+      }
+    },
+    {
+      "date": "1976",
+      "value": "3882.872",
+      "locator": {
+        "formula": "total - named sources",
+        "year": "1976"
+      }
+    },
+    {
+      "date": "1977",
+      "value": "4063.241",
+      "locator": {
+        "formula": "total - named sources",
+        "year": "1977"
+      }
+    },
+    {
+      "date": "1978",
+      "value": "3315.257",
+      "locator": {
+        "formula": "total - named sources",
+        "year": "1978"
+      }
+    },
+    {
+      "date": "1979",
+      "value": "4387.019",
+      "locator": {
+        "formula": "total - named sources",
+        "year": "1979"
+      }
+    },
+    {
+      "date": "1980",
+      "value": "5506.242",
+      "locator": {
+        "formula": "total - named sources",
+        "year": "1980"
+      }
+    },
+    {
+      "date": "1981",
+      "value": "6053.991",
+      "locator": {
+        "formula": "total - named sources",
+        "year": "1981"
+      }
+    },
+    {
+      "date": "1982",
+      "value": "5163.783",
+      "locator": {
+        "formula": "total - named sources",
+        "year": "1982"
+      }
+    },
+    {
+      "date": "1983",
+      "value": "6453.714",
+      "locator": {
+        "formula": "total - named sources",
+        "year": "1983"
+      }
+    },
+    {
+      "date": "1984",
+      "value": "8626.454",
+      "locator": {
+        "formula": "total - named sources",
+        "year": "1984"
+      }
+    },
+    {
+      "date": "1985",
+      "value": "10708.100",
+      "locator": {
+        "formula": "total - named sources",
+        "year": "1985"
+      }
+    },
+    {
+      "date": "1986",
+      "value": "11484.697",
+      "locator": {
+        "formula": "total - named sources",
+        "year": "1986"
+      }
+    },
+    {
+      "date": "1987",
+      "value": "12252.491",
+      "locator": {
+        "formula": "total - named sources",
+        "year": "1987"
+      }
+    },
+    {
+      "date": "1988",
+      "value": "11974.324",
+      "locator": {
+        "formula": "total - named sources",
+        "year": "1988"
+      }
+    },
+    {
+      "date": "1989",
+      "value": "62685.265",
+      "locator": {
+        "formula": "total - named sources",
+        "year": "1989"
+      }
+    },
+    {
+      "date": "1990",
+      "value": "71707.291",
+      "locator": {
+        "formula": "total - named sources",
+        "year": "1990"
+      }
+    },
+    {
+      "date": "1991",
+      "value": "76889.555",
+      "locator": {
+        "formula": "total - named sources",
+        "year": "1991"
+      }
+    },
+    {
+      "date": "1992",
+      "value": "83296.201",
+      "locator": {
+        "formula": "total - named sources",
+        "year": "1992"
+      }
+    },
+    {
+      "date": "1993",
+      "value": "85152.385",
+      "locator": {
+        "formula": "total - named sources",
+        "year": "1993"
+      }
+    },
+    {
+      "date": "1994",
+      "value": "86209.563",
+      "locator": {
+        "formula": "total - named sources",
+        "year": "1994"
+      }
+    },
+    {
+      "date": "1995",
+      "value": "85552.939",
+      "locator": {
+        "formula": "total - named sources",
+        "year": "1995"
+      }
+    },
+    {
+      "date": "1996",
+      "value": "86879.344",
+      "locator": {
+        "formula": "total - named sources",
+        "year": "1996"
+      }
+    },
+    {
+      "date": "1997",
+      "value": "86306.335",
+      "locator": {
+        "formula": "total - named sources",
+        "year": "1997"
+      }
+    },
+    {
+      "date": "1998",
+      "value": "86156.597",
+      "locator": {
+        "formula": "total - named sources",
+        "year": "1998"
+      }
+    },
+    {
+      "date": "1999",
+      "value": "86492.388",
+      "locator": {
+        "formula": "total - named sources",
+        "year": "1999"
+      }
+    },
+    {
+      "date": "2000",
+      "value": "88029.150",
+      "locator": {
+        "formula": "total - named sources",
+        "year": "2000"
+      }
+    },
+    {
+      "date": "2001",
+      "value": "75610.928",
+      "locator": {
+        "formula": "total - named sources",
+        "year": "2001"
+      }
+    },
+    {
+      "date": "2002",
+      "value": "84446.724",
+      "locator": {
+        "formula": "total - named sources",
+        "year": "2002"
+      }
+    },
+    {
+      "date": "2003",
+      "value": "88874.785",
+      "locator": {
+        "formula": "total - named sources",
+        "year": "2003"
+      }
+    },
+    {
+      "date": "2004",
+      "value": "89345.050",
+      "locator": {
+        "formula": "total - named sources",
+        "year": "2004"
+      }
+    },
+    {
+      "date": "2005",
+      "value": "88695.970",
+      "locator": {
+        "formula": "total - named sources",
+        "year": "2005"
+      }
+    },
+    {
+      "date": "2006",
+      "value": "90022.014",
+      "locator": {
+        "formula": "total - named sources",
+        "year": "2006"
+      }
+    },
+    {
+      "date": "2007",
+      "value": "88963.924",
+      "locator": {
+        "formula": "total - named sources",
+        "year": "2007"
+      }
+    },
+    {
+      "date": "2008",
+      "value": "87096.067",
+      "locator": {
+        "formula": "total - named sources",
+        "year": "2008"
+      }
+    },
+    {
+      "date": "2009",
+      "value": "87434.488",
+      "locator": {
+        "formula": "total - named sources",
+        "year": "2009"
+      }
+    },
+    {
+      "date": "2010",
+      "value": "89975.576",
+      "locator": {
+        "formula": "total - named sources",
+        "year": "2010"
+      }
+    },
+    {
+      "date": "2011",
+      "value": "91286.182",
+      "locator": {
+        "formula": "total - named sources",
+        "year": "2011"
+      }
+    },
+    {
+      "date": "2012",
+      "value": "93918.748",
+      "locator": {
+        "formula": "total - named sources",
+        "year": "2012"
+      }
+    },
+    {
+      "date": "2013",
+      "value": "98392.127",
+      "locator": {
+        "formula": "total - named sources",
+        "year": "2013"
+      }
+    },
+    {
+      "date": "2014",
+      "value": "99107.898",
+      "locator": {
+        "formula": "total - named sources",
+        "year": "2014"
+      }
+    },
+    {
+      "date": "2015",
+      "value": "101529.410",
+      "locator": {
+        "formula": "total - named sources",
+        "year": "2015"
+      }
+    },
+    {
+      "date": "2016",
+      "value": "98396.635",
+      "locator": {
+        "formula": "total - named sources",
+        "year": "2016"
+      }
+    },
+    {
+      "date": "2017",
+      "value": "97643.021",
+      "locator": {
+        "formula": "total - named sources",
+        "year": "2017"
+      }
+    },
+    {
+      "date": "2018",
+      "value": "98330.470",
+      "locator": {
+        "formula": "total - named sources",
+        "year": "2018"
+      }
+    },
+    {
+      "date": "2019",
+      "value": "93641.186",
+      "locator": {
+        "formula": "total - named sources",
+        "year": "2019"
+      }
+    },
+    {
+      "date": "2020",
+      "value": "89953.772",
+      "locator": {
+        "formula": "total - named sources",
+        "year": "2020"
+      }
+    },
+    {
+      "date": "2021",
+      "value": "88652.973",
+      "locator": {
+        "formula": "total - named sources",
+        "year": "2021"
+      }
+    },
+    {
+      "date": "2022",
+      "value": "84744.882",
+      "locator": {
+        "formula": "total - named sources",
+        "year": "2022"
+      }
+    },
+    {
+      "date": "2023",
+      "value": "79312.078",
+      "locator": {
+        "formula": "total - named sources",
+        "year": "2023"
+      }
+    },
+    {
+      "date": "2024",
+      "value": "74992.144",
+      "locator": {
+        "formula": "total - named sources",
+        "year": "2024"
+      }
+    },
+    {
+      "date": "2025",
+      "value": "73887.126",
+      "locator": {
+        "formula": "total - named sources",
+        "year": "2025"
+      }
+    }
+  ]
+}

@@ -1,0 +1,543 @@
+{
+  "id": "wb_pop_PRK",
+  "name": "North Korea",
+  "units": "people",
+  "adjustment": "midyear",
+  "nominal_or_real": "count",
+  "frequency": "annual",
+  "source_id": "worldbank_sp_pop_totl",
+  "series_url": "https://data.worldbank.org/indicator/SP.POP.TOTL",
+  "country_code": "PRK",
+  "country_name": "North Korea",
+  "notes": "World Bank World Development Indicators, SP.POP.TOTL, country code PRK. Midyear population. Published years in this file run from 1960 to 2025.",
+  "points": [
+    {
+      "date": "1960",
+      "value": "11722953",
+      "locator": {
+        "year": "1960",
+        "country_code": "PRK"
+      }
+    },
+    {
+      "date": "1961",
+      "value": "11990713",
+      "locator": {
+        "year": "1961",
+        "country_code": "PRK"
+      }
+    },
+    {
+      "date": "1962",
+      "value": "12262882",
+      "locator": {
+        "year": "1962",
+        "country_code": "PRK"
+      }
+    },
+    {
+      "date": "1963",
+      "value": "12567057",
+      "locator": {
+        "year": "1963",
+        "country_code": "PRK"
+      }
+    },
+    {
+      "date": "1964",
+      "value": "12889770",
+      "locator": {
+        "year": "1964",
+        "country_code": "PRK"
+      }
+    },
+    {
+      "date": "1965",
+      "value": "13219369",
+      "locator": {
+        "year": "1965",
+        "country_code": "PRK"
+      }
+    },
+    {
+      "date": "1966",
+      "value": "13569094",
+      "locator": {
+        "year": "1966",
+        "country_code": "PRK"
+      }
+    },
+    {
+      "date": "1967",
+      "value": "13958350",
+      "locator": {
+        "year": "1967",
+        "country_code": "PRK"
+      }
+    },
+    {
+      "date": "1968",
+      "value": "14365596",
+      "locator": {
+        "year": "1968",
+        "country_code": "PRK"
+      }
+    },
+    {
+      "date": "1969",
+      "value": "14767615",
+      "locator": {
+        "year": "1969",
+        "country_code": "PRK"
+      }
+    },
+    {
+      "date": "1970",
+      "value": "15172775",
+      "locator": {
+        "year": "1970",
+        "country_code": "PRK"
+      }
+    },
+    {
+      "date": "1971",
+      "value": "15572457",
+      "locator": {
+        "year": "1971",
+        "country_code": "PRK"
+      }
+    },
+    {
+      "date": "1972",
+      "value": "15975069",
+      "locator": {
+        "year": "1972",
+        "country_code": "PRK"
+      }
+    },
+    {
+      "date": "1973",
+      "value": "16350367",
+      "locator": {
+        "year": "1973",
+        "country_code": "PRK"
+      }
+    },
+    {
+      "date": "1974",
+      "value": "16673121",
+      "locator": {
+        "year": "1974",
+        "country_code": "PRK"
+      }
+    },
+    {
+      "date": "1975",
+      "value": "16971055",
+      "locator": {
+        "year": "1975",
+        "country_code": "PRK"
+      }
+    },
+    {
+      "date": "1976",
+      "value": "17243450",
+      "locator": {
+        "year": "1976",
+        "country_code": "PRK"
+      }
+    },
+    {
+      "date": "1977",
+      "value": "17492798",
+      "locator": {
+        "year": "1977",
+        "country_code": "PRK"
+      }
+    },
+    {
+      "date": "1978",
+      "value": "17735995",
+      "locator": {
+        "year": "1978",
+        "country_code": "PRK"
+      }
+    },
+    {
+      "date": "1979",
+      "value": "17983470",
+      "locator": {
+        "year": "1979",
+        "country_code": "PRK"
+      }
+    },
+    {
+      "date": "1980",
+      "value": "18236786",
+      "locator": {
+        "year": "1980",
+        "country_code": "PRK"
+      }
+    },
+    {
+      "date": "1981",
+      "value": "18501295",
+      "locator": {
+        "year": "1981",
+        "country_code": "PRK"
+      }
+    },
+    {
+      "date": "1982",
+      "value": "18776357",
+      "locator": {
+        "year": "1982",
+        "country_code": "PRK"
+      }
+    },
+    {
+      "date": "1983",
+      "value": "19054034",
+      "locator": {
+        "year": "1983",
+        "country_code": "PRK"
+      }
+    },
+    {
+      "date": "1984",
+      "value": "19335043",
+      "locator": {
+        "year": "1984",
+        "country_code": "PRK"
+      }
+    },
+    {
+      "date": "1985",
+      "value": "19620388",
+      "locator": {
+        "year": "1985",
+        "country_code": "PRK"
+      }
+    },
+    {
+      "date": "1986",
+      "value": "19910855",
+      "locator": {
+        "year": "1986",
+        "country_code": "PRK"
+      }
+    },
+    {
+      "date": "1987",
+      "value": "20205483",
+      "locator": {
+        "year": "1987",
+        "country_code": "PRK"
+      }
+    },
+    {
+      "date": "1988",
+      "value": "20503161",
+      "locator": {
+        "year": "1988",
+        "country_code": "PRK"
+      }
+    },
+    {
+      "date": "1989",
+      "value": "20804367",
+      "locator": {
+        "year": "1989",
+        "country_code": "PRK"
+      }
+    },
+    {
+      "date": "1990",
+      "value": "21112137",
+      "locator": {
+        "year": "1990",
+        "country_code": "PRK"
+      }
+    },
+    {
+      "date": "1991",
+      "value": "21428638",
+      "locator": {
+        "year": "1991",
+        "country_code": "PRK"
+      }
+    },
+    {
+      "date": "1992",
+      "value": "21750911",
+      "locator": {
+        "year": "1992",
+        "country_code": "PRK"
+      }
+    },
+    {
+      "date": "1993",
+      "value": "22073352",
+      "locator": {
+        "year": "1993",
+        "country_code": "PRK"
+      }
+    },
+    {
+      "date": "1994",
+      "value": "22393975",
+      "locator": {
+        "year": "1994",
+        "country_code": "PRK"
+      }
+    },
+    {
+      "date": "1995",
+      "value": "22669304",
+      "locator": {
+        "year": "1995",
+        "country_code": "PRK"
+      }
+    },
+    {
+      "date": "1996",
+      "value": "22895746",
+      "locator": {
+        "year": "1996",
+        "country_code": "PRK"
+      }
+    },
+    {
+      "date": "1997",
+      "value": "23110830",
+      "locator": {
+        "year": "1997",
+        "country_code": "PRK"
+      }
+    },
+    {
+      "date": "1998",
+      "value": "23311564",
+      "locator": {
+        "year": "1998",
+        "country_code": "PRK"
+      }
+    },
+    {
+      "date": "1999",
+      "value": "23497599",
+      "locator": {
+        "year": "1999",
+        "country_code": "PRK"
+      }
+    },
+    {
+      "date": "2000",
+      "value": "23665910",
+      "locator": {
+        "year": "2000",
+        "country_code": "PRK"
+      }
+    },
+    {
+      "date": "2001",
+      "value": "23815358",
+      "locator": {
+        "year": "2001",
+        "country_code": "PRK"
+      }
+    },
+    {
+      "date": "2002",
+      "value": "23943973",
+      "locator": {
+        "year": "2002",
+        "country_code": "PRK"
+      }
+    },
+    {
+      "date": "2003",
+      "value": "24090380",
+      "locator": {
+        "year": "2003",
+        "country_code": "PRK"
+      }
+    },
+    {
+      "date": "2004",
+      "value": "24254943",
+      "locator": {
+        "year": "2004",
+        "country_code": "PRK"
+      }
+    },
+    {
+      "date": "2005",
+      "value": "24396433",
+      "locator": {
+        "year": "2005",
+        "country_code": "PRK"
+      }
+    },
+    {
+      "date": "2006",
+      "value": "24524507",
+      "locator": {
+        "year": "2006",
+        "country_code": "PRK"
+      }
+    },
+    {
+      "date": "2007",
+      "value": "24646383",
+      "locator": {
+        "year": "2007",
+        "country_code": "PRK"
+      }
+    },
+    {
+      "date": "2008",
+      "value": "24764618",
+      "locator": {
+        "year": "2008",
+        "country_code": "PRK"
+      }
+    },
+    {
+      "date": "2009",
+      "value": "24878332",
+      "locator": {
+        "year": "2009",
+        "country_code": "PRK"
+      }
+    },
+    {
+      "date": "2010",
+      "value": "24987258",
+      "locator": {
+        "year": "2010",
+        "country_code": "PRK"
+      }
+    },
+    {
+      "date": "2011",
+      "value": "25097874",
+      "locator": {
+        "year": "2011",
+        "country_code": "PRK"
+      }
+    },
+    {
+      "date": "2012",
+      "value": "25211728",
+      "locator": {
+        "year": "2012",
+        "country_code": "PRK"
+      }
+    },
+    {
+      "date": "2013",
+      "value": "25329451",
+      "locator": {
+        "year": "2013",
+        "country_code": "PRK"
+      }
+    },
+    {
+      "date": "2014",
+      "value": "25451262",
+      "locator": {
+        "year": "2014",
+        "country_code": "PRK"
+      }
+    },
+    {
+      "date": "2015",
+      "value": "25575350",
+      "locator": {
+        "year": "2015",
+        "country_code": "PRK"
+      }
+    },
+    {
+      "date": "2016",
+      "value": "25698326",
+      "locator": {
+        "year": "2016",
+        "country_code": "PRK"
+      }
+    },
+    {
+      "date": "2017",
+      "value": "25817709",
+      "locator": {
+        "year": "2017",
+        "country_code": "PRK"
+      }
+    },
+    {
+      "date": "2018",
+      "value": "25931147",
+      "locator": {
+        "year": "2018",
+        "country_code": "PRK"
+      }
+    },
+    {
+      "date": "2019",
+      "value": "26037632",
+      "locator": {
+        "year": "2019",
+        "country_code": "PRK"
+      }
+    },
+    {
+      "date": "2020",
+      "value": "26136312",
+      "locator": {
+        "year": "2020",
+        "country_code": "PRK"
+      }
+    },
+    {
+      "date": "2021",
+      "value": "26232534",
+      "locator": {
+        "year": "2021",
+        "country_code": "PRK"
+      }
+    },
+    {
+      "date": "2022",
+      "value": "26328845",
+      "locator": {
+        "year": "2022",
+        "country_code": "PRK"
+      }
+    },
+    {
+      "date": "2023",
+      "value": "26418204",
+      "locator": {
+        "year": "2023",
+        "country_code": "PRK"
+      }
+    },
+    {
+      "date": "2024",
+      "value": "26498823",
+      "locator": {
+        "year": "2024",
+        "country_code": "PRK"
+      }
+    },
+    {
+      "date": "2025",
+      "value": "26571036",
+      "locator": {
+        "year": "2025",
+        "country_code": "PRK"
+      }
+    }
+  ]
+}

@@ -1,0 +1,543 @@
+{
+  "id": "wb_pop_LBN",
+  "name": "Lebanon",
+  "units": "people",
+  "adjustment": "midyear",
+  "nominal_or_real": "count",
+  "frequency": "annual",
+  "source_id": "worldbank_sp_pop_totl",
+  "series_url": "https://data.worldbank.org/indicator/SP.POP.TOTL",
+  "country_code": "LBN",
+  "country_name": "Lebanon",
+  "notes": "World Bank World Development Indicators, SP.POP.TOTL, country code LBN. Midyear population. Published years in this file run from 1960 to 2025.",
+  "points": [
+    {
+      "date": "1960",
+      "value": "1794406",
+      "locator": {
+        "year": "1960",
+        "country_code": "LBN"
+      }
+    },
+    {
+      "date": "1961",
+      "value": "1850084",
+      "locator": {
+        "year": "1961",
+        "country_code": "LBN"
+      }
+    },
+    {
+      "date": "1962",
+      "value": "1909578",
+      "locator": {
+        "year": "1962",
+        "country_code": "LBN"
+      }
+    },
+    {
+      "date": "1963",
+      "value": "1970316",
+      "locator": {
+        "year": "1963",
+        "country_code": "LBN"
+      }
+    },
+    {
+      "date": "1964",
+      "value": "2030543",
+      "locator": {
+        "year": "1964",
+        "country_code": "LBN"
+      }
+    },
+    {
+      "date": "1965",
+      "value": "2088831",
+      "locator": {
+        "year": "1965",
+        "country_code": "LBN"
+      }
+    },
+    {
+      "date": "1966",
+      "value": "2148260",
+      "locator": {
+        "year": "1966",
+        "country_code": "LBN"
+      }
+    },
+    {
+      "date": "1967",
+      "value": "2206731",
+      "locator": {
+        "year": "1967",
+        "country_code": "LBN"
+      }
+    },
+    {
+      "date": "1968",
+      "value": "2266368",
+      "locator": {
+        "year": "1968",
+        "country_code": "LBN"
+      }
+    },
+    {
+      "date": "1969",
+      "value": "2328159",
+      "locator": {
+        "year": "1969",
+        "country_code": "LBN"
+      }
+    },
+    {
+      "date": "1970",
+      "value": "2386114",
+      "locator": {
+        "year": "1970",
+        "country_code": "LBN"
+      }
+    },
+    {
+      "date": "1971",
+      "value": "2446314",
+      "locator": {
+        "year": "1971",
+        "country_code": "LBN"
+      }
+    },
+    {
+      "date": "1972",
+      "value": "2509729",
+      "locator": {
+        "year": "1972",
+        "country_code": "LBN"
+      }
+    },
+    {
+      "date": "1973",
+      "value": "2572935",
+      "locator": {
+        "year": "1973",
+        "country_code": "LBN"
+      }
+    },
+    {
+      "date": "1974",
+      "value": "2635185",
+      "locator": {
+        "year": "1974",
+        "country_code": "LBN"
+      }
+    },
+    {
+      "date": "1975",
+      "value": "2693191",
+      "locator": {
+        "year": "1975",
+        "country_code": "LBN"
+      }
+    },
+    {
+      "date": "1976",
+      "value": "2726469",
+      "locator": {
+        "year": "1976",
+        "country_code": "LBN"
+      }
+    },
+    {
+      "date": "1977",
+      "value": "2762155",
+      "locator": {
+        "year": "1977",
+        "country_code": "LBN"
+      }
+    },
+    {
+      "date": "1978",
+      "value": "2822682",
+      "locator": {
+        "year": "1978",
+        "country_code": "LBN"
+      }
+    },
+    {
+      "date": "1979",
+      "value": "2882635",
+      "locator": {
+        "year": "1979",
+        "country_code": "LBN"
+      }
+    },
+    {
+      "date": "1980",
+      "value": "2944763",
+      "locator": {
+        "year": "1980",
+        "country_code": "LBN"
+      }
+    },
+    {
+      "date": "1981",
+      "value": "3008981",
+      "locator": {
+        "year": "1981",
+        "country_code": "LBN"
+      }
+    },
+    {
+      "date": "1982",
+      "value": "3054931",
+      "locator": {
+        "year": "1982",
+        "country_code": "LBN"
+      }
+    },
+    {
+      "date": "1983",
+      "value": "3094996",
+      "locator": {
+        "year": "1983",
+        "country_code": "LBN"
+      }
+    },
+    {
+      "date": "1984",
+      "value": "3152744",
+      "locator": {
+        "year": "1984",
+        "country_code": "LBN"
+      }
+    },
+    {
+      "date": "1985",
+      "value": "3217376",
+      "locator": {
+        "year": "1985",
+        "country_code": "LBN"
+      }
+    },
+    {
+      "date": "1986",
+      "value": "3300365",
+      "locator": {
+        "year": "1986",
+        "country_code": "LBN"
+      }
+    },
+    {
+      "date": "1987",
+      "value": "3385555",
+      "locator": {
+        "year": "1987",
+        "country_code": "LBN"
+      }
+    },
+    {
+      "date": "1988",
+      "value": "3454649",
+      "locator": {
+        "year": "1988",
+        "country_code": "LBN"
+      }
+    },
+    {
+      "date": "1989",
+      "value": "3525285",
+      "locator": {
+        "year": "1989",
+        "country_code": "LBN"
+      }
+    },
+    {
+      "date": "1990",
+      "value": "3595175",
+      "locator": {
+        "year": "1990",
+        "country_code": "LBN"
+      }
+    },
+    {
+      "date": "1991",
+      "value": "3668912",
+      "locator": {
+        "year": "1991",
+        "country_code": "LBN"
+      }
+    },
+    {
+      "date": "1992",
+      "value": "3747371",
+      "locator": {
+        "year": "1992",
+        "country_code": "LBN"
+      }
+    },
+    {
+      "date": "1993",
+      "value": "3820647",
+      "locator": {
+        "year": "1993",
+        "country_code": "LBN"
+      }
+    },
+    {
+      "date": "1994",
+      "value": "3889799",
+      "locator": {
+        "year": "1994",
+        "country_code": "LBN"
+      }
+    },
+    {
+      "date": "1995",
+      "value": "3960735",
+      "locator": {
+        "year": "1995",
+        "country_code": "LBN"
+      }
+    },
+    {
+      "date": "1996",
+      "value": "4034781",
+      "locator": {
+        "year": "1996",
+        "country_code": "LBN"
+      }
+    },
+    {
+      "date": "1997",
+      "value": "4108405",
+      "locator": {
+        "year": "1997",
+        "country_code": "LBN"
+      }
+    },
+    {
+      "date": "1998",
+      "value": "4181281",
+      "locator": {
+        "year": "1998",
+        "country_code": "LBN"
+      }
+    },
+    {
+      "date": "1999",
+      "value": "4255277",
+      "locator": {
+        "year": "1999",
+        "country_code": "LBN"
+      }
+    },
+    {
+      "date": "2000",
+      "value": "4329340",
+      "locator": {
+        "year": "2000",
+        "country_code": "LBN"
+      }
+    },
+    {
+      "date": "2001",
+      "value": "4401918",
+      "locator": {
+        "year": "2001",
+        "country_code": "LBN"
+      }
+    },
+    {
+      "date": "2002",
+      "value": "4463504",
+      "locator": {
+        "year": "2002",
+        "country_code": "LBN"
+      }
+    },
+    {
+      "date": "2003",
+      "value": "4525508",
+      "locator": {
+        "year": "2003",
+        "country_code": "LBN"
+      }
+    },
+    {
+      "date": "2004",
+      "value": "4599279",
+      "locator": {
+        "year": "2004",
+        "country_code": "LBN"
+      }
+    },
+    {
+      "date": "2005",
+      "value": "4671102",
+      "locator": {
+        "year": "2005",
+        "country_code": "LBN"
+      }
+    },
+    {
+      "date": "2006",
+      "value": "4751136",
+      "locator": {
+        "year": "2006",
+        "country_code": "LBN"
+      }
+    },
+    {
+      "date": "2007",
+      "value": "4844118",
+      "locator": {
+        "year": "2007",
+        "country_code": "LBN"
+      }
+    },
+    {
+      "date": "2008",
+      "value": "4925354",
+      "locator": {
+        "year": "2008",
+        "country_code": "LBN"
+      }
+    },
+    {
+      "date": "2009",
+      "value": "4992287",
+      "locator": {
+        "year": "2009",
+        "country_code": "LBN"
+      }
+    },
+    {
+      "date": "2010",
+      "value": "5041288",
+      "locator": {
+        "year": "2010",
+        "country_code": "LBN"
+      }
+    },
+    {
+      "date": "2011",
+      "value": "5096020",
+      "locator": {
+        "year": "2011",
+        "country_code": "LBN"
+      }
+    },
+    {
+      "date": "2012",
+      "value": "5235742",
+      "locator": {
+        "year": "2012",
+        "country_code": "LBN"
+      }
+    },
+    {
+      "date": "2013",
+      "value": "5743436",
+      "locator": {
+        "year": "2013",
+        "country_code": "LBN"
+      }
+    },
+    {
+      "date": "2014",
+      "value": "6346990",
+      "locator": {
+        "year": "2014",
+        "country_code": "LBN"
+      }
+    },
+    {
+      "date": "2015",
+      "value": "6472469",
+      "locator": {
+        "year": "2015",
+        "country_code": "LBN"
+      }
+    },
+    {
+      "date": "2016",
+      "value": "6323060",
+      "locator": {
+        "year": "2016",
+        "country_code": "LBN"
+      }
+    },
+    {
+      "date": "2017",
+      "value": "6160128",
+      "locator": {
+        "year": "2017",
+        "country_code": "LBN"
+      }
+    },
+    {
+      "date": "2018",
+      "value": "5984119",
+      "locator": {
+        "year": "2018",
+        "country_code": "LBN"
+      }
+    },
+    {
+      "date": "2019",
+      "value": "5794594",
+      "locator": {
+        "year": "2019",
+        "country_code": "LBN"
+      }
+    },
+    {
+      "date": "2020",
+      "value": "5702398",
+      "locator": {
+        "year": "2020",
+        "country_code": "LBN"
+      }
+    },
+    {
+      "date": "2021",
+      "value": "5718122",
+      "locator": {
+        "year": "2021",
+        "country_code": "LBN"
+      }
+    },
+    {
+      "date": "2022",
+      "value": "5744489",
+      "locator": {
+        "year": "2022",
+        "country_code": "LBN"
+      }
+    },
+    {
+      "date": "2023",
+      "value": "5773493",
+      "locator": {
+        "year": "2023",
+        "country_code": "LBN"
+      }
+    },
+    {
+      "date": "2024",
+      "value": "5805962",
+      "locator": {
+        "year": "2024",
+        "country_code": "LBN"
+      }
+    },
+    {
+      "date": "2025",
+      "value": "5849421",
+      "locator": {
+        "year": "2025",
+        "country_code": "LBN"
+      }
+    }
+  ]
+}

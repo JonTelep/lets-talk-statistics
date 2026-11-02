@@ -1,0 +1,543 @@
+{
+  "id": "wb_pop_NCL",
+  "name": "New Caledonia",
+  "units": "people",
+  "adjustment": "midyear",
+  "nominal_or_real": "count",
+  "frequency": "annual",
+  "source_id": "worldbank_sp_pop_totl",
+  "series_url": "https://data.worldbank.org/indicator/SP.POP.TOTL",
+  "country_code": "NCL",
+  "country_name": "New Caledonia",
+  "notes": "World Bank World Development Indicators, SP.POP.TOTL, country code NCL. Midyear population. Published years in this file run from 1960 to 2025.",
+  "points": [
+    {
+      "date": "1960",
+      "value": "79819",
+      "locator": {
+        "year": "1960",
+        "country_code": "NCL"
+      }
+    },
+    {
+      "date": "1961",
+      "value": "82521",
+      "locator": {
+        "year": "1961",
+        "country_code": "NCL"
+      }
+    },
+    {
+      "date": "1962",
+      "value": "85334",
+      "locator": {
+        "year": "1962",
+        "country_code": "NCL"
+      }
+    },
+    {
+      "date": "1963",
+      "value": "88050",
+      "locator": {
+        "year": "1963",
+        "country_code": "NCL"
+      }
+    },
+    {
+      "date": "1964",
+      "value": "90602",
+      "locator": {
+        "year": "1964",
+        "country_code": "NCL"
+      }
+    },
+    {
+      "date": "1965",
+      "value": "93159",
+      "locator": {
+        "year": "1965",
+        "country_code": "NCL"
+      }
+    },
+    {
+      "date": "1966",
+      "value": "95820",
+      "locator": {
+        "year": "1966",
+        "country_code": "NCL"
+      }
+    },
+    {
+      "date": "1967",
+      "value": "98587",
+      "locator": {
+        "year": "1967",
+        "country_code": "NCL"
+      }
+    },
+    {
+      "date": "1968",
+      "value": "101441",
+      "locator": {
+        "year": "1968",
+        "country_code": "NCL"
+      }
+    },
+    {
+      "date": "1969",
+      "value": "104849",
+      "locator": {
+        "year": "1969",
+        "country_code": "NCL"
+      }
+    },
+    {
+      "date": "1970",
+      "value": "109338",
+      "locator": {
+        "year": "1970",
+        "country_code": "NCL"
+      }
+    },
+    {
+      "date": "1971",
+      "value": "114514",
+      "locator": {
+        "year": "1971",
+        "country_code": "NCL"
+      }
+    },
+    {
+      "date": "1972",
+      "value": "119931",
+      "locator": {
+        "year": "1972",
+        "country_code": "NCL"
+      }
+    },
+    {
+      "date": "1973",
+      "value": "125585",
+      "locator": {
+        "year": "1973",
+        "country_code": "NCL"
+      }
+    },
+    {
+      "date": "1974",
+      "value": "131452",
+      "locator": {
+        "year": "1974",
+        "country_code": "NCL"
+      }
+    },
+    {
+      "date": "1975",
+      "value": "137462",
+      "locator": {
+        "year": "1975",
+        "country_code": "NCL"
+      }
+    },
+    {
+      "date": "1976",
+      "value": "142091",
+      "locator": {
+        "year": "1976",
+        "country_code": "NCL"
+      }
+    },
+    {
+      "date": "1977",
+      "value": "144599",
+      "locator": {
+        "year": "1977",
+        "country_code": "NCL"
+      }
+    },
+    {
+      "date": "1978",
+      "value": "146392",
+      "locator": {
+        "year": "1978",
+        "country_code": "NCL"
+      }
+    },
+    {
+      "date": "1979",
+      "value": "148132",
+      "locator": {
+        "year": "1979",
+        "country_code": "NCL"
+      }
+    },
+    {
+      "date": "1980",
+      "value": "149817",
+      "locator": {
+        "year": "1980",
+        "country_code": "NCL"
+      }
+    },
+    {
+      "date": "1981",
+      "value": "151441",
+      "locator": {
+        "year": "1981",
+        "country_code": "NCL"
+      }
+    },
+    {
+      "date": "1982",
+      "value": "153001",
+      "locator": {
+        "year": "1982",
+        "country_code": "NCL"
+      }
+    },
+    {
+      "date": "1983",
+      "value": "155003",
+      "locator": {
+        "year": "1983",
+        "country_code": "NCL"
+      }
+    },
+    {
+      "date": "1984",
+      "value": "157583",
+      "locator": {
+        "year": "1984",
+        "country_code": "NCL"
+      }
+    },
+    {
+      "date": "1985",
+      "value": "160234",
+      "locator": {
+        "year": "1985",
+        "country_code": "NCL"
+      }
+    },
+    {
+      "date": "1986",
+      "value": "162898",
+      "locator": {
+        "year": "1986",
+        "country_code": "NCL"
+      }
+    },
+    {
+      "date": "1987",
+      "value": "165650",
+      "locator": {
+        "year": "1987",
+        "country_code": "NCL"
+      }
+    },
+    {
+      "date": "1988",
+      "value": "168502",
+      "locator": {
+        "year": "1988",
+        "country_code": "NCL"
+      }
+    },
+    {
+      "date": "1989",
+      "value": "172029",
+      "locator": {
+        "year": "1989",
+        "country_code": "NCL"
+      }
+    },
+    {
+      "date": "1990",
+      "value": "176456",
+      "locator": {
+        "year": "1990",
+        "country_code": "NCL"
+      }
+    },
+    {
+      "date": "1991",
+      "value": "181238",
+      "locator": {
+        "year": "1991",
+        "country_code": "NCL"
+      }
+    },
+    {
+      "date": "1992",
+      "value": "186072",
+      "locator": {
+        "year": "1992",
+        "country_code": "NCL"
+      }
+    },
+    {
+      "date": "1993",
+      "value": "190857",
+      "locator": {
+        "year": "1993",
+        "country_code": "NCL"
+      }
+    },
+    {
+      "date": "1994",
+      "value": "195614",
+      "locator": {
+        "year": "1994",
+        "country_code": "NCL"
+      }
+    },
+    {
+      "date": "1995",
+      "value": "200379",
+      "locator": {
+        "year": "1995",
+        "country_code": "NCL"
+      }
+    },
+    {
+      "date": "1996",
+      "value": "205034",
+      "locator": {
+        "year": "1996",
+        "country_code": "NCL"
+      }
+    },
+    {
+      "date": "1997",
+      "value": "209560",
+      "locator": {
+        "year": "1997",
+        "country_code": "NCL"
+      }
+    },
+    {
+      "date": "1998",
+      "value": "214047",
+      "locator": {
+        "year": "1998",
+        "country_code": "NCL"
+      }
+    },
+    {
+      "date": "1999",
+      "value": "218527",
+      "locator": {
+        "year": "1999",
+        "country_code": "NCL"
+      }
+    },
+    {
+      "date": "2000",
+      "value": "223098",
+      "locator": {
+        "year": "2000",
+        "country_code": "NCL"
+      }
+    },
+    {
+      "date": "2001",
+      "value": "227707",
+      "locator": {
+        "year": "2001",
+        "country_code": "NCL"
+      }
+    },
+    {
+      "date": "2002",
+      "value": "232236",
+      "locator": {
+        "year": "2002",
+        "country_code": "NCL"
+      }
+    },
+    {
+      "date": "2003",
+      "value": "236678",
+      "locator": {
+        "year": "2003",
+        "country_code": "NCL"
+      }
+    },
+    {
+      "date": "2004",
+      "value": "240852",
+      "locator": {
+        "year": "2004",
+        "country_code": "NCL"
+      }
+    },
+    {
+      "date": "2005",
+      "value": "244381",
+      "locator": {
+        "year": "2005",
+        "country_code": "NCL"
+      }
+    },
+    {
+      "date": "2006",
+      "value": "247547",
+      "locator": {
+        "year": "2006",
+        "country_code": "NCL"
+      }
+    },
+    {
+      "date": "2007",
+      "value": "250725",
+      "locator": {
+        "year": "2007",
+        "country_code": "NCL"
+      }
+    },
+    {
+      "date": "2008",
+      "value": "253825",
+      "locator": {
+        "year": "2008",
+        "country_code": "NCL"
+      }
+    },
+    {
+      "date": "2009",
+      "value": "257250",
+      "locator": {
+        "year": "2009",
+        "country_code": "NCL"
+      }
+    },
+    {
+      "date": "2010",
+      "value": "261582",
+      "locator": {
+        "year": "2010",
+        "country_code": "NCL"
+      }
+    },
+    {
+      "date": "2011",
+      "value": "266543",
+      "locator": {
+        "year": "2011",
+        "country_code": "NCL"
+      }
+    },
+    {
+      "date": "2012",
+      "value": "271633",
+      "locator": {
+        "year": "2012",
+        "country_code": "NCL"
+      }
+    },
+    {
+      "date": "2013",
+      "value": "276822",
+      "locator": {
+        "year": "2013",
+        "country_code": "NCL"
+      }
+    },
+    {
+      "date": "2014",
+      "value": "281224",
+      "locator": {
+        "year": "2014",
+        "country_code": "NCL"
+      }
+    },
+    {
+      "date": "2015",
+      "value": "283168",
+      "locator": {
+        "year": "2015",
+        "country_code": "NCL"
+      }
+    },
+    {
+      "date": "2016",
+      "value": "283423",
+      "locator": {
+        "year": "2016",
+        "country_code": "NCL"
+      }
+    },
+    {
+      "date": "2017",
+      "value": "283546",
+      "locator": {
+        "year": "2017",
+        "country_code": "NCL"
+      }
+    },
+    {
+      "date": "2018",
+      "value": "283541",
+      "locator": {
+        "year": "2018",
+        "country_code": "NCL"
+      }
+    },
+    {
+      "date": "2019",
+      "value": "283606",
+      "locator": {
+        "year": "2019",
+        "country_code": "NCL"
+      }
+    },
+    {
+      "date": "2020",
+      "value": "284176",
+      "locator": {
+        "year": "2020",
+        "country_code": "NCL"
+      }
+    },
+    {
+      "date": "2021",
+      "value": "285214",
+      "locator": {
+        "year": "2021",
+        "country_code": "NCL"
+      }
+    },
+    {
+      "date": "2022",
+      "value": "287123",
+      "locator": {
+        "year": "2022",
+        "country_code": "NCL"
+      }
+    },
+    {
+      "date": "2023",
+      "value": "289870",
+      "locator": {
+        "year": "2023",
+        "country_code": "NCL"
+      }
+    },
+    {
+      "date": "2024",
+      "value": "292639",
+      "locator": {
+        "year": "2024",
+        "country_code": "NCL"
+      }
+    },
+    {
+      "date": "2025",
+      "value": "295333",
+      "locator": {
+        "year": "2025",
+        "country_code": "NCL"
+      }
+    }
+  ]
+}

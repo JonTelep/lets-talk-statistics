@@ -1,0 +1,363 @@
+{
+  "id": "eia_us_share_wind",
+  "name": "Wind",
+  "units": "Percent",
+  "adjustment": "annual",
+  "nominal_or_real": "share",
+  "frequency": "annual",
+  "source_id": "eia_total_bulk",
+  "series_url": "https://www.eia.gov/totalenergy/data/browser/index.php?tbl=T07.02A",
+  "derived": true,
+  "formula": "share_of_total",
+  "inputs": [
+    "eia_us_gen_wind",
+    "eia_us_gen_total"
+  ],
+  "notes": "Wind (TOTAL.WYETPUS.A) divided by the total series, times 100. Rounded half up to 3 decimals.",
+  "points": [
+    {
+      "date": "1983",
+      "value": "0.000",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "1983"
+      }
+    },
+    {
+      "date": "1984",
+      "value": "0.000",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "1984"
+      }
+    },
+    {
+      "date": "1985",
+      "value": "0.000",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "1985"
+      }
+    },
+    {
+      "date": "1986",
+      "value": "0.000",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "1986"
+      }
+    },
+    {
+      "date": "1987",
+      "value": "0.000",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "1987"
+      }
+    },
+    {
+      "date": "1988",
+      "value": "0.000",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "1988"
+      }
+    },
+    {
+      "date": "1989",
+      "value": "0.071",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "1989"
+      }
+    },
+    {
+      "date": "1990",
+      "value": "0.092",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "1990"
+      }
+    },
+    {
+      "date": "1991",
+      "value": "0.096",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "1991"
+      }
+    },
+    {
+      "date": "1992",
+      "value": "0.094",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "1992"
+      }
+    },
+    {
+      "date": "1993",
+      "value": "0.094",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "1993"
+      }
+    },
+    {
+      "date": "1994",
+      "value": "0.106",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "1994"
+      }
+    },
+    {
+      "date": "1995",
+      "value": "0.094",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "1995"
+      }
+    },
+    {
+      "date": "1996",
+      "value": "0.094",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "1996"
+      }
+    },
+    {
+      "date": "1997",
+      "value": "0.094",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "1997"
+      }
+    },
+    {
+      "date": "1998",
+      "value": "0.084",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "1998"
+      }
+    },
+    {
+      "date": "1999",
+      "value": "0.121",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "1999"
+      }
+    },
+    {
+      "date": "2000",
+      "value": "0.147",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "2000"
+      }
+    },
+    {
+      "date": "2001",
+      "value": "0.180",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "2001"
+      }
+    },
+    {
+      "date": "2002",
+      "value": "0.268",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "2002"
+      }
+    },
+    {
+      "date": "2003",
+      "value": "0.288",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "2003"
+      }
+    },
+    {
+      "date": "2004",
+      "value": "0.356",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "2004"
+      }
+    },
+    {
+      "date": "2005",
+      "value": "0.439",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "2005"
+      }
+    },
+    {
+      "date": "2006",
+      "value": "0.654",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "2006"
+      }
+    },
+    {
+      "date": "2007",
+      "value": "0.829",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "2007"
+      }
+    },
+    {
+      "date": "2008",
+      "value": "1.344",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "2008"
+      }
+    },
+    {
+      "date": "2009",
+      "value": "1.870",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "2009"
+      }
+    },
+    {
+      "date": "2010",
+      "value": "2.293",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "2010"
+      }
+    },
+    {
+      "date": "2011",
+      "value": "2.928",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "2011"
+      }
+    },
+    {
+      "date": "2012",
+      "value": "3.474",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "2012"
+      }
+    },
+    {
+      "date": "2013",
+      "value": "4.120",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "2013"
+      }
+    },
+    {
+      "date": "2014",
+      "value": "4.425",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "2014"
+      }
+    },
+    {
+      "date": "2015",
+      "value": "4.660",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "2015"
+      }
+    },
+    {
+      "date": "2016",
+      "value": "5.541",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "2016"
+      }
+    },
+    {
+      "date": "2017",
+      "value": "6.264",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "2017"
+      }
+    },
+    {
+      "date": "2018",
+      "value": "6.476",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "2018"
+      }
+    },
+    {
+      "date": "2019",
+      "value": "7.103",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "2019"
+      }
+    },
+    {
+      "date": "2020",
+      "value": "8.341",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "2020"
+      }
+    },
+    {
+      "date": "2021",
+      "value": "9.094",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "2021"
+      }
+    },
+    {
+      "date": "2022",
+      "value": "10.119",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "2022"
+      }
+    },
+    {
+      "date": "2023",
+      "value": "9.894",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "2023"
+      }
+    },
+    {
+      "date": "2024",
+      "value": "10.288",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "2024"
+      }
+    },
+    {
+      "date": "2025",
+      "value": "10.268",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "2025"
+      }
+    }
+  ]
+}

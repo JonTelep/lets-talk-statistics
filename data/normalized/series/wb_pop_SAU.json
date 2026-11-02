@@ -1,0 +1,543 @@
+{
+  "id": "wb_pop_SAU",
+  "name": "Saudi Arabia",
+  "units": "people",
+  "adjustment": "midyear",
+  "nominal_or_real": "count",
+  "frequency": "annual",
+  "source_id": "worldbank_sp_pop_totl",
+  "series_url": "https://data.worldbank.org/indicator/SP.POP.TOTL",
+  "country_code": "SAU",
+  "country_name": "Saudi Arabia",
+  "notes": "World Bank World Development Indicators, SP.POP.TOTL, country code SAU. Midyear population. Published years in this file run from 1960 to 2025.",
+  "points": [
+    {
+      "date": "1960",
+      "value": "2435403",
+      "locator": {
+        "year": "1960",
+        "country_code": "SAU"
+      }
+    },
+    {
+      "date": "1961",
+      "value": "2526347",
+      "locator": {
+        "year": "1961",
+        "country_code": "SAU"
+      }
+    },
+    {
+      "date": "1962",
+      "value": "2620910",
+      "locator": {
+        "year": "1962",
+        "country_code": "SAU"
+      }
+    },
+    {
+      "date": "1963",
+      "value": "2719341",
+      "locator": {
+        "year": "1963",
+        "country_code": "SAU"
+      }
+    },
+    {
+      "date": "1964",
+      "value": "2821968",
+      "locator": {
+        "year": "1964",
+        "country_code": "SAU"
+      }
+    },
+    {
+      "date": "1965",
+      "value": "2928771",
+      "locator": {
+        "year": "1965",
+        "country_code": "SAU"
+      }
+    },
+    {
+      "date": "1966",
+      "value": "3039887",
+      "locator": {
+        "year": "1966",
+        "country_code": "SAU"
+      }
+    },
+    {
+      "date": "1967",
+      "value": "3157242",
+      "locator": {
+        "year": "1967",
+        "country_code": "SAU"
+      }
+    },
+    {
+      "date": "1968",
+      "value": "3282711",
+      "locator": {
+        "year": "1968",
+        "country_code": "SAU"
+      }
+    },
+    {
+      "date": "1969",
+      "value": "3417114",
+      "locator": {
+        "year": "1969",
+        "country_code": "SAU"
+      }
+    },
+    {
+      "date": "1970",
+      "value": "3562470",
+      "locator": {
+        "year": "1970",
+        "country_code": "SAU"
+      }
+    },
+    {
+      "date": "1971",
+      "value": "3724031",
+      "locator": {
+        "year": "1971",
+        "country_code": "SAU"
+      }
+    },
+    {
+      "date": "1972",
+      "value": "3905722",
+      "locator": {
+        "year": "1972",
+        "country_code": "SAU"
+      }
+    },
+    {
+      "date": "1973",
+      "value": "4106344",
+      "locator": {
+        "year": "1973",
+        "country_code": "SAU"
+      }
+    },
+    {
+      "date": "1974",
+      "value": "4323632",
+      "locator": {
+        "year": "1974",
+        "country_code": "SAU"
+      }
+    },
+    {
+      "date": "1975",
+      "value": "4556287",
+      "locator": {
+        "year": "1975",
+        "country_code": "SAU"
+      }
+    },
+    {
+      "date": "1976",
+      "value": "4807933",
+      "locator": {
+        "year": "1976",
+        "country_code": "SAU"
+      }
+    },
+    {
+      "date": "1977",
+      "value": "5083048",
+      "locator": {
+        "year": "1977",
+        "country_code": "SAU"
+      }
+    },
+    {
+      "date": "1978",
+      "value": "5381902",
+      "locator": {
+        "year": "1978",
+        "country_code": "SAU"
+      }
+    },
+    {
+      "date": "1979",
+      "value": "5703698",
+      "locator": {
+        "year": "1979",
+        "country_code": "SAU"
+      }
+    },
+    {
+      "date": "1980",
+      "value": "6047997",
+      "locator": {
+        "year": "1980",
+        "country_code": "SAU"
+      }
+    },
+    {
+      "date": "1981",
+      "value": "6420551",
+      "locator": {
+        "year": "1981",
+        "country_code": "SAU"
+      }
+    },
+    {
+      "date": "1982",
+      "value": "6824486",
+      "locator": {
+        "year": "1982",
+        "country_code": "SAU"
+      }
+    },
+    {
+      "date": "1983",
+      "value": "7252941",
+      "locator": {
+        "year": "1983",
+        "country_code": "SAU"
+      }
+    },
+    {
+      "date": "1984",
+      "value": "7697307",
+      "locator": {
+        "year": "1984",
+        "country_code": "SAU"
+      }
+    },
+    {
+      "date": "1985",
+      "value": "8151779",
+      "locator": {
+        "year": "1985",
+        "country_code": "SAU"
+      }
+    },
+    {
+      "date": "1986",
+      "value": "8628639",
+      "locator": {
+        "year": "1986",
+        "country_code": "SAU"
+      }
+    },
+    {
+      "date": "1987",
+      "value": "9130194",
+      "locator": {
+        "year": "1987",
+        "country_code": "SAU"
+      }
+    },
+    {
+      "date": "1988",
+      "value": "9629165",
+      "locator": {
+        "year": "1988",
+        "country_code": "SAU"
+      }
+    },
+    {
+      "date": "1989",
+      "value": "10128394",
+      "locator": {
+        "year": "1989",
+        "country_code": "SAU"
+      }
+    },
+    {
+      "date": "1990",
+      "value": "10640691",
+      "locator": {
+        "year": "1990",
+        "country_code": "SAU"
+      }
+    },
+    {
+      "date": "1991",
+      "value": "11160744",
+      "locator": {
+        "year": "1991",
+        "country_code": "SAU"
+      }
+    },
+    {
+      "date": "1992",
+      "value": "11686676",
+      "locator": {
+        "year": "1992",
+        "country_code": "SAU"
+      }
+    },
+    {
+      "date": "1993",
+      "value": "12215862",
+      "locator": {
+        "year": "1993",
+        "country_code": "SAU"
+      }
+    },
+    {
+      "date": "1994",
+      "value": "12750040",
+      "locator": {
+        "year": "1994",
+        "country_code": "SAU"
+      }
+    },
+    {
+      "date": "1995",
+      "value": "13289245",
+      "locator": {
+        "year": "1995",
+        "country_code": "SAU"
+      }
+    },
+    {
+      "date": "1996",
+      "value": "13831009",
+      "locator": {
+        "year": "1996",
+        "country_code": "SAU"
+      }
+    },
+    {
+      "date": "1997",
+      "value": "14374943",
+      "locator": {
+        "year": "1997",
+        "country_code": "SAU"
+      }
+    },
+    {
+      "date": "1998",
+      "value": "14922185",
+      "locator": {
+        "year": "1998",
+        "country_code": "SAU"
+      }
+    },
+    {
+      "date": "1999",
+      "value": "15472075",
+      "locator": {
+        "year": "1999",
+        "country_code": "SAU"
+      }
+    },
+    {
+      "date": "2000",
+      "value": "16177722",
+      "locator": {
+        "year": "2000",
+        "country_code": "SAU"
+      }
+    },
+    {
+      "date": "2001",
+      "value": "17041397",
+      "locator": {
+        "year": "2001",
+        "country_code": "SAU"
+      }
+    },
+    {
+      "date": "2002",
+      "value": "17910910",
+      "locator": {
+        "year": "2002",
+        "country_code": "SAU"
+      }
+    },
+    {
+      "date": "2003",
+      "value": "18786767",
+      "locator": {
+        "year": "2003",
+        "country_code": "SAU"
+      }
+    },
+    {
+      "date": "2004",
+      "value": "19669480",
+      "locator": {
+        "year": "2004",
+        "country_code": "SAU"
+      }
+    },
+    {
+      "date": "2005",
+      "value": "20559890",
+      "locator": {
+        "year": "2005",
+        "country_code": "SAU"
+      }
+    },
+    {
+      "date": "2006",
+      "value": "21459144",
+      "locator": {
+        "year": "2006",
+        "country_code": "SAU"
+      }
+    },
+    {
+      "date": "2007",
+      "value": "22368313",
+      "locator": {
+        "year": "2007",
+        "country_code": "SAU"
+      }
+    },
+    {
+      "date": "2008",
+      "value": "23287877",
+      "locator": {
+        "year": "2008",
+        "country_code": "SAU"
+      }
+    },
+    {
+      "date": "2009",
+      "value": "24217654",
+      "locator": {
+        "year": "2009",
+        "country_code": "SAU"
+      }
+    },
+    {
+      "date": "2010",
+      "value": "23978487",
+      "locator": {
+        "year": "2010",
+        "country_code": "SAU"
+      }
+    },
+    {
+      "date": "2011",
+      "value": "25091867",
+      "locator": {
+        "year": "2011",
+        "country_code": "SAU"
+      }
+    },
+    {
+      "date": "2012",
+      "value": "26168861",
+      "locator": {
+        "year": "2012",
+        "country_code": "SAU"
+      }
+    },
+    {
+      "date": "2013",
+      "value": "27624004",
+      "locator": {
+        "year": "2013",
+        "country_code": "SAU"
+      }
+    },
+    {
+      "date": "2014",
+      "value": "28309273",
+      "locator": {
+        "year": "2014",
+        "country_code": "SAU"
+      }
+    },
+    {
+      "date": "2015",
+      "value": "29816382",
+      "locator": {
+        "year": "2015",
+        "country_code": "SAU"
+      }
+    },
+    {
+      "date": "2016",
+      "value": "30954198",
+      "locator": {
+        "year": "2016",
+        "country_code": "SAU"
+      }
+    },
+    {
+      "date": "2017",
+      "value": "30977355",
+      "locator": {
+        "year": "2017",
+        "country_code": "SAU"
+      }
+    },
+    {
+      "date": "2018",
+      "value": "30196281",
+      "locator": {
+        "year": "2018",
+        "country_code": "SAU"
+      }
+    },
+    {
+      "date": "2019",
+      "value": "30063799",
+      "locator": {
+        "year": "2019",
+        "country_code": "SAU"
+      }
+    },
+    {
+      "date": "2020",
+      "value": "31552510",
+      "locator": {
+        "year": "2020",
+        "country_code": "SAU"
+      }
+    },
+    {
+      "date": "2021",
+      "value": "30784383",
+      "locator": {
+        "year": "2021",
+        "country_code": "SAU"
+      }
+    },
+    {
+      "date": "2022",
+      "value": "32175224",
+      "locator": {
+        "year": "2022",
+        "country_code": "SAU"
+      }
+    },
+    {
+      "date": "2023",
+      "value": "33702731",
+      "locator": {
+        "year": "2023",
+        "country_code": "SAU"
+      }
+    },
+    {
+      "date": "2024",
+      "value": "35300280",
+      "locator": {
+        "year": "2024",
+        "country_code": "SAU"
+      }
+    },
+    {
+      "date": "2025",
+      "value": "36973555",
+      "locator": {
+        "year": "2025",
+        "country_code": "SAU"
+      }
+    }
+  ]
+}

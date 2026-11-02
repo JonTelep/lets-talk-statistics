@@ -1,0 +1,543 @@
+{
+  "id": "wb_pop_QAT",
+  "name": "Qatar",
+  "units": "people",
+  "adjustment": "midyear",
+  "nominal_or_real": "count",
+  "frequency": "annual",
+  "source_id": "worldbank_sp_pop_totl",
+  "series_url": "https://data.worldbank.org/indicator/SP.POP.TOTL",
+  "country_code": "QAT",
+  "country_name": "Qatar",
+  "notes": "World Bank World Development Indicators, SP.POP.TOTL, country code QAT. Midyear population. Published years in this file run from 1960 to 2025.",
+  "points": [
+    {
+      "date": "1960",
+      "value": "36010",
+      "locator": {
+        "year": "1960",
+        "country_code": "QAT"
+      }
+    },
+    {
+      "date": "1961",
+      "value": "39680",
+      "locator": {
+        "year": "1961",
+        "country_code": "QAT"
+      }
+    },
+    {
+      "date": "1962",
+      "value": "44630",
+      "locator": {
+        "year": "1962",
+        "country_code": "QAT"
+      }
+    },
+    {
+      "date": "1963",
+      "value": "50380",
+      "locator": {
+        "year": "1963",
+        "country_code": "QAT"
+      }
+    },
+    {
+      "date": "1964",
+      "value": "56867",
+      "locator": {
+        "year": "1964",
+        "country_code": "QAT"
+      }
+    },
+    {
+      "date": "1965",
+      "value": "64065",
+      "locator": {
+        "year": "1965",
+        "country_code": "QAT"
+      }
+    },
+    {
+      "date": "1966",
+      "value": "72192",
+      "locator": {
+        "year": "1966",
+        "country_code": "QAT"
+      }
+    },
+    {
+      "date": "1967",
+      "value": "81439",
+      "locator": {
+        "year": "1967",
+        "country_code": "QAT"
+      }
+    },
+    {
+      "date": "1968",
+      "value": "91749",
+      "locator": {
+        "year": "1968",
+        "country_code": "QAT"
+      }
+    },
+    {
+      "date": "1969",
+      "value": "103025",
+      "locator": {
+        "year": "1969",
+        "country_code": "QAT"
+      }
+    },
+    {
+      "date": "1970",
+      "value": "116350",
+      "locator": {
+        "year": "1970",
+        "country_code": "QAT"
+      }
+    },
+    {
+      "date": "1971",
+      "value": "131346",
+      "locator": {
+        "year": "1971",
+        "country_code": "QAT"
+      }
+    },
+    {
+      "date": "1972",
+      "value": "146506",
+      "locator": {
+        "year": "1972",
+        "country_code": "QAT"
+      }
+    },
+    {
+      "date": "1973",
+      "value": "161841",
+      "locator": {
+        "year": "1973",
+        "country_code": "QAT"
+      }
+    },
+    {
+      "date": "1974",
+      "value": "177362",
+      "locator": {
+        "year": "1974",
+        "country_code": "QAT"
+      }
+    },
+    {
+      "date": "1975",
+      "value": "193087",
+      "locator": {
+        "year": "1975",
+        "country_code": "QAT"
+      }
+    },
+    {
+      "date": "1976",
+      "value": "209052",
+      "locator": {
+        "year": "1976",
+        "country_code": "QAT"
+      }
+    },
+    {
+      "date": "1977",
+      "value": "225285",
+      "locator": {
+        "year": "1977",
+        "country_code": "QAT"
+      }
+    },
+    {
+      "date": "1978",
+      "value": "241808",
+      "locator": {
+        "year": "1978",
+        "country_code": "QAT"
+      }
+    },
+    {
+      "date": "1979",
+      "value": "258670",
+      "locator": {
+        "year": "1979",
+        "country_code": "QAT"
+      }
+    },
+    {
+      "date": "1980",
+      "value": "275913",
+      "locator": {
+        "year": "1980",
+        "country_code": "QAT"
+      }
+    },
+    {
+      "date": "1981",
+      "value": "293553",
+      "locator": {
+        "year": "1981",
+        "country_code": "QAT"
+      }
+    },
+    {
+      "date": "1982",
+      "value": "311537",
+      "locator": {
+        "year": "1982",
+        "country_code": "QAT"
+      }
+    },
+    {
+      "date": "1983",
+      "value": "329709",
+      "locator": {
+        "year": "1983",
+        "country_code": "QAT"
+      }
+    },
+    {
+      "date": "1984",
+      "value": "347878",
+      "locator": {
+        "year": "1984",
+        "country_code": "QAT"
+      }
+    },
+    {
+      "date": "1985",
+      "value": "365940",
+      "locator": {
+        "year": "1985",
+        "country_code": "QAT"
+      }
+    },
+    {
+      "date": "1986",
+      "value": "382422",
+      "locator": {
+        "year": "1986",
+        "country_code": "QAT"
+      }
+    },
+    {
+      "date": "1987",
+      "value": "397005",
+      "locator": {
+        "year": "1987",
+        "country_code": "QAT"
+      }
+    },
+    {
+      "date": "1988",
+      "value": "411264",
+      "locator": {
+        "year": "1988",
+        "country_code": "QAT"
+      }
+    },
+    {
+      "date": "1989",
+      "value": "425646",
+      "locator": {
+        "year": "1989",
+        "country_code": "QAT"
+      }
+    },
+    {
+      "date": "1990",
+      "value": "440175",
+      "locator": {
+        "year": "1990",
+        "country_code": "QAT"
+      }
+    },
+    {
+      "date": "1991",
+      "value": "454853",
+      "locator": {
+        "year": "1991",
+        "country_code": "QAT"
+      }
+    },
+    {
+      "date": "1992",
+      "value": "469657",
+      "locator": {
+        "year": "1992",
+        "country_code": "QAT"
+      }
+    },
+    {
+      "date": "1993",
+      "value": "484545",
+      "locator": {
+        "year": "1993",
+        "country_code": "QAT"
+      }
+    },
+    {
+      "date": "1994",
+      "value": "499459",
+      "locator": {
+        "year": "1994",
+        "country_code": "QAT"
+      }
+    },
+    {
+      "date": "1995",
+      "value": "514325",
+      "locator": {
+        "year": "1995",
+        "country_code": "QAT"
+      }
+    },
+    {
+      "date": "1996",
+      "value": "529019",
+      "locator": {
+        "year": "1996",
+        "country_code": "QAT"
+      }
+    },
+    {
+      "date": "1997",
+      "value": "550500",
+      "locator": {
+        "year": "1997",
+        "country_code": "QAT"
+      }
+    },
+    {
+      "date": "1998",
+      "value": "580540",
+      "locator": {
+        "year": "1998",
+        "country_code": "QAT"
+      }
+    },
+    {
+      "date": "1999",
+      "value": "612500",
+      "locator": {
+        "year": "1999",
+        "country_code": "QAT"
+      }
+    },
+    {
+      "date": "2000",
+      "value": "644989",
+      "locator": {
+        "year": "2000",
+        "country_code": "QAT"
+      }
+    },
+    {
+      "date": "2001",
+      "value": "677925",
+      "locator": {
+        "year": "2001",
+        "country_code": "QAT"
+      }
+    },
+    {
+      "date": "2002",
+      "value": "711205",
+      "locator": {
+        "year": "2002",
+        "country_code": "QAT"
+      }
+    },
+    {
+      "date": "2003",
+      "value": "744682",
+      "locator": {
+        "year": "2003",
+        "country_code": "QAT"
+      }
+    },
+    {
+      "date": "2004",
+      "value": "773332",
+      "locator": {
+        "year": "2004",
+        "country_code": "QAT"
+      }
+    },
+    {
+      "date": "2005",
+      "value": "825408",
+      "locator": {
+        "year": "2005",
+        "country_code": "QAT"
+      }
+    },
+    {
+      "date": "2006",
+      "value": "972831",
+      "locator": {
+        "year": "2006",
+        "country_code": "QAT"
+      }
+    },
+    {
+      "date": "2007",
+      "value": "1208595",
+      "locator": {
+        "year": "2007",
+        "country_code": "QAT"
+      }
+    },
+    {
+      "date": "2008",
+      "value": "1426938",
+      "locator": {
+        "year": "2008",
+        "country_code": "QAT"
+      }
+    },
+    {
+      "date": "2009",
+      "value": "1608903",
+      "locator": {
+        "year": "2009",
+        "country_code": "QAT"
+      }
+    },
+    {
+      "date": "2010",
+      "value": "1616832",
+      "locator": {
+        "year": "2010",
+        "country_code": "QAT"
+      }
+    },
+    {
+      "date": "2011",
+      "value": "1624761",
+      "locator": {
+        "year": "2011",
+        "country_code": "QAT"
+      }
+    },
+    {
+      "date": "2012",
+      "value": "1722438",
+      "locator": {
+        "year": "2012",
+        "country_code": "QAT"
+      }
+    },
+    {
+      "date": "2013",
+      "value": "1916426",
+      "locator": {
+        "year": "2013",
+        "country_code": "QAT"
+      }
+    },
+    {
+      "date": "2014",
+      "value": "2151745",
+      "locator": {
+        "year": "2014",
+        "country_code": "QAT"
+      }
+    },
+    {
+      "date": "2015",
+      "value": "2344557",
+      "locator": {
+        "year": "2015",
+        "country_code": "QAT"
+      }
+    },
+    {
+      "date": "2016",
+      "value": "2477113",
+      "locator": {
+        "year": "2016",
+        "country_code": "QAT"
+      }
+    },
+    {
+      "date": "2017",
+      "value": "2545820",
+      "locator": {
+        "year": "2017",
+        "country_code": "QAT"
+      }
+    },
+    {
+      "date": "2018",
+      "value": "2580734",
+      "locator": {
+        "year": "2018",
+        "country_code": "QAT"
+      }
+    },
+    {
+      "date": "2019",
+      "value": "2638657",
+      "locator": {
+        "year": "2019",
+        "country_code": "QAT"
+      }
+    },
+    {
+      "date": "2020",
+      "value": "2794148",
+      "locator": {
+        "year": "2020",
+        "country_code": "QAT"
+      }
+    },
+    {
+      "date": "2021",
+      "value": "2504910",
+      "locator": {
+        "year": "2021",
+        "country_code": "QAT"
+      }
+    },
+    {
+      "date": "2022",
+      "value": "2657333",
+      "locator": {
+        "year": "2022",
+        "country_code": "QAT"
+      }
+    },
+    {
+      "date": "2023",
+      "value": "2656032",
+      "locator": {
+        "year": "2023",
+        "country_code": "QAT"
+      }
+    },
+    {
+      "date": "2024",
+      "value": "2857822",
+      "locator": {
+        "year": "2024",
+        "country_code": "QAT"
+      }
+    },
+    {
+      "date": "2025",
+      "value": "2972215",
+      "locator": {
+        "year": "2025",
+        "country_code": "QAT"
+      }
+    }
+  ]
+}

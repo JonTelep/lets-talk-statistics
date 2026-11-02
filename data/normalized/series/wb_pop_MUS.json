@@ -1,0 +1,543 @@
+{
+  "id": "wb_pop_MUS",
+  "name": "Mauritius",
+  "units": "people",
+  "adjustment": "midyear",
+  "nominal_or_real": "count",
+  "frequency": "annual",
+  "source_id": "worldbank_sp_pop_totl",
+  "series_url": "https://data.worldbank.org/indicator/SP.POP.TOTL",
+  "country_code": "MUS",
+  "country_name": "Mauritius",
+  "notes": "World Bank World Development Indicators, SP.POP.TOTL, country code MUS. Midyear population. Published years in this file run from 1960 to 2025.",
+  "points": [
+    {
+      "date": "1960",
+      "value": "680331",
+      "locator": {
+        "year": "1960",
+        "country_code": "MUS"
+      }
+    },
+    {
+      "date": "1961",
+      "value": "680757",
+      "locator": {
+        "year": "1961",
+        "country_code": "MUS"
+      }
+    },
+    {
+      "date": "1962",
+      "value": "700349",
+      "locator": {
+        "year": "1962",
+        "country_code": "MUS"
+      }
+    },
+    {
+      "date": "1963",
+      "value": "718861",
+      "locator": {
+        "year": "1963",
+        "country_code": "MUS"
+      }
+    },
+    {
+      "date": "1964",
+      "value": "736381",
+      "locator": {
+        "year": "1964",
+        "country_code": "MUS"
+      }
+    },
+    {
+      "date": "1965",
+      "value": "753000",
+      "locator": {
+        "year": "1965",
+        "country_code": "MUS"
+      }
+    },
+    {
+      "date": "1966",
+      "value": "768813",
+      "locator": {
+        "year": "1966",
+        "country_code": "MUS"
+      }
+    },
+    {
+      "date": "1967",
+      "value": "783917",
+      "locator": {
+        "year": "1967",
+        "country_code": "MUS"
+      }
+    },
+    {
+      "date": "1968",
+      "value": "798413",
+      "locator": {
+        "year": "1968",
+        "country_code": "MUS"
+      }
+    },
+    {
+      "date": "1969",
+      "value": "812405",
+      "locator": {
+        "year": "1969",
+        "country_code": "MUS"
+      }
+    },
+    {
+      "date": "1970",
+      "value": "826000",
+      "locator": {
+        "year": "1970",
+        "country_code": "MUS"
+      }
+    },
+    {
+      "date": "1971",
+      "value": "839230",
+      "locator": {
+        "year": "1971",
+        "country_code": "MUS"
+      }
+    },
+    {
+      "date": "1972",
+      "value": "852053",
+      "locator": {
+        "year": "1972",
+        "country_code": "MUS"
+      }
+    },
+    {
+      "date": "1973",
+      "value": "864819",
+      "locator": {
+        "year": "1973",
+        "country_code": "MUS"
+      }
+    },
+    {
+      "date": "1974",
+      "value": "878042",
+      "locator": {
+        "year": "1974",
+        "country_code": "MUS"
+      }
+    },
+    {
+      "date": "1975",
+      "value": "892000",
+      "locator": {
+        "year": "1975",
+        "country_code": "MUS"
+      }
+    },
+    {
+      "date": "1976",
+      "value": "906507",
+      "locator": {
+        "year": "1976",
+        "country_code": "MUS"
+      }
+    },
+    {
+      "date": "1977",
+      "value": "921379",
+      "locator": {
+        "year": "1977",
+        "country_code": "MUS"
+      }
+    },
+    {
+      "date": "1978",
+      "value": "933499",
+      "locator": {
+        "year": "1978",
+        "country_code": "MUS"
+      }
+    },
+    {
+      "date": "1979",
+      "value": "949888",
+      "locator": {
+        "year": "1979",
+        "country_code": "MUS"
+      }
+    },
+    {
+      "date": "1980",
+      "value": "966039",
+      "locator": {
+        "year": "1980",
+        "country_code": "MUS"
+      }
+    },
+    {
+      "date": "1981",
+      "value": "980462",
+      "locator": {
+        "year": "1981",
+        "country_code": "MUS"
+      }
+    },
+    {
+      "date": "1982",
+      "value": "992521",
+      "locator": {
+        "year": "1982",
+        "country_code": "MUS"
+      }
+    },
+    {
+      "date": "1983",
+      "value": "1001691",
+      "locator": {
+        "year": "1983",
+        "country_code": "MUS"
+      }
+    },
+    {
+      "date": "1984",
+      "value": "1012221",
+      "locator": {
+        "year": "1984",
+        "country_code": "MUS"
+      }
+    },
+    {
+      "date": "1985",
+      "value": "1020528",
+      "locator": {
+        "year": "1985",
+        "country_code": "MUS"
+      }
+    },
+    {
+      "date": "1986",
+      "value": "1028360",
+      "locator": {
+        "year": "1986",
+        "country_code": "MUS"
+      }
+    },
+    {
+      "date": "1987",
+      "value": "1036082",
+      "locator": {
+        "year": "1987",
+        "country_code": "MUS"
+      }
+    },
+    {
+      "date": "1988",
+      "value": "1043239",
+      "locator": {
+        "year": "1988",
+        "country_code": "MUS"
+      }
+    },
+    {
+      "date": "1989",
+      "value": "1051260",
+      "locator": {
+        "year": "1989",
+        "country_code": "MUS"
+      }
+    },
+    {
+      "date": "1990",
+      "value": "1058775",
+      "locator": {
+        "year": "1990",
+        "country_code": "MUS"
+      }
+    },
+    {
+      "date": "1991",
+      "value": "1070266",
+      "locator": {
+        "year": "1991",
+        "country_code": "MUS"
+      }
+    },
+    {
+      "date": "1992",
+      "value": "1084441",
+      "locator": {
+        "year": "1992",
+        "country_code": "MUS"
+      }
+    },
+    {
+      "date": "1993",
+      "value": "1097374",
+      "locator": {
+        "year": "1993",
+        "country_code": "MUS"
+      }
+    },
+    {
+      "date": "1994",
+      "value": "1112846",
+      "locator": {
+        "year": "1994",
+        "country_code": "MUS"
+      }
+    },
+    {
+      "date": "1995",
+      "value": "1122457",
+      "locator": {
+        "year": "1995",
+        "country_code": "MUS"
+      }
+    },
+    {
+      "date": "1996",
+      "value": "1133996",
+      "locator": {
+        "year": "1996",
+        "country_code": "MUS"
+      }
+    },
+    {
+      "date": "1997",
+      "value": "1148284",
+      "locator": {
+        "year": "1997",
+        "country_code": "MUS"
+      }
+    },
+    {
+      "date": "1998",
+      "value": "1160421",
+      "locator": {
+        "year": "1998",
+        "country_code": "MUS"
+      }
+    },
+    {
+      "date": "1999",
+      "value": "1175267",
+      "locator": {
+        "year": "1999",
+        "country_code": "MUS"
+      }
+    },
+    {
+      "date": "2000",
+      "value": "1186873",
+      "locator": {
+        "year": "2000",
+        "country_code": "MUS"
+      }
+    },
+    {
+      "date": "2001",
+      "value": "1196287",
+      "locator": {
+        "year": "2001",
+        "country_code": "MUS"
+      }
+    },
+    {
+      "date": "2002",
+      "value": "1204621",
+      "locator": {
+        "year": "2002",
+        "country_code": "MUS"
+      }
+    },
+    {
+      "date": "2003",
+      "value": "1213370",
+      "locator": {
+        "year": "2003",
+        "country_code": "MUS"
+      }
+    },
+    {
+      "date": "2004",
+      "value": "1221003",
+      "locator": {
+        "year": "2004",
+        "country_code": "MUS"
+      }
+    },
+    {
+      "date": "2005",
+      "value": "1228254",
+      "locator": {
+        "year": "2005",
+        "country_code": "MUS"
+      }
+    },
+    {
+      "date": "2006",
+      "value": "1233996",
+      "locator": {
+        "year": "2006",
+        "country_code": "MUS"
+      }
+    },
+    {
+      "date": "2007",
+      "value": "1239630",
+      "locator": {
+        "year": "2007",
+        "country_code": "MUS"
+      }
+    },
+    {
+      "date": "2008",
+      "value": "1244121",
+      "locator": {
+        "year": "2008",
+        "country_code": "MUS"
+      }
+    },
+    {
+      "date": "2009",
+      "value": "1247429",
+      "locator": {
+        "year": "2009",
+        "country_code": "MUS"
+      }
+    },
+    {
+      "date": "2010",
+      "value": "1250400",
+      "locator": {
+        "year": "2010",
+        "country_code": "MUS"
+      }
+    },
+    {
+      "date": "2011",
+      "value": "1252404",
+      "locator": {
+        "year": "2011",
+        "country_code": "MUS"
+      }
+    },
+    {
+      "date": "2012",
+      "value": "1255882",
+      "locator": {
+        "year": "2012",
+        "country_code": "MUS"
+      }
+    },
+    {
+      "date": "2013",
+      "value": "1258927",
+      "locator": {
+        "year": "2013",
+        "country_code": "MUS"
+      }
+    },
+    {
+      "date": "2014",
+      "value": "1261208",
+      "locator": {
+        "year": "2014",
+        "country_code": "MUS"
+      }
+    },
+    {
+      "date": "2015",
+      "value": "1262879",
+      "locator": {
+        "year": "2015",
+        "country_code": "MUS"
+      }
+    },
+    {
+      "date": "2016",
+      "value": "1263747",
+      "locator": {
+        "year": "2016",
+        "country_code": "MUS"
+      }
+    },
+    {
+      "date": "2017",
+      "value": "1264887",
+      "locator": {
+        "year": "2017",
+        "country_code": "MUS"
+      }
+    },
+    {
+      "date": "2018",
+      "value": "1265577",
+      "locator": {
+        "year": "2018",
+        "country_code": "MUS"
+      }
+    },
+    {
+      "date": "2019",
+      "value": "1265985",
+      "locator": {
+        "year": "2019",
+        "country_code": "MUS"
+      }
+    },
+    {
+      "date": "2020",
+      "value": "1266014",
+      "locator": {
+        "year": "2020",
+        "country_code": "MUS"
+      }
+    },
+    {
+      "date": "2021",
+      "value": "1266334",
+      "locator": {
+        "year": "2021",
+        "country_code": "MUS"
+      }
+    },
+    {
+      "date": "2022",
+      "value": "1262523",
+      "locator": {
+        "year": "2022",
+        "country_code": "MUS"
+      }
+    },
+    {
+      "date": "2023",
+      "value": "1248647",
+      "locator": {
+        "year": "2023",
+        "country_code": "MUS"
+      }
+    },
+    {
+      "date": "2024",
+      "value": "1245779",
+      "locator": {
+        "year": "2024",
+        "country_code": "MUS"
+      }
+    },
+    {
+      "date": "2025",
+      "value": "1243741",
+      "locator": {
+        "year": "2025",
+        "country_code": "MUS"
+      }
+    }
+  ]
+}

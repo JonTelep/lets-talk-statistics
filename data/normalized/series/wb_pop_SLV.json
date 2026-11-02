@@ -1,0 +1,543 @@
+{
+  "id": "wb_pop_SLV",
+  "name": "El Salvador",
+  "units": "people",
+  "adjustment": "midyear",
+  "nominal_or_real": "count",
+  "frequency": "annual",
+  "source_id": "worldbank_sp_pop_totl",
+  "series_url": "https://data.worldbank.org/indicator/SP.POP.TOTL",
+  "country_code": "SLV",
+  "country_name": "El Salvador",
+  "notes": "World Bank World Development Indicators, SP.POP.TOTL, country code SLV. Midyear population. Published years in this file run from 1960 to 2025.",
+  "points": [
+    {
+      "date": "1960",
+      "value": "2791459",
+      "locator": {
+        "year": "1960",
+        "country_code": "SLV"
+      }
+    },
+    {
+      "date": "1961",
+      "value": "2870016",
+      "locator": {
+        "year": "1961",
+        "country_code": "SLV"
+      }
+    },
+    {
+      "date": "1962",
+      "value": "2949204",
+      "locator": {
+        "year": "1962",
+        "country_code": "SLV"
+      }
+    },
+    {
+      "date": "1963",
+      "value": "3028679",
+      "locator": {
+        "year": "1963",
+        "country_code": "SLV"
+      }
+    },
+    {
+      "date": "1964",
+      "value": "3111883",
+      "locator": {
+        "year": "1964",
+        "country_code": "SLV"
+      }
+    },
+    {
+      "date": "1965",
+      "value": "3199466",
+      "locator": {
+        "year": "1965",
+        "country_code": "SLV"
+      }
+    },
+    {
+      "date": "1966",
+      "value": "3290961",
+      "locator": {
+        "year": "1966",
+        "country_code": "SLV"
+      }
+    },
+    {
+      "date": "1967",
+      "value": "3385184",
+      "locator": {
+        "year": "1967",
+        "country_code": "SLV"
+      }
+    },
+    {
+      "date": "1968",
+      "value": "3480773",
+      "locator": {
+        "year": "1968",
+        "country_code": "SLV"
+      }
+    },
+    {
+      "date": "1969",
+      "value": "3576485",
+      "locator": {
+        "year": "1969",
+        "country_code": "SLV"
+      }
+    },
+    {
+      "date": "1970",
+      "value": "3668796",
+      "locator": {
+        "year": "1970",
+        "country_code": "SLV"
+      }
+    },
+    {
+      "date": "1971",
+      "value": "3757523",
+      "locator": {
+        "year": "1971",
+        "country_code": "SLV"
+      }
+    },
+    {
+      "date": "1972",
+      "value": "3846830",
+      "locator": {
+        "year": "1972",
+        "country_code": "SLV"
+      }
+    },
+    {
+      "date": "1973",
+      "value": "3938068",
+      "locator": {
+        "year": "1973",
+        "country_code": "SLV"
+      }
+    },
+    {
+      "date": "1974",
+      "value": "4029671",
+      "locator": {
+        "year": "1974",
+        "country_code": "SLV"
+      }
+    },
+    {
+      "date": "1975",
+      "value": "4120449",
+      "locator": {
+        "year": "1975",
+        "country_code": "SLV"
+      }
+    },
+    {
+      "date": "1976",
+      "value": "4210310",
+      "locator": {
+        "year": "1976",
+        "country_code": "SLV"
+      }
+    },
+    {
+      "date": "1977",
+      "value": "4301256",
+      "locator": {
+        "year": "1977",
+        "country_code": "SLV"
+      }
+    },
+    {
+      "date": "1978",
+      "value": "4394114",
+      "locator": {
+        "year": "1978",
+        "country_code": "SLV"
+      }
+    },
+    {
+      "date": "1979",
+      "value": "4480388",
+      "locator": {
+        "year": "1979",
+        "country_code": "SLV"
+      }
+    },
+    {
+      "date": "1980",
+      "value": "4540382",
+      "locator": {
+        "year": "1980",
+        "country_code": "SLV"
+      }
+    },
+    {
+      "date": "1981",
+      "value": "4570599",
+      "locator": {
+        "year": "1981",
+        "country_code": "SLV"
+      }
+    },
+    {
+      "date": "1982",
+      "value": "4622477",
+      "locator": {
+        "year": "1982",
+        "country_code": "SLV"
+      }
+    },
+    {
+      "date": "1983",
+      "value": "4707367",
+      "locator": {
+        "year": "1983",
+        "country_code": "SLV"
+      }
+    },
+    {
+      "date": "1984",
+      "value": "4798003",
+      "locator": {
+        "year": "1984",
+        "country_code": "SLV"
+      }
+    },
+    {
+      "date": "1985",
+      "value": "4894706",
+      "locator": {
+        "year": "1985",
+        "country_code": "SLV"
+      }
+    },
+    {
+      "date": "1986",
+      "value": "4992769",
+      "locator": {
+        "year": "1986",
+        "country_code": "SLV"
+      }
+    },
+    {
+      "date": "1987",
+      "value": "5092441",
+      "locator": {
+        "year": "1987",
+        "country_code": "SLV"
+      }
+    },
+    {
+      "date": "1988",
+      "value": "5195833",
+      "locator": {
+        "year": "1988",
+        "country_code": "SLV"
+      }
+    },
+    {
+      "date": "1989",
+      "value": "5298979",
+      "locator": {
+        "year": "1989",
+        "country_code": "SLV"
+      }
+    },
+    {
+      "date": "1990",
+      "value": "5399726",
+      "locator": {
+        "year": "1990",
+        "country_code": "SLV"
+      }
+    },
+    {
+      "date": "1991",
+      "value": "5495077",
+      "locator": {
+        "year": "1991",
+        "country_code": "SLV"
+      }
+    },
+    {
+      "date": "1992",
+      "value": "5585609",
+      "locator": {
+        "year": "1992",
+        "country_code": "SLV"
+      }
+    },
+    {
+      "date": "1993",
+      "value": "5659957",
+      "locator": {
+        "year": "1993",
+        "country_code": "SLV"
+      }
+    },
+    {
+      "date": "1994",
+      "value": "5714129",
+      "locator": {
+        "year": "1994",
+        "country_code": "SLV"
+      }
+    },
+    {
+      "date": "1995",
+      "value": "5762131",
+      "locator": {
+        "year": "1995",
+        "country_code": "SLV"
+      }
+    },
+    {
+      "date": "1996",
+      "value": "5805286",
+      "locator": {
+        "year": "1996",
+        "country_code": "SLV"
+      }
+    },
+    {
+      "date": "1997",
+      "value": "5844578",
+      "locator": {
+        "year": "1997",
+        "country_code": "SLV"
+      }
+    },
+    {
+      "date": "1998",
+      "value": "5880781",
+      "locator": {
+        "year": "1998",
+        "country_code": "SLV"
+      }
+    },
+    {
+      "date": "1999",
+      "value": "5913900",
+      "locator": {
+        "year": "1999",
+        "country_code": "SLV"
+      }
+    },
+    {
+      "date": "2000",
+      "value": "5943366",
+      "locator": {
+        "year": "2000",
+        "country_code": "SLV"
+      }
+    },
+    {
+      "date": "2001",
+      "value": "5968060",
+      "locator": {
+        "year": "2001",
+        "country_code": "SLV"
+      }
+    },
+    {
+      "date": "2002",
+      "value": "5986631",
+      "locator": {
+        "year": "2002",
+        "country_code": "SLV"
+      }
+    },
+    {
+      "date": "2003",
+      "value": "5998599",
+      "locator": {
+        "year": "2003",
+        "country_code": "SLV"
+      }
+    },
+    {
+      "date": "2004",
+      "value": "6004671",
+      "locator": {
+        "year": "2004",
+        "country_code": "SLV"
+      }
+    },
+    {
+      "date": "2005",
+      "value": "6005578",
+      "locator": {
+        "year": "2005",
+        "country_code": "SLV"
+      }
+    },
+    {
+      "date": "2006",
+      "value": "6002319",
+      "locator": {
+        "year": "2006",
+        "country_code": "SLV"
+      }
+    },
+    {
+      "date": "2007",
+      "value": "6009824",
+      "locator": {
+        "year": "2007",
+        "country_code": "SLV"
+      }
+    },
+    {
+      "date": "2008",
+      "value": "6029297",
+      "locator": {
+        "year": "2008",
+        "country_code": "SLV"
+      }
+    },
+    {
+      "date": "2009",
+      "value": "6048279",
+      "locator": {
+        "year": "2009",
+        "country_code": "SLV"
+      }
+    },
+    {
+      "date": "2010",
+      "value": "6068249",
+      "locator": {
+        "year": "2010",
+        "country_code": "SLV"
+      }
+    },
+    {
+      "date": "2011",
+      "value": "6090127",
+      "locator": {
+        "year": "2011",
+        "country_code": "SLV"
+      }
+    },
+    {
+      "date": "2012",
+      "value": "6113975",
+      "locator": {
+        "year": "2012",
+        "country_code": "SLV"
+      }
+    },
+    {
+      "date": "2013",
+      "value": "6138839",
+      "locator": {
+        "year": "2013",
+        "country_code": "SLV"
+      }
+    },
+    {
+      "date": "2014",
+      "value": "6162955",
+      "locator": {
+        "year": "2014",
+        "country_code": "SLV"
+      }
+    },
+    {
+      "date": "2015",
+      "value": "6183676",
+      "locator": {
+        "year": "2015",
+        "country_code": "SLV"
+      }
+    },
+    {
+      "date": "2016",
+      "value": "6200800",
+      "locator": {
+        "year": "2016",
+        "country_code": "SLV"
+      }
+    },
+    {
+      "date": "2017",
+      "value": "6213533",
+      "locator": {
+        "year": "2017",
+        "country_code": "SLV"
+      }
+    },
+    {
+      "date": "2018",
+      "value": "6219807",
+      "locator": {
+        "year": "2018",
+        "country_code": "SLV"
+      }
+    },
+    {
+      "date": "2019",
+      "value": "6222318",
+      "locator": {
+        "year": "2019",
+        "country_code": "SLV"
+      }
+    },
+    {
+      "date": "2020",
+      "value": "6234673",
+      "locator": {
+        "year": "2020",
+        "country_code": "SLV"
+      }
+    },
+    {
+      "date": "2021",
+      "value": "6255782",
+      "locator": {
+        "year": "2021",
+        "country_code": "SLV"
+      }
+    },
+    {
+      "date": "2022",
+      "value": "6280319",
+      "locator": {
+        "year": "2022",
+        "country_code": "SLV"
+      }
+    },
+    {
+      "date": "2023",
+      "value": "6309624",
+      "locator": {
+        "year": "2023",
+        "country_code": "SLV"
+      }
+    },
+    {
+      "date": "2024",
+      "value": "6338193",
+      "locator": {
+        "year": "2024",
+        "country_code": "SLV"
+      }
+    },
+    {
+      "date": "2025",
+      "value": "6365503",
+      "locator": {
+        "year": "2025",
+        "country_code": "SLV"
+      }
+    }
+  ]
+}

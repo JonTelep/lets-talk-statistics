@@ -9,6 +9,7 @@ const navLinks = [
   { name: 'Prices', href: '/prices' },
   { name: 'Budget', href: '/budget' },
   { name: 'Economy', href: '/economy' },
+  { name: 'Energy', href: '/energy' },
   { name: 'Crime', href: '/crime' },
   { name: 'Immigration', href: '/immigration' },
   { name: 'Sources', href: '/sources' },

@@ -1,0 +1,543 @@
+{
+  "id": "wb_pop_MLI",
+  "name": "Mali",
+  "units": "people",
+  "adjustment": "midyear",
+  "nominal_or_real": "count",
+  "frequency": "annual",
+  "source_id": "worldbank_sp_pop_totl",
+  "series_url": "https://data.worldbank.org/indicator/SP.POP.TOTL",
+  "country_code": "MLI",
+  "country_name": "Mali",
+  "notes": "World Bank World Development Indicators, SP.POP.TOTL, country code MLI. Midyear population. Published years in this file run from 1960 to 2025.",
+  "points": [
+    {
+      "date": "1960",
+      "value": "5402550",
+      "locator": {
+        "year": "1960",
+        "country_code": "MLI"
+      }
+    },
+    {
+      "date": "1961",
+      "value": "5482283",
+      "locator": {
+        "year": "1961",
+        "country_code": "MLI"
+      }
+    },
+    {
+      "date": "1962",
+      "value": "5563917",
+      "locator": {
+        "year": "1962",
+        "country_code": "MLI"
+      }
+    },
+    {
+      "date": "1963",
+      "value": "5646605",
+      "locator": {
+        "year": "1963",
+        "country_code": "MLI"
+      }
+    },
+    {
+      "date": "1964",
+      "value": "5730125",
+      "locator": {
+        "year": "1964",
+        "country_code": "MLI"
+      }
+    },
+    {
+      "date": "1965",
+      "value": "5815487",
+      "locator": {
+        "year": "1965",
+        "country_code": "MLI"
+      }
+    },
+    {
+      "date": "1966",
+      "value": "5902204",
+      "locator": {
+        "year": "1966",
+        "country_code": "MLI"
+      }
+    },
+    {
+      "date": "1967",
+      "value": "5990906",
+      "locator": {
+        "year": "1967",
+        "country_code": "MLI"
+      }
+    },
+    {
+      "date": "1968",
+      "value": "6082979",
+      "locator": {
+        "year": "1968",
+        "country_code": "MLI"
+      }
+    },
+    {
+      "date": "1969",
+      "value": "6177704",
+      "locator": {
+        "year": "1969",
+        "country_code": "MLI"
+      }
+    },
+    {
+      "date": "1970",
+      "value": "6276472",
+      "locator": {
+        "year": "1970",
+        "country_code": "MLI"
+      }
+    },
+    {
+      "date": "1971",
+      "value": "6377944",
+      "locator": {
+        "year": "1971",
+        "country_code": "MLI"
+      }
+    },
+    {
+      "date": "1972",
+      "value": "6483726",
+      "locator": {
+        "year": "1972",
+        "country_code": "MLI"
+      }
+    },
+    {
+      "date": "1973",
+      "value": "6597106",
+      "locator": {
+        "year": "1973",
+        "country_code": "MLI"
+      }
+    },
+    {
+      "date": "1974",
+      "value": "6715436",
+      "locator": {
+        "year": "1974",
+        "country_code": "MLI"
+      }
+    },
+    {
+      "date": "1975",
+      "value": "6837261",
+      "locator": {
+        "year": "1975",
+        "country_code": "MLI"
+      }
+    },
+    {
+      "date": "1976",
+      "value": "6960979",
+      "locator": {
+        "year": "1976",
+        "country_code": "MLI"
+      }
+    },
+    {
+      "date": "1977",
+      "value": "7090979",
+      "locator": {
+        "year": "1977",
+        "country_code": "MLI"
+      }
+    },
+    {
+      "date": "1978",
+      "value": "7229651",
+      "locator": {
+        "year": "1978",
+        "country_code": "MLI"
+      }
+    },
+    {
+      "date": "1979",
+      "value": "7375266",
+      "locator": {
+        "year": "1979",
+        "country_code": "MLI"
+      }
+    },
+    {
+      "date": "1980",
+      "value": "7530515",
+      "locator": {
+        "year": "1980",
+        "country_code": "MLI"
+      }
+    },
+    {
+      "date": "1981",
+      "value": "7692766",
+      "locator": {
+        "year": "1981",
+        "country_code": "MLI"
+      }
+    },
+    {
+      "date": "1982",
+      "value": "7860194",
+      "locator": {
+        "year": "1982",
+        "country_code": "MLI"
+      }
+    },
+    {
+      "date": "1983",
+      "value": "8034400",
+      "locator": {
+        "year": "1983",
+        "country_code": "MLI"
+      }
+    },
+    {
+      "date": "1984",
+      "value": "8208599",
+      "locator": {
+        "year": "1984",
+        "country_code": "MLI"
+      }
+    },
+    {
+      "date": "1985",
+      "value": "8374663",
+      "locator": {
+        "year": "1985",
+        "country_code": "MLI"
+      }
+    },
+    {
+      "date": "1986",
+      "value": "8531277",
+      "locator": {
+        "year": "1986",
+        "country_code": "MLI"
+      }
+    },
+    {
+      "date": "1987",
+      "value": "8681164",
+      "locator": {
+        "year": "1987",
+        "country_code": "MLI"
+      }
+    },
+    {
+      "date": "1988",
+      "value": "8833996",
+      "locator": {
+        "year": "1988",
+        "country_code": "MLI"
+      }
+    },
+    {
+      "date": "1989",
+      "value": "8999938",
+      "locator": {
+        "year": "1989",
+        "country_code": "MLI"
+      }
+    },
+    {
+      "date": "1990",
+      "value": "9178830",
+      "locator": {
+        "year": "1990",
+        "country_code": "MLI"
+      }
+    },
+    {
+      "date": "1991",
+      "value": "9362888",
+      "locator": {
+        "year": "1991",
+        "country_code": "MLI"
+      }
+    },
+    {
+      "date": "1992",
+      "value": "9553540",
+      "locator": {
+        "year": "1992",
+        "country_code": "MLI"
+      }
+    },
+    {
+      "date": "1993",
+      "value": "9754786",
+      "locator": {
+        "year": "1993",
+        "country_code": "MLI"
+      }
+    },
+    {
+      "date": "1994",
+      "value": "9967031",
+      "locator": {
+        "year": "1994",
+        "country_code": "MLI"
+      }
+    },
+    {
+      "date": "1995",
+      "value": "10185365",
+      "locator": {
+        "year": "1995",
+        "country_code": "MLI"
+      }
+    },
+    {
+      "date": "1996",
+      "value": "10407278",
+      "locator": {
+        "year": "1996",
+        "country_code": "MLI"
+      }
+    },
+    {
+      "date": "1997",
+      "value": "10646495",
+      "locator": {
+        "year": "1997",
+        "country_code": "MLI"
+      }
+    },
+    {
+      "date": "1998",
+      "value": "10919573",
+      "locator": {
+        "year": "1998",
+        "country_code": "MLI"
+      }
+    },
+    {
+      "date": "1999",
+      "value": "11227415",
+      "locator": {
+        "year": "1999",
+        "country_code": "MLI"
+      }
+    },
+    {
+      "date": "2000",
+      "value": "11559290",
+      "locator": {
+        "year": "2000",
+        "country_code": "MLI"
+      }
+    },
+    {
+      "date": "2001",
+      "value": "11912158",
+      "locator": {
+        "year": "2001",
+        "country_code": "MLI"
+      }
+    },
+    {
+      "date": "2002",
+      "value": "12288050",
+      "locator": {
+        "year": "2002",
+        "country_code": "MLI"
+      }
+    },
+    {
+      "date": "2003",
+      "value": "12684955",
+      "locator": {
+        "year": "2003",
+        "country_code": "MLI"
+      }
+    },
+    {
+      "date": "2004",
+      "value": "13102409",
+      "locator": {
+        "year": "2004",
+        "country_code": "MLI"
+      }
+    },
+    {
+      "date": "2005",
+      "value": "13538647",
+      "locator": {
+        "year": "2005",
+        "country_code": "MLI"
+      }
+    },
+    {
+      "date": "2006",
+      "value": "13990139",
+      "locator": {
+        "year": "2006",
+        "country_code": "MLI"
+      }
+    },
+    {
+      "date": "2007",
+      "value": "14457775",
+      "locator": {
+        "year": "2007",
+        "country_code": "MLI"
+      }
+    },
+    {
+      "date": "2008",
+      "value": "14940782",
+      "locator": {
+        "year": "2008",
+        "country_code": "MLI"
+      }
+    },
+    {
+      "date": "2009",
+      "value": "15435539",
+      "locator": {
+        "year": "2009",
+        "country_code": "MLI"
+      }
+    },
+    {
+      "date": "2010",
+      "value": "15945198",
+      "locator": {
+        "year": "2010",
+        "country_code": "MLI"
+      }
+    },
+    {
+      "date": "2011",
+      "value": "16469049",
+      "locator": {
+        "year": "2011",
+        "country_code": "MLI"
+      }
+    },
+    {
+      "date": "2012",
+      "value": "16957033",
+      "locator": {
+        "year": "2012",
+        "country_code": "MLI"
+      }
+    },
+    {
+      "date": "2013",
+      "value": "17459615",
+      "locator": {
+        "year": "2013",
+        "country_code": "MLI"
+      }
+    },
+    {
+      "date": "2014",
+      "value": "18020267",
+      "locator": {
+        "year": "2014",
+        "country_code": "MLI"
+      }
+    },
+    {
+      "date": "2015",
+      "value": "18593022",
+      "locator": {
+        "year": "2015",
+        "country_code": "MLI"
+      }
+    },
+    {
+      "date": "2016",
+      "value": "19191289",
+      "locator": {
+        "year": "2016",
+        "country_code": "MLI"
+      }
+    },
+    {
+      "date": "2017",
+      "value": "19813011",
+      "locator": {
+        "year": "2017",
+        "country_code": "MLI"
+      }
+    },
+    {
+      "date": "2018",
+      "value": "20442030",
+      "locator": {
+        "year": "2018",
+        "country_code": "MLI"
+      }
+    },
+    {
+      "date": "2019",
+      "value": "21068405",
+      "locator": {
+        "year": "2019",
+        "country_code": "MLI"
+      }
+    },
+    {
+      "date": "2020",
+      "value": "21713836",
+      "locator": {
+        "year": "2020",
+        "country_code": "MLI"
+      }
+    },
+    {
+      "date": "2021",
+      "value": "22388630",
+      "locator": {
+        "year": "2021",
+        "country_code": "MLI"
+      }
+    },
+    {
+      "date": "2022",
+      "value": "23072640",
+      "locator": {
+        "year": "2022",
+        "country_code": "MLI"
+      }
+    },
+    {
+      "date": "2023",
+      "value": "23769127",
+      "locator": {
+        "year": "2023",
+        "country_code": "MLI"
+      }
+    },
+    {
+      "date": "2024",
+      "value": "24478595",
+      "locator": {
+        "year": "2024",
+        "country_code": "MLI"
+      }
+    },
+    {
+      "date": "2025",
+      "value": "25198821",
+      "locator": {
+        "year": "2025",
+        "country_code": "MLI"
+      }
+    }
+  ]
+}

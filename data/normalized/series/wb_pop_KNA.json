@@ -1,0 +1,543 @@
+{
+  "id": "wb_pop_KNA",
+  "name": "Saint Kitts and Nevis",
+  "units": "people",
+  "adjustment": "midyear",
+  "nominal_or_real": "count",
+  "frequency": "annual",
+  "source_id": "worldbank_sp_pop_totl",
+  "series_url": "https://data.worldbank.org/indicator/SP.POP.TOTL",
+  "country_code": "KNA",
+  "country_name": "Saint Kitts and Nevis",
+  "notes": "World Bank World Development Indicators, SP.POP.TOTL, country code KNA. Midyear population. Published years in this file run from 1960 to 2025.",
+  "points": [
+    {
+      "date": "1960",
+      "value": "55810",
+      "locator": {
+        "year": "1960",
+        "country_code": "KNA"
+      }
+    },
+    {
+      "date": "1961",
+      "value": "55334",
+      "locator": {
+        "year": "1961",
+        "country_code": "KNA"
+      }
+    },
+    {
+      "date": "1962",
+      "value": "54461",
+      "locator": {
+        "year": "1962",
+        "country_code": "KNA"
+      }
+    },
+    {
+      "date": "1963",
+      "value": "53441",
+      "locator": {
+        "year": "1963",
+        "country_code": "KNA"
+      }
+    },
+    {
+      "date": "1964",
+      "value": "52326",
+      "locator": {
+        "year": "1964",
+        "country_code": "KNA"
+      }
+    },
+    {
+      "date": "1965",
+      "value": "51139",
+      "locator": {
+        "year": "1965",
+        "country_code": "KNA"
+      }
+    },
+    {
+      "date": "1966",
+      "value": "49898",
+      "locator": {
+        "year": "1966",
+        "country_code": "KNA"
+      }
+    },
+    {
+      "date": "1967",
+      "value": "48605",
+      "locator": {
+        "year": "1967",
+        "country_code": "KNA"
+      }
+    },
+    {
+      "date": "1968",
+      "value": "47245",
+      "locator": {
+        "year": "1968",
+        "country_code": "KNA"
+      }
+    },
+    {
+      "date": "1969",
+      "value": "45731",
+      "locator": {
+        "year": "1969",
+        "country_code": "KNA"
+      }
+    },
+    {
+      "date": "1970",
+      "value": "44606",
+      "locator": {
+        "year": "1970",
+        "country_code": "KNA"
+      }
+    },
+    {
+      "date": "1971",
+      "value": "44206",
+      "locator": {
+        "year": "1971",
+        "country_code": "KNA"
+      }
+    },
+    {
+      "date": "1972",
+      "value": "44033",
+      "locator": {
+        "year": "1972",
+        "country_code": "KNA"
+      }
+    },
+    {
+      "date": "1973",
+      "value": "43880",
+      "locator": {
+        "year": "1973",
+        "country_code": "KNA"
+      }
+    },
+    {
+      "date": "1974",
+      "value": "43738",
+      "locator": {
+        "year": "1974",
+        "country_code": "KNA"
+      }
+    },
+    {
+      "date": "1975",
+      "value": "43606",
+      "locator": {
+        "year": "1975",
+        "country_code": "KNA"
+      }
+    },
+    {
+      "date": "1976",
+      "value": "43482",
+      "locator": {
+        "year": "1976",
+        "country_code": "KNA"
+      }
+    },
+    {
+      "date": "1977",
+      "value": "43358",
+      "locator": {
+        "year": "1977",
+        "country_code": "KNA"
+      }
+    },
+    {
+      "date": "1978",
+      "value": "43217",
+      "locator": {
+        "year": "1978",
+        "country_code": "KNA"
+      }
+    },
+    {
+      "date": "1979",
+      "value": "43033",
+      "locator": {
+        "year": "1979",
+        "country_code": "KNA"
+      }
+    },
+    {
+      "date": "1980",
+      "value": "42850",
+      "locator": {
+        "year": "1980",
+        "country_code": "KNA"
+      }
+    },
+    {
+      "date": "1981",
+      "value": "42698",
+      "locator": {
+        "year": "1981",
+        "country_code": "KNA"
+      }
+    },
+    {
+      "date": "1982",
+      "value": "42532",
+      "locator": {
+        "year": "1982",
+        "country_code": "KNA"
+      }
+    },
+    {
+      "date": "1983",
+      "value": "42334",
+      "locator": {
+        "year": "1983",
+        "country_code": "KNA"
+      }
+    },
+    {
+      "date": "1984",
+      "value": "42113",
+      "locator": {
+        "year": "1984",
+        "country_code": "KNA"
+      }
+    },
+    {
+      "date": "1985",
+      "value": "41874",
+      "locator": {
+        "year": "1985",
+        "country_code": "KNA"
+      }
+    },
+    {
+      "date": "1986",
+      "value": "41618",
+      "locator": {
+        "year": "1986",
+        "country_code": "KNA"
+      }
+    },
+    {
+      "date": "1987",
+      "value": "41348",
+      "locator": {
+        "year": "1987",
+        "country_code": "KNA"
+      }
+    },
+    {
+      "date": "1988",
+      "value": "41062",
+      "locator": {
+        "year": "1988",
+        "country_code": "KNA"
+      }
+    },
+    {
+      "date": "1989",
+      "value": "40758",
+      "locator": {
+        "year": "1989",
+        "country_code": "KNA"
+      }
+    },
+    {
+      "date": "1990",
+      "value": "40432",
+      "locator": {
+        "year": "1990",
+        "country_code": "KNA"
+      }
+    },
+    {
+      "date": "1991",
+      "value": "40358",
+      "locator": {
+        "year": "1991",
+        "country_code": "KNA"
+      }
+    },
+    {
+      "date": "1992",
+      "value": "40715",
+      "locator": {
+        "year": "1992",
+        "country_code": "KNA"
+      }
+    },
+    {
+      "date": "1993",
+      "value": "41242",
+      "locator": {
+        "year": "1993",
+        "country_code": "KNA"
+      }
+    },
+    {
+      "date": "1994",
+      "value": "41776",
+      "locator": {
+        "year": "1994",
+        "country_code": "KNA"
+      }
+    },
+    {
+      "date": "1995",
+      "value": "42326",
+      "locator": {
+        "year": "1995",
+        "country_code": "KNA"
+      }
+    },
+    {
+      "date": "1996",
+      "value": "42877",
+      "locator": {
+        "year": "1996",
+        "country_code": "KNA"
+      }
+    },
+    {
+      "date": "1997",
+      "value": "43428",
+      "locator": {
+        "year": "1997",
+        "country_code": "KNA"
+      }
+    },
+    {
+      "date": "1998",
+      "value": "43998",
+      "locator": {
+        "year": "1998",
+        "country_code": "KNA"
+      }
+    },
+    {
+      "date": "1999",
+      "value": "44601",
+      "locator": {
+        "year": "1999",
+        "country_code": "KNA"
+      }
+    },
+    {
+      "date": "2000",
+      "value": "45248",
+      "locator": {
+        "year": "2000",
+        "country_code": "KNA"
+      }
+    },
+    {
+      "date": "2001",
+      "value": "45761",
+      "locator": {
+        "year": "2001",
+        "country_code": "KNA"
+      }
+    },
+    {
+      "date": "2002",
+      "value": "46020",
+      "locator": {
+        "year": "2002",
+        "country_code": "KNA"
+      }
+    },
+    {
+      "date": "2003",
+      "value": "46176",
+      "locator": {
+        "year": "2003",
+        "country_code": "KNA"
+      }
+    },
+    {
+      "date": "2004",
+      "value": "46315",
+      "locator": {
+        "year": "2004",
+        "country_code": "KNA"
+      }
+    },
+    {
+      "date": "2005",
+      "value": "46437",
+      "locator": {
+        "year": "2005",
+        "country_code": "KNA"
+      }
+    },
+    {
+      "date": "2006",
+      "value": "46569",
+      "locator": {
+        "year": "2006",
+        "country_code": "KNA"
+      }
+    },
+    {
+      "date": "2007",
+      "value": "46706",
+      "locator": {
+        "year": "2007",
+        "country_code": "KNA"
+      }
+    },
+    {
+      "date": "2008",
+      "value": "46835",
+      "locator": {
+        "year": "2008",
+        "country_code": "KNA"
+      }
+    },
+    {
+      "date": "2009",
+      "value": "46916",
+      "locator": {
+        "year": "2009",
+        "country_code": "KNA"
+      }
+    },
+    {
+      "date": "2010",
+      "value": "46846",
+      "locator": {
+        "year": "2010",
+        "country_code": "KNA"
+      }
+    },
+    {
+      "date": "2011",
+      "value": "46886",
+      "locator": {
+        "year": "2011",
+        "country_code": "KNA"
+      }
+    },
+    {
+      "date": "2012",
+      "value": "47033",
+      "locator": {
+        "year": "2012",
+        "country_code": "KNA"
+      }
+    },
+    {
+      "date": "2013",
+      "value": "47069",
+      "locator": {
+        "year": "2013",
+        "country_code": "KNA"
+      }
+    },
+    {
+      "date": "2014",
+      "value": "47089",
+      "locator": {
+        "year": "2014",
+        "country_code": "KNA"
+      }
+    },
+    {
+      "date": "2015",
+      "value": "47087",
+      "locator": {
+        "year": "2015",
+        "country_code": "KNA"
+      }
+    },
+    {
+      "date": "2016",
+      "value": "47075",
+      "locator": {
+        "year": "2016",
+        "country_code": "KNA"
+      }
+    },
+    {
+      "date": "2017",
+      "value": "47050",
+      "locator": {
+        "year": "2017",
+        "country_code": "KNA"
+      }
+    },
+    {
+      "date": "2018",
+      "value": "47008",
+      "locator": {
+        "year": "2018",
+        "country_code": "KNA"
+      }
+    },
+    {
+      "date": "2019",
+      "value": "46952",
+      "locator": {
+        "year": "2019",
+        "country_code": "KNA"
+      }
+    },
+    {
+      "date": "2020",
+      "value": "46870",
+      "locator": {
+        "year": "2020",
+        "country_code": "KNA"
+      }
+    },
+    {
+      "date": "2021",
+      "value": "46763",
+      "locator": {
+        "year": "2021",
+        "country_code": "KNA"
+      }
+    },
+    {
+      "date": "2022",
+      "value": "46709",
+      "locator": {
+        "year": "2022",
+        "country_code": "KNA"
+      }
+    },
+    {
+      "date": "2023",
+      "value": "46758",
+      "locator": {
+        "year": "2023",
+        "country_code": "KNA"
+      }
+    },
+    {
+      "date": "2024",
+      "value": "46843",
+      "locator": {
+        "year": "2024",
+        "country_code": "KNA"
+      }
+    },
+    {
+      "date": "2025",
+      "value": "46922",
+      "locator": {
+        "year": "2025",
+        "country_code": "KNA"
+      }
+    }
+  ]
+}

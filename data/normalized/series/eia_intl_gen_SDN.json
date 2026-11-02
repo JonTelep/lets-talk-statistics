@@ -1,0 +1,377 @@
+{
+  "id": "eia_intl_gen_SDN",
+  "name": "Net generation",
+  "units": "billion kilowatthours",
+  "adjustment": "annual",
+  "nominal_or_real": "generation",
+  "frequency": "annual",
+  "source_id": "eia_intl_bulk",
+  "series_url": "https://www.eia.gov/international/data/world/electricity/electricity-generation",
+  "eia_series_id": "INTL.2-12-SDN-BKWH.A",
+  "country_code": "SDN",
+  "country_name": "Sudan",
+  "population_status": "matched",
+  "notes": "EIA bulk series INTL.2-12-SDN-BKWH.A, Sudan. Annual. Billion kilowatthours. 1 billion kilowatthours = 1 terawatthour. Published years in this file run from 1980 to 2024.",
+  "points": [
+    {
+      "date": "1980",
+      "value": "0.695",
+      "locator": {
+        "year": "1980",
+        "series_id": "INTL.2-12-SDN-BKWH.A"
+      }
+    },
+    {
+      "date": "1981",
+      "value": "0.951",
+      "locator": {
+        "year": "1981",
+        "series_id": "INTL.2-12-SDN-BKWH.A"
+      }
+    },
+    {
+      "date": "1982",
+      "value": "1.014",
+      "locator": {
+        "year": "1982",
+        "series_id": "INTL.2-12-SDN-BKWH.A"
+      }
+    },
+    {
+      "date": "1983",
+      "value": "1.014",
+      "locator": {
+        "year": "1983",
+        "series_id": "INTL.2-12-SDN-BKWH.A"
+      }
+    },
+    {
+      "date": "1984",
+      "value": "1.085",
+      "locator": {
+        "year": "1984",
+        "series_id": "INTL.2-12-SDN-BKWH.A"
+      }
+    },
+    {
+      "date": "1985",
+      "value": "1.264",
+      "locator": {
+        "year": "1985",
+        "series_id": "INTL.2-12-SDN-BKWH.A"
+      }
+    },
+    {
+      "date": "1986",
+      "value": "1.268",
+      "locator": {
+        "year": "1986",
+        "series_id": "INTL.2-12-SDN-BKWH.A"
+      }
+    },
+    {
+      "date": "1987",
+      "value": "1.274",
+      "locator": {
+        "year": "1987",
+        "series_id": "INTL.2-12-SDN-BKWH.A"
+      }
+    },
+    {
+      "date": "1988",
+      "value": "1.281",
+      "locator": {
+        "year": "1988",
+        "series_id": "INTL.2-12-SDN-BKWH.A"
+      }
+    },
+    {
+      "date": "1989",
+      "value": "1.29",
+      "locator": {
+        "year": "1989",
+        "series_id": "INTL.2-12-SDN-BKWH.A"
+      }
+    },
+    {
+      "date": "1990",
+      "value": "1.472",
+      "locator": {
+        "year": "1990",
+        "series_id": "INTL.2-12-SDN-BKWH.A"
+      }
+    },
+    {
+      "date": "1991",
+      "value": "1.614",
+      "locator": {
+        "year": "1991",
+        "series_id": "INTL.2-12-SDN-BKWH.A"
+      }
+    },
+    {
+      "date": "1992",
+      "value": "1.59",
+      "locator": {
+        "year": "1992",
+        "series_id": "INTL.2-12-SDN-BKWH.A"
+      }
+    },
+    {
+      "date": "1993",
+      "value": "1.639",
+      "locator": {
+        "year": "1993",
+        "series_id": "INTL.2-12-SDN-BKWH.A"
+      }
+    },
+    {
+      "date": "1994",
+      "value": "1.803",
+      "locator": {
+        "year": "1994",
+        "series_id": "INTL.2-12-SDN-BKWH.A"
+      }
+    },
+    {
+      "date": "1995",
+      "value": "1.8",
+      "locator": {
+        "year": "1995",
+        "series_id": "INTL.2-12-SDN-BKWH.A"
+      }
+    },
+    {
+      "date": "1996",
+      "value": "1.993",
+      "locator": {
+        "year": "1996",
+        "series_id": "INTL.2-12-SDN-BKWH.A"
+      }
+    },
+    {
+      "date": "1997",
+      "value": "2.073",
+      "locator": {
+        "year": "1997",
+        "series_id": "INTL.2-12-SDN-BKWH.A"
+      }
+    },
+    {
+      "date": "1998",
+      "value": "2.033",
+      "locator": {
+        "year": "1998",
+        "series_id": "INTL.2-12-SDN-BKWH.A"
+      }
+    },
+    {
+      "date": "1999",
+      "value": "2.338",
+      "locator": {
+        "year": "1999",
+        "series_id": "INTL.2-12-SDN-BKWH.A"
+      }
+    },
+    {
+      "date": "2000",
+      "value": "2.538",
+      "locator": {
+        "year": "2000",
+        "series_id": "INTL.2-12-SDN-BKWH.A"
+      }
+    },
+    {
+      "date": "2001",
+      "value": "2.689",
+      "locator": {
+        "year": "2001",
+        "series_id": "INTL.2-12-SDN-BKWH.A"
+      }
+    },
+    {
+      "date": "2002",
+      "value": "3.004",
+      "locator": {
+        "year": "2002",
+        "series_id": "INTL.2-12-SDN-BKWH.A"
+      }
+    },
+    {
+      "date": "2003",
+      "value": "3.472",
+      "locator": {
+        "year": "2003",
+        "series_id": "INTL.2-12-SDN-BKWH.A"
+      }
+    },
+    {
+      "date": "2004",
+      "value": "3.596",
+      "locator": {
+        "year": "2004",
+        "series_id": "INTL.2-12-SDN-BKWH.A"
+      }
+    },
+    {
+      "date": "2005",
+      "value": "3.957",
+      "locator": {
+        "year": "2005",
+        "series_id": "INTL.2-12-SDN-BKWH.A"
+      }
+    },
+    {
+      "date": "2006",
+      "value": "4.647",
+      "locator": {
+        "year": "2006",
+        "series_id": "INTL.2-12-SDN-BKWH.A"
+      }
+    },
+    {
+      "date": "2007",
+      "value": "5.155",
+      "locator": {
+        "year": "2007",
+        "series_id": "INTL.2-12-SDN-BKWH.A"
+      }
+    },
+    {
+      "date": "2008",
+      "value": "5.64",
+      "locator": {
+        "year": "2008",
+        "series_id": "INTL.2-12-SDN-BKWH.A"
+      }
+    },
+    {
+      "date": "2009",
+      "value": "6.611",
+      "locator": {
+        "year": "2009",
+        "series_id": "INTL.2-12-SDN-BKWH.A"
+      }
+    },
+    {
+      "date": "2010",
+      "value": "7.573",
+      "locator": {
+        "year": "2010",
+        "series_id": "INTL.2-12-SDN-BKWH.A"
+      }
+    },
+    {
+      "date": "2011",
+      "value": "8.515",
+      "locator": {
+        "year": "2011",
+        "series_id": "INTL.2-12-SDN-BKWH.A"
+      }
+    },
+    {
+      "date": "2012",
+      "value": "9.4995",
+      "locator": {
+        "year": "2012",
+        "series_id": "INTL.2-12-SDN-BKWH.A"
+      }
+    },
+    {
+      "date": "2013",
+      "value": "10.35",
+      "locator": {
+        "year": "2013",
+        "series_id": "INTL.2-12-SDN-BKWH.A"
+      }
+    },
+    {
+      "date": "2014",
+      "value": "11.4162",
+      "locator": {
+        "year": "2014",
+        "series_id": "INTL.2-12-SDN-BKWH.A"
+      }
+    },
+    {
+      "date": "2015",
+      "value": "13.087",
+      "locator": {
+        "year": "2015",
+        "series_id": "INTL.2-12-SDN-BKWH.A"
+      }
+    },
+    {
+      "date": "2016",
+      "value": "14.567",
+      "locator": {
+        "year": "2016",
+        "series_id": "INTL.2-12-SDN-BKWH.A"
+      }
+    },
+    {
+      "date": "2017",
+      "value": "15.6916",
+      "locator": {
+        "year": "2017",
+        "series_id": "INTL.2-12-SDN-BKWH.A"
+      }
+    },
+    {
+      "date": "2018",
+      "value": "16.3977",
+      "locator": {
+        "year": "2018",
+        "series_id": "INTL.2-12-SDN-BKWH.A"
+      }
+    },
+    {
+      "date": "2019",
+      "value": "16.217",
+      "locator": {
+        "year": "2019",
+        "series_id": "INTL.2-12-SDN-BKWH.A"
+      }
+    },
+    {
+      "date": "2020",
+      "value": "17.1943",
+      "locator": {
+        "year": "2020",
+        "series_id": "INTL.2-12-SDN-BKWH.A"
+      }
+    },
+    {
+      "date": "2021",
+      "value": "17.7046",
+      "locator": {
+        "year": "2021",
+        "series_id": "INTL.2-12-SDN-BKWH.A"
+      }
+    },
+    {
+      "date": "2022",
+      "value": "16.7734",
+      "locator": {
+        "year": "2022",
+        "series_id": "INTL.2-12-SDN-BKWH.A"
+      }
+    },
+    {
+      "date": "2023",
+      "value": "14.508986",
+      "locator": {
+        "year": "2023",
+        "series_id": "INTL.2-12-SDN-BKWH.A"
+      }
+    },
+    {
+      "date": "2024",
+      "value": "14.766678696",
+      "locator": {
+        "year": "2024",
+        "series_id": "INTL.2-12-SDN-BKWH.A"
+      }
+    }
+  ]
+}

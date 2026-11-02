@@ -1,0 +1,543 @@
+{
+  "id": "wb_pop_SYR",
+  "name": "Syria",
+  "units": "people",
+  "adjustment": "midyear",
+  "nominal_or_real": "count",
+  "frequency": "annual",
+  "source_id": "worldbank_sp_pop_totl",
+  "series_url": "https://data.worldbank.org/indicator/SP.POP.TOTL",
+  "country_code": "SYR",
+  "country_name": "Syria",
+  "notes": "World Bank World Development Indicators, SP.POP.TOTL, country code SYR. Midyear population. Published years in this file run from 1960 to 2025.",
+  "points": [
+    {
+      "date": "1960",
+      "value": "4673500",
+      "locator": {
+        "year": "1960",
+        "country_code": "SYR"
+      }
+    },
+    {
+      "date": "1961",
+      "value": "4815466",
+      "locator": {
+        "year": "1961",
+        "country_code": "SYR"
+      }
+    },
+    {
+      "date": "1962",
+      "value": "4959340",
+      "locator": {
+        "year": "1962",
+        "country_code": "SYR"
+      }
+    },
+    {
+      "date": "1963",
+      "value": "5110467",
+      "locator": {
+        "year": "1963",
+        "country_code": "SYR"
+      }
+    },
+    {
+      "date": "1964",
+      "value": "5269087",
+      "locator": {
+        "year": "1964",
+        "country_code": "SYR"
+      }
+    },
+    {
+      "date": "1965",
+      "value": "5435267",
+      "locator": {
+        "year": "1965",
+        "country_code": "SYR"
+      }
+    },
+    {
+      "date": "1966",
+      "value": "5609047",
+      "locator": {
+        "year": "1966",
+        "country_code": "SYR"
+      }
+    },
+    {
+      "date": "1967",
+      "value": "5790198",
+      "locator": {
+        "year": "1967",
+        "country_code": "SYR"
+      }
+    },
+    {
+      "date": "1968",
+      "value": "5978742",
+      "locator": {
+        "year": "1968",
+        "country_code": "SYR"
+      }
+    },
+    {
+      "date": "1969",
+      "value": "6175166",
+      "locator": {
+        "year": "1969",
+        "country_code": "SYR"
+      }
+    },
+    {
+      "date": "1970",
+      "value": "6380609",
+      "locator": {
+        "year": "1970",
+        "country_code": "SYR"
+      }
+    },
+    {
+      "date": "1971",
+      "value": "6598094",
+      "locator": {
+        "year": "1971",
+        "country_code": "SYR"
+      }
+    },
+    {
+      "date": "1972",
+      "value": "6826024",
+      "locator": {
+        "year": "1972",
+        "country_code": "SYR"
+      }
+    },
+    {
+      "date": "1973",
+      "value": "7060321",
+      "locator": {
+        "year": "1973",
+        "country_code": "SYR"
+      }
+    },
+    {
+      "date": "1974",
+      "value": "7302160",
+      "locator": {
+        "year": "1974",
+        "country_code": "SYR"
+      }
+    },
+    {
+      "date": "1975",
+      "value": "7554364",
+      "locator": {
+        "year": "1975",
+        "country_code": "SYR"
+      }
+    },
+    {
+      "date": "1976",
+      "value": "7817320",
+      "locator": {
+        "year": "1976",
+        "country_code": "SYR"
+      }
+    },
+    {
+      "date": "1977",
+      "value": "8090501",
+      "locator": {
+        "year": "1977",
+        "country_code": "SYR"
+      }
+    },
+    {
+      "date": "1978",
+      "value": "8372759",
+      "locator": {
+        "year": "1978",
+        "country_code": "SYR"
+      }
+    },
+    {
+      "date": "1979",
+      "value": "8661909",
+      "locator": {
+        "year": "1979",
+        "country_code": "SYR"
+      }
+    },
+    {
+      "date": "1980",
+      "value": "8957663",
+      "locator": {
+        "year": "1980",
+        "country_code": "SYR"
+      }
+    },
+    {
+      "date": "1981",
+      "value": "9260189",
+      "locator": {
+        "year": "1981",
+        "country_code": "SYR"
+      }
+    },
+    {
+      "date": "1982",
+      "value": "9572511",
+      "locator": {
+        "year": "1982",
+        "country_code": "SYR"
+      }
+    },
+    {
+      "date": "1983",
+      "value": "9904809",
+      "locator": {
+        "year": "1983",
+        "country_code": "SYR"
+      }
+    },
+    {
+      "date": "1984",
+      "value": "10258398",
+      "locator": {
+        "year": "1984",
+        "country_code": "SYR"
+      }
+    },
+    {
+      "date": "1985",
+      "value": "10625672",
+      "locator": {
+        "year": "1985",
+        "country_code": "SYR"
+      }
+    },
+    {
+      "date": "1986",
+      "value": "11002844",
+      "locator": {
+        "year": "1986",
+        "country_code": "SYR"
+      }
+    },
+    {
+      "date": "1987",
+      "value": "11388923",
+      "locator": {
+        "year": "1987",
+        "country_code": "SYR"
+      }
+    },
+    {
+      "date": "1988",
+      "value": "11782264",
+      "locator": {
+        "year": "1988",
+        "country_code": "SYR"
+      }
+    },
+    {
+      "date": "1989",
+      "value": "12179060",
+      "locator": {
+        "year": "1989",
+        "country_code": "SYR"
+      }
+    },
+    {
+      "date": "1990",
+      "value": "12579208",
+      "locator": {
+        "year": "1990",
+        "country_code": "SYR"
+      }
+    },
+    {
+      "date": "1991",
+      "value": "12980821",
+      "locator": {
+        "year": "1991",
+        "country_code": "SYR"
+      }
+    },
+    {
+      "date": "1992",
+      "value": "13385571",
+      "locator": {
+        "year": "1992",
+        "country_code": "SYR"
+      }
+    },
+    {
+      "date": "1993",
+      "value": "13795686",
+      "locator": {
+        "year": "1993",
+        "country_code": "SYR"
+      }
+    },
+    {
+      "date": "1994",
+      "value": "14208583",
+      "locator": {
+        "year": "1994",
+        "country_code": "SYR"
+      }
+    },
+    {
+      "date": "1995",
+      "value": "14616801",
+      "locator": {
+        "year": "1995",
+        "country_code": "SYR"
+      }
+    },
+    {
+      "date": "1996",
+      "value": "15018104",
+      "locator": {
+        "year": "1996",
+        "country_code": "SYR"
+      }
+    },
+    {
+      "date": "1997",
+      "value": "15417542",
+      "locator": {
+        "year": "1997",
+        "country_code": "SYR"
+      }
+    },
+    {
+      "date": "1998",
+      "value": "15820413",
+      "locator": {
+        "year": "1998",
+        "country_code": "SYR"
+      }
+    },
+    {
+      "date": "1999",
+      "value": "16228061",
+      "locator": {
+        "year": "1999",
+        "country_code": "SYR"
+      }
+    },
+    {
+      "date": "2000",
+      "value": "16637888",
+      "locator": {
+        "year": "2000",
+        "country_code": "SYR"
+      }
+    },
+    {
+      "date": "2001",
+      "value": "17051338",
+      "locator": {
+        "year": "2001",
+        "country_code": "SYR"
+      }
+    },
+    {
+      "date": "2002",
+      "value": "17468332",
+      "locator": {
+        "year": "2002",
+        "country_code": "SYR"
+      }
+    },
+    {
+      "date": "2003",
+      "value": "17889296",
+      "locator": {
+        "year": "2003",
+        "country_code": "SYR"
+      }
+    },
+    {
+      "date": "2004",
+      "value": "18336875",
+      "locator": {
+        "year": "2004",
+        "country_code": "SYR"
+      }
+    },
+    {
+      "date": "2005",
+      "value": "18814091",
+      "locator": {
+        "year": "2005",
+        "country_code": "SYR"
+      }
+    },
+    {
+      "date": "2006",
+      "value": "19637022",
+      "locator": {
+        "year": "2006",
+        "country_code": "SYR"
+      }
+    },
+    {
+      "date": "2007",
+      "value": "20884125",
+      "locator": {
+        "year": "2007",
+        "country_code": "SYR"
+      }
+    },
+    {
+      "date": "2008",
+      "value": "21636564",
+      "locator": {
+        "year": "2008",
+        "country_code": "SYR"
+      }
+    },
+    {
+      "date": "2009",
+      "value": "21976969",
+      "locator": {
+        "year": "2009",
+        "country_code": "SYR"
+      }
+    },
+    {
+      "date": "2010",
+      "value": "22482421",
+      "locator": {
+        "year": "2010",
+        "country_code": "SYR"
+      }
+    },
+    {
+      "date": "2011",
+      "value": "22878098",
+      "locator": {
+        "year": "2011",
+        "country_code": "SYR"
+      }
+    },
+    {
+      "date": "2012",
+      "value": "22759763",
+      "locator": {
+        "year": "2012",
+        "country_code": "SYR"
+      }
+    },
+    {
+      "date": "2013",
+      "value": "21666917",
+      "locator": {
+        "year": "2013",
+        "country_code": "SYR"
+      }
+    },
+    {
+      "date": "2014",
+      "value": "20273659",
+      "locator": {
+        "year": "2014",
+        "country_code": "SYR"
+      }
+    },
+    {
+      "date": "2015",
+      "value": "19424618",
+      "locator": {
+        "year": "2015",
+        "country_code": "SYR"
+      }
+    },
+    {
+      "date": "2016",
+      "value": "19193834",
+      "locator": {
+        "year": "2016",
+        "country_code": "SYR"
+      }
+    },
+    {
+      "date": "2017",
+      "value": "19224668",
+      "locator": {
+        "year": "2017",
+        "country_code": "SYR"
+      }
+    },
+    {
+      "date": "2018",
+      "value": "19577845",
+      "locator": {
+        "year": "2018",
+        "country_code": "SYR"
+      }
+    },
+    {
+      "date": "2019",
+      "value": "20353534",
+      "locator": {
+        "year": "2019",
+        "country_code": "SYR"
+      }
+    },
+    {
+      "date": "2020",
+      "value": "21049429",
+      "locator": {
+        "year": "2020",
+        "country_code": "SYR"
+      }
+    },
+    {
+      "date": "2021",
+      "value": "21628839",
+      "locator": {
+        "year": "2021",
+        "country_code": "SYR"
+      }
+    },
+    {
+      "date": "2022",
+      "value": "22462173",
+      "locator": {
+        "year": "2022",
+        "country_code": "SYR"
+      }
+    },
+    {
+      "date": "2023",
+      "value": "23594623",
+      "locator": {
+        "year": "2023",
+        "country_code": "SYR"
+      }
+    },
+    {
+      "date": "2024",
+      "value": "24672760",
+      "locator": {
+        "year": "2024",
+        "country_code": "SYR"
+      }
+    },
+    {
+      "date": "2025",
+      "value": "25620427",
+      "locator": {
+        "year": "2025",
+        "country_code": "SYR"
+      }
+    }
+  ]
+}

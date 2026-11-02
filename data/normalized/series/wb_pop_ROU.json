@@ -1,0 +1,543 @@
+{
+  "id": "wb_pop_ROU",
+  "name": "Romania",
+  "units": "people",
+  "adjustment": "midyear",
+  "nominal_or_real": "count",
+  "frequency": "annual",
+  "source_id": "worldbank_sp_pop_totl",
+  "series_url": "https://data.worldbank.org/indicator/SP.POP.TOTL",
+  "country_code": "ROU",
+  "country_name": "Romania",
+  "notes": "World Bank World Development Indicators, SP.POP.TOTL, country code ROU. Midyear population. Published years in this file run from 1960 to 2025.",
+  "points": [
+    {
+      "date": "1960",
+      "value": "18406905",
+      "locator": {
+        "year": "1960",
+        "country_code": "ROU"
+      }
+    },
+    {
+      "date": "1961",
+      "value": "18555250",
+      "locator": {
+        "year": "1961",
+        "country_code": "ROU"
+      }
+    },
+    {
+      "date": "1962",
+      "value": "18676550",
+      "locator": {
+        "year": "1962",
+        "country_code": "ROU"
+      }
+    },
+    {
+      "date": "1963",
+      "value": "18797850",
+      "locator": {
+        "year": "1963",
+        "country_code": "ROU"
+      }
+    },
+    {
+      "date": "1964",
+      "value": "18919126",
+      "locator": {
+        "year": "1964",
+        "country_code": "ROU"
+      }
+    },
+    {
+      "date": "1965",
+      "value": "19031576",
+      "locator": {
+        "year": "1965",
+        "country_code": "ROU"
+      }
+    },
+    {
+      "date": "1966",
+      "value": "19215450",
+      "locator": {
+        "year": "1966",
+        "country_code": "ROU"
+      }
+    },
+    {
+      "date": "1967",
+      "value": "19534242",
+      "locator": {
+        "year": "1967",
+        "country_code": "ROU"
+      }
+    },
+    {
+      "date": "1968",
+      "value": "19799831",
+      "locator": {
+        "year": "1968",
+        "country_code": "ROU"
+      }
+    },
+    {
+      "date": "1969",
+      "value": "20009141",
+      "locator": {
+        "year": "1969",
+        "country_code": "ROU"
+      }
+    },
+    {
+      "date": "1970",
+      "value": "20250398",
+      "locator": {
+        "year": "1970",
+        "country_code": "ROU"
+      }
+    },
+    {
+      "date": "1971",
+      "value": "20461567",
+      "locator": {
+        "year": "1971",
+        "country_code": "ROU"
+      }
+    },
+    {
+      "date": "1972",
+      "value": "20657957",
+      "locator": {
+        "year": "1972",
+        "country_code": "ROU"
+      }
+    },
+    {
+      "date": "1973",
+      "value": "20835681",
+      "locator": {
+        "year": "1973",
+        "country_code": "ROU"
+      }
+    },
+    {
+      "date": "1974",
+      "value": "21029429",
+      "locator": {
+        "year": "1974",
+        "country_code": "ROU"
+      }
+    },
+    {
+      "date": "1975",
+      "value": "21293583",
+      "locator": {
+        "year": "1975",
+        "country_code": "ROU"
+      }
+    },
+    {
+      "date": "1976",
+      "value": "21551634",
+      "locator": {
+        "year": "1976",
+        "country_code": "ROU"
+      }
+    },
+    {
+      "date": "1977",
+      "value": "21756096",
+      "locator": {
+        "year": "1977",
+        "country_code": "ROU"
+      }
+    },
+    {
+      "date": "1978",
+      "value": "21951464",
+      "locator": {
+        "year": "1978",
+        "country_code": "ROU"
+      }
+    },
+    {
+      "date": "1979",
+      "value": "22090488",
+      "locator": {
+        "year": "1979",
+        "country_code": "ROU"
+      }
+    },
+    {
+      "date": "1980",
+      "value": "22207282",
+      "locator": {
+        "year": "1980",
+        "country_code": "ROU"
+      }
+    },
+    {
+      "date": "1981",
+      "value": "22353070",
+      "locator": {
+        "year": "1981",
+        "country_code": "ROU"
+      }
+    },
+    {
+      "date": "1982",
+      "value": "22475741",
+      "locator": {
+        "year": "1982",
+        "country_code": "ROU"
+      }
+    },
+    {
+      "date": "1983",
+      "value": "22560478",
+      "locator": {
+        "year": "1983",
+        "country_code": "ROU"
+      }
+    },
+    {
+      "date": "1984",
+      "value": "22640547",
+      "locator": {
+        "year": "1984",
+        "country_code": "ROU"
+      }
+    },
+    {
+      "date": "1985",
+      "value": "22732999",
+      "locator": {
+        "year": "1985",
+        "country_code": "ROU"
+      }
+    },
+    {
+      "date": "1986",
+      "value": "22836841",
+      "locator": {
+        "year": "1986",
+        "country_code": "ROU"
+      }
+    },
+    {
+      "date": "1987",
+      "value": "22949430",
+      "locator": {
+        "year": "1987",
+        "country_code": "ROU"
+      }
+    },
+    {
+      "date": "1988",
+      "value": "23057662",
+      "locator": {
+        "year": "1988",
+        "country_code": "ROU"
+      }
+    },
+    {
+      "date": "1989",
+      "value": "23161458",
+      "locator": {
+        "year": "1989",
+        "country_code": "ROU"
+      }
+    },
+    {
+      "date": "1990",
+      "value": "23201835",
+      "locator": {
+        "year": "1990",
+        "country_code": "ROU"
+      }
+    },
+    {
+      "date": "1991",
+      "value": "23001155",
+      "locator": {
+        "year": "1991",
+        "country_code": "ROU"
+      }
+    },
+    {
+      "date": "1992",
+      "value": "22794284",
+      "locator": {
+        "year": "1992",
+        "country_code": "ROU"
+      }
+    },
+    {
+      "date": "1993",
+      "value": "22763280",
+      "locator": {
+        "year": "1993",
+        "country_code": "ROU"
+      }
+    },
+    {
+      "date": "1994",
+      "value": "22730211",
+      "locator": {
+        "year": "1994",
+        "country_code": "ROU"
+      }
+    },
+    {
+      "date": "1995",
+      "value": "22684270",
+      "locator": {
+        "year": "1995",
+        "country_code": "ROU"
+      }
+    },
+    {
+      "date": "1996",
+      "value": "22619004",
+      "locator": {
+        "year": "1996",
+        "country_code": "ROU"
+      }
+    },
+    {
+      "date": "1997",
+      "value": "22553978",
+      "locator": {
+        "year": "1997",
+        "country_code": "ROU"
+      }
+    },
+    {
+      "date": "1998",
+      "value": "22507344",
+      "locator": {
+        "year": "1998",
+        "country_code": "ROU"
+      }
+    },
+    {
+      "date": "1999",
+      "value": "22472040",
+      "locator": {
+        "year": "1999",
+        "country_code": "ROU"
+      }
+    },
+    {
+      "date": "2000",
+      "value": "22442971",
+      "locator": {
+        "year": "2000",
+        "country_code": "ROU"
+      }
+    },
+    {
+      "date": "2001",
+      "value": "22131970",
+      "locator": {
+        "year": "2001",
+        "country_code": "ROU"
+      }
+    },
+    {
+      "date": "2002",
+      "value": "21730496",
+      "locator": {
+        "year": "2002",
+        "country_code": "ROU"
+      }
+    },
+    {
+      "date": "2003",
+      "value": "21574326",
+      "locator": {
+        "year": "2003",
+        "country_code": "ROU"
+      }
+    },
+    {
+      "date": "2004",
+      "value": "21451748",
+      "locator": {
+        "year": "2004",
+        "country_code": "ROU"
+      }
+    },
+    {
+      "date": "2005",
+      "value": "21319685",
+      "locator": {
+        "year": "2005",
+        "country_code": "ROU"
+      }
+    },
+    {
+      "date": "2006",
+      "value": "21193760",
+      "locator": {
+        "year": "2006",
+        "country_code": "ROU"
+      }
+    },
+    {
+      "date": "2007",
+      "value": "20882982",
+      "locator": {
+        "year": "2007",
+        "country_code": "ROU"
+      }
+    },
+    {
+      "date": "2008",
+      "value": "20537875",
+      "locator": {
+        "year": "2008",
+        "country_code": "ROU"
+      }
+    },
+    {
+      "date": "2009",
+      "value": "20367487",
+      "locator": {
+        "year": "2009",
+        "country_code": "ROU"
+      }
+    },
+    {
+      "date": "2010",
+      "value": "20246871",
+      "locator": {
+        "year": "2010",
+        "country_code": "ROU"
+      }
+    },
+    {
+      "date": "2011",
+      "value": "20147528",
+      "locator": {
+        "year": "2011",
+        "country_code": "ROU"
+      }
+    },
+    {
+      "date": "2012",
+      "value": "20058035",
+      "locator": {
+        "year": "2012",
+        "country_code": "ROU"
+      }
+    },
+    {
+      "date": "2013",
+      "value": "19983693",
+      "locator": {
+        "year": "2013",
+        "country_code": "ROU"
+      }
+    },
+    {
+      "date": "2014",
+      "value": "19908979",
+      "locator": {
+        "year": "2014",
+        "country_code": "ROU"
+      }
+    },
+    {
+      "date": "2015",
+      "value": "19815616",
+      "locator": {
+        "year": "2015",
+        "country_code": "ROU"
+      }
+    },
+    {
+      "date": "2016",
+      "value": "19702267",
+      "locator": {
+        "year": "2016",
+        "country_code": "ROU"
+      }
+    },
+    {
+      "date": "2017",
+      "value": "19588715",
+      "locator": {
+        "year": "2017",
+        "country_code": "ROU"
+      }
+    },
+    {
+      "date": "2018",
+      "value": "19473970",
+      "locator": {
+        "year": "2018",
+        "country_code": "ROU"
+      }
+    },
+    {
+      "date": "2019",
+      "value": "19371648",
+      "locator": {
+        "year": "2019",
+        "country_code": "ROU"
+      }
+    },
+    {
+      "date": "2020",
+      "value": "19265250",
+      "locator": {
+        "year": "2020",
+        "country_code": "ROU"
+      }
+    },
+    {
+      "date": "2021",
+      "value": "19122059",
+      "locator": {
+        "year": "2021",
+        "country_code": "ROU"
+      }
+    },
+    {
+      "date": "2022",
+      "value": "19048502",
+      "locator": {
+        "year": "2022",
+        "country_code": "ROU"
+      }
+    },
+    {
+      "date": "2023",
+      "value": "19061062",
+      "locator": {
+        "year": "2023",
+        "country_code": "ROU"
+      }
+    },
+    {
+      "date": "2024",
+      "value": "19051804",
+      "locator": {
+        "year": "2024",
+        "country_code": "ROU"
+      }
+    },
+    {
+      "date": "2025",
+      "value": "19020271",
+      "locator": {
+        "year": "2025",
+        "country_code": "ROU"
+      }
+    }
+  ]
+}

@@ -1,0 +1,543 @@
+{
+  "id": "wb_pop_NPL",
+  "name": "Nepal",
+  "units": "people",
+  "adjustment": "midyear",
+  "nominal_or_real": "count",
+  "frequency": "annual",
+  "source_id": "worldbank_sp_pop_totl",
+  "series_url": "https://data.worldbank.org/indicator/SP.POP.TOTL",
+  "country_code": "NPL",
+  "country_name": "Nepal",
+  "notes": "World Bank World Development Indicators, SP.POP.TOTL, country code NPL. Midyear population. Published years in this file run from 1960 to 2025.",
+  "points": [
+    {
+      "date": "1960",
+      "value": "10123658",
+      "locator": {
+        "year": "1960",
+        "country_code": "NPL"
+      }
+    },
+    {
+      "date": "1961",
+      "value": "10318396",
+      "locator": {
+        "year": "1961",
+        "country_code": "NPL"
+      }
+    },
+    {
+      "date": "1962",
+      "value": "10521116",
+      "locator": {
+        "year": "1962",
+        "country_code": "NPL"
+      }
+    },
+    {
+      "date": "1963",
+      "value": "10729818",
+      "locator": {
+        "year": "1963",
+        "country_code": "NPL"
+      }
+    },
+    {
+      "date": "1964",
+      "value": "10946392",
+      "locator": {
+        "year": "1964",
+        "country_code": "NPL"
+      }
+    },
+    {
+      "date": "1965",
+      "value": "11173411",
+      "locator": {
+        "year": "1965",
+        "country_code": "NPL"
+      }
+    },
+    {
+      "date": "1966",
+      "value": "11408710",
+      "locator": {
+        "year": "1966",
+        "country_code": "NPL"
+      }
+    },
+    {
+      "date": "1967",
+      "value": "11652716",
+      "locator": {
+        "year": "1967",
+        "country_code": "NPL"
+      }
+    },
+    {
+      "date": "1968",
+      "value": "11906266",
+      "locator": {
+        "year": "1968",
+        "country_code": "NPL"
+      }
+    },
+    {
+      "date": "1969",
+      "value": "12167036",
+      "locator": {
+        "year": "1969",
+        "country_code": "NPL"
+      }
+    },
+    {
+      "date": "1970",
+      "value": "12436190",
+      "locator": {
+        "year": "1970",
+        "country_code": "NPL"
+      }
+    },
+    {
+      "date": "1971",
+      "value": "12710061",
+      "locator": {
+        "year": "1971",
+        "country_code": "NPL"
+      }
+    },
+    {
+      "date": "1972",
+      "value": "12989099",
+      "locator": {
+        "year": "1972",
+        "country_code": "NPL"
+      }
+    },
+    {
+      "date": "1973",
+      "value": "13275239",
+      "locator": {
+        "year": "1973",
+        "country_code": "NPL"
+      }
+    },
+    {
+      "date": "1974",
+      "value": "13568435",
+      "locator": {
+        "year": "1974",
+        "country_code": "NPL"
+      }
+    },
+    {
+      "date": "1975",
+      "value": "13870695",
+      "locator": {
+        "year": "1975",
+        "country_code": "NPL"
+      }
+    },
+    {
+      "date": "1976",
+      "value": "14177649",
+      "locator": {
+        "year": "1976",
+        "country_code": "NPL"
+      }
+    },
+    {
+      "date": "1977",
+      "value": "14499175",
+      "locator": {
+        "year": "1977",
+        "country_code": "NPL"
+      }
+    },
+    {
+      "date": "1978",
+      "value": "14839695",
+      "locator": {
+        "year": "1978",
+        "country_code": "NPL"
+      }
+    },
+    {
+      "date": "1979",
+      "value": "15190590",
+      "locator": {
+        "year": "1979",
+        "country_code": "NPL"
+      }
+    },
+    {
+      "date": "1980",
+      "value": "15553105",
+      "locator": {
+        "year": "1980",
+        "country_code": "NPL"
+      }
+    },
+    {
+      "date": "1981",
+      "value": "15922423",
+      "locator": {
+        "year": "1981",
+        "country_code": "NPL"
+      }
+    },
+    {
+      "date": "1982",
+      "value": "16297987",
+      "locator": {
+        "year": "1982",
+        "country_code": "NPL"
+      }
+    },
+    {
+      "date": "1983",
+      "value": "16689119",
+      "locator": {
+        "year": "1983",
+        "country_code": "NPL"
+      }
+    },
+    {
+      "date": "1984",
+      "value": "17085242",
+      "locator": {
+        "year": "1984",
+        "country_code": "NPL"
+      }
+    },
+    {
+      "date": "1985",
+      "value": "17477692",
+      "locator": {
+        "year": "1985",
+        "country_code": "NPL"
+      }
+    },
+    {
+      "date": "1986",
+      "value": "17868124",
+      "locator": {
+        "year": "1986",
+        "country_code": "NPL"
+      }
+    },
+    {
+      "date": "1987",
+      "value": "18250505",
+      "locator": {
+        "year": "1987",
+        "country_code": "NPL"
+      }
+    },
+    {
+      "date": "1988",
+      "value": "18638661",
+      "locator": {
+        "year": "1988",
+        "country_code": "NPL"
+      }
+    },
+    {
+      "date": "1989",
+      "value": "19057807",
+      "locator": {
+        "year": "1989",
+        "country_code": "NPL"
+      }
+    },
+    {
+      "date": "1990",
+      "value": "19524573",
+      "locator": {
+        "year": "1990",
+        "country_code": "NPL"
+      }
+    },
+    {
+      "date": "1991",
+      "value": "20036500",
+      "locator": {
+        "year": "1991",
+        "country_code": "NPL"
+      }
+    },
+    {
+      "date": "1992",
+      "value": "20609707",
+      "locator": {
+        "year": "1992",
+        "country_code": "NPL"
+      }
+    },
+    {
+      "date": "1993",
+      "value": "21180159",
+      "locator": {
+        "year": "1993",
+        "country_code": "NPL"
+      }
+    },
+    {
+      "date": "1994",
+      "value": "21717479",
+      "locator": {
+        "year": "1994",
+        "country_code": "NPL"
+      }
+    },
+    {
+      "date": "1995",
+      "value": "22245439",
+      "locator": {
+        "year": "1995",
+        "country_code": "NPL"
+      }
+    },
+    {
+      "date": "1996",
+      "value": "22741862",
+      "locator": {
+        "year": "1996",
+        "country_code": "NPL"
+      }
+    },
+    {
+      "date": "1997",
+      "value": "23219463",
+      "locator": {
+        "year": "1997",
+        "country_code": "NPL"
+      }
+    },
+    {
+      "date": "1998",
+      "value": "23680357",
+      "locator": {
+        "year": "1998",
+        "country_code": "NPL"
+      }
+    },
+    {
+      "date": "1999",
+      "value": "24125199",
+      "locator": {
+        "year": "1999",
+        "country_code": "NPL"
+      }
+    },
+    {
+      "date": "2000",
+      "value": "24546509",
+      "locator": {
+        "year": "2000",
+        "country_code": "NPL"
+      }
+    },
+    {
+      "date": "2001",
+      "value": "24946748",
+      "locator": {
+        "year": "2001",
+        "country_code": "NPL"
+      }
+    },
+    {
+      "date": "2002",
+      "value": "25328981",
+      "locator": {
+        "year": "2002",
+        "country_code": "NPL"
+      }
+    },
+    {
+      "date": "2003",
+      "value": "25688758",
+      "locator": {
+        "year": "2003",
+        "country_code": "NPL"
+      }
+    },
+    {
+      "date": "2004",
+      "value": "26016656",
+      "locator": {
+        "year": "2004",
+        "country_code": "NPL"
+      }
+    },
+    {
+      "date": "2005",
+      "value": "26309458",
+      "locator": {
+        "year": "2005",
+        "country_code": "NPL"
+      }
+    },
+    {
+      "date": "2006",
+      "value": "26565425",
+      "locator": {
+        "year": "2006",
+        "country_code": "NPL"
+      }
+    },
+    {
+      "date": "2007",
+      "value": "26788492",
+      "locator": {
+        "year": "2007",
+        "country_code": "NPL"
+      }
+    },
+    {
+      "date": "2008",
+      "value": "26990037",
+      "locator": {
+        "year": "2008",
+        "country_code": "NPL"
+      }
+    },
+    {
+      "date": "2009",
+      "value": "27173035",
+      "locator": {
+        "year": "2009",
+        "country_code": "NPL"
+      }
+    },
+    {
+      "date": "2010",
+      "value": "27341952",
+      "locator": {
+        "year": "2010",
+        "country_code": "NPL"
+      }
+    },
+    {
+      "date": "2011",
+      "value": "27464494",
+      "locator": {
+        "year": "2011",
+        "country_code": "NPL"
+      }
+    },
+    {
+      "date": "2012",
+      "value": "27534915",
+      "locator": {
+        "year": "2012",
+        "country_code": "NPL"
+      }
+    },
+    {
+      "date": "2013",
+      "value": "27589996",
+      "locator": {
+        "year": "2013",
+        "country_code": "NPL"
+      }
+    },
+    {
+      "date": "2014",
+      "value": "27672370",
+      "locator": {
+        "year": "2014",
+        "country_code": "NPL"
+      }
+    },
+    {
+      "date": "2015",
+      "value": "27823629",
+      "locator": {
+        "year": "2015",
+        "country_code": "NPL"
+      }
+    },
+    {
+      "date": "2016",
+      "value": "27955462",
+      "locator": {
+        "year": "2016",
+        "country_code": "NPL"
+      }
+    },
+    {
+      "date": "2017",
+      "value": "28011258",
+      "locator": {
+        "year": "2017",
+        "country_code": "NPL"
+      }
+    },
+    {
+      "date": "2018",
+      "value": "28079689",
+      "locator": {
+        "year": "2018",
+        "country_code": "NPL"
+      }
+    },
+    {
+      "date": "2019",
+      "value": "28414064",
+      "locator": {
+        "year": "2019",
+        "country_code": "NPL"
+      }
+    },
+    {
+      "date": "2020",
+      "value": "28966574",
+      "locator": {
+        "year": "2020",
+        "country_code": "NPL"
+      }
+    },
+    {
+      "date": "2021",
+      "value": "29475010",
+      "locator": {
+        "year": "2021",
+        "country_code": "NPL"
+      }
+    },
+    {
+      "date": "2022",
+      "value": "29715436",
+      "locator": {
+        "year": "2022",
+        "country_code": "NPL"
+      }
+    },
+    {
+      "date": "2023",
+      "value": "29694614",
+      "locator": {
+        "year": "2023",
+        "country_code": "NPL"
+      }
+    },
+    {
+      "date": "2024",
+      "value": "29651054",
+      "locator": {
+        "year": "2024",
+        "country_code": "NPL"
+      }
+    },
+    {
+      "date": "2025",
+      "value": "29618118",
+      "locator": {
+        "year": "2025",
+        "country_code": "NPL"
+      }
+    }
+  ]
+}

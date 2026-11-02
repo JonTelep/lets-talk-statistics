@@ -1,0 +1,543 @@
+{
+  "id": "wb_pop_RWA",
+  "name": "Rwanda",
+  "units": "people",
+  "adjustment": "midyear",
+  "nominal_or_real": "count",
+  "frequency": "annual",
+  "source_id": "worldbank_sp_pop_totl",
+  "series_url": "https://data.worldbank.org/indicator/SP.POP.TOTL",
+  "country_code": "RWA",
+  "country_name": "Rwanda",
+  "notes": "World Bank World Development Indicators, SP.POP.TOTL, country code RWA. Midyear population. Published years in this file run from 1960 to 2025.",
+  "points": [
+    {
+      "date": "1960",
+      "value": "3022294",
+      "locator": {
+        "year": "1960",
+        "country_code": "RWA"
+      }
+    },
+    {
+      "date": "1961",
+      "value": "3106779",
+      "locator": {
+        "year": "1961",
+        "country_code": "RWA"
+      }
+    },
+    {
+      "date": "1962",
+      "value": "3186025",
+      "locator": {
+        "year": "1962",
+        "country_code": "RWA"
+      }
+    },
+    {
+      "date": "1963",
+      "value": "3258890",
+      "locator": {
+        "year": "1963",
+        "country_code": "RWA"
+      }
+    },
+    {
+      "date": "1964",
+      "value": "3334834",
+      "locator": {
+        "year": "1964",
+        "country_code": "RWA"
+      }
+    },
+    {
+      "date": "1965",
+      "value": "3423210",
+      "locator": {
+        "year": "1965",
+        "country_code": "RWA"
+      }
+    },
+    {
+      "date": "1966",
+      "value": "3521626",
+      "locator": {
+        "year": "1966",
+        "country_code": "RWA"
+      }
+    },
+    {
+      "date": "1967",
+      "value": "3629577",
+      "locator": {
+        "year": "1967",
+        "country_code": "RWA"
+      }
+    },
+    {
+      "date": "1968",
+      "value": "3744010",
+      "locator": {
+        "year": "1968",
+        "country_code": "RWA"
+      }
+    },
+    {
+      "date": "1969",
+      "value": "3861271",
+      "locator": {
+        "year": "1969",
+        "country_code": "RWA"
+      }
+    },
+    {
+      "date": "1970",
+      "value": "3980669",
+      "locator": {
+        "year": "1970",
+        "country_code": "RWA"
+      }
+    },
+    {
+      "date": "1971",
+      "value": "4100044",
+      "locator": {
+        "year": "1971",
+        "country_code": "RWA"
+      }
+    },
+    {
+      "date": "1972",
+      "value": "4220335",
+      "locator": {
+        "year": "1972",
+        "country_code": "RWA"
+      }
+    },
+    {
+      "date": "1973",
+      "value": "4345047",
+      "locator": {
+        "year": "1973",
+        "country_code": "RWA"
+      }
+    },
+    {
+      "date": "1974",
+      "value": "4474228",
+      "locator": {
+        "year": "1974",
+        "country_code": "RWA"
+      }
+    },
+    {
+      "date": "1975",
+      "value": "4607728",
+      "locator": {
+        "year": "1975",
+        "country_code": "RWA"
+      }
+    },
+    {
+      "date": "1976",
+      "value": "4745954",
+      "locator": {
+        "year": "1976",
+        "country_code": "RWA"
+      }
+    },
+    {
+      "date": "1977",
+      "value": "4888240",
+      "locator": {
+        "year": "1977",
+        "country_code": "RWA"
+      }
+    },
+    {
+      "date": "1978",
+      "value": "5035171",
+      "locator": {
+        "year": "1978",
+        "country_code": "RWA"
+      }
+    },
+    {
+      "date": "1979",
+      "value": "5189541",
+      "locator": {
+        "year": "1979",
+        "country_code": "RWA"
+      }
+    },
+    {
+      "date": "1980",
+      "value": "5353259",
+      "locator": {
+        "year": "1980",
+        "country_code": "RWA"
+      }
+    },
+    {
+      "date": "1981",
+      "value": "5527230",
+      "locator": {
+        "year": "1981",
+        "country_code": "RWA"
+      }
+    },
+    {
+      "date": "1982",
+      "value": "5711549",
+      "locator": {
+        "year": "1982",
+        "country_code": "RWA"
+      }
+    },
+    {
+      "date": "1983",
+      "value": "5905311",
+      "locator": {
+        "year": "1983",
+        "country_code": "RWA"
+      }
+    },
+    {
+      "date": "1984",
+      "value": "6107627",
+      "locator": {
+        "year": "1984",
+        "country_code": "RWA"
+      }
+    },
+    {
+      "date": "1985",
+      "value": "6317228",
+      "locator": {
+        "year": "1985",
+        "country_code": "RWA"
+      }
+    },
+    {
+      "date": "1986",
+      "value": "6531881",
+      "locator": {
+        "year": "1986",
+        "country_code": "RWA"
+      }
+    },
+    {
+      "date": "1987",
+      "value": "6749493",
+      "locator": {
+        "year": "1987",
+        "country_code": "RWA"
+      }
+    },
+    {
+      "date": "1988",
+      "value": "6968071",
+      "locator": {
+        "year": "1988",
+        "country_code": "RWA"
+      }
+    },
+    {
+      "date": "1989",
+      "value": "7184706",
+      "locator": {
+        "year": "1989",
+        "country_code": "RWA"
+      }
+    },
+    {
+      "date": "1990",
+      "value": "7375307",
+      "locator": {
+        "year": "1990",
+        "country_code": "RWA"
+      }
+    },
+    {
+      "date": "1991",
+      "value": "7526966",
+      "locator": {
+        "year": "1991",
+        "country_code": "RWA"
+      }
+    },
+    {
+      "date": "1992",
+      "value": "7683266",
+      "locator": {
+        "year": "1992",
+        "country_code": "RWA"
+      }
+    },
+    {
+      "date": "1993",
+      "value": "7981132",
+      "locator": {
+        "year": "1993",
+        "country_code": "RWA"
+      }
+    },
+    {
+      "date": "1994",
+      "value": "6792352",
+      "locator": {
+        "year": "1994",
+        "country_code": "RWA"
+      }
+    },
+    {
+      "date": "1995",
+      "value": "5674118",
+      "locator": {
+        "year": "1995",
+        "country_code": "RWA"
+      }
+    },
+    {
+      "date": "1996",
+      "value": "6708764",
+      "locator": {
+        "year": "1996",
+        "country_code": "RWA"
+      }
+    },
+    {
+      "date": "1997",
+      "value": "7755238",
+      "locator": {
+        "year": "1997",
+        "country_code": "RWA"
+      }
+    },
+    {
+      "date": "1998",
+      "value": "8081681",
+      "locator": {
+        "year": "1998",
+        "country_code": "RWA"
+      }
+    },
+    {
+      "date": "1999",
+      "value": "8147912",
+      "locator": {
+        "year": "1999",
+        "country_code": "RWA"
+      }
+    },
+    {
+      "date": "2000",
+      "value": "8213931",
+      "locator": {
+        "year": "2000",
+        "country_code": "RWA"
+      }
+    },
+    {
+      "date": "2001",
+      "value": "8287094",
+      "locator": {
+        "year": "2001",
+        "country_code": "RWA"
+      }
+    },
+    {
+      "date": "2002",
+      "value": "8400180",
+      "locator": {
+        "year": "2002",
+        "country_code": "RWA"
+      }
+    },
+    {
+      "date": "2003",
+      "value": "8586875",
+      "locator": {
+        "year": "2003",
+        "country_code": "RWA"
+      }
+    },
+    {
+      "date": "2004",
+      "value": "8816844",
+      "locator": {
+        "year": "2004",
+        "country_code": "RWA"
+      }
+    },
+    {
+      "date": "2005",
+      "value": "9054528",
+      "locator": {
+        "year": "2005",
+        "country_code": "RWA"
+      }
+    },
+    {
+      "date": "2006",
+      "value": "9299246",
+      "locator": {
+        "year": "2006",
+        "country_code": "RWA"
+      }
+    },
+    {
+      "date": "2007",
+      "value": "9549933",
+      "locator": {
+        "year": "2007",
+        "country_code": "RWA"
+      }
+    },
+    {
+      "date": "2008",
+      "value": "9804269",
+      "locator": {
+        "year": "2008",
+        "country_code": "RWA"
+      }
+    },
+    {
+      "date": "2009",
+      "value": "10060432",
+      "locator": {
+        "year": "2009",
+        "country_code": "RWA"
+      }
+    },
+    {
+      "date": "2010",
+      "value": "10317553",
+      "locator": {
+        "year": "2010",
+        "country_code": "RWA"
+      }
+    },
+    {
+      "date": "2011",
+      "value": "10573733",
+      "locator": {
+        "year": "2011",
+        "country_code": "RWA"
+      }
+    },
+    {
+      "date": "2012",
+      "value": "10829901",
+      "locator": {
+        "year": "2012",
+        "country_code": "RWA"
+      }
+    },
+    {
+      "date": "2013",
+      "value": "11093340",
+      "locator": {
+        "year": "2013",
+        "country_code": "RWA"
+      }
+    },
+    {
+      "date": "2014",
+      "value": "11364757",
+      "locator": {
+        "year": "2014",
+        "country_code": "RWA"
+      }
+    },
+    {
+      "date": "2015",
+      "value": "11640022",
+      "locator": {
+        "year": "2015",
+        "country_code": "RWA"
+      }
+    },
+    {
+      "date": "2016",
+      "value": "11919183",
+      "locator": {
+        "year": "2016",
+        "country_code": "RWA"
+      }
+    },
+    {
+      "date": "2017",
+      "value": "12202060",
+      "locator": {
+        "year": "2017",
+        "country_code": "RWA"
+      }
+    },
+    {
+      "date": "2018",
+      "value": "12487996",
+      "locator": {
+        "year": "2018",
+        "country_code": "RWA"
+      }
+    },
+    {
+      "date": "2019",
+      "value": "12776103",
+      "locator": {
+        "year": "2019",
+        "country_code": "RWA"
+      }
+    },
+    {
+      "date": "2020",
+      "value": "13065837",
+      "locator": {
+        "year": "2020",
+        "country_code": "RWA"
+      }
+    },
+    {
+      "date": "2021",
+      "value": "13355260",
+      "locator": {
+        "year": "2021",
+        "country_code": "RWA"
+      }
+    },
+    {
+      "date": "2022",
+      "value": "13651030",
+      "locator": {
+        "year": "2022",
+        "country_code": "RWA"
+      }
+    },
+    {
+      "date": "2023",
+      "value": "13954471",
+      "locator": {
+        "year": "2023",
+        "country_code": "RWA"
+      }
+    },
+    {
+      "date": "2024",
+      "value": "14256567",
+      "locator": {
+        "year": "2024",
+        "country_code": "RWA"
+      }
+    },
+    {
+      "date": "2025",
+      "value": "14569341",
+      "locator": {
+        "year": "2025",
+        "country_code": "RWA"
+      }
+    }
+  ]
+}

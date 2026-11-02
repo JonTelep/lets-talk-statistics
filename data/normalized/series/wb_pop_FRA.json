@@ -1,0 +1,543 @@
+{
+  "id": "wb_pop_FRA",
+  "name": "France",
+  "units": "people",
+  "adjustment": "midyear",
+  "nominal_or_real": "count",
+  "frequency": "annual",
+  "source_id": "worldbank_sp_pop_totl",
+  "series_url": "https://data.worldbank.org/indicator/SP.POP.TOTL",
+  "country_code": "FRA",
+  "country_name": "France",
+  "notes": "World Bank World Development Indicators, SP.POP.TOTL, country code FRA. Midyear population. Published years in this file run from 1960 to 2025.",
+  "points": [
+    {
+      "date": "1960",
+      "value": "47412964",
+      "locator": {
+        "year": "1960",
+        "country_code": "FRA"
+      }
+    },
+    {
+      "date": "1961",
+      "value": "47905982",
+      "locator": {
+        "year": "1961",
+        "country_code": "FRA"
+      }
+    },
+    {
+      "date": "1962",
+      "value": "48389516",
+      "locator": {
+        "year": "1962",
+        "country_code": "FRA"
+      }
+    },
+    {
+      "date": "1963",
+      "value": "48877567",
+      "locator": {
+        "year": "1963",
+        "country_code": "FRA"
+      }
+    },
+    {
+      "date": "1964",
+      "value": "49401492",
+      "locator": {
+        "year": "1964",
+        "country_code": "FRA"
+      }
+    },
+    {
+      "date": "1965",
+      "value": "49877725",
+      "locator": {
+        "year": "1965",
+        "country_code": "FRA"
+      }
+    },
+    {
+      "date": "1966",
+      "value": "50311637",
+      "locator": {
+        "year": "1966",
+        "country_code": "FRA"
+      }
+    },
+    {
+      "date": "1967",
+      "value": "50722791",
+      "locator": {
+        "year": "1967",
+        "country_code": "FRA"
+      }
+    },
+    {
+      "date": "1968",
+      "value": "51112980",
+      "locator": {
+        "year": "1968",
+        "country_code": "FRA"
+      }
+    },
+    {
+      "date": "1969",
+      "value": "51536014",
+      "locator": {
+        "year": "1969",
+        "country_code": "FRA"
+      }
+    },
+    {
+      "date": "1970",
+      "value": "52007169",
+      "locator": {
+        "year": "1970",
+        "country_code": "FRA"
+      }
+    },
+    {
+      "date": "1971",
+      "value": "52499553",
+      "locator": {
+        "year": "1971",
+        "country_code": "FRA"
+      }
+    },
+    {
+      "date": "1972",
+      "value": "52962356",
+      "locator": {
+        "year": "1972",
+        "country_code": "FRA"
+      }
+    },
+    {
+      "date": "1973",
+      "value": "53392161",
+      "locator": {
+        "year": "1973",
+        "country_code": "FRA"
+      }
+    },
+    {
+      "date": "1974",
+      "value": "53746571",
+      "locator": {
+        "year": "1974",
+        "country_code": "FRA"
+      }
+    },
+    {
+      "date": "1975",
+      "value": "54002853",
+      "locator": {
+        "year": "1975",
+        "country_code": "FRA"
+      }
+    },
+    {
+      "date": "1976",
+      "value": "54232383",
+      "locator": {
+        "year": "1976",
+        "country_code": "FRA"
+      }
+    },
+    {
+      "date": "1977",
+      "value": "54486467",
+      "locator": {
+        "year": "1977",
+        "country_code": "FRA"
+      }
+    },
+    {
+      "date": "1978",
+      "value": "54734030",
+      "locator": {
+        "year": "1978",
+        "country_code": "FRA"
+      }
+    },
+    {
+      "date": "1979",
+      "value": "54979851",
+      "locator": {
+        "year": "1979",
+        "country_code": "FRA"
+      }
+    },
+    {
+      "date": "1980",
+      "value": "55274184",
+      "locator": {
+        "year": "1980",
+        "country_code": "FRA"
+      }
+    },
+    {
+      "date": "1981",
+      "value": "55603353",
+      "locator": {
+        "year": "1981",
+        "country_code": "FRA"
+      }
+    },
+    {
+      "date": "1982",
+      "value": "55806789",
+      "locator": {
+        "year": "1982",
+        "country_code": "FRA"
+      }
+    },
+    {
+      "date": "1983",
+      "value": "56108330",
+      "locator": {
+        "year": "1983",
+        "country_code": "FRA"
+      }
+    },
+    {
+      "date": "1984",
+      "value": "56383085",
+      "locator": {
+        "year": "1984",
+        "country_code": "FRA"
+      }
+    },
+    {
+      "date": "1985",
+      "value": "56665619",
+      "locator": {
+        "year": "1985",
+        "country_code": "FRA"
+      }
+    },
+    {
+      "date": "1986",
+      "value": "56956002",
+      "locator": {
+        "year": "1986",
+        "country_code": "FRA"
+      }
+    },
+    {
+      "date": "1987",
+      "value": "57266167",
+      "locator": {
+        "year": "1987",
+        "country_code": "FRA"
+      }
+    },
+    {
+      "date": "1988",
+      "value": "57598186",
+      "locator": {
+        "year": "1988",
+        "country_code": "FRA"
+      }
+    },
+    {
+      "date": "1989",
+      "value": "57943062",
+      "locator": {
+        "year": "1989",
+        "country_code": "FRA"
+      }
+    },
+    {
+      "date": "1990",
+      "value": "58261012",
+      "locator": {
+        "year": "1990",
+        "country_code": "FRA"
+      }
+    },
+    {
+      "date": "1991",
+      "value": "58554242",
+      "locator": {
+        "year": "1991",
+        "country_code": "FRA"
+      }
+    },
+    {
+      "date": "1992",
+      "value": "58846584",
+      "locator": {
+        "year": "1992",
+        "country_code": "FRA"
+      }
+    },
+    {
+      "date": "1993",
+      "value": "59103094",
+      "locator": {
+        "year": "1993",
+        "country_code": "FRA"
+      }
+    },
+    {
+      "date": "1994",
+      "value": "59324863",
+      "locator": {
+        "year": "1994",
+        "country_code": "FRA"
+      }
+    },
+    {
+      "date": "1995",
+      "value": "59541294",
+      "locator": {
+        "year": "1995",
+        "country_code": "FRA"
+      }
+    },
+    {
+      "date": "1996",
+      "value": "59754504",
+      "locator": {
+        "year": "1996",
+        "country_code": "FRA"
+      }
+    },
+    {
+      "date": "1997",
+      "value": "59968066",
+      "locator": {
+        "year": "1997",
+        "country_code": "FRA"
+      }
+    },
+    {
+      "date": "1998",
+      "value": "60190684",
+      "locator": {
+        "year": "1998",
+        "country_code": "FRA"
+      }
+    },
+    {
+      "date": "1999",
+      "value": "60501986",
+      "locator": {
+        "year": "1999",
+        "country_code": "FRA"
+      }
+    },
+    {
+      "date": "2000",
+      "value": "60918661",
+      "locator": {
+        "year": "2000",
+        "country_code": "FRA"
+      }
+    },
+    {
+      "date": "2001",
+      "value": "61364377",
+      "locator": {
+        "year": "2001",
+        "country_code": "FRA"
+      }
+    },
+    {
+      "date": "2002",
+      "value": "61812142",
+      "locator": {
+        "year": "2002",
+        "country_code": "FRA"
+      }
+    },
+    {
+      "date": "2003",
+      "value": "62249855",
+      "locator": {
+        "year": "2003",
+        "country_code": "FRA"
+      }
+    },
+    {
+      "date": "2004",
+      "value": "62707588",
+      "locator": {
+        "year": "2004",
+        "country_code": "FRA"
+      }
+    },
+    {
+      "date": "2005",
+      "value": "63180854",
+      "locator": {
+        "year": "2005",
+        "country_code": "FRA"
+      }
+    },
+    {
+      "date": "2006",
+      "value": "63622342",
+      "locator": {
+        "year": "2006",
+        "country_code": "FRA"
+      }
+    },
+    {
+      "date": "2007",
+      "value": "64016890",
+      "locator": {
+        "year": "2007",
+        "country_code": "FRA"
+      }
+    },
+    {
+      "date": "2008",
+      "value": "64375116",
+      "locator": {
+        "year": "2008",
+        "country_code": "FRA"
+      }
+    },
+    {
+      "date": "2009",
+      "value": "64706436",
+      "locator": {
+        "year": "2009",
+        "country_code": "FRA"
+      }
+    },
+    {
+      "date": "2010",
+      "value": "65026211",
+      "locator": {
+        "year": "2010",
+        "country_code": "FRA"
+      }
+    },
+    {
+      "date": "2011",
+      "value": "65340830",
+      "locator": {
+        "year": "2011",
+        "country_code": "FRA"
+      }
+    },
+    {
+      "date": "2012",
+      "value": "65657659",
+      "locator": {
+        "year": "2012",
+        "country_code": "FRA"
+      }
+    },
+    {
+      "date": "2013",
+      "value": "65997932",
+      "locator": {
+        "year": "2013",
+        "country_code": "FRA"
+      }
+    },
+    {
+      "date": "2014",
+      "value": "66312067",
+      "locator": {
+        "year": "2014",
+        "country_code": "FRA"
+      }
+    },
+    {
+      "date": "2015",
+      "value": "66548272",
+      "locator": {
+        "year": "2015",
+        "country_code": "FRA"
+      }
+    },
+    {
+      "date": "2016",
+      "value": "66724104",
+      "locator": {
+        "year": "2016",
+        "country_code": "FRA"
+      }
+    },
+    {
+      "date": "2017",
+      "value": "66918020",
+      "locator": {
+        "year": "2017",
+        "country_code": "FRA"
+      }
+    },
+    {
+      "date": "2018",
+      "value": "67158348",
+      "locator": {
+        "year": "2018",
+        "country_code": "FRA"
+      }
+    },
+    {
+      "date": "2019",
+      "value": "67382061",
+      "locator": {
+        "year": "2019",
+        "country_code": "FRA"
+      }
+    },
+    {
+      "date": "2020",
+      "value": "67601110",
+      "locator": {
+        "year": "2020",
+        "country_code": "FRA"
+      }
+    },
+    {
+      "date": "2021",
+      "value": "67842811",
+      "locator": {
+        "year": "2021",
+        "country_code": "FRA"
+      }
+    },
+    {
+      "date": "2022",
+      "value": "68184457",
+      "locator": {
+        "year": "2022",
+        "country_code": "FRA"
+      }
+    },
+    {
+      "date": "2023",
+      "value": "68372286",
+      "locator": {
+        "year": "2023",
+        "country_code": "FRA"
+      }
+    },
+    {
+      "date": "2024",
+      "value": "68551653",
+      "locator": {
+        "year": "2024",
+        "country_code": "FRA"
+      }
+    },
+    {
+      "date": "2025",
+      "value": "68720337",
+      "locator": {
+        "year": "2025",
+        "country_code": "FRA"
+      }
+    }
+  ]
+}

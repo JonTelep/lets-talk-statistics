@@ -1,0 +1,543 @@
+{
+  "id": "wb_pop_PNG",
+  "name": "Papua New Guinea",
+  "units": "people",
+  "adjustment": "midyear",
+  "nominal_or_real": "count",
+  "frequency": "annual",
+  "source_id": "worldbank_sp_pop_totl",
+  "series_url": "https://data.worldbank.org/indicator/SP.POP.TOTL",
+  "country_code": "PNG",
+  "country_name": "Papua New Guinea",
+  "notes": "World Bank World Development Indicators, SP.POP.TOTL, country code PNG. Midyear population. Published years in this file run from 1960 to 2025.",
+  "points": [
+    {
+      "date": "1960",
+      "value": "1995110",
+      "locator": {
+        "year": "1960",
+        "country_code": "PNG"
+      }
+    },
+    {
+      "date": "1961",
+      "value": "2046127",
+      "locator": {
+        "year": "1961",
+        "country_code": "PNG"
+      }
+    },
+    {
+      "date": "1962",
+      "value": "2093919",
+      "locator": {
+        "year": "1962",
+        "country_code": "PNG"
+      }
+    },
+    {
+      "date": "1963",
+      "value": "2141376",
+      "locator": {
+        "year": "1963",
+        "country_code": "PNG"
+      }
+    },
+    {
+      "date": "1964",
+      "value": "2188325",
+      "locator": {
+        "year": "1964",
+        "country_code": "PNG"
+      }
+    },
+    {
+      "date": "1965",
+      "value": "2235820",
+      "locator": {
+        "year": "1965",
+        "country_code": "PNG"
+      }
+    },
+    {
+      "date": "1966",
+      "value": "2285774",
+      "locator": {
+        "year": "1966",
+        "country_code": "PNG"
+      }
+    },
+    {
+      "date": "1967",
+      "value": "2337532",
+      "locator": {
+        "year": "1967",
+        "country_code": "PNG"
+      }
+    },
+    {
+      "date": "1968",
+      "value": "2390803",
+      "locator": {
+        "year": "1968",
+        "country_code": "PNG"
+      }
+    },
+    {
+      "date": "1969",
+      "value": "2446927",
+      "locator": {
+        "year": "1969",
+        "country_code": "PNG"
+      }
+    },
+    {
+      "date": "1970",
+      "value": "2505628",
+      "locator": {
+        "year": "1970",
+        "country_code": "PNG"
+      }
+    },
+    {
+      "date": "1971",
+      "value": "2566421",
+      "locator": {
+        "year": "1971",
+        "country_code": "PNG"
+      }
+    },
+    {
+      "date": "1972",
+      "value": "2628432",
+      "locator": {
+        "year": "1972",
+        "country_code": "PNG"
+      }
+    },
+    {
+      "date": "1973",
+      "value": "2690629",
+      "locator": {
+        "year": "1973",
+        "country_code": "PNG"
+      }
+    },
+    {
+      "date": "1974",
+      "value": "2752671",
+      "locator": {
+        "year": "1974",
+        "country_code": "PNG"
+      }
+    },
+    {
+      "date": "1975",
+      "value": "2814820",
+      "locator": {
+        "year": "1975",
+        "country_code": "PNG"
+      }
+    },
+    {
+      "date": "1976",
+      "value": "2877327",
+      "locator": {
+        "year": "1976",
+        "country_code": "PNG"
+      }
+    },
+    {
+      "date": "1977",
+      "value": "2940327",
+      "locator": {
+        "year": "1977",
+        "country_code": "PNG"
+      }
+    },
+    {
+      "date": "1978",
+      "value": "3003714",
+      "locator": {
+        "year": "1978",
+        "country_code": "PNG"
+      }
+    },
+    {
+      "date": "1979",
+      "value": "3067341",
+      "locator": {
+        "year": "1979",
+        "country_code": "PNG"
+      }
+    },
+    {
+      "date": "1980",
+      "value": "3131512",
+      "locator": {
+        "year": "1980",
+        "country_code": "PNG"
+      }
+    },
+    {
+      "date": "1981",
+      "value": "3197019",
+      "locator": {
+        "year": "1981",
+        "country_code": "PNG"
+      }
+    },
+    {
+      "date": "1982",
+      "value": "3264291",
+      "locator": {
+        "year": "1982",
+        "country_code": "PNG"
+      }
+    },
+    {
+      "date": "1983",
+      "value": "3333633",
+      "locator": {
+        "year": "1983",
+        "country_code": "PNG"
+      }
+    },
+    {
+      "date": "1984",
+      "value": "3405198",
+      "locator": {
+        "year": "1984",
+        "country_code": "PNG"
+      }
+    },
+    {
+      "date": "1985",
+      "value": "3478936",
+      "locator": {
+        "year": "1985",
+        "country_code": "PNG"
+      }
+    },
+    {
+      "date": "1986",
+      "value": "3554793",
+      "locator": {
+        "year": "1986",
+        "country_code": "PNG"
+      }
+    },
+    {
+      "date": "1987",
+      "value": "3632543",
+      "locator": {
+        "year": "1987",
+        "country_code": "PNG"
+      }
+    },
+    {
+      "date": "1988",
+      "value": "3711880",
+      "locator": {
+        "year": "1988",
+        "country_code": "PNG"
+      }
+    },
+    {
+      "date": "1989",
+      "value": "3796078",
+      "locator": {
+        "year": "1989",
+        "country_code": "PNG"
+      }
+    },
+    {
+      "date": "1990",
+      "value": "3896481",
+      "locator": {
+        "year": "1990",
+        "country_code": "PNG"
+      }
+    },
+    {
+      "date": "1991",
+      "value": "4021837",
+      "locator": {
+        "year": "1991",
+        "country_code": "PNG"
+      }
+    },
+    {
+      "date": "1992",
+      "value": "4166699",
+      "locator": {
+        "year": "1992",
+        "country_code": "PNG"
+      }
+    },
+    {
+      "date": "1993",
+      "value": "4320872",
+      "locator": {
+        "year": "1993",
+        "country_code": "PNG"
+      }
+    },
+    {
+      "date": "1994",
+      "value": "4480208",
+      "locator": {
+        "year": "1994",
+        "country_code": "PNG"
+      }
+    },
+    {
+      "date": "1995",
+      "value": "4644278",
+      "locator": {
+        "year": "1995",
+        "country_code": "PNG"
+      }
+    },
+    {
+      "date": "1996",
+      "value": "4813361",
+      "locator": {
+        "year": "1996",
+        "country_code": "PNG"
+      }
+    },
+    {
+      "date": "1997",
+      "value": "4987883",
+      "locator": {
+        "year": "1997",
+        "country_code": "PNG"
+      }
+    },
+    {
+      "date": "1998",
+      "value": "5166390",
+      "locator": {
+        "year": "1998",
+        "country_code": "PNG"
+      }
+    },
+    {
+      "date": "1999",
+      "value": "5349333",
+      "locator": {
+        "year": "1999",
+        "country_code": "PNG"
+      }
+    },
+    {
+      "date": "2000",
+      "value": "5537064",
+      "locator": {
+        "year": "2000",
+        "country_code": "PNG"
+      }
+    },
+    {
+      "date": "2001",
+      "value": "5728435",
+      "locator": {
+        "year": "2001",
+        "country_code": "PNG"
+      }
+    },
+    {
+      "date": "2002",
+      "value": "5924003",
+      "locator": {
+        "year": "2002",
+        "country_code": "PNG"
+      }
+    },
+    {
+      "date": "2003",
+      "value": "6123997",
+      "locator": {
+        "year": "2003",
+        "country_code": "PNG"
+      }
+    },
+    {
+      "date": "2004",
+      "value": "6328041",
+      "locator": {
+        "year": "2004",
+        "country_code": "PNG"
+      }
+    },
+    {
+      "date": "2005",
+      "value": "6535905",
+      "locator": {
+        "year": "2005",
+        "country_code": "PNG"
+      }
+    },
+    {
+      "date": "2006",
+      "value": "6747720",
+      "locator": {
+        "year": "2006",
+        "country_code": "PNG"
+      }
+    },
+    {
+      "date": "2007",
+      "value": "6963345",
+      "locator": {
+        "year": "2007",
+        "country_code": "PNG"
+      }
+    },
+    {
+      "date": "2008",
+      "value": "7183002",
+      "locator": {
+        "year": "2008",
+        "country_code": "PNG"
+      }
+    },
+    {
+      "date": "2009",
+      "value": "7406438",
+      "locator": {
+        "year": "2009",
+        "country_code": "PNG"
+      }
+    },
+    {
+      "date": "2010",
+      "value": "7633523",
+      "locator": {
+        "year": "2010",
+        "country_code": "PNG"
+      }
+    },
+    {
+      "date": "2011",
+      "value": "7859346",
+      "locator": {
+        "year": "2011",
+        "country_code": "PNG"
+      }
+    },
+    {
+      "date": "2012",
+      "value": "8081390",
+      "locator": {
+        "year": "2012",
+        "country_code": "PNG"
+      }
+    },
+    {
+      "date": "2013",
+      "value": "8302698",
+      "locator": {
+        "year": "2013",
+        "country_code": "PNG"
+      }
+    },
+    {
+      "date": "2014",
+      "value": "8523441",
+      "locator": {
+        "year": "2014",
+        "country_code": "PNG"
+      }
+    },
+    {
+      "date": "2015",
+      "value": "8743246",
+      "locator": {
+        "year": "2015",
+        "country_code": "PNG"
+      }
+    },
+    {
+      "date": "2016",
+      "value": "8961718",
+      "locator": {
+        "year": "2016",
+        "country_code": "PNG"
+      }
+    },
+    {
+      "date": "2017",
+      "value": "9178714",
+      "locator": {
+        "year": "2017",
+        "country_code": "PNG"
+      }
+    },
+    {
+      "date": "2018",
+      "value": "9394513",
+      "locator": {
+        "year": "2018",
+        "country_code": "PNG"
+      }
+    },
+    {
+      "date": "2019",
+      "value": "9609010",
+      "locator": {
+        "year": "2019",
+        "country_code": "PNG"
+      }
+    },
+    {
+      "date": "2020",
+      "value": "9815746",
+      "locator": {
+        "year": "2020",
+        "country_code": "PNG"
+      }
+    },
+    {
+      "date": "2021",
+      "value": "10012896",
+      "locator": {
+        "year": "2021",
+        "country_code": "PNG"
+      }
+    },
+    {
+      "date": "2022",
+      "value": "10203169",
+      "locator": {
+        "year": "2022",
+        "country_code": "PNG"
+      }
+    },
+    {
+      "date": "2023",
+      "value": "10389635",
+      "locator": {
+        "year": "2023",
+        "country_code": "PNG"
+      }
+    },
+    {
+      "date": "2024",
+      "value": "10576502",
+      "locator": {
+        "year": "2024",
+        "country_code": "PNG"
+      }
+    },
+    {
+      "date": "2025",
+      "value": "10762817",
+      "locator": {
+        "year": "2025",
+        "country_code": "PNG"
+      }
+    }
+  ]
+}

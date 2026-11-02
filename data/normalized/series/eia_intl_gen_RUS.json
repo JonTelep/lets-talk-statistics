@@ -1,0 +1,281 @@
+{
+  "id": "eia_intl_gen_RUS",
+  "name": "Net generation",
+  "units": "billion kilowatthours",
+  "adjustment": "annual",
+  "nominal_or_real": "generation",
+  "frequency": "annual",
+  "source_id": "eia_intl_bulk",
+  "series_url": "https://www.eia.gov/international/data/world/electricity/electricity-generation",
+  "eia_series_id": "INTL.2-12-RUS-BKWH.A",
+  "country_code": "RUS",
+  "country_name": "Russia",
+  "population_status": "matched",
+  "notes": "EIA bulk series INTL.2-12-RUS-BKWH.A, Russia. Annual. Billion kilowatthours. 1 billion kilowatthours = 1 terawatthour. Published years in this file run from 1992 to 2024.",
+  "points": [
+    {
+      "date": "1992",
+      "value": "965.246",
+      "locator": {
+        "year": "1992",
+        "series_id": "INTL.2-12-RUS-BKWH.A"
+      }
+    },
+    {
+      "date": "1993",
+      "value": "914.255",
+      "locator": {
+        "year": "1993",
+        "series_id": "INTL.2-12-RUS-BKWH.A"
+      }
+    },
+    {
+      "date": "1994",
+      "value": "807.727",
+      "locator": {
+        "year": "1994",
+        "series_id": "INTL.2-12-RUS-BKWH.A"
+      }
+    },
+    {
+      "date": "1995",
+      "value": "815.158",
+      "locator": {
+        "year": "1995",
+        "series_id": "INTL.2-12-RUS-BKWH.A"
+      }
+    },
+    {
+      "date": "1996",
+      "value": "804.127",
+      "locator": {
+        "year": "1996",
+        "series_id": "INTL.2-12-RUS-BKWH.A"
+      }
+    },
+    {
+      "date": "1997",
+      "value": "793.875",
+      "locator": {
+        "year": "1997",
+        "series_id": "INTL.2-12-RUS-BKWH.A"
+      }
+    },
+    {
+      "date": "1998",
+      "value": "786.491",
+      "locator": {
+        "year": "1998",
+        "series_id": "INTL.2-12-RUS-BKWH.A"
+      }
+    },
+    {
+      "date": "1999",
+      "value": "798.773",
+      "locator": {
+        "year": "1999",
+        "series_id": "INTL.2-12-RUS-BKWH.A"
+      }
+    },
+    {
+      "date": "2000",
+      "value": "861.824",
+      "locator": {
+        "year": "2000",
+        "series_id": "INTL.2-12-RUS-BKWH.A"
+      }
+    },
+    {
+      "date": "2001",
+      "value": "870.831",
+      "locator": {
+        "year": "2001",
+        "series_id": "INTL.2-12-RUS-BKWH.A"
+      }
+    },
+    {
+      "date": "2002",
+      "value": "875.004",
+      "locator": {
+        "year": "2002",
+        "series_id": "INTL.2-12-RUS-BKWH.A"
+      }
+    },
+    {
+      "date": "2003",
+      "value": "897.687",
+      "locator": {
+        "year": "2003",
+        "series_id": "INTL.2-12-RUS-BKWH.A"
+      }
+    },
+    {
+      "date": "2004",
+      "value": "914.853",
+      "locator": {
+        "year": "2004",
+        "series_id": "INTL.2-12-RUS-BKWH.A"
+      }
+    },
+    {
+      "date": "2005",
+      "value": "932.4188",
+      "locator": {
+        "year": "2005",
+        "series_id": "INTL.2-12-RUS-BKWH.A"
+      }
+    },
+    {
+      "date": "2006",
+      "value": "972.2827",
+      "locator": {
+        "year": "2006",
+        "series_id": "INTL.2-12-RUS-BKWH.A"
+      }
+    },
+    {
+      "date": "2007",
+      "value": "993.0619",
+      "locator": {
+        "year": "2007",
+        "series_id": "INTL.2-12-RUS-BKWH.A"
+      }
+    },
+    {
+      "date": "2008",
+      "value": "1019.8538",
+      "locator": {
+        "year": "2008",
+        "series_id": "INTL.2-12-RUS-BKWH.A"
+      }
+    },
+    {
+      "date": "2009",
+      "value": "971.5786",
+      "locator": {
+        "year": "2009",
+        "series_id": "INTL.2-12-RUS-BKWH.A"
+      }
+    },
+    {
+      "date": "2010",
+      "value": "1017.0743",
+      "locator": {
+        "year": "2010",
+        "series_id": "INTL.2-12-RUS-BKWH.A"
+      }
+    },
+    {
+      "date": "2011",
+      "value": "1034.0101",
+      "locator": {
+        "year": "2011",
+        "series_id": "INTL.2-12-RUS-BKWH.A"
+      }
+    },
+    {
+      "date": "2012",
+      "value": "1053.2644",
+      "locator": {
+        "year": "2012",
+        "series_id": "INTL.2-12-RUS-BKWH.A"
+      }
+    },
+    {
+      "date": "2013",
+      "value": "1041.1386",
+      "locator": {
+        "year": "2013",
+        "series_id": "INTL.2-12-RUS-BKWH.A"
+      }
+    },
+    {
+      "date": "2014",
+      "value": "1044.944",
+      "locator": {
+        "year": "2014",
+        "series_id": "INTL.2-12-RUS-BKWH.A"
+      }
+    },
+    {
+      "date": "2015",
+      "value": "1046.937",
+      "locator": {
+        "year": "2015",
+        "series_id": "INTL.2-12-RUS-BKWH.A"
+      }
+    },
+    {
+      "date": "2016",
+      "value": "1068.895",
+      "locator": {
+        "year": "2016",
+        "series_id": "INTL.2-12-RUS-BKWH.A"
+      }
+    },
+    {
+      "date": "2017",
+      "value": "1071.8867",
+      "locator": {
+        "year": "2017",
+        "series_id": "INTL.2-12-RUS-BKWH.A"
+      }
+    },
+    {
+      "date": "2018",
+      "value": "1082.8994",
+      "locator": {
+        "year": "2018",
+        "series_id": "INTL.2-12-RUS-BKWH.A"
+      }
+    },
+    {
+      "date": "2019",
+      "value": "1096.7114",
+      "locator": {
+        "year": "2019",
+        "series_id": "INTL.2-12-RUS-BKWH.A"
+      }
+    },
+    {
+      "date": "2020",
+      "value": "1078.8443",
+      "locator": {
+        "year": "2020",
+        "series_id": "INTL.2-12-RUS-BKWH.A"
+      }
+    },
+    {
+      "date": "2021",
+      "value": "1147.5823",
+      "locator": {
+        "year": "2021",
+        "series_id": "INTL.2-12-RUS-BKWH.A"
+      }
+    },
+    {
+      "date": "2022",
+      "value": "1135.570027979",
+      "locator": {
+        "year": "2022",
+        "series_id": "INTL.2-12-RUS-BKWH.A"
+      }
+    },
+    {
+      "date": "2023",
+      "value": "1159.261794173",
+      "locator": {
+        "year": "2023",
+        "series_id": "INTL.2-12-RUS-BKWH.A"
+      }
+    },
+    {
+      "date": "2024",
+      "value": "1160.215843225",
+      "locator": {
+        "year": "2024",
+        "series_id": "INTL.2-12-RUS-BKWH.A"
+      }
+    }
+  ]
+}

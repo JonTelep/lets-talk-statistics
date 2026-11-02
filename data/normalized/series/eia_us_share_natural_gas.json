@@ -1,0 +1,635 @@
+{
+  "id": "eia_us_share_natural_gas",
+  "name": "Natural gas",
+  "units": "Percent",
+  "adjustment": "annual",
+  "nominal_or_real": "share",
+  "frequency": "annual",
+  "source_id": "eia_total_bulk",
+  "series_url": "https://www.eia.gov/totalenergy/data/browser/index.php?tbl=T07.02A",
+  "derived": true,
+  "formula": "share_of_total",
+  "inputs": [
+    "eia_us_gen_natural_gas",
+    "eia_us_gen_total"
+  ],
+  "notes": "Natural gas (TOTAL.NGETPUS.A) divided by the total series, times 100. Rounded half up to 3 decimals.",
+  "points": [
+    {
+      "date": "1949",
+      "value": "12.484",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "1949"
+      }
+    },
+    {
+      "date": "1950",
+      "value": "13.338",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "1950"
+      }
+    },
+    {
+      "date": "1951",
+      "value": "15.086",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "1951"
+      }
+    },
+    {
+      "date": "1952",
+      "value": "16.951",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "1952"
+      }
+    },
+    {
+      "date": "1953",
+      "value": "17.848",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "1953"
+      }
+    },
+    {
+      "date": "1954",
+      "value": "19.672",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "1954"
+      }
+    },
+    {
+      "date": "1955",
+      "value": "17.315",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "1955"
+      }
+    },
+    {
+      "date": "1956",
+      "value": "17.228",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "1956"
+      }
+    },
+    {
+      "date": "1957",
+      "value": "17.996",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "1957"
+      }
+    },
+    {
+      "date": "1958",
+      "value": "18.469",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "1958"
+      }
+    },
+    {
+      "date": "1959",
+      "value": "20.553",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "1959"
+      }
+    },
+    {
+      "date": "1960",
+      "value": "20.809",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "1960"
+      }
+    },
+    {
+      "date": "1961",
+      "value": "21.237",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "1961"
+      }
+    },
+    {
+      "date": "1962",
+      "value": "21.482",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "1962"
+      }
+    },
+    {
+      "date": "1963",
+      "value": "21.913",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "1963"
+      }
+    },
+    {
+      "date": "1964",
+      "value": "22.289",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "1964"
+      }
+    },
+    {
+      "date": "1965",
+      "value": "20.934",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "1965"
+      }
+    },
+    {
+      "date": "1966",
+      "value": "21.886",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "1966"
+      }
+    },
+    {
+      "date": "1967",
+      "value": "21.745",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "1967"
+      }
+    },
+    {
+      "date": "1968",
+      "value": "22.841",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "1968"
+      }
+    },
+    {
+      "date": "1969",
+      "value": "23.057",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "1969"
+      }
+    },
+    {
+      "date": "1970",
+      "value": "24.291",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "1970"
+      }
+    },
+    {
+      "date": "1971",
+      "value": "23.148",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "1971"
+      }
+    },
+    {
+      "date": "1972",
+      "value": "21.435",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "1972"
+      }
+    },
+    {
+      "date": "1973",
+      "value": "18.286",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "1973"
+      }
+    },
+    {
+      "date": "1974",
+      "value": "17.113",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "1974"
+      }
+    },
+    {
+      "date": "1975",
+      "value": "15.607",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "1975"
+      }
+    },
+    {
+      "date": "1976",
+      "value": "14.436",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "1976"
+      }
+    },
+    {
+      "date": "1977",
+      "value": "14.360",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "1977"
+      }
+    },
+    {
+      "date": "1978",
+      "value": "13.822",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "1978"
+      }
+    },
+    {
+      "date": "1979",
+      "value": "14.639",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "1979"
+      }
+    },
+    {
+      "date": "1980",
+      "value": "15.122",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "1980"
+      }
+    },
+    {
+      "date": "1981",
+      "value": "15.047",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "1981"
+      }
+    },
+    {
+      "date": "1982",
+      "value": "13.601",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "1982"
+      }
+    },
+    {
+      "date": "1983",
+      "value": "11.848",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "1983"
+      }
+    },
+    {
+      "date": "1984",
+      "value": "12.292",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "1984"
+      }
+    },
+    {
+      "date": "1985",
+      "value": "11.805",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "1985"
+      }
+    },
+    {
+      "date": "1986",
+      "value": "9.978",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "1986"
+      }
+    },
+    {
+      "date": "1987",
+      "value": "10.586",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "1987"
+      }
+    },
+    {
+      "date": "1988",
+      "value": "9.337",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "1988"
+      }
+    },
+    {
+      "date": "1989",
+      "value": "11.884",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "1989"
+      }
+    },
+    {
+      "date": "1990",
+      "value": "12.271",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "1990"
+      }
+    },
+    {
+      "date": "1991",
+      "value": "12.413",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "1991"
+      }
+    },
+    {
+      "date": "1992",
+      "value": "13.103",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "1992"
+      }
+    },
+    {
+      "date": "1993",
+      "value": "12.978",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "1993"
+      }
+    },
+    {
+      "date": "1994",
+      "value": "14.171",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "1994"
+      }
+    },
+    {
+      "date": "1995",
+      "value": "14.792",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "1995"
+      }
+    },
+    {
+      "date": "1996",
+      "value": "13.212",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "1996"
+      }
+    },
+    {
+      "date": "1997",
+      "value": "13.728",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "1997"
+      }
+    },
+    {
+      "date": "1998",
+      "value": "14.674",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "1998"
+      }
+    },
+    {
+      "date": "1999",
+      "value": "15.058",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "1999"
+      }
+    },
+    {
+      "date": "2000",
+      "value": "15.808",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "2000"
+      }
+    },
+    {
+      "date": "2001",
+      "value": "17.104",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "2001"
+      }
+    },
+    {
+      "date": "2002",
+      "value": "17.908",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "2002"
+      }
+    },
+    {
+      "date": "2003",
+      "value": "16.736",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "2003"
+      }
+    },
+    {
+      "date": "2004",
+      "value": "17.883",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "2004"
+      }
+    },
+    {
+      "date": "2005",
+      "value": "18.763",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "2005"
+      }
+    },
+    {
+      "date": "2006",
+      "value": "20.084",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "2006"
+      }
+    },
+    {
+      "date": "2007",
+      "value": "21.566",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "2007"
+      }
+    },
+    {
+      "date": "2008",
+      "value": "21.429",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "2008"
+      }
+    },
+    {
+      "date": "2009",
+      "value": "23.305",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "2009"
+      }
+    },
+    {
+      "date": "2010",
+      "value": "23.931",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "2010"
+      }
+    },
+    {
+      "date": "2011",
+      "value": "24.702",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "2011"
+      }
+    },
+    {
+      "date": "2012",
+      "value": "30.242",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "2012"
+      }
+    },
+    {
+      "date": "2013",
+      "value": "27.609",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "2013"
+      }
+    },
+    {
+      "date": "2014",
+      "value": "27.447",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "2014"
+      }
+    },
+    {
+      "date": "2015",
+      "value": "32.610",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "2015"
+      }
+    },
+    {
+      "date": "2016",
+      "value": "33.670",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "2016"
+      }
+    },
+    {
+      "date": "2017",
+      "value": "31.968",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "2017"
+      }
+    },
+    {
+      "date": "2018",
+      "value": "34.956",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "2018"
+      }
+    },
+    {
+      "date": "2019",
+      "value": "38.135",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "2019"
+      }
+    },
+    {
+      "date": "2020",
+      "value": "40.155",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "2020"
+      }
+    },
+    {
+      "date": "2021",
+      "value": "37.972",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "2021"
+      }
+    },
+    {
+      "date": "2022",
+      "value": "39.308",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "2022"
+      }
+    },
+    {
+      "date": "2023",
+      "value": "42.429",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "2023"
+      }
+    },
+    {
+      "date": "2024",
+      "value": "42.570",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "2024"
+      }
+    },
+    {
+      "date": "2025",
+      "value": "39.962",
+      "locator": {
+        "formula": "source / total * 100",
+        "year": "2025"
+      }
+    }
+  ]
+}

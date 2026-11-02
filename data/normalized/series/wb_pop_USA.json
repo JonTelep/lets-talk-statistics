@@ -1,0 +1,543 @@
+{
+  "id": "wb_pop_USA",
+  "name": "United States",
+  "units": "people",
+  "adjustment": "midyear",
+  "nominal_or_real": "count",
+  "frequency": "annual",
+  "source_id": "worldbank_sp_pop_totl",
+  "series_url": "https://data.worldbank.org/indicator/SP.POP.TOTL",
+  "country_code": "USA",
+  "country_name": "United States",
+  "notes": "World Bank World Development Indicators, SP.POP.TOTL, country code USA. Midyear population. Published years in this file run from 1960 to 2025.",
+  "points": [
+    {
+      "date": "1960",
+      "value": "180671000",
+      "locator": {
+        "year": "1960",
+        "country_code": "USA"
+      }
+    },
+    {
+      "date": "1961",
+      "value": "183691000",
+      "locator": {
+        "year": "1961",
+        "country_code": "USA"
+      }
+    },
+    {
+      "date": "1962",
+      "value": "186538000",
+      "locator": {
+        "year": "1962",
+        "country_code": "USA"
+      }
+    },
+    {
+      "date": "1963",
+      "value": "189242000",
+      "locator": {
+        "year": "1963",
+        "country_code": "USA"
+      }
+    },
+    {
+      "date": "1964",
+      "value": "191889000",
+      "locator": {
+        "year": "1964",
+        "country_code": "USA"
+      }
+    },
+    {
+      "date": "1965",
+      "value": "194303000",
+      "locator": {
+        "year": "1965",
+        "country_code": "USA"
+      }
+    },
+    {
+      "date": "1966",
+      "value": "196560000",
+      "locator": {
+        "year": "1966",
+        "country_code": "USA"
+      }
+    },
+    {
+      "date": "1967",
+      "value": "198712000",
+      "locator": {
+        "year": "1967",
+        "country_code": "USA"
+      }
+    },
+    {
+      "date": "1968",
+      "value": "200706000",
+      "locator": {
+        "year": "1968",
+        "country_code": "USA"
+      }
+    },
+    {
+      "date": "1969",
+      "value": "202677000",
+      "locator": {
+        "year": "1969",
+        "country_code": "USA"
+      }
+    },
+    {
+      "date": "1970",
+      "value": "205052000",
+      "locator": {
+        "year": "1970",
+        "country_code": "USA"
+      }
+    },
+    {
+      "date": "1971",
+      "value": "207661000",
+      "locator": {
+        "year": "1971",
+        "country_code": "USA"
+      }
+    },
+    {
+      "date": "1972",
+      "value": "209896000",
+      "locator": {
+        "year": "1972",
+        "country_code": "USA"
+      }
+    },
+    {
+      "date": "1973",
+      "value": "211909000",
+      "locator": {
+        "year": "1973",
+        "country_code": "USA"
+      }
+    },
+    {
+      "date": "1974",
+      "value": "213854000",
+      "locator": {
+        "year": "1974",
+        "country_code": "USA"
+      }
+    },
+    {
+      "date": "1975",
+      "value": "215973000",
+      "locator": {
+        "year": "1975",
+        "country_code": "USA"
+      }
+    },
+    {
+      "date": "1976",
+      "value": "218035000",
+      "locator": {
+        "year": "1976",
+        "country_code": "USA"
+      }
+    },
+    {
+      "date": "1977",
+      "value": "220239000",
+      "locator": {
+        "year": "1977",
+        "country_code": "USA"
+      }
+    },
+    {
+      "date": "1978",
+      "value": "222585000",
+      "locator": {
+        "year": "1978",
+        "country_code": "USA"
+      }
+    },
+    {
+      "date": "1979",
+      "value": "225055000",
+      "locator": {
+        "year": "1979",
+        "country_code": "USA"
+      }
+    },
+    {
+      "date": "1980",
+      "value": "227225000",
+      "locator": {
+        "year": "1980",
+        "country_code": "USA"
+      }
+    },
+    {
+      "date": "1981",
+      "value": "229466000",
+      "locator": {
+        "year": "1981",
+        "country_code": "USA"
+      }
+    },
+    {
+      "date": "1982",
+      "value": "231664000",
+      "locator": {
+        "year": "1982",
+        "country_code": "USA"
+      }
+    },
+    {
+      "date": "1983",
+      "value": "233792000",
+      "locator": {
+        "year": "1983",
+        "country_code": "USA"
+      }
+    },
+    {
+      "date": "1984",
+      "value": "235825000",
+      "locator": {
+        "year": "1984",
+        "country_code": "USA"
+      }
+    },
+    {
+      "date": "1985",
+      "value": "237924000",
+      "locator": {
+        "year": "1985",
+        "country_code": "USA"
+      }
+    },
+    {
+      "date": "1986",
+      "value": "240133000",
+      "locator": {
+        "year": "1986",
+        "country_code": "USA"
+      }
+    },
+    {
+      "date": "1987",
+      "value": "242289000",
+      "locator": {
+        "year": "1987",
+        "country_code": "USA"
+      }
+    },
+    {
+      "date": "1988",
+      "value": "244499000",
+      "locator": {
+        "year": "1988",
+        "country_code": "USA"
+      }
+    },
+    {
+      "date": "1989",
+      "value": "246819000",
+      "locator": {
+        "year": "1989",
+        "country_code": "USA"
+      }
+    },
+    {
+      "date": "1990",
+      "value": "249623000",
+      "locator": {
+        "year": "1990",
+        "country_code": "USA"
+      }
+    },
+    {
+      "date": "1991",
+      "value": "252981000",
+      "locator": {
+        "year": "1991",
+        "country_code": "USA"
+      }
+    },
+    {
+      "date": "1992",
+      "value": "256514000",
+      "locator": {
+        "year": "1992",
+        "country_code": "USA"
+      }
+    },
+    {
+      "date": "1993",
+      "value": "259919000",
+      "locator": {
+        "year": "1993",
+        "country_code": "USA"
+      }
+    },
+    {
+      "date": "1994",
+      "value": "263126000",
+      "locator": {
+        "year": "1994",
+        "country_code": "USA"
+      }
+    },
+    {
+      "date": "1995",
+      "value": "266278000",
+      "locator": {
+        "year": "1995",
+        "country_code": "USA"
+      }
+    },
+    {
+      "date": "1996",
+      "value": "269394000",
+      "locator": {
+        "year": "1996",
+        "country_code": "USA"
+      }
+    },
+    {
+      "date": "1997",
+      "value": "272657000",
+      "locator": {
+        "year": "1997",
+        "country_code": "USA"
+      }
+    },
+    {
+      "date": "1998",
+      "value": "275854000",
+      "locator": {
+        "year": "1998",
+        "country_code": "USA"
+      }
+    },
+    {
+      "date": "1999",
+      "value": "279040000",
+      "locator": {
+        "year": "1999",
+        "country_code": "USA"
+      }
+    },
+    {
+      "date": "2000",
+      "value": "282162411",
+      "locator": {
+        "year": "2000",
+        "country_code": "USA"
+      }
+    },
+    {
+      "date": "2001",
+      "value": "284968955",
+      "locator": {
+        "year": "2001",
+        "country_code": "USA"
+      }
+    },
+    {
+      "date": "2002",
+      "value": "287625193",
+      "locator": {
+        "year": "2002",
+        "country_code": "USA"
+      }
+    },
+    {
+      "date": "2003",
+      "value": "290107933",
+      "locator": {
+        "year": "2003",
+        "country_code": "USA"
+      }
+    },
+    {
+      "date": "2004",
+      "value": "292805298",
+      "locator": {
+        "year": "2004",
+        "country_code": "USA"
+      }
+    },
+    {
+      "date": "2005",
+      "value": "295516599",
+      "locator": {
+        "year": "2005",
+        "country_code": "USA"
+      }
+    },
+    {
+      "date": "2006",
+      "value": "298379912",
+      "locator": {
+        "year": "2006",
+        "country_code": "USA"
+      }
+    },
+    {
+      "date": "2007",
+      "value": "301231207",
+      "locator": {
+        "year": "2007",
+        "country_code": "USA"
+      }
+    },
+    {
+      "date": "2008",
+      "value": "304093966",
+      "locator": {
+        "year": "2008",
+        "country_code": "USA"
+      }
+    },
+    {
+      "date": "2009",
+      "value": "306771529",
+      "locator": {
+        "year": "2009",
+        "country_code": "USA"
+      }
+    },
+    {
+      "date": "2010",
+      "value": "309378227",
+      "locator": {
+        "year": "2010",
+        "country_code": "USA"
+      }
+    },
+    {
+      "date": "2011",
+      "value": "311839461",
+      "locator": {
+        "year": "2011",
+        "country_code": "USA"
+      }
+    },
+    {
+      "date": "2012",
+      "value": "314339099",
+      "locator": {
+        "year": "2012",
+        "country_code": "USA"
+      }
+    },
+    {
+      "date": "2013",
+      "value": "316726282",
+      "locator": {
+        "year": "2013",
+        "country_code": "USA"
+      }
+    },
+    {
+      "date": "2014",
+      "value": "319257560",
+      "locator": {
+        "year": "2014",
+        "country_code": "USA"
+      }
+    },
+    {
+      "date": "2015",
+      "value": "321815121",
+      "locator": {
+        "year": "2015",
+        "country_code": "USA"
+      }
+    },
+    {
+      "date": "2016",
+      "value": "324353340",
+      "locator": {
+        "year": "2016",
+        "country_code": "USA"
+      }
+    },
+    {
+      "date": "2017",
+      "value": "326608609",
+      "locator": {
+        "year": "2017",
+        "country_code": "USA"
+      }
+    },
+    {
+      "date": "2018",
+      "value": "328529577",
+      "locator": {
+        "year": "2018",
+        "country_code": "USA"
+      }
+    },
+    {
+      "date": "2019",
+      "value": "330226227",
+      "locator": {
+        "year": "2019",
+        "country_code": "USA"
+      }
+    },
+    {
+      "date": "2020",
+      "value": "331578104",
+      "locator": {
+        "year": "2020",
+        "country_code": "USA"
+      }
+    },
+    {
+      "date": "2021",
+      "value": "332100166",
+      "locator": {
+        "year": "2021",
+        "country_code": "USA"
+      }
+    },
+    {
+      "date": "2022",
+      "value": "333996304",
+      "locator": {
+        "year": "2022",
+        "country_code": "USA"
+      }
+    },
+    {
+      "date": "2023",
+      "value": "336755052",
+      "locator": {
+        "year": "2023",
+        "country_code": "USA"
+      }
+    },
+    {
+      "date": "2024",
+      "value": "340003797",
+      "locator": {
+        "year": "2024",
+        "country_code": "USA"
+      }
+    },
+    {
+      "date": "2025",
+      "value": "341784857",
+      "locator": {
+        "year": "2025",
+        "country_code": "USA"
+      }
+    }
+  ]
+}

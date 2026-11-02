@@ -1,0 +1,358 @@
+{
+  "id": "eia_us_gen_wind",
+  "name": "Wind",
+  "units": "Million Kilowatthours",
+  "adjustment": "annual",
+  "nominal_or_real": "generation",
+  "frequency": "annual",
+  "source_id": "eia_total_bulk",
+  "series_url": "https://www.eia.gov/totalenergy/data/browser/index.php?tbl=T07.02A",
+  "eia_series_id": "TOTAL.WYETPUS.A",
+  "notes": "EIA bulk series TOTAL.WYETPUS.A, Electricity Net Generation From Wind, All Sectors, Annual. Annual. Published years in this file run from 1983 to 2025.",
+  "points": [
+    {
+      "date": "1983",
+      "value": "2.668",
+      "locator": {
+        "year": "1983",
+        "series_id": "TOTAL.WYETPUS.A"
+      }
+    },
+    {
+      "date": "1984",
+      "value": "6.49",
+      "locator": {
+        "year": "1984",
+        "series_id": "TOTAL.WYETPUS.A"
+      }
+    },
+    {
+      "date": "1985",
+      "value": "5.762",
+      "locator": {
+        "year": "1985",
+        "series_id": "TOTAL.WYETPUS.A"
+      }
+    },
+    {
+      "date": "1986",
+      "value": "4.189",
+      "locator": {
+        "year": "1986",
+        "series_id": "TOTAL.WYETPUS.A"
+      }
+    },
+    {
+      "date": "1987",
+      "value": "3.541",
+      "locator": {
+        "year": "1987",
+        "series_id": "TOTAL.WYETPUS.A"
+      }
+    },
+    {
+      "date": "1988",
+      "value": "0.871",
+      "locator": {
+        "year": "1988",
+        "series_id": "TOTAL.WYETPUS.A"
+      }
+    },
+    {
+      "date": "1989",
+      "value": "2112.043",
+      "locator": {
+        "year": "1989",
+        "series_id": "TOTAL.WYETPUS.A"
+      }
+    },
+    {
+      "date": "1990",
+      "value": "2788.6",
+      "locator": {
+        "year": "1990",
+        "series_id": "TOTAL.WYETPUS.A"
+      }
+    },
+    {
+      "date": "1991",
+      "value": "2950.951",
+      "locator": {
+        "year": "1991",
+        "series_id": "TOTAL.WYETPUS.A"
+      }
+    },
+    {
+      "date": "1992",
+      "value": "2887.523",
+      "locator": {
+        "year": "1992",
+        "series_id": "TOTAL.WYETPUS.A"
+      }
+    },
+    {
+      "date": "1993",
+      "value": "3005.827",
+      "locator": {
+        "year": "1993",
+        "series_id": "TOTAL.WYETPUS.A"
+      }
+    },
+    {
+      "date": "1994",
+      "value": "3447.109",
+      "locator": {
+        "year": "1994",
+        "series_id": "TOTAL.WYETPUS.A"
+      }
+    },
+    {
+      "date": "1995",
+      "value": "3164.253",
+      "locator": {
+        "year": "1995",
+        "series_id": "TOTAL.WYETPUS.A"
+      }
+    },
+    {
+      "date": "1996",
+      "value": "3234.069",
+      "locator": {
+        "year": "1996",
+        "series_id": "TOTAL.WYETPUS.A"
+      }
+    },
+    {
+      "date": "1997",
+      "value": "3288.035",
+      "locator": {
+        "year": "1997",
+        "series_id": "TOTAL.WYETPUS.A"
+      }
+    },
+    {
+      "date": "1998",
+      "value": "3025.696",
+      "locator": {
+        "year": "1998",
+        "series_id": "TOTAL.WYETPUS.A"
+      }
+    },
+    {
+      "date": "1999",
+      "value": "4487.998",
+      "locator": {
+        "year": "1999",
+        "series_id": "TOTAL.WYETPUS.A"
+      }
+    },
+    {
+      "date": "2000",
+      "value": "5593.261",
+      "locator": {
+        "year": "2000",
+        "series_id": "TOTAL.WYETPUS.A"
+      }
+    },
+    {
+      "date": "2001",
+      "value": "6737.331",
+      "locator": {
+        "year": "2001",
+        "series_id": "TOTAL.WYETPUS.A"
+      }
+    },
+    {
+      "date": "2002",
+      "value": "10354.28",
+      "locator": {
+        "year": "2002",
+        "series_id": "TOTAL.WYETPUS.A"
+      }
+    },
+    {
+      "date": "2003",
+      "value": "11187.466",
+      "locator": {
+        "year": "2003",
+        "series_id": "TOTAL.WYETPUS.A"
+      }
+    },
+    {
+      "date": "2004",
+      "value": "14143.741",
+      "locator": {
+        "year": "2004",
+        "series_id": "TOTAL.WYETPUS.A"
+      }
+    },
+    {
+      "date": "2005",
+      "value": "17810.549",
+      "locator": {
+        "year": "2005",
+        "series_id": "TOTAL.WYETPUS.A"
+      }
+    },
+    {
+      "date": "2006",
+      "value": "26589.137",
+      "locator": {
+        "year": "2006",
+        "series_id": "TOTAL.WYETPUS.A"
+      }
+    },
+    {
+      "date": "2007",
+      "value": "34449.927",
+      "locator": {
+        "year": "2007",
+        "series_id": "TOTAL.WYETPUS.A"
+      }
+    },
+    {
+      "date": "2008",
+      "value": "55363.1",
+      "locator": {
+        "year": "2008",
+        "series_id": "TOTAL.WYETPUS.A"
+      }
+    },
+    {
+      "date": "2009",
+      "value": "73886.132",
+      "locator": {
+        "year": "2009",
+        "series_id": "TOTAL.WYETPUS.A"
+      }
+    },
+    {
+      "date": "2010",
+      "value": "94652.246",
+      "locator": {
+        "year": "2010",
+        "series_id": "TOTAL.WYETPUS.A"
+      }
+    },
+    {
+      "date": "2011",
+      "value": "120176.599",
+      "locator": {
+        "year": "2011",
+        "series_id": "TOTAL.WYETPUS.A"
+      }
+    },
+    {
+      "date": "2012",
+      "value": "140821.715",
+      "locator": {
+        "year": "2012",
+        "series_id": "TOTAL.WYETPUS.A"
+      }
+    },
+    {
+      "date": "2013",
+      "value": "167839.745",
+      "locator": {
+        "year": "2013",
+        "series_id": "TOTAL.WYETPUS.A"
+      }
+    },
+    {
+      "date": "2014",
+      "value": "181655.282",
+      "locator": {
+        "year": "2014",
+        "series_id": "TOTAL.WYETPUS.A"
+      }
+    },
+    {
+      "date": "2015",
+      "value": "190718.548",
+      "locator": {
+        "year": "2015",
+        "series_id": "TOTAL.WYETPUS.A"
+      }
+    },
+    {
+      "date": "2016",
+      "value": "226992.562",
+      "locator": {
+        "year": "2016",
+        "series_id": "TOTAL.WYETPUS.A"
+      }
+    },
+    {
+      "date": "2017",
+      "value": "254302.695",
+      "locator": {
+        "year": "2017",
+        "series_id": "TOTAL.WYETPUS.A"
+      }
+    },
+    {
+      "date": "2018",
+      "value": "272667.454",
+      "locator": {
+        "year": "2018",
+        "series_id": "TOTAL.WYETPUS.A"
+      }
+    },
+    {
+      "date": "2019",
+      "value": "295882.484",
+      "locator": {
+        "year": "2019",
+        "series_id": "TOTAL.WYETPUS.A"
+      }
+    },
+    {
+      "date": "2020",
+      "value": "337938.049",
+      "locator": {
+        "year": "2020",
+        "series_id": "TOTAL.WYETPUS.A"
+      }
+    },
+    {
+      "date": "2021",
+      "value": "378196.775",
+      "locator": {
+        "year": "2021",
+        "series_id": "TOTAL.WYETPUS.A"
+      }
+    },
+    {
+      "date": "2022",
+      "value": "434297.358",
+      "locator": {
+        "year": "2022",
+        "series_id": "TOTAL.WYETPUS.A"
+      }
+    },
+    {
+      "date": "2023",
+      "value": "421141.335",
+      "locator": {
+        "year": "2023",
+        "series_id": "TOTAL.WYETPUS.A"
+      }
+    },
+    {
+      "date": "2024",
+      "value": "451904.357",
+      "locator": {
+        "year": "2024",
+        "series_id": "TOTAL.WYETPUS.A"
+      }
+    },
+    {
+      "date": "2025",
+      "value": "464390.61",
+      "locator": {
+        "year": "2025",
+        "series_id": "TOTAL.WYETPUS.A"
+      }
+    }
+  ]
+}

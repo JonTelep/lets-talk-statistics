@@ -1,0 +1,543 @@
+{
+  "id": "wb_pop_BRN",
+  "name": "Brunei",
+  "units": "people",
+  "adjustment": "midyear",
+  "nominal_or_real": "count",
+  "frequency": "annual",
+  "source_id": "worldbank_sp_pop_totl",
+  "series_url": "https://data.worldbank.org/indicator/SP.POP.TOTL",
+  "country_code": "BRN",
+  "country_name": "Brunei",
+  "notes": "World Bank World Development Indicators, SP.POP.TOTL, country code BRN. Midyear population. Published years in this file run from 1960 to 2025.",
+  "points": [
+    {
+      "date": "1960",
+      "value": "88347",
+      "locator": {
+        "year": "1960",
+        "country_code": "BRN"
+      }
+    },
+    {
+      "date": "1961",
+      "value": "92517",
+      "locator": {
+        "year": "1961",
+        "country_code": "BRN"
+      }
+    },
+    {
+      "date": "1962",
+      "value": "96719",
+      "locator": {
+        "year": "1962",
+        "country_code": "BRN"
+      }
+    },
+    {
+      "date": "1963",
+      "value": "101159",
+      "locator": {
+        "year": "1963",
+        "country_code": "BRN"
+      }
+    },
+    {
+      "date": "1964",
+      "value": "105922",
+      "locator": {
+        "year": "1964",
+        "country_code": "BRN"
+      }
+    },
+    {
+      "date": "1965",
+      "value": "110838",
+      "locator": {
+        "year": "1965",
+        "country_code": "BRN"
+      }
+    },
+    {
+      "date": "1966",
+      "value": "115874",
+      "locator": {
+        "year": "1966",
+        "country_code": "BRN"
+      }
+    },
+    {
+      "date": "1967",
+      "value": "121017",
+      "locator": {
+        "year": "1967",
+        "country_code": "BRN"
+      }
+    },
+    {
+      "date": "1968",
+      "value": "126222",
+      "locator": {
+        "year": "1968",
+        "country_code": "BRN"
+      }
+    },
+    {
+      "date": "1969",
+      "value": "131446",
+      "locator": {
+        "year": "1969",
+        "country_code": "BRN"
+      }
+    },
+    {
+      "date": "1970",
+      "value": "135138",
+      "locator": {
+        "year": "1970",
+        "country_code": "BRN"
+      }
+    },
+    {
+      "date": "1971",
+      "value": "137921",
+      "locator": {
+        "year": "1971",
+        "country_code": "BRN"
+      }
+    },
+    {
+      "date": "1972",
+      "value": "142189",
+      "locator": {
+        "year": "1972",
+        "country_code": "BRN"
+      }
+    },
+    {
+      "date": "1973",
+      "value": "147369",
+      "locator": {
+        "year": "1973",
+        "country_code": "BRN"
+      }
+    },
+    {
+      "date": "1974",
+      "value": "152656",
+      "locator": {
+        "year": "1974",
+        "country_code": "BRN"
+      }
+    },
+    {
+      "date": "1975",
+      "value": "158070",
+      "locator": {
+        "year": "1975",
+        "country_code": "BRN"
+      }
+    },
+    {
+      "date": "1976",
+      "value": "163607",
+      "locator": {
+        "year": "1976",
+        "country_code": "BRN"
+      }
+    },
+    {
+      "date": "1977",
+      "value": "169277",
+      "locator": {
+        "year": "1977",
+        "country_code": "BRN"
+      }
+    },
+    {
+      "date": "1978",
+      "value": "174884",
+      "locator": {
+        "year": "1978",
+        "country_code": "BRN"
+      }
+    },
+    {
+      "date": "1979",
+      "value": "180422",
+      "locator": {
+        "year": "1979",
+        "country_code": "BRN"
+      }
+    },
+    {
+      "date": "1980",
+      "value": "186111",
+      "locator": {
+        "year": "1980",
+        "country_code": "BRN"
+      }
+    },
+    {
+      "date": "1981",
+      "value": "191977",
+      "locator": {
+        "year": "1981",
+        "country_code": "BRN"
+      }
+    },
+    {
+      "date": "1982",
+      "value": "198165",
+      "locator": {
+        "year": "1982",
+        "country_code": "BRN"
+      }
+    },
+    {
+      "date": "1983",
+      "value": "204741",
+      "locator": {
+        "year": "1983",
+        "country_code": "BRN"
+      }
+    },
+    {
+      "date": "1984",
+      "value": "211661",
+      "locator": {
+        "year": "1984",
+        "country_code": "BRN"
+      }
+    },
+    {
+      "date": "1985",
+      "value": "218919",
+      "locator": {
+        "year": "1985",
+        "country_code": "BRN"
+      }
+    },
+    {
+      "date": "1986",
+      "value": "226495",
+      "locator": {
+        "year": "1986",
+        "country_code": "BRN"
+      }
+    },
+    {
+      "date": "1987",
+      "value": "233860",
+      "locator": {
+        "year": "1987",
+        "country_code": "BRN"
+      }
+    },
+    {
+      "date": "1988",
+      "value": "240913",
+      "locator": {
+        "year": "1988",
+        "country_code": "BRN"
+      }
+    },
+    {
+      "date": "1989",
+      "value": "248064",
+      "locator": {
+        "year": "1989",
+        "country_code": "BRN"
+      }
+    },
+    {
+      "date": "1990",
+      "value": "255292",
+      "locator": {
+        "year": "1990",
+        "country_code": "BRN"
+      }
+    },
+    {
+      "date": "1991",
+      "value": "262596",
+      "locator": {
+        "year": "1991",
+        "country_code": "BRN"
+      }
+    },
+    {
+      "date": "1992",
+      "value": "269839",
+      "locator": {
+        "year": "1992",
+        "country_code": "BRN"
+      }
+    },
+    {
+      "date": "1993",
+      "value": "276971",
+      "locator": {
+        "year": "1993",
+        "country_code": "BRN"
+      }
+    },
+    {
+      "date": "1994",
+      "value": "284091",
+      "locator": {
+        "year": "1994",
+        "country_code": "BRN"
+      }
+    },
+    {
+      "date": "1995",
+      "value": "291195",
+      "locator": {
+        "year": "1995",
+        "country_code": "BRN"
+      }
+    },
+    {
+      "date": "1996",
+      "value": "298276",
+      "locator": {
+        "year": "1996",
+        "country_code": "BRN"
+      }
+    },
+    {
+      "date": "1997",
+      "value": "305341",
+      "locator": {
+        "year": "1997",
+        "country_code": "BRN"
+      }
+    },
+    {
+      "date": "1998",
+      "value": "312385",
+      "locator": {
+        "year": "1998",
+        "country_code": "BRN"
+      }
+    },
+    {
+      "date": "1999",
+      "value": "319411",
+      "locator": {
+        "year": "1999",
+        "country_code": "BRN"
+      }
+    },
+    {
+      "date": "2000",
+      "value": "326424",
+      "locator": {
+        "year": "2000",
+        "country_code": "BRN"
+      }
+    },
+    {
+      "date": "2001",
+      "value": "333345",
+      "locator": {
+        "year": "2001",
+        "country_code": "BRN"
+      }
+    },
+    {
+      "date": "2002",
+      "value": "340099",
+      "locator": {
+        "year": "2002",
+        "country_code": "BRN"
+      }
+    },
+    {
+      "date": "2003",
+      "value": "346637",
+      "locator": {
+        "year": "2003",
+        "country_code": "BRN"
+      }
+    },
+    {
+      "date": "2004",
+      "value": "352911",
+      "locator": {
+        "year": "2004",
+        "country_code": "BRN"
+      }
+    },
+    {
+      "date": "2005",
+      "value": "358916",
+      "locator": {
+        "year": "2005",
+        "country_code": "BRN"
+      }
+    },
+    {
+      "date": "2006",
+      "value": "364663",
+      "locator": {
+        "year": "2006",
+        "country_code": "BRN"
+      }
+    },
+    {
+      "date": "2007",
+      "value": "370873",
+      "locator": {
+        "year": "2007",
+        "country_code": "BRN"
+      }
+    },
+    {
+      "date": "2008",
+      "value": "377793",
+      "locator": {
+        "year": "2008",
+        "country_code": "BRN"
+      }
+    },
+    {
+      "date": "2009",
+      "value": "384952",
+      "locator": {
+        "year": "2009",
+        "country_code": "BRN"
+      }
+    },
+    {
+      "date": "2010",
+      "value": "392332",
+      "locator": {
+        "year": "2010",
+        "country_code": "BRN"
+      }
+    },
+    {
+      "date": "2011",
+      "value": "399389",
+      "locator": {
+        "year": "2011",
+        "country_code": "BRN"
+      }
+    },
+    {
+      "date": "2012",
+      "value": "405557",
+      "locator": {
+        "year": "2012",
+        "country_code": "BRN"
+      }
+    },
+    {
+      "date": "2013",
+      "value": "411202",
+      "locator": {
+        "year": "2013",
+        "country_code": "BRN"
+      }
+    },
+    {
+      "date": "2014",
+      "value": "416750",
+      "locator": {
+        "year": "2014",
+        "country_code": "BRN"
+      }
+    },
+    {
+      "date": "2015",
+      "value": "422212",
+      "locator": {
+        "year": "2015",
+        "country_code": "BRN"
+      }
+    },
+    {
+      "date": "2016",
+      "value": "427564",
+      "locator": {
+        "year": "2016",
+        "country_code": "BRN"
+      }
+    },
+    {
+      "date": "2017",
+      "value": "432772",
+      "locator": {
+        "year": "2017",
+        "country_code": "BRN"
+      }
+    },
+    {
+      "date": "2018",
+      "value": "437810",
+      "locator": {
+        "year": "2018",
+        "country_code": "BRN"
+      }
+    },
+    {
+      "date": "2019",
+      "value": "442680",
+      "locator": {
+        "year": "2019",
+        "country_code": "BRN"
+      }
+    },
+    {
+      "date": "2020",
+      "value": "447404",
+      "locator": {
+        "year": "2020",
+        "country_code": "BRN"
+      }
+    },
+    {
+      "date": "2021",
+      "value": "451721",
+      "locator": {
+        "year": "2021",
+        "country_code": "BRN"
+      }
+    },
+    {
+      "date": "2022",
+      "value": "455370",
+      "locator": {
+        "year": "2022",
+        "country_code": "BRN"
+      }
+    },
+    {
+      "date": "2023",
+      "value": "458949",
+      "locator": {
+        "year": "2023",
+        "country_code": "BRN"
+      }
+    },
+    {
+      "date": "2024",
+      "value": "462721",
+      "locator": {
+        "year": "2024",
+        "country_code": "BRN"
+      }
+    },
+    {
+      "date": "2025",
+      "value": "466330",
+      "locator": {
+        "year": "2025",
+        "country_code": "BRN"
+      }
+    }
+  ]
+}

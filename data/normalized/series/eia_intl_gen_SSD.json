@@ -1,0 +1,121 @@
+{
+  "id": "eia_intl_gen_SSD",
+  "name": "Net generation",
+  "units": "billion kilowatthours",
+  "adjustment": "annual",
+  "nominal_or_real": "generation",
+  "frequency": "annual",
+  "source_id": "eia_intl_bulk",
+  "series_url": "https://www.eia.gov/international/data/world/electricity/electricity-generation",
+  "eia_series_id": "INTL.2-12-SSD-BKWH.A",
+  "country_code": "SSD",
+  "country_name": "South Sudan",
+  "population_status": "matched",
+  "notes": "EIA bulk series INTL.2-12-SSD-BKWH.A, South Sudan. Annual. Billion kilowatthours. 1 billion kilowatthours = 1 terawatthour. Published years in this file run from 2012 to 2024.",
+  "points": [
+    {
+      "date": "2012",
+      "value": "0.443066",
+      "locator": {
+        "year": "2012",
+        "series_id": "INTL.2-12-SSD-BKWH.A"
+      }
+    },
+    {
+      "date": "2013",
+      "value": "0.470147",
+      "locator": {
+        "year": "2013",
+        "series_id": "INTL.2-12-SSD-BKWH.A"
+      }
+    },
+    {
+      "date": "2014",
+      "value": "0.477147",
+      "locator": {
+        "year": "2014",
+        "series_id": "INTL.2-12-SSD-BKWH.A"
+      }
+    },
+    {
+      "date": "2015",
+      "value": "0.576161",
+      "locator": {
+        "year": "2015",
+        "series_id": "INTL.2-12-SSD-BKWH.A"
+      }
+    },
+    {
+      "date": "2016",
+      "value": "0.520855",
+      "locator": {
+        "year": "2016",
+        "series_id": "INTL.2-12-SSD-BKWH.A"
+      }
+    },
+    {
+      "date": "2017",
+      "value": "0.542029",
+      "locator": {
+        "year": "2017",
+        "series_id": "INTL.2-12-SSD-BKWH.A"
+      }
+    },
+    {
+      "date": "2018",
+      "value": "0.541542",
+      "locator": {
+        "year": "2018",
+        "series_id": "INTL.2-12-SSD-BKWH.A"
+      }
+    },
+    {
+      "date": "2019",
+      "value": "0.549823",
+      "locator": {
+        "year": "2019",
+        "series_id": "INTL.2-12-SSD-BKWH.A"
+      }
+    },
+    {
+      "date": "2020",
+      "value": "0.552798",
+      "locator": {
+        "year": "2020",
+        "series_id": "INTL.2-12-SSD-BKWH.A"
+      }
+    },
+    {
+      "date": "2021",
+      "value": "0.5703",
+      "locator": {
+        "year": "2021",
+        "series_id": "INTL.2-12-SSD-BKWH.A"
+      }
+    },
+    {
+      "date": "2022",
+      "value": "0.507974",
+      "locator": {
+        "year": "2022",
+        "series_id": "INTL.2-12-SSD-BKWH.A"
+      }
+    },
+    {
+      "date": "2023",
+      "value": "0.55884",
+      "locator": {
+        "year": "2023",
+        "series_id": "INTL.2-12-SSD-BKWH.A"
+      }
+    },
+    {
+      "date": "2024",
+      "value": "0.558108256",
+      "locator": {
+        "year": "2024",
+        "series_id": "INTL.2-12-SSD-BKWH.A"
+      }
+    }
+  ]
+}

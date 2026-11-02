@@ -1,0 +1,543 @@
+{
+  "id": "wb_pop_TGO",
+  "name": "Togo",
+  "units": "people",
+  "adjustment": "midyear",
+  "nominal_or_real": "count",
+  "frequency": "annual",
+  "source_id": "worldbank_sp_pop_totl",
+  "series_url": "https://data.worldbank.org/indicator/SP.POP.TOTL",
+  "country_code": "TGO",
+  "country_name": "Togo",
+  "notes": "World Bank World Development Indicators, SP.POP.TOTL, country code TGO. Midyear population. Published years in this file run from 1960 to 2025.",
+  "points": [
+    {
+      "date": "1960",
+      "value": "1673110",
+      "locator": {
+        "year": "1960",
+        "country_code": "TGO"
+      }
+    },
+    {
+      "date": "1961",
+      "value": "1702717",
+      "locator": {
+        "year": "1961",
+        "country_code": "TGO"
+      }
+    },
+    {
+      "date": "1962",
+      "value": "1732959",
+      "locator": {
+        "year": "1962",
+        "country_code": "TGO"
+      }
+    },
+    {
+      "date": "1963",
+      "value": "1765072",
+      "locator": {
+        "year": "1963",
+        "country_code": "TGO"
+      }
+    },
+    {
+      "date": "1964",
+      "value": "1799410",
+      "locator": {
+        "year": "1964",
+        "country_code": "TGO"
+      }
+    },
+    {
+      "date": "1965",
+      "value": "1835588",
+      "locator": {
+        "year": "1965",
+        "country_code": "TGO"
+      }
+    },
+    {
+      "date": "1966",
+      "value": "1873489",
+      "locator": {
+        "year": "1966",
+        "country_code": "TGO"
+      }
+    },
+    {
+      "date": "1967",
+      "value": "1912764",
+      "locator": {
+        "year": "1967",
+        "country_code": "TGO"
+      }
+    },
+    {
+      "date": "1968",
+      "value": "1953523",
+      "locator": {
+        "year": "1968",
+        "country_code": "TGO"
+      }
+    },
+    {
+      "date": "1969",
+      "value": "2043416",
+      "locator": {
+        "year": "1969",
+        "country_code": "TGO"
+      }
+    },
+    {
+      "date": "1970",
+      "value": "2149478",
+      "locator": {
+        "year": "1970",
+        "country_code": "TGO"
+      }
+    },
+    {
+      "date": "1971",
+      "value": "2219826",
+      "locator": {
+        "year": "1971",
+        "country_code": "TGO"
+      }
+    },
+    {
+      "date": "1972",
+      "value": "2283863",
+      "locator": {
+        "year": "1972",
+        "country_code": "TGO"
+      }
+    },
+    {
+      "date": "1973",
+      "value": "2344510",
+      "locator": {
+        "year": "1973",
+        "country_code": "TGO"
+      }
+    },
+    {
+      "date": "1974",
+      "value": "2404292",
+      "locator": {
+        "year": "1974",
+        "country_code": "TGO"
+      }
+    },
+    {
+      "date": "1975",
+      "value": "2463796",
+      "locator": {
+        "year": "1975",
+        "country_code": "TGO"
+      }
+    },
+    {
+      "date": "1976",
+      "value": "2523488",
+      "locator": {
+        "year": "1976",
+        "country_code": "TGO"
+      }
+    },
+    {
+      "date": "1977",
+      "value": "2583984",
+      "locator": {
+        "year": "1977",
+        "country_code": "TGO"
+      }
+    },
+    {
+      "date": "1978",
+      "value": "2646501",
+      "locator": {
+        "year": "1978",
+        "country_code": "TGO"
+      }
+    },
+    {
+      "date": "1979",
+      "value": "2714349",
+      "locator": {
+        "year": "1979",
+        "country_code": "TGO"
+      }
+    },
+    {
+      "date": "1980",
+      "value": "2791408",
+      "locator": {
+        "year": "1980",
+        "country_code": "TGO"
+      }
+    },
+    {
+      "date": "1981",
+      "value": "2879440",
+      "locator": {
+        "year": "1981",
+        "country_code": "TGO"
+      }
+    },
+    {
+      "date": "1982",
+      "value": "2961652",
+      "locator": {
+        "year": "1982",
+        "country_code": "TGO"
+      }
+    },
+    {
+      "date": "1983",
+      "value": "3033077",
+      "locator": {
+        "year": "1983",
+        "country_code": "TGO"
+      }
+    },
+    {
+      "date": "1984",
+      "value": "3105743",
+      "locator": {
+        "year": "1984",
+        "country_code": "TGO"
+      }
+    },
+    {
+      "date": "1985",
+      "value": "3194539",
+      "locator": {
+        "year": "1985",
+        "country_code": "TGO"
+      }
+    },
+    {
+      "date": "1986",
+      "value": "3296340",
+      "locator": {
+        "year": "1986",
+        "country_code": "TGO"
+      }
+    },
+    {
+      "date": "1987",
+      "value": "3397614",
+      "locator": {
+        "year": "1987",
+        "country_code": "TGO"
+      }
+    },
+    {
+      "date": "1988",
+      "value": "3501545",
+      "locator": {
+        "year": "1988",
+        "country_code": "TGO"
+      }
+    },
+    {
+      "date": "1989",
+      "value": "3606918",
+      "locator": {
+        "year": "1989",
+        "country_code": "TGO"
+      }
+    },
+    {
+      "date": "1990",
+      "value": "3714021",
+      "locator": {
+        "year": "1990",
+        "country_code": "TGO"
+      }
+    },
+    {
+      "date": "1991",
+      "value": "3822636",
+      "locator": {
+        "year": "1991",
+        "country_code": "TGO"
+      }
+    },
+    {
+      "date": "1992",
+      "value": "3932581",
+      "locator": {
+        "year": "1992",
+        "country_code": "TGO"
+      }
+    },
+    {
+      "date": "1993",
+      "value": "3887974",
+      "locator": {
+        "year": "1993",
+        "country_code": "TGO"
+      }
+    },
+    {
+      "date": "1994",
+      "value": "3904183",
+      "locator": {
+        "year": "1994",
+        "country_code": "TGO"
+      }
+    },
+    {
+      "date": "1995",
+      "value": "4110450",
+      "locator": {
+        "year": "1995",
+        "country_code": "TGO"
+      }
+    },
+    {
+      "date": "1996",
+      "value": "4291136",
+      "locator": {
+        "year": "1996",
+        "country_code": "TGO"
+      }
+    },
+    {
+      "date": "1997",
+      "value": "4438794",
+      "locator": {
+        "year": "1997",
+        "country_code": "TGO"
+      }
+    },
+    {
+      "date": "1998",
+      "value": "4551635",
+      "locator": {
+        "year": "1998",
+        "country_code": "TGO"
+      }
+    },
+    {
+      "date": "1999",
+      "value": "4665754",
+      "locator": {
+        "year": "1999",
+        "country_code": "TGO"
+      }
+    },
+    {
+      "date": "2000",
+      "value": "4783722",
+      "locator": {
+        "year": "2000",
+        "country_code": "TGO"
+      }
+    },
+    {
+      "date": "2001",
+      "value": "4904144",
+      "locator": {
+        "year": "2001",
+        "country_code": "TGO"
+      }
+    },
+    {
+      "date": "2002",
+      "value": "5027130",
+      "locator": {
+        "year": "2002",
+        "country_code": "TGO"
+      }
+    },
+    {
+      "date": "2003",
+      "value": "5154112",
+      "locator": {
+        "year": "2003",
+        "country_code": "TGO"
+      }
+    },
+    {
+      "date": "2004",
+      "value": "5281320",
+      "locator": {
+        "year": "2004",
+        "country_code": "TGO"
+      }
+    },
+    {
+      "date": "2005",
+      "value": "5413154",
+      "locator": {
+        "year": "2005",
+        "country_code": "TGO"
+      }
+    },
+    {
+      "date": "2006",
+      "value": "5569664",
+      "locator": {
+        "year": "2006",
+        "country_code": "TGO"
+      }
+    },
+    {
+      "date": "2007",
+      "value": "5748443",
+      "locator": {
+        "year": "2007",
+        "country_code": "TGO"
+      }
+    },
+    {
+      "date": "2008",
+      "value": "5936138",
+      "locator": {
+        "year": "2008",
+        "country_code": "TGO"
+      }
+    },
+    {
+      "date": "2009",
+      "value": "6130946",
+      "locator": {
+        "year": "2009",
+        "country_code": "TGO"
+      }
+    },
+    {
+      "date": "2010",
+      "value": "6325788",
+      "locator": {
+        "year": "2010",
+        "country_code": "TGO"
+      }
+    },
+    {
+      "date": "2011",
+      "value": "6500582",
+      "locator": {
+        "year": "2011",
+        "country_code": "TGO"
+      }
+    },
+    {
+      "date": "2012",
+      "value": "6653718",
+      "locator": {
+        "year": "2012",
+        "country_code": "TGO"
+      }
+    },
+    {
+      "date": "2013",
+      "value": "6798848",
+      "locator": {
+        "year": "2013",
+        "country_code": "TGO"
+      }
+    },
+    {
+      "date": "2014",
+      "value": "6937644",
+      "locator": {
+        "year": "2014",
+        "country_code": "TGO"
+      }
+    },
+    {
+      "date": "2015",
+      "value": "7071502",
+      "locator": {
+        "year": "2015",
+        "country_code": "TGO"
+      }
+    },
+    {
+      "date": "2016",
+      "value": "7200884",
+      "locator": {
+        "year": "2016",
+        "country_code": "TGO"
+      }
+    },
+    {
+      "date": "2017",
+      "value": "7324386",
+      "locator": {
+        "year": "2017",
+        "country_code": "TGO"
+      }
+    },
+    {
+      "date": "2018",
+      "value": "7458206",
+      "locator": {
+        "year": "2018",
+        "country_code": "TGO"
+      }
+    },
+    {
+      "date": "2019",
+      "value": "7619925",
+      "locator": {
+        "year": "2019",
+        "country_code": "TGO"
+      }
+    },
+    {
+      "date": "2020",
+      "value": "7788054",
+      "locator": {
+        "year": "2020",
+        "country_code": "TGO"
+      }
+    },
+    {
+      "date": "2021",
+      "value": "7936176",
+      "locator": {
+        "year": "2021",
+        "country_code": "TGO"
+      }
+    },
+    {
+      "date": "2022",
+      "value": "8068616",
+      "locator": {
+        "year": "2022",
+        "country_code": "TGO"
+      }
+    },
+    {
+      "date": "2023",
+      "value": "8223850",
+      "locator": {
+        "year": "2023",
+        "country_code": "TGO"
+      }
+    },
+    {
+      "date": "2024",
+      "value": "8406558",
+      "locator": {
+        "year": "2024",
+        "country_code": "TGO"
+      }
+    },
+    {
+      "date": "2025",
+      "value": "8591626",
+      "locator": {
+        "year": "2025",
+        "country_code": "TGO"
+      }
+    }
+  ]
+}

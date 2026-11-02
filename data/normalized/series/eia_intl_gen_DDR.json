@@ -1,0 +1,105 @@
+{
+  "id": "eia_intl_gen_DDR",
+  "name": "Net generation",
+  "units": "billion kilowatthours",
+  "adjustment": "annual",
+  "nominal_or_real": "generation",
+  "frequency": "annual",
+  "source_id": "eia_intl_bulk",
+  "series_url": "https://www.eia.gov/international/data/world/electricity/electricity-generation",
+  "eia_series_id": "INTL.2-12-DDR-BKWH.A",
+  "country_code": "DDR",
+  "country_name": "Germany, East",
+  "population_status": "no_world_bank_country",
+  "notes": "EIA bulk series INTL.2-12-DDR-BKWH.A, Germany, East. Annual. Billion kilowatthours. 1 billion kilowatthours = 1 terawatthour. Published years in this file run from 1980 to 1990.",
+  "points": [
+    {
+      "date": "1980",
+      "value": "98.808",
+      "locator": {
+        "year": "1980",
+        "series_id": "INTL.2-12-DDR-BKWH.A"
+      }
+    },
+    {
+      "date": "1981",
+      "value": "94.478",
+      "locator": {
+        "year": "1981",
+        "series_id": "INTL.2-12-DDR-BKWH.A"
+      }
+    },
+    {
+      "date": "1982",
+      "value": "96.52",
+      "locator": {
+        "year": "1982",
+        "series_id": "INTL.2-12-DDR-BKWH.A"
+      }
+    },
+    {
+      "date": "1983",
+      "value": "98.419",
+      "locator": {
+        "year": "1983",
+        "series_id": "INTL.2-12-DDR-BKWH.A"
+      }
+    },
+    {
+      "date": "1984",
+      "value": "110.093",
+      "locator": {
+        "year": "1984",
+        "series_id": "INTL.2-12-DDR-BKWH.A"
+      }
+    },
+    {
+      "date": "1985",
+      "value": "113.834",
+      "locator": {
+        "year": "1985",
+        "series_id": "INTL.2-12-DDR-BKWH.A"
+      }
+    },
+    {
+      "date": "1986",
+      "value": "115.291",
+      "locator": {
+        "year": "1986",
+        "series_id": "INTL.2-12-DDR-BKWH.A"
+      }
+    },
+    {
+      "date": "1987",
+      "value": "113.62",
+      "locator": {
+        "year": "1987",
+        "series_id": "INTL.2-12-DDR-BKWH.A"
+      }
+    },
+    {
+      "date": "1988",
+      "value": "117.634",
+      "locator": {
+        "year": "1988",
+        "series_id": "INTL.2-12-DDR-BKWH.A"
+      }
+    },
+    {
+      "date": "1989",
+      "value": "117.724",
+      "locator": {
+        "year": "1989",
+        "series_id": "INTL.2-12-DDR-BKWH.A"
+      }
+    },
+    {
+      "date": "1990",
+      "value": "104.008",
+      "locator": {
+        "year": "1990",
+        "series_id": "INTL.2-12-DDR-BKWH.A"
+      }
+    }
+  ]
+}
